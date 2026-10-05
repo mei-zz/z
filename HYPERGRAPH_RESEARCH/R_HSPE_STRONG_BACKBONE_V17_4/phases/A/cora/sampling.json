@@ -1,0 +1,41 @@
+{
+  "state": "COMPLETE",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 5,
+  "sampler_source_sha256": "5d78bef583ab5d4f93b8e2f24bdefb6055dd2b2bcb88e0be3913897c02bee91a",
+  "negative_schedules": {
+    "0": {
+      "epoch_negative_hashes": [
+        "b27896fb8c66733466c537ae43adbf7f89da6a9177389016cf1abe09485e3462",
+        "84a78b1f91cb72cdf0bf22ef047802ec4d51f64a92e460c86332e163f844db77",
+        "3a8b0c2ac502a38cbf2f5b20595003813fc731829fc2bd7380e611a62c1a772d",
+        "78cd11bb3c17be96f5074e7251ea93fa6b9077c7589b402b4c1e648ae82618e1",
+        "02d52b5371477ad7a69df5bdc2c9a1477168062e0a029de9128b1787808a4390"
+      ]
+    },
+    "1": {
+      "epoch_negative_hashes": [
+        "fd2dfca4ecadbda559654d2fc82c221e6917481c5075627ab65bdfc0193ee5fd",
+        "cc2b6012de72c1674ced4180dba938cbe7d45595cef9420ae2a74ee096853526",
+        "a1ca9ec6d793ec74e90f884d39a8455d357b9a7d4583950db80e2049e748810d",
+        "edfda1fd9778b8506d4d89fa1c4aff4f3b2d0dba792c1189494107eac3cba232",
+        "817d97cadec2cda5aef33c9b287ea06ec5454aca7b665d71f578cc6b49c39969"
+      ]
+    },
+    "2": {
+      "epoch_negative_hashes": [
+        "b9397bee65686f80243116b7f3556004dd2f419909196a8a11b9edaa93ede1e0",
+        "95d67277ea8bf3b29ec0abcd00cabac51ad530e6c8751a2b4b1a8ea4c5944349",
+        "3ae5009c8051c91ac1235eac3ae2b5568a04730b9ae7773f028d5a3e6f26ba2f",
+        "5636666f2f4e17269e6ff9fc9ed52ef21eef2e468edee00c0c51b869b0fcf2fa",
+        "a52526e9802cf9f4435c24ecb7ae9da78452a50d24834ecad31ccf51905b4419"
+      ]
+    }
+  },
+  "semantics": "precomputed same official calls; runtime resampling must equal schedule exactly; no sampler changes",
+  "heldout_label_filter": false
+}

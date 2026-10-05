@@ -1,0 +1,20 @@
+{
+  "state": "COMPLETE",
+  "dataset": "cora",
+  "phase": "stage0_complete",
+  "gpu_compute_used": false,
+  "test_evaluated": false,
+  "train_positive_count": 4488,
+  "pool_shape": [
+    4488,
+    20,
+    2
+  ],
+  "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "matched_negative_count": 13464,
+  "token_count_total": 135189,
+  "decision": "NO_NATIVE_STRUCTURE_SIGNAL",
+  "native_signal": false,
+  "native_scalar_sufficient_on_dataset": false,
+  "runtime_seconds": 37.3240210423246
+}

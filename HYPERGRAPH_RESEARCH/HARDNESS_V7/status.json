@@ -1,0 +1,9 @@
+{
+  "state": "COMPLETE",
+  "phase": "complete",
+  "second_dataset": "citeseer",
+  "second_dataset_status": "SUPPORTED",
+  "final_decision": "STRONG_GO",
+  "test_evaluated": true,
+  "updated_at": "2026-10-02T10:25:20+0800"
+}

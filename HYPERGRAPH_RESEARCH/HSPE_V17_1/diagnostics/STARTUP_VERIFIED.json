@@ -1,0 +1,36 @@
+{
+  "state": "STARTUP_VERIFIED",
+  "phase": "phase_a",
+  "gpu_utilization_percent": 100,
+  "gpu_memory_used_MiB": 2810,
+  "test_evaluated": false,
+  "active_workers": [
+    {
+      "pid": 925249,
+      "dataset": "cora",
+      "seed": 0
+    },
+    {
+      "pid": 925250,
+      "dataset": "pubmed",
+      "seed": 0
+    },
+    {
+      "pid": 925251,
+      "dataset": "cora",
+      "seed": 1
+    },
+    {
+      "pid": 925252,
+      "dataset": "pubmed",
+      "seed": 1
+    }
+  ],
+  "orchestrator_pid": 925067,
+  "monitoring_policy": "Stop session after this bounded startup verification",
+  "Cora_B0_completed_epochs": 5,
+  "failed_jobs": 0,
+  "concurrency": 4,
+  "epochs": 10,
+  "planned_arms": 60
+}

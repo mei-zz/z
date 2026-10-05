@@ -1,0 +1,38 @@
+{
+  "checkpoint": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M3/checkpoints/cora_uniform_seed2_8df3d221b8d4.pt",
+  "dataset": "cora",
+  "model_seed": 2,
+  "probe_seeds": [
+    0,
+    1,
+    2
+  ],
+  "pair_sample_seed": 2,
+  "pair_split_hashes": {
+    "train": "897db49dce49cd974f685eb34856dd2db773011a5bddbce98cb825b58e2281fb",
+    "valid": "a4b279e5cc0161e811d456f320ec2765bf5e989c01793aeefb06863509b44aea",
+    "test": "edaf97f06f4f4f6453b72def0c29b719faa0e364f34cf987a1e2b9a5b21796d6"
+  },
+  "residualizer": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 2,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "residual",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "5c539d2b549658091f4294fa988d334acc8ba452c707abf69a68ebafe4006ee2",
+    "config_hash": "d7957acf8ac0",
+    "used_as_model_input": true
+  },
+  "model_frozen": true,
+  "test_not_used_for_selection": true,
+  "files": {
+    "per_seed": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M3/probe/cora_uniform_seed2_8df3d221b8d4/posthoc_probe.csv",
+    "summary": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M3/probe/cora_uniform_seed2_8df3d221b8d4/posthoc_probe_summary.csv",
+    "predictions": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M3/probe/cora_uniform_seed2_8df3d221b8d4/posthoc_probe_predictions.csv"
+  }
+}

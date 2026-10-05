@@ -1,0 +1,20 @@
+Namespace(device=0, log_steps=1, encoder='sage', num_layers=2, hidden_channels=256, dropout=0.5, batch_size=65536, lr=0.0001, epochs=100, eval_steps=5, runs=1, dataset_dir='./data', datasets='citeseer', predictor='sum', patience=20, metric='hits@20', use_valedges_as_input=False, negative_samples=500, ratio=10, coldupline=2, val_rate=5, test_rate=10, log_dir='results_v10/formal', augment='duplicated', augment_times=1, augment_nodes='cold', transductive='induc', test_ratio=0.1, val_node_ratio=0.1, val_ratio=0.1, old_old_extra_ratio=0.1)
+0, hits@10: 40.000000011687185, hits@20: 50.19607844305973, hits@30: 57.254901984158685, hits@50: 67.84313727827633, mrr: 21.85469851299536, auc: 90.36808035714286
+1, hits@10: 58.19397993311037, hits@20: 65.88628763538539, hits@30: 69.8996655618068, hits@50: 77.25752509357937, mrr: 36.25853773000896, auc: 92.45255474452547
+2, hits@10: 58.080808110911434, hits@20: 69.69696972707305, hits@30: 76.7676768128318, hits@50: 83.33333337848836, mrr: 37.870128147275835, auc: 95.18545647558383
+3, hits@10: 65.81196614310272, hits@20: 83.76068398993239, hits@30: 85.47008552102962, hits@50: 89.7435896926456, mrr: 37.45694385133047, auc: 96.6124193548387
+4, hits@10: 44.00000047683716, hits@20: 72.00000023841858, hits@30: 76.00000023841858, hits@50: 84.00000023841858, mrr: 21.6268547847867, auc: 95.62962962962962
+5, hits@10: 58.33333507180214, hits@20: 75.00000074505806, hits@30: 75.00000074505806, hits@50: 75.00000074505806, mrr: 17.93134119361639, auc: 92.64444444444445
+overall, hits@10: 53.64238419477513, hits@20: 64.90066231086554, hits@30: 70.08830026351326, hits@50: 77.70419429009061, mrr: 32.06495162229122, auc: 92.79463217338235
+FINAL RESULTS
+0, 224, 255, hits@10: 40.00 ± nan, hits@20: 50.20 ± nan, hits@30: 57.25 ± nan, hits@50: 67.84 ± nan, mrr: 21.85 ± nan, auc: 90.37 ± nan
+1-2, 274, 299, hits@10: 58.19 ± nan, hits@20: 65.89 ± nan, hits@30: 69.90 ± nan, hits@50: 77.26 ± nan, mrr: 36.26 ± nan, auc: 92.45 ± nan
+>2, 230, 352, hits@10: 59.66 ± nan, hits@20: 74.72 ± nan, hits@30: 79.55 ± nan, hits@50: 85.23 ± nan, mrr: 35.90 ± nan, auc: 95.57 ± nan
+Overall, 728, 906, hits@10: 53.64 ± nan, hits@20: 64.90 ± nan, hits@30: 70.09 ± nan, hits@50: 77.70 ± nan, mrr: 32.06 ± nan, auc: 92.79 ± nan
+0, 224, 255, hits@10: 40.00 ± nan, hits@20: 50.20 ± nan, hits@30: 57.25 ± nan, hits@50: 67.84 ± nan, mrr: 21.85 ± nan, auc: 90.37 ± nan
+1, 274, 299, hits@10: 58.19 ± nan, hits@20: 65.89 ± nan, hits@30: 69.90 ± nan, hits@50: 77.26 ± nan, mrr: 36.26 ± nan, auc: 92.45 ± nan
+2, 157, 198, hits@10: 58.08 ± nan, hits@20: 69.70 ± nan, hits@30: 76.77 ± nan, hits@50: 83.33 ± nan, mrr: 37.87 ± nan, auc: 95.19 ± nan
+3, 62, 117, hits@10: 65.81 ± nan, hits@20: 83.76 ± nan, hits@30: 85.47 ± nan, hits@50: 89.74 ± nan, mrr: 37.46 ± nan, auc: 96.61 ± nan
+4, 9, 25, hits@10: 44.00 ± nan, hits@20: 72.00 ± nan, hits@30: 76.00 ± nan, hits@50: 84.00 ± nan, mrr: 21.63 ± nan, auc: 95.63 ± nan
+5, 2, 12, hits@10: 58.33 ± nan, hits@20: 75.00 ± nan, hits@30: 75.00 ± nan, hits@50: 75.00 ± nan, mrr: 17.93 ± nan, auc: 92.64 ± nan
+Overall, 728, 906, hits@10: 53.64 ± nan, hits@20: 64.90 ± nan, hits@30: 70.09 ± nan, hits@50: 77.70 ± nan, mrr: 32.06 ± nan, auc: 92.79 ± nan

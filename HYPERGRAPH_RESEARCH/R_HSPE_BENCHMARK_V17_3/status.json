@@ -1,0 +1,99 @@
+{
+  "state": "RUNNING",
+  "pid": 1508090,
+  "updated": 1791125608.934523,
+  "gpu_jobs": [
+    {
+      "pid": 1508206,
+      "args": [
+        "nslr",
+        "cora",
+        "4"
+      ]
+    },
+    {
+      "pid": 1508520,
+      "args": [
+        "nslr",
+        "citeseer",
+        "0"
+      ]
+    }
+  ],
+  "preparation": {
+    "pid": 1505907,
+    "args": [
+      "prepare-nslr",
+      "pubmed"
+    ]
+  },
+  "queued_gpu": 32,
+  "queued_preparations": 0,
+  "finished": [
+    {
+      "args": [
+        "prepare-nslr",
+        "cora"
+      ],
+      "code": 0
+    },
+    {
+      "args": [
+        "prepare-nslr",
+        "citeseer"
+      ],
+      "code": 0
+    },
+    {
+      "args": [
+        "ncn",
+        "cora",
+        "NCN",
+        "0"
+      ],
+      "code": 0
+    },
+    {
+      "args": [
+        "ncn",
+        "cora",
+        "NCNC",
+        "0"
+      ],
+      "code": 0
+    },
+    {
+      "args": [
+        "nslr",
+        "cora",
+        "0"
+      ],
+      "code": 0
+    },
+    {
+      "args": [
+        "nslr",
+        "cora",
+        "1"
+      ],
+      "code": 0
+    },
+    {
+      "args": [
+        "nslr",
+        "cora",
+        "2"
+      ],
+      "code": 0
+    },
+    {
+      "args": [
+        "nslr",
+        "cora",
+        "3"
+      ],
+      "code": 0
+    }
+  ],
+  "failed": []
+}

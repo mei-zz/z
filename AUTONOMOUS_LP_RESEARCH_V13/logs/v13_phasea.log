@@ -1,0 +1,154 @@
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+parallel_c1: 1/1 complete; V13-PAR-1-01=COMPLETE
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+parallel_c2: 1/2 complete; V13-PAR-2-01=COMPLETE
+parallel_c2: 2/2 complete; V13-PAR-2-02=COMPLETE
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+parallel_c4: 1/4 complete; V13-PAR-4-01=COMPLETE
+parallel_c4: 2/4 complete; V13-PAR-4-04=COMPLETE
+parallel_c4: 3/4 complete; V13-PAR-4-02=COMPLETE
+parallel_c4: 4/4 complete; V13-PAR-4-03=COMPLETE
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+parallel_c8: 1/8 complete; V13-PAR-8-01=COMPLETE
+parallel_c8: 2/8 complete; V13-PAR-8-05=COMPLETE
+parallel_c8: 3/8 complete; V13-PAR-8-07=COMPLETE
+parallel_c8: 4/8 complete; V13-PAR-8-02=COMPLETE
+parallel_c8: 5/8 complete; V13-PAR-8-06=COMPLETE
+parallel_c8: 6/8 complete; V13-PAR-8-03=COMPLETE
+parallel_c8: 7/8 complete; V13-PAR-8-04=COMPLETE
+parallel_c8: 8/8 complete; V13-PAR-8-08=COMPLETE
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+phasea_ecr: 1/6 complete; V13-A-00=COMPLETE
+phasea_ecr: 2/6 complete; V13-A-03=COMPLETE
+phasea_ecr: 3/6 complete; V13-A-01=COMPLETE
+phasea_ecr: 4/6 complete; V13-A-04=COMPLETE
+phasea_ecr: 5/6 complete; V13-A-05=COMPLETE
+phasea_ecr: 6/6 complete; V13-A-02=COMPLETE
+{
+  "benchmark": {
+    "definition": "Each concurrency tier trained n independent, one-epoch Cora seed0 QTHS25 baseline replicas; tiers were run sequentially and only within-tier jobs overlapped. These are throughput diagnostics, not Stage1 experiments.",
+    "tiers": [
+      {
+        "concurrency": 1,
+        "jobs": 1,
+        "completed": 1,
+        "wall_seconds": 12.546349910087883,
+        "jobs_per_minute": 4.782267386927973,
+        "samples": 17,
+        "gpu_util_mean_percent": 7.294117647058823,
+        "gpu_util_peak_percent": 23.0,
+        "gpu_memory_peak_mb": 445.0,
+        "cpu_load_average_mean": 0.2435294117647058,
+        "failures": {}
+      },
+      {
+        "concurrency": 2,
+        "jobs": 2,
+        "completed": 2,
+        "wall_seconds": 16.374983630608767,
+        "jobs_per_minute": 7.328251600550686,
+        "samples": 21,
+        "gpu_util_mean_percent": 59.523809523809526,
+        "gpu_util_peak_percent": 99.0,
+        "gpu_memory_peak_mb": 877.0,
+        "cpu_load_average_mean": 0.5490476190476191,
+        "failures": {}
+      },
+      {
+        "concurrency": 4,
+        "jobs": 4,
+        "completed": 4,
+        "wall_seconds": 26.31403788132593,
+        "jobs_per_minute": 9.120607072254725,
+        "samples": 34,
+        "gpu_util_mean_percent": 73.67647058823529,
+        "gpu_util_peak_percent": 100.0,
+        "gpu_memory_peak_mb": 1741.0,
+        "cpu_load_average_mean": 1.2849999999999997,
+        "failures": {}
+      },
+      {
+        "concurrency": 8,
+        "jobs": 8,
+        "completed": 8,
+        "wall_seconds": 43.80346011603251,
+        "jobs_per_minute": 10.958038445559126,
+        "samples": 55,
+        "gpu_util_mean_percent": 85.63636363636364,
+        "gpu_util_peak_percent": 100.0,
+        "gpu_memory_peak_mb": 3471.0,
+        "cpu_load_average_mean": 3.7659999999999987,
+        "failures": {}
+      }
+    ],
+    "selected_workers": 8,
+    "selection_rule": "highest concurrency within 10% of best jobs/minute, all jobs complete, no OOM, and sampled peak memory under 80% of V100 16GB",
+    "completed_at_utc": "2026-10-03T05:13:08.440857+00:00"
+  },
+  "ECR": {
+    "state": "ECR_STAGE1_GO",
+    "go": true,
+    "baseline_mrr": 0.5256204671690727,
+    "full_mrr": 0.6078151237376185,
+    "delta": 0.08219465656854574,
+    "single_mrr": {
+      "ECR_RAW": 0.5751811436969592,
+      "ECR_STRUCT": 0.536228953031976,
+      "ECR_DENSITY": 0.5457548672543846
+    },
+    "best_single_mrr": 0.5751811436969592,
+    "full_minus_best_single": 0.032633980040659316,
+    "shuffled_control_mrr": 0.48602991919275806,
+    "beats_shuffled": true,
+    "new_parameters": 28,
+    "parameter_fraction_percent": 0.1131999191429149,
+    "gate": {
+      "absolute_delta_ge_0.003": true,
+      "additive_delta_ge_0.002": true,
+      "beats_shuffled": true
+    },
+    "test_evaluated": false
+  },
+  "factorized": {
+    "state": "SKIPPED_ECR_STAGE1_GO"
+  }
+}

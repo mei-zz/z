@@ -1,0 +1,221 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "mode": "formal",
+  "dataset": "ogbl-collab_CN_4_2_0_seed1",
+  "seed": 1,
+  "config": {
+    "hidden_dim": 64,
+    "branch_dim": 32,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "backbone": "gcn",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 262144,
+    "epochs": 4,
+    "train_negative_protocol": "uniform_non_message_edges",
+    "target_masking": true,
+    "selection_metric": "validation_mrr",
+    "test_used_for_selection": false
+  },
+  "adapter_summary": {
+    "dataset_name": "ogbl-collab_CN_4_2_0_seed1",
+    "num_nodes": 235868,
+    "feature_shape": [
+      235868,
+      128
+    ],
+    "message_edge_index_shape": [
+      2,
+      1597130
+    ],
+    "message_edge_index_hash": "e7139c7a780dc610d1032757007b933d32c1b92575cc8fa0fdb996da4445b71d",
+    "train_pos_shape": [
+      1193456,
+      2
+    ],
+    "valid_pos_shape": [
+      24097,
+      2
+    ],
+    "test_pos_shape": [
+      11551,
+      2
+    ],
+    "valid_neg_shape": [
+      24097,
+      250,
+      2
+    ],
+    "test_neg_shape": [
+      11551,
+      250,
+      2
+    ],
+    "train_pos_hash": "9e876f00d0da73d7bb1229a9aee50ecf8ff9f1f3221eb932fbb9ec5f2c62c048",
+    "valid_pos_hash": "f8ee3623440863545e162b38f4a6ff29cf35b8891ac49d81e8568e562895f42b",
+    "test_pos_hash": "cd34f4b513f4d581e64afa405f9df384031d7b5de960153af7b65317fc992ed9",
+    "valid_neg_hash": "d3d53f225b54fa69a7f676a660949fdf607dfeaf85b0c92c90bbb18bd232940e",
+    "test_neg_hash": "7d8ea1cca3641da1c21fba8a1a6d81e901bfae6931a7b07c9850eea53949ea19",
+    "valid_neg_file_hash": "cc60b2c52b920829f0a529e83861980cf874254236dd035de524ac6b1b74c2fb",
+    "test_neg_file_hash": "c72e0804630072d15962eb0fac9990c1ff7144bbe8732847f2cb25d0ab8181dd"
+  },
+  "best_epoch": 2,
+  "validation": {
+    "mrr": 0.8794715084503696,
+    "hits10": 0.9687927957837075,
+    "hits20": 0.9799975100634933,
+    "hits50": 0.9912852222268332,
+    "hits100": 0.9971780719591651,
+    "mean_positive_rank": 2.5599867203386313,
+    "auc": 0.9928763073572374,
+    "ap": 0.6766646314910368
+  },
+  "test": {
+    "mrr": 0.4867102326536656,
+    "hits10": 0.7288546446195134,
+    "hits20": 0.8152540905549303,
+    "hits50": 0.916370876980348,
+    "hits100": 0.9724699160245867,
+    "mean_positive_rank": 13.956800277032292,
+    "auc": 0.9436859217295188,
+    "ap": 0.22953670113674823
+  },
+  "trace": [
+    {
+      "epoch": 0,
+      "mean_loss": 0.4587593227624893,
+      "validation": {
+        "mrr": 0.8705991902248977,
+        "hits10": 0.9377930862763,
+        "hits20": 0.9569655973772668,
+        "hits50": 0.9845623936589617,
+        "hits100": 0.9968045814831722,
+        "mean_positive_rank": 3.6026891314271485,
+        "auc": 0.9865618384166563,
+        "ap": 0.6911176285082258
+      },
+      "test_descriptive": {
+        "mrr": 0.363646274267116,
+        "hits10": 0.4966669552419704,
+        "hits20": 0.6398580209505671,
+        "hits50": 0.8484979655441087,
+        "hits100": 0.9677949961042334,
+        "mean_positive_rank": 22.81932300233746,
+        "auc": 0.8911570007018365,
+        "ap": 0.16534584657423587
+      },
+      "negative_hash": "ae3c8313509ee7bd7b9f4443f6bf62668f486a25cbd61826c5b1349ba1fb465e",
+      "order_hash": "144664bc88393c2cf1a97dcee948a38d97651d504e7b4db6a875f7dd2bb611d7"
+    },
+    {
+      "epoch": 1,
+      "mean_loss": 0.19255673363804818,
+      "validation": {
+        "mrr": 0.8717616928408916,
+        "hits10": 0.9632734365273685,
+        "hits20": 0.9774660746150973,
+        "hits50": 0.9911192264597253,
+        "hits100": 0.9980080507947048,
+        "mean_positive_rank": 2.647341992779184,
+        "auc": 0.991537460227805,
+        "ap": 0.6534238937778462
+      },
+      "test_descriptive": {
+        "mrr": 0.44519522022269303,
+        "hits10": 0.6806337113669813,
+        "hits20": 0.7937840879577526,
+        "hits50": 0.918362046576054,
+        "hits100": 0.9780105618561163,
+        "mean_positive_rank": 14.616050558393212,
+        "auc": 0.9335864552260854,
+        "ap": 0.2018808951953565
+      },
+      "negative_hash": "8427bbd8426b194b483dd7cc421686a2796aa8f5294a94b9c31ac27d513a294c",
+      "order_hash": "5f76bf31f2bcc80a766e37353251fe4a074496e0443ddf8425ad89dd49578fad"
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.0833452358841896,
+      "validation": {
+        "mrr": 0.8794715084503696,
+        "hits10": 0.9687927957837075,
+        "hits20": 0.9799975100634933,
+        "hits50": 0.9912852222268332,
+        "hits100": 0.9971780719591651,
+        "mean_positive_rank": 2.5599867203386313,
+        "auc": 0.9928763073744586,
+        "ap": 0.6766645888058733
+      },
+      "test_descriptive": {
+        "mrr": 0.4867102326536656,
+        "hits10": 0.7288546446195134,
+        "hits20": 0.8152540905549303,
+        "hits50": 0.916370876980348,
+        "hits100": 0.9724699160245867,
+        "mean_positive_rank": 13.956800277032292,
+        "auc": 0.9436859213247986,
+        "ap": 0.22953679635093793
+      },
+      "negative_hash": "f072090e91b79aee1444c7ba90fc80bea5075681b1a0f9203bf1851a38500660",
+      "order_hash": "dcbfea822f8692038f8ff2defc35f0b2ff2fce41287944275246ede71963e006"
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.04695147201418877,
+      "validation": {
+        "mrr": 0.8758861115524069,
+        "hits10": 0.9722787068929742,
+        "hits20": 0.9827364402207743,
+        "hits50": 0.9927376851890277,
+        "hits100": 0.9979250529111507,
+        "mean_positive_rank": 2.3996348093123627,
+        "auc": 0.993586043517877,
+        "ap": 0.6448711090759415
+      },
+      "test_descriptive": {
+        "mrr": 0.49461239092046605,
+        "hits10": 0.7517963812656913,
+        "hits20": 0.8300580036360489,
+        "hits50": 0.9287507575101723,
+        "hits100": 0.9828586269587049,
+        "mean_positive_rank": 12.226560470954896,
+        "auc": 0.9504014460313349,
+        "ap": 0.23595099763577437
+      },
+      "negative_hash": "cfbbdaf0aaa6e2d09d06154831282a1bfec16fe8a9dcb5a37a76d7133f27e982",
+      "order_hash": "9e70f4a7d8dd724abcf12ebb3e3c3ca5b9133e902ae5e49b2a019aaa2c651d80"
+    }
+  ],
+  "runtime_seconds": 202.04964537732303,
+  "peak_gpu_memory_mb": 3579.404296875,
+  "parameter_count": 28966,
+  "best_state_hash": "b176be64d2e57285ee67f92007efd25d7c41de60aae98d8301fb6f62dc3634da",
+  "gpu_name": "Tesla V100-PCIE-16GB",
+  "test_used_for_selection": false,
+  "prediction_file": "/home/ubuntu/AFDR_V7/raw/v8_dcdlp_pred_2_4_seed1.pred.npz"
+}
+	Command being timed: "timeout 2400 env PYTHONPATH=/home/ubuntu/AFDR_V8_scripts:/home/ubuntu/DCDLP-main/src python /home/ubuntu/AFDR_V8_scripts/run_lpshift_dcdlp.py --repo /home/ubuntu/AFDR_V7/repo/LPShift-main --dataset ogbl-collab_CN_4_2_0_seed1 --seed 1 --epochs 4 --batch-size 262144 --eval-batch-size 262144 --save-predictions --output /home/ubuntu/AFDR_V7/raw/v8_dcdlp_pred_2_4_seed1.json"
+	User time (seconds): 225.56
+	System time (seconds): 11.37
+	Percent of CPU this job got: 109%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:36.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3271508
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2782972
+	Voluntary context switches: 7389
+	Involuntary context switches: 1045
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 61192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

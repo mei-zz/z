@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "method": "GRAPH_HARD",
+  "seed": 1,
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/CORA/GAT/GRAPH_HARD/seed1/checkpoints/cora_uniform_seed1_60e98d764f92.pt",
+  "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/CORA/GAT/GRAPH_HARD/seed1/raw/cora_uniform_seed1_60e98d764f92.json",
+  "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/CORA/GAT/GRAPH_HARD/seed1/epoch_diagnostics.json",
+  "train_seconds": 233.50616951007396,
+  "wall_seconds": 234.2008261596784,
+  "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183",
+  "dynamic_sampler": null,
+  "model_state_hash": "f816d433fc5bb4cb710a3453bc04729270a2b8875de19aa9556617df368f5568",
+  "epoch10_validation_mrr": 0.44689356900919136,
+  "epoch_count": 10,
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "test_evaluated": false
+}

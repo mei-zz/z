@@ -1,0 +1,36 @@
+{
+  "state": "COMPLETE",
+  "dataset": "cora",
+  "seed": 2,
+  "arm": "N0",
+  "epochs": 10,
+  "metrics": {
+    "mrr": 0.6820908893670188,
+    "hits10": 0.9146110056925996,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 3.25426944971537
+  },
+  "checkpoint_sha256": "a972651c3fb8c91be399c133d3dad691a4b0e3f64b2f30cbc3a2d6b549aa83b7",
+  "inference_seconds": 0.17281011398881674,
+  "peak_gpu_mb": 90.69091796875,
+  "test_candidate_metadata": {
+    "n": 2708,
+    "feature_shape": [
+      2708,
+      1433
+    ],
+    "train_edges": 4488,
+    "train_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+    "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+    "valid_negative_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+    "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+    "test_negative_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+    "test_cache_sha256": "c2a60aee273964509ace1615c01e2fdf0857fedeca76ad749da3eaf019bbc4e1",
+    "test_queries": 527,
+    "test_negatives": 20,
+    "projection": "undirected train edges exactly B0 graph side; no clique expansion, no valid/test edges"
+  },
+  "configuration_frozen_before_test": true
+}

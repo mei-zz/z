@@ -1,0 +1,13 @@
+{
+  "dataset": "citeseer",
+  "seed": 0,
+  "epochs": 4,
+  "models": [
+    "B0_Parent",
+    "B1_CDPT",
+    "B2_LateOnly",
+    "B1_CDPT_train_shuffled"
+  ],
+  "test_used_for_selection": false,
+  "data_hash": "93b2480b3b56"
+}

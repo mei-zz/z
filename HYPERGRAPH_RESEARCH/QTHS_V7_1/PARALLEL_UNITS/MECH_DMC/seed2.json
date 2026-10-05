@@ -1,0 +1,114 @@
+{
+  "state": "COMPLETE",
+  "method": "MECH_DMC",
+  "seed": 2,
+  "record": {
+    "status": "COMPLETE",
+    "method": "cora_MECH_DMC",
+    "seed": 2,
+    "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_DMC/seed2/checkpoints/cora_uniform_seed2_f67031dfddc8.pt",
+    "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_DMC/seed2/raw/cora_uniform_seed2_f67031dfddc8.json",
+    "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_DMC/seed2/epoch_diagnostics.json",
+    "train_seconds": 208.21424039406702,
+    "wall_seconds": 208.96828012587503,
+    "selected_negative_hash": "6e1060ab15cbc2aed7d0bb6d942b1177c66e6fad2b7caec3f8e4fe5987ee2808",
+    "dynamic_sampler": null,
+    "model_state_hash": "33cf4701856922464075d45d71e94a0d481303cbf55b126e88ac9a0347a4435e",
+    "epoch10_validation_mrr": 0.5316178765423312,
+    "epoch_count": 10,
+    "checkpoint_rule": "FIXED_EPOCH_10",
+    "test_evaluated": false,
+    "checkpoint_file_sha256": "a85d161ba527526d89d3d138d1af0da967db5446b0396edc3fa35daf0d15b922",
+    "validation_metrics": {
+      "mrr": 0.5316178765423312,
+      "hits10": 0.9277566539923955,
+      "hits20": 1.0,
+      "hits50": 1.0,
+      "hits100": 1.0,
+      "mean_positive_rank": 3.9657794676806084
+    },
+    "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+    "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+    "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a"
+  },
+  "selection_diagnostics": {
+    "method": "constrained random coordinate resampling over the frozen 20-candidate train pool",
+    "seed": 2,
+    "target_QTHS_diversity": {
+      "unique_endpoint_ratio": 0.18727718360071302,
+      "endpoint_gini": 0.6185124882503021,
+      "hub_endpoint_ratio": 0.21479500891265596
+    },
+    "matched_diversity_and_hardness": {
+      "unique_endpoint_ratio": 0.18727718360071302,
+      "endpoint_gini": 0.6185166845709682,
+      "hub_endpoint_ratio": 0.21479500891265596,
+      "mean_Rg": 0.9657683647621544
+    },
+    "absolute_target_error": {
+      "unique_endpoint_ratio": 0.0,
+      "endpoint_gini": 4.196320666061126e-06,
+      "hub_endpoint_ratio": 0.0
+    },
+    "sweeps": [
+      {
+        "sweep": 1,
+        "changed_rows": 718,
+        "objective": 0.002381791119810149,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.6185121591271125,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9523641992682118
+        }
+      },
+      {
+        "sweep": 2,
+        "changed_rows": 185,
+        "objective": 0.001955918977902795,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.6185060703481069,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9608898583356617
+        }
+      },
+      {
+        "sweep": 3,
+        "changed_rows": 101,
+        "objective": 0.0017873472455573437,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.618508950176015,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9642555586827853
+        }
+      },
+      {
+        "sweep": 4,
+        "changed_rows": 43,
+        "objective": 0.0017401495150652102,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.6185189884332944,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9652054601744825
+        }
+      },
+      {
+        "sweep": 5,
+        "changed_rows": 34,
+        "objective": 0.001711757852963602,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.6185166845709682,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9657683647621544
+        }
+      }
+    ],
+    "selected_negative_hash": "6e1060ab15cbc2aed7d0bb6d942b1177c66e6fad2b7caec3f8e4fe5987ee2808"
+  },
+  "updated_at": "2026-10-02T13:11:13+0800",
+  "test_evaluated": false
+}

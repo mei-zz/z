@@ -1,0 +1,961 @@
+{
+  "state": "PUBMED_STAGE1_COMPLETE_REJECT",
+  "candidate": "NHMC",
+  "previous_direction": "HMC_V15_SCALAR_SUFFICIENT",
+  "latest_execution_override": {
+    "stage0_role": "DIAGNOSTIC_ONLY",
+    "stage0_blocks_stage1": false,
+    "stage1_thresholds_changed": false,
+    "test_policy_changed": false
+  },
+  "fast_gpu_override_used": true,
+  "stage0_stage1_overlap": false,
+  "stage0": {
+    "cora": {
+      "decision": "NO_NATIVE_STRUCTURE_SIGNAL",
+      "native_signal": false,
+      "native_scalar_sufficient": false,
+      "train_positive_count": 4488,
+      "matched_negative_count": 13464,
+      "token_total": 135189,
+      "token_max": 372,
+      "shuffle_power": 0.2802473262032086,
+      "native_minus_projection": 0.009333751826231973,
+      "real_minus_size": -9.668983866362169E-05,
+      "real_minus_shuffle": 0.0001423814306888982,
+      "cv": {
+        "Z0_CN": {
+          "roc_auc_mean": 0.8108461805137199,
+          "roc_auc_sd": 0.005793940395384538,
+          "pr_auc_mean": 0.6378592673163417,
+          "pr_auc_sd": 0.013213182163217761
+        },
+        "Z1_HRA": {
+          "roc_auc_mean": 0.8254678999361221,
+          "roc_auc_sd": 0.006333723761242924,
+          "pr_auc_mean": 0.7327239610500103,
+          "pr_auc_sd": 0.010822348170462518
+        },
+        "Z2_PROJECTION": {
+          "roc_auc_mean": 0.8265911868859336,
+          "roc_auc_sd": 0.005947449323908375,
+          "pr_auc_mean": 0.740013300438059,
+          "pr_auc_sd": 0.0094350165096114
+        },
+        "Z3_NATIVE_SIZE": {
+          "roc_auc_mean": 0.8360216285508292,
+          "roc_auc_sd": 0.005870002747527805,
+          "pr_auc_mean": 0.74987362704653,
+          "pr_auc_sd": 0.007014909524930999
+        },
+        "Z4_NATIVE_REAL": {
+          "roc_auc_mean": 0.8359249387121656,
+          "roc_auc_sd": 0.0064904130591100905,
+          "pr_auc_mean": 0.7519659978267146,
+          "pr_auc_sd": 0.007575960857584311
+        },
+        "Z5_NATIVE_SHUFFLE": {
+          "roc_auc_mean": 0.8357825572814767,
+          "roc_auc_sd": 0.007573161319738616,
+          "pr_auc_mean": 0.7495992601895084,
+          "pr_auc_sd": 0.007731528821284202
+        },
+        "NATIVE_SCALAR_NS": {
+          "roc_auc_mean": 0.7962008717585898,
+          "roc_auc_sd": 0.006102306349972148,
+          "pr_auc_mean": 0.6792355221124107,
+          "pr_auc_sd": 0.008340013764979675
+        }
+      },
+      "wall_seconds": 37.3240210423246,
+      "child_cpu_seconds": {
+        "user": 11.23,
+        "system": 1.45
+      },
+      "target_mask_audit": {
+        "pairs_checked": 100,
+        "full_rebuild_equal": true,
+        "endpoint_symmetry_equal": true,
+        "max_abs_token_difference": 0.0,
+        "largest_sample_token_count": 184,
+        "tolerance": 1E-06
+      },
+      "raw_result": "diagnostics/stage0_cora.json"
+    },
+    "pubmed": {
+      "decision": "NO_NATIVE_STRUCTURE_SIGNAL",
+      "native_signal": false,
+      "native_scalar_sufficient": false,
+      "train_positive_count": 37676,
+      "matched_negative_count": 113028,
+      "token_total": 4976014,
+      "token_max": 4856,
+      "shuffle_power": 0.28103434547191847,
+      "native_minus_projection": 0.015535150847947321,
+      "real_minus_size": 0.00030406125794268934,
+      "real_minus_shuffle": 0.00045084464691258486,
+      "cv": {
+        "Z0_CN": {
+          "roc_auc_mean": 0.7875919003123982,
+          "roc_auc_sd": 0.0023058203667514943,
+          "pr_auc_mean": 0.6710123981774057,
+          "pr_auc_sd": 0.003447241137670227
+        },
+        "Z1_HRA": {
+          "roc_auc_mean": 0.7930833060062956,
+          "roc_auc_sd": 0.0026430900768625283,
+          "pr_auc_mean": 0.6921942720786636,
+          "pr_auc_sd": 0.003773312205595423
+        },
+        "Z2_PROJECTION": {
+          "roc_auc_mean": 0.7935978352778926,
+          "roc_auc_sd": 0.002508122939701296,
+          "pr_auc_mean": 0.7018181794806125,
+          "pr_auc_sd": 0.0028663189018495495
+        },
+        "Z3_NATIVE_SIZE": {
+          "roc_auc_mean": 0.8088289248678973,
+          "roc_auc_sd": 0.002209995738794835,
+          "pr_auc_mean": 0.7133374443935121,
+          "pr_auc_sd": 0.001837933562554593
+        },
+        "Z4_NATIVE_REAL": {
+          "roc_auc_mean": 0.80913298612584,
+          "roc_auc_sd": 0.002114985899242844,
+          "pr_auc_mean": 0.7149669772073328,
+          "pr_auc_sd": 0.002108246342670695
+        },
+        "Z5_NATIVE_SHUFFLE": {
+          "roc_auc_mean": 0.8086821414789274,
+          "roc_auc_sd": 0.002135653482083394,
+          "pr_auc_mean": 0.713367807487681,
+          "pr_auc_sd": 0.0018002365145694111
+        },
+        "NATIVE_SCALAR_NS": {
+          "roc_auc_mean": 0.7920598299039783,
+          "roc_auc_sd": 0.00218323302229198,
+          "pr_auc_mean": 0.6860626344909093,
+          "pr_auc_sd": 0.003339733863850293
+        }
+      },
+      "wall_seconds": 772.6387682133354,
+      "child_cpu_seconds": {
+        "user": 145.63,
+        "system": 3.02
+      },
+      "target_mask_audit": {
+        "pairs_checked": 100,
+        "full_rebuild_equal": true,
+        "endpoint_symmetry_equal": true,
+        "max_abs_token_difference": 0.0,
+        "largest_sample_token_count": 3011,
+        "tolerance": 1E-06
+      },
+      "raw_result": "diagnostics/stage0_pubmed.json"
+    },
+    "citeseer": {
+      "decision": "NO_NATIVE_STRUCTURE_SIGNAL",
+      "native_signal": false,
+      "native_scalar_sufficient": false,
+      "train_positive_count": 3870,
+      "matched_negative_count": 11610,
+      "token_total": 161491,
+      "token_max": 1101,
+      "shuffle_power": 0.16214470284237725,
+      "native_minus_projection": 0.0005950274533893518,
+      "real_minus_size": 0.0004150836733013419,
+      "real_minus_shuffle": -0.0006200660127708701,
+      "cv": {
+        "Z0_CN": {
+          "roc_auc_mean": 0.7586113726249536,
+          "roc_auc_sd": 0.012040531305155344,
+          "pr_auc_mean": 0.6004224215584592,
+          "pr_auc_sd": 0.02233042525922909
+        },
+        "Z1_HRA": {
+          "roc_auc_mean": 0.7628675938723412,
+          "roc_auc_sd": 0.011958218053186054,
+          "pr_auc_mean": 0.6417553175804898,
+          "pr_auc_sd": 0.016614257988994227
+        },
+        "Z2_PROJECTION": {
+          "roc_auc_mean": 0.7637441660156641,
+          "roc_auc_sd": 0.01210773548889507,
+          "pr_auc_mean": 0.6488788145094742,
+          "pr_auc_sd": 0.017132983775505508
+        },
+        "Z3_NATIVE_SIZE": {
+          "roc_auc_mean": 0.7639241097957521,
+          "roc_auc_sd": 0.013331939512516934,
+          "pr_auc_mean": 0.6495169995988817,
+          "pr_auc_sd": 0.01793928114902361
+        },
+        "Z4_NATIVE_REAL": {
+          "roc_auc_mean": 0.7643391934690534,
+          "roc_auc_sd": 0.012329133517633007,
+          "pr_auc_mean": 0.6502197748543022,
+          "pr_auc_sd": 0.017517272318762413
+        },
+        "Z5_NATIVE_SHUFFLE": {
+          "roc_auc_mean": 0.7649592594818243,
+          "roc_auc_sd": 0.013088341891271109,
+          "pr_auc_mean": 0.649760226411622,
+          "pr_auc_sd": 0.01756983251551133
+        },
+        "NATIVE_SCALAR_NS": {
+          "roc_auc_mean": 0.7368967098220148,
+          "roc_auc_sd": 0.014951065342784526,
+          "pr_auc_mean": 0.597540170210926,
+          "pr_auc_sd": 0.023282085886946666
+        }
+      },
+      "wall_seconds": 30.216919451020658,
+      "child_cpu_seconds": {
+        "user": 6.76,
+        "system": 0.63
+      },
+      "target_mask_audit": {
+        "pairs_checked": 100,
+        "full_rebuild_equal": true,
+        "endpoint_symmetry_equal": true,
+        "max_abs_token_difference": 0.0,
+        "largest_sample_token_count": 584,
+        "tolerance": 1E-06
+      },
+      "raw_result": "diagnostics/stage0_citeseer.json"
+    }
+  },
+  "cora_stage1": {
+    "state": "COMPLETE",
+    "dataset": "cora",
+    "decision": "NHMC_STAGE1_GO",
+    "stage0_decision_is_diagnostic_only": true,
+    "validation_only": true,
+    "test_evaluated": false,
+    "arms": {
+      "B0_BASELINE": {
+        "state": "COMPLETE",
+        "dataset": "cora",
+        "arm": "B0_BASELINE",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+        "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+        "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+        "validation_metrics": {
+          "mrr": 0.5039905633258703,
+          "hits10": 0.6692015209125475,
+          "hits20": 0.908745247148289,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 7.326996197718631
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 32.12922536209226,
+        "wall_seconds": 32.562862070742995,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 24735,
+        "added_nhmc_parameters": 0,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/arms/B0_BASELINE/checkpoints/cora_uniform_seed0_d89369f94c60.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "1011cd7548ca022e251ebe74486acc1cf149a97f81be6c8b02e5fc72caa06460",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "B1_HRA": {
+        "state": "COMPLETE",
+        "dataset": "cora",
+        "arm": "B1_HRA",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+        "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+        "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+        "validation_metrics": {
+          "mrr": 0.5041360293933896,
+          "hits10": 0.6730038022813688,
+          "hits20": 0.908745247148289,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 7.32319391634981
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 32.06697960617021,
+        "wall_seconds": 32.28672569990158,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 24737,
+        "added_nhmc_parameters": 2,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/arms/B1_HRA/checkpoints/cora_uniform_seed0_889abe22ff4d.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "da4e5fa70fe5446c1c3f44b8ebb3fa5bc75af2a90eede32fce50eed52d9df8e6",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "B2_NATIVE_SCALAR": {
+        "state": "COMPLETE",
+        "dataset": "cora",
+        "arm": "B2_NATIVE_SCALAR",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+        "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+        "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+        "validation_metrics": {
+          "mrr": 0.5324511388354105,
+          "hits10": 0.7034220532319392,
+          "hits20": 0.9277566539923955,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 6.741444866920152
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 32.016378118656576,
+        "wall_seconds": 32.236238271929324,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 24737,
+        "added_nhmc_parameters": 2,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/arms/B2_NATIVE_SCALAR/checkpoints/cora_uniform_seed0_286835deae0b.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "9c28e9c768b138649bf52e6e7e083ddce53197b4ca4c11cc6a164d10dbb1e4ed",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "C1_NHMC_SIZE": {
+        "state": "COMPLETE",
+        "dataset": "cora",
+        "arm": "C1_NHMC_SIZE",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+        "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+        "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+        "validation_metrics": {
+          "mrr": 0.5907480169087133,
+          "hits10": 0.8745247148288974,
+          "hits20": 0.9695817490494296,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 4.186311787072244
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 31.875717987772077,
+        "wall_seconds": 32.262151641305536,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 24810,
+        "added_nhmc_parameters": 75,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/arms/C1_NHMC_SIZE/checkpoints/cora_uniform_seed0_25c42fbc5ee0.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "b4d8db1954fc670689cd9c3ce757367e3b8e2e2ff1a9107277ab292e1687d51b",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "C2_NHMC_SHUFFLE": {
+        "state": "COMPLETE",
+        "dataset": "cora",
+        "arm": "C2_NHMC_SHUFFLE",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+        "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+        "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+        "validation_metrics": {
+          "mrr": 0.5897273803842745,
+          "hits10": 0.8745247148288974,
+          "hits20": 0.9695817490494296,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 4.193916349809886
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 31.890146897174418,
+        "wall_seconds": 32.109511211980134,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 24810,
+        "added_nhmc_parameters": 75,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/arms/C2_NHMC_SHUFFLE/checkpoints/cora_uniform_seed0_3fa364d12890.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "86d79247303ca4920167a469c3dd1078fa3965a50d53aba1f8a27bd8bb329b7d",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "H1_NHMC_REAL": {
+        "state": "COMPLETE",
+        "dataset": "cora",
+        "arm": "H1_NHMC_REAL",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+        "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+        "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+        "validation_metrics": {
+          "mrr": 0.5935505534089685,
+          "hits10": 0.8745247148288974,
+          "hits20": 0.9695817490494296,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 4.178707224334601
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 31.958838543854654,
+        "wall_seconds": 32.180428941734135,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 24810,
+        "added_nhmc_parameters": 75,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/arms/H1_NHMC_REAL/checkpoints/cora_uniform_seed0_85f95b6fe32f.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "9851e03340010681b9d3e4973d8c39c695d33be436b3ac2c1d7ff5a9e686c64b",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      }
+    },
+    "mrr": {
+      "B0_BASELINE": 0.5039905633258703,
+      "B1_HRA": 0.5041360293933896,
+      "B2_NATIVE_SCALAR": 0.5324511388354105,
+      "C1_NHMC_SIZE": 0.5907480169087133,
+      "C2_NHMC_SHUFFLE": 0.5897273803842745,
+      "H1_NHMC_REAL": 0.5935505534089685
+    },
+    "deltas_h1_minus_controls": {
+      "B0_BASELINE": 0.08955999008309812,
+      "B1_HRA": 0.08941452401557881,
+      "B2_NATIVE_SCALAR": 0.06109941457355794,
+      "C1_NHMC_SIZE": 0.0028025365002551927,
+      "C2_NHMC_SHUFFLE": 0.0038231730246939266
+    },
+    "stage1_gate": {
+      "passed": true,
+      "thresholds": {
+        "H1-B0": 0.003,
+        "H1-B1": 0.002,
+        "H1-B2": 0.002,
+        "H1-C1": 0.002,
+        "H1-C2": 0.002
+      },
+      "shuffle_power_train": 0.4535427807486631,
+      "shuffle_power_validation": 0.09976462067716821
+    },
+    "parameter_budget": {
+      "baseline_trainable_parameters": 24735,
+      "per_arm": {
+        "B0_BASELINE": {
+          "added": 0,
+          "fraction_of_baseline": 0.0
+        },
+        "B1_HRA": {
+          "added": 2,
+          "fraction_of_baseline": 8.085708510208207E-05
+        },
+        "B2_NATIVE_SCALAR": {
+          "added": 2,
+          "fraction_of_baseline": 8.085708510208207E-05
+        },
+        "C1_NHMC_SIZE": {
+          "added": 75,
+          "fraction_of_baseline": 0.0030321406913280777
+        },
+        "C2_NHMC_SHUFFLE": {
+          "added": 75,
+          "fraction_of_baseline": 0.0030321406913280777
+        },
+        "H1_NHMC_REAL": {
+          "added": 75,
+          "fraction_of_baseline": 0.0030321406913280777
+        }
+      },
+      "max_allowed_fraction": 0.02,
+      "count_source": "loaded B0 checkpoint; added arm parameters from frozen NHMC module definitions"
+    },
+    "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+    "qths25_selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+    "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+    "qths25": {
+      "alpha_candidate_occurrence_fraction": 0.25,
+      "prepool_size": 2,
+      "trimmed_occurrence_count": 2244,
+      "trimmed_row_count": 2244,
+      "selected_runner_up_count": 2244,
+      "hash_rule": "QTHS25"
+    },
+    "graph_teacher": {
+      "source": "frozen_V6_1_graph_teacher_cache",
+      "score_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c",
+      "pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba"
+    },
+    "validation_candidate_sampling": {
+      "source": "uniform candidates filtered only by train/message edges",
+      "seed": 72200,
+      "grouping_seed": 72201,
+      "negative_count_per_positive": 20,
+      "shape": [
+        263,
+        20,
+        2
+      ],
+      "self_positive_collisions_replaced": 0,
+      "train_forbidden_count": 4488,
+      "heldout_test_identities_used": false
+    },
+    "train_cache": {
+      "pair_count_unique": 8976,
+      "token_count": 152664,
+      "stage0_raw_pair_cache_reused": 6080,
+      "fresh_pairs_computed": 2896,
+      "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+      "shuffle_overlap_sha256": "2c791aa408adc3d4f6d2b99e5daf32241e4362f30bfcb14de38f7680a3ec0f7a",
+      "shuffle": {
+        "seed": 20261018,
+        "stratum_count": 339,
+        "singleton_token_fraction": 3.2751663784520255E-05,
+        "informative_pair_count": 4071,
+        "candidate_pair_count": 8976,
+        "informative_shuffle_fraction": 0.4535427807486631,
+        "shuffle_power": "ADEQUATE"
+      },
+      "shuffle_seed": 20261018,
+      "pair_feature_archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d"
+    },
+    "validation_cache": {
+      "pair_count_unique": 5523,
+      "token_count": 12666,
+      "stage0_raw_pair_cache_reused": 0,
+      "fresh_pairs_computed": 5523,
+      "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+      "shuffle_overlap_sha256": "087a659e91967cdc4296fbf3b0ec48c8bba6a7c8f512691248d0df68e55e5379",
+      "shuffle": {
+        "seed": 20361018,
+        "stratum_count": 281,
+        "singleton_token_fraction": 0.0011842728564661299,
+        "informative_pair_count": 551,
+        "candidate_pair_count": 5523,
+        "informative_shuffle_fraction": 0.09976462067716821,
+        "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+      },
+      "shuffle_seed": 20361018,
+      "pair_feature_archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1"
+    },
+    "zero_init_audit": {
+      "base_initialization_identical": true,
+      "initial_logit_max_abs_difference": 0.0,
+      "zero_initialized_residual": true,
+      "max_abs_tolerance": 1E-07
+    },
+    "strict_train_only": true,
+    "heldout_positive_placeholder_reads": {
+      "valid_pos": 48,
+      "test_pos": 24
+    },
+    "wall_seconds": 206.61020004516467,
+    "source_hashes": {
+      "stage1_script": "d15aa844e83fe021d6c0c3808026ea62c949dffdf3d80109ef20b5fb99756d83",
+      "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+      "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+      "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+    },
+    "decision_origin": "RECONCILED_FROM_COMPLETED_ARM_CHECKPOINTS_AND_VALIDATION_METRICS",
+    "legacy_train_api_empty_placeholders": {
+      "placeholder_reads": {
+        "valid_pos": 48,
+        "test_pos": 24
+      },
+      "placeholder_values_exposed": false,
+      "test_identities_loaded": false,
+      "test_evaluated": false,
+      "explanation": "The legacy trainer reads empty TrainOnlyView sentinels while constructing an unused default forbidden set; the fixed train-only QTHS25 sampler and explicit validation evaluator provide the data used by the run."
+    },
+    "decision_reason": "All six frozen arms, the 2% parameter cap, and all Cora Stage1 validation gates passed."
+  },
+  "pubmed_stage1": {
+    "state": "COMPLETE",
+    "dataset": "pubmed",
+    "decision": "NHMC_STAGE1_REJECT",
+    "stage0_decision_is_diagnostic_only": true,
+    "validation_only": true,
+    "test_evaluated": false,
+    "arms": {
+      "B0_BASELINE": {
+        "state": "COMPLETE",
+        "dataset": "pubmed",
+        "arm": "B0_BASELINE",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+        "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+        "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+        "validation_metrics": {
+          "mrr": 0.826532217023497,
+          "hits10": 0.9887184115523465,
+          "hits20": 1.0,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 1.782490974729242
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 924.529017906636,
+        "wall_seconds": 926.7118881028146,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 9807,
+        "added_nhmc_parameters": 0,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/B0_BASELINE/checkpoints/pubmed_uniform_seed0_eccac5501401.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "01a4e459a930f951134b47b4c27b89728946759ec173526bc1010ab53cdd5c45",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "B1_HRA": {
+        "state": "COMPLETE",
+        "dataset": "pubmed",
+        "arm": "B1_HRA",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+        "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+        "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+        "validation_metrics": {
+          "mrr": 0.8261079287884936,
+          "hits10": 0.9882671480144405,
+          "hits20": 1.0,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 1.7874548736462095
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 923.7896692813374,
+        "wall_seconds": 925.9939231649041,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 9809,
+        "added_nhmc_parameters": 2,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/B1_HRA/checkpoints/pubmed_uniform_seed0_d2f3a1b87274.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "af99318c48ff17042571cb6e3992554fbdf5e0a2efb60c01de659887abb55e23",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "B2_NATIVE_SCALAR": {
+        "state": "COMPLETE",
+        "dataset": "pubmed",
+        "arm": "B2_NATIVE_SCALAR",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+        "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+        "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+        "validation_metrics": {
+          "mrr": 0.8322761296491786,
+          "hits10": 0.9873646209386282,
+          "hits20": 1.0,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 1.7495487364620939
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 924.3355010920204,
+        "wall_seconds": 926.7233238527551,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 9809,
+        "added_nhmc_parameters": 2,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/B2_NATIVE_SCALAR/checkpoints/pubmed_uniform_seed0_44693a71fec9.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "2b4ae942d7f3f7d04dd4005a6632ebbab19c0760148005bd10a4b8a557f91206",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "C1_NHMC_SIZE": {
+        "state": "COMPLETE",
+        "dataset": "pubmed",
+        "arm": "C1_NHMC_SIZE",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+        "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+        "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+        "validation_metrics": {
+          "mrr": 0.8370510027710929,
+          "hits10": 0.9864620938628159,
+          "hits20": 0.9995487364620939,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 1.773465703971119
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 806.6516197468154,
+        "wall_seconds": 809.0397208840586,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 9882,
+        "added_nhmc_parameters": 75,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/C1_NHMC_SIZE/checkpoints/pubmed_uniform_seed0_b4bcba4eacf7.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "e44ddefc13a21d1e1ada74a5372cb8f8a852e96a5f4b53e7d0577fa9957c20bb",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "C2_NHMC_SHUFFLE": {
+        "state": "COMPLETE",
+        "dataset": "pubmed",
+        "arm": "C2_NHMC_SHUFFLE",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+        "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+        "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+        "validation_metrics": {
+          "mrr": 0.8381079649071687,
+          "hits10": 0.9851083032490975,
+          "hits20": 1.0,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 1.7617328519855595
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 789.1601465060376,
+        "wall_seconds": 791.5675613679923,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 9882,
+        "added_nhmc_parameters": 75,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/C2_NHMC_SHUFFLE/checkpoints/pubmed_uniform_seed0_dddf4720a0a4.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "24848c366b4b03b40b24fa21b2c0ce4402b46a23676e47f87dadd7ce8176777c",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      },
+      "H1_NHMC_REAL": {
+        "state": "COMPLETE",
+        "dataset": "pubmed",
+        "arm": "H1_NHMC_REAL",
+        "seed": 0,
+        "epochs": 5,
+        "validation_only": true,
+        "test_evaluated": false,
+        "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+        "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+        "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+        "validation_metrics": {
+          "mrr": 0.8339445603908565,
+          "hits10": 0.9860108303249098,
+          "hits20": 0.9995487364620939,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 1.78971119133574
+        },
+        "validation_curve_epoch_mrr": [],
+        "train_seconds": 789.1100303162821,
+        "wall_seconds": 791.5056614107452,
+        "peak_gpu_mb": null,
+        "trainable_parameters": 9882,
+        "added_nhmc_parameters": 75,
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/H1_NHMC_REAL/checkpoints/pubmed_uniform_seed0_8698a253be0b.pt",
+        "checkpoint_sha256": null,
+        "model_state_hash": "70a381fbb16048ecd476a4ead2e5a9c6a3ca319baa0b569fbbec0de00acdd3b4",
+        "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+      }
+    },
+    "mrr": {
+      "B0_BASELINE": 0.826532217023497,
+      "B1_HRA": 0.8261079287884936,
+      "B2_NATIVE_SCALAR": 0.8322761296491786,
+      "C1_NHMC_SIZE": 0.8370510027710929,
+      "C2_NHMC_SHUFFLE": 0.8381079649071687,
+      "H1_NHMC_REAL": 0.8339445603908565
+    },
+    "deltas_h1_minus_controls": {
+      "B0_BASELINE": 0.00741234336735952,
+      "B1_HRA": 0.00783663160236292,
+      "B2_NATIVE_SCALAR": 0.0016684307416778843,
+      "C1_NHMC_SIZE": -0.003106442380236385,
+      "C2_NHMC_SHUFFLE": -0.004163404516312141
+    },
+    "stage1_gate": {
+      "passed": false,
+      "thresholds": {
+        "H1-B0": 0.003,
+        "H1-B1": 0.002,
+        "H1-B2": 0.002,
+        "H1-C1": 0.002,
+        "H1-C2": 0.002
+      },
+      "shuffle_power_train": 0.4396034610892876,
+      "shuffle_power_validation": 0.08873082047535136
+    },
+    "parameter_budget": {
+      "baseline_trainable_parameters": 9807,
+      "per_arm": {
+        "B1_HRA": {
+          "added": 2,
+          "fraction_of_baseline": 0.00020393596410727031
+        },
+        "B2_NATIVE_SCALAR": {
+          "added": 2,
+          "fraction_of_baseline": 0.00020393596410727031
+        },
+        "C1_NHMC_SIZE": {
+          "added": 75,
+          "fraction_of_baseline": 0.007647598654022637
+        },
+        "C2_NHMC_SHUFFLE": {
+          "added": 75,
+          "fraction_of_baseline": 0.007647598654022637
+        },
+        "H1_NHMC_REAL": {
+          "added": 75,
+          "fraction_of_baseline": 0.007647598654022637
+        }
+      },
+      "max_allowed_fraction": 0.02
+    },
+    "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+    "qths25_selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+    "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+    "qths25": {
+      "alpha_candidate_occurrence_fraction": 0.25,
+      "prepool_size": 2,
+      "trimmed_occurrence_count": 18838,
+      "trimmed_row_count": 18838,
+      "selected_runner_up_count": 18838,
+      "hash_rule": "QTHS25"
+    },
+    "graph_teacher": {
+      "state": "COMPLETE",
+      "dataset": "pubmed",
+      "seed": 0,
+      "epochs": 10,
+      "hypergraph_mode": "disabled",
+      "training_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+      "graph_teacher_score_hash": "4bb225e71468288d819708447794d82d285b1d1949289b8786923466fefe5b06",
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/pubmed/graph_teacher/checkpoints/pubmed_uniform_seed0_0e1391bc1fca.pt",
+      "train_seconds": 223.67736776173115,
+      "wall_seconds": 335.50470106489956,
+      "valid_or_test_labels_used_for_training_or_selection": false,
+      "test_evaluated": false,
+      "cache_reused": true
+    },
+    "validation_candidate_sampling": {
+      "source": "uniform candidates filtered only by train/message edges",
+      "seed": 72200,
+      "grouping_seed": 72201,
+      "negative_count_per_positive": 20,
+      "shape": [
+        2216,
+        20,
+        2
+      ],
+      "self_positive_collisions_replaced": 0,
+      "train_forbidden_count": 37676,
+      "heldout_test_identities_used": false
+    },
+    "train_cache": {
+      "pair_count_unique": 75352,
+      "token_count": 4957442,
+      "stage0_raw_pair_cache_reused": 50778,
+      "fresh_pairs_computed": 24574,
+      "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+      "shuffle_overlap_sha256": "b6ed11301a35dd0bce23239d6932ed17ee84c75a4a2de7fd7dd538e2aefa93b2",
+      "shuffle": {
+        "seed": 20261019,
+        "stratum_count": 592,
+        "singleton_token_fraction": 4.034338677083867E-07,
+        "informative_pair_count": 33125,
+        "candidate_pair_count": 75352,
+        "informative_shuffle_fraction": 0.4396034610892876,
+        "shuffle_power": "ADEQUATE"
+      },
+      "shuffle_seed": 20261019,
+      "pair_feature_archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91"
+    },
+    "validation_cache": {
+      "pair_count_unique": 46534,
+      "token_count": 323939,
+      "stage0_raw_pair_cache_reused": 0,
+      "fresh_pairs_computed": 46534,
+      "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+      "shuffle_overlap_sha256": "a1909217eea169e77f380ac2f7150b5441771977457efa4684954c4ced9e64e4",
+      "shuffle": {
+        "seed": 20361019,
+        "stratum_count": 500,
+        "singleton_token_fraction": 2.1609006633965037E-05,
+        "informative_pair_count": 4129,
+        "candidate_pair_count": 46534,
+        "informative_shuffle_fraction": 0.08873082047535136,
+        "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+      },
+      "shuffle_seed": 20361019,
+      "pair_feature_archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e"
+    },
+    "zero_init_audit": {
+      "base_initialization_identical": true,
+      "initial_logit_max_abs_difference": 1.1920928955078125E-07,
+      "zero_initialized_residual": true,
+      "initial_residual_output_max_abs": 0.0,
+      "max_abs_tolerance": 2E-07
+    },
+    "strict_train_only": true,
+    "heldout_positive_placeholder_reads": {
+      "valid_pos": 48,
+      "test_pos": 24
+    },
+    "legacy_train_api_empty_placeholders": {
+      "view_type": "TrainOnlyView",
+      "empty_placeholder_shape": [
+        0,
+        2
+      ],
+      "placeholder_values_exposed": false,
+      "all_positive_accessed": false,
+      "test_evaluated": false
+    },
+    "wall_seconds": 5353.040132790804,
+    "source_hashes": {
+      "stage1_script": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+      "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+      "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+      "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+    }
+  },
+  "citeseer_stage1": {
+    "state": "NOT_RUN",
+    "reason": "Not run: PubMed had token variation and the designated transfer screen completed; its Stage1 gate rejected NHMC."
+  },
+  "stage2": {
+    "state": "NOT_RUN",
+    "reason": "Not run because the PubMed transfer promotion gate failed."
+  },
+  "multi_seed": {
+    "state": "NOT_RUN",
+    "reason": "Not run because Stage 2 was not entered after the PubMed transfer rejection."
+  },
+  "test": {
+    "state": "OFF",
+    "evaluated": false
+  },
+  "runtime": {
+    "cora_stage1_wall_seconds": 206.61020004516467,
+    "cora_stage1_arm_training_seconds": 191.9372865157202,
+    "stage0_wall_seconds": {
+      "cora": 37.3240210423246,
+      "pubmed": 772.6387682133354,
+      "citeseer": 30.216919451020658
+    },
+    "stage0_child_cpu_seconds": {
+      "user": 163.61999999999998,
+      "system": 5.1
+    },
+    "max_concurrent_dataset_jobs": 3,
+    "stage0_worker_peak_not_measured": true
+  },
+  "current_interpretation": "Cora Stage1 passed; PubMed transfer Stage1 rejected. The evidence does not support cross-dataset promotion.",
+  "final_decision": "CORA_STAGE1_GO_PUBMED_TRANSFER_REJECT",
+  "remote_artifact_root": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16",
+  "local_artifact_root": "E:\\我的资料库\\Documents\\Downloads\\DCDLP-main\\HYPERGRAPH_RESEARCH\\NHMC_V16",
+  "decision_reason": "PubMed H1 failed the frozen gate against Native Scalar, SIZE, and SHUFFLE; no later-stage run was triggered.",
+  "last_updated_local": "2026-10-03 07:00:28 -07:00"
+}

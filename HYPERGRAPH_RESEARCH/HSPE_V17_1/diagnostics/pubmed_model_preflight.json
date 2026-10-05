@@ -1,0 +1,41 @@
+{
+  "baseline_parameters": 9807,
+  "arms": {
+    "C0_COUNT_LINEAR": {
+      "initial_baseline_weights_equal": true,
+      "initial_logit_max_difference": 5.960464477539063e-08,
+      "trainable_parameters": 9810,
+      "added_parameters": 3
+    },
+    "C1_COUNT_PARAM_MATCHED": {
+      "initial_baseline_weights_equal": true,
+      "initial_logit_max_difference": 8.940696716308594e-08,
+      "trainable_parameters": 9882,
+      "added_parameters": 75
+    },
+    "C2_CONSTANT_SET": {
+      "initial_baseline_weights_equal": true,
+      "initial_logit_max_difference": 5.960464477539063e-08,
+      "trainable_parameters": 9882,
+      "added_parameters": 75
+    },
+    "C3_GLOBAL_SIZE_SHUFFLE": {
+      "initial_baseline_weights_equal": true,
+      "initial_logit_max_difference": 5.960464477539063e-08,
+      "trainable_parameters": 9882,
+      "added_parameters": 75
+    },
+    "H1_HSPE_REAL": {
+      "initial_baseline_weights_equal": true,
+      "initial_logit_max_difference": 5.960464477539063e-08,
+      "trainable_parameters": 9882,
+      "added_parameters": 75
+    },
+    "H2_R_HSPE": {
+      "initial_baseline_weights_equal": true,
+      "initial_logit_max_difference": 1.1920928955078125e-07,
+      "trainable_parameters": 9882,
+      "added_parameters": 75
+    }
+  }
+}

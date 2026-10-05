@@ -1,0 +1,9 @@
+# Fairness audit
+
+Preflight must PASS before official jobs: frozen R-HSPE source equality, all frozen artifact hashes recorded, dataset train hashes, heldout disjointness, candidate arrays and archived NPZ hashes. Validation candidates checked against previously recorded parent validation hash. Frozen exact evaluator source hashed. No heldout edge enters sparse NCN message graph or NSLR dense train adjacency/hypergraph. Rejection samplers check only train edge complement; official NCN sampler sees only train edge_index. Labels used for disjointness audit are not made available to training sampler.
+
+All test scores have the same query/grouping/ties in original ranking_metrics; no custom metric implementation. Only data/evaluation/output/device/API compatibility wrappers. R-HSPE/B0 frozen previous checkpoints and test scores reused; no test-driven checkpoint reselection. Third-party NCN/NCNC checkpoint selection uses validation MRR, NSLR fixed final epoch. No tuning search. Same seed labels only descriptive differences, no strict paired RNG interpretation.
+
+Compare official recommended architecture/training settings; feature/input/training budget differences explicit. NSLR official random features and fixed negatives differ from attributed GNN and QTHS25, while permitted information and evaluation match. Candidate20 metrics saturate Hits@20; they do not imply performance with all-node or1000-negative ranking. Citeseer R-HSPE/B0 n3 vs third-party n5 disclosed. Rankings are not universal SOTA.
+
+Failures remain error.json/logs, never replaced with synthetic metrics or silently simplified models. Failure leads PARTIAL and paper readiness NO. Frozen-file immutability reasserted during final aggregation. Final reports automatically expose every primary and secondary metric, including PubMed Hits declines. Full implementation and environment inventories saved with hashes.

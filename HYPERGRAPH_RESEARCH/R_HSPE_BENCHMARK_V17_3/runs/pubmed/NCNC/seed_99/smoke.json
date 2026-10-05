@@ -1,0 +1,12 @@
+{
+  "state": "PASS",
+  "parameters": 591364,
+  "validation": {
+    "mrr": 0.7317780976794966,
+    "hits10": 0.9941335740072202,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 2.115974729241877
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "state": "COMPLETE",
+  "phase": "third",
+  "dataset": "citeseer",
+  "seed": 2,
+  "arm": "C1",
+  "method": "NCNC + R-HSPE",
+  "epochs": 10,
+  "validation": {
+    "mrr": 0.8462639783124365,
+    "hits10": 0.9955947136563876,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 1.5066079295154184
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.4398821473121644,
+      "validation": {
+        "mrr": 0.7506436491788574,
+        "hits10": 0.947136563876652,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 2.7709251101321586
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0298689782619477,
+      "validation": {
+        "mrr": 0.7968717222571847,
+        "hits10": 0.9955947136563876,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.7797356828193833
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.8408071637153626,
+      "validation": {
+        "mrr": 0.812567302985805,
+        "hits10": 1.0,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.5726872246696035
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 0.7881190717220307,
+      "validation": {
+        "mrr": 0.8001206209355988,
+        "hits10": 1.0,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.6167400881057268
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 0.7362670779228211,
+      "validation": {
+        "mrr": 0.8101741136983428,
+        "hits10": 1.0,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.550660792951542
+      }
+    },
+    {
+      "epoch": 6,
+      "loss": 0.7086711704730988,
+      "validation": {
+        "mrr": 0.8368575624082231,
+        "hits10": 1.0,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.4845814977973568
+      }
+    },
+    {
+      "epoch": 7,
+      "loss": 0.6929387807846069,
+      "validation": {
+        "mrr": 0.8271047479197259,
+        "hits10": 1.0,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.550660792951542
+      }
+    },
+    {
+      "epoch": 8,
+      "loss": 0.6448578000068664,
+      "validation": {
+        "mrr": 0.8492432188467429,
+        "hits10": 0.9955947136563876,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.502202643171806
+      }
+    },
+    {
+      "epoch": 9,
+      "loss": 0.6620827913284302,
+      "validation": {
+        "mrr": 0.8521258843946069,
+        "hits10": 0.9911894273127754,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.5110132158590308
+      }
+    },
+    {
+      "epoch": 10,
+      "loss": 0.6440042614936828,
+      "validation": {
+        "mrr": 0.8462639783124365,
+        "hits10": 0.9955947136563876,
+        "hits20": 1.0,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 1.5066079295154184
+      }
+    }
+  ],
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/third/citeseer/seed_2/C1/final.pt",
+  "checkpoint_sha256": "218e49bf0c315ddbc0c7e96aa093fa910433ed886a60c4fcaef90f042abc2995",
+  "base_initial_state_sha256": "48b96d1d6d25905d8dbd9da492402c74f4e8008f6b000fb71ff96ae5c0e3751c",
+  "rng_and_sample_trace": [
+    {
+      "epoch": 1,
+      "negative_hash": "b669a5ca12d558ab0ed48d257a23cb8d672d93edff75779fd5b017e6bb11dc1c",
+      "permutation_hash": "978fb5cfd8e841b8ca1aed5cd6fa50459eed4d381378e88dd5b85389474816bb",
+      "torch_cuda_rng_sha256": "865869dce0c9cf3d0792feb33560fc844fce063b84de7e9ed2e628a27c52252b"
+    },
+    {
+      "epoch": 2,
+      "negative_hash": "da7978aa265ecef8ed5273eed962a379699e463f76cb582249d414c88267bc32",
+      "permutation_hash": "03ab61ff644e0d734ce9e103ec7b25d75f52c65f6494bb412c8267990e19544b",
+      "torch_cuda_rng_sha256": "8e9c48e4907251d34621ce3ac34dde16e0ee7850077dbefd747b1614d560d978"
+    },
+    {
+      "epoch": 3,
+      "negative_hash": "6bf14898018029f59ec526d55ea25989b8c304683ef859003d1daa693351b2f0",
+      "permutation_hash": "c0299fa8e6806e9834e4d36ba7bb6a900887933d3fd320135eb8e295994216db",
+      "torch_cuda_rng_sha256": "0f38075222ca1f8e18634ead6721d4d404734c1680e4b78489a255d598a74b98"
+    },
+    {
+      "epoch": 4,
+      "negative_hash": "8c7c0b376ae3073d33a654e47ee7d56c6ae66e9eacc6825487a75a2a671c661f",
+      "permutation_hash": "d159904cadf9ac704efd48687b11928dc430fdf85540dcd9bd48e4ba5a14b525",
+      "torch_cuda_rng_sha256": "3af2b2fbef1aad6a4c4c2239b5d2283d5a7ffb581144caac3253537daa7751f0"
+    },
+    {
+      "epoch": 5,
+      "negative_hash": "6d8a84fa7426bacfb8b253072180b3deccc4717f45cf0439a72fab4afe35ba00",
+      "permutation_hash": "4743507621f7e2320ef1f5ac0f5cbee1c9540df74cff312cb66812e6b71c4324",
+      "torch_cuda_rng_sha256": "0b827d9ac23894daf7566e25a3eed61ef5780a0e369ea1d6bce7e8e91cb5cc66"
+    },
+    {
+      "epoch": 6,
+      "negative_hash": "296aa68560f0b627c26229437155fcdf9d77fb00a908e2d77d7b79b06f26cfba",
+      "permutation_hash": "c9b1538cc18dd99921e4612b8c662914dfbf013bc1424e5ea7360cbc6fcf9e45",
+      "torch_cuda_rng_sha256": "32063f1f7ee8c6c5359589245dae9f2da72445eeb30e4a825627a24078c57665"
+    },
+    {
+      "epoch": 7,
+      "negative_hash": "e1fc888316197414e8840b1ec711618b1955b4cabe0ca6841f7c0ec264906595",
+      "permutation_hash": "6cc16226cb52e2405001b448818596be07a1ae09ccb6a6aaad1eab67c41640f7",
+      "torch_cuda_rng_sha256": "e4dfe21a38242d94492f0929b0007ce13d52cde2e0bbd250bb1491585c25086c"
+    },
+    {
+      "epoch": 8,
+      "negative_hash": "5fe1c918a26710c874d86c8a26026bc7615242f161587fc3d0a044dcce6de2f0",
+      "permutation_hash": "967ae3c6a3487d4ecdfc33d80ddd5e3753a1ce6d7c4a9ef1c6b130c1fcb1a6bd",
+      "torch_cuda_rng_sha256": "513e550625286d2769f7d8301fe658be17eed8e54288781fcfd21993e4f968c0"
+    },
+    {
+      "epoch": 9,
+      "negative_hash": "c3c2828464d96b93c0bce51efd7ed109b509f7124d9b61e0f8534aafc58b8b6f",
+      "permutation_hash": "837a25c5c5ead85d38c18b6893cfa0994e3336a16a0e5c1925853842ccb29c63",
+      "torch_cuda_rng_sha256": "c19dc7aa6fe7caf0393054b1b6261f20f8a82d84bf2d3716674f2a2b50d80ba8"
+    },
+    {
+      "epoch": 10,
+      "negative_hash": "a30b2d8bb536351aee82ebad5db17d8b42dd03c1fae956097805ea194eb0f1bf",
+      "permutation_hash": "64b2c67db2eaccb126df6a96d88dc926e5472b063990f4781efc183705562042",
+      "torch_cuda_rng_sha256": "5b5ebf30ac6d7cff8b0cf646fb542accb62d45630e106efe43c035b363fec308"
+    }
+  ],
+  "train_seconds": 4.961814847309142,
+  "validation_seconds": 1.7110371980816126,
+  "wall_seconds": 6.712852125056088,
+  "parameters": 1477711,
+  "base_parameters": 1477636,
+  "added_parameters": 75,
+  "percentage_overhead": 0.00507567492941428,
+  "peak_gpu_mb": 216.42919921875,
+  "selection": "fixed final epoch, as V17.4 final integration requirement",
+  "test_accessed": false,
+  "sources": {
+    "frozen": {
+      "v171": "b4b477d86ceb55f62cefb02ea1a652085b725ca92793707a29586976016970fc",
+      "v17": "da20e41442f8e7b0b12d29515ba2a3df71a2a0a7327a51ea2b1170901e2e28bf",
+      "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+      "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+      "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+      "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+      "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+      "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+      "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+    },
+    "backbone_adapter": "0a89c2028b6f374936c014cd681be58af5ba82af97db461fd360edf1dad5c770",
+    "integration_adapter": "b0c47242f77ba3156d6267a1503d6adc0ec323000b4c7f69f8e46fcfc9f901f2"
+  },
+  "config": {
+    "xdp": 0.4,
+    "tdp": 0.0,
+    "pt": 0.75,
+    "preedp": 0.0,
+    "predp": 0.55,
+    "gnndp": 0.75,
+    "scale": 6.5,
+    "offset": 4.4,
+    "alpha": 0.4,
+    "gnnlr": 0.0085,
+    "prelr": 0.0078,
+    "batch": 384,
+    "twolayerlin": true,
+    "epochs": 10,
+    "backbone_hidden": 256,
+    "residual_encoder": 6,
+    "residual_hidden": 8,
+    "residual_head": 18,
+    "optimizer": "same two-group Adam; residual in predictor LR group",
+    "negative_sampler": "unchanged official sampler, checked against deterministic cache"
+  }
+}

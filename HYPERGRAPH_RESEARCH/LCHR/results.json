@@ -1,0 +1,655 @@
+{
+  "status": "EXECUTED",
+  "candidate": "LCHR - Link-Conditioned Hyperedge Routing",
+  "server": {
+    "host": "ubuntu-ProLiant-DL380-Gen9",
+    "gpu": "Tesla V100-PCIE-16GB",
+    "environment": "mei_env / Python 3.11 / PyTorch 2.8.0+cu128",
+    "state": "complete"
+  },
+  "dataset": "Cora standard, seed 0, 1 pretraining epoch, 0 disentanglement epochs, 20 uniform evaluation negatives per positive",
+  "top_k": 8,
+  "baselines": {
+    "B0": {
+      "mode": "disabled",
+      "seed": 0,
+      "validation": {
+        "mrr": 0.14393200468477987,
+        "hits10": 0.2623574144486692,
+        "hits20": 0.7452471482889734,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 14.403041825095057,
+        "auc": 0.33107027714727694,
+        "ap": 0.03842588643785966,
+        "groups": {
+          "HH": {
+            "mrr": 0.08461501886977339,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.09625113605468903,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.09774271494472732,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.26135487876543945,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.1349909371586573,
+        "worst_group_mrr": 0.08461501886977339,
+        "group_gap": 0.17673985989566604
+      },
+      "test": {
+        "mrr": 0.1362093406111183,
+        "hits10": 0.2884250474383302,
+        "hits20": 0.7438330170777988,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 14.233396584440227,
+        "auc": 0.33887422631414077,
+        "ap": 0.036868623907509154,
+        "groups": {
+          "HH": {
+            "mrr": 0.07490506684823359,
+            "count": 175
+          },
+          "HL": {
+            "mrr": 0.0899381035524562,
+            "count": 117
+          },
+          "LH": {
+            "mrr": 0.11813842413277852,
+            "count": 85
+          },
+          "LL": {
+            "mrr": 0.25406274424463277,
+            "count": 150
+          }
+        },
+        "macro_mrr": 0.13426108469452527,
+        "worst_group_mrr": 0.07490506684823359,
+        "group_gap": 0.17915767739639918
+      },
+      "parameters": 24478,
+      "runtime_seconds": 4.3263015556149185,
+      "peak_gpu_memory_mb": 45.58056640625,
+      "config": {
+        "argv": [
+          "/home/ubuntu/anaconda3/envs/mei_env/bin/python",
+          "-m",
+          "dcdlp.cli",
+          "train",
+          "--dataset",
+          "cora",
+          "--data-root",
+          "/home/ubuntu/lchr_stage1/data",
+          "--protocol",
+          "standard",
+          "--protocol-train",
+          "uniform",
+          "--seed",
+          "0",
+          "--ablation",
+          "A5",
+          "--pretrain-epochs",
+          "1",
+          "--disentangle-epochs",
+          "0",
+          "--hidden-dim",
+          "16",
+          "--branch-dim",
+          "8",
+          "--num-layers",
+          "2",
+          "--dropout",
+          "0",
+          "--batch-size",
+          "4096",
+          "--device",
+          "cuda",
+          "--output-dir",
+          "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B0",
+          "--hypergraph-mode",
+          "disabled",
+          "negatives_per_positive_eval=20"
+        ],
+        "topk": 8
+      },
+      "config_hash": "0845f4c2636f",
+      "git_commit": "untracked",
+      "checkpoint": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B0/checkpoints/cora_uniform_seed0_0845f4c2636f.pt",
+      "remote_metrics_file": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B0/metrics.json"
+    },
+    "B1": {
+      "mode": "raw",
+      "seed": 0,
+      "validation": {
+        "mrr": 0.16279348007164107,
+        "hits10": 0.39923954372623577,
+        "hits20": 0.8250950570342205,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 12.627376425855513,
+        "auc": 0.41514334456187024,
+        "ap": 0.043888043833660836,
+        "groups": {
+          "HH": {
+            "mrr": 0.12597620443655988,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.10789438275616955,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.1319593580899419,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.25647997980012655,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.15557748127069948,
+        "worst_group_mrr": 0.10789438275616955,
+        "group_gap": 0.148585597043957
+      },
+      "test": {
+        "mrr": 0.1580693196743067,
+        "hits10": 0.3757115749525617,
+        "hits20": 0.8064516129032258,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 12.971537001897532,
+        "auc": 0.40727615769329095,
+        "ap": 0.04255520141284063,
+        "groups": {
+          "HH": {
+            "mrr": 0.11258791996739806,
+            "count": 175
+          },
+          "HL": {
+            "mrr": 0.1173603075821858,
+            "count": 117
+          },
+          "LH": {
+            "mrr": 0.18920350648360118,
+            "count": 85
+          },
+          "LL": {
+            "mrr": 0.22524127623895424,
+            "count": 150
+          }
+        },
+        "macro_mrr": 0.16109825256803484,
+        "worst_group_mrr": 0.11258791996739806,
+        "group_gap": 0.11265335627155618
+      },
+      "parameters": 24734,
+      "runtime_seconds": 6.974651963915676,
+      "peak_gpu_memory_mb": 45.58447265625,
+      "config": {
+        "argv": [
+          "/home/ubuntu/anaconda3/envs/mei_env/bin/python",
+          "-m",
+          "dcdlp.cli",
+          "train",
+          "--dataset",
+          "cora",
+          "--data-root",
+          "/home/ubuntu/lchr_stage1/data",
+          "--protocol",
+          "standard",
+          "--protocol-train",
+          "uniform",
+          "--seed",
+          "0",
+          "--ablation",
+          "A5",
+          "--pretrain-epochs",
+          "1",
+          "--disentangle-epochs",
+          "0",
+          "--hidden-dim",
+          "16",
+          "--branch-dim",
+          "8",
+          "--num-layers",
+          "2",
+          "--dropout",
+          "0",
+          "--batch-size",
+          "4096",
+          "--device",
+          "cuda",
+          "--output-dir",
+          "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B1",
+          "--hypergraph-mode",
+          "raw",
+          "negatives_per_positive_eval=20"
+        ],
+        "topk": 8
+      },
+      "config_hash": "02bfecc86e14",
+      "git_commit": "untracked",
+      "checkpoint": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B1/checkpoints/cora_uniform_seed0_02bfecc86e14.pt",
+      "remote_metrics_file": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B1/metrics.json"
+    },
+    "B2": {
+      "mode": "random_topk",
+      "seed": 0,
+      "validation": {
+        "mrr": 0.13236746906684166,
+        "hits10": 0.22813688212927757,
+        "hits20": 0.6692015209125475,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 15.490494296577946,
+        "auc": 0.2762610417961804,
+        "ap": 0.03551408024836487,
+        "groups": {
+          "HH": {
+            "mrr": 0.05961329507879706,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.09558410510975744,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.07476356939536948,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.2600068161357004,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.1224919464299061,
+        "worst_group_mrr": 0.05961329507879706,
+        "group_gap": 0.20039352105690336
+      },
+      "test": {
+        "mrr": 0.12694609320407546,
+        "hits10": 0.2637571157495256,
+        "hits20": 0.6584440227703985,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 15.223908918406073,
+        "auc": 0.28893237652531784,
+        "ap": 0.03443480819261869,
+        "groups": {
+          "HH": {
+            "mrr": 0.058234600305586595,
+            "count": 175
+          },
+          "HL": {
+            "mrr": 0.08664612049941892,
+            "count": 117
+          },
+          "LH": {
+            "mrr": 0.09169171982229712,
+            "count": 85
+          },
+          "LL": {
+            "mrr": 0.2585209585449524,
+            "count": 150
+          }
+        },
+        "macro_mrr": 0.12377334979306376,
+        "worst_group_mrr": 0.058234600305586595,
+        "group_gap": 0.2002863582393658
+      },
+      "parameters": 26000,
+      "runtime_seconds": 18.341885697096586,
+      "peak_gpu_memory_mb": 62.03857421875,
+      "config": {
+        "argv": [
+          "/home/ubuntu/anaconda3/envs/mei_env/bin/python",
+          "-m",
+          "dcdlp.cli",
+          "train",
+          "--dataset",
+          "cora",
+          "--data-root",
+          "/home/ubuntu/lchr_stage1/data",
+          "--protocol",
+          "standard",
+          "--protocol-train",
+          "uniform",
+          "--seed",
+          "0",
+          "--ablation",
+          "A5",
+          "--pretrain-epochs",
+          "1",
+          "--disentangle-epochs",
+          "0",
+          "--hidden-dim",
+          "16",
+          "--branch-dim",
+          "8",
+          "--num-layers",
+          "2",
+          "--dropout",
+          "0",
+          "--batch-size",
+          "4096",
+          "--device",
+          "cuda",
+          "--output-dir",
+          "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B2",
+          "--hypergraph-mode",
+          "random_topk",
+          "negatives_per_positive_eval=20"
+        ],
+        "topk": 8
+      },
+      "config_hash": "497b8e87350e",
+      "git_commit": "untracked",
+      "checkpoint": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B2/checkpoints/cora_uniform_seed0_497b8e87350e.pt",
+      "remote_metrics_file": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B2/metrics.json"
+    },
+    "B3": {
+      "mode": "global_router",
+      "seed": 0,
+      "validation": {
+        "mrr": 0.13182976549231595,
+        "hits10": 0.22813688212927757,
+        "hits20": 0.6692015209125475,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 15.513307984790874,
+        "auc": 0.27568310948546315,
+        "ap": 0.03548004566606258,
+        "groups": {
+          "HH": {
+            "mrr": 0.05964747142876289,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.09362915158838789,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.0748331878860406,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.2597128713973113,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.12195567057512567,
+        "worst_group_mrr": 0.05964747142876289,
+        "group_gap": 0.2000653999685484
+      },
+      "test": {
+        "mrr": 0.12697124989431757,
+        "hits10": 0.2656546489563567,
+        "hits20": 0.6584440227703985,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 15.214421252371917,
+        "auc": 0.2887516247853123,
+        "ap": 0.034429862595217964,
+        "groups": {
+          "HH": {
+            "mrr": 0.058175569111217046,
+            "count": 175
+          },
+          "HL": {
+            "mrr": 0.08645557030886873,
+            "count": 117
+          },
+          "LH": {
+            "mrr": 0.09178399202529597,
+            "count": 85
+          },
+          "LL": {
+            "mrr": 0.2587745536770304,
+            "count": 150
+          }
+        },
+        "macro_mrr": 0.12379742128060303,
+        "worst_group_mrr": 0.058175569111217046,
+        "group_gap": 0.20059898456581335
+      },
+      "parameters": 26000,
+      "runtime_seconds": 26.48193345963955,
+      "peak_gpu_memory_mb": 65.181640625,
+      "config": {
+        "argv": [
+          "/home/ubuntu/anaconda3/envs/mei_env/bin/python",
+          "-m",
+          "dcdlp.cli",
+          "train",
+          "--dataset",
+          "cora",
+          "--data-root",
+          "/home/ubuntu/lchr_stage1/data",
+          "--protocol",
+          "standard",
+          "--protocol-train",
+          "uniform",
+          "--seed",
+          "0",
+          "--ablation",
+          "A5",
+          "--pretrain-epochs",
+          "1",
+          "--disentangle-epochs",
+          "0",
+          "--hidden-dim",
+          "16",
+          "--branch-dim",
+          "8",
+          "--num-layers",
+          "2",
+          "--dropout",
+          "0",
+          "--batch-size",
+          "4096",
+          "--device",
+          "cuda",
+          "--output-dir",
+          "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B3",
+          "--hypergraph-mode",
+          "global_router",
+          "negatives_per_positive_eval=20"
+        ],
+        "topk": 8
+      },
+      "config_hash": "9b7297a10ff9",
+      "git_commit": "untracked",
+      "checkpoint": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B3/checkpoints/cora_uniform_seed0_9b7297a10ff9.pt",
+      "remote_metrics_file": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B3/metrics.json"
+    },
+    "B4": {
+      "mode": "lchr",
+      "seed": 0,
+      "validation": {
+        "mrr": 0.13169626946422436,
+        "hits10": 0.22433460076045628,
+        "hits20": 0.6615969581749049,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 15.532319391634982,
+        "auc": 0.2758472003354103,
+        "ap": 0.03548831694581807,
+        "groups": {
+          "HH": {
+            "mrr": 0.05951780233624549,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.09355434474666376,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.07477235547226702,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.25949241284351937,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.1218342288496739,
+        "worst_group_mrr": 0.05951780233624549,
+        "group_gap": 0.1999746105072739
+      },
+      "test": {
+        "mrr": 0.1268423200971917,
+        "hits10": 0.2637571157495256,
+        "hits20": 0.6584440227703985,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 15.223908918406073,
+        "auc": 0.28900249883879614,
+        "ap": 0.03431138258357911,
+        "groups": {
+          "HH": {
+            "mrr": 0.05828124646987982,
+            "count": 175
+          },
+          "HL": {
+            "mrr": 0.08629515031436125,
+            "count": 117
+          },
+          "LH": {
+            "mrr": 0.0913976021752383,
+            "count": 85
+          },
+          "LL": {
+            "mrr": 0.2585423719154369,
+            "count": 150
+          }
+        },
+        "macro_mrr": 0.12362909271872906,
+        "worst_group_mrr": 0.05828124646987982,
+        "group_gap": 0.20026112544555708
+      },
+      "parameters": 26000,
+      "runtime_seconds": 31.68717150297016,
+      "peak_gpu_memory_mb": 67.0849609375,
+      "config": {
+        "argv": [
+          "/home/ubuntu/anaconda3/envs/mei_env/bin/python",
+          "-m",
+          "dcdlp.cli",
+          "train",
+          "--dataset",
+          "cora",
+          "--data-root",
+          "/home/ubuntu/lchr_stage1/data",
+          "--protocol",
+          "standard",
+          "--protocol-train",
+          "uniform",
+          "--seed",
+          "0",
+          "--ablation",
+          "A5",
+          "--pretrain-epochs",
+          "1",
+          "--disentangle-epochs",
+          "0",
+          "--hidden-dim",
+          "16",
+          "--branch-dim",
+          "8",
+          "--num-layers",
+          "2",
+          "--dropout",
+          "0",
+          "--batch-size",
+          "4096",
+          "--device",
+          "cuda",
+          "--output-dir",
+          "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B4",
+          "--hypergraph-mode",
+          "lchr",
+          "negatives_per_positive_eval=20"
+        ],
+        "topk": 8
+      },
+      "config_hash": "467c866b38f7",
+      "git_commit": "untracked",
+      "checkpoint": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B4/checkpoints/cora_uniform_seed0_467c866b38f7.pt",
+      "remote_metrics_file": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B4/metrics.json"
+    }
+  },
+  "decision": "REJECT",
+  "targeted_revision": "none",
+  "mechanism_analysis": {
+    "validation_entropy_bins": {
+      "B1": [
+        {
+          "n": 88,
+          "mrr": 0.2627247482792093
+        },
+        {
+          "n": 88,
+          "mrr": 0.1192831631263942
+        },
+        {
+          "n": 87,
+          "mrr": 0.10572401212814367
+        }
+      ],
+      "B3": [
+        {
+          "n": 88,
+          "mrr": 0.22801571566743603
+        },
+        {
+          "n": 88,
+          "mrr": 0.10184778237172341
+        },
+        {
+          "n": 87,
+          "mrr": 0.06486483329923064
+        }
+      ],
+      "B4": [
+        {
+          "n": 88,
+          "mrr": 0.22778375993748565
+        },
+        {
+          "n": 88,
+          "mrr": 0.10188100937863463
+        },
+        {
+          "n": 87,
+          "mrr": 0.06466228930198184
+        }
+      ]
+    },
+    "candidate_count_including_negatives": 5523,
+    "average_pool_size": 9.068078942603657,
+    "empty_pool_fraction": 0.0007242440702516748,
+    "average_entropy": 1.8778072526742857,
+    "average_top1_weight": 0.16342155992574672,
+    "positive_entropy_cut_points": [
+      1.9458051125208538,
+      2.0794073740641275
+    ],
+    "mean_pairwise_router_cosine_similarity_positive_candidates": 0.006447098565580935,
+    "router_similarity_pair_count": 34453,
+    "seed": 0,
+    "validation_negative_seed": 777
+  },
+  "comparisons": {
+    "B1": -0.031097210607416714,
+    "B2": -0.0006711996026173006,
+    "B3": -0.00013349602809159533
+  }
+}

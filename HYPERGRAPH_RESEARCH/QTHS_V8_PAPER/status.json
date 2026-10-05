@@ -1,0 +1,34 @@
+{
+  "state": "COMPLETE",
+  "phase": "complete",
+  "error": null,
+  "experiment": "V8 QTHS Paperization & Backbone Generalization",
+  "resource_profile": {
+    "gpu": "Tesla V100-PCIE-16GB",
+    "cpu_count": 40,
+    "workers": 6
+  },
+  "updated_at": "2026-10-02T18:12:53+0800",
+  "total": 8,
+  "completed": 8,
+  "completed_tasks": [
+    "five_seed_cora_gcn_graph_hard_s3",
+    "five_seed_pubmed_gcn_graph_hard_s3",
+    "five_seed_cora_gcn_graph_hard_s4",
+    "five_seed_pubmed_gcn_graph_hard_s4",
+    "five_seed_cora_gcn_qths25_s3",
+    "five_seed_pubmed_gcn_qths25_s3",
+    "five_seed_cora_gcn_qths25_s4",
+    "five_seed_pubmed_gcn_qths25_s4"
+  ],
+  "failures": [],
+  "max_workers": 6,
+  "active_tasks": [],
+  "validation_tasks_complete": 39,
+  "current": null,
+  "final_decision": "PAPERIZE_QTHS",
+  "pubmed_supported": true,
+  "backbone_generalization": "YES",
+  "test_evaluated": true,
+  "source_code_sha256": "9a11ab967df76a0d49f5824c20e81545da1b7166b30a05df0aec2f140bca88fa"
+}

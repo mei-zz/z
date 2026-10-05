@@ -1,0 +1,81 @@
+{
+  "candidate_metadata": {
+    "split": "validation only",
+    "positive_count": 263,
+    "negative_count_per_positive": 20,
+    "candidate_count_total": 5523,
+    "negative_source": "uniform_negative_sampling + grouped_negatives; same as standard evaluate_split",
+    "pool_seed": 777,
+    "grouping_seed": 778,
+    "positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+    "negative_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+    "grouped_candidate_hash": "197912d7397d8d8e118e2c985ff2a7948810c8b96ab5bed91e49c598aa481d48",
+    "test_scoring": false
+  },
+  "validation_mrr": {
+    "graph_only": 0.49605565734757956,
+    "raw_hypergraph": 0.5030120048647342
+  },
+  "graph_only_best_epoch": 5,
+  "raw_hypergraph_best_epoch": 10,
+  "paired_reciprocal_rank_delta_hg_minus_graph": {
+    "hypergraph_wins": 88,
+    "hypergraph_win_percent": 33.460076045627375,
+    "graph_wins": 51,
+    "graph_win_percent": 19.39163498098859,
+    "ties": 124,
+    "tie_percent": 47.148288973384034,
+    "mean_delta_rr": 0.006956347517154592,
+    "median_delta_rr": 0.0
+  },
+  "score_correlations_over_all_aligned_validation_candidates": {
+    "pearson": 0.8490654504159361,
+    "spearman": 0.7489108795270814,
+    "candidate_count": 5523
+  },
+  "positive_rank_correlations": {
+    "pearson": 0.8279165449156052,
+    "spearman": 0.8851827942727791
+  },
+  "graph_hardest_negative_margin_vs_delta_rr": {
+    "pearson": -0.05990541548602257,
+    "spearman": -0.24577111103337188,
+    "mean_hardest_negative_margin": -0.014769867519377075,
+    "mean_margin_vs_all_negatives": 0.09587662765674802
+  },
+  "graph_margin_tertiles": {
+    "Hard": {
+      "count": 88,
+      "graph_margin_min": -0.48448193073272705,
+      "graph_margin_max": -0.0926622524857521,
+      "graph_mrr": 0.08880900543931786,
+      "raw_hypergraph_mrr": 0.10795761251406127,
+      "delta_mrr": 0.019148607074743442
+    },
+    "Medium": {
+      "count": 88,
+      "graph_margin_min": -0.09253287315368652,
+      "graph_margin_max": 0.07474442943930626,
+      "graph_mrr": 0.4050846068608347,
+      "raw_hypergraph_mrr": 0.406725992933951,
+      "delta_mrr": 0.0016413860731162994
+    },
+    "Easy": {
+      "count": 87,
+      "graph_margin_min": 0.07866499572992325,
+      "graph_margin_max": 0.34904469549655914,
+      "graph_mrr": 1.0,
+      "raw_hypergraph_mrr": 1.0,
+      "delta_mrr": 0.0
+    }
+  },
+  "oracle": {
+    "oracle_mrr": 0.5316997510475362,
+    "best_single_mrr": 0.5030120048647342,
+    "best_single_branch": "Raw-HG",
+    "oracle_gain_over_best_single": 0.02868774618280201,
+    "strong_complementarity_threshold_0_01": true,
+    "continue_threshold_0_003": true
+  },
+  "test_evaluated": false
+}

@@ -1,0 +1,197 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "mode": "formal",
+  "dataset": "ogbl-collab_CN_2_1_0_seed1",
+  "seed": 3,
+  "config": {
+    "hidden_dim": 64,
+    "branch_dim": 32,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "backbone": "gcn",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 262144,
+    "epochs": 4,
+    "train_negative_protocol": "uniform_non_message_edges",
+    "target_masking": true,
+    "selection_metric": "validation_mrr",
+    "test_used_for_selection": false
+  },
+  "adapter_summary": {
+    "dataset_name": "ogbl-collab_CN_2_1_0_seed1",
+    "num_nodes": 235868,
+    "feature_shape": [
+      235868,
+      128
+    ],
+    "message_edge_index_shape": [
+      2,
+      1733096
+    ],
+    "message_edge_index_hash": "9f7c3d699b039c5ce37c1c50aa53abfa464df6c897b18c8b79f5d3ad8b101eee",
+    "train_pos_shape": [
+      1697336,
+      2
+    ],
+    "valid_pos_shape": [
+      23669,
+      2
+    ],
+    "test_pos_shape": [
+      9048,
+      2
+    ],
+    "valid_neg_shape": [
+      23669,
+      250,
+      2
+    ],
+    "test_neg_shape": [
+      9048,
+      250,
+      2
+    ],
+    "train_pos_hash": "5db0173da159b5e79b4a641786b127644d64bb2593b273e11e76b29521e49a4a",
+    "valid_pos_hash": "6c16deb8c6b39dd25f93b76798bcebd62704015c1e5729cd4102fc7371ca35c3",
+    "test_pos_hash": "8f8c0805601d73ee91da361d1c6e695d4a3bc74602c46ffa2886f6004d98bf3a",
+    "valid_neg_hash": "24ee3173d984974fd9c9fef4cb133a0e04722b6f8f28415b4fd7c2dafbf0f51d",
+    "test_neg_hash": "10bd6bd21860ffd4a9b3c525205bfc6919be607e7b3534e1b8d135f575d313d4",
+    "valid_neg_file_hash": "e6f350a6f951621ebe6037317f0fb94afa6ce90359277ec05a2250c91df4c544",
+    "test_neg_file_hash": "a9e97e35b6cd5e13532d6dbe115d6cad5cdb5ff9e39f89d985c4a9e61691e1df"
+  },
+  "best_epoch": 3,
+  "validation": {
+    "mrr": 0.5257985265799776,
+    "hits10": 0.7506443026743842,
+    "hits20": 0.8354810089146141,
+    "hits50": 0.9261481262410748,
+    "hits100": 0.9754108749841565,
+    "mean_positive_rank": 12.853817229287253,
+    "auc": 0.9489088047255644,
+    "ap": 0.28485499607100595
+  },
+  "test": {
+    "mrr": 0.23725416270337832,
+    "hits10": 0.5812334217506632,
+    "hits20": 0.7230327144120248,
+    "hits50": 0.8708001768346596,
+    "hits100": 0.958554376657825,
+    "mean_positive_rank": 21.0776967285588,
+    "auc": 0.9132574495118287,
+    "ap": 0.05798983527822252
+  },
+  "trace": [
+    {
+      "epoch": 0,
+      "mean_loss": 0.5837604930767646,
+      "validation": {
+        "mrr": 0.4604255598830512,
+        "hits10": 0.603996789048967,
+        "hits20": 0.7012125565085132,
+        "hits50": 0.8551692086695678,
+        "hits100": 0.9585111327052263,
+        "mean_positive_rank": 20.696100384469137,
+        "auc": 0.9032345231532424,
+        "ap": 0.23183290239721088
+      },
+      "test_descriptive": {
+        "mrr": 0.12866184572428058,
+        "hits10": 0.33521220159151194,
+        "hits20": 0.511604774535809,
+        "hits50": 0.7648099027409372,
+        "hits100": 0.9347922192749779,
+        "mean_positive_rank": 33.274977895667554,
+        "auc": 0.834959356269461,
+        "ap": 0.022879767935331342
+      },
+      "negative_hash": "1886e276c2c9a3b65f03912ef12e0e4e914fe44413ae98102e5adb2f3535ab38",
+      "order_hash": "a0927cfa9ffdd02f5d2de924d33fbbbfd2ab8c6120439d33094b5b2f087494da"
+    },
+    {
+      "epoch": 1,
+      "mean_loss": 0.23647077266986555,
+      "validation": {
+        "mrr": 0.47607884195591466,
+        "hits10": 0.671469010097596,
+        "hits20": 0.7891334657146478,
+        "hits50": 0.9059106848620558,
+        "hits100": 0.965102032194009,
+        "mean_positive_rank": 16.322806202205417,
+        "auc": 0.9333127012153678,
+        "ap": 0.2483626450476043
+      },
+      "test_descriptive": {
+        "mrr": 0.17961968081509802,
+        "hits10": 0.47225906277630414,
+        "hits20": 0.6621352785145889,
+        "hits50": 0.8456012378426172,
+        "hits100": 0.9388815207780725,
+        "mean_positive_rank": 26.230879752431477,
+        "auc": 0.8892059582413786,
+        "ap": 0.037043767786481545
+      },
+      "negative_hash": "150e9d5223c292d25b021ad7a30a2bc87349eeace39d3b568ff4317f0f7c1793",
+      "order_hash": "dae228546abf8f07102ca5559f3618e4c2c301a4e397972d83128be5f342964b"
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.09847997243587787,
+      "validation": {
+        "mrr": 0.49973103088400206,
+        "hits10": 0.7195910262368499,
+        "hits20": 0.8191727576154464,
+        "hits50": 0.9172335121889391,
+        "hits100": 0.9700029574548988,
+        "mean_positive_rank": 14.314292957032405,
+        "auc": 0.9421573411702376,
+        "ap": 0.26241241623470174
+      },
+      "test_descriptive": {
+        "mrr": 0.20521328940176442,
+        "hits10": 0.5391246684350133,
+        "hits20": 0.7025862068965517,
+        "hits50": 0.8596374889478338,
+        "hits100": 0.9479442970822282,
+        "mean_positive_rank": 23.19286030061892,
+        "auc": 0.9034398467042066,
+        "ap": 0.046522611324241105
+      },
+      "negative_hash": "485f6ce4677ffcbc6bf76ffcc31edd3141cda6ef948d71c94319a9720c4486ac",
+      "order_hash": "aa4d2c5db32eeaaec58ef52f3c2656ba8d542e97a3b9f43185271af4626cbc6b"
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.06066185092696777,
+      "validation": {
+        "mrr": 0.5257985265799776,
+        "hits10": 0.7506443026743842,
+        "hits20": 0.8354810089146141,
+        "hits50": 0.9261481262410748,
+        "hits100": 0.9754108749841565,
+        "mean_positive_rank": 12.853817229287253,
+        "auc": 0.9489088048505149,
+        "ap": 0.2848549655825541
+      },
+      "test_descriptive": {
+        "mrr": 0.23725416270337832,
+        "hits10": 0.5812334217506632,
+        "hits20": 0.7230327144120248,
+        "hits50": 0.8708001768346596,
+        "hits100": 0.958554376657825,
+        "mean_positive_rank": 21.0776967285588,
+        "auc": 0.9132574482414645,
+        "ap": 0.057989809339309535
+      },
+      "negative_hash": "9c4a6657af48c21c03ff5ef95780dff1a5563f105eb441f7403d2574bbd8cae5",
+      "order_hash": "5140533e899947979e26dbadd850a09fa7d687f09620d6d26c18b7103c4c0baa"
+    }
+  ],
+  "runtime_seconds": 260.51053764810786,
+  "peak_gpu_memory_mb": 3632.3046875,
+  "parameter_count": 28966,
+  "best_state_hash": "63c2289ff972d5783dbbb89119ea30da4529c994702ed555944b1b7fd7c3a992",
+  "gpu_name": "Tesla V100-PCIE-16GB",
+  "test_used_for_selection": false
+}

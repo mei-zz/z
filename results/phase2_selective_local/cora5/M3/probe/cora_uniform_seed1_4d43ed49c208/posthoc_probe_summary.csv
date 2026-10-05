@@ -1,0 +1,16 @@
+probe,role,metric,mean,std,count,seeds
+z_cn_to_degree,cross_leakage,r2,0.39466843082864056,0.0,3,0;1;2
+z_cn_to_degree,cross_leakage,mae,0.823887364333331,0.0,3,0;1;2
+z_cn_to_degree,cross_leakage,spearman,0.7698287654847796,1.3597399555105182e-16,3,0;1;2
+z_residual_to_degree,cross_leakage,r2,-0.9925947904987393,0.0,3,0;1;2
+z_residual_to_degree,cross_leakage,mae,1.0751804245089913,0.0,3,0;1;2
+z_residual_to_degree,cross_leakage,spearman,0.4282794645046861,0.0,3,0;1;2
+z_degree_to_cn_residual,cross_leakage,r2,0.025584237870448723,0.0,3,0;1;2
+z_degree_to_cn_residual,cross_leakage,mae,0.3382944508216584,0.0,3,0;1;2
+z_degree_to_cn_residual,cross_leakage,spearman,0.038388822387586084,0.0,3,0;1;2
+z_degree_to_degree,target_retention,r2,0.8742682933404858,0.0,3,0;1;2
+z_degree_to_degree,target_retention,mae,0.43196357619834047,0.0,3,0;1;2
+z_degree_to_degree,target_retention,spearman,0.9945318711348082,0.0,3,0;1;2
+z_cn_to_cn_residual,target_retention,r2,0.940376322179063,1.3597399555105182e-16,3,0;1;2
+z_cn_to_cn_residual,target_retention,mae,0.06678178791385214,0.0,3,0;1;2
+z_cn_to_cn_residual,target_retention,spearman,0.9803369542085663,0.0,3,0;1;2

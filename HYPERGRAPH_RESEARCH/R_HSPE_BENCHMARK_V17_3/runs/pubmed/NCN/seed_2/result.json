@@ -1,0 +1,73 @@
+{
+  "state": "COMPLETE",
+  "dataset": "pubmed",
+  "method": "NCN",
+  "seed": 2,
+  "metrics": {
+    "mrr": 0.9312941943610941,
+    "hits10": 0.9990974729241877,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 1.2030685920577617
+  },
+  "parameters": 525315,
+  "train_seconds": 52.60511828167364,
+  "total_seconds": 57.31927553284913,
+  "inference_seconds": 0.04102765256538987,
+  "peak_gpu_allocated_mb": 494.478515625,
+  "config": {
+    "xdp": 0.3,
+    "tdp": 0.0,
+    "pt": 0.5,
+    "preedp": 0.0,
+    "predp": 0.05,
+    "gnndp": 0.1,
+    "scale": 5.3,
+    "offset": 0.5,
+    "alpha": 0.3,
+    "gnnlr": 0.0097,
+    "prelr": 0.002,
+    "batch": 2048,
+    "twolayerlin": false,
+    "hidden": 256,
+    "layers": 1,
+    "epochs": 100,
+    "predictor_layers": 3,
+    "maskinput": true,
+    "splitsize": null
+  },
+  "best_epoch": 95,
+  "best_validation": {
+    "mrr": 0.9426776223425589,
+    "hits10": 0.9986462093862816,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 1.1768953068592058
+  },
+  "selection": "validation MRR only; first maximum; test evaluated once",
+  "official_source": {
+    "repo": "GraphPKU/NeuralCommonNeighbor",
+    "commit": "11d597013750da17ce7468e344bec756a7af39a4",
+    "url": "https://github.com/GraphPKU/NeuralCommonNeighbor"
+  },
+  "candidate_audit": {
+    "n": 19717,
+    "feature_shape": [
+      19717,
+      500
+    ],
+    "train_edges": 37676,
+    "train_hash": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+    "valid_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+    "valid_negative_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+    "test_positive_hash": "d5cb8058bb34feb90727a399dc8c19cccb2dbf85b032e08ca3e0292c905dd1e0",
+    "test_negative_hash": "1e6a1d3fd4031479dbe0c4d1a5999b22812401cde214048645ab875c1428bf4b",
+    "test_cache_sha256": "b35e52370d34c048253eaed0ae511561c889ef02e5ad7a2cee1bf448d9a3c1d2",
+    "test_queries": 4432,
+    "test_negatives": 20,
+    "projection": "undirected train edges exactly B0 graph side; no clique expansion, no valid/test edges"
+  },
+  "negative_filter": "official PyG negative_sampling; training graph only"
+}

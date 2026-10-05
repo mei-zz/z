@@ -1,0 +1,25 @@
+{
+  "state": "complete",
+  "candidate": "A_ECPH",
+  "decision": "REJECT",
+  "final_decision": "REJECT",
+  "winner": null,
+  "reason": "A3_gain_below_0.001",
+  "best_control": "A1",
+  "validation_mrr": {
+    "screen_5_epoch": {
+      "A0": 0.4876775417205556,
+      "A1": 0.48687113807921584,
+      "A2": 0.4852203580706859,
+      "A3": 0.48817468112059564
+    },
+    "confirm_10_epoch": null
+  },
+  "absolute_gain": 0.0004971394000400364,
+  "relative_gain": 0.001019401874209952,
+  "seed_confirmation": null,
+  "test_results": null,
+  "test_evaluated": false,
+  "stop_after_go": false,
+  "updated": 1790866003.5186825
+}

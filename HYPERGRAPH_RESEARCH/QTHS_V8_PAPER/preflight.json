@@ -1,0 +1,62 @@
+{
+  "python": "3.11.11",
+  "torch": "2.3.1+cu121",
+  "torch_cuda_build": "12.1",
+  "cuda_available": true,
+  "gpu": "Tesla V100-PCIE-16GB",
+  "pyg": "2.5.3",
+  "numpy": "1.26.4",
+  "protocol": "STRICT_TRAIN_ONLY",
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "environment_route": "LOCKED_TORCH_2_3_1_CUDA_12_1",
+  "environment_repro_blocked": false,
+  "V7_1_reproduction": "PASS",
+  "Cora_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "GAT_smoke": "PASS",
+  "data_audit": {
+    "cora": {
+      "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+      "candidate_shape": [
+        4488,
+        20,
+        2
+      ],
+      "teacher_scores_shape": [
+        4488,
+        20
+      ],
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+      "train_positive_count": 4488
+    },
+    "citeseer": {
+      "train_pool_hash": "e2b8d6babecc441e57b34fe2397238c9143e5a92786cf59affd0338c4015054f",
+      "candidate_shape": [
+        3870,
+        20,
+        2
+      ],
+      "teacher_scores_shape": [
+        3870,
+        20
+      ],
+      "validation_candidate_hash": "419f7e31c9320e435b210d3b05614f7d202d95ea9968765df8ceb9f9bdd875c5",
+      "train_positive_count": 3870
+    },
+    "pubmed": {
+      "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+      "candidate_shape": [
+        37676,
+        20,
+        2
+      ],
+      "teacher_scores_shape": [
+        37676,
+        20
+      ],
+      "validation_candidate_hash": "849850f5345b08bdaf7bfafdd8712504dd6f3a98e05de0d1c2642d552793908e",
+      "train_positive_count": 37676
+    }
+  },
+  "cpu_count": 40,
+  "max_workers": 6
+}

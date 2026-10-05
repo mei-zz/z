@@ -1,0 +1,63 @@
+{
+  "state": "COMPLETE",
+  "method": "A2_RANDOM_ADAPTIVE",
+  "seed": 2,
+  "record": {
+    "status": "COMPLETE",
+    "method": "cora_A2_RANDOM_ADAPTIVE",
+    "seed": 2,
+    "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/A2_RANDOM_ADAPTIVE/seed2/checkpoints/cora_uniform_seed2_ee67336409e9.pt",
+    "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/A2_RANDOM_ADAPTIVE/seed2/raw/cora_uniform_seed2_ee67336409e9.json",
+    "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/A2_RANDOM_ADAPTIVE/seed2/epoch_diagnostics.json",
+    "train_seconds": 207.96234938781708,
+    "wall_seconds": 208.39209281280637,
+    "selected_negative_hash": "09692b8250a86051c9a449e2d95d29fa85aff5235c4a8789e94d23a345eaa261",
+    "dynamic_sampler": null,
+    "model_state_hash": "93c95755bb1554a34395a8294b669cb14376f813b3894f0dfaea1b406c3e6aca",
+    "epoch10_validation_mrr": 0.5141321232933553,
+    "epoch_count": 10,
+    "checkpoint_rule": "FIXED_EPOCH_10",
+    "test_evaluated": false,
+    "checkpoint_file_sha256": "7ab0441c3e4f6564d82cdfb3c36ffaccc88cd97029eba4c8247ccdf3f1463294",
+    "validation_metrics": {
+      "mrr": 0.5141321232933553,
+      "hits10": 0.9011406844106464,
+      "hits20": 1.0,
+      "hits50": 1.0,
+      "hits100": 1.0,
+      "mean_positive_rank": 4.23574144486692
+    },
+    "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+    "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+    "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a"
+  },
+  "selection_diagnostics": {
+    "rule": "within each positive's frozen top-2 Graph-hard prepool, switch 2*alpha share of rows to rank-2",
+    "low_trim_alpha": 0.15,
+    "high_trim_alpha": 0.35,
+    "high_group_positive_count": 2244,
+    "low_group_positive_count": 2244,
+    "groups": {
+      "trim_15": {
+        "positive_count": 2244,
+        "nominal_trim_alpha": 0.15,
+        "runner_up_count": 673,
+        "realized_candidate_occurrence_trim_fraction": 0.1499554367201426,
+        "selected_positive_row_hash": "d58ebe61a32c8e91350a49b3aee82154c8e85d23892f0dfd865a15189ae6ee66"
+      },
+      "trim_35": {
+        "positive_count": 2244,
+        "nominal_trim_alpha": 0.35,
+        "runner_up_count": 1571,
+        "realized_candidate_occurrence_trim_fraction": 0.3500445632798574,
+        "selected_positive_row_hash": "58e2cdd411f5d35a7b314cca41e03c660c08056f3a9e4327aa0c597e7078229c"
+      }
+    },
+    "seed": 2,
+    "selector_salt": "AQTHS_A2_2",
+    "randomized_within_groups": true,
+    "selected_negative_hash": "09692b8250a86051c9a449e2d95d29fa85aff5235c4a8789e94d23a345eaa261"
+  },
+  "updated_at": "2026-10-02T13:11:08+0800",
+  "test_evaluated": false
+}

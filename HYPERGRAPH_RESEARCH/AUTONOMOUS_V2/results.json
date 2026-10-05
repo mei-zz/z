@@ -1,0 +1,84 @@
+{
+  "status": "EXECUTED",
+  "experiment": {
+    "dataset": "Cora",
+    "protocol": "standard",
+    "seed": 0,
+    "pretrain_epochs": 1,
+    "disentangle_epochs": 0,
+    "uniform_evaluation_negatives_per_positive": 20,
+    "hidden_dim": 16,
+    "branch_dim": 8,
+    "num_layers": 2,
+    "dropout": 0.0,
+    "test_evaluated_for_v2_arms": false,
+    "server": "ubuntu-ProLiant-DL380-Gen9",
+    "gpu": "Tesla V100-PCIE-16GB",
+    "environment": "mei_env"
+  },
+  "baseline": {
+    "graph_validation_mrr": 0.14393200468477987,
+    "raw_global_hypergraph_validation_mrr": 0.16279348007164107,
+    "raw_global_hypergraph_test_mrr_from_prior_lchr_report": 0.1580693196743067,
+    "v2_test_evaluation": "not run; no candidate passed GO"
+  },
+  "candidates": {
+    "A_SSHC": {
+      "decision": "REJECT",
+      "initial_validation_mrr": {
+        "A0_graph": 0.14393200468477987,
+        "A1_raw": 0.16279348007164107,
+        "A2_size": 0.16251466420847457,
+        "A3_shuffled_cohesion": 0.1639832438832427,
+        "A4_true_cohesion_initial": 0.1640508652576187
+      },
+      "corrected_a4_validation_mrr": 0.16344646820608869,
+      "corrected_gain_over_raw": 0.00065298813444682,
+      "corrected_relative_gain": 0.004011,
+      "decision_reason": "Corrected true cohesion is below shuffled cohesion; gain is below +0.003 and +2% thresholds.",
+      "cora_run_runtime_seconds_including_one_revision": 81.302681
+    },
+    "B_RAHC": {
+      "decision": "REJECT",
+      "validation_mrr": {
+        "B1_raw": 0.16279348007164107,
+        "B2_size": 0.1633519153169178,
+        "B3_shuffled_redundancy": 0.1663082354450116,
+        "B4_true_redundancy": 0.16288903380290562
+      },
+      "gain_over_raw": 0.00009555373126455,
+      "relative_gain": 0.000587,
+      "decision_reason": "True redundancy is below both size and shuffled controls and below effect-size thresholds.",
+      "cora_run_runtime_seconds": 60.195839
+    },
+    "C_HSA": {
+      "decision": "REJECT",
+      "best_true_arm": "C3_lambda005",
+      "validation_mrr": {
+        "C0_raw": 0.16279348007164107,
+        "C1_lambda0_matched_auxiliary": 0.16279348007164107,
+        "C2_shuffled_lambda005": 0.16289076677088896,
+        "C2_shuffled_lambda01": 0.16345266751113197,
+        "C3_true_lambda005": 0.16447455337318667,
+        "C3_true_lambda01": 0.16237711770663893
+      },
+      "gain_over_raw": 0.0016810733015456,
+      "relative_gain": 0.010326,
+      "samples_per_aux_training_run": 4398,
+      "aux_training_batches": 3,
+      "mean_unweighted_aux_bce_best_true_arm": 0.6906263828277588,
+      "decision_reason": "Best true arm beats every control but is below both the +0.003 and +2% thresholds.",
+      "cora_run_runtime_seconds": 91.73457,
+      "discarded_first_batch_reason": "Auxiliary scorer consumed RNG before baseline layers; corrected initialization order was verified and the full C0-C3 batch rerun."
+    }
+  },
+  "best_validation_arm_overall": {
+    "arm": "B3_shuffled_redundancy_control",
+    "validation_mrr": 0.1663082354450116,
+    "is_winning_candidate": false
+  },
+  "winning_candidate": null,
+  "final_decision": "NO_EXECUTABLE_IDEA_AFTER_3_CANDIDATES",
+  "stage2_confirmation": "not_run",
+  "novelty_status": "NOVELTY_CONFLICT for A, B, and C; no broad novelty claim is supported"
+}

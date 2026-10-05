@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "method": "pubmed_GRAPH_TEACHER",
+  "seed": 0,
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/PUBMED/GRAPH_TEACHER/seed0/checkpoints/pubmed_uniform_seed0_388292949e1c.pt",
+  "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/PUBMED/GRAPH_TEACHER/seed0/raw/pubmed_uniform_seed0_388292949e1c.json",
+  "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/PUBMED/GRAPH_TEACHER/seed0/epoch_diagnostics.json",
+  "train_seconds": 287.03144786925986,
+  "wall_seconds": 289.85912874294445,
+  "selected_negative_hash": null,
+  "dynamic_sampler": "uniform_from_strict_pool_per_epoch",
+  "model_state_hash": "df5ab248480a16f6eda38e39c71d5101e4b764a6578063ebdac78896ff7390a8",
+  "epoch10_validation_mrr": 0.8736803897566533,
+  "epoch_count": 10,
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "test_evaluated": false
+}

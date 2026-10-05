@@ -1,0 +1,3163 @@
+{
+  "state": "HSPE_EARLY_REJECT",
+  "candidate": "HSPE",
+  "v16_origin": "C1_NHMC_SIZE promoted to preregistered candidate",
+  "protocol": {
+    "datasets": [
+      "cora",
+      "pubmed"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "stage1_epochs": 5,
+    "stage2_epochs": 10,
+    "arms": [
+      "B0_BASELINE",
+      "C1_HISTOGRAM",
+      "C2_SIZE_SHUFFLE",
+      "C3_PARAM_MATCHED",
+      "H1_HSPE_REAL"
+    ],
+    "max_concurrent_jobs": 4,
+    "test_evaluated": false,
+    "parameter_cap_fraction": 0.01,
+    "shuffle_gate": "all seeds require >=30% changed multisets in both train and validation"
+  },
+  "input_audits": {
+    "cora": {
+      "dataset": "cora",
+      "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+      "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+      "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+      "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+      "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+      "validation_positive_count": 263,
+      "validation_negative_count_per_positive": 20,
+      "validation_sampling": {
+        "source": "uniform candidates filtered only by train/message edges",
+        "seed": 72200,
+        "grouping_seed": 72201,
+        "negative_count_per_positive": 20,
+        "shape": [
+          263,
+          20,
+          2
+        ],
+        "self_positive_collisions_replaced": 0,
+        "train_forbidden_count": 4488,
+        "heldout_test_identities_used": false
+      },
+      "qths25": {
+        "alpha_candidate_occurrence_fraction": 0.25,
+        "prepool_size": 2,
+        "trimmed_occurrence_count": 2244,
+        "trimmed_row_count": 2244,
+        "selected_runner_up_count": 2244,
+        "hash_rule": "QTHS25"
+      },
+      "graph_teacher": {
+        "source": "frozen_V6_1_graph_teacher_cache",
+        "score_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c",
+        "pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba"
+      },
+      "train_cache": {
+        "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/train/cora_pair_features.npz",
+        "archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d",
+        "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/train/cora_native_tokens.npy",
+        "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+        "pair_count": 8976,
+        "token_count": 152664,
+        "metadata": {
+          "pair_count_unique": 8976,
+          "token_count": 152664,
+          "stage0_raw_pair_cache_reused": 6080,
+          "fresh_pairs_computed": 2896,
+          "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+          "shuffle_overlap_sha256": "2c791aa408adc3d4f6d2b99e5daf32241e4362f30bfcb14de38f7680a3ec0f7a",
+          "shuffle": {
+            "seed": 20261018,
+            "stratum_count": 339,
+            "singleton_token_fraction": 3.2751663784520255e-05,
+            "informative_pair_count": 4071,
+            "candidate_pair_count": 8976,
+            "informative_shuffle_fraction": 0.4535427807486631,
+            "shuffle_power": "ADEQUATE"
+          },
+          "shuffle_seed": 20261018,
+          "pair_feature_archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d"
+        }
+      },
+      "validation_cache": {
+        "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/valid/cora_pair_features.npz",
+        "archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1",
+        "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/valid/cora_native_tokens.npy",
+        "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+        "pair_count": 5523,
+        "token_count": 12666,
+        "metadata": {
+          "pair_count_unique": 5523,
+          "token_count": 12666,
+          "stage0_raw_pair_cache_reused": 0,
+          "fresh_pairs_computed": 5523,
+          "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+          "shuffle_overlap_sha256": "087a659e91967cdc4296fbf3b0ec48c8bba6a7c8f512691248d0df68e55e5379",
+          "shuffle": {
+            "seed": 20361018,
+            "stratum_count": 281,
+            "singleton_token_fraction": 0.0011842728564661299,
+            "informative_pair_count": 551,
+            "candidate_pair_count": 5523,
+            "informative_shuffle_fraction": 0.09976462067716821,
+            "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+          },
+          "shuffle_seed": 20361018,
+          "pair_feature_archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1"
+        }
+      },
+      "v16_source_hashes": {
+        "stage1_script": "d15aa844e83fe021d6c0c3808026ea62c949dffdf3d80109ef20b5fb99756d83",
+        "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+        "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+        "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+      },
+      "current_source_hashes": {
+        "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+        "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+        "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+        "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+        "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+        "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+        "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+      },
+      "v16_reuse_source_hashes_equal": false,
+      "heldout_test_identities_used": false,
+      "test_evaluated": false
+    },
+    "pubmed": {
+      "dataset": "pubmed",
+      "train_positive_hash": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+      "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+      "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+      "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+      "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+      "validation_positive_count": 2216,
+      "validation_negative_count_per_positive": 20,
+      "validation_sampling": {
+        "source": "uniform candidates filtered only by train/message edges",
+        "seed": 72200,
+        "grouping_seed": 72201,
+        "negative_count_per_positive": 20,
+        "shape": [
+          2216,
+          20,
+          2
+        ],
+        "self_positive_collisions_replaced": 0,
+        "train_forbidden_count": 37676,
+        "heldout_test_identities_used": false
+      },
+      "qths25": {
+        "alpha_candidate_occurrence_fraction": 0.25,
+        "prepool_size": 2,
+        "trimmed_occurrence_count": 18838,
+        "trimmed_row_count": 18838,
+        "selected_runner_up_count": 18838,
+        "hash_rule": "QTHS25"
+      },
+      "graph_teacher": {
+        "state": "COMPLETE",
+        "dataset": "pubmed",
+        "seed": 0,
+        "epochs": 10,
+        "hypergraph_mode": "disabled",
+        "training_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+        "graph_teacher_score_hash": "4bb225e71468288d819708447794d82d285b1d1949289b8786923466fefe5b06",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/pubmed/graph_teacher/checkpoints/pubmed_uniform_seed0_0e1391bc1fca.pt",
+        "train_seconds": 223.67736776173115,
+        "wall_seconds": 335.50470106489956,
+        "valid_or_test_labels_used_for_training_or_selection": false,
+        "test_evaluated": false,
+        "cache_reused": true
+      },
+      "train_cache": {
+        "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/train/pubmed_pair_features.npz",
+        "archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91",
+        "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/train/pubmed_native_tokens.npy",
+        "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+        "pair_count": 75352,
+        "token_count": 4957442,
+        "metadata": {
+          "pair_count_unique": 75352,
+          "token_count": 4957442,
+          "stage0_raw_pair_cache_reused": 50778,
+          "fresh_pairs_computed": 24574,
+          "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+          "shuffle_overlap_sha256": "b6ed11301a35dd0bce23239d6932ed17ee84c75a4a2de7fd7dd538e2aefa93b2",
+          "shuffle": {
+            "seed": 20261019,
+            "stratum_count": 592,
+            "singleton_token_fraction": 4.034338677083867e-07,
+            "informative_pair_count": 33125,
+            "candidate_pair_count": 75352,
+            "informative_shuffle_fraction": 0.4396034610892876,
+            "shuffle_power": "ADEQUATE"
+          },
+          "shuffle_seed": 20261019,
+          "pair_feature_archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91"
+        }
+      },
+      "validation_cache": {
+        "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/valid/pubmed_pair_features.npz",
+        "archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e",
+        "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/valid/pubmed_native_tokens.npy",
+        "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+        "pair_count": 46534,
+        "token_count": 323939,
+        "metadata": {
+          "pair_count_unique": 46534,
+          "token_count": 323939,
+          "stage0_raw_pair_cache_reused": 0,
+          "fresh_pairs_computed": 46534,
+          "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+          "shuffle_overlap_sha256": "a1909217eea169e77f380ac2f7150b5441771977457efa4684954c4ced9e64e4",
+          "shuffle": {
+            "seed": 20361019,
+            "stratum_count": 500,
+            "singleton_token_fraction": 2.1609006633965037e-05,
+            "informative_pair_count": 4129,
+            "candidate_pair_count": 46534,
+            "informative_shuffle_fraction": 0.08873082047535136,
+            "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+          },
+          "shuffle_seed": 20361019,
+          "pair_feature_archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e"
+        }
+      },
+      "v16_source_hashes": {
+        "stage1_script": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+        "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+        "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+        "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+      },
+      "current_source_hashes": {
+        "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+        "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+        "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+        "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+        "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+        "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+        "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+      },
+      "v16_reuse_source_hashes_equal": true,
+      "heldout_test_identities_used": false,
+      "test_evaluated": false
+    }
+  },
+  "stage1_5epoch": {
+    "state": "COMPLETE",
+    "epochs": 5,
+    "datasets": {
+      "cora": {
+        "seeds": {
+          "0": {
+            "state": "COMPLETE",
+            "dataset": "cora",
+            "seed": 0,
+            "epochs": 5,
+            "validation_only": true,
+            "test_evaluated": false,
+            "arms": {
+              "B0_BASELINE": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 0,
+                "epochs": 5,
+                "arm": "B0_BASELINE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.5039905633258703,
+                  "hits10": 0.6692015209125475,
+                  "hits20": 0.908745247148289,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 7.326996197718631
+                },
+                "train_seconds": 67.38071074103937,
+                "wall_seconds": 67.83402056479827,
+                "validation_scoring_seconds": 3.949421113822609,
+                "peak_gpu_allocated_mb": 55.91943359375,
+                "trainable_parameters": 24735,
+                "added_hspe_parameters": 0,
+                "added_parameter_fraction": 0.0,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_0/arms/B0_BASELINE/checkpoints/cora_uniform_seed0_d6bb42aff500.pt",
+                "checkpoint_sha256": "8ca23b940c85b9291689c5bf72b99ddf9c60f494aeb3af6327331c5bc346d4f1",
+                "model_state_hash": "d608367ef0bcb69d5ced5fe36a8098d9aacb9fc2ccd0d4f3ffc7a31ac40040f0",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs"
+              },
+              "C1_HISTOGRAM": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 0,
+                "epochs": 5,
+                "arm": "C1_HISTOGRAM",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.5789805414462562,
+                  "hits10": 0.7984790874524715,
+                  "hits20": 0.9543726235741445,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 5.376425855513308
+                },
+                "train_seconds": 61.28718321118504,
+                "wall_seconds": 61.737923139706254,
+                "validation_scoring_seconds": 4.040386684704572,
+                "peak_gpu_allocated_mb": 55.93798828125,
+                "trainable_parameters": 24753,
+                "added_hspe_parameters": 18,
+                "added_parameter_fraction": 0.0007277137659187386,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_0/arms/C1_HISTOGRAM/checkpoints/cora_uniform_seed0_eeb6a19442c4.pt",
+                "checkpoint_sha256": "15e80f51432ce25c55e2d57df7424c0ae8eb03d294afe442b08b776e5bcf2232",
+                "model_state_hash": "0ece4e90e61c456dbdae481a608e49605f91155c4c226ed6af0263d8299c211b",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "histogram_bins": [
+                  "2",
+                  "3-4",
+                  "5-8",
+                  "9-16",
+                  ">=17"
+                ],
+                "unordered_pair_bins": 15,
+                "histogram_features": 17,
+                "residual_parameters": 18,
+                "single_linear_zero_init": true,
+                "hist_feature_hash_train": "4034e6500968c476f3967c82de439436e9047c62b4b6c86d7744ed8761867873",
+                "hist_feature_hash_validation": "505aafa4eaaf4ba099af0e7ef2c90dbd50797e195f2e738452a067507107a843"
+              },
+              "C2_SIZE_SHUFFLE": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 0,
+                "epochs": 5,
+                "arm": "C2_SIZE_SHUFFLE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.5812703341252824,
+                  "hits10": 0.8631178707224335,
+                  "hits20": 0.9695817490494296,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 4.231939163498099
+                },
+                "train_seconds": 61.43472050409764,
+                "wall_seconds": 61.714085137005895,
+                "validation_scoring_seconds": 4.018543343059719,
+                "peak_gpu_allocated_mb": 67.70068359375,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_0/arms/C2_SIZE_SHUFFLE/checkpoints/cora_uniform_seed0_966b660c1e0f.pt",
+                "checkpoint_sha256": "4fb8ad64db94475bdd567f5006defe3606523623df3138c30db92e2970397b73",
+                "model_state_hash": "4b12d4e456fdb668d8bac92a827376f826991a427bfd09f57f1911b5e1317ace",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "shuffle_power_train": {
+                  "dataset": "cora",
+                  "seed": 0,
+                  "split": "train",
+                  "seed_used": 17271000,
+                  "stratum_count": 1870,
+                  "multi_candidate_strata": 689,
+                  "eligible_candidate_count": 7795,
+                  "candidate_count": 8976,
+                  "informative_pair_count": 3018,
+                  "informative_shuffle_fraction": 0.3362299465240642,
+                  "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "bf891bae7d774c587163527ac4bb20b7dbcdf886fbeb6853a3d4086adf38d894",
+                  "size_multiset_sha256": "862fa321e61d7674ca6be25467d6db6fc6f3eb18365e847394162be79147d4d9"
+                },
+                "shuffle_power_validation": {
+                  "dataset": "cora",
+                  "seed": 0,
+                  "split": "valid",
+                  "seed_used": 17272000,
+                  "stratum_count": 385,
+                  "multi_candidate_strata": 125,
+                  "eligible_candidate_count": 5263,
+                  "candidate_count": 5523,
+                  "informative_pair_count": 386,
+                  "informative_shuffle_fraction": 0.06988955277928662,
+                  "shuffle_power": "LOW_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "49ed5019ca30d5491ffd32e0f1ed12e9596144a8536376a341c4f1832ce0795b",
+                  "size_multiset_sha256": "5f88845bdc732106d9b05e211ab16827630b15c6a2c00bfcbd0129b9a0182b60"
+                },
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "C3_PARAM_MATCHED": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 0,
+                "epochs": 5,
+                "arm": "C3_PARAM_MATCHED",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.5653604766922758,
+                  "hits10": 0.8745247148288974,
+                  "hits20": 0.9695817490494296,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 4.247148288973384
+                },
+                "train_seconds": 62.340425706934184,
+                "wall_seconds": 62.79793137079105,
+                "validation_scoring_seconds": 3.85591345699504,
+                "peak_gpu_allocated_mb": 67.70068359375,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_0/arms/C3_PARAM_MATCHED/checkpoints/cora_uniform_seed0_be403dd5007d.pt",
+                "checkpoint_sha256": "8a48a25504a385cc16a7f504ea58a013c8ced3d0fb59825482f4b098991076f9",
+                "model_state_hash": "29cd4c6148515f95cbeba7b7d4ac05936be119c63d0c1d1cb52337cc13edb995",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "H1_HSPE_REAL": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 0,
+                "epochs": 5,
+                "arm": "H1_HSPE_REAL",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.5907480169087133,
+                  "hits10": 0.8745247148288974,
+                  "hits20": 0.9695817490494296,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 4.186311787072244
+                },
+                "train_seconds": 53.76098470389843,
+                "wall_seconds": 54.02230856195092,
+                "validation_scoring_seconds": 1.8667733911424875,
+                "peak_gpu_allocated_mb": 67.70068359375,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_0/arms/H1_HSPE_REAL/checkpoints/cora_uniform_seed0_0e8fa6a7b18a.pt",
+                "checkpoint_sha256": "d256653190f7466bbb3a9e23938244743739a07a88c7d48d77020218ddaed20b",
+                "model_state_hash": "bdb48a480b8545969a4590aab416c2f2ae90e6d7a1aac05178081ee1f0e39ab3",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              }
+            },
+            "mrr": {
+              "B0_BASELINE": 0.5039905633258703,
+              "C1_HISTOGRAM": 0.5789805414462562,
+              "C2_SIZE_SHUFFLE": 0.5812703341252824,
+              "C3_PARAM_MATCHED": 0.5653604766922758,
+              "H1_HSPE_REAL": 0.5907480169087133
+            },
+            "input_audit": {
+              "dataset": "cora",
+              "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+              "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+              "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+              "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+              "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+              "validation_positive_count": 263,
+              "validation_negative_count_per_positive": 20,
+              "validation_sampling": {
+                "source": "uniform candidates filtered only by train/message edges",
+                "seed": 72200,
+                "grouping_seed": 72201,
+                "negative_count_per_positive": 20,
+                "shape": [
+                  263,
+                  20,
+                  2
+                ],
+                "self_positive_collisions_replaced": 0,
+                "train_forbidden_count": 4488,
+                "heldout_test_identities_used": false
+              },
+              "qths25": {
+                "alpha_candidate_occurrence_fraction": 0.25,
+                "prepool_size": 2,
+                "trimmed_occurrence_count": 2244,
+                "trimmed_row_count": 2244,
+                "selected_runner_up_count": 2244,
+                "hash_rule": "QTHS25"
+              },
+              "graph_teacher": {
+                "source": "frozen_V6_1_graph_teacher_cache",
+                "score_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c",
+                "pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba"
+              },
+              "train_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/train/cora_pair_features.npz",
+                "archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/train/cora_native_tokens.npy",
+                "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+                "pair_count": 8976,
+                "token_count": 152664,
+                "metadata": {
+                  "pair_count_unique": 8976,
+                  "token_count": 152664,
+                  "stage0_raw_pair_cache_reused": 6080,
+                  "fresh_pairs_computed": 2896,
+                  "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+                  "shuffle_overlap_sha256": "2c791aa408adc3d4f6d2b99e5daf32241e4362f30bfcb14de38f7680a3ec0f7a",
+                  "shuffle": {
+                    "seed": 20261018,
+                    "stratum_count": 339,
+                    "singleton_token_fraction": 3.2751663784520255e-05,
+                    "informative_pair_count": 4071,
+                    "candidate_pair_count": 8976,
+                    "informative_shuffle_fraction": 0.4535427807486631,
+                    "shuffle_power": "ADEQUATE"
+                  },
+                  "shuffle_seed": 20261018,
+                  "pair_feature_archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d"
+                }
+              },
+              "validation_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/valid/cora_pair_features.npz",
+                "archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/valid/cora_native_tokens.npy",
+                "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+                "pair_count": 5523,
+                "token_count": 12666,
+                "metadata": {
+                  "pair_count_unique": 5523,
+                  "token_count": 12666,
+                  "stage0_raw_pair_cache_reused": 0,
+                  "fresh_pairs_computed": 5523,
+                  "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+                  "shuffle_overlap_sha256": "087a659e91967cdc4296fbf3b0ec48c8bba6a7c8f512691248d0df68e55e5379",
+                  "shuffle": {
+                    "seed": 20361018,
+                    "stratum_count": 281,
+                    "singleton_token_fraction": 0.0011842728564661299,
+                    "informative_pair_count": 551,
+                    "candidate_pair_count": 5523,
+                    "informative_shuffle_fraction": 0.09976462067716821,
+                    "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+                  },
+                  "shuffle_seed": 20361018,
+                  "pair_feature_archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1"
+                }
+              },
+              "v16_source_hashes": {
+                "stage1_script": "d15aa844e83fe021d6c0c3808026ea62c949dffdf3d80109ef20b5fb99756d83",
+                "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+              },
+              "current_source_hashes": {
+                "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+              },
+              "v16_reuse_source_hashes_equal": false,
+              "heldout_test_identities_used": false,
+              "test_evaluated": false
+            },
+            "zero_init_audit": {
+              "C1_HISTOGRAM": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 0.0,
+                "added_trainable_parameters": 18,
+                "added_parameter_fraction": 0.0007277137659187386
+              },
+              "H1_HSPE_REAL": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 1.1920928955078125e-07,
+                "added_trainable_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777
+              },
+              "baseline_trainable_parameters": 24735,
+              "parameter_cap_fraction": 0.01
+            },
+            "baseline_trainable_parameters": 24735,
+            "shuffle_power": {
+              "train": {
+                "dataset": "cora",
+                "seed": 0,
+                "split": "train",
+                "seed_used": 17271000,
+                "stratum_count": 1870,
+                "multi_candidate_strata": 689,
+                "eligible_candidate_count": 7795,
+                "candidate_count": 8976,
+                "informative_pair_count": 3018,
+                "informative_shuffle_fraction": 0.3362299465240642,
+                "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "bf891bae7d774c587163527ac4bb20b7dbcdf886fbeb6853a3d4086adf38d894",
+                "size_multiset_sha256": "862fa321e61d7674ca6be25467d6db6fc6f3eb18365e847394162be79147d4d9"
+              },
+              "validation": {
+                "dataset": "cora",
+                "seed": 0,
+                "split": "valid",
+                "seed_used": 17272000,
+                "stratum_count": 385,
+                "multi_candidate_strata": 125,
+                "eligible_candidate_count": 5263,
+                "candidate_count": 5523,
+                "informative_pair_count": 386,
+                "informative_shuffle_fraction": 0.06988955277928662,
+                "shuffle_power": "LOW_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "49ed5019ca30d5491ffd32e0f1ed12e9596144a8536376a341c4f1832ce0795b",
+                "size_multiset_sha256": "5f88845bdc732106d9b05e211ab16827630b15c6a2c00bfcbd0129b9a0182b60"
+              }
+            },
+            "hist_feature_hashes": {
+              "train": "4034e6500968c476f3967c82de439436e9047c62b4b6c86d7744ed8761867873",
+              "validation": "505aafa4eaaf4ba099af0e7ef2c90dbd50797e195f2e738452a067507107a843"
+            }
+          },
+          "1": {
+            "state": "COMPLETE",
+            "dataset": "cora",
+            "seed": 1,
+            "epochs": 5,
+            "validation_only": true,
+            "test_evaluated": false,
+            "arms": {
+              "B0_BASELINE": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "B0_BASELINE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.3126180005176521,
+                  "hits10": 0.7072243346007605,
+                  "hits20": 0.9885931558935361,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 7.220532319391635
+                },
+                "train_seconds": 62.86384979309514,
+                "wall_seconds": 63.29752222681418,
+                "validation_scoring_seconds": 3.64209943683818,
+                "peak_gpu_allocated_mb": 55.94580078125,
+                "trainable_parameters": 24735,
+                "added_hspe_parameters": 0,
+                "added_parameter_fraction": 0.0,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_1/arms/B0_BASELINE/checkpoints/cora_uniform_seed1_6e13cee5a581.pt",
+                "checkpoint_sha256": "6e2f65bde10d3b194981cdc8954adf6db14890b7be3914add965101a8931c0ba",
+                "model_state_hash": "5c72991d9805665b481f0accc605df9ca24946fb5d1f22ecd2472d6de485a259",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs"
+              },
+              "C1_HISTOGRAM": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "C1_HISTOGRAM",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.34585894769446074,
+                  "hits10": 0.7452471482889734,
+                  "hits20": 0.9961977186311787,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 6.604562737642586
+                },
+                "train_seconds": 57.38030434586108,
+                "wall_seconds": 57.63157384702936,
+                "validation_scoring_seconds": 3.655323182232678,
+                "peak_gpu_allocated_mb": 55.96435546875,
+                "trainable_parameters": 24753,
+                "added_hspe_parameters": 18,
+                "added_parameter_fraction": 0.0007277137659187386,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_1/arms/C1_HISTOGRAM/checkpoints/cora_uniform_seed1_fc5efb2ef031.pt",
+                "checkpoint_sha256": "8748b3c61d027d5a10005a2b5c5dfd0e00b0a1e4900f93d113f6c3afc6791f20",
+                "model_state_hash": "c29815cc387efa85fd1b27ace8a9c383cd95e34f5db6f31bcce62937f427c112",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "histogram_bins": [
+                  "2",
+                  "3-4",
+                  "5-8",
+                  "9-16",
+                  ">=17"
+                ],
+                "unordered_pair_bins": 15,
+                "histogram_features": 17,
+                "residual_parameters": 18,
+                "single_linear_zero_init": true,
+                "hist_feature_hash_train": "4034e6500968c476f3967c82de439436e9047c62b4b6c86d7744ed8761867873",
+                "hist_feature_hash_validation": "505aafa4eaaf4ba099af0e7ef2c90dbd50797e195f2e738452a067507107a843"
+              },
+              "C2_SIZE_SHUFFLE": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "C2_SIZE_SHUFFLE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.41713035473762494,
+                  "hits10": 0.8517110266159695,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 5.304182509505703
+                },
+                "train_seconds": 57.33028244227171,
+                "wall_seconds": 57.57934645982459,
+                "validation_scoring_seconds": 3.5972505416721106,
+                "peak_gpu_allocated_mb": 67.59130859375,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_1/arms/C2_SIZE_SHUFFLE/checkpoints/cora_uniform_seed1_def77856bfba.pt",
+                "checkpoint_sha256": "987f874c328d4dff55bdd5b77a025339c18ac329aaa5a7bb9094888193e240d2",
+                "model_state_hash": "dc01672902f4581fc288b461d3eed238114d667b61ade12cf8d281b1a7f311eb",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "shuffle_power_train": {
+                  "dataset": "cora",
+                  "seed": 1,
+                  "split": "train",
+                  "seed_used": 17271001,
+                  "stratum_count": 1870,
+                  "multi_candidate_strata": 689,
+                  "eligible_candidate_count": 7795,
+                  "candidate_count": 8976,
+                  "informative_pair_count": 3029,
+                  "informative_shuffle_fraction": 0.3374554367201426,
+                  "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "1a4b918f51b51d4368778e7bc385176d1564c5f0733b95f4808e0e80225ca253",
+                  "size_multiset_sha256": "6d30c5d30b9db843c8f3bced3a72990239025253a3a50c949f86222527b958bd"
+                },
+                "shuffle_power_validation": {
+                  "dataset": "cora",
+                  "seed": 1,
+                  "split": "valid",
+                  "seed_used": 17272001,
+                  "stratum_count": 385,
+                  "multi_candidate_strata": 125,
+                  "eligible_candidate_count": 5263,
+                  "candidate_count": 5523,
+                  "informative_pair_count": 389,
+                  "informative_shuffle_fraction": 0.07043273583197537,
+                  "shuffle_power": "LOW_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "918e2779c687166aebfb2721a83630674b2ba9d050a1143895a75bccc515a892",
+                  "size_multiset_sha256": "02e7ec21289eb837897640a3930c7445baac3a89afd4a70e6e2b05185584b31c"
+                },
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "C3_PARAM_MATCHED": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "C3_PARAM_MATCHED",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.4195229640151004,
+                  "hits10": 0.8517110266159695,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 5.425855513307985
+                },
+                "train_seconds": 57.56497066700831,
+                "wall_seconds": 58.00832060491666,
+                "validation_scoring_seconds": 3.598816270008683,
+                "peak_gpu_allocated_mb": 67.59130859375,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_1/arms/C3_PARAM_MATCHED/checkpoints/cora_uniform_seed1_5d49b653d565.pt",
+                "checkpoint_sha256": "b802a3a039874b671d88a1170f76d117d8f8a158966ff9e2aaf7628da409dae1",
+                "model_state_hash": "bbe1f265418de775471161a64f351789da41e363fb02f556e220b8d990bfd764",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "H1_HSPE_REAL": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "H1_HSPE_REAL",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.4189092792351806,
+                  "hits10": 0.8517110266159695,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 5.2965779467680605
+                },
+                "train_seconds": 57.71977993706241,
+                "wall_seconds": 57.96966579416767,
+                "validation_scoring_seconds": 3.584502012003213,
+                "peak_gpu_allocated_mb": 67.59130859375,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_1/arms/H1_HSPE_REAL/checkpoints/cora_uniform_seed1_a64526f32b2d.pt",
+                "checkpoint_sha256": "f4d2cd3aa39ae46d6ee7425ed18b5995f98dc3d73f31db62d8b259784ac6dbd1",
+                "model_state_hash": "a77da5c972bb1064b6c8e5de840a9ba96d81a4fa8effb3ecc9714b39b5ef5e89",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              }
+            },
+            "mrr": {
+              "B0_BASELINE": 0.3126180005176521,
+              "C1_HISTOGRAM": 0.34585894769446074,
+              "C2_SIZE_SHUFFLE": 0.41713035473762494,
+              "C3_PARAM_MATCHED": 0.4195229640151004,
+              "H1_HSPE_REAL": 0.4189092792351806
+            },
+            "input_audit": {
+              "dataset": "cora",
+              "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+              "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+              "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+              "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+              "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+              "validation_positive_count": 263,
+              "validation_negative_count_per_positive": 20,
+              "validation_sampling": {
+                "source": "uniform candidates filtered only by train/message edges",
+                "seed": 72200,
+                "grouping_seed": 72201,
+                "negative_count_per_positive": 20,
+                "shape": [
+                  263,
+                  20,
+                  2
+                ],
+                "self_positive_collisions_replaced": 0,
+                "train_forbidden_count": 4488,
+                "heldout_test_identities_used": false
+              },
+              "qths25": {
+                "alpha_candidate_occurrence_fraction": 0.25,
+                "prepool_size": 2,
+                "trimmed_occurrence_count": 2244,
+                "trimmed_row_count": 2244,
+                "selected_runner_up_count": 2244,
+                "hash_rule": "QTHS25"
+              },
+              "graph_teacher": {
+                "source": "frozen_V6_1_graph_teacher_cache",
+                "score_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c",
+                "pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba"
+              },
+              "train_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/train/cora_pair_features.npz",
+                "archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/train/cora_native_tokens.npy",
+                "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+                "pair_count": 8976,
+                "token_count": 152664,
+                "metadata": {
+                  "pair_count_unique": 8976,
+                  "token_count": 152664,
+                  "stage0_raw_pair_cache_reused": 6080,
+                  "fresh_pairs_computed": 2896,
+                  "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+                  "shuffle_overlap_sha256": "2c791aa408adc3d4f6d2b99e5daf32241e4362f30bfcb14de38f7680a3ec0f7a",
+                  "shuffle": {
+                    "seed": 20261018,
+                    "stratum_count": 339,
+                    "singleton_token_fraction": 3.2751663784520255e-05,
+                    "informative_pair_count": 4071,
+                    "candidate_pair_count": 8976,
+                    "informative_shuffle_fraction": 0.4535427807486631,
+                    "shuffle_power": "ADEQUATE"
+                  },
+                  "shuffle_seed": 20261018,
+                  "pair_feature_archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d"
+                }
+              },
+              "validation_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/valid/cora_pair_features.npz",
+                "archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/valid/cora_native_tokens.npy",
+                "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+                "pair_count": 5523,
+                "token_count": 12666,
+                "metadata": {
+                  "pair_count_unique": 5523,
+                  "token_count": 12666,
+                  "stage0_raw_pair_cache_reused": 0,
+                  "fresh_pairs_computed": 5523,
+                  "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+                  "shuffle_overlap_sha256": "087a659e91967cdc4296fbf3b0ec48c8bba6a7c8f512691248d0df68e55e5379",
+                  "shuffle": {
+                    "seed": 20361018,
+                    "stratum_count": 281,
+                    "singleton_token_fraction": 0.0011842728564661299,
+                    "informative_pair_count": 551,
+                    "candidate_pair_count": 5523,
+                    "informative_shuffle_fraction": 0.09976462067716821,
+                    "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+                  },
+                  "shuffle_seed": 20361018,
+                  "pair_feature_archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1"
+                }
+              },
+              "v16_source_hashes": {
+                "stage1_script": "d15aa844e83fe021d6c0c3808026ea62c949dffdf3d80109ef20b5fb99756d83",
+                "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+              },
+              "current_source_hashes": {
+                "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+              },
+              "v16_reuse_source_hashes_equal": false,
+              "heldout_test_identities_used": false,
+              "test_evaluated": false
+            },
+            "zero_init_audit": {
+              "C1_HISTOGRAM": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 0.0,
+                "added_trainable_parameters": 18,
+                "added_parameter_fraction": 0.0007277137659187386
+              },
+              "H1_HSPE_REAL": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 1.1920928955078125e-07,
+                "added_trainable_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777
+              },
+              "baseline_trainable_parameters": 24735,
+              "parameter_cap_fraction": 0.01
+            },
+            "baseline_trainable_parameters": 24735,
+            "shuffle_power": {
+              "train": {
+                "dataset": "cora",
+                "seed": 1,
+                "split": "train",
+                "seed_used": 17271001,
+                "stratum_count": 1870,
+                "multi_candidate_strata": 689,
+                "eligible_candidate_count": 7795,
+                "candidate_count": 8976,
+                "informative_pair_count": 3029,
+                "informative_shuffle_fraction": 0.3374554367201426,
+                "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "1a4b918f51b51d4368778e7bc385176d1564c5f0733b95f4808e0e80225ca253",
+                "size_multiset_sha256": "6d30c5d30b9db843c8f3bced3a72990239025253a3a50c949f86222527b958bd"
+              },
+              "validation": {
+                "dataset": "cora",
+                "seed": 1,
+                "split": "valid",
+                "seed_used": 17272001,
+                "stratum_count": 385,
+                "multi_candidate_strata": 125,
+                "eligible_candidate_count": 5263,
+                "candidate_count": 5523,
+                "informative_pair_count": 389,
+                "informative_shuffle_fraction": 0.07043273583197537,
+                "shuffle_power": "LOW_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "918e2779c687166aebfb2721a83630674b2ba9d050a1143895a75bccc515a892",
+                "size_multiset_sha256": "02e7ec21289eb837897640a3930c7445baac3a89afd4a70e6e2b05185584b31c"
+              }
+            },
+            "hist_feature_hashes": {
+              "train": "4034e6500968c476f3967c82de439436e9047c62b4b6c86d7744ed8761867873",
+              "validation": "505aafa4eaaf4ba099af0e7ef2c90dbd50797e195f2e738452a067507107a843"
+            }
+          },
+          "2": {
+            "state": "COMPLETE",
+            "dataset": "cora",
+            "seed": 2,
+            "epochs": 5,
+            "validation_only": true,
+            "test_evaluated": false,
+            "arms": {
+              "B0_BASELINE": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "B0_BASELINE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.41276281086667316,
+                  "hits10": 0.8593155893536122,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 5.171102661596958
+                },
+                "train_seconds": 62.65976651199162,
+                "wall_seconds": 63.09692894620821,
+                "validation_scoring_seconds": 3.5848413882777095,
+                "peak_gpu_allocated_mb": 55.96435546875,
+                "trainable_parameters": 24735,
+                "added_hspe_parameters": 0,
+                "added_parameter_fraction": 0.0,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_2/arms/B0_BASELINE/checkpoints/cora_uniform_seed2_8151429a3bfd.pt",
+                "checkpoint_sha256": "0b5928f995309fe94a07e8e8298b5735494298a3f51c9526fc36090797d48bec",
+                "model_state_hash": "2a760555dfbe4dc02b8fb468ff184631885c93c9ad1777f62b718f1bac1d1ca7",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs"
+              },
+              "C1_HISTOGRAM": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "C1_HISTOGRAM",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.45620958727646266,
+                  "hits10": 0.8897338403041825,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 4.684410646387833
+                },
+                "train_seconds": 57.57404268393293,
+                "wall_seconds": 57.98125753598288,
+                "validation_scoring_seconds": 3.674578296020627,
+                "peak_gpu_allocated_mb": 55.98291015625,
+                "trainable_parameters": 24753,
+                "added_hspe_parameters": 18,
+                "added_parameter_fraction": 0.0007277137659187386,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_2/arms/C1_HISTOGRAM/checkpoints/cora_uniform_seed2_2602946e9648.pt",
+                "checkpoint_sha256": "e130a22a9aa39d1c7e020a3ea14393be03d0bcc1702d12c5657e7f1d0cf7b7c5",
+                "model_state_hash": "a35137ed9a81beacf06010b8a6fbc756509150f5afcf231b512dfb70a4509332",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "histogram_bins": [
+                  "2",
+                  "3-4",
+                  "5-8",
+                  "9-16",
+                  ">=17"
+                ],
+                "unordered_pair_bins": 15,
+                "histogram_features": 17,
+                "residual_parameters": 18,
+                "single_linear_zero_init": true,
+                "hist_feature_hash_train": "4034e6500968c476f3967c82de439436e9047c62b4b6c86d7744ed8761867873",
+                "hist_feature_hash_validation": "505aafa4eaaf4ba099af0e7ef2c90dbd50797e195f2e738452a067507107a843"
+              },
+              "C2_SIZE_SHUFFLE": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "C2_SIZE_SHUFFLE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.502650365055308,
+                  "hits10": 0.9201520912547528,
+                  "hits20": 0.9961977186311787,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 4.197718631178708
+                },
+                "train_seconds": 57.39348197495565,
+                "wall_seconds": 57.650252643972635,
+                "validation_scoring_seconds": 3.597171768080443,
+                "peak_gpu_allocated_mb": 67.908203125,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_2/arms/C2_SIZE_SHUFFLE/checkpoints/cora_uniform_seed2_d3ae1d8ef6f6.pt",
+                "checkpoint_sha256": "625505404e6d1bfacbcf4500b32a1c5d5e309792a62e5dc6b74f5995d2a1078a",
+                "model_state_hash": "033651b632551af3cc4545da4aa78b258f5608615c1a9fae84aae45aadde8a63",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "shuffle_power_train": {
+                  "dataset": "cora",
+                  "seed": 2,
+                  "split": "train",
+                  "seed_used": 17271002,
+                  "stratum_count": 1870,
+                  "multi_candidate_strata": 689,
+                  "eligible_candidate_count": 7795,
+                  "candidate_count": 8976,
+                  "informative_pair_count": 3037,
+                  "informative_shuffle_fraction": 0.3383467023172905,
+                  "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "3e9a07c0e765b0241c89254ae6197f4d3fccf661a42a8d5ceaa95a4821b85474",
+                  "size_multiset_sha256": "b0f56399df19ab4508c59fdbfea3cd682a2af6f06340c34a64a7c2915253f0f9"
+                },
+                "shuffle_power_validation": {
+                  "dataset": "cora",
+                  "seed": 2,
+                  "split": "valid",
+                  "seed_used": 17272002,
+                  "stratum_count": 385,
+                  "multi_candidate_strata": 125,
+                  "eligible_candidate_count": 5263,
+                  "candidate_count": 5523,
+                  "informative_pair_count": 390,
+                  "informative_shuffle_fraction": 0.0706137968495383,
+                  "shuffle_power": "LOW_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "0cffd9ace44d0193c6fea708ea9afaa309fa23d4312bc4a998f0ef8993f10c70",
+                  "size_multiset_sha256": "48b57b395dd3e5b423a0057eaa719947ddeec0ffebf6b9a85aad772cb3ebb358"
+                },
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "C3_PARAM_MATCHED": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "C3_PARAM_MATCHED",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.5264248298608621,
+                  "hits10": 0.9201520912547528,
+                  "hits20": 0.9961977186311787,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 4.083650190114068
+                },
+                "train_seconds": 57.72693633893505,
+                "wall_seconds": 57.984694433864206,
+                "validation_scoring_seconds": 3.850660430267453,
+                "peak_gpu_allocated_mb": 67.908203125,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_2/arms/C3_PARAM_MATCHED/checkpoints/cora_uniform_seed2_424e3f220dde.pt",
+                "checkpoint_sha256": "4812ab7410938fbff5627593b3d72b8854e5519516f2d24b6e28cfe4a9b862b4",
+                "model_state_hash": "77804d4106655d5acb1af7ef8c8b5f9d56f2fa0cce2abc7291014121abdc3606",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "H1_HSPE_REAL": {
+                "state": "COMPLETE",
+                "dataset": "cora",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "H1_HSPE_REAL",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+                "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+                "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+                "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+                "validation_metrics": {
+                  "mrr": 0.5050403403847823,
+                  "hits10": 0.9163498098859315,
+                  "hits20": 0.9961977186311787,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 4.159695817490494
+                },
+                "train_seconds": 56.971719766967,
+                "wall_seconds": 57.22717303177342,
+                "validation_scoring_seconds": 3.637535977177322,
+                "peak_gpu_allocated_mb": 67.908203125,
+                "trainable_parameters": 24810,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/cora/seed_2/arms/H1_HSPE_REAL/checkpoints/cora_uniform_seed2_943831ffe04d.pt",
+                "checkpoint_sha256": "3e53fb5c31d2c7e55e5698644d04f998273c2cc665bc42546666d33fe120528c",
+                "model_state_hash": "be13b260ee32ca6a6be0dc34af0afd5665098ffa2c4cdfd7e59be21a62e799ed",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              }
+            },
+            "mrr": {
+              "B0_BASELINE": 0.41276281086667316,
+              "C1_HISTOGRAM": 0.45620958727646266,
+              "C2_SIZE_SHUFFLE": 0.502650365055308,
+              "C3_PARAM_MATCHED": 0.5264248298608621,
+              "H1_HSPE_REAL": 0.5050403403847823
+            },
+            "input_audit": {
+              "dataset": "cora",
+              "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+              "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+              "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+              "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+              "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+              "validation_positive_count": 263,
+              "validation_negative_count_per_positive": 20,
+              "validation_sampling": {
+                "source": "uniform candidates filtered only by train/message edges",
+                "seed": 72200,
+                "grouping_seed": 72201,
+                "negative_count_per_positive": 20,
+                "shape": [
+                  263,
+                  20,
+                  2
+                ],
+                "self_positive_collisions_replaced": 0,
+                "train_forbidden_count": 4488,
+                "heldout_test_identities_used": false
+              },
+              "qths25": {
+                "alpha_candidate_occurrence_fraction": 0.25,
+                "prepool_size": 2,
+                "trimmed_occurrence_count": 2244,
+                "trimmed_row_count": 2244,
+                "selected_runner_up_count": 2244,
+                "hash_rule": "QTHS25"
+              },
+              "graph_teacher": {
+                "source": "frozen_V6_1_graph_teacher_cache",
+                "score_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c",
+                "pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba"
+              },
+              "train_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/train/cora_pair_features.npz",
+                "archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/train/cora_native_tokens.npy",
+                "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+                "pair_count": 8976,
+                "token_count": 152664,
+                "metadata": {
+                  "pair_count_unique": 8976,
+                  "token_count": 152664,
+                  "stage0_raw_pair_cache_reused": 6080,
+                  "fresh_pairs_computed": 2896,
+                  "raw_tokens_sha256": "f5df9179144ea661afcbb72bb678d8d595520a13cbcbb03c0d018c7b73c72c58",
+                  "shuffle_overlap_sha256": "2c791aa408adc3d4f6d2b99e5daf32241e4362f30bfcb14de38f7680a3ec0f7a",
+                  "shuffle": {
+                    "seed": 20261018,
+                    "stratum_count": 339,
+                    "singleton_token_fraction": 3.2751663784520255e-05,
+                    "informative_pair_count": 4071,
+                    "candidate_pair_count": 8976,
+                    "informative_shuffle_fraction": 0.4535427807486631,
+                    "shuffle_power": "ADEQUATE"
+                  },
+                  "shuffle_seed": 20261018,
+                  "pair_feature_archive_sha256": "2337a9f03a49e3585650d43709efb2f79e0b95af8106005db22af1a557e6625d"
+                }
+              },
+              "validation_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/valid/cora_pair_features.npz",
+                "archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/cache/valid/cora_native_tokens.npy",
+                "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+                "pair_count": 5523,
+                "token_count": 12666,
+                "metadata": {
+                  "pair_count_unique": 5523,
+                  "token_count": 12666,
+                  "stage0_raw_pair_cache_reused": 0,
+                  "fresh_pairs_computed": 5523,
+                  "raw_tokens_sha256": "6024e3cea316196a3f112fcdfe941e38b1416a1a24c65e6c6259b87b6ba3c40b",
+                  "shuffle_overlap_sha256": "087a659e91967cdc4296fbf3b0ec48c8bba6a7c8f512691248d0df68e55e5379",
+                  "shuffle": {
+                    "seed": 20361018,
+                    "stratum_count": 281,
+                    "singleton_token_fraction": 0.0011842728564661299,
+                    "informative_pair_count": 551,
+                    "candidate_pair_count": 5523,
+                    "informative_shuffle_fraction": 0.09976462067716821,
+                    "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+                  },
+                  "shuffle_seed": 20361018,
+                  "pair_feature_archive_sha256": "bcb181288a8ca69220d4df159d159397134e979db96d6dee6792c0a614e968f1"
+                }
+              },
+              "v16_source_hashes": {
+                "stage1_script": "d15aa844e83fe021d6c0c3808026ea62c949dffdf3d80109ef20b5fb99756d83",
+                "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+              },
+              "current_source_hashes": {
+                "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+              },
+              "v16_reuse_source_hashes_equal": false,
+              "heldout_test_identities_used": false,
+              "test_evaluated": false
+            },
+            "zero_init_audit": {
+              "C1_HISTOGRAM": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 1.1920928955078125e-07,
+                "added_trainable_parameters": 18,
+                "added_parameter_fraction": 0.0007277137659187386
+              },
+              "H1_HSPE_REAL": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 1.1920928955078125e-07,
+                "added_trainable_parameters": 75,
+                "added_parameter_fraction": 0.0030321406913280777
+              },
+              "baseline_trainable_parameters": 24735,
+              "parameter_cap_fraction": 0.01
+            },
+            "baseline_trainable_parameters": 24735,
+            "shuffle_power": {
+              "train": {
+                "dataset": "cora",
+                "seed": 2,
+                "split": "train",
+                "seed_used": 17271002,
+                "stratum_count": 1870,
+                "multi_candidate_strata": 689,
+                "eligible_candidate_count": 7795,
+                "candidate_count": 8976,
+                "informative_pair_count": 3037,
+                "informative_shuffle_fraction": 0.3383467023172905,
+                "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "3e9a07c0e765b0241c89254ae6197f4d3fccf661a42a8d5ceaa95a4821b85474",
+                "size_multiset_sha256": "b0f56399df19ab4508c59fdbfea3cd682a2af6f06340c34a64a7c2915253f0f9"
+              },
+              "validation": {
+                "dataset": "cora",
+                "seed": 2,
+                "split": "valid",
+                "seed_used": 17272002,
+                "stratum_count": 385,
+                "multi_candidate_strata": 125,
+                "eligible_candidate_count": 5263,
+                "candidate_count": 5523,
+                "informative_pair_count": 390,
+                "informative_shuffle_fraction": 0.0706137968495383,
+                "shuffle_power": "LOW_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "0cffd9ace44d0193c6fea708ea9afaa309fa23d4312bc4a998f0ef8993f10c70",
+                "size_multiset_sha256": "48b57b395dd3e5b423a0057eaa719947ddeec0ffebf6b9a85aad772cb3ebb358"
+              }
+            },
+            "hist_feature_hashes": {
+              "train": "4034e6500968c476f3967c82de439436e9047c62b4b6c86d7744ed8761867873",
+              "validation": "505aafa4eaaf4ba099af0e7ef2c90dbd50797e195f2e738452a067507107a843"
+            }
+          }
+        },
+        "shuffle_power_by_seed": [
+          [
+            0.3362299465240642,
+            0.06988955277928662
+          ],
+          [
+            0.3374554367201426,
+            0.07043273583197537
+          ],
+          [
+            0.3383467023172905,
+            0.0706137968495383
+          ]
+        ],
+        "shuffle_adequate": false,
+        "gate": {
+          "dataset": "cora",
+          "epochs": 5,
+          "shuffle_adequate": false,
+          "controls": {
+            "B0_BASELINE": {
+              "paired_deltas": [
+                0.08675745358284292,
+                0.10629127871752853,
+                0.09227752951810914
+              ],
+              "mean_delta": 0.09510875393949353,
+              "seed_wins": 3,
+              "required_wins": 2,
+              "required_mean_delta": 0.003,
+              "active_gate": true,
+              "passes": true
+            },
+            "C1_HISTOGRAM": {
+              "paired_deltas": [
+                0.011767475462457044,
+                0.07305033154071988,
+                0.048830753108319636
+              ],
+              "mean_delta": 0.04454952003716552,
+              "seed_wins": 3,
+              "required_wins": 2,
+              "required_mean_delta": 0.002,
+              "active_gate": true,
+              "passes": true
+            },
+            "C2_SIZE_SHUFFLE": {
+              "paired_deltas": [
+                0.009477682783430863,
+                0.0017789244975556784,
+                0.00238997532947427
+              ],
+              "mean_delta": 0.004548860870153604,
+              "seed_wins": 3,
+              "required_wins": 2,
+              "required_mean_delta": 0.002,
+              "active_gate": false,
+              "passes": null
+            },
+            "C3_PARAM_MATCHED": {
+              "paired_deltas": [
+                0.02538754021643741,
+                -0.0006136847799197986,
+                -0.02138448947607985
+              ],
+              "mean_delta": 0.001129788653479254,
+              "seed_wins": 1,
+              "required_wins": 2,
+              "required_mean_delta": 0.002,
+              "active_gate": true,
+              "passes": false
+            }
+          },
+          "passed": false
+        },
+        "passed": false
+      },
+      "pubmed": {
+        "seeds": {
+          "0": {
+            "state": "COMPLETE",
+            "dataset": "pubmed",
+            "seed": 0,
+            "epochs": 5,
+            "validation_only": true,
+            "test_evaluated": false,
+            "arms": {
+              "B0_BASELINE": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "arm": "B0_BASELINE",
+                "seed": 0,
+                "epochs": 5,
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.826532217023497,
+                  "hits10": 0.9887184115523465,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 1.782490974729242
+                },
+                "validation_curve_epoch_mrr": [],
+                "train_seconds": 924.529017906636,
+                "wall_seconds": 926.7118881028146,
+                "peak_gpu_mb": null,
+                "trainable_parameters": 9807,
+                "added_nhmc_parameters": 0,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/B0_BASELINE/checkpoints/pubmed_uniform_seed0_eccac5501401.pt",
+                "checkpoint_sha256": null,
+                "model_state_hash": "01a4e459a930f951134b47b4c27b89728946759ec173526bc1010ab53cdd5c45",
+                "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms",
+                "reused_from": "REUSED_FROM_V16",
+                "source_arm": "B0_BASELINE",
+                "reuse_result_sha256": "33b32695699283bb745736d07f7812e1b56bd600dbe9cd1be80c87b9a50a1416",
+                "reuse_checkpoint_sha256": "4afdf3580ec713bb0528a88b3e6d1124e018a48ee10efd4fd37be6dbd1531afd",
+                "reuse_source_hashes": {
+                  "stage1_script": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+                },
+                "reuse_checks": {
+                  "seed": 0,
+                  "epochs": 5,
+                  "train_pool_hash_match": true,
+                  "selected_negative_hash_match": true,
+                  "validation_candidate_hash_match": true,
+                  "source_hash_match": true,
+                  "feature_definition": "V16 exact frozen baseline"
+                }
+              },
+              "C1_HISTOGRAM": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 0,
+                "epochs": 5,
+                "arm": "C1_HISTOGRAM",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.8380769694620167,
+                  "hits10": 0.9887184115523465,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 1.733303249097473
+                },
+                "train_seconds": 1623.7698107170872,
+                "wall_seconds": 1626.4781107860617,
+                "validation_scoring_seconds": 70.63542870106176,
+                "peak_gpu_allocated_mb": 480.91015625,
+                "trainable_parameters": 9825,
+                "added_hspe_parameters": 18,
+                "added_parameter_fraction": 0.0018354236769654328,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_0/arms/C1_HISTOGRAM/checkpoints/pubmed_uniform_seed0_4ace48f890ba.pt",
+                "checkpoint_sha256": "0a1aeb4fb5a756a1b07c1e9abccc344d08fedf412b7eb74aec4d60d883c3381f",
+                "model_state_hash": "cf9548ff8ea2bc8ceaa8d89f771491c1f27a3b1c68f37e91dc9fa1493ba3a22c",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "histogram_bins": [
+                  "2",
+                  "3-4",
+                  "5-8",
+                  "9-16",
+                  ">=17"
+                ],
+                "unordered_pair_bins": 15,
+                "histogram_features": 17,
+                "residual_parameters": 18,
+                "single_linear_zero_init": true,
+                "hist_feature_hash_train": "0d3deaf5cff6b3a73b835d623971b8f75f695e282b557a999951221ea9741263",
+                "hist_feature_hash_validation": "e0b7d33c4c12c5864c38067e8151dc3887eac5865c5219130be5bc765180df56"
+              },
+              "C2_SIZE_SHUFFLE": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 0,
+                "epochs": 5,
+                "arm": "C2_SIZE_SHUFFLE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.8310558509614104,
+                  "hits10": 0.9842057761732852,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 1.7946750902527075
+                },
+                "train_seconds": 1680.2163637280464,
+                "wall_seconds": 1683.14587108884,
+                "validation_scoring_seconds": 70.04879064531997,
+                "peak_gpu_allocated_mb": 648.30712890625,
+                "trainable_parameters": 9882,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_0/arms/C2_SIZE_SHUFFLE/checkpoints/pubmed_uniform_seed0_e20ea563b933.pt",
+                "checkpoint_sha256": "6fe90dedc94863b2755e870fec42a19e5e242798e895a4490f54ab51f29c2981",
+                "model_state_hash": "ef5487b374ddf1657ae669ffeb85ed48580f84a87f70dbe9e56d1e9d56f044f3",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "shuffle_power_train": {
+                  "dataset": "pubmed",
+                  "seed": 0,
+                  "split": "train",
+                  "seed_used": 17371000,
+                  "stratum_count": 9194,
+                  "multi_candidate_strata": 4770,
+                  "eligible_candidate_count": 70928,
+                  "candidate_count": 75352,
+                  "informative_pair_count": 29815,
+                  "informative_shuffle_fraction": 0.3956762926000637,
+                  "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "bc35a8f86591fc1106921b7c63421aa909d64852938301bf091838babaae62c8",
+                  "size_multiset_sha256": "7e0cd9d7365866341b0fec83d644756c20e43a30c71013fe8c994a73dd585d81"
+                },
+                "shuffle_power_validation": {
+                  "dataset": "pubmed",
+                  "seed": 0,
+                  "split": "valid",
+                  "seed_used": 17372000,
+                  "stratum_count": 1920,
+                  "multi_candidate_strata": 525,
+                  "eligible_candidate_count": 45139,
+                  "candidate_count": 46534,
+                  "informative_pair_count": 3264,
+                  "informative_shuffle_fraction": 0.07014226157218378,
+                  "shuffle_power": "LOW_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "5cff7d03e8a0060e7267cae3fe739d50514b81d4003f87727f9aa50318b11697",
+                  "size_multiset_sha256": "5be4365ff992097baf9d1877234945b7d223b3bd19c2d2c934f126e3fe8998fc"
+                },
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "C3_PARAM_MATCHED": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 0,
+                "epochs": 5,
+                "arm": "C3_PARAM_MATCHED",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7666860149203764,
+                  "hits10": 0.9869133574007221,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 1.9679602888086642
+                },
+                "train_seconds": 1689.080200787168,
+                "wall_seconds": 1692.0470621059649,
+                "validation_scoring_seconds": 72.78997969301417,
+                "peak_gpu_allocated_mb": 648.30712890625,
+                "trainable_parameters": 9882,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_0/arms/C3_PARAM_MATCHED/checkpoints/pubmed_uniform_seed0_43726aa72a6b.pt",
+                "checkpoint_sha256": "ff3252c14f8b40c58bbff702b4ce4743573996d819dc2ff5f71c4889d3d3f6b7",
+                "model_state_hash": "37904d317b7db454c2ab231300c1ef7ae640053f767fb0f57af08c63acea7bb2",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "H1_HSPE_REAL": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "arm": "H1_HSPE_REAL",
+                "seed": 0,
+                "epochs": 5,
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.8370510027710929,
+                  "hits10": 0.9864620938628159,
+                  "hits20": 0.9995487364620939,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 1.773465703971119
+                },
+                "validation_curve_epoch_mrr": [],
+                "train_seconds": 806.6516197468154,
+                "wall_seconds": 809.0397208840586,
+                "peak_gpu_mb": null,
+                "trainable_parameters": 9882,
+                "added_nhmc_parameters": 75,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/C1_NHMC_SIZE/checkpoints/pubmed_uniform_seed0_b4bcba4eacf7.pt",
+                "checkpoint_sha256": null,
+                "model_state_hash": "e44ddefc13a21d1e1ada74a5372cb8f8a852e96a5f4b53e7d0577fa9957c20bb",
+                "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms",
+                "reused_from": "REUSED_FROM_V16",
+                "source_arm": "C1_NHMC_SIZE",
+                "reuse_result_sha256": "d9b1d7c75729958792296faff8af5810ff0432528bde89eb7ab6929dbc60c656",
+                "reuse_checkpoint_sha256": "326aa56af5602decc46b6274c73df9f80f69037c9cc13074aae9af33d3a1720d",
+                "reuse_source_hashes": {
+                  "stage1_script": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+                },
+                "reuse_checks": {
+                  "seed": 0,
+                  "epochs": 5,
+                  "train_pool_hash_match": true,
+                  "selected_negative_hash_match": true,
+                  "validation_candidate_hash_match": true,
+                  "source_hash_match": true,
+                  "feature_definition": "V16 exact C1 size-only encoder"
+                }
+              }
+            },
+            "mrr": {
+              "B0_BASELINE": 0.826532217023497,
+              "C1_HISTOGRAM": 0.8380769694620167,
+              "C2_SIZE_SHUFFLE": 0.8310558509614104,
+              "C3_PARAM_MATCHED": 0.7666860149203764,
+              "H1_HSPE_REAL": 0.8370510027710929
+            },
+            "input_audit": {
+              "dataset": "pubmed",
+              "train_positive_hash": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+              "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+              "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+              "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+              "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+              "validation_positive_count": 2216,
+              "validation_negative_count_per_positive": 20,
+              "validation_sampling": {
+                "source": "uniform candidates filtered only by train/message edges",
+                "seed": 72200,
+                "grouping_seed": 72201,
+                "negative_count_per_positive": 20,
+                "shape": [
+                  2216,
+                  20,
+                  2
+                ],
+                "self_positive_collisions_replaced": 0,
+                "train_forbidden_count": 37676,
+                "heldout_test_identities_used": false
+              },
+              "qths25": {
+                "alpha_candidate_occurrence_fraction": 0.25,
+                "prepool_size": 2,
+                "trimmed_occurrence_count": 18838,
+                "trimmed_row_count": 18838,
+                "selected_runner_up_count": 18838,
+                "hash_rule": "QTHS25"
+              },
+              "graph_teacher": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 0,
+                "epochs": 10,
+                "hypergraph_mode": "disabled",
+                "training_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "graph_teacher_score_hash": "4bb225e71468288d819708447794d82d285b1d1949289b8786923466fefe5b06",
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/pubmed/graph_teacher/checkpoints/pubmed_uniform_seed0_0e1391bc1fca.pt",
+                "train_seconds": 223.67736776173115,
+                "wall_seconds": 335.50470106489956,
+                "valid_or_test_labels_used_for_training_or_selection": false,
+                "test_evaluated": false,
+                "cache_reused": true
+              },
+              "train_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/train/pubmed_pair_features.npz",
+                "archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/train/pubmed_native_tokens.npy",
+                "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+                "pair_count": 75352,
+                "token_count": 4957442,
+                "metadata": {
+                  "pair_count_unique": 75352,
+                  "token_count": 4957442,
+                  "stage0_raw_pair_cache_reused": 50778,
+                  "fresh_pairs_computed": 24574,
+                  "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+                  "shuffle_overlap_sha256": "b6ed11301a35dd0bce23239d6932ed17ee84c75a4a2de7fd7dd538e2aefa93b2",
+                  "shuffle": {
+                    "seed": 20261019,
+                    "stratum_count": 592,
+                    "singleton_token_fraction": 4.034338677083867e-07,
+                    "informative_pair_count": 33125,
+                    "candidate_pair_count": 75352,
+                    "informative_shuffle_fraction": 0.4396034610892876,
+                    "shuffle_power": "ADEQUATE"
+                  },
+                  "shuffle_seed": 20261019,
+                  "pair_feature_archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91"
+                }
+              },
+              "validation_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/valid/pubmed_pair_features.npz",
+                "archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/valid/pubmed_native_tokens.npy",
+                "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+                "pair_count": 46534,
+                "token_count": 323939,
+                "metadata": {
+                  "pair_count_unique": 46534,
+                  "token_count": 323939,
+                  "stage0_raw_pair_cache_reused": 0,
+                  "fresh_pairs_computed": 46534,
+                  "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+                  "shuffle_overlap_sha256": "a1909217eea169e77f380ac2f7150b5441771977457efa4684954c4ced9e64e4",
+                  "shuffle": {
+                    "seed": 20361019,
+                    "stratum_count": 500,
+                    "singleton_token_fraction": 2.1609006633965037e-05,
+                    "informative_pair_count": 4129,
+                    "candidate_pair_count": 46534,
+                    "informative_shuffle_fraction": 0.08873082047535136,
+                    "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+                  },
+                  "shuffle_seed": 20361019,
+                  "pair_feature_archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e"
+                }
+              },
+              "v16_source_hashes": {
+                "stage1_script": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+              },
+              "current_source_hashes": {
+                "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+              },
+              "v16_reuse_source_hashes_equal": true,
+              "heldout_test_identities_used": false,
+              "test_evaluated": false
+            },
+            "zero_init_audit": {
+              "C1_HISTOGRAM": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 0.0,
+                "added_trainable_parameters": 18,
+                "added_parameter_fraction": 0.0018354236769654328
+              },
+              "H1_HSPE_REAL": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 0.0,
+                "added_trainable_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637
+              },
+              "baseline_trainable_parameters": 9807,
+              "parameter_cap_fraction": 0.01
+            },
+            "baseline_trainable_parameters": 9807,
+            "shuffle_power": {
+              "train": {
+                "dataset": "pubmed",
+                "seed": 0,
+                "split": "train",
+                "seed_used": 17371000,
+                "stratum_count": 9194,
+                "multi_candidate_strata": 4770,
+                "eligible_candidate_count": 70928,
+                "candidate_count": 75352,
+                "informative_pair_count": 29815,
+                "informative_shuffle_fraction": 0.3956762926000637,
+                "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "bc35a8f86591fc1106921b7c63421aa909d64852938301bf091838babaae62c8",
+                "size_multiset_sha256": "7e0cd9d7365866341b0fec83d644756c20e43a30c71013fe8c994a73dd585d81"
+              },
+              "validation": {
+                "dataset": "pubmed",
+                "seed": 0,
+                "split": "valid",
+                "seed_used": 17372000,
+                "stratum_count": 1920,
+                "multi_candidate_strata": 525,
+                "eligible_candidate_count": 45139,
+                "candidate_count": 46534,
+                "informative_pair_count": 3264,
+                "informative_shuffle_fraction": 0.07014226157218378,
+                "shuffle_power": "LOW_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "5cff7d03e8a0060e7267cae3fe739d50514b81d4003f87727f9aa50318b11697",
+                "size_multiset_sha256": "5be4365ff992097baf9d1877234945b7d223b3bd19c2d2c934f126e3fe8998fc"
+              }
+            },
+            "hist_feature_hashes": {
+              "train": "0d3deaf5cff6b3a73b835d623971b8f75f695e282b557a999951221ea9741263",
+              "validation": "e0b7d33c4c12c5864c38067e8151dc3887eac5865c5219130be5bc765180df56"
+            }
+          },
+          "1": {
+            "state": "COMPLETE",
+            "dataset": "pubmed",
+            "seed": 1,
+            "epochs": 5,
+            "validation_only": true,
+            "test_evaluated": false,
+            "arms": {
+              "B0_BASELINE": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "B0_BASELINE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7328554551233198,
+                  "hits10": 0.9814981949458483,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.327617328519856
+                },
+                "train_seconds": 1582.5502114561386,
+                "wall_seconds": 1584.934976351913,
+                "validation_scoring_seconds": 64.43668886926025,
+                "peak_gpu_allocated_mb": 480.9091796875,
+                "trainable_parameters": 9807,
+                "added_hspe_parameters": 0,
+                "added_parameter_fraction": 0.0,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_1/arms/B0_BASELINE/checkpoints/pubmed_uniform_seed1_85072348d060.pt",
+                "checkpoint_sha256": "26c99a4affdb13bc4c2b75490d9aa5ac735ca319664ccba806e30b57e6c6c27e",
+                "model_state_hash": "f447c6e8132e1b052e4284a3cfe9af401ac10f3187d864376b5e1d9d8697d3ed",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs"
+              },
+              "C1_HISTOGRAM": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "C1_HISTOGRAM",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7705301314907884,
+                  "hits10": 0.9774368231046932,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.180956678700361
+                },
+                "train_seconds": 1579.0010221209377,
+                "wall_seconds": 1581.3211495731957,
+                "validation_scoring_seconds": 63.61235250532627,
+                "peak_gpu_allocated_mb": 480.927734375,
+                "trainable_parameters": 9825,
+                "added_hspe_parameters": 18,
+                "added_parameter_fraction": 0.0018354236769654328,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_1/arms/C1_HISTOGRAM/checkpoints/pubmed_uniform_seed1_e8781266c33b.pt",
+                "checkpoint_sha256": "5ab25ce5e1926819e0e7d585a240bf59acb70e2f8f47081aa02e7f4a03eb21e8",
+                "model_state_hash": "a7717e238cfb4a5351e4e02463afc969223efdc3a7cf47f2b600a85e70b84408",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "histogram_bins": [
+                  "2",
+                  "3-4",
+                  "5-8",
+                  "9-16",
+                  ">=17"
+                ],
+                "unordered_pair_bins": 15,
+                "histogram_features": 17,
+                "residual_parameters": 18,
+                "single_linear_zero_init": true,
+                "hist_feature_hash_train": "0d3deaf5cff6b3a73b835d623971b8f75f695e282b557a999951221ea9741263",
+                "hist_feature_hash_validation": "e0b7d33c4c12c5864c38067e8151dc3887eac5865c5219130be5bc765180df56"
+              },
+              "C2_SIZE_SHUFFLE": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "C2_SIZE_SHUFFLE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7722228540501361,
+                  "hits10": 0.9756317689530686,
+                  "hits20": 0.9995487364620939,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.1601985559566788
+                },
+                "train_seconds": 1579.377768946346,
+                "wall_seconds": 1581.7397972219624,
+                "validation_scoring_seconds": 66.58870724914595,
+                "peak_gpu_allocated_mb": 648.3251953125,
+                "trainable_parameters": 9882,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_1/arms/C2_SIZE_SHUFFLE/checkpoints/pubmed_uniform_seed1_b196c1824f94.pt",
+                "checkpoint_sha256": "56e0171831d8a2575e91896764cfa6f58294cfcae338887e352add3a4e15ac72",
+                "model_state_hash": "1a3347ca9fa2063d3368c5b46df987aac910034bee93ca66cf961950e1c8e128",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "shuffle_power_train": {
+                  "dataset": "pubmed",
+                  "seed": 1,
+                  "split": "train",
+                  "seed_used": 17371001,
+                  "stratum_count": 9194,
+                  "multi_candidate_strata": 4770,
+                  "eligible_candidate_count": 70928,
+                  "candidate_count": 75352,
+                  "informative_pair_count": 29821,
+                  "informative_shuffle_fraction": 0.39575591888735534,
+                  "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "fb2d22f0638488dea54a7f38b3f7fd2b35fd9126d8ea92774eb4cda7e944bd34",
+                  "size_multiset_sha256": "d53cdc8d99414851e5ecaf6677af2c4a36cceb2800246494a4126a8efe1acd5f"
+                },
+                "shuffle_power_validation": {
+                  "dataset": "pubmed",
+                  "seed": 1,
+                  "split": "valid",
+                  "seed_used": 17372001,
+                  "stratum_count": 1920,
+                  "multi_candidate_strata": 525,
+                  "eligible_candidate_count": 45139,
+                  "candidate_count": 46534,
+                  "informative_pair_count": 3265,
+                  "informative_shuffle_fraction": 0.07016375123565564,
+                  "shuffle_power": "LOW_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "280d148cf9bbcf7b2633ea1f98d9681afaf35f4b93f625fac6bb27d3423d5e81",
+                  "size_multiset_sha256": "5dbe6fb1b5b65bb26e95e5e73ec9587ae8d4c48a6fd8660b2f706923910bb7ff"
+                },
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "C3_PARAM_MATCHED": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "C3_PARAM_MATCHED",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7839490693555313,
+                  "hits10": 0.9792418772563177,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.066335740072202
+                },
+                "train_seconds": 1170.3173152799718,
+                "wall_seconds": 1172.5763107822277,
+                "validation_scoring_seconds": 43.427364711649716,
+                "peak_gpu_allocated_mb": 648.3251953125,
+                "trainable_parameters": 9882,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_1/arms/C3_PARAM_MATCHED/checkpoints/pubmed_uniform_seed1_845d9dba77e6.pt",
+                "checkpoint_sha256": "d133081189c5a2c4e89f59a4a587be5c17539e1e7dccfe9a356f0d12b8a0190a",
+                "model_state_hash": "7568db71e8e9eaa8ba4844a923a347863a130ccc4a9868d409540957e31441ab",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "H1_HSPE_REAL": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 1,
+                "epochs": 5,
+                "arm": "H1_HSPE_REAL",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7708110961117173,
+                  "hits10": 0.9742779783393501,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.189981949458484
+                },
+                "train_seconds": 1125.8932473030873,
+                "wall_seconds": 1128.0875445948914,
+                "validation_scoring_seconds": 22.732720240950584,
+                "peak_gpu_allocated_mb": 648.3251953125,
+                "trainable_parameters": 9882,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_1/arms/H1_HSPE_REAL/checkpoints/pubmed_uniform_seed1_2fdf95e3cbf9.pt",
+                "checkpoint_sha256": "ad36006330f7c413de02516baff3a829c83df81878b2f6a41aab5388a33f0bf8",
+                "model_state_hash": "3063d4a67a32cb93c253e5ff16f2b940c7cc0229496a6d718127b021d32d357c",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              }
+            },
+            "mrr": {
+              "B0_BASELINE": 0.7328554551233198,
+              "C1_HISTOGRAM": 0.7705301314907884,
+              "C2_SIZE_SHUFFLE": 0.7722228540501361,
+              "C3_PARAM_MATCHED": 0.7839490693555313,
+              "H1_HSPE_REAL": 0.7708110961117173
+            },
+            "input_audit": {
+              "dataset": "pubmed",
+              "train_positive_hash": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+              "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+              "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+              "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+              "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+              "validation_positive_count": 2216,
+              "validation_negative_count_per_positive": 20,
+              "validation_sampling": {
+                "source": "uniform candidates filtered only by train/message edges",
+                "seed": 72200,
+                "grouping_seed": 72201,
+                "negative_count_per_positive": 20,
+                "shape": [
+                  2216,
+                  20,
+                  2
+                ],
+                "self_positive_collisions_replaced": 0,
+                "train_forbidden_count": 37676,
+                "heldout_test_identities_used": false
+              },
+              "qths25": {
+                "alpha_candidate_occurrence_fraction": 0.25,
+                "prepool_size": 2,
+                "trimmed_occurrence_count": 18838,
+                "trimmed_row_count": 18838,
+                "selected_runner_up_count": 18838,
+                "hash_rule": "QTHS25"
+              },
+              "graph_teacher": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 0,
+                "epochs": 10,
+                "hypergraph_mode": "disabled",
+                "training_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "graph_teacher_score_hash": "4bb225e71468288d819708447794d82d285b1d1949289b8786923466fefe5b06",
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/pubmed/graph_teacher/checkpoints/pubmed_uniform_seed0_0e1391bc1fca.pt",
+                "train_seconds": 223.67736776173115,
+                "wall_seconds": 335.50470106489956,
+                "valid_or_test_labels_used_for_training_or_selection": false,
+                "test_evaluated": false,
+                "cache_reused": true
+              },
+              "train_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/train/pubmed_pair_features.npz",
+                "archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/train/pubmed_native_tokens.npy",
+                "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+                "pair_count": 75352,
+                "token_count": 4957442,
+                "metadata": {
+                  "pair_count_unique": 75352,
+                  "token_count": 4957442,
+                  "stage0_raw_pair_cache_reused": 50778,
+                  "fresh_pairs_computed": 24574,
+                  "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+                  "shuffle_overlap_sha256": "b6ed11301a35dd0bce23239d6932ed17ee84c75a4a2de7fd7dd538e2aefa93b2",
+                  "shuffle": {
+                    "seed": 20261019,
+                    "stratum_count": 592,
+                    "singleton_token_fraction": 4.034338677083867e-07,
+                    "informative_pair_count": 33125,
+                    "candidate_pair_count": 75352,
+                    "informative_shuffle_fraction": 0.4396034610892876,
+                    "shuffle_power": "ADEQUATE"
+                  },
+                  "shuffle_seed": 20261019,
+                  "pair_feature_archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91"
+                }
+              },
+              "validation_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/valid/pubmed_pair_features.npz",
+                "archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/valid/pubmed_native_tokens.npy",
+                "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+                "pair_count": 46534,
+                "token_count": 323939,
+                "metadata": {
+                  "pair_count_unique": 46534,
+                  "token_count": 323939,
+                  "stage0_raw_pair_cache_reused": 0,
+                  "fresh_pairs_computed": 46534,
+                  "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+                  "shuffle_overlap_sha256": "a1909217eea169e77f380ac2f7150b5441771977457efa4684954c4ced9e64e4",
+                  "shuffle": {
+                    "seed": 20361019,
+                    "stratum_count": 500,
+                    "singleton_token_fraction": 2.1609006633965037e-05,
+                    "informative_pair_count": 4129,
+                    "candidate_pair_count": 46534,
+                    "informative_shuffle_fraction": 0.08873082047535136,
+                    "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+                  },
+                  "shuffle_seed": 20361019,
+                  "pair_feature_archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e"
+                }
+              },
+              "v16_source_hashes": {
+                "stage1_script": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+              },
+              "current_source_hashes": {
+                "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+              },
+              "v16_reuse_source_hashes_equal": true,
+              "heldout_test_identities_used": false,
+              "test_evaluated": false
+            },
+            "zero_init_audit": {
+              "C1_HISTOGRAM": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 1.1920928955078125e-07,
+                "added_trainable_parameters": 18,
+                "added_parameter_fraction": 0.0018354236769654328
+              },
+              "H1_HSPE_REAL": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 1.1920928955078125e-07,
+                "added_trainable_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637
+              },
+              "baseline_trainable_parameters": 9807,
+              "parameter_cap_fraction": 0.01
+            },
+            "baseline_trainable_parameters": 9807,
+            "shuffle_power": {
+              "train": {
+                "dataset": "pubmed",
+                "seed": 1,
+                "split": "train",
+                "seed_used": 17371001,
+                "stratum_count": 9194,
+                "multi_candidate_strata": 4770,
+                "eligible_candidate_count": 70928,
+                "candidate_count": 75352,
+                "informative_pair_count": 29821,
+                "informative_shuffle_fraction": 0.39575591888735534,
+                "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "fb2d22f0638488dea54a7f38b3f7fd2b35fd9126d8ea92774eb4cda7e944bd34",
+                "size_multiset_sha256": "d53cdc8d99414851e5ecaf6677af2c4a36cceb2800246494a4126a8efe1acd5f"
+              },
+              "validation": {
+                "dataset": "pubmed",
+                "seed": 1,
+                "split": "valid",
+                "seed_used": 17372001,
+                "stratum_count": 1920,
+                "multi_candidate_strata": 525,
+                "eligible_candidate_count": 45139,
+                "candidate_count": 46534,
+                "informative_pair_count": 3265,
+                "informative_shuffle_fraction": 0.07016375123565564,
+                "shuffle_power": "LOW_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "280d148cf9bbcf7b2633ea1f98d9681afaf35f4b93f625fac6bb27d3423d5e81",
+                "size_multiset_sha256": "5dbe6fb1b5b65bb26e95e5e73ec9587ae8d4c48a6fd8660b2f706923910bb7ff"
+              }
+            },
+            "hist_feature_hashes": {
+              "train": "0d3deaf5cff6b3a73b835d623971b8f75f695e282b557a999951221ea9741263",
+              "validation": "e0b7d33c4c12c5864c38067e8151dc3887eac5865c5219130be5bc765180df56"
+            }
+          },
+          "2": {
+            "state": "COMPLETE",
+            "dataset": "pubmed",
+            "seed": 2,
+            "epochs": 5,
+            "validation_only": true,
+            "test_evaluated": false,
+            "arms": {
+              "B0_BASELINE": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "B0_BASELINE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.6724987272825573,
+                  "hits10": 0.9557761732851986,
+                  "hits20": 0.9990974729241877,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.8700361010830324
+                },
+                "train_seconds": 1554.7172988951206,
+                "wall_seconds": 1557.3544498886913,
+                "validation_scoring_seconds": 59.31839667214081,
+                "peak_gpu_allocated_mb": 480.935546875,
+                "trainable_parameters": 9807,
+                "added_hspe_parameters": 0,
+                "added_parameter_fraction": 0.0,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_2/arms/B0_BASELINE/checkpoints/pubmed_uniform_seed2_7f6ba57c15f4.pt",
+                "checkpoint_sha256": "76661611814003aa6ac6d852b836cd69832bb27706cac4af0d4395be48063023",
+                "model_state_hash": "af24ab6b3f3a4cf4ad748f6e558e7c79e3148c749dbcb98c466603efb1840848",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs"
+              },
+              "C1_HISTOGRAM": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "C1_HISTOGRAM",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7592164447331905,
+                  "hits10": 0.9629963898916968,
+                  "hits20": 0.9990974729241877,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.404332129963899
+                },
+                "train_seconds": 1558.3451146199368,
+                "wall_seconds": 1560.9718700260855,
+                "validation_scoring_seconds": 56.741217460948974,
+                "peak_gpu_allocated_mb": 480.9541015625,
+                "trainable_parameters": 9825,
+                "added_hspe_parameters": 18,
+                "added_parameter_fraction": 0.0018354236769654328,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_2/arms/C1_HISTOGRAM/checkpoints/pubmed_uniform_seed2_29d5ce2a7459.pt",
+                "checkpoint_sha256": "93bdb7dfa959a8bd692958213198f27c9a3c45bb239aa1c3cba99427759e60f6",
+                "model_state_hash": "84e0342cad3db7a35d51886411f6b01453c62d090d277804e11ac68a29233bad",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "histogram_bins": [
+                  "2",
+                  "3-4",
+                  "5-8",
+                  "9-16",
+                  ">=17"
+                ],
+                "unordered_pair_bins": 15,
+                "histogram_features": 17,
+                "residual_parameters": 18,
+                "single_linear_zero_init": true,
+                "hist_feature_hash_train": "0d3deaf5cff6b3a73b835d623971b8f75f695e282b557a999951221ea9741263",
+                "hist_feature_hash_validation": "e0b7d33c4c12c5864c38067e8151dc3887eac5865c5219130be5bc765180df56"
+              },
+              "C2_SIZE_SHUFFLE": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "C2_SIZE_SHUFFLE",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.75943792849199,
+                  "hits10": 0.9684115523465704,
+                  "hits20": 0.9986462093862816,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.243231046931408
+                },
+                "train_seconds": 1560.721669045277,
+                "wall_seconds": 1563.1077125356533,
+                "validation_scoring_seconds": 62.129969518166035,
+                "peak_gpu_allocated_mb": 648.3515625,
+                "trainable_parameters": 9882,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_2/arms/C2_SIZE_SHUFFLE/checkpoints/pubmed_uniform_seed2_c5a8d9d20bd6.pt",
+                "checkpoint_sha256": "b0182552f40d0d6a94661e9802cf35ff3bc07c1bd108a72299de175d9ea78a82",
+                "model_state_hash": "8660b69bd2740b10212d7316029c859717082f934629afd9ef1d97d692ba8af9",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "shuffle_power_train": {
+                  "dataset": "pubmed",
+                  "seed": 2,
+                  "split": "train",
+                  "seed_used": 17371002,
+                  "stratum_count": 9194,
+                  "multi_candidate_strata": 4770,
+                  "eligible_candidate_count": 70928,
+                  "candidate_count": 75352,
+                  "informative_pair_count": 29816,
+                  "informative_shuffle_fraction": 0.39568956364794566,
+                  "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "62f21c3afc9697f3547dea665fe307f85537ac93ee5b633f0675b998aefcedee",
+                  "size_multiset_sha256": "f3b8e7bdc39a9af63d1e86a49b0429bd66a8a34d12558e770c5b3718a52cb372"
+                },
+                "shuffle_power_validation": {
+                  "dataset": "pubmed",
+                  "seed": 2,
+                  "split": "valid",
+                  "seed_used": 17372002,
+                  "stratum_count": 1920,
+                  "multi_candidate_strata": 525,
+                  "eligible_candidate_count": 45139,
+                  "candidate_count": 46534,
+                  "informative_pair_count": 3263,
+                  "informative_shuffle_fraction": 0.07012077190871191,
+                  "shuffle_power": "LOW_SHUFFLE_POWER",
+                  "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                  "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                  "source_index_sha256": "1c55f5677585dbfc288d419c34380ff60bfcaffee9fb2e8bec456c91caa895d1",
+                  "size_multiset_sha256": "8391f1a03035a8c469decce5ccc53300f8ec8a2db2a31e1ca6ac910d8fc15992"
+                },
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "C3_PARAM_MATCHED": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "C3_PARAM_MATCHED",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7084989996242315,
+                  "hits10": 0.9643501805054152,
+                  "hits20": 0.9990974729241877,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.421028880866426
+                },
+                "train_seconds": 1177.6289630108513,
+                "wall_seconds": 1179.9142753588967,
+                "validation_scoring_seconds": 40.426775528118014,
+                "peak_gpu_allocated_mb": 648.3515625,
+                "trainable_parameters": 9882,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_2/arms/C3_PARAM_MATCHED/checkpoints/pubmed_uniform_seed2_7033c9a2afdf.pt",
+                "checkpoint_sha256": "ca915b50f52fc7005417b26af77d93233c268d0529b2fd83a9238fe0c6826c69",
+                "model_state_hash": "4970f4c1d309fa5581899a0e49610537e9c4912efe2f03337e3989acdb196638",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              },
+              "H1_HSPE_REAL": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 2,
+                "epochs": 5,
+                "arm": "H1_HSPE_REAL",
+                "validation_only": true,
+                "test_evaluated": false,
+                "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+                "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+                "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+                "validation_metrics": {
+                  "mrr": 0.7708955397340634,
+                  "hits10": 0.9643501805054152,
+                  "hits20": 1.0,
+                  "hits50": 1.0,
+                  "hits100": 1.0,
+                  "mean_positive_rank": 2.184115523465704
+                },
+                "train_seconds": 1127.5907585266978,
+                "wall_seconds": 1129.8570018666796,
+                "validation_scoring_seconds": 40.78397470479831,
+                "peak_gpu_allocated_mb": 648.3515625,
+                "trainable_parameters": 9882,
+                "added_hspe_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637,
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17/experiments/stage1_5epoch/pubmed/seed_2/arms/H1_HSPE_REAL/checkpoints/pubmed_uniform_seed2_559222ca7c6e.pt",
+                "checkpoint_sha256": "86cc29c658b33746888cfd0e32a295afb4a5bf7f487b64a3f1df7584e8ca2975",
+                "model_state_hash": "5880df012958350bd3e564ac916f28da83c81b19b87a88704165091bc403eb34",
+                "source_hashes": {
+                  "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                  "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                  "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                  "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                  "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                  "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                  "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+                },
+                "sampler": "V16 exact QTHS25; one fixed selected negative per train positive across epochs",
+                "encoder_definition": "V16 exact C1: Linear(6,8), ReLU, mean/max pooling, log token/support counts, zero-init Linear(18,1) residual"
+              }
+            },
+            "mrr": {
+              "B0_BASELINE": 0.6724987272825573,
+              "C1_HISTOGRAM": 0.7592164447331905,
+              "C2_SIZE_SHUFFLE": 0.75943792849199,
+              "C3_PARAM_MATCHED": 0.7084989996242315,
+              "H1_HSPE_REAL": 0.7708955397340634
+            },
+            "input_audit": {
+              "dataset": "pubmed",
+              "train_positive_hash": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+              "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+              "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+              "validation_positive_hash": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+              "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+              "validation_positive_count": 2216,
+              "validation_negative_count_per_positive": 20,
+              "validation_sampling": {
+                "source": "uniform candidates filtered only by train/message edges",
+                "seed": 72200,
+                "grouping_seed": 72201,
+                "negative_count_per_positive": 20,
+                "shape": [
+                  2216,
+                  20,
+                  2
+                ],
+                "self_positive_collisions_replaced": 0,
+                "train_forbidden_count": 37676,
+                "heldout_test_identities_used": false
+              },
+              "qths25": {
+                "alpha_candidate_occurrence_fraction": 0.25,
+                "prepool_size": 2,
+                "trimmed_occurrence_count": 18838,
+                "trimmed_row_count": 18838,
+                "selected_runner_up_count": 18838,
+                "hash_rule": "QTHS25"
+              },
+              "graph_teacher": {
+                "state": "COMPLETE",
+                "dataset": "pubmed",
+                "seed": 0,
+                "epochs": 10,
+                "hypergraph_mode": "disabled",
+                "training_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+                "graph_teacher_score_hash": "4bb225e71468288d819708447794d82d285b1d1949289b8786923466fefe5b06",
+                "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/pubmed/graph_teacher/checkpoints/pubmed_uniform_seed0_0e1391bc1fca.pt",
+                "train_seconds": 223.67736776173115,
+                "wall_seconds": 335.50470106489956,
+                "valid_or_test_labels_used_for_training_or_selection": false,
+                "test_evaluated": false,
+                "cache_reused": true
+              },
+              "train_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/train/pubmed_pair_features.npz",
+                "archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/train/pubmed_native_tokens.npy",
+                "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+                "pair_count": 75352,
+                "token_count": 4957442,
+                "metadata": {
+                  "pair_count_unique": 75352,
+                  "token_count": 4957442,
+                  "stage0_raw_pair_cache_reused": 50778,
+                  "fresh_pairs_computed": 24574,
+                  "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+                  "shuffle_overlap_sha256": "b6ed11301a35dd0bce23239d6932ed17ee84c75a4a2de7fd7dd538e2aefa93b2",
+                  "shuffle": {
+                    "seed": 20261019,
+                    "stratum_count": 592,
+                    "singleton_token_fraction": 4.034338677083867e-07,
+                    "informative_pair_count": 33125,
+                    "candidate_pair_count": 75352,
+                    "informative_shuffle_fraction": 0.4396034610892876,
+                    "shuffle_power": "ADEQUATE"
+                  },
+                  "shuffle_seed": 20261019,
+                  "pair_feature_archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91"
+                }
+              },
+              "validation_cache": {
+                "archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/valid/pubmed_pair_features.npz",
+                "archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e",
+                "raw_tokens": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/cache/valid/pubmed_native_tokens.npy",
+                "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+                "pair_count": 46534,
+                "token_count": 323939,
+                "metadata": {
+                  "pair_count_unique": 46534,
+                  "token_count": 323939,
+                  "stage0_raw_pair_cache_reused": 0,
+                  "fresh_pairs_computed": 46534,
+                  "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+                  "shuffle_overlap_sha256": "a1909217eea169e77f380ac2f7150b5441771977457efa4684954c4ced9e64e4",
+                  "shuffle": {
+                    "seed": 20361019,
+                    "stratum_count": 500,
+                    "singleton_token_fraction": 2.1609006633965037e-05,
+                    "informative_pair_count": 4129,
+                    "candidate_pair_count": 46534,
+                    "informative_shuffle_fraction": 0.08873082047535136,
+                    "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+                  },
+                  "shuffle_seed": 20361019,
+                  "pair_feature_archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e"
+                }
+              },
+              "v16_source_hashes": {
+                "stage1_script": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0_script": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "experiment_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "run_negative_v6_1": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129"
+              },
+              "current_source_hashes": {
+                "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+                "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+                "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+                "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+                "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+                "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+                "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+              },
+              "v16_reuse_source_hashes_equal": true,
+              "heldout_test_identities_used": false,
+              "test_evaluated": false
+            },
+            "zero_init_audit": {
+              "C1_HISTOGRAM": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 1.1920928955078125e-07,
+                "added_trainable_parameters": 18,
+                "added_parameter_fraction": 0.0018354236769654328
+              },
+              "H1_HSPE_REAL": {
+                "base_initialization_identical": true,
+                "zero_initialized_residual": true,
+                "initial_logit_max_abs_difference": 0.0,
+                "added_trainable_parameters": 75,
+                "added_parameter_fraction": 0.007647598654022637
+              },
+              "baseline_trainable_parameters": 9807,
+              "parameter_cap_fraction": 0.01
+            },
+            "baseline_trainable_parameters": 9807,
+            "shuffle_power": {
+              "train": {
+                "dataset": "pubmed",
+                "seed": 2,
+                "split": "train",
+                "seed_used": 17371002,
+                "stratum_count": 9194,
+                "multi_candidate_strata": 4770,
+                "eligible_candidate_count": 70928,
+                "candidate_count": 75352,
+                "informative_pair_count": 29816,
+                "informative_shuffle_fraction": 0.39568956364794566,
+                "shuffle_power": "ADEQUATE_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "62f21c3afc9697f3547dea665fe307f85537ac93ee5b633f0675b998aefcedee",
+                "size_multiset_sha256": "f3b8e7bdc39a9af63d1e86a49b0429bd66a8a34d12558e770c5b3718a52cb372"
+              },
+              "validation": {
+                "dataset": "pubmed",
+                "seed": 2,
+                "split": "valid",
+                "seed_used": 17372002,
+                "stratum_count": 1920,
+                "multi_candidate_strata": 525,
+                "eligible_candidate_count": 45139,
+                "candidate_count": 46534,
+                "informative_pair_count": 3263,
+                "informative_shuffle_fraction": 0.07012077190871191,
+                "shuffle_power": "LOW_SHUFFLE_POWER",
+                "matching": "exact token count; support-count bin; sorted endpoint-degree bins; split-isolated",
+                "support_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "degree_bins": "0,1,2,3-4,5-8,9-16,17-32,>=33",
+                "source_index_sha256": "1c55f5677585dbfc288d419c34380ff60bfcaffee9fb2e8bec456c91caa895d1",
+                "size_multiset_sha256": "8391f1a03035a8c469decce5ccc53300f8ec8a2db2a31e1ca6ac910d8fc15992"
+              }
+            },
+            "hist_feature_hashes": {
+              "train": "0d3deaf5cff6b3a73b835d623971b8f75f695e282b557a999951221ea9741263",
+              "validation": "e0b7d33c4c12c5864c38067e8151dc3887eac5865c5219130be5bc765180df56"
+            }
+          }
+        },
+        "shuffle_power_by_seed": [
+          [
+            0.3956762926000637,
+            0.07014226157218378
+          ],
+          [
+            0.39575591888735534,
+            0.07016375123565564
+          ],
+          [
+            0.39568956364794566,
+            0.07012077190871191
+          ]
+        ],
+        "shuffle_adequate": false,
+        "gate": {
+          "dataset": "pubmed",
+          "epochs": 5,
+          "shuffle_adequate": false,
+          "controls": {
+            "B0_BASELINE": {
+              "paired_deltas": [
+                0.010518785747595905,
+                0.03795564098839743,
+                0.09839681245150611
+              ],
+              "mean_delta": 0.048957079729166485,
+              "seed_wins": 3,
+              "required_wins": 2,
+              "required_mean_delta": 0.003,
+              "active_gate": true,
+              "passes": true
+            },
+            "C1_HISTOGRAM": {
+              "paired_deltas": [
+                -0.0010259666909238074,
+                0.00028096462092885854,
+                0.011679095000872941
+              ],
+              "mean_delta": 0.0036446976436259972,
+              "seed_wins": 2,
+              "required_wins": 2,
+              "required_mean_delta": 0.002,
+              "active_gate": true,
+              "passes": true
+            },
+            "C2_SIZE_SHUFFLE": {
+              "paired_deltas": [
+                0.005995151809682464,
+                -0.001411757938418856,
+                0.011457611242073451
+              ],
+              "mean_delta": 0.005347001704445686,
+              "seed_wins": 2,
+              "required_wins": 2,
+              "required_mean_delta": 0.002,
+              "active_gate": false,
+              "passes": null
+            },
+            "C3_PARAM_MATCHED": {
+              "paired_deltas": [
+                0.07036498785071654,
+                -0.01313797324381405,
+                0.06239654010983198
+              ],
+              "mean_delta": 0.03987451823891149,
+              "seed_wins": 2,
+              "required_wins": 2,
+              "required_mean_delta": 0.002,
+              "active_gate": true,
+              "passes": true
+            }
+          },
+          "passed": true
+        },
+        "passed": true
+      }
+    },
+    "cross_dataset_go": false,
+    "decision": "HSPE_EARLY_REJECT"
+  },
+  "stage2_10epoch": null,
+  "novelty": {
+    "status": "PENDING_BEFORE_TEST"
+  },
+  "test_status": "OFF_EARLY_REJECT",
+  "final_decision": "HSPE_EARLY_REJECT",
+  "error": null,
+  "finished_at_unix": 1791046493.3182704,
+  "execution_incidents": [
+    {
+      "attempt": "initial",
+      "cause": "missing v16_result_path helper prevented PubMed seed0 reuse",
+      "recovered": true
+    },
+    {
+      "attempt": "rerun",
+      "cause": "cached Cora arm checkpoints bypassed in-memory model capture; preserved previously complete Cora per-seed artifacts",
+      "recovered": true
+    }
+  ],
+  "completion_audit": {
+    "all_six_dataset_seed_records_complete": true,
+    "five_arms_per_seed": true,
+    "test_evaluated": false,
+    "stage2_skipped_due_to_Cora_gate_failure": true,
+    "pubmed_seed0_B0_and_H1_reused_from_V16_after_hash_and_split_checks": true
+  }
+}

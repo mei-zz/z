@@ -1,0 +1,56 @@
+{
+  "state": "COMPLETE",
+  "method": "MECH_HMC",
+  "seed": 2,
+  "record": {
+    "status": "COMPLETE",
+    "method": "cora_MECH_HMC",
+    "seed": 2,
+    "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_HMC/seed2/checkpoints/cora_uniform_seed2_6c8fade636e0.pt",
+    "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_HMC/seed2/raw/cora_uniform_seed2_6c8fade636e0.json",
+    "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_HMC/seed2/epoch_diagnostics.json",
+    "train_seconds": 205.2876645908691,
+    "wall_seconds": 206.5157129978761,
+    "selected_negative_hash": "8340498dfc4ac730db277c59735e5393bb34a67dd7a4593531f71cf82b76ff12",
+    "dynamic_sampler": null,
+    "model_state_hash": "93b9f43ac7e2328a669bea1b8de85d8f6ca69228122b4aff04a5b157e49a0578",
+    "epoch10_validation_mrr": 0.5172318594254108,
+    "epoch_count": 10,
+    "checkpoint_rule": "FIXED_EPOCH_10",
+    "test_evaluated": false,
+    "checkpoint_file_sha256": "9eda003afb89b93ad6e4f0658a395bc34764732b44434528fd27c31e917a2710",
+    "validation_metrics": {
+      "mrr": 0.5172318594254108,
+      "hits10": 0.9201520912547528,
+      "hits20": 1.0,
+      "hits50": 1.0,
+      "hits100": 1.0,
+      "mean_positive_rank": 4.068441064638783
+    },
+    "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+    "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+    "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a"
+  },
+  "selection_diagnostics": {
+    "method": "randomized top-two resampling with fixed QTHS occurrence count",
+    "seed": 2,
+    "trials": 1,
+    "runner_up_rows": 2244,
+    "target_QTHS_Rg": {
+      "mean_Rg": 0.9736842105263157,
+      "median_Rg": 0.9736842105263157,
+      "p90_Rg": 1.0,
+      "p90_Rg_method": "linear"
+    },
+    "matched_Rg": {
+      "mean_Rg": 0.9736842105263157,
+      "median_Rg": 0.9736842105263157,
+      "p90_Rg": 1.0,
+      "p90_Rg_method": "linear"
+    },
+    "absolute_quantile_error_sum": 0.0,
+    "selected_negative_hash": "8340498dfc4ac730db277c59735e5393bb34a67dd7a4593531f71cf82b76ff12"
+  },
+  "updated_at": "2026-10-02T13:11:00+0800",
+  "test_evaluated": false
+}

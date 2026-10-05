@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "method": "citeseer_GRAPH_TEACHER",
+  "seed": 0,
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CITESEER/GRAPH_TEACHER/seed0/checkpoints/citeseer_uniform_seed0_f52715f0dda5.pt",
+  "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CITESEER/GRAPH_TEACHER/seed0/raw/citeseer_uniform_seed0_f52715f0dda5.json",
+  "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CITESEER/GRAPH_TEACHER/seed0/epoch_diagnostics.json",
+  "train_seconds": 24.890437866095454,
+  "wall_seconds": 25.17571158381179,
+  "selected_negative_hash": null,
+  "dynamic_sampler": "uniform_from_strict_pool_per_epoch",
+  "model_state_hash": "ff048aa80ca971095ec865cc02a89a6660e6078057438d98ebafedb1966405e0",
+  "epoch10_validation_mrr": 0.5196112228076126,
+  "epoch_count": 10,
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "test_evaluated": false
+}

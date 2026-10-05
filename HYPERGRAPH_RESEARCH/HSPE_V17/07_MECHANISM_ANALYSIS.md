@@ -1,0 +1,3 @@
+# Mechanism analysis
+
+Pending 5-epoch validation results. Compare HSPE-REAL with the histogram scalar, size-shuffle, and parameter-matched constant-token control. Report paired seed deltas/wins and shuffle power. If HSPE <= histogram, classify SIZE_HISTOGRAM_SUFFICIENT; if HSPE <= parameter control, classify PARAMETER_PATHWAY_EXPLAINS_GAIN; if HSPE <= adequate shuffle, classify CANDIDATE_SPECIFIC_SIZE_CONFIGURATION_UNSUPPORTED.

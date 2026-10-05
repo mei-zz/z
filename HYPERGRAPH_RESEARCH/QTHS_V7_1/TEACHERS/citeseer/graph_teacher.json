@@ -1,0 +1,11 @@
+{
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CITESEER/GRAPH_TEACHER/seed0/checkpoints/citeseer_uniform_seed0_f52715f0dda5.pt",
+  "checkpoint_file_sha256": "b1c1d5b2c3b438eb9e98709689393ccd0f193c0f9f8eac4ee57358e01a191aac",
+  "model_state_hash": "ff048aa80ca971095ec865cc02a89a6660e6078057438d98ebafedb1966405e0",
+  "train_pool_hash": "e2b8d6babecc441e57b34fe2397238c9143e5a92786cf59affd0338c4015054f",
+  "scores_hash": "2ccaa4a320df5dea04c89cec0d2cb3c941b914deecd79f576136a292f03d8358",
+  "validation_candidate_hash": "419f7e31c9320e435b210d3b05614f7d202d95ea9968765df8ceb9f9bdd875c5",
+  "split_hash": "5a1a177685a1c3a4852f7e3034ea05ffd35b59aaf05fa58578cd40b0f1c46d36",
+  "trained_with_uniform_train_pool": true,
+  "heldout_positive_identities_passed_to_teacher_or_sampler": false
+}

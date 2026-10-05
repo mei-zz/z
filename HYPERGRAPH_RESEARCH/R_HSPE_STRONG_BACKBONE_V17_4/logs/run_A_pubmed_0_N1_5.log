@@ -1,0 +1,23 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/scripts/strong174.py", line 341, in <module>
+    elif command=='run':run(sys.argv[2],sys.argv[3],int(sys.argv[4]),sys.argv[5],int(sys.argv[6]))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/scripts/strong174.py", line 176, in run
+    torch.cuda.synchronize();t=time.perf_counter();loss=scope['train'](model,pred,data,{'train':{'edge':train}},optimizer,b.NCFG[ds]['batch'],True,[],None);torch.cuda.synchronize();train_seconds+=time.perf_counter()-t;assert np.isfinite(loss)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/vendor/NeuralCommonNeighbor-11d597013750da17ce7468e344bec756a7af39a4/NeighborOverlap.py", line 48, in train
+    negedge = negative_sampling(data.edge_index.to(pos_train_edge.device), data.adj_t.sizes()[0])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/scripts/strong174.py", line 167, in checked_neg
+    neg=neg_sampler(*args,**kw);array=neg.T.cpu().numpy();expected=schedule[epochctx['epoch']-1];assert np.array_equal(array,expected),'STOP_NEGATIVE_SAMPLE_MISMATCH'
+                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: STOP_NEGATIVE_SAMPLE_MISMATCH
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+A pubmed 0 N1 1 1.026076853275299 0.7145624896902371
+A pubmed 0 N1 2 0.577949689494239 0.8359612597090035
+A pubmed 0 N1 3 0.45031483471393585 0.8613733204668745
+A pubmed 0 N1 4 0.3808077292309867 0.892054938702316
+A pubmed 0 N1 5 0.34862818982866073 0.9034962668198226

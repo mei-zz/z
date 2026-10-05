@@ -1,0 +1,229 @@
+{
+  "state": "COMPLETE",
+  "stage": "zero_gpu_signal_audit",
+  "dataset": "cora",
+  "strict_train_only": true,
+  "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "train_positive_count": 4488,
+  "train_pool_shape": [
+    4488,
+    20,
+    2
+  ],
+  "matched_negative_count": 13464,
+  "matching_quality": {
+    "selected_negatives": 13464,
+    "degree_bin_exact": 8769,
+    "support_count_exact": 3712,
+    "graph_cn_exact": 7574,
+    "degree_and_support_or_cn_exact": 4979,
+    "selection_rank_1": 4488,
+    "selection_rank_2": 4488,
+    "selection_rank_3": 4488,
+    "positive_count": 4488,
+    "positives_with_matches": 4488,
+    "max_negatives_per_positive": 3
+  },
+  "negative_matching": "up to three per train positive; degree-bin pair prioritized; exact support count or graph-CN preferred",
+  "target_mask": {
+    "method": "pair-specific local subtraction",
+    "oracle": "full raw_star rebuild after deleting target edge",
+    "equivalence_pairs": 100,
+    "all_equivalence_passed": true,
+    "endpoint_symmetry_passed": true
+  },
+  "cv": {
+    "Z0_CN_or_support_count": {
+      "roc_auc_by_fold": [
+        0.8045152719149873,
+        0.7942906615873268,
+        0.8076127681244967,
+        0.812130902504612,
+        0.8021801065279326
+      ],
+      "roc_auc_mean": 0.804145942131871,
+      "roc_auc_sample_std": 0.006650299680079637,
+      "pr_auc_by_fold": [
+        0.6004913068265741,
+        0.5716450725554891,
+        0.5945895018347623,
+        0.6202502599628043,
+        0.5886724245077632
+      ],
+      "pr_auc_mean": 0.5951297131374785,
+      "pr_auc_sample_std": 0.017701026154255773,
+      "fold_sizes": [
+        3592,
+        3592,
+        3592,
+        3588,
+        3588
+      ]
+    },
+    "Z1_multiplicity_scalar_MS": {
+      "roc_auc_by_fold": [
+        0.8101830265392203,
+        0.7986162436363575,
+        0.8123436474356114,
+        0.816644481978203,
+        0.8065868017881977
+      ],
+      "roc_auc_mean": 0.8088748402755181,
+      "roc_auc_sample_std": 0.006793107384088124,
+      "pr_auc_by_fold": [
+        0.6269325958496836,
+        0.5955561018392417,
+        0.6199085375747263,
+        0.645129648550884,
+        0.614904685660747
+      ],
+      "pr_auc_mean": 0.6204863138950565,
+      "pr_auc_sample_std": 0.0180405956551324,
+      "fold_sizes": [
+        3592,
+        3592,
+        3592,
+        3588,
+        3588
+      ]
+    },
+    "Z2_HRA_like": {
+      "roc_auc_by_fold": [
+        0.8228406605125967,
+        0.8101044885690051,
+        0.8267559850066881,
+        0.8266188919089893,
+        0.818478706220454
+      ],
+      "roc_auc_mean": 0.8209597464435466,
+      "roc_auc_sample_std": 0.0069489627054409924,
+      "pr_auc_by_fold": [
+        0.722730973591452,
+        0.69603784844116,
+        0.7286681313853723,
+        0.7251842180158834,
+        0.7082238933390181
+      ],
+      "pr_auc_mean": 0.7161690129545771,
+      "pr_auc_sample_std": 0.013683474719676895,
+      "fold_sizes": [
+        3592,
+        3592,
+        3592,
+        3588,
+        3588
+      ]
+    },
+    "Z3_real_joint_multiplicity": {
+      "roc_auc_by_fold": [
+        0.8166307872150105,
+        0.8058417368961462,
+        0.8181682713214053,
+        0.8216541616279874,
+        0.8134646766317553
+      ],
+      "roc_auc_mean": 0.815151926738461,
+      "roc_auc_sample_std": 0.005981029788699687,
+      "pr_auc_by_fold": [
+        0.6952265347841573,
+        0.679367668351802,
+        0.6940044426107813,
+        0.705930108116136,
+        0.691003322647097
+      ],
+      "pr_auc_mean": 0.6931064153019947,
+      "pr_auc_sample_std": 0.009525290330666385,
+      "fold_sizes": [
+        3592,
+        3592,
+        3592,
+        3588,
+        3588
+      ]
+    },
+    "Z4_cross_side_shuffled": {
+      "roc_auc_by_fold": [
+        0.8144734731805233,
+        0.8027752425169848,
+        0.8154440371492866,
+        0.8189884776332356,
+        0.8109009054915699
+      ],
+      "roc_auc_mean": 0.8125164271943202,
+      "roc_auc_sample_std": 0.0061601330183366785,
+      "pr_auc_by_fold": [
+        0.6785792680561571,
+        0.6607999728857022,
+        0.6734497116622163,
+        0.6912789716835694,
+        0.6717607183256922
+      ],
+      "pr_auc_mean": 0.6751737285226674,
+      "pr_auc_sample_std": 0.011092816150970266,
+      "fold_sizes": [
+        3592,
+        3592,
+        3592,
+        3588,
+        3588
+      ]
+    }
+  },
+  "token_distribution": {
+    "train_positive": {
+      "pair_count": 4488,
+      "mean_support_count": 9.94964349376114,
+      "median_support_count": 4.0,
+      "empty_support_pair_fraction": 0.27228163992869875,
+      "support_token_count": 44654,
+      "p_mu_mv_eq_1_1": 0.5995879428494648,
+      "p_max_multiplicity_at_least_2": 0.40041205715053524,
+      "p_min_multiplicity_at_least_2": 0.12921574774936176,
+      "mean_multiplicity_product": 2.5367268329824877,
+      "mean_extra_multiplicity_E": 15.28988413547237,
+      "median_extra_multiplicity_E": 4.0,
+      "max_multiplicity_product": 135
+    },
+    "matched_legal_negative": {
+      "pair_count": 13464,
+      "mean_support_count": 1.7947860962566844,
+      "median_support_count": 0.0,
+      "empty_support_pair_fraction": 0.8117944147355912,
+      "support_token_count": 24165,
+      "p_mu_mv_eq_1_1": 0.8036416304572729,
+      "p_max_multiplicity_at_least_2": 0.1963583695427271,
+      "p_min_multiplicity_at_least_2": 0.027684667908131594,
+      "mean_multiplicity_product": 1.433767846058349,
+      "mean_extra_multiplicity_E": 0.7785204991087344,
+      "median_extra_multiplicity_E": 0.0,
+      "max_multiplicity_product": 70
+    }
+  },
+  "informative_shuffle_fraction": 0.14065285204991088,
+  "shuffle_power": "LOW_SHUFFLE_POWER",
+  "gates": {
+    "real_auc_gt_cn_plus_0_015": false,
+    "real_auc_gt_shuffle_plus_0_010": false,
+    "real_auc_at_least_both_scalar_controls": false,
+    "positive_median_E_gt_matched_negative_median_E": true,
+    "informative_shuffle_fraction_at_least_0_20": false
+  },
+  "interpretation": "A scalar MS or HRA-like control beats the real joint feature set; the HMC set encoder fails the scalar-residual gate. LOW_SHUFFLE_POWER; real≈shuffle is not interpreted directly.",
+  "decision": "SCALAR_SUFFICIENT",
+  "feature_cache": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HMC_V15/diagnostics/stage0_train_features.npz",
+  "source_hashes": {
+    "experiment_v71.py": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+    "run_negative_v6_1.py": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+    "dcdlp_hypergraph.py": "47f2d4ffe5ecfc0e72b82bb0fea573600f00ecf8cd473f2f60b3c3a24bffa886",
+    "hmc_zero_gpu_audit.py": "357936d9582e18ca84fe77d3e161d61e548b29be458ef5ad23d53c67a2d14f95",
+    "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+    "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba"
+  },
+  "validation_positive_identity_used": false,
+  "test_positive_identity_used": false,
+  "gpu_training_started": false,
+  "test_evaluated": false,
+  "runtime_seconds": 27.071834292728454,
+  "cpu_count": 40,
+  "gpu_compute_used": false
+}

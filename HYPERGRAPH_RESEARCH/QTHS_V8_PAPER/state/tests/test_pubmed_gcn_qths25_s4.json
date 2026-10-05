@@ -1,0 +1,23 @@
+{
+  "task": {
+    "stage": "test",
+    "dataset": "pubmed",
+    "backbone": "gcn",
+    "method": "QTHS25",
+    "seed": 4,
+    "alpha": null
+  },
+  "task_key": "test_pubmed_gcn_qths25_s4",
+  "state": "COMPLETE",
+  "test_metrics": {
+    "mrr": 0.8516718147700358,
+    "hits10": 0.9914259927797834,
+    "hits20": 0.9995487364620939,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 1.608754512635379
+  },
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/PUBMED/GCN/QTHS25/seed4/checkpoints/pubmed_uniform_seed4_985f7390eb6c.pt",
+  "candidate_hash": "1e6a1d3fd4031479dbe0c4d1a5999b22812401cde214048645ab875c1428bf4b",
+  "trainable_parameters": 9807
+}

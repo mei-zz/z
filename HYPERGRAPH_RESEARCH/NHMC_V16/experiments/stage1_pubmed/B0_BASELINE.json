@@ -1,0 +1,30 @@
+{
+  "state": "COMPLETE",
+  "dataset": "pubmed",
+  "arm": "B0_BASELINE",
+  "seed": 0,
+  "epochs": 5,
+  "validation_only": true,
+  "test_evaluated": false,
+  "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+  "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+  "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+  "validation_metrics": {
+    "mrr": 0.826532217023497,
+    "hits10": 0.9887184115523465,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 1.782490974729242
+  },
+  "validation_curve_epoch_mrr": [],
+  "train_seconds": 924.529017906636,
+  "wall_seconds": 926.7118881028146,
+  "peak_gpu_mb": null,
+  "trainable_parameters": 9807,
+  "added_nhmc_parameters": 0,
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/B0_BASELINE/checkpoints/pubmed_uniform_seed0_eccac5501401.pt",
+  "checkpoint_sha256": null,
+  "model_state_hash": "01a4e459a930f951134b47b4c27b89728946759ec173526bc1010ab53cdd5c45",
+  "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+}

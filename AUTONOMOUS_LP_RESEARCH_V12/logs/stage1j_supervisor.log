@@ -1,0 +1,33 @@
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "state": "STAGE1J_COMPLETE",
+  "stage": "stage1j",
+  "decisions": {
+    "C2": {
+      "decision": "REJECT",
+      "paired": [
+        {
+          "seed": 0,
+          "baseline_mrr": 0.5256204671690727,
+          "candidate_mrr": 0.5262899355023747,
+          "matched_control_mrr": 0.5257171702125438,
+          "control_metrics": {
+            "C2_RESCALE": 0.5257171702125438
+          },
+          "delta": 0.000669468333301948,
+          "control_delta": 0.0005727652898308566
+        }
+      ],
+      "effect_gate": false,
+      "strong_baseline": "QTHS25"
+    }
+  },
+  "completed_pairs": 1,
+  "test_evaluated": false,
+  "updated_at_utc": "2026-10-03T04:34:18.146104+00:00"
+}

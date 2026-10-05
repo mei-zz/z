@@ -1,0 +1,30 @@
+{
+  "state": "COMPLETE",
+  "dataset": "cora",
+  "arm": "B0_BASELINE",
+  "seed": 0,
+  "epochs": 5,
+  "validation_only": true,
+  "test_evaluated": false,
+  "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+  "validation_candidate_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+  "validation_metrics": {
+    "mrr": 0.5039905633258703,
+    "hits10": 0.6692015209125475,
+    "hits20": 0.908745247148289,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 7.326996197718631
+  },
+  "validation_curve_epoch_mrr": [],
+  "train_seconds": 32.12922536209226,
+  "wall_seconds": 32.562862070742995,
+  "peak_gpu_mb": null,
+  "trainable_parameters": 24735,
+  "added_nhmc_parameters": 0,
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_cora/arms/B0_BASELINE/checkpoints/cora_uniform_seed0_d89369f94c60.pt",
+  "checkpoint_sha256": null,
+  "model_state_hash": "1011cd7548ca022e251ebe74486acc1cf149a97f81be6c8b02e5fc72caa06460",
+  "sampler": "same fixed QTHS25 one-negative-per-train-positive across all arms"
+}

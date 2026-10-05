@@ -1,0 +1,51 @@
+{
+  "candidate": "A_QTHS",
+  "selection": {
+    "alpha_candidate_occurrence_fraction": 0.25,
+    "prepool_size": 2,
+    "trimmed_occurrence_count": 2244,
+    "trimmed_row_count": 2244,
+    "selected_runner_up_count": 2244,
+    "hash_rule": "QTHS25"
+  },
+  "validation": {
+    "A4_by_seed": {
+      "0": 0.5302629049728781,
+      "1": 0.38361199130204654,
+      "2": 0.5101123558962969
+    },
+    "A0_by_seed": {
+      "0": 0.4859725211534826,
+      "1": 0.5914763303993901,
+      "2": 0.569344598652919
+    },
+    "A1_by_seed": {
+      "0": 0.5327593804296001,
+      "1": 0.32858258481823804,
+      "2": 0.5011195143038955
+    },
+    "A2_by_seed": {
+      "0": 0.5310526197405384,
+      "1": 0.36111009522600596,
+      "2": 0.5198056813265645
+    },
+    "A5_by_seed": {
+      "0": 0.5327593804296001,
+      "1": 0.32858258481823804,
+      "2": 0.5011195143038955
+    },
+    "A4_mean": 0.4746624173904072,
+    "A2_mean": 0.47065613209770296,
+    "A4_minus_A2_mean": 0.004006285292704248,
+    "A4_wins_vs_A1": 2,
+    "A4_wins_vs_A5": 2,
+    "A4_minus_A1_mean": 0.020508590873162702,
+    "GO": true,
+    "A4_vs_A2_control_status": "MATCH_OR_BETTER"
+  },
+  "status": "GO",
+  "controls": {
+    "A3_BOTTOM25": "exactly A1 Graph-hard after deleting easiest quarter of full row pool",
+    "A5_MIDDLE25": "exactly A1 Graph-hard after deleting middle quarter of full row pool"
+  }
+}

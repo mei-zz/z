@@ -1,0 +1,15 @@
+{
+  "workspace_label": "DCDLP-main",
+  "local_root": "E:\\我的资料库\\Documents\\Downloads\\DCDLP-main",
+  "workspace_info_tool": "ERROR: MCP internal error",
+  "remote_root": "/home/zhoulihui/lchr_v2",
+  "remote_tree_verified_by_sha256": true,
+  "git_metadata_local": false,
+  "git_metadata_remote": false,
+  "branch_created": false,
+  "source_mutations": false,
+  "evaluation_harness_mutations": false,
+  "test_opened": false,
+  "server_gpu": "Tesla V100-PCIE-16GB",
+  "server_cpu_cores": 40
+}

@@ -1,0 +1,49 @@
+nohup: ignoring input
+[1/24] RUN cora B0 seed=0
+[1/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B0/seed0.json
+[2/24] RUN cora B0 seed=1
+[2/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B0/seed1.json
+[3/24] RUN cora B0 seed=2
+[3/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B0/seed2.json
+[4/24] RUN cora B1 seed=0
+[4/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B1/seed0.json
+[5/24] RUN cora B1 seed=1
+[5/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B1/seed1.json
+[6/24] RUN cora B1 seed=2
+[6/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B1/seed2.json
+[7/24] RUN cora B2 seed=0
+[7/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B2/seed0.json
+[8/24] RUN cora B2 seed=1
+[8/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B2/seed1.json
+[9/24] RUN cora B2 seed=2
+[9/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B2/seed2.json
+[10/24] RUN cora B3 seed=0
+[10/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B3/seed0.json
+[11/24] RUN cora B3 seed=1
+[11/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B3/seed1.json
+[12/24] RUN cora B3 seed=2
+[12/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/cora/B3/seed2.json
+[13/24] RUN citeseer B0 seed=0
+[13/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B0/seed0.json
+[14/24] RUN citeseer B0 seed=1
+[14/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B0/seed1.json
+[15/24] RUN citeseer B0 seed=2
+[15/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B0/seed2.json
+[16/24] RUN citeseer B1 seed=0
+[16/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B1/seed0.json
+[17/24] RUN citeseer B1 seed=1
+[17/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B1/seed1.json
+[18/24] RUN citeseer B1 seed=2
+[18/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B1/seed2.json
+[19/24] RUN citeseer B2 seed=0
+[19/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B2/seed0.json
+[20/24] RUN citeseer B2 seed=1
+[20/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B2/seed1.json
+[21/24] RUN citeseer B2 seed=2
+[21/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B2/seed2.json
+[22/24] RUN citeseer B3 seed=0
+[22/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B3/seed0.json
+[23/24] RUN citeseer B3 seed=1
+[23/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B3/seed1.json
+[24/24] RUN citeseer B3 seed=2
+[24/24] DONE /home/ubuntu/HL-GNN-PDG-V0-exp/results/hlgnn_pdg_v0/citeseer/B3/seed2.json

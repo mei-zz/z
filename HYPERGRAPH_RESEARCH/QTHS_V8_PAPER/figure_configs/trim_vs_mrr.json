@@ -1,0 +1,27 @@
+{
+  "kind": "line",
+  "input": "../figures/source_data/trim_sensitivity_input.csv",
+  "x": "trim_ratio_percent",
+  "figsize": [
+    3.5,
+    2.6
+  ],
+  "font_size": 8,
+  "label_size": 8,
+  "tick_size": 7,
+  "legend_size": 7,
+  "xlim": [
+    0,
+    60
+  ],
+  "grid": true,
+  "figure_id": "trim_vs_mrr",
+  "y": "validation_mrr",
+  "xlabel": "Nominal QTHS trim ratio (%)",
+  "ylabel": "Cora validation MRR (seed 0)",
+  "ylim": [
+    0,
+    1
+  ],
+  "caption": "Cora validation MRR at fixed epoch 10 for seed 0 across the registered trim ratios. The main method remains QTHS25; these five observations are a descriptive sensitivity analysis and are not used to select a new rule. No error bars are shown because only one seed is plotted. The nominal alpha is the fraction of candidate-occurrence slots in the frozen two-candidate prepool; values above 50% saturate at replacing all positive rows."
+}

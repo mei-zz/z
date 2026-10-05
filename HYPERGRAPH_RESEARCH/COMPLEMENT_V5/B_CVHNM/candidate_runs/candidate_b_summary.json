@@ -1,0 +1,1060 @@
+{
+  "decision": "REJECT",
+  "arms": {
+    "B0": {
+      "dataset": "cora",
+      "protocol_train": "uniform",
+      "protocol_eval": "standard",
+      "model": "dcdlp",
+      "ablation": "A5",
+      "seed": 0,
+      "cn_feature_mode": "raw",
+      "interaction_mode": "unrestricted",
+      "hypergraph_mode": "raw",
+      "hypergraph_construction": "raw_star",
+      "construction_stats": {
+        "construction": "raw_star",
+        "raw_hyperedge_count": 2620,
+        "raw_incidence_count": 11596,
+        "requested_component_hyperedge_count": 0,
+        "added_hyperedge_count": 0,
+        "added_incidence_count": 0,
+        "total_hyperedge_count": 2620,
+        "total_incidence_count": 11596,
+        "average_component_count_per_node": 0.49556868537666177,
+        "average_component_count_per_nonisolated_center": 0.5122137404580153,
+        "component_size": {
+          "count": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0
+        },
+        "refined_center_count": 0,
+        "refined_center_ratio_all_nodes": 0.0,
+        "refined_center_ratio_nonisolated": 0.0,
+        "component_node_coverage_ratio": 0.0,
+        "mean_internal_density_in_group_members": 0.0,
+        "group_internal_density_count": 0
+      },
+      "construction_audit_seconds": 0.1058356361463666,
+      "lambda_aux": 0.05,
+      "score_routing_enabled": false,
+      "routing_finetune_encoder": "frozen",
+      "config_hash": "cf5174364ee7",
+      "git_commit": "untracked",
+      "best_epoch": 9,
+      "validation": {
+        "mrr": 0.5030120048647342,
+        "hits10": 0.6615969581749049,
+        "hits20": 0.9657794676806084,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 7.281368821292776,
+        "auc": 0.6818401306943862,
+        "ap": 0.35496964270253245,
+        "groups": {
+          "HH": {
+            "mrr": 0.8490651523767402,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.3327582291794292,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.8750686239408044,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.11354925805676866,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.5426103158884357,
+        "worst_group_mrr": 0.11354925805676866,
+        "group_gap": 0.7615193658840358
+      },
+      "validation_curve": [
+        {
+          "epoch": 1,
+          "validation_mrr": 0.16279348007164107
+        },
+        {
+          "epoch": 2,
+          "validation_mrr": 0.2870136230008036
+        },
+        {
+          "epoch": 3,
+          "validation_mrr": 0.3998516893169861
+        },
+        {
+          "epoch": 4,
+          "validation_mrr": 0.46362584398170453
+        },
+        {
+          "epoch": 5,
+          "validation_mrr": 0.4876775417205556
+        },
+        {
+          "epoch": 6,
+          "validation_mrr": 0.49307765747968096
+        },
+        {
+          "epoch": 7,
+          "validation_mrr": 0.49080298931547917
+        },
+        {
+          "epoch": 8,
+          "validation_mrr": 0.4924515871400179
+        },
+        {
+          "epoch": 9,
+          "validation_mrr": 0.4969044150204317
+        },
+        {
+          "epoch": 10,
+          "validation_mrr": 0.5030120048647342
+        }
+      ],
+      "metrics": {},
+      "anchor_role_gamma": null,
+      "pair_moment_gamma": null,
+      "trainable_parameter_count": 24735,
+      "structural_branch_parameter_count": 0,
+      "anchor_pair_moment_gamma": null,
+      "runtime": {
+        "train_seconds": 75.06317405076697,
+        "inference_seconds": 0.0,
+        "peak_gpu_mb": 43.32763671875
+      },
+      "support_auxiliary": {
+        "lambda": 0.05,
+        "batches": 0,
+        "sampled_pairs_total": 0,
+        "mean_sampled_pairs_per_batch": 0.0,
+        "mean_unweighted_loss": 0.0
+      },
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/H/checkpoints/cora_uniform_seed0_cf5174364ee7.pt",
+      "predictions": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/H/raw/cora_uniform_seed0_cf5174364ee7_predictions.csv",
+      "intervention_failures": {},
+      "cn_feature_metadata": {
+        "residualizer_type": "NOT_USED",
+        "residualizer_parameters": {},
+        "fit_seed": 0,
+        "fit_sample_count": 8976,
+        "symmetric_endpoint_degrees": true,
+        "cn_feature_mode": "raw",
+        "cn_input_schema": "selective_v1",
+        "fit_split": "train",
+        "uses_valid_or_test": false,
+        "data_source": "train_positive+fixed_train_negative_epoch0",
+        "data_hash": "338b9348eed3c796e6b8717f4da0735e69d600738bfd0bc36225b64856be5c6f",
+        "config_hash": "43716054e679",
+        "used_as_model_input": false
+      },
+      "evaluation_candidates": {
+        "protocol": "standard",
+        "test_evaluated": false,
+        "negatives_per_positive": null
+      },
+      "data_integrity": {
+        "split_hash": "4ad9a114f501",
+        "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+        "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+        "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+        "candidate_hash": null
+      },
+      "intervention_cache": {
+        "source": "deterministic_online_generation",
+        "id": "1f01c0aa36f4"
+      },
+      "parameter_count": {
+        "total": 24735,
+        "trainable": 24735,
+        "cn_branch": 481
+      },
+      "loss_weights": {
+        "lambda_link": 1.0,
+        "lambda_score_route": 0.0,
+        "lambda_target_response": 0.0,
+        "lambda_interaction_share": 0.0,
+        "lambda_interaction_delta": 0.0,
+        "lambda_orthogonal_legacy": 0.001,
+        "lambda_adversarial_legacy": 0.01
+      },
+      "device": "cuda",
+      "test_evaluated": false,
+      "matched_shared_initialization": true,
+      "shared_initial_state_hash": "045f8d535ddbd0cc74cb47dd58c525ebfcb5130617c77b918e64c6bb5e00b2a3",
+      "train_negative_hashes_by_epoch": [
+        "c15193adcf715ffc752feecd6cfa6fe21dada7465a7a4bded0303294c0fed3f4",
+        "a989ec4a8bc5790d56d8277914772ac1163d2df4fb401ace974e4d091ca2bcea",
+        "5b804814be7c2fb450dbeb5bfd460a77882759b0880f86dbc072b151805d5ea5",
+        "2a9a985e72e06c5fc9fbb3956cef5ba6fafdce23505c20689dd57326c935b28e",
+        "1e627ce6184d393674bf939aae92d4edfef0e92040ee40664c8f72cd2b70103e",
+        "8cc5b2d479f1dfe5a17d8cc7779a00d6d0840a7e771571da3f475ab3872dfd38",
+        "c6ea0d32f030a92e5647743230b73a10147aa6ef8cef12955519a43ec3218dce",
+        "2b99e389c15203d1ce1a9db944b7c96b8e6fd33795ca11e8c511767594115e76",
+        "bd25254a2229f4750091dc81ac139c6e88314a5287e93242e2d768dfe848ca32",
+        "213931f8d3cc4bdd8b2a62541f0df71a6f25e2fecf869360280b0d9241cf3253"
+      ],
+      "recovered_from_completed_training_artifact": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/H/raw/cora_uniform_seed0_cf5174364ee7.json"
+    },
+    "B1": {
+      "dataset": "cora",
+      "protocol_train": "uniform",
+      "protocol_eval": "standard",
+      "model": "dcdlp",
+      "ablation": "A5",
+      "seed": 0,
+      "cn_feature_mode": "raw",
+      "interaction_mode": "unrestricted",
+      "hypergraph_mode": "raw",
+      "hypergraph_construction": "raw_star",
+      "ghhr_training_mode": "none",
+      "lambda_h": 1.0,
+      "ghhr_tau": 1.0,
+      "ghhr_beta": null,
+      "ghhr_epoch_diagnostics": [],
+      "construction_stats": {
+        "construction": "raw_star",
+        "raw_hyperedge_count": 2620,
+        "raw_incidence_count": 11596,
+        "requested_component_hyperedge_count": 0,
+        "added_hyperedge_count": 0,
+        "added_incidence_count": 0,
+        "total_hyperedge_count": 2620,
+        "total_incidence_count": 11596,
+        "average_component_count_per_node": 0.49556868537666177,
+        "average_component_count_per_nonisolated_center": 0.5122137404580153,
+        "component_size": {
+          "count": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0
+        },
+        "refined_center_count": 0,
+        "refined_center_ratio_all_nodes": 0.0,
+        "refined_center_ratio_nonisolated": 0.0,
+        "component_node_coverage_ratio": 0.0,
+        "mean_internal_density_in_group_members": 0.0,
+        "group_internal_density_count": 0
+      },
+      "construction_audit_seconds": 0.12903880700469017,
+      "lambda_aux": 0.05,
+      "score_routing_enabled": false,
+      "routing_finetune_encoder": "frozen",
+      "config_hash": "cb229eac2924",
+      "git_commit": "untracked",
+      "best_epoch": 5,
+      "validation": {
+        "mrr": 0.5334445819888557,
+        "hits10": 0.6730038022813688,
+        "hits20": 0.9391634980988594,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 7.2965779467680605,
+        "auc": 0.6807616128612528,
+        "ap": 0.39068309774680954,
+        "groups": {
+          "HH": {
+            "mrr": 0.8664921231650554,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.19980914952166612,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.9583333333333334,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.25602537233944184,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.5701649945898741,
+        "worst_group_mrr": 0.19980914952166612,
+        "group_gap": 0.7585241838116672
+      },
+      "validation_curve": [
+        {
+          "epoch": 1,
+          "validation_mrr": 0.13649561038523825
+        },
+        {
+          "epoch": 2,
+          "validation_mrr": 0.19024707905845412
+        },
+        {
+          "epoch": 3,
+          "validation_mrr": 0.32383631284854375
+        },
+        {
+          "epoch": 4,
+          "validation_mrr": 0.44854437895674404
+        },
+        {
+          "epoch": 5,
+          "validation_mrr": 0.522296756930184
+        },
+        {
+          "epoch": 6,
+          "validation_mrr": 0.5334445819888557
+        },
+        {
+          "epoch": 7,
+          "validation_mrr": 0.5306734368887838
+        },
+        {
+          "epoch": 8,
+          "validation_mrr": 0.5265096104766083
+        },
+        {
+          "epoch": 9,
+          "validation_mrr": 0.5227908679645898
+        },
+        {
+          "epoch": 10,
+          "validation_mrr": 0.5235165079805688
+        }
+      ],
+      "metrics": {},
+      "anchor_role_gamma": null,
+      "pair_moment_gamma": null,
+      "trainable_parameter_count": 24735,
+      "structural_branch_parameter_count": 0,
+      "anchor_pair_moment_gamma": null,
+      "runtime": {
+        "train_seconds": 76.81183387665078,
+        "inference_seconds": 0.0,
+        "peak_gpu_mb": 43.42041015625
+      },
+      "support_auxiliary": {
+        "lambda": 0.05,
+        "batches": 0,
+        "sampled_pairs_total": 0,
+        "mean_sampled_pairs_per_batch": 0.0,
+        "mean_unweighted_loss": 0.0
+      },
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B1/checkpoints/cora_uniform_seed0_cb229eac2924.pt",
+      "predictions": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B1/raw/cora_uniform_seed0_cb229eac2924_predictions.csv",
+      "intervention_failures": {},
+      "cn_feature_metadata": {
+        "residualizer_type": "NOT_USED",
+        "residualizer_parameters": {},
+        "fit_seed": 0,
+        "fit_sample_count": 8976,
+        "symmetric_endpoint_degrees": true,
+        "cn_feature_mode": "raw",
+        "cn_input_schema": "selective_v1",
+        "fit_split": "train",
+        "uses_valid_or_test": false,
+        "data_source": "train_positive+fixed_train_negative_epoch0",
+        "data_hash": "338b9348eed3c796e6b8717f4da0735e69d600738bfd0bc36225b64856be5c6f",
+        "config_hash": "43716054e679",
+        "used_as_model_input": false
+      },
+      "evaluation_candidates": {
+        "protocol": "standard",
+        "test_evaluated": false,
+        "negatives_per_positive": null
+      },
+      "data_integrity": {
+        "split_hash": "4ad9a114f501",
+        "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+        "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+        "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+        "candidate_hash": null
+      },
+      "intervention_cache": {
+        "source": "deterministic_online_generation",
+        "id": "1f01c0aa36f4"
+      },
+      "parameter_count": {
+        "total": 24735,
+        "trainable": 24735,
+        "cn_branch": 481
+      },
+      "loss_weights": {
+        "lambda_link": 1.0,
+        "lambda_score_route": 0.0,
+        "lambda_target_response": 0.0,
+        "lambda_interaction_share": 0.0,
+        "lambda_interaction_delta": 0.0,
+        "lambda_orthogonal_legacy": 0.001,
+        "lambda_adversarial_legacy": 0.01
+      },
+      "device": "cuda",
+      "result_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B1/raw/cora_uniform_seed0_cb229eac2924.json",
+      "selected_negative_hashes_by_epoch": [
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+        "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f"
+      ],
+      "matched_raw_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "train_negatives_per_positive_per_epoch": 1,
+      "test_evaluated": false
+    },
+    "B2": {
+      "dataset": "cora",
+      "protocol_train": "uniform",
+      "protocol_eval": "standard",
+      "model": "dcdlp",
+      "ablation": "A5",
+      "seed": 0,
+      "cn_feature_mode": "raw",
+      "interaction_mode": "unrestricted",
+      "hypergraph_mode": "raw",
+      "hypergraph_construction": "raw_star",
+      "ghhr_training_mode": "none",
+      "lambda_h": 1.0,
+      "ghhr_tau": 1.0,
+      "ghhr_beta": null,
+      "ghhr_epoch_diagnostics": [],
+      "construction_stats": {
+        "construction": "raw_star",
+        "raw_hyperedge_count": 2620,
+        "raw_incidence_count": 11596,
+        "requested_component_hyperedge_count": 0,
+        "added_hyperedge_count": 0,
+        "added_incidence_count": 0,
+        "total_hyperedge_count": 2620,
+        "total_incidence_count": 11596,
+        "average_component_count_per_node": 0.49556868537666177,
+        "average_component_count_per_nonisolated_center": 0.5122137404580153,
+        "component_size": {
+          "count": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0
+        },
+        "refined_center_count": 0,
+        "refined_center_ratio_all_nodes": 0.0,
+        "refined_center_ratio_nonisolated": 0.0,
+        "component_node_coverage_ratio": 0.0,
+        "mean_internal_density_in_group_members": 0.0,
+        "group_internal_density_count": 0
+      },
+      "construction_audit_seconds": 0.05588455405086279,
+      "lambda_aux": 0.05,
+      "score_routing_enabled": false,
+      "routing_finetune_encoder": "frozen",
+      "config_hash": "d151e5305455",
+      "git_commit": "untracked",
+      "best_epoch": 6,
+      "validation": {
+        "mrr": 0.5138018307514124,
+        "hits10": 0.6577946768060836,
+        "hits20": 0.9239543726235742,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 7.2965779467680605,
+        "auc": 0.6848884615940668,
+        "ap": 0.3742398837123391,
+        "groups": {
+          "HH": {
+            "mrr": 0.8262832405689549,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.172456857577748,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.9761904761904762,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.24248506094337996,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.5543539088201397,
+        "worst_group_mrr": 0.172456857577748,
+        "group_gap": 0.8037336186127282
+      },
+      "validation_curve": [
+        {
+          "epoch": 1,
+          "validation_mrr": 0.13457716844101614
+        },
+        {
+          "epoch": 2,
+          "validation_mrr": 0.1719225122368479
+        },
+        {
+          "epoch": 3,
+          "validation_mrr": 0.3152907197492772
+        },
+        {
+          "epoch": 4,
+          "validation_mrr": 0.41759868943311357
+        },
+        {
+          "epoch": 5,
+          "validation_mrr": 0.49926496421054917
+        },
+        {
+          "epoch": 6,
+          "validation_mrr": 0.509433972038888
+        },
+        {
+          "epoch": 7,
+          "validation_mrr": 0.5138018307514124
+        },
+        {
+          "epoch": 8,
+          "validation_mrr": 0.5129432096813996
+        },
+        {
+          "epoch": 9,
+          "validation_mrr": 0.5130295250926452
+        },
+        {
+          "epoch": 10,
+          "validation_mrr": 0.5130162595575667
+        }
+      ],
+      "metrics": {},
+      "anchor_role_gamma": null,
+      "pair_moment_gamma": null,
+      "trainable_parameter_count": 24735,
+      "structural_branch_parameter_count": 0,
+      "anchor_pair_moment_gamma": null,
+      "runtime": {
+        "train_seconds": 66.75244236411527,
+        "inference_seconds": 0.0,
+        "peak_gpu_mb": 43.42138671875
+      },
+      "support_auxiliary": {
+        "lambda": 0.05,
+        "batches": 0,
+        "sampled_pairs_total": 0,
+        "mean_sampled_pairs_per_batch": 0.0,
+        "mean_unweighted_loss": 0.0
+      },
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B2/checkpoints/cora_uniform_seed0_d151e5305455.pt",
+      "predictions": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B2/raw/cora_uniform_seed0_d151e5305455_predictions.csv",
+      "intervention_failures": {},
+      "cn_feature_metadata": {
+        "residualizer_type": "NOT_USED",
+        "residualizer_parameters": {},
+        "fit_seed": 0,
+        "fit_sample_count": 8976,
+        "symmetric_endpoint_degrees": true,
+        "cn_feature_mode": "raw",
+        "cn_input_schema": "selective_v1",
+        "fit_split": "train",
+        "uses_valid_or_test": false,
+        "data_source": "train_positive+fixed_train_negative_epoch0",
+        "data_hash": "338b9348eed3c796e6b8717f4da0735e69d600738bfd0bc36225b64856be5c6f",
+        "config_hash": "43716054e679",
+        "used_as_model_input": false
+      },
+      "evaluation_candidates": {
+        "protocol": "standard",
+        "test_evaluated": false,
+        "negatives_per_positive": null
+      },
+      "data_integrity": {
+        "split_hash": "4ad9a114f501",
+        "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+        "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+        "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+        "candidate_hash": null
+      },
+      "intervention_cache": {
+        "source": "deterministic_online_generation",
+        "id": "1f01c0aa36f4"
+      },
+      "parameter_count": {
+        "total": 24735,
+        "trainable": 24735,
+        "cn_branch": 481
+      },
+      "loss_weights": {
+        "lambda_link": 1.0,
+        "lambda_score_route": 0.0,
+        "lambda_target_response": 0.0,
+        "lambda_interaction_share": 0.0,
+        "lambda_interaction_delta": 0.0,
+        "lambda_orthogonal_legacy": 0.001,
+        "lambda_adversarial_legacy": 0.01
+      },
+      "device": "cuda",
+      "result_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B2/raw/cora_uniform_seed0_d151e5305455.json",
+      "selected_negative_hashes_by_epoch": [
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8",
+        "0bb94a305229c93303497e439fbbd14a7ae4c4ba6a3cec815d5bf56aee834bc8"
+      ],
+      "matched_raw_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "train_negatives_per_positive_per_epoch": 1,
+      "test_evaluated": false
+    },
+    "B3": {
+      "dataset": "cora",
+      "protocol_train": "uniform",
+      "protocol_eval": "standard",
+      "model": "dcdlp",
+      "ablation": "A5",
+      "seed": 0,
+      "cn_feature_mode": "raw",
+      "interaction_mode": "unrestricted",
+      "hypergraph_mode": "raw",
+      "hypergraph_construction": "raw_star",
+      "ghhr_training_mode": "none",
+      "lambda_h": 1.0,
+      "ghhr_tau": 1.0,
+      "ghhr_beta": null,
+      "ghhr_epoch_diagnostics": [],
+      "construction_stats": {
+        "construction": "raw_star",
+        "raw_hyperedge_count": 2620,
+        "raw_incidence_count": 11596,
+        "requested_component_hyperedge_count": 0,
+        "added_hyperedge_count": 0,
+        "added_incidence_count": 0,
+        "total_hyperedge_count": 2620,
+        "total_incidence_count": 11596,
+        "average_component_count_per_node": 0.49556868537666177,
+        "average_component_count_per_nonisolated_center": 0.5122137404580153,
+        "component_size": {
+          "count": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0
+        },
+        "refined_center_count": 0,
+        "refined_center_ratio_all_nodes": 0.0,
+        "refined_center_ratio_nonisolated": 0.0,
+        "component_node_coverage_ratio": 0.0,
+        "mean_internal_density_in_group_members": 0.0,
+        "group_internal_density_count": 0
+      },
+      "construction_audit_seconds": 0.04563210718333721,
+      "lambda_aux": 0.05,
+      "score_routing_enabled": false,
+      "routing_finetune_encoder": "frozen",
+      "config_hash": "4586e8210c11",
+      "git_commit": "untracked",
+      "best_epoch": 5,
+      "validation": {
+        "mrr": 0.4982336324643179,
+        "hits10": 0.6083650190114068,
+        "hits20": 0.935361216730038,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 7.93916349809886,
+        "auc": 0.6583679104801283,
+        "ap": 0.3553035713122669,
+        "groups": {
+          "HH": {
+            "mrr": 0.8486768870227516,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.24611853472424017,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.8880619589266207,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.15905253178788326,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.5354774781153739,
+        "worst_group_mrr": 0.15905253178788326,
+        "group_gap": 0.7290094271387374
+      },
+      "validation_curve": [
+        {
+          "epoch": 1,
+          "validation_mrr": 0.14802863969790594
+        },
+        {
+          "epoch": 2,
+          "validation_mrr": 0.21071949987358055
+        },
+        {
+          "epoch": 3,
+          "validation_mrr": 0.36015603310848104
+        },
+        {
+          "epoch": 4,
+          "validation_mrr": 0.4655730582577867
+        },
+        {
+          "epoch": 5,
+          "validation_mrr": 0.49646023781696363
+        },
+        {
+          "epoch": 6,
+          "validation_mrr": 0.4982336324643179
+        },
+        {
+          "epoch": 7,
+          "validation_mrr": 0.49011706582234194
+        },
+        {
+          "epoch": 8,
+          "validation_mrr": 0.4884400341745337
+        },
+        {
+          "epoch": 9,
+          "validation_mrr": 0.48466611131592474
+        },
+        {
+          "epoch": 10,
+          "validation_mrr": 0.4884492750588879
+        }
+      ],
+      "metrics": {},
+      "anchor_role_gamma": null,
+      "pair_moment_gamma": null,
+      "trainable_parameter_count": 24735,
+      "structural_branch_parameter_count": 0,
+      "anchor_pair_moment_gamma": null,
+      "runtime": {
+        "train_seconds": 66.67658111220226,
+        "inference_seconds": 0.0,
+        "peak_gpu_mb": 43.42138671875
+      },
+      "support_auxiliary": {
+        "lambda": 0.05,
+        "batches": 0,
+        "sampled_pairs_total": 0,
+        "mean_sampled_pairs_per_batch": 0.0,
+        "mean_unweighted_loss": 0.0
+      },
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B3/checkpoints/cora_uniform_seed0_4586e8210c11.pt",
+      "predictions": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B3/raw/cora_uniform_seed0_4586e8210c11_predictions.csv",
+      "intervention_failures": {},
+      "cn_feature_metadata": {
+        "residualizer_type": "NOT_USED",
+        "residualizer_parameters": {},
+        "fit_seed": 0,
+        "fit_sample_count": 8976,
+        "symmetric_endpoint_degrees": true,
+        "cn_feature_mode": "raw",
+        "cn_input_schema": "selective_v1",
+        "fit_split": "train",
+        "uses_valid_or_test": false,
+        "data_source": "train_positive+fixed_train_negative_epoch0",
+        "data_hash": "338b9348eed3c796e6b8717f4da0735e69d600738bfd0bc36225b64856be5c6f",
+        "config_hash": "43716054e679",
+        "used_as_model_input": false
+      },
+      "evaluation_candidates": {
+        "protocol": "standard",
+        "test_evaluated": false,
+        "negatives_per_positive": null
+      },
+      "data_integrity": {
+        "split_hash": "4ad9a114f501",
+        "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+        "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+        "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+        "candidate_hash": null
+      },
+      "intervention_cache": {
+        "source": "deterministic_online_generation",
+        "id": "1f01c0aa36f4"
+      },
+      "parameter_count": {
+        "total": 24735,
+        "trainable": 24735,
+        "cn_branch": 481
+      },
+      "loss_weights": {
+        "lambda_link": 1.0,
+        "lambda_score_route": 0.0,
+        "lambda_target_response": 0.0,
+        "lambda_interaction_share": 0.0,
+        "lambda_interaction_delta": 0.0,
+        "lambda_orthogonal_legacy": 0.001,
+        "lambda_adversarial_legacy": 0.01
+      },
+      "device": "cuda",
+      "result_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B3/raw/cora_uniform_seed0_4586e8210c11.json",
+      "selected_negative_hashes_by_epoch": [
+        "8bfdf73cb8a6d5e770c959604e76f01006909e1a0c22eb05b372b98910e28ff5",
+        "35057f00d0628d0f6a847f92a1047abbfe7efda7920cb262f1bce68a7f891cdc",
+        "0ef3f49c4381733d701769ea46ecd8b6bd022a8cf8bf35bfff44010568f2132b",
+        "c7ba8f5495c1a4b4f6f2575821d31cf2ac9494bcc736071abab8ca2111c604f5",
+        "1f79e514dccce577880ecf180c6b0403ec444761214901d588b9fe8d18e6ada4",
+        "a4969ffd3502ad5533f272c923075887fb7fdfada220fbe71aa6f9cb918907e4",
+        "1cf9b7d7c4fec18baaa15709e4d47359b7e57960b065974f7b9171e6c0fbaeed",
+        "63c53b50c8a28def64e6700483c32dfc7bda17510443e794df650f61a2433105",
+        "1ac5f6ff60bef0d59d2ba00a862d01e56cd8ed24abb45dc63fc9382366d1d4b9",
+        "6db9cbe4b725ccd3c9e0ea58cc5fcf1b6b24897732eb3ac6294072bc178688b7"
+      ],
+      "matched_raw_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "train_negatives_per_positive_per_epoch": 1,
+      "test_evaluated": false
+    },
+    "B4": {
+      "dataset": "cora",
+      "protocol_train": "uniform",
+      "protocol_eval": "standard",
+      "model": "dcdlp",
+      "ablation": "A5",
+      "seed": 0,
+      "cn_feature_mode": "raw",
+      "interaction_mode": "unrestricted",
+      "hypergraph_mode": "raw",
+      "hypergraph_construction": "raw_star",
+      "ghhr_training_mode": "none",
+      "lambda_h": 1.0,
+      "ghhr_tau": 1.0,
+      "ghhr_beta": null,
+      "ghhr_epoch_diagnostics": [],
+      "construction_stats": {
+        "construction": "raw_star",
+        "raw_hyperedge_count": 2620,
+        "raw_incidence_count": 11596,
+        "requested_component_hyperedge_count": 0,
+        "added_hyperedge_count": 0,
+        "added_incidence_count": 0,
+        "total_hyperedge_count": 2620,
+        "total_incidence_count": 11596,
+        "average_component_count_per_node": 0.49556868537666177,
+        "average_component_count_per_nonisolated_center": 0.5122137404580153,
+        "component_size": {
+          "count": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0
+        },
+        "refined_center_count": 0,
+        "refined_center_ratio_all_nodes": 0.0,
+        "refined_center_ratio_nonisolated": 0.0,
+        "component_node_coverage_ratio": 0.0,
+        "mean_internal_density_in_group_members": 0.0,
+        "group_internal_density_count": 0
+      },
+      "construction_audit_seconds": 0.04562019091099501,
+      "lambda_aux": 0.05,
+      "score_routing_enabled": false,
+      "routing_finetune_encoder": "frozen",
+      "config_hash": "48c6d98dcf23",
+      "git_commit": "untracked",
+      "best_epoch": 6,
+      "validation": {
+        "mrr": 0.5326925897365221,
+        "hits10": 0.6730038022813688,
+        "hits20": 0.9315589353612167,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 7.361216730038023,
+        "auc": 0.6784325348060547,
+        "ap": 0.38524891215192186,
+        "groups": {
+          "HH": {
+            "mrr": 0.8596643122958912,
+            "count": 77
+          },
+          "HL": {
+            "mrr": 0.19942736087878352,
+            "count": 63
+          },
+          "LH": {
+            "mrr": 0.9761904761904762,
+            "count": 42
+          },
+          "LL": {
+            "mrr": 0.25111204096985545,
+            "count": 81
+          }
+        },
+        "macro_mrr": 0.5715985475837516,
+        "worst_group_mrr": 0.19942736087878352,
+        "group_gap": 0.7767631153116926
+      },
+      "validation_curve": [
+        {
+          "epoch": 1,
+          "validation_mrr": 0.14357336910030288
+        },
+        {
+          "epoch": 2,
+          "validation_mrr": 0.2423128062455777
+        },
+        {
+          "epoch": 3,
+          "validation_mrr": 0.3818824146929834
+        },
+        {
+          "epoch": 4,
+          "validation_mrr": 0.48533819273954526
+        },
+        {
+          "epoch": 5,
+          "validation_mrr": 0.5186826499633302
+        },
+        {
+          "epoch": 6,
+          "validation_mrr": 0.5264523693517854
+        },
+        {
+          "epoch": 7,
+          "validation_mrr": 0.5326925897365221
+        },
+        {
+          "epoch": 8,
+          "validation_mrr": 0.5316174705116893
+        },
+        {
+          "epoch": 9,
+          "validation_mrr": 0.5288531466251334
+        },
+        {
+          "epoch": 10,
+          "validation_mrr": 0.5292507862719107
+        }
+      ],
+      "metrics": {},
+      "anchor_role_gamma": null,
+      "pair_moment_gamma": null,
+      "trainable_parameter_count": 24735,
+      "structural_branch_parameter_count": 0,
+      "anchor_pair_moment_gamma": null,
+      "runtime": {
+        "train_seconds": 73.85214692121372,
+        "inference_seconds": 0.0,
+        "peak_gpu_mb": 43.42138671875
+      },
+      "support_auxiliary": {
+        "lambda": 0.05,
+        "batches": 0,
+        "sampled_pairs_total": 0,
+        "mean_sampled_pairs_per_batch": 0.0,
+        "mean_unweighted_loss": 0.0
+      },
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B4/checkpoints/cora_uniform_seed0_48c6d98dcf23.pt",
+      "predictions": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B4/raw/cora_uniform_seed0_48c6d98dcf23_predictions.csv",
+      "intervention_failures": {},
+      "cn_feature_metadata": {
+        "residualizer_type": "NOT_USED",
+        "residualizer_parameters": {},
+        "fit_seed": 0,
+        "fit_sample_count": 8976,
+        "symmetric_endpoint_degrees": true,
+        "cn_feature_mode": "raw",
+        "cn_input_schema": "selective_v1",
+        "fit_split": "train",
+        "uses_valid_or_test": false,
+        "data_source": "train_positive+fixed_train_negative_epoch0",
+        "data_hash": "338b9348eed3c796e6b8717f4da0735e69d600738bfd0bc36225b64856be5c6f",
+        "config_hash": "43716054e679",
+        "used_as_model_input": false
+      },
+      "evaluation_candidates": {
+        "protocol": "standard",
+        "test_evaluated": false,
+        "negatives_per_positive": null
+      },
+      "data_integrity": {
+        "split_hash": "4ad9a114f501",
+        "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+        "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+        "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+        "candidate_hash": null
+      },
+      "intervention_cache": {
+        "source": "deterministic_online_generation",
+        "id": "1f01c0aa36f4"
+      },
+      "parameter_count": {
+        "total": 24735,
+        "trainable": 24735,
+        "cn_branch": 481
+      },
+      "loss_weights": {
+        "lambda_link": 1.0,
+        "lambda_score_route": 0.0,
+        "lambda_target_response": 0.0,
+        "lambda_interaction_share": 0.0,
+        "lambda_interaction_delta": 0.0,
+        "lambda_orthogonal_legacy": 0.001,
+        "lambda_adversarial_legacy": 0.01
+      },
+      "device": "cuda",
+      "result_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/B_CVHNM/candidate_runs/B4/raw/cora_uniform_seed0_48c6d98dcf23.json",
+      "selected_negative_hashes_by_epoch": [
+        "7342588d661d1fb54d606d8ff86803119ba6b029383816281cc343ad48a321d1",
+        "4c21c8a6d067decb60b341e3a5ba530f5f3a5857fbebc9be738b36c1eeb572cb",
+        "3249acd35450c29c1a1b770567bbcc9516c2c64e07063bc8f4e662905901159f",
+        "7342588d661d1fb54d606d8ff86803119ba6b029383816281cc343ad48a321d1",
+        "4c21c8a6d067decb60b341e3a5ba530f5f3a5857fbebc9be738b36c1eeb572cb",
+        "3249acd35450c29c1a1b770567bbcc9516c2c64e07063bc8f4e662905901159f",
+        "7342588d661d1fb54d606d8ff86803119ba6b029383816281cc343ad48a321d1",
+        "4c21c8a6d067decb60b341e3a5ba530f5f3a5857fbebc9be738b36c1eeb572cb",
+        "3249acd35450c29c1a1b770567bbcc9516c2c64e07063bc8f4e662905901159f",
+        "7342588d661d1fb54d606d8ff86803119ba6b029383816281cc343ad48a321d1"
+      ],
+      "matched_raw_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "train_negatives_per_positive_per_epoch": 1,
+      "test_evaluated": false
+    }
+  },
+  "pool_metadata": {
+    "split": "training positives and training-only uniform negative candidates",
+    "positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+    "candidate_pool_hash": "c3a31fd8ed188a81b4072c95f64fd2b882957649f85a3f97103c05db61531fae",
+    "pool_seed": 20261002,
+    "grouping_seed": 20261003,
+    "pool_candidates_per_positive": 20,
+    "selected_training_negatives_per_positive_per_epoch": 1,
+    "teacher_checkpoints": {
+      "Graph": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/G/checkpoints/cora_uniform_seed0_4c54257e7e68.pt",
+      "Raw-HG": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/H/checkpoints/cora_uniform_seed0_cf5174364ee7.pt"
+    },
+    "teacher_score_hashes": {
+      "Graph": "17de7ef1ab1287bd0e08a44a149ef787cd82afded2644f4952cfa38121677543",
+      "Raw-HG": "5ae27b7d60ec9debc4bfb6074cc351c6985de7f448303d806c91cd08012dcf87"
+    },
+    "valid_or_test_labels_used_for_selection": false,
+    "view_scores_used": [
+      "Graph",
+      "Raw-HG"
+    ]
+  },
+  "B0_mrr": 0.5030120048647342,
+  "B4_mrr": 0.5326925897365221,
+  "absolute_gain_over_B0": 0.02968058487178793,
+  "relative_gain_over_B0": 0.05900571871991283,
+  "beats_required_controls": {
+    "B0": true,
+    "B1": false,
+    "B2": true,
+    "B3": true
+  },
+  "go_threshold_met": false,
+  "test_evaluated": false,
+  "budget_note": "one selected training negative per positive per epoch, matching the audited trainer; a 20-negative-per-positive train-only mining pool supports per-view ranking"
+}

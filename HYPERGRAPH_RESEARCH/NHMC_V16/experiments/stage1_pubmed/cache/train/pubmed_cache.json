@@ -1,0 +1,19 @@
+{
+  "pair_count_unique": 75352,
+  "token_count": 4957442,
+  "stage0_raw_pair_cache_reused": 50778,
+  "fresh_pairs_computed": 24574,
+  "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+  "shuffle_overlap_sha256": "b6ed11301a35dd0bce23239d6932ed17ee84c75a4a2de7fd7dd538e2aefa93b2",
+  "shuffle": {
+    "seed": 20261019,
+    "stratum_count": 592,
+    "singleton_token_fraction": 4.034338677083867e-07,
+    "informative_pair_count": 33125,
+    "candidate_pair_count": 75352,
+    "informative_shuffle_fraction": 0.4396034610892876,
+    "shuffle_power": "ADEQUATE"
+  },
+  "shuffle_seed": 20261019,
+  "pair_feature_archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91"
+}

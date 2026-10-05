@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "method": "V12_S1F_B2_SCALE_B2_SCALE",
+  "seed": 0,
+  "checkpoint": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V12/experiments/S1F_B2_SCALE/B2_SCALE/checkpoints/cora_uniform_seed0_efad4c528e3e.pt",
+  "result_file": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V12/experiments/S1F_B2_SCALE/B2_SCALE/raw/cora_uniform_seed0_efad4c528e3e.json",
+  "diagnostics_file": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V12/experiments/S1F_B2_SCALE/B2_SCALE/epoch_diagnostics.json",
+  "train_seconds": 63.51958244480193,
+  "wall_seconds": 63.76013488089666,
+  "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+  "dynamic_sampler": null,
+  "model_state_hash": "b518290c1f9ea3fe701eb129401ea250a5969d7cf60d59d5fd66daa514d075d2",
+  "epoch10_validation_mrr": 0.5277890892403717,
+  "epoch_count": 5,
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "test_evaluated": false
+}

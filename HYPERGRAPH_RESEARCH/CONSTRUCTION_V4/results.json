@@ -1,0 +1,174 @@
+{
+  "status": "EXECUTED",
+  "raw_baseline_validation_mrr_v3": 0.4876775417205556,
+  "test_evaluated": false,
+  "candidate_order": [
+    "A_ECPH",
+    "B_ECNH",
+    "C_OWH"
+  ],
+  "construction_audit": {
+    "nodes": 2708,
+    "train_message_edges": 4488,
+    "raw_hyperedges": 2620,
+    "raw_incidences": 11596,
+    "ecph_true": {
+      "proposals": 1342,
+      "unique_additions": 628,
+      "added_incidences": 2730,
+      "mean_internal_density": 0.8307392721653586
+    },
+    "ecph_random": {
+      "proposals": 1342,
+      "unique_additions": 925,
+      "added_incidences": 3729,
+      "mean_internal_density": 0.3743459130320499
+    },
+    "ecph_degree": {
+      "proposals": 1342,
+      "unique_additions": 923,
+      "added_incidences": 3726,
+      "mean_internal_density": 0.35298087423525176
+    },
+    "ecnh_eligible_edges": 2005,
+    "ecnh_true": {
+      "unique_additions": 924,
+      "added_incidences": 3391
+    },
+    "ecnh_random": {
+      "matched_additions": 924,
+      "added_incidences": 3391
+    },
+    "ecnh_union": {
+      "matched_additions": 924,
+      "added_incidences": 3391
+    },
+    "owh_open": {
+      "candidates_before_cap": 35135,
+      "selected_proposals": 11504,
+      "unique_additions": 11036,
+      "added_incidences": 33108,
+      "raw_collisions_or_duplicates": 468,
+      "cap_per_center": 32
+    },
+    "owh_random": {
+      "matched_unique_additions": 11036,
+      "added_incidences": 33108
+    },
+    "owh_closed": {
+      "proposals": 3003,
+      "unique_additions": 841,
+      "added_incidences": 2523
+    }
+  },
+  "candidates": {
+    "A_ECPH": {
+      "decision": "REJECT",
+      "reason": "A3_gain_below_0.001",
+      "screen_5_epoch_validation_mrr": {
+        "A0": 0.4876775417205556,
+        "A1": 0.48687113807921584,
+        "A2": 0.4852203580706859,
+        "A3": 0.48817468112059564
+      },
+      "best_control": "A1",
+      "absolute_gain": 0.0004971394000400364,
+      "relative_gain_percent": 0.1019401874209952,
+      "confirm_10_epoch": null,
+      "test_evaluated": false,
+      "train_runtime_seconds": {
+        "A0": 33.9449036922306,
+        "A1": 44.3304764539935,
+        "A2": 44.6959654036909,
+        "A3": 47.33052908303216
+      },
+      "a3_runtime_over_raw_percent": 39.43068675224864,
+      "peak_gpu_memory_mb": {
+        "A0": 43.3046875,
+        "A1": 43.546875,
+        "A2": 43.552734375,
+        "A3": 43.4169921875
+      },
+      "unique_added_hyperedges": {
+        "A0": 0,
+        "A1": 925,
+        "A2": 923,
+        "A3": 628
+      },
+      "added_incidences": {
+        "A0": 0,
+        "A1": 3729,
+        "A2": 3726,
+        "A3": 2730
+      }
+    },
+    "B_ECNH": {
+      "decision": "REJECT",
+      "reason": "B3_not_above_raw",
+      "novelty_status": "CONCEPTUAL_OVERLAP; EXACT_CONSTRUCTION_UNVERIFIED",
+      "screen_5_epoch_validation_mrr": {
+        "B0": 0.4876775417205556,
+        "B1": 0.4870555452603211,
+        "B2": 0.4853383834313569,
+        "B3": 0.48756237755372533
+      },
+      "best_control": "B1",
+      "absolute_gain": -0.00011516416683027275,
+      "relative_gain_percent": -0.02361481860000497,
+      "confirm_10_epoch": null,
+      "test_evaluated": false
+    },
+    "C_OWH": {
+      "decision": "REJECT",
+      "reason": "C3_not_above_raw",
+      "novelty_status": "NOVELTY_CONFLICT; EXACT_RAW_AUGMENTATION_UNVERIFIED",
+      "screen_5_epoch_validation_mrr": {
+        "C0": 0.4876775417205556,
+        "C1": 0.4869856459722144,
+        "C2": 0.48755164140056845,
+        "C3": 0.4854230383946743
+      },
+      "best_control": "C2",
+      "absolute_gain": -0.002254503325881285,
+      "relative_gain_percent": -0.46229385875085865,
+      "confirm_10_epoch": null,
+      "three_seed_confirmation": null,
+      "test_evaluated": false,
+      "train_runtime_seconds": {
+        "C0": 36.32184625789523,
+        "C1": 77.47398464707658,
+        "C2": 42.058791724964976,
+        "C3": 86.9543121107854
+      },
+      "peak_gpu_memory_mb": {
+        "C0": 43.3046875,
+        "C1": 49.423828125,
+        "C2": 43.396484375,
+        "C3": 49.423828125
+      },
+      "unique_added_hyperedges": {
+        "C0": 0,
+        "C1": 11036,
+        "C2": 841,
+        "C3": 11036
+      },
+      "added_incidences": {
+        "C0": 0,
+        "C1": 33108,
+        "C2": 2523,
+        "C3": 33108
+      },
+      "hyperedge_count_overhead_percent": 421.2213740458015,
+      "incidence_total_raw": 11596,
+      "incidence_total_C3": 44704,
+      "c3_runtime_over_raw_percent": 139.3477995599119
+    }
+  },
+  "final_decision": "NO_CONSTRUCTION_SIGNAL",
+  "winning_construction": null,
+  "best_validation_mrr": {
+    "arm": "A3",
+    "value": 0.48817468112059564,
+    "note": "best observed screen value; failed registered +0.001 gate"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "state": "LOCAL_GO",
+  "stage": "stage3",
+  "completed": 9,
+  "total": 9,
+  "decision": {
+    "state": "LOCAL_GO",
+    "go": true,
+    "wins_vs_baseline": 3,
+    "mean_gain": 0.06816190732157955,
+    "control_wins": 3,
+    "mean_gain_vs_control": 0.05709196125063289,
+    "paired": [
+      {
+        "seed": 0,
+        "baseline_mrr": 0.5302629049728781,
+        "candidate_mrr": 0.5882664540743211,
+        "matched_control_mrr": 0.552266452148293,
+        "delta": 0.05800354910144301,
+        "control_delta": 0.03600000192602815
+      },
+      {
+        "seed": 1,
+        "baseline_mrr": 0.38361199130204654,
+        "candidate_mrr": 0.44002498950938607,
+        "matched_control_mrr": 0.38918935058383436,
+        "delta": 0.056412998207339526,
+        "control_delta": 0.05083563892555171
+      },
+      {
+        "seed": 2,
+        "baseline_mrr": 0.5107699207648884,
+        "candidate_mrr": 0.6008390954208445,
+        "matched_control_mrr": 0.5163988525205256,
+        "delta": 0.0900691746559561,
+        "control_delta": 0.08444024290031882
+      }
+    ],
+    "test_evaluated": false
+  },
+  "test_evaluated": false,
+  "updated_at_utc": "2026-10-03T05:31:15.816710+00:00",
+  "driver_sha256": "d4c5cd62fd02ddcc49c747e5e30213d92f64f0b63542e937eb6edc46113adcbc"
+}

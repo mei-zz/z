@@ -1,0 +1,14 @@
+{
+  "state": "COMPLETE",
+  "dataset": "cora",
+  "seed": 0,
+  "sampler": "QTHS25",
+  "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+  "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+  "selected_file_sha256": "1d245f0e3fbe2721b29c6f90ed80fe3cfb5cb52b892e5bdca4170cb02d61cfc4",
+  "driver_sha256": "604e7eb5cf86dc75596dc411007ce0c71d1257a98dbbc695a0a2469d88c5bf1c",
+  "test_evaluated": false,
+  "created_at_utc": "2026-10-03T08:47:56.071929+00:00"
+}

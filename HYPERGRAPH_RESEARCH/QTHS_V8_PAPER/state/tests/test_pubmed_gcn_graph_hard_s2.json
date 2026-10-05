@@ -1,0 +1,23 @@
+{
+  "task": {
+    "stage": "test",
+    "dataset": "pubmed",
+    "backbone": "gcn",
+    "method": "GRAPH_HARD",
+    "seed": 2,
+    "alpha": null
+  },
+  "task_key": "test_pubmed_gcn_graph_hard_s2",
+  "state": "COMPLETE",
+  "test_metrics": {
+    "mrr": 0.8106968468800445,
+    "hits10": 0.9869133574007221,
+    "hits20": 0.9995487364620939,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 1.858528880866426
+  },
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/PUBMED/GCN/GRAPH_HARD/seed2/checkpoints/pubmed_uniform_seed2_35e8be62485e.pt",
+  "candidate_hash": "1e6a1d3fd4031479dbe0c4d1a5999b22812401cde214048645ab875c1428bf4b",
+  "trainable_parameters": 9807
+}

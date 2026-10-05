@@ -1,0 +1,41 @@
+{
+  "state": "NO_EXECUTABLE_IDEA_AFTER_EXHAUSTIVE_SEARCH",
+  "phase": "final",
+  "completed": 44,
+  "total": 44,
+  "failed_jobs": {},
+  "decisions": {
+    "state": "STAGE1J_COMPLETE",
+    "stage": "stage1j",
+    "decisions": {
+      "C2": {
+        "decision": "REJECT",
+        "paired": [
+          {
+            "seed": 0,
+            "baseline_mrr": 0.5256204671690727,
+            "candidate_mrr": 0.5262899355023747,
+            "matched_control_mrr": 0.5257171702125438,
+            "control_metrics": {
+              "C2_RESCALE": 0.5257171702125438
+            },
+            "delta": 0.000669468333301948,
+            "control_delta": 0.0005727652898308566
+          }
+        ],
+        "effect_gate": false,
+        "strong_baseline": "QTHS25"
+      }
+    },
+    "completed_pairs": 1,
+    "test_evaluated": false,
+    "updated_at_utc": "2026-10-03T04:34:18.146104+00:00"
+  },
+  "test_evaluated": false,
+  "updated_at_utc": "2026-10-03T04:39:06.646855+00:00",
+  "final_decision": "NO_EXECUTABLE_IDEA_AFTER_EXHAUSTIVE_SEARCH",
+  "phase1_stage1_equivalents": 39,
+  "phase1_budget": 40,
+  "phase2_stage1_equivalents": 0,
+  "queue_clean": true
+}

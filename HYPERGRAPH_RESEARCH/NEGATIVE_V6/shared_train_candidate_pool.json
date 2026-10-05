@@ -1,0 +1,46 @@
+{
+  "split": "training positives and training-only uniform candidate pairs",
+  "train_positive_count": 4488,
+  "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+  "candidate_pool_hash": "c3a31fd8ed188a81b4072c95f64fd2b882957649f85a3f97103c05db61531fae",
+  "pool_seed": 20261002,
+  "grouping_seed": 20261003,
+  "pool_candidates_per_positive": 20,
+  "training_selected_negatives_per_positive_per_epoch": 1,
+  "teacher_checkpoints": {
+    "Graph": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/G/checkpoints/cora_uniform_seed0_4c54257e7e68.pt",
+    "Raw-HG": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/H/checkpoints/cora_uniform_seed0_cf5174364ee7.pt"
+  },
+  "teacher_score_hashes": {
+    "Graph": "b823c710420824d612e3bc18412915447c116604d750a156524b85da5d21b83d",
+    "Raw-HG": "c27b28d66aa8ecbcbb2b8287ef945720c15cd7e48356a1bd20c960ceac8db0ca"
+  },
+  "pool_generation_seconds": 1.0730230989865959,
+  "teacher_score_seconds": {
+    "Graph": 13.95399206271395,
+    "Raw-HG": 15.951832163147628
+  },
+  "forbidden_positive_filter": "dataset.all_positive (same standard sampler as V5; includes known held-out positives for rejection only)",
+  "heldout_scores_or_rankings_used_for_mining": false,
+  "b1_selected_negative_hash": "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+  "stored_b1_selected_negative_hash": "f7cfa686c835021c73c3636bcdef914b72ee9d1cb2bf3e2f463f7c7dc35fae1f",
+  "b1_selection_hash_matches_v5": true,
+  "teacher_score_hashes_match_v5": {
+    "Graph": false,
+    "Raw-HG": false
+  },
+  "teacher_rank_replay_vs_v5": {
+    "Graph": {
+      "full_row_order_match_fraction": 1.0,
+      "top2_set_match_fraction": 1.0,
+      "max_absolute_float_score_delta": 3.0547380447387695e-07,
+      "mean_absolute_float_score_delta": 2.2742344896187205e-08
+    },
+    "Raw-HG": {
+      "full_row_order_match_fraction": 1.0,
+      "top2_set_match_fraction": 1.0,
+      "max_absolute_float_score_delta": 2.384185791015625e-07,
+      "mean_absolute_float_score_delta": 2.8001434060342945e-08
+    }
+  }
+}

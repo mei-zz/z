@@ -1,0 +1,12 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+B pubmed 4 N0 1 1.2757391068670485 0.6587415139711239
+B pubmed 4 N0 2 0.9345692429277632 0.6570254677365326
+B pubmed 4 N0 3 0.7350724703735776 0.725122832876934
+B pubmed 4 N0 4 0.5953613387213813 0.7881745335490823
+B pubmed 4 N0 5 0.5241232083903419 0.8107265569545247
+B pubmed 4 N0 6 0.47784993714756435 0.8477015872302822
+B pubmed 4 N0 7 0.4277605530288484 0.8656379715100383
+B pubmed 4 N0 8 0.40155841244591606 0.8801803831285276
+B pubmed 4 N0 9 0.3781635132100847 0.8876242852650362
+B pubmed 4 N0 10 0.37277618712849087 0.8935995712606289

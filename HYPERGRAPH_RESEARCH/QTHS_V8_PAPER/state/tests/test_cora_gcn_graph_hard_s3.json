@@ -1,0 +1,23 @@
+{
+  "task": {
+    "stage": "test",
+    "dataset": "cora",
+    "backbone": "gcn",
+    "method": "GRAPH_HARD",
+    "seed": 3,
+    "alpha": null
+  },
+  "task_key": "test_cora_gcn_graph_hard_s3",
+  "state": "COMPLETE",
+  "test_metrics": {
+    "mrr": 0.5491606619689376,
+    "hits10": 0.8481973434535104,
+    "hits20": 0.9905123339658444,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 4.804554079696395
+  },
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/CORA/GCN/GRAPH_HARD/seed3/checkpoints/cora_uniform_seed3_1c9f2b3cdfc2.pt",
+  "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+  "trainable_parameters": 24735
+}

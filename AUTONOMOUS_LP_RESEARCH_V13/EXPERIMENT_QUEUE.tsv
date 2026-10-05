@@ -1,0 +1,12 @@
+job_id	candidate:arm	stage	dataset	seed	priority	estimated_cost	status	gpu_mem_estimate	start_time	end_time	result
+V13-A-00	ECR:BASELINE	phasea_ecr	cora	0	0	1.0 Stage1-eq	COMPLETE	Cora <1 GB per process		2026-10-03T05:15:03.851723+00:00	experiments/ECR/BASELINE/result.json
+V13-A-01	ECR:ECR_RAW	phasea_ecr	cora	0	1	1.0 Stage1-eq	COMPLETE	Cora <1 GB per process		2026-10-03T05:15:04.703266+00:00	experiments/ECR/ECR_RAW/result.json
+V13-A-02	ECR:ECR_STRUCT	phasea_ecr	cora	0	2	1.0 Stage1-eq	COMPLETE	Cora <1 GB per process		2026-10-03T05:15:06.319266+00:00	experiments/ECR/ECR_STRUCT/result.json
+V13-A-03	ECR:ECR_DENSITY	phasea_ecr	cora	0	3	1.0 Stage1-eq	COMPLETE	Cora <1 GB per process		2026-10-03T05:15:04.203635+00:00	experiments/ECR/ECR_DENSITY/result.json
+V13-A-04	ECR:ECR_SHUFFLED	phasea_ecr	cora	0	4	1.0 Stage1-eq	COMPLETE	Cora <1 GB per process		2026-10-03T05:15:05.124327+00:00	experiments/ECR/ECR_SHUFFLED/result.json
+V13-A-05	ECR:ECR_FULL	phasea_ecr	cora	0	5	1.0 Stage1-eq	COMPLETE	Cora <1 GB per process		2026-10-03T05:15:05.264059+00:00	experiments/ECR/ECR_FULL/result.json
+V13-PHASEB-L1-00	L1:QTHS25_BASELINE	phaseb_l1_stage1	cora	0	0	1 Stage1-eq baseline	COMPLETE	5 workers; V100 aggregate use about 2.5 GiB	2026-10-03T08:47:44Z	2026-10-03T08:52:44Z	experiments/V13_PHASEB_L1_STAGE1_s0/BASELINE/result.json
+V13-PHASEB-L1-01	L1:L1_EXPECTED_MRR	phaseb_l1_stage1	cora	0	1	1 Stage1-eq plus fixed-pool scoring	COMPLETE	5 workers; V100 aggregate use about 2.5 GiB	2026-10-03T08:47:44Z	2026-10-03T08:52:44Z	experiments/V13_PHASEB_L1_STAGE1_s0/L1_EXPECTED_MRR/result.json
+V13-PHASEB-L1-02	L1:L1_INDEP_BCE	phaseb_l1_stage1	cora	0	2	1 Stage1-eq plus matched 20-candidate scoring	COMPLETE	5 workers; V100 aggregate use about 2.5 GiB	2026-10-03T08:47:44Z	2026-10-03T08:52:44Z	experiments/V13_PHASEB_L1_STAGE1_s0/L1_INDEP_BCE/result.json
+V13-PHASEB-L1-03	L1:L1_LISTWISE_RANDOM	phaseb_l1_stage1	cora	0	3	1 Stage1-eq plus matched 20-candidate scoring	COMPLETE	5 workers; V100 aggregate use about 2.5 GiB	2026-10-03T08:47:44Z	2026-10-03T08:52:44Z	experiments/V13_PHASEB_L1_STAGE1_s0/L1_LISTWISE_RANDOM/result.json
+V13-PHASEB-L1-04	L1:L1_REPEAT_BCE	phaseb_l1_stage1	cora	0	4	1 Stage1-eq plus matched 20-candidate scoring	COMPLETE	5 workers; V100 aggregate use about 2.5 GiB	2026-10-03T08:47:44Z	2026-10-03T08:52:44Z	experiments/V13_PHASEB_L1_STAGE1_s0/L1_REPEAT_BCE/result.json

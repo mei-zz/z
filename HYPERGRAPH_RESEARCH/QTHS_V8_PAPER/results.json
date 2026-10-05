@@ -1,0 +1,695 @@
+{
+  "protocol": {
+    "method": "QTHS25",
+    "trim_ratio": 0.25,
+    "prepool_size": 2,
+    "protocol": "STRICT_TRAIN_ONLY",
+    "checkpoint": "fixed epoch 10",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 10,
+    "backbones": [
+      "gcn",
+      "sage",
+      "gat"
+    ],
+    "GAT": "PyG GATConv, one head, concat=False; experiment-local encoder option",
+    "control_random_hard50": "uniformly sample among teacher top 50% of the 20-item train candidate pool",
+    "control_SH75": "uniformly sample within teacher hardness rank window [50%,75%] of the 20-item pool",
+    "QTHS25_rule_note": "Frozen V7.1 implementation uses a per-positive top-2 prepool; alpha is the fraction of the 2N prepool candidate occurrences trimmed by a stable positive-key hash, with the hardest candidate replaced by rank-2 for selected positives. At alpha=0.25 this selects the runner-up for 50% of positives. Sensitivity ratios above 0.50 saturate at all positives because only N positive rows are available."
+  },
+  "pubmed": {
+    "validation": {
+      "GRAPH_HARD": {
+        "by_seed": [
+          0.8221593498685902,
+          0.769393572870555,
+          0.8195635824888949
+        ],
+        "mean": 0.8037055017426801,
+        "sample_std": 0.029743332854048128,
+        "n": 3
+      },
+      "RANDOM_VETO": {
+        "by_seed": [
+          0.8491264874742656,
+          0.827578439034892,
+          0.8530276452512429
+        ],
+        "mean": 0.8432441905868001,
+        "sample_std": 0.013706443257271425,
+        "n": 3
+      },
+      "QTHS25": {
+        "by_seed": [
+          0.843656513889711,
+          0.8355537679505082,
+          0.8535907669272634
+        ],
+        "mean": 0.8442670162558276,
+        "sample_std": 0.009033984053347837,
+        "n": 3
+      }
+    },
+    "test": {
+      "GRAPH_HARD": {
+        "by_seed": [
+          0.815276946568554,
+          0.7499107277771419,
+          0.8106968468800445
+        ],
+        "mean": 0.7919615070752468,
+        "sample_std": 0.03648897584165139,
+        "n": 3
+      },
+      "RANDOM_VETO": {
+        "by_seed": [
+          0.850608942649913,
+          0.8035826429062785,
+          0.844440065957836
+        ],
+        "mean": 0.8328772171713426,
+        "sample_std": 0.02555665903319579,
+        "n": 3
+      },
+      "QTHS25": {
+        "by_seed": [
+          0.839577693095453,
+          0.8170030471093892,
+          0.8417875884832094
+        ],
+        "mean": 0.8327894428960172,
+        "sample_std": 0.013715998992244684,
+        "n": 3
+      }
+    },
+    "QTHS25_minus_GRAPH_HARD_test_by_seed": [
+      0.024300746526899064,
+      0.06709231933224735,
+      0.03109074160316494
+    ],
+    "QTHS25_minus_GRAPH_HARD_test_mean_delta": 0.040827935820770454,
+    "QTHS25_wins_vs_GRAPH_HARD": 3,
+    "PUBMED_SUPPORTED": true,
+    "test_candidate_hash": "1e6a1d3fd4031479dbe0c4d1a5999b22812401cde214048645ab875c1428bf4b",
+    "test_evaluated_once_after_validation_freeze": true
+  },
+  "citeseer": {
+    "test_by_seed_QTHS25_minus_GRAPH_HARD": [
+      0.01984127810217351,
+      9.776825804441724e-05,
+      -0.02222815049564708
+    ],
+    "paired_mean_delta": -0.000763034711809718,
+    "bootstrap_ci95_percentile": [
+      -0.02222815049564708,
+      0.01984127810217351
+    ],
+    "bootstrap_replicates": 100000,
+    "bootstrap_seed": 20261002,
+    "classification": "CITESEER_NEUTRAL",
+    "interpretation": "CI crossing zero indicates noise-level/neutral under the pre-registered rule."
+  },
+  "backbone_generalization": {
+    "by_backbone": {
+      "gcn": {
+        "methods": {
+          "UNIFORM": {
+            "by_seed": [
+              0.4859725211534826,
+              0.5914763303993901,
+              0.5692344532005682
+            ],
+            "mean": 0.5488944349178136,
+            "sample_std": 0.05561520205084488,
+            "n": 3
+          },
+          "GRAPH_HARD": {
+            "by_seed": [
+              0.5327593804296001,
+              0.32858258481823804,
+              0.5000688381106337
+            ],
+            "mean": 0.45380360111949064,
+            "sample_std": 0.10966948108710992,
+            "n": 3
+          },
+          "QTHS25": {
+            "by_seed": [
+              0.5302629049728781,
+              0.38361199130204654,
+              0.5101123558962969
+            ],
+            "mean": 0.4746624173904072,
+            "sample_std": 0.07949305771685942,
+            "n": 3
+          }
+        },
+        "QTHS25_minus_GRAPH_HARD_by_seed": [
+          -0.002496475456722047,
+          0.055029406483808496,
+          0.010043517785663147
+        ],
+        "paired_mean_delta": 0.02085881627091653,
+        "QTHS25_wins": 2,
+        "positive_backbone_gate": true
+      },
+      "sage": {
+        "methods": {
+          "UNIFORM": {
+            "by_seed": [
+              0.44598560950769334,
+              0.5088222357781151,
+              0.44356871158143096
+            ],
+            "mean": 0.46612551895574644,
+            "sample_std": 0.03699618317412821,
+            "n": 3
+          },
+          "GRAPH_HARD": {
+            "by_seed": [
+              0.3194576832581694,
+              0.3915195731282442,
+              0.30256185682706305
+            ],
+            "mean": 0.33784637107115884,
+            "sample_std": 0.047243800672607285,
+            "n": 3
+          },
+          "QTHS25": {
+            "by_seed": [
+              0.32028267441029806,
+              0.3926155247352377,
+              0.34454014354248613
+            ],
+            "mean": 0.35247944756267396,
+            "sample_std": 0.03681419183244768,
+            "n": 3
+          }
+        },
+        "QTHS25_minus_GRAPH_HARD_by_seed": [
+          0.0008249911521286402,
+          0.001095951606993495,
+          0.041978286715423085
+        ],
+        "paired_mean_delta": 0.014633076491515074,
+        "QTHS25_wins": 3,
+        "positive_backbone_gate": true
+      },
+      "gat": {
+        "methods": {
+          "UNIFORM": {
+            "by_seed": [
+              0.5350543446052222,
+              0.5513626098095898,
+              0.5292318487375227
+            ],
+            "mean": 0.5385496010507782,
+            "sample_std": 0.011471933560755198,
+            "n": 3
+          },
+          "GRAPH_HARD": {
+            "by_seed": [
+              0.556318518932558,
+              0.44689356900919136,
+              0.4613726530891536
+            ],
+            "mean": 0.48819491367696766,
+            "sample_std": 0.05943929814283878,
+            "n": 3
+          },
+          "QTHS25": {
+            "by_seed": [
+              0.5797611016839612,
+              0.4825304270533172,
+              0.49549134812484
+            ],
+            "mean": 0.5192609589540395,
+            "sample_std": 0.052793908943279025,
+            "n": 3
+          }
+        },
+        "QTHS25_minus_GRAPH_HARD_by_seed": [
+          0.023442582751403207,
+          0.03563685804412586,
+          0.03411869503568643
+        ],
+        "paired_mean_delta": 0.031066045277071835,
+        "QTHS25_wins": 3,
+        "positive_backbone_gate": true
+      }
+    },
+    "positive_backbone_count": 3,
+    "BACKBONE_GENERALIZATION": "YES",
+    "rule": "at least 2/3 backbones have QTHS25 mean above Graph-hard and at least 2/3 paired seed wins"
+  },
+  "random_hard_control": {
+    "by_seed": [
+      0.5393125785887914,
+      0.5019366158456966,
+      0.5981165433636916
+    ],
+    "mean": 0.5464552459327265,
+    "sample_std": 0.04848616180861586
+  },
+  "semi_hard_control": {
+    "by_seed": [
+      0.4945233303557121,
+      0.5521619038068615,
+      0.5564042436810216
+    ],
+    "mean": 0.5343631592811984,
+    "sample_std": 0.03456744622489463,
+    "QTHS25_minus_SH75_by_seed": [
+      0.03573957461716598,
+      -0.16854991250481494,
+      -0.046291887784724706
+    ],
+    "paired_mean_delta": -0.05970074189079122,
+    "QTHS25_wins": 1,
+    "state": "QTHS25_NOT_ABOVE_SH75"
+  },
+  "trim_sensitivity": {
+    "by_alpha": {
+      "0.00": {
+        "alpha": 0.0,
+        "validation_mrr": 0.5327593804296001,
+        "effective_runner_up_fraction": 0.0,
+        "mean_selected_Rg": 1.0,
+        "p95_selected_Rg": 1.0,
+        "extreme_hard_fraction": 1.0
+      },
+      "0.10": {
+        "alpha": 0.1,
+        "validation_mrr": 0.5382663430239034,
+        "effective_runner_up_fraction": 0.2000891265597148,
+        "mean_selected_Rg": 0.9894689933389624,
+        "p95_selected_Rg": 1.0,
+        "extreme_hard_fraction": 0.7999108734402852
+      },
+      "0.25": {
+        "alpha": 0.25,
+        "validation_mrr": 0.5302629049728781,
+        "effective_runner_up_fraction": 0.5,
+        "mean_selected_Rg": 0.9736842105263157,
+        "p95_selected_Rg": 1.0,
+        "extreme_hard_fraction": 0.5
+      },
+      "0.40": {
+        "alpha": 0.4,
+        "validation_mrr": 0.5308981091644808,
+        "effective_runner_up_fraction": 0.7999108734402852,
+        "mean_selected_Rg": 0.9578994277136692,
+        "p95_selected_Rg": 1.0,
+        "extreme_hard_fraction": 0.2000891265597148
+      },
+      "0.60": {
+        "alpha": 0.6,
+        "validation_mrr": 0.5291401597861944,
+        "effective_runner_up_fraction": 1.0,
+        "mean_selected_Rg": 0.9473684210526316,
+        "p95_selected_Rg": 0.9473684210526315,
+        "extreme_hard_fraction": 0.0
+      }
+    },
+    "spearman_alpha_vs_validation_mrr": -0.7999999999999999,
+    "spearman_mean_Rg_vs_validation_mrr": 0.7999999999999999,
+    "alpha_order": [
+      0.0,
+      0.1,
+      0.25,
+      0.4,
+      0.6
+    ],
+    "validation_mrr_order": [
+      0.5327593804296001,
+      0.5382663430239034,
+      0.5302629049728781,
+      0.5308981091644808,
+      0.5291401597861944
+    ],
+    "mean_selected_Rg_order": [
+      1.0,
+      0.9894689933389624,
+      0.9736842105263157,
+      0.9578994277136692,
+      0.9473684210526316
+    ],
+    "R_g_definition": "within each positive's 20-item frozen graph-teacher candidate pool, score percentile in [0,1], with 1 the hardest candidate"
+  },
+  "hardness_tail_characterization": {
+    "R_g_definition": "within-positive teacher-score percentile among 20 candidates; 1 is hardest",
+    "methods": {
+      "UNIFORM": {
+        "Rg": {
+          "n": 134640,
+          "mean": 0.4991974700566032,
+          "median": 0.47368421052631576,
+          "p75": 0.7368421052631579,
+          "p90": 0.8947368421052632,
+          "p95": 1.0,
+          "p99": 1.0,
+          "max": 1.0,
+          "extreme_hard_fraction_ge_0_95": 0.05017082590612002,
+          "extreme_hard_fraction_ge_0_99": 0.05017082590612002
+        },
+        "graph_structure": {
+          "unique_selected_pair_count": 70740,
+          "selected_pair_count_including_repeated_epochs": 134640,
+          "unique_pair_fraction": 0.5254010695187166,
+          "unique_endpoint_fraction": 0.010056446821152703,
+          "endpoint_frequency_gini": 0.08787517849447646,
+          "endpoint_degree": {
+            "mean": 3.3396130421865715,
+            "median": 3.0,
+            "p75": 4.0,
+            "p90": 6.0,
+            "p95": 8.0,
+            "max": 150
+          },
+          "common_neighbors": {
+            "mean": 0.00996607294317218,
+            "p95": 0.0,
+            "fraction_nonzero": 0.009329940627650551
+          },
+          "Adamic_Adar": {
+            "mean": 0.0036574376680605534,
+            "p95": 0.0
+          },
+          "Resource_Allocation": {
+            "mean": 0.0007511317845336936,
+            "p95": 0.0
+          },
+          "shortest_path_bucket_counts": {
+            "2": 660,
+            "3": 1622,
+            ">3_or_disconnected": 68458
+          },
+          "shortest_path_bucket_fractions": {
+            "2": 0.009329940627650551,
+            "3": 0.022929035906135143,
+            ">3_or_disconnected": 0.9677410234662143
+          }
+        }
+      },
+      "GRAPH_HARD": {
+        "Rg": {
+          "n": 134640,
+          "mean": 1.0,
+          "median": 1.0,
+          "p75": 1.0,
+          "p90": 1.0,
+          "p95": 1.0,
+          "p99": 1.0,
+          "max": 1.0,
+          "extreme_hard_fraction_ge_0_95": 1.0,
+          "extreme_hard_fraction_ge_0_99": 1.0
+        },
+        "graph_structure": {
+          "unique_selected_pair_count": 4488,
+          "selected_pair_count_including_repeated_epochs": 134640,
+          "unique_pair_fraction": 0.03333333333333333,
+          "unique_endpoint_fraction": 0.005934343434343434,
+          "endpoint_frequency_gini": 0.41755082110213526,
+          "endpoint_degree": {
+            "mean": 5.563057040998218,
+            "median": 5.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 11.0,
+            "max": 150
+          },
+          "common_neighbors": {
+            "mean": 0.18315508021390375,
+            "p95": 1.0,
+            "fraction_nonzero": 0.17023172905525846
+          },
+          "Adamic_Adar": {
+            "mean": 0.06744583955857952,
+            "p95": 0.4119214159594004
+          },
+          "Resource_Allocation": {
+            "mean": 0.013916546854569225,
+            "p95": 0.08333333333333333
+          },
+          "shortest_path_bucket_counts": {
+            "2": 764,
+            "3": 232,
+            ">3_or_disconnected": 3492
+          },
+          "shortest_path_bucket_fractions": {
+            "2": 0.17023172905525846,
+            "3": 0.05169340463458111,
+            ">3_or_disconnected": 0.7780748663101604
+          }
+        }
+      },
+      "RANDOM_VETO": {
+        "Rg": {
+          "n": 134640,
+          "mean": 0.9738679363292367,
+          "median": 1.0,
+          "p75": 1.0,
+          "p90": 1.0,
+          "p95": 1.0,
+          "p99": 1.0,
+          "max": 1.0,
+          "extreme_hard_fraction_ge_0_95": 0.5034907902554961,
+          "extreme_hard_fraction_ge_0_99": 0.5034907902554961
+        },
+        "graph_structure": {
+          "unique_selected_pair_count": 7796,
+          "selected_pair_count_including_repeated_epochs": 134640,
+          "unique_pair_fraction": 0.05790255496137849,
+          "unique_endpoint_fraction": 0.006881313131313131,
+          "endpoint_frequency_gini": 0.4178051987446927,
+          "endpoint_degree": {
+            "mean": 5.093100118835413,
+            "median": 4.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 10.0,
+            "max": 150
+          },
+          "common_neighbors": {
+            "mean": 0.09812724474089277,
+            "p95": 1.0,
+            "fraction_nonzero": 0.09209851205746537
+          },
+          "Adamic_Adar": {
+            "mean": 0.036324813524831405,
+            "p95": 0.2530848692773169
+          },
+          "Resource_Allocation": {
+            "mean": 0.007562141188592207,
+            "p95": 0.019230769230769232
+          },
+          "shortest_path_bucket_counts": {
+            "2": 718,
+            "3": 390,
+            ">3_or_disconnected": 6688
+          },
+          "shortest_path_bucket_fractions": {
+            "2": 0.09209851205746537,
+            "3": 0.05002565418163161,
+            ">3_or_disconnected": 0.857875833760903
+          }
+        }
+      },
+      "QTHS25": {
+        "Rg": {
+          "n": 134640,
+          "mean": 0.9736842105263157,
+          "median": 0.9736842105263157,
+          "p75": 1.0,
+          "p90": 1.0,
+          "p95": 1.0,
+          "p99": 1.0,
+          "max": 1.0,
+          "extreme_hard_fraction_ge_0_95": 0.5,
+          "extreme_hard_fraction_ge_0_99": 0.5
+        },
+        "graph_structure": {
+          "unique_selected_pair_count": 4488,
+          "selected_pair_count_including_repeated_epochs": 134640,
+          "unique_pair_fraction": 0.03333333333333333,
+          "unique_endpoint_fraction": 0.006242572786690433,
+          "endpoint_frequency_gini": 0.38544427018549565,
+          "endpoint_degree": {
+            "mean": 5.0221702317290555,
+            "median": 4.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 10.0,
+            "max": 63
+          },
+          "common_neighbors": {
+            "mean": 0.09692513368983957,
+            "p95": 1.0,
+            "fraction_nonzero": 0.09024064171122995
+          },
+          "Adamic_Adar": {
+            "mean": 0.03735204180737637,
+            "p95": 0.2530848692773169
+          },
+          "Resource_Allocation": {
+            "mean": 0.008130327565756473,
+            "p95": 0.019230769230769232
+          },
+          "shortest_path_bucket_counts": {
+            "2": 405,
+            "3": 234,
+            ">3_or_disconnected": 3849
+          },
+          "shortest_path_bucket_fractions": {
+            "2": 0.09024064171122995,
+            "3": 0.05213903743315508,
+            ">3_or_disconnected": 0.857620320855615
+          }
+        }
+      }
+    }
+  },
+  "efficiency": {
+    "Cora_GCN_seed0": {
+      "GRAPH_HARD": {
+        "train_seconds": 225.7846762877889,
+        "wall_seconds": 226.21937405318022,
+        "selection_preprocessing_seconds": 0.0005391649901866913,
+        "per_epoch_sampling_seconds_microbench": 4.48677067955335e-06,
+        "peak_gpu_memory_mb": 43.423828125,
+        "trainable_parameters": 24735,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/EFFICIENCY/CORA/GCN/GRAPH_HARD/seed0/checkpoints/cora_uniform_seed0_ccb6d02613f8.pt"
+      },
+      "QTHS25": {
+        "train_seconds": 195.41817642608657,
+        "wall_seconds": 195.94495772197843,
+        "selection_preprocessing_seconds": 0.024098158814013004,
+        "per_epoch_sampling_seconds_microbench": 4.269562972088655e-06,
+        "peak_gpu_memory_mb": 43.37255859375,
+        "trainable_parameters": 24735,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/EFFICIENCY/CORA/GCN/QTHS25/seed0/checkpoints/cora_uniform_seed0_6a25cb5d8f76.pt"
+      },
+      "UNIFORM": {
+        "train_seconds": 223.1819005049765,
+        "wall_seconds": 223.6033626291901,
+        "selection_preprocessing_seconds": 1.8164049834012985e-05,
+        "per_epoch_sampling_seconds_microbench": 0.0001389462035149336,
+        "peak_gpu_memory_mb": 43.32763671875,
+        "trainable_parameters": 24735,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/EFFICIENCY/CORA/GCN/UNIFORM/seed0/checkpoints/cora_uniform_seed0_028c4814f153.pt"
+      }
+    },
+    "parameter_counts_match_across_sampling_arms": true,
+    "additional_trainable_parameters_for_QTHS": 0,
+    "teacher_scoring": {
+      "dataset": "Cora",
+      "candidate_pairs": 89760,
+      "wall_seconds": 12.250151271000504,
+      "score_hash_matches_frozen_cache": false,
+      "score_allclose_to_frozen_cache": true,
+      "allclose_rtol": 1e-05,
+      "allclose_atol": 1e-06,
+      "max_abs_difference": 3.5762786865234375e-07,
+      "mean_abs_difference": 2.3251024212641724e-08,
+      "scores_hash": "73a2394fe289159609f9ee66aefe78b5acd06384a98c7c808d5dcf6a7195ca43",
+      "cached_scores_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c"
+    },
+    "resource_profile": {
+      "gpu": "Tesla V100-PCIE-16GB",
+      "cuda_build": "12.1",
+      "cpu_count": 40,
+      "max_workers": 6
+    }
+  },
+  "five_seed_gate": {
+    "cora": {
+      "test": {
+        "GRAPH_HARD": {
+          "by_seed": [
+            0.5556290016239874,
+            0.3708957604378117,
+            0.49112992370331354,
+            0.5491606619689376,
+            0.27491971662704123
+          ],
+          "mean": 0.44834701287221834,
+          "sample_std": 0.12204396543918426
+        },
+        "QTHS25": {
+          "by_seed": [
+            0.5540328597191441,
+            0.38467184532777204,
+            0.541426549746102,
+            0.5724028821231869,
+            0.2763764283730974
+          ],
+          "mean": 0.4657821130578605,
+          "sample_std": 0.12974171689012332
+        }
+      },
+      "QTHS25_minus_GRAPH_HARD_by_seed": [
+        -0.0015961419048433623,
+        0.01377608488996035,
+        0.050296626042788506,
+        0.02324222015424926,
+        0.0014567117460561607
+      ],
+      "paired_mean_delta": 0.017435100185642184,
+      "QTHS25_wins": 4
+    },
+    "pubmed": {
+      "test": {
+        "GRAPH_HARD": {
+          "by_seed": [
+            0.815276946568554,
+            0.7499107277771419,
+            0.8106968468800445,
+            0.7900151139804561,
+            0.7927476853752983
+          ],
+          "mean": 0.791729464116299,
+          "sample_std": 0.02582163830332117
+        },
+        "QTHS25": {
+          "by_seed": [
+            0.839577693095453,
+            0.8170030471093892,
+            0.8417875884832094,
+            0.8381627633126723,
+            0.8516718147700358
+          ],
+          "mean": 0.8376405813541519,
+          "sample_std": 0.012688637386450487
+        }
+      },
+      "QTHS25_minus_GRAPH_HARD_by_seed": [
+        0.024300746526899064,
+        0.06709231933224735,
+        0.03109074160316494,
+        0.04814764933221616,
+        0.05892412939473757
+      ],
+      "paired_mean_delta": 0.045911117237853016,
+      "QTHS25_wins": 5
+    }
+  },
+  "cross_dataset_backbone_transfer": {
+    "dataset": "citeseer",
+    "backbone": "sage",
+    "seed": 0,
+    "GRAPH_HARD": 0.4175707325654135,
+    "QTHS25": 0.47231324674894726,
+    "paired_delta": 0.054742514183533764,
+    "purpose": "single-seed backbone transfer check beyond Cora; validation only"
+  },
+  "novelty_status": "EXACT_RULE_UNVERIFIED",
+  "novelty_search_scope": "Focused search covered quantile/truncated graph link-prediction negatives, rank-window and semi-hard methods, dynamic/adversarial sampling, and adjacent hyperedge prediction; no exact-rule source was confirmed. No priority claim.",
+  "source_code_sha256": "9a11ab967df76a0d49f5824c20e81545da1b7166b30a05df0aec2f140bca88fa",
+  "PAPER_EVIDENCE_READY": "YES",
+  "FINAL_DECISION": "PAPERIZE_QTHS",
+  "NEXT_EXPECTED_STEP": "paper outline, tables, figures, related work, and writing"
+}

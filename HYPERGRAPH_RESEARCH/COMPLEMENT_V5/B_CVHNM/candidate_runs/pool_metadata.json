@@ -1,0 +1,22 @@
+{
+  "split": "training positives and training-only uniform negative candidates",
+  "positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+  "candidate_pool_hash": "c3a31fd8ed188a81b4072c95f64fd2b882957649f85a3f97103c05db61531fae",
+  "pool_seed": 20261002,
+  "grouping_seed": 20261003,
+  "pool_candidates_per_positive": 20,
+  "selected_training_negatives_per_positive_per_epoch": 1,
+  "teacher_checkpoints": {
+    "Graph": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/G/checkpoints/cora_uniform_seed0_4c54257e7e68.pt",
+    "Raw-HG": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/A_GHHR/remote_evidence/baseline_10_epoch/H/checkpoints/cora_uniform_seed0_cf5174364ee7.pt"
+  },
+  "teacher_score_hashes": {
+    "Graph": "17de7ef1ab1287bd0e08a44a149ef787cd82afded2644f4952cfa38121677543",
+    "Raw-HG": "5ae27b7d60ec9debc4bfb6074cc351c6985de7f448303d806c91cd08012dcf87"
+  },
+  "valid_or_test_labels_used_for_selection": false,
+  "view_scores_used": [
+    "Graph",
+    "Raw-HG"
+  ]
+}

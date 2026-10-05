@@ -1,0 +1,45 @@
+{
+  "state": "GENERALIZATION_REJECT",
+  "dataset": "pubmed",
+  "completed": 9,
+  "total": 9,
+  "decision": {
+    "state": "GENERALIZATION_REJECT",
+    "go": false,
+    "dataset": "pubmed",
+    "wins_vs_baseline": 2,
+    "mean_gain": 0.0027183555287982886,
+    "control_wins": 2,
+    "mean_gain_vs_control": -0.0003835944975916217,
+    "paired": [
+      {
+        "seed": 0,
+        "baseline_mrr": 0.84720409222128,
+        "candidate_mrr": 0.8595802311943576,
+        "matched_control_mrr": 0.8452447233908895,
+        "delta": 0.012376138973077544,
+        "control_delta": 0.01433550780346804
+      },
+      {
+        "seed": 1,
+        "baseline_mrr": 0.8231326006951803,
+        "candidate_mrr": 0.8423909494625146,
+        "matched_control_mrr": 0.8314169788972029,
+        "delta": 0.019258348767334232,
+        "control_delta": 0.010973970565311686
+      },
+      {
+        "seed": 2,
+        "baseline_mrr": 0.8467487761006751,
+        "candidate_mrr": 0.8232693549466582,
+        "matched_control_mrr": 0.8497296168082128,
+        "delta": -0.02347942115401691,
+        "control_delta": -0.02646026186155459
+      }
+    ],
+    "test_evaluated": false
+  },
+  "test_evaluated": false,
+  "updated_at_utc": "2026-10-03T08:01:33.750622+00:00",
+  "driver_sha256": "ee5a913bb75d738300ae9c5a22931d792d38c49d677e0fad6ea834937c85aedb"
+}

@@ -1,0 +1,25 @@
+{
+  "state": "complete",
+  "candidate": "C_OWH",
+  "decision": "REJECT",
+  "final_decision": "REJECT",
+  "winner": null,
+  "reason": "C3_not_above_raw",
+  "best_control": "C2",
+  "validation_mrr": {
+    "screen_5_epoch": {
+      "C0": 0.4876775417205556,
+      "C1": 0.4869856459722144,
+      "C2": 0.48755164140056845,
+      "C3": 0.4854230383946743
+    },
+    "confirm_10_epoch": null
+  },
+  "absolute_gain": -0.002254503325881285,
+  "relative_gain": -0.004622938587508587,
+  "seed_confirmation": null,
+  "test_results": null,
+  "test_evaluated": false,
+  "stop_after_go": false,
+  "updated": 1790869017.9908376
+}

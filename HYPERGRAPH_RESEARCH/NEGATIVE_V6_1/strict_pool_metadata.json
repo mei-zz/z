@@ -1,0 +1,80 @@
+{
+  "protocol": "STRICT_TRAIN_ONLY",
+  "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+  "train_only_split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "num_nodes": 2708,
+  "train_positive_count": 4488,
+  "candidate_count": 89760,
+  "candidate_count_per_positive": 20,
+  "pool_seed": 20261002,
+  "grouping_seed": 20261003,
+  "forbidden_sources": [
+    "training positives",
+    "training/message graph observed edges",
+    "self-loops",
+    "out-of-range pairs"
+  ],
+  "forbidden_edge_count": 4488,
+  "forbidden_edge_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+  "heldout_positive_identities_read_by_miner": false,
+  "all_positive_access_attempts": 0,
+  "eligibility_unit_test": {
+    "status": "PASS",
+    "future_edge_and_ordinary_unknown_use_same_train_only_predicate": true,
+    "future_edge_identity_is_not_an_input_to_filter": true,
+    "train_positive_and_self_loop_rejected": true
+  },
+  "teacher_records": {
+    "Graph": {
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/TEACHERS/Graph/checkpoints/cora_uniform_seed0_88990ac8de0c.pt",
+      "checkpoint_hash": "30343bdf61b8fa38a7d9eecbd280a836ee81ef4dfeb63efeb1c74445337ad28b",
+      "train_seconds": 25.96615514298901,
+      "selection_rule": "fixed_final_epoch_10; no validation/test checkpoint selection"
+    },
+    "Raw-HG": {
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/TEACHERS/Raw-HG/checkpoints/cora_uniform_seed0_40a54ad688e1.pt",
+      "checkpoint_hash": "1fa029f5a0a3a6e32516907e28bd6179493eeb5429f69c97e4444acdaa9fe91e",
+      "train_seconds": 51.92147393338382,
+      "selection_rule": "fixed_final_epoch_10; no validation/test checkpoint selection"
+    }
+  },
+  "score_cache": {
+    "Graph": {
+      "cache_key": "84ba068975f4",
+      "train_split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+      "seed": 0,
+      "checkpoint_hash": "30343bdf61b8fa38a7d9eecbd280a836ee81ef4dfeb63efeb1c74445337ad28b",
+      "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+      "teacher": "Graph",
+      "detached": true,
+      "score_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c",
+      "forward_seconds": 16.33192501217127,
+      "cache_hit": false
+    },
+    "Raw-HG": {
+      "cache_key": "d00ca8692113",
+      "train_split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+      "seed": 0,
+      "checkpoint_hash": "1fa029f5a0a3a6e32516907e28bd6179493eeb5429f69c97e4444acdaa9fe91e",
+      "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+      "teacher": "Raw-HG",
+      "detached": true,
+      "score_hash": "c4e229f5eb7ba2aec31e5345b4683bcbf2d2e98f57c89357228ecb9e85f42b6f",
+      "forward_seconds": 21.112340376712382,
+      "cache_hit": false
+    }
+  },
+  "pool_generation_seconds": 1.2152371830306947,
+  "teacher_scoring_seconds": {
+    "Graph": 16.33192501217127,
+    "Raw-HG": 21.112340376712382
+  },
+  "selection_seconds_total": 0.19751040218397975,
+  "prepool_multiplier": 2,
+  "veto_ratio_nominal": 0.25,
+  "realized_veto_count_per_positive": 1,
+  "realized_veto_fraction_of_prepool": 0.5,
+  "selection_rule": "V6 frozen A1/A3/A4 rank rules; no parameter tuning",
+  "training_phase_wall_seconds": 118.64759270101786
+}

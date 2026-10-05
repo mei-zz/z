@@ -1,0 +1,168 @@
+{
+  "dataset": "cora",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 0,
+  "cn_feature_mode": "raw",
+  "interaction_mode": "unrestricted",
+  "hypergraph_mode": "raw",
+  "hypergraph_construction": "ecph_random",
+  "construction_stats": {
+    "construction": "ecph_random",
+    "raw_hyperedge_count": 2620,
+    "raw_incidence_count": 11596,
+    "requested_component_hyperedge_count": 1342,
+    "added_hyperedge_count": 925,
+    "added_incidence_count": 3729,
+    "total_hyperedge_count": 3545,
+    "total_incidence_count": 15325,
+    "average_component_count_per_node": 0.49556868537666177,
+    "average_component_count_per_nonisolated_center": 0.5122137404580153,
+    "component_size": {
+      "count": 1342,
+      "mean": 2.9880774962742174,
+      "median": 2.0,
+      "p90": 4.0,
+      "max": 52
+    },
+    "refined_center_count": 1144,
+    "refined_center_ratio_all_nodes": 0.4224519940915805,
+    "refined_center_ratio_nonisolated": 0.4366412213740458,
+    "component_node_coverage_ratio": 0.6299852289512555,
+    "mean_internal_density_in_group_members": 0.3743459130320499,
+    "group_internal_density_count": 1342
+  },
+  "construction_audit_seconds": 0.06373946787789464,
+  "lambda_aux": 0.05,
+  "score_routing_enabled": false,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "573ec4b4ca23",
+  "git_commit": "untracked",
+  "best_epoch": 4,
+  "validation": {
+    "mrr": 0.48687113807921584,
+    "hits10": 0.623574144486692,
+    "hits20": 0.9277566539923955,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 7.908745247148289,
+    "auc": 0.6523500412034293,
+    "ap": 0.3609937471877534,
+    "groups": {
+      "HH": {
+        "mrr": 0.8446815089672232,
+        "count": 77
+      },
+      "HL": {
+        "mrr": 0.23353118984476792,
+        "count": 63
+      },
+      "LH": {
+        "mrr": 0.8876424928945938,
+        "count": 42
+      },
+      "LL": {
+        "mrr": 0.13596522793289217,
+        "count": 81
+      }
+    },
+    "macro_mrr": 0.5254551049098692,
+    "worst_group_mrr": 0.13596522793289217,
+    "group_gap": 0.7516772649617016
+  },
+  "validation_curve": [
+    {
+      "epoch": 1,
+      "validation_mrr": 0.16391748637228276
+    },
+    {
+      "epoch": 2,
+      "validation_mrr": 0.2891595641962038
+    },
+    {
+      "epoch": 3,
+      "validation_mrr": 0.399722523356851
+    },
+    {
+      "epoch": 4,
+      "validation_mrr": 0.46512878775824773
+    },
+    {
+      "epoch": 5,
+      "validation_mrr": 0.48687113807921584
+    }
+  ],
+  "metrics": {},
+  "anchor_role_gamma": null,
+  "pair_moment_gamma": null,
+  "trainable_parameter_count": 24735,
+  "structural_branch_parameter_count": 0,
+  "anchor_pair_moment_gamma": null,
+  "runtime": {
+    "train_seconds": 44.33047645399347,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 43.546875
+  },
+  "support_auxiliary": {
+    "lambda": 0.05,
+    "batches": 0,
+    "sampled_pairs_total": 0,
+    "mean_sampled_pairs_per_batch": 0.0,
+    "mean_unweighted_loss": 0.0
+  },
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CONSTRUCTION_V4/A_ECPH/remote_evidence/screen_5_epoch/A1/checkpoints/cora_uniform_seed0_573ec4b4ca23.pt",
+  "predictions": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CONSTRUCTION_V4/A_ECPH/remote_evidence/screen_5_epoch/A1/raw/cora_uniform_seed0_573ec4b4ca23_predictions.csv",
+  "intervention_failures": {},
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "raw",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "338b9348eed3c796e6b8717f4da0735e69d600738bfd0bc36225b64856be5c6f",
+    "config_hash": "43716054e679",
+    "used_as_model_input": false
+  },
+  "evaluation_candidates": {
+    "protocol": "standard",
+    "test_evaluated": false,
+    "negatives_per_positive": null
+  },
+  "data_integrity": {
+    "split_hash": "4ad9a114f501",
+    "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+    "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+    "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+    "candidate_hash": null
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "1f01c0aa36f4"
+  },
+  "parameter_count": {
+    "total": 24735,
+    "trainable": 24735,
+    "cn_branch": 481
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.0,
+    "lambda_target_response": 0.0,
+    "lambda_interaction_share": 0.0,
+    "lambda_interaction_delta": 0.0,
+    "lambda_orthogonal_legacy": 0.001,
+    "lambda_adversarial_legacy": 0.01
+  },
+  "device": "cuda",
+  "result_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CONSTRUCTION_V4/A_ECPH/remote_evidence/screen_5_epoch/A1/raw/cora_uniform_seed0_573ec4b4ca23.json",
+  "wall_seconds": 50.22039294242859,
+  "stage": "screen_5_epoch",
+  "arm": "A1"
+}

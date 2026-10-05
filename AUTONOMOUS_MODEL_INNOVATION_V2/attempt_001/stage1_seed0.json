@@ -1,0 +1,78 @@
+{
+  "candidate": "V2-001_PCDT",
+  "dataset": "cora",
+  "protocol": "heart",
+  "seed": 0,
+  "epochs": 2,
+  "device": "cuda",
+  "metrics": {
+    "parent": {
+      "mrr": 0.09491451492555059,
+      "hits10": 0.2333965844402277,
+      "hits20": 0.33206831119544594,
+      "hits50": 0.48956356736242884,
+      "hits100": 0.7115749525616698,
+      "auc": 0.8205251378142002,
+      "ap": 0.007646554899926473
+    },
+    "candidate": {
+      "mrr": 0.11374374169880805,
+      "hits10": 0.2637571157495256,
+      "hits20": 0.4079696394686907,
+      "hits50": 0.6072106261859582,
+      "hits100": 0.7817836812144212,
+      "auc": 0.8709990962413001,
+      "ap": 0.009688950625333244
+    },
+    "shuffled_transport": {
+      "mrr": 0.12119666269244572,
+      "hits10": 0.25996204933586337,
+      "hits20": 0.4117647058823529,
+      "hits50": 0.6110056925996205,
+      "hits100": 0.8273244781783681,
+      "auc": 0.8855668259346341,
+      "ap": 0.010092411303173458
+    },
+    "cn_proxy": {
+      "mrr": 0.09776815415768328,
+      "hits10": 0.20113851992409867,
+      "hits20": 0.27703984819734345,
+      "hits50": 0.3567362428842505,
+      "hits100": 0.3870967741935484,
+      "auc": null,
+      "ap": null
+    }
+  },
+  "delta_candidate_minus_parent": {
+    "mrr": 0.018829226773257463,
+    "hits10": 0.03036053130929789,
+    "hits20": 0.07590132827324475,
+    "hits50": 0.11764705882352938,
+    "hits100": 0.0702087286527514,
+    "auc": 0.050473958427099896,
+    "ap": 0.002042395725406771
+  },
+  "runtime_seconds": {
+    "parent": 92.58040236169472,
+    "candidate": 100.93023808998987
+  },
+  "parameter_count": {
+    "parent": 112486,
+    "candidate": 177512
+  },
+  "cn_regressor_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "raw",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "9fb20e3e4bdb2326fbf4f27267677329cd0bed3e206e60f71867a86691c694e8",
+    "config_hash": "43716054e679",
+    "used_as_model_input": false
+  }
+}

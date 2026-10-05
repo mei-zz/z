@@ -1,0 +1,237 @@
+{
+  "candidate": "R4-08 Fixed Laplacian Spectral Band Profile",
+  "support": [
+    {
+      "seed": 0,
+      "positive_nonzero": 527,
+      "negative_nonzero": 263500,
+      "positive_mean_norm": 0.007965739659426855,
+      "negative_mean_norm": 0.013439351390458302
+    },
+    {
+      "seed": 1,
+      "positive_nonzero": 527,
+      "negative_nonzero": 263500,
+      "positive_mean_norm": 0.007507038251655026,
+      "negative_mean_norm": 0.012635021005832824
+    },
+    {
+      "seed": 2,
+      "positive_nonzero": 527,
+      "negative_nonzero": 263500,
+      "positive_mean_norm": 0.008724252080260364,
+      "negative_mean_norm": 0.014719344783312138
+    },
+    {
+      "seed": 3,
+      "positive_nonzero": 527,
+      "negative_nonzero": 263500,
+      "positive_mean_norm": 0.008724252080260328,
+      "negative_mean_norm": 0.014719344783312101
+    },
+    {
+      "seed": 4,
+      "positive_nonzero": 527,
+      "negative_nonzero": 263500,
+      "positive_mean_norm": 0.0071221570856315084,
+      "negative_mean_norm": 0.012113169341114106
+    }
+  ],
+  "probes": [
+    {
+      "seed": 0,
+      "metrics": {
+        "Base": {
+          "auc": 0.4163859532449508,
+          "ap": 0.4675658302253338
+        },
+        "DangerousControls": {
+          "auc": 0.45153898422703814,
+          "ap": 0.4973030142693049
+        },
+        "TrueSpectral": {
+          "auc": 0.454943688646648,
+          "ap": 0.49797727435970013
+        },
+        "ShuffledSpectral": {
+          "auc": 0.45085226040567306,
+          "ap": 0.4962989753434478
+        },
+        "Proxy": {
+          "auc": 0.45943269383683444,
+          "ap": 0.49236044396795337
+        }
+      },
+      "candidate_minus_controls_auc": 0.003404704419609883,
+      "candidate_minus_shuffled_auc": 0.00409142824097497,
+      "candidate_minus_proxy_auc": -0.0044890051901864125,
+      "candidate_minus_controls_ap": 0.0006742600903952289,
+      "candidate_minus_shuffled_ap": 0.001678299016252327,
+      "candidate_minus_proxy_ap": 0.005616830391746763
+    },
+    {
+      "seed": 1,
+      "metrics": {
+        "Base": {
+          "auc": 0.41885815900186507,
+          "ap": 0.4685401740123373
+        },
+        "DangerousControls": {
+          "auc": 0.45456056904104436,
+          "ap": 0.4986259499570449
+        },
+        "TrueSpectral": {
+          "auc": 0.4585724818921772,
+          "ap": 0.49962136213619335
+        },
+        "ShuffledSpectral": {
+          "auc": 0.4535413263167026,
+          "ap": 0.4973377344658948
+        },
+        "Proxy": {
+          "auc": 0.46254102271248687,
+          "ap": 0.49443042701927864
+        }
+      },
+      "candidate_minus_controls_auc": 0.004011912851132837,
+      "candidate_minus_shuffled_auc": 0.005031155575474622,
+      "candidate_minus_proxy_auc": -0.003968540820309674,
+      "candidate_minus_controls_ap": 0.0009954121791484472,
+      "candidate_minus_shuffled_ap": 0.002283627670298549,
+      "candidate_minus_proxy_ap": 0.005190935116914708
+    },
+    {
+      "seed": 2,
+      "metrics": {
+        "Base": {
+          "auc": 0.41910393384319566,
+          "ap": 0.46890385131691403
+        },
+        "DangerousControls": {
+          "auc": 0.4555292110627594,
+          "ap": 0.4987262666007868
+        },
+        "TrueSpectral": {
+          "auc": 0.4628663129436597,
+          "ap": 0.5013627090436181
+        },
+        "ShuffledSpectral": {
+          "auc": 0.45603521808902836,
+          "ap": 0.4979981879805757
+        },
+        "Proxy": {
+          "auc": 0.46238199193280227,
+          "ap": 0.4921499890053328
+        }
+      },
+      "candidate_minus_controls_auc": 0.00733710188090031,
+      "candidate_minus_shuffled_auc": 0.006831094854631348,
+      "candidate_minus_proxy_auc": 0.00048432101085743584,
+      "candidate_minus_controls_ap": 0.0026364424428313438,
+      "candidate_minus_shuffled_ap": 0.003364521063042414,
+      "candidate_minus_proxy_ap": 0.009212720038285327
+    },
+    {
+      "seed": 3,
+      "metrics": {
+        "Base": {
+          "auc": 0.413711344677529,
+          "ap": 0.46364846484982103
+        },
+        "DangerousControls": {
+          "auc": 0.45298471858780665,
+          "ap": 0.4958368334685247
+        },
+        "TrueSpectral": {
+          "auc": 0.45679422862843183,
+          "ap": 0.49604362301466554
+        },
+        "ShuffledSpectral": {
+          "auc": 0.4524353395307147,
+          "ap": 0.49451100874075116
+        },
+        "Proxy": {
+          "auc": 0.45923751969813065,
+          "ap": 0.48990159011538287
+        }
+      },
+      "candidate_minus_controls_auc": 0.003809510040625186,
+      "candidate_minus_shuffled_auc": 0.004358889097717145,
+      "candidate_minus_proxy_auc": -0.0024432910696988164,
+      "candidate_minus_controls_ap": 0.00020678954614083978,
+      "candidate_minus_shuffled_ap": 0.0015326142739143789,
+      "candidate_minus_proxy_ap": 0.006142032899282668
+    },
+    {
+      "seed": 4,
+      "metrics": {
+        "Base": {
+          "auc": 0.4107909612687765,
+          "ap": 0.4605603099397125
+        },
+        "DangerousControls": {
+          "auc": 0.449659529558039,
+          "ap": 0.49062266421485207
+        },
+        "TrueSpectral": {
+          "auc": 0.45234136679726467,
+          "ap": 0.49079475895916824
+        },
+        "ShuffledSpectral": {
+          "auc": 0.4511558646214345,
+          "ap": 0.490157458245937
+        },
+        "Proxy": {
+          "auc": 0.4555581257499747,
+          "ap": 0.48552815572447444
+        }
+      },
+      "candidate_minus_controls_auc": 0.0026818372392256595,
+      "candidate_minus_shuffled_auc": 0.0011855021758301887,
+      "candidate_minus_proxy_auc": -0.0032167589527100082,
+      "candidate_minus_controls_ap": 0.00017209474431617577,
+      "candidate_minus_shuffled_ap": 0.0006373007132312591,
+      "candidate_minus_proxy_ap": 0.005266603234693801
+    }
+  ],
+  "probe_aggregate": {
+    "Base": {
+      "auc_mean": 0.41577007040726344,
+      "auc_std": 0.00353765910209516,
+      "ap_mean": 0.46584372606882374,
+      "ap_std": 0.0036171293377814705
+    },
+    "DangerousControls": {
+      "auc_mean": 0.4528546024953375,
+      "auc_std": 0.002346280329801688,
+      "ap_mean": 0.4962229457021027,
+      "ap_std": 0.0033436442870869868
+    },
+    "TrueSpectral": {
+      "auc_mean": 0.4571036157816363,
+      "auc_std": 0.003962520260518029,
+      "ap_mean": 0.49715994550266907,
+      "ap_std": 0.004066681549993887
+    },
+    "ShuffledSpectral": {
+      "auc_mean": 0.4528040017927106,
+      "auc_std": 0.0021003552466134566,
+      "ap_mean": 0.4952606729553213,
+      "ap_std": 0.0031420949096929046
+    },
+    "Proxy": {
+      "auc_mean": 0.45983027078604577,
+      "auc_std": 0.0028557004967916418,
+      "ap_mean": 0.4908741211664845,
+      "ap_std": 0.0033915139939087006
+    }
+  },
+  "delta_aggregate": {
+    "candidate_minus_controls_auc": 0.004249013286298775,
+    "candidate_minus_shuffled_auc": 0.004299613988925655,
+    "candidate_minus_proxy_auc": -0.002726655004409495,
+    "candidate_minus_controls_ap": 0.0009369998005664071,
+    "candidate_minus_shuffled_ap": 0.0018992725473477856,
+    "candidate_minus_proxy_ap": 0.006285824336184654
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "state": "complete",
+  "stage": "candidate_B_rejected",
+  "current": null,
+  "completed": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "final_decision": "B_REJECT_NEXT_C",
+  "test_evaluated": false,
+  "updated_unix": 1790873176.4485085
+}

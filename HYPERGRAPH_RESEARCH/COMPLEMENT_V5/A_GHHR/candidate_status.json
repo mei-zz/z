@@ -1,0 +1,12 @@
+{
+  "state": "complete",
+  "stage": "candidate_A_rejected",
+  "current": null,
+  "completed": [
+    "candidate_A"
+  ],
+  "final_decision": "A_REJECT_NEXT_B",
+  "test_evaluated": false,
+  "device": "Tesla V100-PCIE-16GB",
+  "updated_unix": 1790872471.7993937
+}

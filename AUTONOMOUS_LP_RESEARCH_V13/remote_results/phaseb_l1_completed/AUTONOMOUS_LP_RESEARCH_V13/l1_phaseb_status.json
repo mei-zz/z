@@ -1,0 +1,22 @@
+{
+  "state": "INFRASTRUCTURE_FAILURE",
+  "stage": "phase1_phaseb_l1_stage1",
+  "completed": 5,
+  "total": 5,
+  "decision": {
+    "state": "INFRASTRUCTURE_FAILURE",
+    "go": false,
+    "missing": [
+      "QTHS25_BASELINE",
+      "L1_EXPECTED_MRR",
+      "L1_INDEP_BCE",
+      "L1_LISTWISE_RANDOM",
+      "L1_REPEAT_BCE"
+    ],
+    "test_evaluated": false
+  },
+  "test_evaluated": false,
+  "driver_sha256": "604e7eb5cf86dc75596dc411007ce0c71d1257a98dbbc695a0a2469d88c5bf1c",
+  "hooks_sha256": "54070f4357b6e9be906ee066596793d9ecf4b27df09da7d3b7d91733da10699e",
+  "updated_at_utc": "2026-10-03T08:52:44.666853+00:00"
+}

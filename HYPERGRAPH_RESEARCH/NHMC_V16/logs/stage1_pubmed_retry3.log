@@ -1,0 +1,15 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py", line 732, in <module>
+    main()
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py", line 719, in main
+    result = run_stage1(dataset)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py", line 579, in run_stage1
+    pool, pool_hash, graph_scores, teacher_meta = _fixed_train_pool(dataset, view)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py", line 413, in _fixed_train_pool
+    cached_meta = read_json(teacher_path)
+                  ^^^^^^^^^
+NameError: name 'read_json' is not defined

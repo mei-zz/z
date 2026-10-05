@@ -1,0 +1,48 @@
+{
+  "protocol": "V11 repaired partition",
+  "test_used_for_selection": false,
+  "cora": {
+    "old_count": 2437,
+    "new_count": 271,
+    "inference_edges": 9502,
+    "strict_zero_context_new_nodes": 12,
+    "strict_test_positive_counts": {"old-new": 10, "new-new": 2},
+    "strict_validation_positive_counts": {"old-new": 8, "new-new": 2},
+    "strict_test_feature_cosine": {
+      "n_positive": 12,
+      "mrr": 0.1748566531847852,
+      "hits@10": 0.3333333333333333,
+      "hits@20": 0.5,
+      "hits@50": 0.6666666666666666
+    },
+    "strict_validation_feature_cosine": {
+      "n_positive": 10,
+      "mrr": 0.4695665339007974,
+      "hits@10": 0.7,
+      "hits@20": 0.8,
+      "hits@50": 0.9
+    }
+  },
+  "citeseer": {
+    "old_count": 2994,
+    "new_count": 333,
+    "inference_edges": 8198,
+    "strict_zero_context_new_nodes": 30,
+    "strict_test_positive_counts": {"old-new": 22, "new-new": 2},
+    "strict_validation_positive_counts": {"old-new": 26, "new-new": 2},
+    "strict_test_feature_cosine": {
+      "n_positive": 24,
+      "mrr": 0.4418000257477009,
+      "hits@10": 0.5833333333333334,
+      "hits@20": 0.5833333333333334,
+      "hits@50": 0.7083333333333334
+    },
+    "strict_validation_feature_cosine": {
+      "n_positive": 28,
+      "mrr": 0.5084669625835626,
+      "hits@10": 0.5714285714285714,
+      "hits@20": 0.6071428571428571,
+      "hits@50": 0.7142857142857143
+    }
+  }
+}

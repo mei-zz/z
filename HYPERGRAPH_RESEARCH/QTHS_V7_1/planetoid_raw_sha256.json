@@ -1,0 +1,82 @@
+[
+  {
+    "name": "ind.cora.allx",
+    "bytes": 257305,
+    "sha256": "9419ba2f26f5c35243db64aba110e0f35a04851609e0dc5433450676ca6b8543"
+  },
+  {
+    "name": "ind.cora.ally",
+    "bytes": 47959,
+    "sha256": "2b998f5cc7fedc86e7f97ca2498f47a1ffc1462c29e2d578b23bf3f62b6e7d71"
+  },
+  {
+    "name": "ind.cora.graph",
+    "bytes": 59847,
+    "sha256": "58f13302f39dde8852dad6fe6d15b89b077b6d7f837626bce671ef80344b383d"
+  },
+  {
+    "name": "ind.cora.test.index",
+    "bytes": 5000,
+    "sha256": "297ce89af2b51a6a194181c7dbe1796c6a1cf9cd9349a88383b1b1e227867875"
+  },
+  {
+    "name": "ind.cora.tx",
+    "bytes": 148025,
+    "sha256": "b9afbaa4a400df991f6f02ef677e1e44da55ffc04801fd02f9e673987829226a"
+  },
+  {
+    "name": "ind.cora.ty",
+    "bytes": 28135,
+    "sha256": "41f5ac76596a1699cc33f53084a2419e92961c42bb75f36fc38e616d348532ad"
+  },
+  {
+    "name": "ind.cora.x",
+    "bytes": 22119,
+    "sha256": "23cfa55d91c6f624233f5eb7b6e3f141f1bd2b2ae39608a63cf5d084bb27baab"
+  },
+  {
+    "name": "ind.cora.y",
+    "bytes": 4054,
+    "sha256": "94465c14eb53e04ca262198dcbb2521ee8af60fb3f3d546cd6ca24a511b0e7d1"
+  },
+  {
+    "name": "ind.pubmed.allx",
+    "bytes": 7578385,
+    "sha256": "508e538e2abdccdd54c4d3e9f49d638b4af7107d85845f66ddea5a5152658b7e"
+  },
+  {
+    "name": "ind.pubmed.ally",
+    "bytes": 224739,
+    "sha256": "0c37bbe3b5014ec365e9d393cf4791925e5ed94fb194305d74f064a8d7b50f0e"
+  },
+  {
+    "name": "ind.pubmed.graph",
+    "bytes": 471808,
+    "sha256": "5b89f0036ca22909471f1e6558eb42fa06e0c730a577bde5b058b40638f81dc9"
+  },
+  {
+    "name": "ind.pubmed.test.index",
+    "bytes": 6000,
+    "sha256": "b101d421688bbaecbd82e8a18f1e282378d6830f3a37666f28ebc47f844341b5"
+  },
+  {
+    "name": "ind.pubmed.tx",
+    "bytes": 405505,
+    "sha256": "4eb5f5d0f30f26497eb0ac6ac9719d09c67e284f1ed0385c93f3ef27a671da3d"
+  },
+  {
+    "name": "ind.pubmed.ty",
+    "bytes": 12135,
+    "sha256": "ee2e0d4819d9fbcc403689c3bf2e49face401b605932f093bc58ab6461130fdd"
+  },
+  {
+    "name": "ind.pubmed.x",
+    "bytes": 23172,
+    "sha256": "fbe9cb5c47200d1b7769a26e579be3b7130b556831f9d850e77c4c74f2599b33"
+  },
+  {
+    "name": "ind.pubmed.y",
+    "bytes": 854,
+    "sha256": "e6c807633307a07ed659249006536a147c7999c797f11a2560752990181b41b3"
+  }
+]

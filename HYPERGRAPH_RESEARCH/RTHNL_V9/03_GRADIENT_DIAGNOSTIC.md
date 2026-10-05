@@ -1,0 +1,7 @@
+# Gradient diagnostic
+
+For each positive p under frozen K=1, the per-positive gradient list is the singleton `{g_p}`. Its local median is `g_p`; the tail branch is never selected; raw weight is 1; normalized relative weight is 1 in float32; and `ESS/K=1`. Thus the RTHNL effective gradient equals the raw gradient for every selected negative, with zero reduction of the within-positive top-gradient share. Shuffling the singleton weight leaves all quantities unchanged.
+
+The remote CUDA preflight used Torch 2.3.1+cu121 on a Tesla V100-PCIE-16GB. Across 10,001 synthetic logits in float32 and float64, raw weights were all one; RTHNL and shuffled-control losses and logit gradients were exactly equal. In float32 the maximum gradient difference from the unweighted baseline was 0. In float64 the only difference was the prescribed epsilon normalization (maximum absolute gradient difference `9.9991e-13`).
+
+V8 retained epoch means and margins, not the per-example logits needed to reconstruct raw-gradient p75/p90/p95/p99/max or top-1/top-10 gradient shares. No such distributional statistics are invented here. The preregistered diagnostic training was skipped after the exact mechanism gate failed. Existing `smooth_l1_loss` use in the repository is for a degree-robustness intervention, not an interchangeable link-prediction robust-loss baseline. No ready BCE focal/GCE link-prediction control was found: `ROBUST_LOSS_CONTROL_NOT_AVAILABLE`.

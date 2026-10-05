@@ -1,0 +1,74 @@
+{
+  "state": "COMPLETE",
+  "dataset": "cora",
+  "method": "NSLR-HMANN",
+  "seed": 4,
+  "metrics": {
+    "mrr": 0.40060918609474605,
+    "hits10": 0.7286527514231499,
+    "hits20": 0.9639468690702088,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 6.925996204933586
+  },
+  "parameters": 79393,
+  "train_seconds": 90.46756433835253,
+  "total_seconds": 93.51188006810844,
+  "inference_seconds": 0.00821040803566575,
+  "peak_gpu_allocated_mb": 78.341796875,
+  "official_source": {
+    "repo": "pinglanchu/NSLR-HMANN",
+    "commit": "7847dee275ca01e383dc33403da95ff455896813",
+    "url": "https://github.com/pinglanchu/NSLR-HMANN"
+  },
+  "config": {
+    "in": 64,
+    "hidden": 32,
+    "out": 32,
+    "heads": [
+      8,
+      2
+    ],
+    "dropout": 0.5,
+    "lr": 0.01,
+    "epochs": 5000,
+    "feature": "fixed random embedding64, excluded optimizer",
+    "decoder": "official MLPPredictor",
+    "loss": "official compute_loss"
+  },
+  "selection": "fixed final epoch5000; test evaluated once",
+  "candidate_audit": {
+    "n": 2708,
+    "feature_shape": [
+      2708,
+      1433
+    ],
+    "train_edges": 4488,
+    "train_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+    "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+    "valid_negative_hash": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+    "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+    "test_negative_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+    "test_cache_sha256": "c2a60aee273964509ace1615c01e2fdf0857fedeca76ad749da3eaf019bbc4e1",
+    "test_queries": 527,
+    "test_negatives": 20,
+    "projection": "undirected train edges exactly B0 graph side; no clique expansion, no valid/test edges"
+  },
+  "negative_filter": "train-only offdiagonal complement uniform replacement fixed 1:1 directed sample; official selfloops on both label graphs",
+  "construction": {
+    "state": "COMPLETE",
+    "n": 2708,
+    "graph_edges": 6096,
+    "construction_seconds": 1.9944542907178402,
+    "incidence_sha256": "4711c7a3045d52508734d647db94d02eb8a410eae4237e632a0ee11eb332d1d5",
+    "graph_sha256": "26ee22ad839c65c3a95f1abd7b5e1c53a613959d7b97783eda4aadce5cb85561",
+    "official_source": {
+      "repo": "pinglanchu/NSLR-HMANN",
+      "commit": "7847dee275ca01e383dc33403da95ff455896813",
+      "url": "https://github.com/pinglanchu/NSLR-HMANN"
+    },
+    "train_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+    "selfloops": "official loader adds selfloops before NSLR; constructor unchanged"
+  },
+  "device_adapter": "CUDA execution; no architecture/loss modification"
+}

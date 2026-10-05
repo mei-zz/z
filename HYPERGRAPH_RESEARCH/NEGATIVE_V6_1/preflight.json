@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "gpu": "Tesla V100-PCIE-16GB",
+  "torch": "2.8.0+cu128",
+  "scipy_available": true,
+  "cora_train_positive_count": 4488,
+  "num_nodes": 2708,
+  "train_only_forbidden_edge_count": 4488,
+  "train_only_forbidden_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+  "initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+  "matched_initial_state_compatibility": {
+    "disabled": {
+      "allowed_missing_hypergraph_keys": [],
+      "allowed_unexpected_hypergraph_keys": [
+        "hypergraph.calibration_logit",
+        "hypergraph.message_linear.weight"
+      ]
+    },
+    "raw": {
+      "allowed_missing_hypergraph_keys": [],
+      "allowed_unexpected_hypergraph_keys": []
+    }
+  },
+  "fixed_validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+  "filtered_runs_present": 9,
+  "heldout_eligibility_unit_test": {
+    "status": "PASS",
+    "future_edge_and_ordinary_unknown_use_same_train_only_predicate": true,
+    "future_edge_identity_is_not_an_input_to_filter": true,
+    "train_positive_and_self_loop_rejected": true
+  }
+}

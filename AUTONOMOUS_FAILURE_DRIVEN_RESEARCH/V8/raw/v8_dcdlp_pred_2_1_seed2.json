@@ -1,0 +1,196 @@
+{
+  "mode": "formal",
+  "dataset": "ogbl-collab_CN_2_1_0_seed1",
+  "seed": 2,
+  "config": {
+    "hidden_dim": 64,
+    "branch_dim": 32,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "backbone": "gcn",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 262144,
+    "epochs": 4,
+    "train_negative_protocol": "uniform_non_message_edges",
+    "target_masking": true,
+    "selection_metric": "validation_mrr",
+    "test_used_for_selection": false
+  },
+  "adapter_summary": {
+    "dataset_name": "ogbl-collab_CN_2_1_0_seed1",
+    "num_nodes": 235868,
+    "feature_shape": [
+      235868,
+      128
+    ],
+    "message_edge_index_shape": [
+      2,
+      1733096
+    ],
+    "message_edge_index_hash": "9f7c3d699b039c5ce37c1c50aa53abfa464df6c897b18c8b79f5d3ad8b101eee",
+    "train_pos_shape": [
+      1697336,
+      2
+    ],
+    "valid_pos_shape": [
+      23669,
+      2
+    ],
+    "test_pos_shape": [
+      9048,
+      2
+    ],
+    "valid_neg_shape": [
+      23669,
+      250,
+      2
+    ],
+    "test_neg_shape": [
+      9048,
+      250,
+      2
+    ],
+    "train_pos_hash": "5db0173da159b5e79b4a641786b127644d64bb2593b273e11e76b29521e49a4a",
+    "valid_pos_hash": "6c16deb8c6b39dd25f93b76798bcebd62704015c1e5729cd4102fc7371ca35c3",
+    "test_pos_hash": "8f8c0805601d73ee91da361d1c6e695d4a3bc74602c46ffa2886f6004d98bf3a",
+    "valid_neg_hash": "24ee3173d984974fd9c9fef4cb133a0e04722b6f8f28415b4fd7c2dafbf0f51d",
+    "test_neg_hash": "10bd6bd21860ffd4a9b3c525205bfc6919be607e7b3534e1b8d135f575d313d4",
+    "valid_neg_file_hash": "e6f350a6f951621ebe6037317f0fb94afa6ce90359277ec05a2250c91df4c544",
+    "test_neg_file_hash": "a9e97e35b6cd5e13532d6dbe115d6cad5cdb5ff9e39f89d985c4a9e61691e1df"
+  },
+  "best_epoch": 3,
+  "validation": {
+    "mrr": 0.5198055229860187,
+    "hits10": 0.7502640584731083,
+    "hits20": 0.8333262917740505,
+    "hits50": 0.9232751700536567,
+    "hits100": 0.9742278930246314,
+    "mean_positive_rank": 13.326165025983354,
+    "auc": 0.9472087299974518,
+    "ap": 0.2902240611854053
+  },
+  "test": {
+    "mrr": 0.22777170109640407,
+    "hits10": 0.5764809902740937,
+    "hits20": 0.7255747126436781,
+    "hits50": 0.8745579133510168,
+    "hits100": 0.9605437665782494,
+    "mean_positive_rank": 21.061781609195403,
+    "auc": 0.9134921576036946,
+    "ap": 0.05555958063340482
+  },
+  "trace": [
+    {
+      "epoch": 0,
+      "mean_loss": 0.534007762487118,
+      "validation": {
+        "mrr": 0.459898267915261,
+        "hits10": 0.588026532595378,
+        "hits20": 0.6868055262157252,
+        "hits50": 0.8432126410072246,
+        "hits100": 0.9517512357936542,
+        "mean_positive_rank": 22.103933415015423,
+        "auc": 0.90820222809311,
+        "ap": 0.2635575943716571
+      },
+      "test_descriptive": {
+        "mrr": 0.12911707968305755,
+        "hits10": 0.3072502210433245,
+        "hits20": 0.4827586206896552,
+        "hits50": 0.7491158267020336,
+        "hits100": 0.9171087533156499,
+        "mean_positive_rank": 35.90937223695845,
+        "auc": 0.8440826665388483,
+        "ap": 0.020552550762977836
+      },
+      "negative_hash": "a147b5d8b8c8e9270fbccf3f4893544476c711f304bd303ed50156a0b912da46",
+      "order_hash": "482a38c7da4bf95f2b3624803b7f18ef273fd5b7192ec74357cbdb16b4e8860b"
+    },
+    {
+      "epoch": 1,
+      "mean_loss": 0.2231407303076524,
+      "validation": {
+        "mrr": 0.48252576134290925,
+        "hits10": 0.6674553213063501,
+        "hits20": 0.784739532722126,
+        "hits50": 0.8955595927162111,
+        "hits100": 0.9604546030673032,
+        "mean_positive_rank": 17.403692593687946,
+        "auc": 0.9300734657265358,
+        "ap": 0.26147596390481403
+      },
+      "test_descriptive": {
+        "mrr": 0.16646974937985404,
+        "hits10": 0.4318081343943413,
+        "hits20": 0.6384836427939876,
+        "hits50": 0.8294650751547303,
+        "hits100": 0.9325817860300619,
+        "mean_positive_rank": 28.400641025641026,
+        "auc": 0.881955993958149,
+        "ap": 0.03278974085589405
+      },
+      "negative_hash": "3802990d356e09a5c83095cade8447ea4acb0b6e43c7feed0709f83062ae1c22",
+      "order_hash": "f208755ab83c49e548e00d7b7815dc8d9eb3e535d5a506203514ba6b91afd5e3"
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.1023468547142469,
+      "validation": {
+        "mrr": 0.500967954983641,
+        "hits10": 0.7152393426000253,
+        "hits20": 0.8194262537496303,
+        "hits50": 0.9127550804850226,
+        "hits100": 0.9689467235624657,
+        "mean_positive_rank": 14.940512907178165,
+        "auc": 0.9416214816623238,
+        "ap": 0.27828123405188643
+      },
+      "test_descriptive": {
+        "mrr": 0.1975382734525236,
+        "hits10": 0.5225464190981433,
+        "hits20": 0.7000442086648984,
+        "hits50": 0.8582007073386384,
+        "hits100": 0.9518125552608311,
+        "mean_positive_rank": 23.724690539345712,
+        "auc": 0.9044301918894494,
+        "ap": 0.04577843301795633
+      },
+      "negative_hash": "997276eae1e2530a11f5d4af458b73615005e274fb7b66333388a5e856639c55",
+      "order_hash": "8156d822e2d4a454e9b5b91d0df8db7ba5fa8b429fa8ed4dc00ed2e7a887a8f7"
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.06431361746329528,
+      "validation": {
+        "mrr": 0.5198054709547925,
+        "hits10": 0.7502640584731083,
+        "hits20": 0.8333262917740505,
+        "hits50": 0.9232751700536567,
+        "hits100": 0.9742278930246314,
+        "mean_positive_rank": 13.326207275339051,
+        "auc": 0.9472087295119295,
+        "ap": 0.2902241854501706
+      },
+      "test_descriptive": {
+        "mrr": 0.22777170109640407,
+        "hits10": 0.5764809902740937,
+        "hits20": 0.7255747126436781,
+        "hits50": 0.8745579133510168,
+        "hits100": 0.9605437665782494,
+        "mean_positive_rank": 21.061781609195403,
+        "auc": 0.9134921570173727,
+        "ap": 0.05555958125363316
+      },
+      "negative_hash": "7fdf19ae4ccbe85755b680e711a9b540e7cce638ce9fedf01bb97c0100272b37",
+      "order_hash": "5a34bb7001ad425a235a7bd2bfb55740e4e36b936cb9856b3eedc22839c1fc84"
+    }
+  ],
+  "runtime_seconds": 267.2729736128822,
+  "peak_gpu_memory_mb": 3632.1513671875,
+  "parameter_count": 28966,
+  "best_state_hash": "996cd0217b7de549127c2ff1315a33a5146aadf7482e01f72ff3ddeb877ae4c0",
+  "gpu_name": "Tesla V100-PCIE-16GB",
+  "test_used_for_selection": false,
+  "prediction_file": "/home/ubuntu/AFDR_V7/raw/v8_dcdlp_pred_2_1_seed2.pred.npz"
+}

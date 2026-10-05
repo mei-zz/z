@@ -1,0 +1,10 @@
+{
+  "state": "TEACHER_RUNNING",
+  "stage": "phase1_phaseb_t1_teacher",
+  "completed": 0,
+  "total": 1,
+  "workers": 1,
+  "test_evaluated": false,
+  "driver_sha256": "cc468f74531d66ea373090de83721741138925a10d6cfddbbedd5b57032d39cc",
+  "started_at_utc": "2026-10-03T08:18:51.976078+00:00"
+}

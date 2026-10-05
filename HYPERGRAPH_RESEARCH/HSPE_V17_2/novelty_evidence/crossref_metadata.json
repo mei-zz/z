@@ -1,0 +1,823 @@
+[
+  {
+    "doi": "10.3390/e27101046",
+    "state": "VERIFIED",
+    "url": "https://api.crossref.org/works/10.3390%2Fe27101046",
+    "title": [
+      "Hypergraph Semi-Supervised Contrastive Learning for Hyperedge Prediction Based on Enhanced Attention Aggregator"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0006-6452-266X",
+        "authenticated-orcid": false,
+        "given": "Hanyu",
+        "family": "Xie",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "College of Electronic Engineering, National University of Defense Technology, Hefei 230031, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Changjian",
+        "family": "Song",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Electronic Engineering, National University of Defense Technology, Hefei 230031, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8230-6297",
+        "authenticated-orcid": false,
+        "given": "Hao",
+        "family": "Shao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Electronic Engineering, National University of Defense Technology, Hefei 230031, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4726-3484",
+        "authenticated-orcid": false,
+        "given": "Lunwen",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Electronic Engineering, National University of Defense Technology, Hefei 230031, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          8
+        ]
+      ]
+    },
+    "container": [
+      "Entropy"
+    ],
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/1099-4300/27/10/1046/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.patcog.2024.110292",
+    "state": "VERIFIED",
+    "url": "https://api.crossref.org/works/10.1016%2Fj.patcog.2024.110292",
+    "title": [
+      "Hypergraph modeling and hypergraph multi-view attention neural network for link prediction"
+    ],
+    "authors": [
+      {
+        "given": "Lang",
+        "family": "Chai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lilan",
+        "family": "Tu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0780-2738",
+        "authenticated-orcid": false,
+        "given": "Xianjia",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qingqing",
+        "family": "Su",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "container": [
+      "Pattern Recognition"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0031320324000438?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0031320324000438?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1007/s10115-024-02255-8",
+    "state": "VERIFIED",
+    "url": "https://api.crossref.org/works/10.1007%2Fs10115-024-02255-8",
+    "title": [
+      "HMNE: link prediction using hypergraph motifs and network embedding in social networks"
+    ],
+    "authors": [
+      {
+        "given": "Yichen",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shouliang",
+        "family": "Lai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zelu",
+        "family": "Peng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amin",
+        "family": "Rezaeipanah",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          10
+        ]
+      ]
+    },
+    "container": [
+      "Knowledge and Information Systems"
+    ],
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s10115-024-02255-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s10115-024-02255-8/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s10115-024-02255-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.3390/electronics12234842",
+    "state": "VERIFIED",
+    "url": "https://api.crossref.org/works/10.3390%2Felectronics12234842",
+    "title": [
+      "Research on a Link Prediction Algorithm Based on Hypergraph Representation Learning"
+    ],
+    "authors": [
+      {
+        "given": "Kang",
+        "family": "Fu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Electronic and Information Engineering, Lanzhou Jiaotong University, Lanzhou 730070, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Guanghui",
+        "family": "Yan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronic and Information Engineering, Lanzhou Jiaotong University, Lanzhou 730070, China"
+          },
+          {
+            "name": "Key Laboratory of Media Convergence Technology and Communication of Gansu Province, Lanzhou 730000, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Hao",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronic and Information Engineering, Lanzhou Jiaotong University, Lanzhou 730070, China"
+          },
+          {
+            "name": "School of Information Science and Engineering, Gansu University of Traditional Chinese Medicine, Lanzhou 730013, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wenwen",
+        "family": "Chang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronic and Information Engineering, Lanzhou Jiaotong University, Lanzhou 730070, China"
+          },
+          {
+            "name": "Key Laboratory of Media Convergence Technology and Communication of Gansu Province, Lanzhou 730000, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jingwen",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronic and Information Engineering, Lanzhou Jiaotong University, Lanzhou 730070, China"
+          },
+          {
+            "name": "Key Laboratory of Media Convergence Technology and Communication of Gansu Province, Lanzhou 730000, China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          30
+        ]
+      ]
+    },
+    "container": [
+      "Electronics"
+    ],
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2079-9292/12/23/4842/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1007/s40747-025-02118-x",
+    "state": "VERIFIED",
+    "url": "https://api.crossref.org/works/10.1007%2Fs40747-025-02118-x",
+    "title": [
+      "Unsupervised hyperlink prediction based on hypergraph random walk"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6818-6516",
+        "authenticated-orcid": false,
+        "given": "Yanlin",
+        "family": "Yang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0008-9415-8277",
+        "authenticated-orcid": false,
+        "given": "Mingyuan",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8351-2954",
+        "authenticated-orcid": false,
+        "given": "Lei",
+        "family": "Meng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yuzhi",
+        "family": "Xiao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2429-3325",
+        "authenticated-orcid": false,
+        "given": "Zhonglin",
+        "family": "Ye",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0957-1603",
+        "authenticated-orcid": false,
+        "given": "Haixing",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          6
+        ]
+      ]
+    },
+    "container": [
+      "Complex &amp; Intelligent Systems"
+    ],
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s40747-025-02118-x.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s40747-025-02118-x",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s40747-025-02118-x.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1038/s41598-026-45116-w",
+    "state": "VERIFIED",
+    "url": "https://api.crossref.org/works/10.1038%2Fs41598-026-45116-w",
+    "title": [
+      "CCLPH: community-centric approach to link prediction in hyper complex networks"
+    ],
+    "authors": [
+      {
+        "given": "Y. V.",
+        "family": "Nandini",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "T. Jaya",
+        "family": "Lakshmi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Murali Krishna",
+        "family": "Enduri",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bhaskar",
+        "family": "Biswas",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          30
+        ]
+      ]
+    },
+    "container": [
+      "Scientific Reports"
+    ],
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41598-026-45116-w",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-026-45116-w.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-026-45116-w.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1007/s00530-024-01324-w",
+    "state": "VERIFIED",
+    "url": "https://api.crossref.org/works/10.1007%2Fs00530-024-01324-w",
+    "title": [
+      "Link prediction in social networks using hyper-motif representation on hypergraph"
+    ],
+    "authors": [
+      {
+        "given": "ChunYan",
+        "family": "Meng",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hooman",
+        "family": "Motevalli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          12
+        ]
+      ]
+    },
+    "container": [
+      "Multimedia Systems"
+    ],
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s00530-024-01324-w.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s00530-024-01324-w/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s00530-024-01324-w.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1145/3690624.3709274",
+    "state": "VERIFIED",
+    "url": "https://api.crossref.org/works/10.1145%2F3690624.3709274",
+    "title": [
+      "Hypergraph Motif Representation Learning"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6366-0546",
+        "authenticated-orcid": false,
+        "given": "Alessia",
+        "family": "Antelmi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Università degli Studi di Torino, Turin, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9148-9769",
+        "authenticated-orcid": false,
+        "given": "Gennaro",
+        "family": "Cordasco",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Università della Campania \"Luigi Vanvitelli\", Caserta, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0781-3744",
+        "authenticated-orcid": false,
+        "given": "Daniele",
+        "family": "De Vinco",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Università degli Studi di Salerno, Fisciano, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0003-9140-0738",
+        "authenticated-orcid": false,
+        "given": "Valerio",
+        "family": "Di Pasquale",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Università degli Studi di Salerno, Fisciano, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4890-5020",
+        "authenticated-orcid": false,
+        "given": "Mirko",
+        "family": "Polato",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Università degli Studi di Torino, Turin, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8267-9808",
+        "authenticated-orcid": false,
+        "given": "Carmine",
+        "family": "Spagnuolo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Università degli Studi di Salerno, Fisciano, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          20
+        ]
+      ]
+    },
+    "container": [
+      "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1"
+    ],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3690624.3709274",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3690624.3709274",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  }
+]

@@ -1,0 +1,161 @@
+{
+  "state": "COMPLETE",
+  "phase": "A",
+  "dataset": "cora",
+  "seed": 1,
+  "arm": "C1",
+  "method": "NCNC + R-HSPE",
+  "epochs": 5,
+  "validation": {
+    "mrr": 0.6979936739900071,
+    "hits10": 0.9163498098859315,
+    "hits20": 0.9961977186311787,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 3.159695817490494
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.6730656623840332,
+      "validation": {
+        "mrr": 0.6709754200806185,
+        "hits10": 0.8479087452471483,
+        "hits20": 0.9657794676806084,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 4.038022813688213
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 1.3517919381459553,
+      "validation": {
+        "mrr": 0.6976376715041973,
+        "hits10": 0.8935361216730038,
+        "hits20": 0.9885931558935361,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 3.4486692015209126
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 1.2523049116134644,
+      "validation": {
+        "mrr": 0.6827299879206024,
+        "hits10": 0.8973384030418251,
+        "hits20": 0.9847908745247148,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 3.55893536121673
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 1.1692582766215007,
+      "validation": {
+        "mrr": 0.6936166246835,
+        "hits10": 0.8973384030418251,
+        "hits20": 0.9657794676806084,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 3.543726235741445
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 1.116426706314087,
+      "validation": {
+        "mrr": 0.6979936739900071,
+        "hits10": 0.9163498098859315,
+        "hits20": 0.9961977186311787,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 3.159695817490494
+      }
+    }
+  ],
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/A/cora/seed_1/C1/final.pt",
+  "checkpoint_sha256": "4b47452124c4d8703759302210d38f3c0d12bbf435d7e22c7c358cbc91c72fae",
+  "base_initial_state_sha256": "2f2462588b3f17e6fa96a9e33f5ef20d00ae06c766c9ed60dbc02702ab5fbc74",
+  "rng_and_sample_trace": [
+    {
+      "epoch": 1,
+      "negative_hash": "fd2dfca4ecadbda559654d2fc82c221e6917481c5075627ab65bdfc0193ee5fd",
+      "permutation_hash": "ab5738dc603796d4a6c2b5e9826d75be36941e005f386b96e3c2a74ea59f41f2",
+      "torch_cuda_rng_sha256": "53dff779d20b58917453e21389cc4742a2701c0415d776017f820f606cacd3b3"
+    },
+    {
+      "epoch": 2,
+      "negative_hash": "cc2b6012de72c1674ced4180dba938cbe7d45595cef9420ae2a74ee096853526",
+      "permutation_hash": "a914dcae3443862e660f8b8a9639d79041c31a192b480ca0e12b16801fb8f25b",
+      "torch_cuda_rng_sha256": "61d57ddaa09d9955bd90001917598f761d402837f3fbf52005950aeb81f41615"
+    },
+    {
+      "epoch": 3,
+      "negative_hash": "a1ca9ec6d793ec74e90f884d39a8455d357b9a7d4583950db80e2049e748810d",
+      "permutation_hash": "624e749322bf6544abdc7c081636a73777c4f74cadea3ee3d075ea8391f2545f",
+      "torch_cuda_rng_sha256": "11b96f2566ea6a882e654818b46c8df93e5efa2d49fb0971c303ea6cddf2ea45"
+    },
+    {
+      "epoch": 4,
+      "negative_hash": "edfda1fd9778b8506d4d89fa1c4aff4f3b2d0dba792c1189494107eac3cba232",
+      "permutation_hash": "c5b2a867eabd741a5812d5043cc1093cbc28172deb09c66eb1d4927a387e89fc",
+      "torch_cuda_rng_sha256": "0b968fc83a016654a14de1a097a8e2d47add8108e38583ca7d6e90eabf7232ad"
+    },
+    {
+      "epoch": 5,
+      "negative_hash": "817d97cadec2cda5aef33c9b287ea06ec5454aca7b665d71f578cc6b49c39969",
+      "permutation_hash": "ce3a306b591481f8509c7a7b40a119e77b6ac474bcbee28ea8351a3fbf7dcc3b",
+      "torch_cuda_rng_sha256": "218136d566cb39bd729887a59808153f2d9c6c40fa01354e98ac7a69d99efead"
+    }
+  ],
+  "train_seconds": 0.7674303958192468,
+  "validation_seconds": 0.6226883558556437,
+  "wall_seconds": 1.4144699280150235,
+  "parameters": 830287,
+  "base_parameters": 830212,
+  "added_parameters": 75,
+  "percentage_overhead": 0.009033837140393056,
+  "peak_gpu_mb": 160.2236328125,
+  "selection": "fixed final epoch, as V17.4 final integration requirement",
+  "test_accessed": false,
+  "sources": {
+    "frozen": {
+      "v171": "b4b477d86ceb55f62cefb02ea1a652085b725ca92793707a29586976016970fc",
+      "v17": "da20e41442f8e7b0b12d29515ba2a3df71a2a0a7327a51ea2b1170901e2e28bf",
+      "v16_stage1": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+      "stage0": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+      "qths_v71": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+      "negative_v61": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+      "codns_engine": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+      "dcdlp_train": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+      "baseline_config": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a"
+    },
+    "backbone_adapter": "0a89c2028b6f374936c014cd681be58af5ba82af97db461fd360edf1dad5c770",
+    "integration_adapter": "da138c7056e04d5766325df8de3b04d4e49b82808c62837f7ca03538cb043f6b"
+  },
+  "config": {
+    "xdp": 0.7,
+    "tdp": 0.3,
+    "pt": 0.75,
+    "preedp": 0.4,
+    "predp": 0.05,
+    "gnndp": 0.05,
+    "scale": 4.3,
+    "offset": 2.8,
+    "alpha": 1.0,
+    "gnnlr": 0.0043,
+    "prelr": 0.0024,
+    "batch": 1152,
+    "twolayerlin": false,
+    "epochs": 5,
+    "backbone_hidden": 256,
+    "residual_encoder": 6,
+    "residual_hidden": 8,
+    "residual_head": 18,
+    "optimizer": "same two-group Adam; residual in predictor LR group",
+    "negative_sampler": "unchanged official sampler, checked against deterministic cache"
+  }
+}

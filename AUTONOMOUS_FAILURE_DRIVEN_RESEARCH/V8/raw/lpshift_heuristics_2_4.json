@@ -1,0 +1,107 @@
+{
+  "dataset": "ogbl-collab_CN_4_2_0_seed1",
+  "node_count": 235868,
+  "message_graph_edges_directed": 1597130,
+  "heuristics": {
+    "valid": {
+      "positive_count": 24097,
+      "negative_per_positive": 250,
+      "cn": {
+        "MRR": 0.8638,
+        "Hits@1": 0.7877,
+        "Hits@3": 0.9147,
+        "Hits@10": 0.9169,
+        "Hits@20": 0.9169,
+        "Hits@50": 0.9169,
+        "Hits@100": 0.9169,
+        "seconds": 2.03
+      },
+      "aa": {
+        "MRR": 0.8866,
+        "Hits@1": 0.8554,
+        "Hits@3": 0.9154,
+        "Hits@10": 0.9169,
+        "Hits@20": 0.9169,
+        "Hits@50": 0.9169,
+        "Hits@100": 0.9169,
+        "seconds": 2.551
+      },
+      "ra": {
+        "MRR": 0.8866,
+        "Hits@1": 0.8556,
+        "Hits@3": 0.9154,
+        "Hits@10": 0.9169,
+        "Hits@20": 0.9169,
+        "Hits@50": 0.9169,
+        "Hits@100": 0.9169,
+        "seconds": 2.553
+      },
+      "pa": {
+        "MRR": 0.06,
+        "Hits@1": 0.0071,
+        "Hits@3": 0.0305,
+        "Hits@10": 0.1356,
+        "Hits@20": 0.2858,
+        "Hits@50": 0.6427,
+        "Hits@100": 0.9488,
+        "seconds": 0.103
+      }
+    },
+    "test": {
+      "positive_count": 11551,
+      "negative_per_positive": 250,
+      "cn": {
+        "MRR": 0.2991,
+        "Hits@1": 0.2299,
+        "Hits@3": 0.3375,
+        "Hits@10": 0.3409,
+        "Hits@20": 0.3409,
+        "Hits@50": 0.3409,
+        "Hits@100": 0.3409,
+        "seconds": 0.873
+      },
+      "aa": {
+        "MRR": 0.315,
+        "Hits@1": 0.2794,
+        "Hits@3": 0.3384,
+        "Hits@10": 0.3409,
+        "Hits@20": 0.3409,
+        "Hits@50": 0.3409,
+        "Hits@100": 0.3409,
+        "seconds": 1.183
+      },
+      "ra": {
+        "MRR": 0.3176,
+        "Hits@1": 0.284,
+        "Hits@3": 0.3388,
+        "Hits@10": 0.3409,
+        "Hits@20": 0.3409,
+        "Hits@50": 0.3409,
+        "Hits@100": 0.3409,
+        "seconds": 1.186
+      },
+      "pa": {
+        "MRR": 0.0592,
+        "Hits@1": 0.0056,
+        "Hits@3": 0.0271,
+        "Hits@10": 0.1281,
+        "Hits@20": 0.3024,
+        "Hits@50": 0.7165,
+        "Hits@100": 0.9704,
+        "seconds": 0.04
+      }
+    }
+  },
+  "files": {
+    "valid_negative_file": {
+      "path": "dataset/ogbl-collab_CN_4_2_0_seed1Dataset/heart_valid_samples.npy",
+      "bytes": 96388128,
+      "sha256": "cc60b2c52b920829f0a529e83861980cf874254236dd035de524ac6b1b74c2fb"
+    },
+    "test_negative_file": {
+      "path": "dataset/ogbl-collab_CN_4_2_0_seed1Dataset/heart_test_samples.npy",
+      "bytes": 46204128,
+      "sha256": "c72e0804630072d15962eb0fac9990c1ff7144bbe8732847f2cb25d0ab8181dd"
+    }
+  }
+}

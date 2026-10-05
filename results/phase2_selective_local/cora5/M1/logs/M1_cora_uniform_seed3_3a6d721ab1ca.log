@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-15T16:37:44",
+  "model_label": "M1",
+  "dataset": "cora",
+  "seed": 3,
+  "run_id": "cora_uniform_seed3_3a6d721ab1ca",
+  "result_file": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed3_3a6d721ab1ca.json",
+  "log_file": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/logs/M1_cora_uniform_seed3_3a6d721ab1ca.log",
+  "status": "COMPLETED",
+  "checkpoint": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/checkpoints/cora_uniform_seed3_3a6d721ab1ca.pt",
+  "evaluation_file": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/mechanism_audit/cora_uniform_seed3_3a6d721ab1ca/evaluation.json",
+  "probe_file": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/probe/cora_uniform_seed3_3a6d721ab1ca/posthoc_probe.csv",
+  "failure_code": "",
+  "message": ""
+}

@@ -1,0 +1,168 @@
+{
+  "model_id": "B3_ConcatMLP",
+  "dataset": "cora",
+  "seed": 0,
+  "config": {
+    "dataset": "cora",
+    "protocol_train": "uniform",
+    "protocol_eval": "heart",
+    "seed": 0,
+    "hidden_dim": 64,
+    "branch_dim": 32,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "backbone": "gcn",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "pretrain_epochs": 4,
+    "disentangle_epochs": 0,
+    "negatives_per_positive_eval": 50,
+    "intervention_ratio": 0.25,
+    "max_interventions_per_batch": 0,
+    "max_interventions_per_epoch": 0,
+    "lambda_inv": 0.03,
+    "lambda_route": 0.03,
+    "lambda_adv": 0.01,
+    "lambda_orth": 0.001,
+    "lambda_degrob": 0.01,
+    "output_dir": "AUTONOMOUS_MODEL_INNOVATION_V3/phase2_seed0",
+    "prediction_subdir": "raw",
+    "device": "auto",
+    "ablation": "A5",
+    "cn_feature_mode": "raw",
+    "cn_input_schema": "selective_v1",
+    "interaction_mode": "unrestricted",
+    "interaction_share_cap": 0.2,
+    "interaction_delta_cap": null,
+    "lambda_interaction_share": 0.0,
+    "lambda_interaction_delta": 0.0,
+    "lambda_link": 1.0,
+    "score_routing_enabled": false,
+    "lambda_score_route": 0.0,
+    "lambda_target_response": 0.0,
+    "routing_margin_cn": 0.0,
+    "routing_margin_degree": 0.0,
+    "target_floor_cn": 0.0,
+    "target_floor_degree": 0.0,
+    "interaction_route_weight": 1.0,
+    "routing_finetune_encoder": "frozen",
+    "encoder_lr_multiplier": 0.1
+  },
+  "config_hash": "3b1f42021cab",
+  "code_hashes": {
+    "src/dcdlp/models/dcdlp.py": "c1bbf8a86a798fe088d13e61d38053e8dc23d8adfb4443dea5c56ef3f5febba3",
+    "src/dcdlp/models/node_encoder.py": "eada0a085994145aed9dafa78aeb98215c027e329a931ddccdeb8178c2272fa1",
+    "AUTONOMOUS_MODEL_INNOVATION_V3/scripts/v3_models.py": "3c33fca3021efc1abdb31cd6a44f6e13c2781717c3ac13bd4d04914591cc55bc",
+    "AUTONOMOUS_MODEL_INNOVATION_V3/scripts/v3_runner.py": "14c09d5f7d81b77958e3b5fe9441cbe8ce44d124298a5e0eccc5584dabc9bcdc"
+  },
+  "data_hash": "98e4aaaf07d4",
+  "best_epoch": 3,
+  "test_used_for_selection": false,
+  "selection_metric": "validation_mrr",
+  "metrics": {
+    "validation_best": {
+      "mrr": 0.09979810984185648,
+      "hits10": 0.2585551330798479,
+      "hits20": 0.3840304182509506,
+      "hits50": 0.5817490494296578,
+      "hits100": 0.7642585551330798,
+      "mean_positive_rank": 67.07224334600761,
+      "auc": 0.8544666830516561,
+      "ap": 0.008455186028751678,
+      "groups": {
+        "HH": {
+          "mrr": 0.17530302639769618,
+          "count": 80
+        },
+        "HL": {
+          "mrr": 0.013048167258821363,
+          "count": 60
+        },
+        "LH": {
+          "mrr": 0.23894076251460644,
+          "count": 38
+        },
+        "LL": {
+          "mrr": 0.02776496194715571,
+          "count": 85
+        }
+      },
+      "macro_mrr": 0.11376422952956992,
+      "worst_group_mrr": 0.013048167258821363,
+      "group_gap": 0.2258925952557851
+    },
+    "test_report": {
+      "mrr": 0.10405274006868602,
+      "hits10": 0.23908918406072105,
+      "hits20": 0.36432637571157495,
+      "hits50": 0.5882352941176471,
+      "hits100": 0.7722960151802657,
+      "mean_positive_rank": 64.71442125237192,
+      "auc": 0.8600920465633765,
+      "ap": 0.008830891897711787,
+      "groups": {
+        "HH": {
+          "mrr": 0.18328497872908736,
+          "count": 161
+        },
+        "HL": {
+          "mrr": 0.02073808244397703,
+          "count": 134
+        },
+        "LH": {
+          "mrr": 0.23821409746644281,
+          "count": 71
+        },
+        "LL": {
+          "mrr": 0.03499881039257207,
+          "count": 161
+        }
+      },
+      "macro_mrr": 0.11930899225801982,
+      "worst_group_mrr": 0.02073808244397703,
+      "group_gap": 0.21747601502246577
+    }
+  },
+  "score_path": {
+    "present": true,
+    "mean_abs": 0.0767322181793817,
+    "std": 0.09021695429394828,
+    "max_abs": 0.2454509139060974,
+    "nonzero_fraction": 1.0,
+    "depth_scale": 0.17776928842067719,
+    "operator_norm": 0.0,
+    "operator_trainable": false
+  },
+  "parameter_count": {
+    "total": 119718,
+    "trainable": 119718
+  },
+  "runtime_seconds": 161.82906946586445,
+  "cn_regressor_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "raw",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "9fb20e3e4bdb2326fbf4f27267677329cd0bed3e206e60f71867a86691c694e8",
+    "config_hash": "43716054e679",
+    "used_as_model_input": false
+  },
+  "controls": {
+    "simple_cn_proxy_test": {
+      "mrr": 0.09776815415768328,
+      "hits10": 0.20113851992409867,
+      "hits20": 0.27703984819734345,
+      "hits50": 0.3567362428842505,
+      "hits100": 0.3870967741935484,
+      "mean_positive_rank": 168.05313092979128
+    }
+  },
+  "checkpoint": "AUTONOMOUS_MODEL_INNOVATION_V3/phase2_seed0/cora_seed0_B3_ConcatMLP.pt"
+}

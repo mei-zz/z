@@ -1,0 +1,23 @@
+{
+  "task": {
+    "stage": "test",
+    "dataset": "pubmed",
+    "backbone": "gcn",
+    "method": "RANDOM_VETO",
+    "seed": 0,
+    "alpha": null
+  },
+  "task_key": "test_pubmed_gcn_random_veto_s0",
+  "state": "COMPLETE",
+  "test_metrics": {
+    "mrr": 0.850608942649913,
+    "hits10": 0.9891696750902527,
+    "hits20": 0.9997743682310469,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 1.6421480144404332
+  },
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/PUBMED/GCN/RANDOM_VETO/seed0/checkpoints/pubmed_uniform_seed0_ca1a5472a3c4.pt",
+  "candidate_hash": "1e6a1d3fd4031479dbe0c4d1a5999b22812401cde214048645ab875c1428bf4b",
+  "trainable_parameters": 9807
+}

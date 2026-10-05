@@ -1,0 +1,86 @@
+{
+  "state": "COMPLETE",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 10,
+  "sampler_source_sha256": "5d78bef583ab5d4f93b8e2f24bdefb6055dd2b2bcb88e0be3913897c02bee91a",
+  "negative_schedules": {
+    "0": {
+      "epoch_negative_hashes": [
+        "aabb35a3f6758294fcaccc3147fda963506e74cb97f6f6383a37b7ecc60011f7",
+        "a1e9d5868d40a49dcbfd257c70053b4038de15de331b59be9fbdc82dfd19c82b",
+        "a1d6089c2fe685e8553ea6842bbb3af009f79e52d67bea4a2682b1a143dc0af2",
+        "762c219598dc3633130fa80cf7cb7ab463b5d0c5bc63072523cd4518a9bb3ec1",
+        "a25b9276e69a33cf73cb493114e667cfdc948731f33653691df798e1bc64e340",
+        "10bbf39a9bf2d33530e18a321f7adfb15a72c49d5bd55a306f5b8064316c316c",
+        "663d1e3cbf490eb5e2fd6dea6222e70d5986a2f98daa4945fdfbf5de38abe522",
+        "6cf8d65bda9c92dbd611d888e21dfc9236d691030a42d3d57ea393faf36c7b18",
+        "0a4686718f649d68ef2c2e2397d4e9f8d6d60abe7fe6888f9a0831a5d594b571",
+        "49f8d79cff7ba778c114c43923447173fb92ddfddb8b5b6b57f906cd7ba1f887"
+      ]
+    },
+    "1": {
+      "epoch_negative_hashes": [
+        "9dc10aa2c88712594d42f2faa888f83cc2f23d7c8851339cfaa33aa064bedef5",
+        "92998d2293102adea812df78ad14b464a7ac01d81cbf3de8ef0bcb709b83c334",
+        "f1df5a78f8f2e9d8281484097a64f1feba4c8e720f31e70c780819961ea6a914",
+        "15f65cf8ba674aefef05c89eb266c6960167217146aa3e2e5d784bd3862d6a80",
+        "b31c095d5f2d89b6e84b7b3feb4de6e60c27499d5f55a58c355994ebe054a144",
+        "b9c515ad284db1f5b6a2f4a9fd116fceaf2eee78be8c1c5025b1865ae4978815",
+        "f517ffe1e90e872c6679a26dfdf25fd66f1ffab62457538539a1e31d29338ad3",
+        "1eff159981cd4c5f04bec215f51568427ed64e4cadd70475cd42715919d3da9d",
+        "d6b5b796d7a954fb29d3db7d9233ef5ae4af1613f0ffe293ec797781001fcdfa",
+        "4f4d35c27c3a9f3f45ee8cc6de833668b97db62c39558958fee2a1c30db58281"
+      ]
+    },
+    "2": {
+      "epoch_negative_hashes": [
+        "9812244acdffca05497b96852cc0eba5ee3474f9b26b9c6621a49e8ec7afcb43",
+        "94971b8bf734bc8faa98212a6b20e7964b4765395d96620d78d946b666761f9e",
+        "b4e43b86e53893c49a276e752d547985f07ef64fbf373b73c201692adfb1b0ca",
+        "7c3a243c18279a73f1bc729d22ec757492823b3860bfcc33ed388ba9a2b4f4bb",
+        "6551188660758d3ab31cd5c994c603576bcab126f00f1218e11b6b0a8c72c01a",
+        "fc16676508f45e6a8633ff89a4a793d483483dd8b51aa3219938e98bcafd0543",
+        "a054f591efc67a7bd177387c5532a4857993969b64a4c2c289d5fa5c4cc290e6",
+        "d02b612c5d4af17f60dfdb3aed8947334bff8815a123806874a01cce10a7e891",
+        "f80f076e6a4f4654a1857be95c7641e4a7c655d9d436ef8c5cfcb9d1c9214bbc",
+        "f8cc6681482bcb711c59650a15a99d77087d7c879b0c849354f9635e7dba72e9"
+      ]
+    },
+    "3": {
+      "epoch_negative_hashes": [
+        "6d055f9a21df2db97876bb8f6f05f41cc01b5ced52b7e8dacaa4f56f7de1d80c",
+        "6cfe6c4e8d87f5d6ad32e8eead5ed5b3169a56d717d84f10b0144bb6ef89a7dc",
+        "d2328fdb2d2f05b8971194e6458d04b89248a72019d25ffe22dde22223afa2f2",
+        "afa5824e58859fc7e20a3a1a509dd3255050a85eef074475964d5d9b2d1374c7",
+        "04e9a1dd2bf6dad5e27e1dd0d16e0b6948304227ca5b8fbed38af11ac95dd35b",
+        "e8ef34fe9ffebca6b350d80e93f208f7e6df7892782b687807e0ca59c587afa7",
+        "ee2b650d424af7b0023d50fc43383d2f9a3a192e0ea4341d54a6d0bcaa7cae1c",
+        "6a4cbffe9a128353545ec9116cb71c97a7793b758ea69ca38674df4847bde3a3",
+        "521f562094c76b9478859f820645c0e2fff3dd5a4898974c0081dc92a37c0181",
+        "a9db3f8dee28f2bb47ea8ef1fcc967cac0979ca044cd9c842e4a8749f8628ba9"
+      ]
+    },
+    "4": {
+      "epoch_negative_hashes": [
+        "342219535de95f144720ca1c179de3b3b3b4582eababfa3ef8e071545f99fb1d",
+        "7c47be747a1dc2385da6bf577fd5323c99a651ce7ce3605b6cd09b0b32f3c620",
+        "7e66cb3cdb59f466b61160757bd0370a87a8440ebd63cb1ae676921cf7c3cd36",
+        "180c226e14b80d5bf6197f0242c10586016f7d151ced85c7790528f27226b19b",
+        "0774a021ef6d98cc7a3068116110dae29d3798b29d91ae2742f95ae946cf62f0",
+        "308c75a4b980758e4bdf652fc4ed95dfb514febec4f870aa9bb03e36253657fd",
+        "64a0ad728c934732a5c7e6deb567290eb0b44143b4d4c23a17e70da467a6bc72",
+        "aec1baf31ed69d22aaf2b2f5d999a21b0db73960bfb1dfa4292446ea8580fca8",
+        "e92cc562050be1a2cb23916f0efd5a96e79a7de62c35dd15bf655408f02de28b",
+        "901d5688281b2026c6d49ffda461c79949b99f1474345b227c82a6f6f3c71ee7"
+      ]
+    }
+  },
+  "semantics": "precomputed same official calls; runtime resampling must equal schedule exactly; no sampler changes",
+  "heldout_label_filter": false
+}

@@ -1,0 +1,24 @@
+{
+  "state": "ECR_STAGE1_GO",
+  "go": true,
+  "baseline_mrr": 0.5256204671690727,
+  "full_mrr": 0.6078151237376185,
+  "delta": 0.08219465656854574,
+  "single_mrr": {
+    "ECR_RAW": 0.5751811436969592,
+    "ECR_STRUCT": 0.536228953031976,
+    "ECR_DENSITY": 0.5457548672543846
+  },
+  "best_single_mrr": 0.5751811436969592,
+  "full_minus_best_single": 0.032633980040659316,
+  "shuffled_control_mrr": 0.48602991919275806,
+  "beats_shuffled": true,
+  "new_parameters": 28,
+  "parameter_fraction_percent": 0.1131999191429149,
+  "gate": {
+    "absolute_delta_ge_0.003": true,
+    "additive_delta_ge_0.002": true,
+    "beats_shuffled": true
+  },
+  "test_evaluated": false
+}

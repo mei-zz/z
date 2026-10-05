@@ -1,0 +1,54 @@
+{
+  "candidate": "V2-002_CDPT",
+  "control": "trained_shuffled_structural_path",
+  "seed": 0,
+  "epochs": 4,
+  "metrics": {
+    "mrr": 0.10756102229452517,
+    "hits10": 0.2523719165085389,
+    "hits20": 0.3757115749525617,
+    "hits50": 0.5920303605313093,
+    "hits100": 0.7685009487666035,
+    "mean_positive_rank": 65.20683111954459,
+    "auc": 0.8605078871849896,
+    "ap": 0.008593917287357134,
+    "groups": {
+      "HH": {
+        "mrr": 0.17615712860089586,
+        "count": 161
+      },
+      "HL": {
+        "mrr": 0.02100493780379184,
+        "count": 134
+      },
+      "LH": {
+        "mrr": 0.29039253480603505,
+        "count": 71
+      },
+      "LL": {
+        "mrr": 0.03037782240704311,
+        "count": 161
+      }
+    },
+    "macro_mrr": 0.12948310590444145,
+    "worst_group_mrr": 0.02100493780379184,
+    "group_gap": 0.26938759700224324
+  },
+  "runtime_seconds": 144.80062161805108,
+  "parameter_count": 119751,
+  "cn_regressor_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "raw",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "9fb20e3e4bdb2326fbf4f27267677329cd0bed3e206e60f71867a86691c694e8",
+    "config_hash": "43716054e679",
+    "used_as_model_input": false
+  }
+}

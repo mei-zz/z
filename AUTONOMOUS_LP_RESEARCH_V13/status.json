@@ -1,0 +1,11 @@
+{
+  "state": "COMPLETE",
+  "phase": "phasea_ecr",
+  "completed": 6,
+  "total": 6,
+  "failed_jobs": {},
+  "test_evaluated": false,
+  "gpu": "Tesla V100-PCIE-16GB",
+  "worker_count": 8,
+  "updated_at_utc": "2026-10-03T05:15:07.233832+00:00"
+}

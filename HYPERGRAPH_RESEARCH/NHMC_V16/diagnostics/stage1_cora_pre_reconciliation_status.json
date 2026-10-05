@@ -1,0 +1,8 @@
+{
+  "state": "FAILED",
+  "dataset": "cora",
+  "phase": "failed",
+  "error": "RuntimeError(\"held-out positive placeholder access detected: {'valid_pos': 48, 'test_pos': 24}\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py\", line 692, in main\n    result = run_stage1(dataset)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py\", line 683, in run_stage1\n    raise RuntimeError(f\"held-out positive placeholder access detected: {view.placeholder_reads}\")\nRuntimeError: held-out positive placeholder access detected: {'valid_pos': 48, 'test_pos': 24}\n",
+  "test_evaluated": false
+}

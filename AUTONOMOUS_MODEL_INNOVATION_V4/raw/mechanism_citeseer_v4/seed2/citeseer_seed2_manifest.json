@@ -1,0 +1,15 @@
+{
+  "dataset": "citeseer",
+  "seed": 2,
+  "epochs": 4,
+  "models": [
+    "A_EarlyEarly",
+    "B_LateLate",
+    "C_CDPT",
+    "D_ConcatMLP",
+    "E_FixedRandom"
+  ],
+  "test_used_for_selection": false,
+  "data_hash": "93b2480b3b56",
+  "deterministic_algorithms": false
+}

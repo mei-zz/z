@@ -1,0 +1,140 @@
+{
+  "frozen_protocol": "V10 exact CPTS; strict_train_only; M20K1; fixed_epoch10",
+  "training_jobs": [
+    {
+      "dataset": "pubmed",
+      "backbone": "gcn",
+      "method": "MATCHED_Q",
+      "seed": 0
+    },
+    {
+      "dataset": "pubmed",
+      "backbone": "gcn",
+      "method": "MATCHED_Q",
+      "seed": 1
+    },
+    {
+      "dataset": "pubmed",
+      "backbone": "gcn",
+      "method": "MATCHED_Q",
+      "seed": 2
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "TS_SHUFFLE",
+      "seed": 0
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "TS_SHUFFLE",
+      "seed": 1
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "TS_SHUFFLE",
+      "seed": 2
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "TS_REVERSE",
+      "seed": 0
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "TS_REVERSE",
+      "seed": 1
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "TS_REVERSE",
+      "seed": 2
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "CPTS",
+      "seed": 3
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "CPTS",
+      "seed": 4
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "MATCHED_Q",
+      "seed": 3
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "MATCHED_Q",
+      "seed": 4
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "TS_SHUFFLE",
+      "seed": 3
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gcn",
+      "method": "TS_SHUFFLE",
+      "seed": 4
+    },
+    {
+      "dataset": "citeseer",
+      "backbone": "gcn",
+      "method": "MATCHED_Q",
+      "seed": 0
+    },
+    {
+      "dataset": "citeseer",
+      "backbone": "gcn",
+      "method": "MATCHED_Q",
+      "seed": 1
+    },
+    {
+      "dataset": "citeseer",
+      "backbone": "gcn",
+      "method": "MATCHED_Q",
+      "seed": 2
+    },
+    {
+      "dataset": "cora",
+      "backbone": "sage",
+      "method": "MATCHED_Q",
+      "seed": 0
+    },
+    {
+      "dataset": "cora",
+      "backbone": "gat",
+      "method": "MATCHED_Q",
+      "seed": 0
+    }
+  ],
+  "workers": 6,
+  "cpu_threads_per_worker": 4,
+  "five_seed_gate": {
+    "validation_delta": 0.008949062498250874,
+    "cached_test_delta": -0.0020457326212051097,
+    "threshold": 0.005,
+    "triggered": true,
+    "interpretation": "Extend if either existing validation or test mean is close; V10.1 explicitly cites test closeness. All controls and rule frozen before new tests."
+  },
+  "registered_claim_gate_operationalization": {
+    "reverse_signal": ">=2/3 wins and mean gain>.002",
+    "matched_clear_failure": "mean<-.005 OR paired bootstrap CI upper<0"
+  },
+  "server_connection": "SSH independently verified; workspace query service unavailable",
+  "stop_session_when": "detached supervisor and real GPU training stable; no long monitoring"
+}

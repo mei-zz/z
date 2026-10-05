@@ -1,0 +1,114 @@
+{
+  "dataset": "cora",
+  "protocol_train": "uniform",
+  "protocol_eval": "heart",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 1,
+  "cn_feature_mode": "raw",
+  "interaction_mode": "audited",
+  "score_routing_enabled": true,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "24d10e7de783",
+  "git_commit": "untracked",
+  "best_epoch": 8,
+  "metrics": {
+    "mrr": 0.10483837550998115,
+    "hits10": 0.2428842504743833,
+    "hits20": 0.3738140417457306,
+    "hits50": 0.5654648956356736,
+    "hits100": 0.7571157495256167,
+    "mean_positive_rank": 64.25996204933587,
+    "auc": 0.8598865800834627,
+    "ap": 0.008119994992715429,
+    "groups": {
+      "HH": {
+        "mrr": 0.16727428039335235,
+        "count": 165
+      },
+      "HL": {
+        "mrr": 0.020485818668837273,
+        "count": 130
+      },
+      "LH": {
+        "mrr": 0.21889586768863276,
+        "count": 81
+      },
+      "LL": {
+        "mrr": 0.04805195972933005,
+        "count": 151
+      }
+    },
+    "macro_mrr": 0.11367698162003811,
+    "worst_group_mrr": 0.020485818668837273,
+    "group_gap": 0.19841004901979548
+  },
+  "runtime": {
+    "train_seconds": 674.6143855720293,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 109.0302734375
+  },
+  "checkpoint": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/checkpoints/cora_uniform_seed1_24d10e7de783.pt",
+  "predictions": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/predictions/cora_uniform_seed1_24d10e7de783_predictions.csv",
+  "intervention_failures": {
+    "NO_CANDIDATE": 29
+  },
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 1,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "raw",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "41694e4c8b584443af4ab613e825dafdbe36e502c61b586f9023cdb9682d7c96",
+    "config_hash": "c1e9c3689950",
+    "used_as_model_input": false
+  },
+  "evaluation_candidates": {
+    "source": "dataset_official_grouped",
+    "hash": "3d3960e42cbae3befddb666195eff1b66ef1a473813eb21ff99bdb41311ce1cc",
+    "shape": [
+      527,
+      500,
+      2
+    ],
+    "seed": null,
+    "protocol": "heart",
+    "negatives_per_positive": 500
+  },
+  "data_integrity": {
+    "split_hash": "4d52b749074b",
+    "train_positive_hash": "cf8bee4faf9f1e67678d45b7cd8c350d04e95baeead6b79c4cff607556fb7129",
+    "valid_positive_hash": "a4b279e5cc0161e811d456f320ec2765bf5e989c01793aeefb06863509b44aea",
+    "test_positive_hash": "cf03f7befdd04fc127de10a37d3d502c6538ea4a0d4b9345d442846b496079f0",
+    "candidate_hash": "3d3960e42cbae3befddb666195eff1b66ef1a473813eb21ff99bdb41311ce1cc"
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "cfea82c0f2e6"
+  },
+  "parameter_count": {
+    "total": 263878,
+    "trainable": 63302,
+    "cn_branch": 25345
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.03,
+    "lambda_target_response": 0.03,
+    "lambda_interaction_share": 0.01,
+    "lambda_interaction_delta": 0.01,
+    "lambda_orthogonal_legacy": 0.0,
+    "lambda_adversarial_legacy": 0.0
+  },
+  "device": "cuda",
+  "result_file": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed1_24d10e7de783.json",
+  "pipeline_model": "M0",
+  "mechanism_predictions": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/mechanism_audit/cora_uniform_seed1_24d10e7de783/intervention_predictions.csv",
+  "probe_results": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/probe/cora_uniform_seed1_24d10e7de783/posthoc_probe.csv",
+  "evaluation_file": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/mechanism_audit/cora_uniform_seed1_24d10e7de783/evaluation.json"
+}

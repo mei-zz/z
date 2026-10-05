@@ -1,0 +1,5 @@
+{
+  "candidate": "C_STHD",
+  "status": "NOT_RUN_A_AND_B_NOT_BOTH_GO",
+  "reason": "Registered gate requires both A_QTHS and B_CBHS to pass; B_CBHS failed."
+}

@@ -1,0 +1,112 @@
+{
+  "decision": "PIVOT_TO_CALIBRATION",
+  "confirmatory_claim_allowed": false,
+  "screening_scope": "Cora 5-seed exploratory route screening",
+  "criteria": {
+    "complete_pairs": {
+      "passed": true,
+      "count": 5
+    },
+    "relative_mrr_drop_le_1pct": {
+      "passed": true,
+      "relative_drop": 0.0,
+      "mean_delta": 0.0017013409692488157
+    },
+    "routing_selectivity": {
+      "cn": {
+        "passed": true,
+        "mean_delta": 0.00012970883169920012,
+        "improved_seeds": 3,
+        "seed_count": 5
+      },
+      "degree": {
+        "passed": false,
+        "mean_delta": -0.05021389818872549,
+        "improved_seeds": 0,
+        "seed_count": 5
+      }
+    },
+    "target_response_not_reduced": {
+      "cn": {
+        "passed": false,
+        "mean_delta": -0.006116251996423619
+      },
+      "degree": {
+        "passed": true,
+        "mean_delta": 0.006325654484331608
+      }
+    },
+    "cross_or_probe_leakage_improved": {
+      "passed": true,
+      "cross_sensitivity": false,
+      "probe_r2": true
+    },
+    "audited_interaction_controlled_nonzero": {
+      "passed": true,
+      "mean_share": 0.019117394491136627,
+      "cap": 0.2,
+      "audited_mode": true
+    },
+    "group_robustness_improved": {
+      "passed": false,
+      "worst_group_mean_delta": 0.00016498708682402536,
+      "group_gap_mean_delta": 0.010998644003745667
+    }
+  },
+  "pair_audit": [
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "status": "AVAILABLE",
+      "reason": "",
+      "baseline_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed0_c40448cb28a0.json",
+      "candidate_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed0_415e591ece66.json"
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "status": "AVAILABLE",
+      "reason": "",
+      "baseline_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed1_24d10e7de783.json",
+      "candidate_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed1_a86ca08c063e.json"
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "status": "AVAILABLE",
+      "reason": "",
+      "baseline_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed2_b02221ef63fb.json",
+      "candidate_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed2_9083d838c144.json"
+    },
+    {
+      "dataset": "cora",
+      "seed": 3,
+      "status": "AVAILABLE",
+      "reason": "",
+      "baseline_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed3_49fafa05d116.json",
+      "candidate_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed3_3a6d721ab1ca.json"
+    },
+    {
+      "dataset": "cora",
+      "seed": 4,
+      "status": "AVAILABLE",
+      "reason": "",
+      "baseline_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed4_5ed175dca270.json",
+      "candidate_result": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed4_f6727223606a.json"
+    }
+  ],
+  "baseline_runs": [
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed0_c40448cb28a0.json",
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed1_24d10e7de783.json",
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed2_b02221ef63fb.json",
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed3_49fafa05d116.json",
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M0/raw/cora_uniform_seed4_5ed175dca270.json"
+  ],
+  "candidate_runs": [
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed0_415e591ece66.json",
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed1_a86ca08c063e.json",
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed2_9083d838c144.json",
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed3_3a6d721ab1ca.json",
+    "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M1/raw/cora_uniform_seed4_f6727223606a.json"
+  ]
+}

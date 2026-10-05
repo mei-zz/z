@@ -1,0 +1,17 @@
+{
+  "state": "COMPLETE",
+  "phase": "stage1_complete",
+  "dataset": "cora",
+  "decision": "NHMC_STAGE1_GO",
+  "completed_arms": [
+    "B0_BASELINE",
+    "B1_HRA",
+    "B2_NATIVE_SCALAR",
+    "C1_NHMC_SIZE",
+    "C2_NHMC_SHUFFLE",
+    "H1_NHMC_REAL"
+  ],
+  "test_evaluated": false,
+  "reconciled_from_completed_checkpoints": true,
+  "placeholder_reads_are_empty_legacy_sentinels": true
+}

@@ -1,0 +1,13 @@
+{
+  "model": "official LPShift GCN + mlp_score",
+  "input_channels": 128,
+  "hidden_channels": 128,
+  "out_channels": 128,
+  "num_layers": 3,
+  "num_layers_predictor": 3,
+  "gnn_parameters": 50048,
+  "scorer_parameters": 33153,
+  "total_parameters": 83201,
+  "probe_environment": "mei_env on remote V100",
+  "source": "/home/ubuntu/AFDR_V7/repo/LPShift-main/gnn_model.py"
+}

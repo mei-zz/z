@@ -1,0 +1,144 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Namespace(data_name='ogbl-collab_CN_2_1_0', neg_mode='equal', gnn_model='GCN', score_model='mlp_score', num_layers=3, num_layers_predictor=3, hidden_channels=128, dropout=0.1, edge_drop=0.0, lr=0.01, epochs=1, eval_steps=1, runs=1, kill_cnt=100, output_dir='/home/ubuntu/AFDR_V7/raw/gcn_smoke', input_dir='/home/ubuntu/AFDR_V7/repo/LPShift-main/../dataset', l2=0.0, seed=1, save=False, save_test=False, use_saved_model=False, log_steps=1, batch_size=65536, val_batch_size=65536, test_batch_size=65536, device=0)
+#################################           0           #################################
+seed:  1
+################################
+Loading Dataset: ogbl-collab_CN_2_1_0_seed1
+################################
+train train_neg val val_neg test test_neg:  torch.Size([1697336, 2]) torch.Size([1697336, 2]) torch.Size([23669, 2]) torch.Size([23669, 250, 2]) torch.Size([9048, 2]) torch.Size([9048, 250, 2])
+layers in gcn:  3
+neg_train_pred size before predictions:  torch.Size([1697336, 1])
+train_pos train_neg valid_pos valid_neg test_pos test_neg torch.Size([1697336]) torch.Size([1697336, 1]) torch.Size([23669]) torch.Size([23669, 250]) torch.Size([9048]) torch.Size([9048, 250])
+2026-09-17 14:05:52,558 - [INFO] - Run: 01, Epoch: 01, Loss: 1.2945, Train: 93.54%, Valid: 2.20%, Test: 2.52%
+2026-09-17 14:05:52,558 - [INFO] - Run: 01, Epoch: 01, Loss: 1.2945, Train: 87.08%, Valid: 0.05%, Test: 0.08%
+2026-09-17 14:05:52,558 - [INFO] - Run: 01, Epoch: 01, Loss: 1.2945, Train: 100.00%, Valid: 0.30%, Test: 0.31%
+2026-09-17 14:05:52,558 - [INFO] - Run: 01, Epoch: 01, Loss: 1.2945, Train: 100.00%, Valid: 2.85%, Test: 3.68%
+2026-09-17 14:05:52,558 - [INFO] - Run: 01, Epoch: 01, Loss: 1.2945, Train: 100.00%, Valid: 7.97%, Test: 10.11%
+2026-09-17 14:05:52,558 - [INFO] - Run: 01, Epoch: 01, Loss: 1.2945, Train: 100.00%, Valid: 26.52%, Test: 32.22%
+2026-09-17 14:05:52,558 - [INFO] - Run: 01, Epoch: 01, Loss: 1.2945, Train: 100.00%, Valid: 63.18%, Test: 70.78%
+MRR
+2026-09-17 14:05:52,559 - [INFO] - best valid: 2.20%, best test: 2.52%
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:178: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print(f'Highest Train: {r.mean():.2f} ± {r.std():.2f}')
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:182: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  best_valid_var = round(r.std().item(), 2)
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:185: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print(f'Highest Valid: {r.mean():.2f} ± {r.std():.2f}')
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:190: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  best_train_var = round(r.std().item(), 2)
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:191: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print(f'  Final Train: {r.mean():.2f} ± {r.std():.2f}')
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:196: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  best_test_var = round(r.std().item(), 2)
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:197: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print(f'   Final Test: {r.mean():.2f} ± {r.std():.2f}')
+---
+Hits@1
+Run 01:
+Highest Train: 87.08
+Highest Valid: 0.05
+  Final Train: 87.08
+   Final Test: 0.08
+Hits@3
+Run 01:
+Highest Train: 100.00
+Highest Valid: 0.30
+  Final Train: 100.00
+   Final Test: 0.31
+Hits@10
+Run 01:
+Highest Train: 100.00
+Highest Valid: 2.85
+  Final Train: 100.00
+   Final Test: 3.68
+Hits@20
+Run 01:
+Highest Train: 100.00
+Highest Valid: 7.97
+  Final Train: 100.00
+   Final Test: 10.11
+Hits@50
+Run 01:
+Highest Train: 100.00
+Highest Valid: 26.52
+  Final Train: 100.00
+   Final Test: 32.22
+Hits@100
+Run 01:
+Highest Train: 100.00
+Highest Valid: 63.18
+  Final Train: 100.00
+   Final Test: 70.78
+MRR
+Run 01:
+Highest Train: 93.54
+Highest Valid: 2.20
+  Final Train: 93.54
+   Final Test: 2.52
+Hits@1
+All runs:
+Highest Train: 87.08 ± nan
+Highest Valid: 0.05 ± nan
+  Final Train: 87.08 ± nan
+   Final Test: 0.08 ± nan
+Hits@3
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 0.30 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 0.31 ± nan
+Hits@10
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 2.85 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 3.68 ± nan
+Hits@20
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 7.97 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 10.11 ± nan
+Hits@50
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 26.52 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 32.22 ± nan
+Hits@100
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 63.18 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 70.78 ± nan
+MRR
+All runs:
+Highest Train: 93.54 ± nan
+Highest Valid: 2.20 ± nan
+  Final Train: 93.54 ± nan
+   Final Test: 2.52 ± nan
+RESULTS FINISHED FOR GCN on ogbl-collab_CN_2_1_0
+	Command being timed: "timeout 900 python /home/ubuntu/AFDR_V7/lpcompat_run.py main_gnn.py --data_name ogbl-collab_CN_2_1_0 --lr 1e-2 --dropout 0.1 --device 0 --epochs 1 --eval_steps 1 --log_steps 1 --runs 1 --seed 1 --batch_size 65536 --val_batch_size 65536 --test_batch_size 65536 --output_dir /home/ubuntu/AFDR_V7/raw/gcn_smoke"
+	User time (seconds): 26.52
+	System time (seconds): 4.90
+	Percent of CPU this job got: 270%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2298040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 142
+	Minor (reclaiming a frame) page faults: 891806
+	Voluntary context switches: 3093
+	Involuntary context switches: 604
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 88
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

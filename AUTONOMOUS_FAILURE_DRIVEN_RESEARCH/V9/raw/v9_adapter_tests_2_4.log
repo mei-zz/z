@@ -1,0 +1,134 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "dataset": "ogbl-collab_CN_4_2_0_seed1",
+  "passed": true,
+  "checks": [
+    {
+      "id": 1,
+      "name": "node_and_feature_shape",
+      "passed": true,
+      "detail": "torch.Size([235868, 128])"
+    },
+    {
+      "id": 2,
+      "name": "message_graph_preserved",
+      "passed": true,
+      "detail": "[2, 1597130]"
+    },
+    {
+      "id": 3,
+      "name": "direction_and_duplicate_semantics",
+      "passed": true,
+      "detail": "raw_rows=1597130, expanded_rows=1597130"
+    },
+    {
+      "id": 4,
+      "name": "dcdlp_edge_view_does_not_change_nodes",
+      "passed": true,
+      "detail": "[2, 798565]"
+    },
+    {
+      "id": 5,
+      "name": "train_positive_in_message_graph",
+      "passed": true,
+      "detail": "missing=0"
+    },
+    {
+      "id": 6,
+      "name": "heldout_positive_absent",
+      "passed": true,
+      "detail": "valid_in_graph=0, test_in_graph=0"
+    },
+    {
+      "id": 7,
+      "name": "target_mask_removes_both_directions",
+      "passed": true,
+      "detail": "remaining=False"
+    },
+    {
+      "id": 8,
+      "name": "non_target_context_retained",
+      "passed": true,
+      "detail": "(2254, 67063)"
+    },
+    {
+      "id": 9,
+      "name": "positive_row_order",
+      "passed": true,
+      "detail": "{\"train\": true, \"valid\": true, \"test\": true}"
+    },
+    {
+      "id": 10,
+      "name": "positive_split_disjoint",
+      "passed": true,
+      "detail": "{\"train_valid\": 0, \"train_test\": 0, \"valid_test\": 0}"
+    },
+    {
+      "id": 11,
+      "name": "negative_group_and_order",
+      "passed": true,
+      "detail": "{\"valid\": true, \"test\": true, \"valid_shape\": true, \"test_shape\": true}"
+    },
+    {
+      "id": 12,
+      "name": "official_hashes",
+      "passed": true,
+      "detail": "{\"actual\": {\"test\": \"cd34f4b513f4d581e64afa405f9df384031d7b5de960153af7b65317fc992ed9\", \"test_neg\": \"7d8ea1cca3641da1c21fba8a1a6d81e901bfae6931a7b07c9850eea53949ea19\", \"train\": \"9e876f00d0da73d7bb1229a9aee50ecf8ff9f1f3221eb932fbb9ec5f2c62c048\", \"valid\": \"f8ee3623440863545e162b38f4a6ff29cf35b8891ac49d81e8568e562895f42b\", \"valid_neg\": \"d3d53f225b54fa69a7f676a660949fdf607dfeaf85b0c92c90bbb18bd232940e\"}, \"expected\": {\"test\": \"cd34f4b513f4d581e64afa405f9df384031d7b5de960153af7b65317fc992ed9\", \"test_neg\": \"7d8ea1cca3641da1c21fba8a1a6d81e901bfae6931a7b07c9850eea53949ea19\", \"train\": \"9e876f00d0da73d7bb1229a9aee50ecf8ff9f1f3221eb932fbb9ec5f2c62c048\", \"valid\": \"f8ee3623440863545e162b38f4a6ff29cf35b8891ac49d81e8568e562895f42b\", \"valid_neg\": \"d3d53f225b54fa69a7f676a660949fdf607dfeaf85b0c92c90bbb18bd232940e\"}}"
+    },
+    {
+      "id": 13,
+      "name": "training_view_has_no_heldout_labels",
+      "passed": true,
+      "detail": "[\"message_edge_index\", \"train_pos\"]"
+    }
+  ],
+  "summary": {
+    "dataset_name": "ogbl-collab_CN_4_2_0_seed1",
+    "num_nodes": 235868,
+    "feature_shape": [
+      235868,
+      128
+    ],
+    "message_edge_index_shape": [
+      2,
+      1597130
+    ],
+    "message_edge_index_hash": "e7139c7a780dc610d1032757007b933d32c1b92575cc8fa0fdb996da4445b71d",
+    "train_pos_shape": [
+      1193456,
+      2
+    ],
+    "valid_pos_shape": [
+      24097,
+      2
+    ],
+    "test_pos_shape": [
+      11551,
+      2
+    ],
+    "valid_neg_shape": [
+      24097,
+      250,
+      2
+    ],
+    "test_neg_shape": [
+      11551,
+      250,
+      2
+    ],
+    "train_pos_hash": "9e876f00d0da73d7bb1229a9aee50ecf8ff9f1f3221eb932fbb9ec5f2c62c048",
+    "valid_pos_hash": "f8ee3623440863545e162b38f4a6ff29cf35b8891ac49d81e8568e562895f42b",
+    "test_pos_hash": "cd34f4b513f4d581e64afa405f9df384031d7b5de960153af7b65317fc992ed9",
+    "valid_neg_hash": "d3d53f225b54fa69a7f676a660949fdf607dfeaf85b0c92c90bbb18bd232940e",
+    "test_neg_hash": "7d8ea1cca3641da1c21fba8a1a6d81e901bfae6931a7b07c9850eea53949ea19",
+    "valid_neg_file_hash": "cc60b2c52b920829f0a529e83861980cf874254236dd035de524ac6b1b74c2fb",
+    "test_neg_file_hash": "c72e0804630072d15962eb0fac9990c1ff7144bbe8732847f2cb25d0ab8181dd"
+  },
+  "message_edge_count_canonical": 798565,
+  "positive_overlap": {
+    "train_valid": 0,
+    "train_test": 0,
+    "valid_test": 0
+  }
+}

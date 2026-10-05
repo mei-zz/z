@@ -1,0 +1,20 @@
+{
+  "state": "COMPLETE",
+  "dataset": "citeseer",
+  "phase": "stage0_complete",
+  "gpu_compute_used": false,
+  "test_evaluated": false,
+  "train_positive_count": 3870,
+  "pool_shape": [
+    3870,
+    20,
+    2
+  ],
+  "split_hash": "5a1a177685a1c3a4852f7e3034ea05ffd35b59aaf05fa58578cd40b0f1c46d36",
+  "matched_negative_count": 11610,
+  "token_count_total": 161491,
+  "decision": "NO_NATIVE_STRUCTURE_SIGNAL",
+  "native_signal": false,
+  "native_scalar_sufficient_on_dataset": false,
+  "runtime_seconds": 30.216919451020658
+}

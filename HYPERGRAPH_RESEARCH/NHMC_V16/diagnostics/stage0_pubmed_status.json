@@ -1,0 +1,20 @@
+{
+  "state": "COMPLETE",
+  "dataset": "pubmed",
+  "phase": "stage0_complete",
+  "gpu_compute_used": false,
+  "test_evaluated": false,
+  "train_positive_count": 37676,
+  "pool_shape": [
+    37676,
+    20,
+    2
+  ],
+  "split_hash": "8043ef390ebc4d26eb5ce03307e19778f8d78f8d0dac19c0ff724a76b5e2bb3c",
+  "matched_negative_count": 113028,
+  "token_count_total": 4976014,
+  "decision": "NO_NATIVE_STRUCTURE_SIGNAL",
+  "native_signal": false,
+  "native_scalar_sufficient_on_dataset": false,
+  "runtime_seconds": 772.6387682133354
+}

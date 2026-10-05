@@ -1,0 +1,42 @@
+{
+  "state": "AUDIT_PASS",
+  "audit_errors": [],
+  "experiment_decision": {
+    "state": "STAGE1_REJECT",
+    "go": false,
+    "baseline_mrr": 0.5256204671690727,
+    "candidate_mrr": 0.3457115802784969,
+    "delta_vs_qths25": -0.17990888689057583,
+    "relative_delta_vs_qths25": -0.34227907421402937,
+    "stage1_gain_gate": false,
+    "compute_control_mrr": {
+      "independent_bce": 0.4870842144307694,
+      "random_set_listwise": 0.5032648386214938,
+      "repeated_k1_bce": 0.48443768416737487
+    },
+    "compute_control_margins": {
+      "independent_bce": -0.14137263415227247,
+      "random_set_listwise": -0.15755325834299694,
+      "repeated_k1_bce": -0.13872610388887796
+    },
+    "compute_controls_pass": false,
+    "all_mrr": {
+      "QTHS25_BASELINE": 0.5256204671690727,
+      "L1_EXPECTED_MRR": 0.3457115802784969,
+      "L1_INDEP_BCE": 0.4870842144307694,
+      "L1_LISTWISE_RANDOM": 0.5032648386214938,
+      "L1_REPEAT_BCE": 0.48443768416737487
+    },
+    "parameters": 24735,
+    "fixed_train_pool_size": 20,
+    "test_evaluated": false
+  },
+  "raw_orchestrator_state": "INFRASTRUCTURE_FAILURE",
+  "raw_orchestrator_diagnosis": "The orchestrator keyed results by human-readable definition text while looking up symbolic arm names; all five jobs are complete, so this is a summarization-key bug, not a training failure.",
+  "completed_jobs": 5,
+  "total_jobs": 5,
+  "test_evaluated": false,
+  "source_results_sha256": "4d2d8b6eeb511b9954279887771321718e2c819d785431e7db898781c310dd9f",
+  "source_status_sha256": "b90446cfb93aa10cdbae947efa8274466f08f702d679066938f7844198efbab5",
+  "audited_at_utc": "2026-10-03T09:02:37.137715+00:00"
+}

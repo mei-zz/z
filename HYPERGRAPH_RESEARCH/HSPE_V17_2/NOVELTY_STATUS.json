@@ -1,0 +1,12 @@
+{
+  "sources": "publisher primary pages/excerpts, arXiv manuscripts, official code, Crossref metadata",
+  "audit_date": "2026-10-04",
+  "crossref_verified_dois": 8,
+  "exact_collision": false,
+  "size_causal_claim": "NOT_SUPPORTED",
+  "claim_boundary": "narrow frozen combination: training-only ECDF descriptors plus learned permutation-invariant decoder residual; no first-use claim",
+  "matrix": "NOVELTY_MATRIX.md",
+  "limitations": "bounded focused audit; UNKNOWN/NR retained for inaccessible fields; no proof of priority",
+  "closest_overlap": "CCLPH candidate-conditioned incident-hyperedge pairs and size-product similarity; NCN candidate common-neighbor pooling",
+  "status": "NO_EXACT_COLLISION_IDENTIFIED_IN_FOCUSED_AUDIT"
+}

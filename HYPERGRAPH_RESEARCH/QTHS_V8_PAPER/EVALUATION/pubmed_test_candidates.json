@@ -1,0 +1,9 @@
+{
+  "dataset": "pubmed",
+  "candidate_hash": "1e6a1d3fd4031479dbe0c4d1a5999b22812401cde214048645ab875c1428bf4b",
+  "positive_hash": "d5cb8058bb34feb90727a399dc8c19cccb2dbf85b032e08ca3e0292c905dd1e0",
+  "positive_count": 4432,
+  "negative_count_per_positive": 20,
+  "created_after_validation_freeze": true,
+  "test_evaluated_once_per_frozen_checkpoint": true
+}

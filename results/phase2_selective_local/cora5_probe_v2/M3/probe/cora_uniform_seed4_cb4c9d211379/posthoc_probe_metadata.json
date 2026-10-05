@@ -1,0 +1,73 @@
+{
+  "protocol_version": "posthoc_probe_v2",
+  "checkpoint": "/home/ubuntu/DCDLP-main/results/phase2_selective_local/cora5/M3/checkpoints/cora_uniform_seed4_cb4c9d211379.pt",
+  "dataset": "cora",
+  "model_seed": 4,
+  "probe_seeds": [
+    0,
+    1,
+    2
+  ],
+  "probe_sample_seed_semantics": "probe_seed controls split pair sampling; no model label is used",
+  "pair_sample_seed": 4,
+  "sampling_seed_formula": "base + 1000003 * probe_seed + split_offset",
+  "pair_split_hashes": {
+    "train": "9aaee10e62bd0a89675aecefd3dbedb074afc01f7c7467e268d1b4e65d7f00d3",
+    "valid": "a4b279e5cc0161e811d456f320ec2765bf5e989c01793aeefb06863509b44aea",
+    "test": "3687d16e6d220a22fe1e2f34f7d71630d2a8cadf1f99f6785d3328c6513d0760"
+  },
+  "pair_split_hashes_by_probe_seed": {
+    "0": {
+      "train": "9aaee10e62bd0a89675aecefd3dbedb074afc01f7c7467e268d1b4e65d7f00d3",
+      "valid": "a4b279e5cc0161e811d456f320ec2765bf5e989c01793aeefb06863509b44aea",
+      "test": "3687d16e6d220a22fe1e2f34f7d71630d2a8cadf1f99f6785d3328c6513d0760"
+    },
+    "1": {
+      "train": "59b017e8f9fb20b60e3eb4a4432468c2c504b16004a863c0acbd7a903139a2f5",
+      "valid": "a4b279e5cc0161e811d456f320ec2765bf5e989c01793aeefb06863509b44aea",
+      "test": "774bed198ec07d22179c29bf4bf7d1f2df52e2736793bfefb293f48d8930278a"
+    },
+    "2": {
+      "train": "2b5198b3d2706a3142eaf131bea15813560811012769f5f65c62314aa214959b",
+      "valid": "a4b279e5cc0161e811d456f320ec2765bf5e989c01793aeefb06863509b44aea",
+      "test": "1ee8c94377d6de5df7e0a6bbcd04723f5c210f90ba9977c577b7535b52e90eb4"
+    }
+  },
+  "residualizer": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 4,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "residual",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "af801b74e4bf36fa17e52dd1b5591c90e5fd9ea0eab22f40ddfd424de0c13e23",
+    "config_hash": "2255bddadad2",
+    "used_as_model_input": true
+  },
+  "model_frozen": true,
+  "model_eval": true,
+  "device": "cuda",
+  "test_not_used_for_selection": true,
+  "context_graph_policy": "per-pair train_graph with only the undirected target edge removed when present; valid/test removal is a no-op",
+  "representation_forward": "direct model forward on pre-built context graph with remove_target_edges=False",
+  "protocol_assertions": {
+    "selected_split_disjoint_checks": 3,
+    "train_target_edge_checks": 1536,
+    "valid_test_noop_checks": 2325,
+    "xy_context_hash_match_checks": 3861,
+    "representation_finite_checks": 11583,
+    "target_finite_checks": 3861
+  },
+  "files": {
+    "per_seed": "results/phase2_selective_local/cora5_probe_v2/M3/probe/cora_uniform_seed4_cb4c9d211379/posthoc_probe.csv",
+    "summary": "results/phase2_selective_local/cora5_probe_v2/M3/probe/cora_uniform_seed4_cb4c9d211379/posthoc_probe_summary.csv",
+    "predictions": "results/phase2_selective_local/cora5_probe_v2/M3/probe/cora_uniform_seed4_cb4c9d211379/posthoc_probe_predictions.csv",
+    "top20_errors": "results/phase2_selective_local/cora5_probe_v2/M3/probe/cora_uniform_seed4_cb4c9d211379/posthoc_probe_top20_errors.csv",
+    "contexts": "results/phase2_selective_local/cora5_probe_v2/M3/probe/cora_uniform_seed4_cb4c9d211379/posthoc_probe_contexts.csv",
+    "diagnostics": "results/phase2_selective_local/cora5_probe_v2/M3/probe/cora_uniform_seed4_cb4c9d211379/posthoc_probe_diagnostics.json"
+  }
+}

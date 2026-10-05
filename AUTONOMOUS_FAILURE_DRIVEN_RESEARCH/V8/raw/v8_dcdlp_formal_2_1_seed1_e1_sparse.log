@@ -1,0 +1,142 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "mode": "formal",
+  "dataset": "ogbl-collab_CN_2_1_0_seed1",
+  "seed": 1,
+  "config": {
+    "hidden_dim": 64,
+    "branch_dim": 32,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "backbone": "gcn",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 262144,
+    "epochs": 1,
+    "train_negative_protocol": "uniform_non_message_edges",
+    "target_masking": true,
+    "selection_metric": "validation_mrr",
+    "test_used_for_selection": false
+  },
+  "adapter_summary": {
+    "dataset_name": "ogbl-collab_CN_2_1_0_seed1",
+    "num_nodes": 235868,
+    "feature_shape": [
+      235868,
+      128
+    ],
+    "message_edge_index_shape": [
+      2,
+      1733096
+    ],
+    "message_edge_index_hash": "9f7c3d699b039c5ce37c1c50aa53abfa464df6c897b18c8b79f5d3ad8b101eee",
+    "train_pos_shape": [
+      1697336,
+      2
+    ],
+    "valid_pos_shape": [
+      23669,
+      2
+    ],
+    "test_pos_shape": [
+      9048,
+      2
+    ],
+    "valid_neg_shape": [
+      23669,
+      250,
+      2
+    ],
+    "test_neg_shape": [
+      9048,
+      250,
+      2
+    ],
+    "train_pos_hash": "5db0173da159b5e79b4a641786b127644d64bb2593b273e11e76b29521e49a4a",
+    "valid_pos_hash": "6c16deb8c6b39dd25f93b76798bcebd62704015c1e5729cd4102fc7371ca35c3",
+    "test_pos_hash": "8f8c0805601d73ee91da361d1c6e695d4a3bc74602c46ffa2886f6004d98bf3a",
+    "valid_neg_hash": "24ee3173d984974fd9c9fef4cb133a0e04722b6f8f28415b4fd7c2dafbf0f51d",
+    "test_neg_hash": "10bd6bd21860ffd4a9b3c525205bfc6919be607e7b3534e1b8d135f575d313d4",
+    "valid_neg_file_hash": "e6f350a6f951621ebe6037317f0fb94afa6ce90359277ec05a2250c91df4c544",
+    "test_neg_file_hash": "a9e97e35b6cd5e13532d6dbe115d6cad5cdb5ff9e39f89d985c4a9e61691e1df"
+  },
+  "best_epoch": 0,
+  "validation": {
+    "mrr": 0.46100371628327,
+    "hits10": 0.6053065190755841,
+    "hits20": 0.7124508851240019,
+    "hits50": 0.8675482698888842,
+    "hits100": 0.9681862351599139,
+    "mean_positive_rank": 19.397228442266254,
+    "auc": 0.906118444570183,
+    "ap": 0.23908044356315247
+  },
+  "test": {
+    "mrr": 0.11906323921913357,
+    "hits10": 0.3166445623342175,
+    "hits20": 0.5068523430592397,
+    "hits50": 0.7833775419982316,
+    "hits100": 0.9467285587975243,
+    "mean_positive_rank": 32.05305039787798,
+    "auc": 0.8374714674306049,
+    "ap": 0.02170485690801256
+  },
+  "trace": [
+    {
+      "epoch": 0,
+      "mean_loss": 0.42415939156825727,
+      "validation": {
+        "mrr": 0.46100371628327,
+        "hits10": 0.6053065190755841,
+        "hits20": 0.7124508851240019,
+        "hits50": 0.8675482698888842,
+        "hits100": 0.9681862351599139,
+        "mean_positive_rank": 19.397228442266254,
+        "auc": 0.906118444577323,
+        "ap": 0.23908051163219368
+      },
+      "test_descriptive": {
+        "mrr": 0.11906322081725842,
+        "hits10": 0.3166445623342175,
+        "hits20": 0.5068523430592397,
+        "hits50": 0.7833775419982316,
+        "hits100": 0.9467285587975243,
+        "mean_positive_rank": 32.05316091954023,
+        "auc": 0.8374714673328847,
+        "ap": 0.021704881007813807
+      },
+      "negative_hash": "3179914f1392625153a1852fba01d8ff043ee74ab3db51ccce0bc74d8d14f95f",
+      "order_hash": "37ae5dd362ddf143811196e7f5bb2cb7ccc7000143807ea8e769f32e64b0b09a"
+    }
+  ],
+  "runtime_seconds": 75.62656445475295,
+  "peak_gpu_memory_mb": 3631.90576171875,
+  "parameter_count": 28966,
+  "best_state_hash": "0dc1ad1f1df8da0679dcebcafeeaa5f3706827f8d5d5f39d1976d233bc558aad",
+  "gpu_name": "Tesla V100-PCIE-16GB",
+  "test_used_for_selection": false
+}
+	Command being timed: "timeout 1800 env PYTHONPATH=/home/ubuntu/AFDR_V8_scripts:/home/ubuntu/DCDLP-main/src python /home/ubuntu/AFDR_V8_scripts/run_lpshift_dcdlp.py --repo /home/ubuntu/AFDR_V7/repo/LPShift-main --dataset ogbl-collab_CN_2_1_0_seed1 --seed 1 --epochs 1 --batch-size 262144 --eval-batch-size 262144 --output /home/ubuntu/AFDR_V7/raw/v8_dcdlp_formal_2_1_seed1_e1_sparse.json"
+	User time (seconds): 93.53
+	System time (seconds): 7.23
+	Percent of CPU this job got: 114%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:28.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3329368
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1786162
+	Voluntary context switches: 2913
+	Involuntary context switches: 83484
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 48
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,112 @@
+{
+  "protocol": "Cora standard train/message graph seed 0",
+  "message_graph_nodes": 2708,
+  "message_graph_edges": 4488,
+  "star_hyperedges": 2620,
+  "hyperedge_stats": {
+    "size": {
+      "count": 2620,
+      "mean": 4.425954198473282,
+      "std": 4.560895649724209,
+      "min": 2.0,
+      "p25": 3.0,
+      "median": 4.0,
+      "p75": 5.0,
+      "p90": 7.0,
+      "max": 151.0
+    },
+    "center_degree": {
+      "count": 2620,
+      "mean": 3.4259541984732826,
+      "std": 4.560895649724209,
+      "min": 1.0,
+      "p25": 2.0,
+      "median": 3.0,
+      "p75": 4.0,
+      "p90": 6.0,
+      "max": 150.0
+    },
+    "internal_pairwise_density": {
+      "count": 2620,
+      "mean": 0.6896104890432775,
+      "std": 0.24788479061074398,
+      "min": 0.021721854304635763,
+      "p25": 0.5,
+      "median": 0.6666666666666666,
+      "p75": 1.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "off_center_density": {
+      "count": 2620,
+      "mean": 0.18657889028382163,
+      "std": 0.29957921493911416,
+      "min": 0.0,
+      "p25": 0.0,
+      "median": 0.0,
+      "p75": 0.3333333333333333,
+      "p90": 0.6666666666666666,
+      "max": 1.0
+    },
+    "triangle_count_among_leaves": {
+      "count": 2620,
+      "mean": 1.1461832061068702,
+      "std": 2.9024214576075202,
+      "min": 0.0,
+      "p25": 0.0,
+      "median": 0.0,
+      "p75": 1.0,
+      "p90": 3.0,
+      "max": 96.0
+    },
+    "shared_node_top3_jaccard_mean": {
+      "count": 2620,
+      "mean": 0.3920879974475919,
+      "std": 0.17359670552947185,
+      "min": 0.062339452662033314,
+      "p25": 0.2833333333333334,
+      "median": 0.34920634920634913,
+      "p75": 0.4334656084656085,
+      "p90": 0.5833333333333334,
+      "max": 1.0
+    }
+  },
+  "node_hyperdegree": {
+    "count": 2708,
+    "mean": 4.282127031019202,
+    "std": 4.554302871852103,
+    "min": 0.0,
+    "p25": 2.0,
+    "median": 4.0,
+    "p75": 5.0,
+    "p90": 7.0,
+    "max": 151.0
+  },
+  "correlations_with_size": {
+    "center_degree": {
+      "pearson": 1.0,
+      "spearman": 1.0
+    },
+    "internal_pairwise_density": {
+      "pearson": -0.5373411379112087,
+      "spearman": -0.8664354103168682
+    },
+    "off_center_density": {
+      "pearson": -0.005820438605102703,
+      "spearman": 0.4688613518637995
+    },
+    "triangle_count_among_leaves": {
+      "pearson": 0.8433866630609985,
+      "spearman": 0.6867547649072187
+    },
+    "shared_node_top3_jaccard_mean": {
+      "pearson": -0.1703584317509162,
+      "spearman": 0.006899775879788424
+    }
+  },
+  "off_center_density_vs_redundancy": {
+    "pearson": 0.29334699872700326,
+    "spearman": 0.4713377293729359
+  },
+  "leakage_note": "Star hyperedges and all diagnostics are derived only from train_pos via GraphDataset.train_graph()."
+}

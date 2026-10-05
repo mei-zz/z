@@ -1,0 +1,16 @@
+{
+  "root": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/figures",
+  "figure_ids": [
+    "trim_vs_hardness",
+    "trim_vs_mrr"
+  ],
+  "warnings": [],
+  "manual_checks": [
+    "clipping/overlap",
+    "legend occlusion",
+    "minimum text size",
+    "grayscale distinction",
+    "deuteranopia/protanopia distinction",
+    "axis units and uncertainty definitions"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "state": "COMPLETE",
+  "dataset": "cora",
+  "stage3_state": "LOCAL_GO",
+  "test_evaluated": true,
+  "one_time_evaluation": true,
+  "started_at_utc": "2026-10-03T05:33:20.312390+00:00",
+  "completed_at_utc": "2026-10-03T05:33:27.890157+00:00",
+  "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+  "positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+  "positive_count": 527,
+  "negative_count_per_positive": 20,
+  "reused_frozen_test_candidates": true,
+  "validation_rechecks": {
+    "BASELINE": {
+      "metrics": {
+        "mrr": 0.5302629049728781,
+        "hits10": 0.688212927756654,
+        "hits20": 0.9011406844106464,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 7.178707224334601
+      },
+      "parameters": 24735
+    },
+    "ECR_FULL": {
+      "metrics": {
+        "mrr": 0.5882664540743211,
+        "hits10": 0.844106463878327,
+        "hits20": 0.9961977186311787,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 4.6311787072243344
+      },
+      "parameters": 24763
+    },
+    "ECR_SHUFFLED": {
+      "metrics": {
+        "mrr": 0.552266452148293,
+        "hits10": 0.7224334600760456,
+        "hits20": 0.9049429657794676,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 6.760456273764259
+      },
+      "parameters": 24763
+    }
+  },
+  "arms": {
+    "BASELINE": {
+      "metrics": {
+        "mrr": 0.5540328597191441,
+        "hits10": 0.6698292220113852,
+        "hits20": 0.9259962049335864,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 7.223908918406072
+      },
+      "trainable_parameters": 24735,
+      "checkpoint_sha256": "1f5d73d57ca84a7f619a1d539264dc5bb52bd42fab5ea55dadeba5cf041f90f6",
+      "checkpoint": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V13/experiments/V13_STAGE3_BASELINE_s0/BASELINE/checkpoints/cora_uniform_seed0_0146a78e5501.pt",
+      "seed": 0,
+      "epochs": 10
+    },
+    "ECR_FULL": {
+      "metrics": {
+        "mrr": 0.6238881397126413,
+        "hits10": 0.8444022770398482,
+        "hits20": 0.9886148007590133,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 4.504743833017078
+      },
+      "trainable_parameters": 24763,
+      "checkpoint_sha256": "46e1e8ea0214e31ddfba7dedd3eb2b1e347fe1e6e2ecc08199c16eff8b7d10cf",
+      "checkpoint": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V13/experiments/V13_STAGE3_ECR_FULL_s0/ECR_FULL/checkpoints/cora_uniform_seed0_87488785d4e0.pt",
+      "seed": 0,
+      "epochs": 10
+    },
+    "ECR_SHUFFLED": {
+      "metrics": {
+        "mrr": 0.5774975560507309,
+        "hits10": 0.715370018975332,
+        "hits20": 0.9222011385199241,
+        "hits50": 1.0,
+        "hits100": 1.0,
+        "mean_positive_rank": 6.4573055028463
+      },
+      "trainable_parameters": 24763,
+      "checkpoint_sha256": "02983ccacc7c0ee145c662d5afa6a03ad38ea05d1a85b6b541cbc96c212ea630",
+      "checkpoint": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V13/experiments/V13_STAGE3_ECR_SHUFFLED_s0/ECR_SHUFFLED/checkpoints/cora_uniform_seed0_ea28a6903efd.pt",
+      "seed": 0,
+      "epochs": 10
+    }
+  },
+  "comparison": {
+    "candidate_mrr": 0.6238881397126413,
+    "baseline_mrr": 0.5540328597191441,
+    "shuffled_control_mrr": 0.5774975560507309,
+    "delta_vs_baseline": 0.06985527999349728,
+    "delta_vs_control": 0.0463905836619104
+  },
+  "test_source_hashes": {
+    "src/dcdlp/train.py": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+    "src/dcdlp/models/dcdlp.py": "b0fcdb74e6c81f05bc45f82b3dcc15d2a0e606706475324be0c5ef94144baea0",
+    "src/dcdlp/evaluate.py": "73902a50e0030623a53990a9002c6f8a826168cca36015f4e8302736249a303b",
+    "src/dcdlp/evaluation/ranking.py": "d21e7bdba9a9a59e1d19230008d4fecded874c8c61b3ab924d3c948097ee11dd",
+    "HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/experiment_v8.py": "9a11ab967df76a0d49f5824c20e81545da1b7166b30a05df0aec2f140bca88fa",
+    "HYPERGRAPH_RESEARCH/QTHS_V7_1/experiment_v71.py": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+    "HYPERGRAPH_RESEARCH/CODNS_V6_2/run_codns_v6_2.py": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+    "HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/run_negative_v6_1.py": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+    "AUTONOMOUS_LP_RESEARCH_V13/run_v13.py": "54d2c62d80e9ab9fb3f1d7759500a9f14cd13c6e698db0fdb8c484b8273889f3"
+  },
+  "test_evaluated_only_after_local_go": true,
+  "no_tuning_after_test": true
+}

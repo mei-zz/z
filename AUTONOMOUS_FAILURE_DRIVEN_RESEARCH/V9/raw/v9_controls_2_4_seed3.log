@@ -1,0 +1,542 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/ubuntu/AFDR_V9_scripts/run_feature_topology_controls.py:100: RuntimeWarning: divide by zero encountered in divide
+  ra_adj = adj.multiply(np.where(degree > 0, 1.0 / degree, 0.0)).tocsr()
+{
+  "dataset": "ogbl-collab_CN_4_2_0_seed1",
+  "seed": 3,
+  "adapter_summary": {
+    "dataset_name": "ogbl-collab_CN_4_2_0_seed1",
+    "num_nodes": 235868,
+    "feature_shape": [
+      235868,
+      128
+    ],
+    "message_edge_index_shape": [
+      2,
+      1597130
+    ],
+    "message_edge_index_hash": "e7139c7a780dc610d1032757007b933d32c1b92575cc8fa0fdb996da4445b71d",
+    "train_pos_shape": [
+      1193456,
+      2
+    ],
+    "valid_pos_shape": [
+      24097,
+      2
+    ],
+    "test_pos_shape": [
+      11551,
+      2
+    ],
+    "valid_neg_shape": [
+      24097,
+      250,
+      2
+    ],
+    "test_neg_shape": [
+      11551,
+      250,
+      2
+    ],
+    "train_pos_hash": "9e876f00d0da73d7bb1229a9aee50ecf8ff9f1f3221eb932fbb9ec5f2c62c048",
+    "valid_pos_hash": "f8ee3623440863545e162b38f4a6ff29cf35b8891ac49d81e8568e562895f42b",
+    "test_pos_hash": "cd34f4b513f4d581e64afa405f9df384031d7b5de960153af7b65317fc992ed9",
+    "valid_neg_hash": "d3d53f225b54fa69a7f676a660949fdf607dfeaf85b0c92c90bbb18bd232940e",
+    "test_neg_hash": "7d8ea1cca3641da1c21fba8a1a6d81e901bfae6931a7b07c9850eea53949ea19",
+    "valid_neg_file_hash": "cc60b2c52b920829f0a529e83861980cf874254236dd035de524ac6b1b74c2fb",
+    "test_neg_file_hash": "c72e0804630072d15962eb0fac9990c1ff7144bbe8732847f2cb25d0ab8181dd"
+  },
+  "feature_names": [
+    "log_degree_min",
+    "log_degree_max",
+    "log_degree_product",
+    "log_degree_gap",
+    "log_cn",
+    "cn_normalized",
+    "log_aa",
+    "log_ra",
+    "feature_cosine",
+    "feature_abs_diff"
+  ],
+  "normalization_mean": [
+    1.7881044149398804,
+    2.7185990810394287,
+    4.049751281738281,
+    0.9305326342582703,
+    1.1939302682876587,
+    0.30397334694862366,
+    0.7626940608024597,
+    0.23404036462306976,
+    0.8833889961242676,
+    0.07664434611797333
+  ],
+  "normalization_std": [
+    1.1693315505981445,
+    1.1285594701766968,
+    2.50665283203125,
+    0.8294662237167358,
+    1.3367267847061157,
+    0.3698418140411377,
+    0.8718820810317993,
+    0.2666468322277069,
+    0.09969891607761383,
+    0.04405876249074936
+  ],
+  "protocol": {
+    "train_negative_protocol": "uniform_non_message_edges",
+    "target_masking": "degree statistics masked for train positives; no message encoder in controls",
+    "test_used_for_selection": false,
+    "shared_negative_hashes": [
+      "5daf2f31f0c808c1c4fe9eee6d335edc04e1fd40cab75ee35391041eb2d865c0",
+      "5f53a34999022371e9b61d5b948f0a33d59346069d17d7b3ccbc72005b7430c4",
+      "8b1205154b4128182d15a567fdb79ca1b20cdda9cef4cce11ba0057a42adc066",
+      "4abbee96206e840e21074122f9a8f4c37651b15070c45088b57db7fd7f442265"
+    ],
+    "shared_order_hashes": [
+      "5eda7678fe70d619745725776ae640aaa314243436d64664f966880369504d46",
+      "ebc99d9fd4c7fce6a43a3f3f00cdc1c927d9137562471faae7db4c02a98c69fa",
+      "82c83db8a8dac0ff4efb2af3b3ac6f69ebabc0d18fda209676af88c44fbd2bee",
+      "ead6f2c2739b0a8e234cee436eba5e6084c5e1ed16271ad65efd17bc48535817"
+    ]
+  },
+  "cache_seconds": 196.77550619794056,
+  "eval_feature_seconds": 50.95015236409381,
+  "models": {
+    "FeatureCosine": {
+      "validation": {
+        "mrr": 0.5564911733370286,
+        "hits10": 0.8581151180644894,
+        "hits20": 0.9388720587625016,
+        "hits50": 0.9871768269909117,
+        "hits100": 0.9985060380960286,
+        "mean_positive_rank": 5.87145702784579
+      },
+      "test": {
+        "mrr": 0.5427997775076593,
+        "hits10": 0.8568089342914034,
+        "hits20": 0.9374080166219375,
+        "hits50": 0.9864081031945287,
+        "hits100": 0.9987014111332352,
+        "mean_positive_rank": 5.95576140593888
+      },
+      "best_epoch": null,
+      "runtime_seconds": 0.0,
+      "peak_gpu_memory_mb": null,
+      "parameter_count": 0,
+      "prediction_file": "/home/ubuntu/AFDR_V7/raw/v9_controls_2_4_seed3_FeatureCosine.pred.npz",
+      "training_budget": {
+        "trained": false,
+        "score": "FeatureCosine",
+        "tie_rule": "official average rank"
+      }
+    },
+    "TopologyRA": {
+      "validation": {
+        "mrr": 0.8866128055512428,
+        "hits10": 0.9169191185624767,
+        "hits20": 0.9169191185624767,
+        "hits50": 0.9169191185624767,
+        "hits100": 0.9169191185624767,
+        "mean_positive_rank": 11.468917292609039
+      },
+      "test": {
+        "mrr": 0.31759804836890715,
+        "hits10": 0.34092286382131415,
+        "hits20": 0.34092286382131415,
+        "hits50": 0.34092286382131415,
+        "hits100": 0.34092286382131415,
+        "mean_positive_rank": 83.58518742965977
+      },
+      "best_epoch": null,
+      "runtime_seconds": 0.0,
+      "peak_gpu_memory_mb": null,
+      "parameter_count": 0,
+      "prediction_file": "/home/ubuntu/AFDR_V7/raw/v9_controls_2_4_seed3_TopologyRA.pred.npz",
+      "training_budget": {
+        "trained": false,
+        "score": "TopologyRA",
+        "tie_rule": "official average rank"
+      }
+    },
+    "FeatureMLP": {
+      "validation": {
+        "mrr": 0.5515078915068604,
+        "hits10": 0.8554591857907623,
+        "hits20": 0.9360501307216667,
+        "hits50": 0.9867618375731418,
+        "hits100": 0.9985060380960286,
+        "mean_positive_rank": 5.98045399842304
+      },
+      "test": {
+        "mrr": 0.5407181571103256,
+        "hits10": 0.8551640550601679,
+        "hits20": 0.9361960003462904,
+        "hits50": 0.9864946757856463,
+        "hits100": 0.9987014111332352,
+        "mean_positive_rank": 6.002337459960176
+      },
+      "best_epoch": 0,
+      "runtime_seconds": 4.4062078087590635,
+      "peak_gpu_memory_mb": 237.259765625,
+      "parameter_count": 257,
+      "prediction_file": "/home/ubuntu/AFDR_V7/raw/v9_controls_2_4_seed3_FeatureMLP.pred.npz",
+      "trace": [
+        {
+          "epoch": 0,
+          "mean_loss": 0.5962340533733368,
+          "validation": {
+            "mrr": 0.5515078915068604,
+            "hits10": 0.8554591857907623,
+            "hits20": 0.9360501307216667,
+            "hits50": 0.9867618375731418,
+            "hits100": 0.9985060380960286,
+            "mean_positive_rank": 5.98045399842304
+          },
+          "negative_hash": "5daf2f31f0c808c1c4fe9eee6d335edc04e1fd40cab75ee35391041eb2d865c0",
+          "order_hash": "5eda7678fe70d619745725776ae640aaa314243436d64664f966880369504d46"
+        },
+        {
+          "epoch": 1,
+          "mean_loss": 0.5306709408760071,
+          "validation": {
+            "mrr": 0.5493950718003555,
+            "hits10": 0.853674731294352,
+            "hits20": 0.934929659293688,
+            "hits50": 0.986429846038926,
+            "hits100": 0.9985475370378055,
+            "mean_positive_rank": 6.04515084865336
+          },
+          "negative_hash": "5f53a34999022371e9b61d5b948f0a33d59346069d17d7b3ccbc72005b7430c4",
+          "order_hash": "ebc99d9fd4c7fce6a43a3f3f00cdc1c927d9137562471faae7db4c02a98c69fa"
+        },
+        {
+          "epoch": 2,
+          "mean_loss": 0.4759687215089798,
+          "validation": {
+            "mrr": 0.5479198646292532,
+            "hits10": 0.8521392704486036,
+            "hits20": 0.9342241772834793,
+            "hits50": 0.9862223513300411,
+            "hits100": 0.9985475370378055,
+            "mean_positive_rank": 6.083993858156617
+          },
+          "negative_hash": "8b1205154b4128182d15a567fdb79ca1b20cdda9cef4cce11ba0057a42adc066",
+          "order_hash": "82c83db8a8dac0ff4efb2af3b3ac6f69ebabc0d18fda209676af88c44fbd2bee"
+        },
+        {
+          "epoch": 3,
+          "mean_loss": 0.43042216897010804,
+          "validation": {
+            "mrr": 0.546923580345571,
+            "hits10": 0.8512677926712868,
+            "hits20": 0.9338091878657094,
+            "hits50": 0.9862223513300411,
+            "hits100": 0.9985890359795825,
+            "mean_positive_rank": 6.106610781425074
+          },
+          "negative_hash": "4abbee96206e840e21074122f9a8f4c37651b15070c45088b57db7fd7f442265",
+          "order_hash": "ead6f2c2739b0a8e234cee436eba5e6084c5e1ed16271ad65efd17bc48535817"
+        }
+      ],
+      "training_budget": {
+        "epochs": 4,
+        "batch_size": 262144,
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      }
+    },
+    "TopologyMLP": {
+      "validation": {
+        "mrr": 0.3018730646647768,
+        "hits10": 0.6449350541561191,
+        "hits20": 0.8270324106735278,
+        "hits50": 0.9657218740922107,
+        "hits100": 0.9964725899489563,
+        "mean_positive_rank": 11.91907706353488
+      },
+      "test": {
+        "mrr": 0.09530859361996703,
+        "hits10": 0.21954809107436585,
+        "hits20": 0.42637001125443685,
+        "hits50": 0.8225261882088131,
+        "hits100": 0.9882261276079993,
+        "mean_positive_rank": 29.62907973335642
+      },
+      "best_epoch": 3,
+      "runtime_seconds": 3.6701082000508904,
+      "peak_gpu_memory_mb": 237.26416015625,
+      "parameter_count": 641,
+      "prediction_file": "/home/ubuntu/AFDR_V7/raw/v9_controls_2_4_seed3_TopologyMLP.pred.npz",
+      "trace": [
+        {
+          "epoch": 0,
+          "mean_loss": 0.6032392799854278,
+          "validation": {
+            "mrr": 0.05324075511485289,
+            "hits10": 0.10656928248329668,
+            "hits20": 0.2417313358509358,
+            "hits50": 0.46599161721376103,
+            "hits100": 0.7223305805701955,
+            "mean_positive_rank": 67.01554135369548
+          },
+          "negative_hash": "5daf2f31f0c808c1c4fe9eee6d335edc04e1fd40cab75ee35391041eb2d865c0",
+          "order_hash": "5eda7678fe70d619745725776ae640aaa314243436d64664f966880369504d46"
+        },
+        {
+          "epoch": 1,
+          "mean_loss": 0.5093800723552704,
+          "validation": {
+            "mrr": 0.18996236444730807,
+            "hits10": 0.45918579076233557,
+            "hits20": 0.6891314271486078,
+            "hits50": 0.8816865169938166,
+            "hits100": 0.9933601693156825,
+            "mean_positive_rank": 20.19541851682782
+          },
+          "negative_hash": "5f53a34999022371e9b61d5b948f0a33d59346069d17d7b3ccbc72005b7430c4",
+          "order_hash": "ebc99d9fd4c7fce6a43a3f3f00cdc1c927d9137562471faae7db4c02a98c69fa"
+        },
+        {
+          "epoch": 2,
+          "mean_loss": 0.4290767043828964,
+          "validation": {
+            "mrr": 0.2692392236208913,
+            "hits10": 0.6082084906834876,
+            "hits20": 0.8141677387226626,
+            "hits50": 0.9662613603353114,
+            "hits100": 0.9964725899489563,
+            "mean_positive_rank": 12.601630908411835
+          },
+          "negative_hash": "8b1205154b4128182d15a567fdb79ca1b20cdda9cef4cce11ba0057a42adc066",
+          "order_hash": "82c83db8a8dac0ff4efb2af3b3ac6f69ebabc0d18fda209676af88c44fbd2bee"
+        },
+        {
+          "epoch": 3,
+          "mean_loss": 0.35923213958740235,
+          "validation": {
+            "mrr": 0.3018730646647768,
+            "hits10": 0.6449350541561191,
+            "hits20": 0.8270324106735278,
+            "hits50": 0.9657218740922107,
+            "hits100": 0.9964725899489563,
+            "mean_positive_rank": 11.91907706353488
+          },
+          "negative_hash": "4abbee96206e840e21074122f9a8f4c37651b15070c45088b57db7fd7f442265",
+          "order_hash": "ead6f2c2739b0a8e234cee436eba5e6084c5e1ed16271ad65efd17bc48535817"
+        }
+      ],
+      "training_budget": {
+        "epochs": 4,
+        "batch_size": 262144,
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      }
+    },
+    "LinearFusion": {
+      "validation": {
+        "mrr": 0.0625061662660721,
+        "hits10": 0.08403535709839399,
+        "hits20": 0.10627878989085779,
+        "hits50": 0.15304809727351953,
+        "hits100": 0.23231107606756027,
+        "mean_positive_rank": 126.88886583392123
+      },
+      "test": {
+        "mrr": 0.018315318359755,
+        "hits10": 0.018353389316942255,
+        "hits20": 0.02571205956194269,
+        "hits50": 0.05774391827547398,
+        "hits100": 0.1205090468357718,
+        "mean_positive_rank": 157.99480564453293
+      },
+      "best_epoch": 3,
+      "runtime_seconds": 3.5225324355997145,
+      "peak_gpu_memory_mb": 48.25537109375,
+      "parameter_count": 11,
+      "prediction_file": "/home/ubuntu/AFDR_V7/raw/v9_controls_2_4_seed3_LinearFusion.pred.npz",
+      "trace": [
+        {
+          "epoch": 0,
+          "mean_loss": 0.9894428491592407,
+          "validation": {
+            "mrr": 0.009547783228058831,
+            "hits10": 0.010416234386023156,
+            "hits20": 0.01539610739926132,
+            "hits50": 0.026891314271486076,
+            "hits100": 0.04768228410175541,
+            "mean_positive_rank": 193.08843424492676
+          },
+          "negative_hash": "5daf2f31f0c808c1c4fe9eee6d335edc04e1fd40cab75ee35391041eb2d865c0",
+          "order_hash": "5eda7678fe70d619745725776ae640aaa314243436d64664f966880369504d46"
+        },
+        {
+          "epoch": 1,
+          "mean_loss": 0.9438544571399688,
+          "validation": {
+            "mrr": 0.019046423901737847,
+            "hits10": 0.027057310038594014,
+            "hits20": 0.036768062414408435,
+            "hits50": 0.05726853965223887,
+            "hits100": 0.09167116238535918,
+            "mean_positive_rank": 170.30300452338466
+          },
+          "negative_hash": "5f53a34999022371e9b61d5b948f0a33d59346069d17d7b3ccbc72005b7430c4",
+          "order_hash": "ebc99d9fd4c7fce6a43a3f3f00cdc1c927d9137562471faae7db4c02a98c69fa"
+        },
+        {
+          "epoch": 2,
+          "mean_loss": 0.8995293557643891,
+          "validation": {
+            "mrr": 0.03661989377608938,
+            "hits10": 0.05224716769722372,
+            "hits20": 0.06818276133958584,
+            "hits50": 0.10009544756608707,
+            "hits100": 0.15562103166369257,
+            "mean_positive_rank": 146.61273187533718
+          },
+          "negative_hash": "8b1205154b4128182d15a567fdb79ca1b20cdda9cef4cce11ba0057a42adc066",
+          "order_hash": "82c83db8a8dac0ff4efb2af3b3ac6f69ebabc0d18fda209676af88c44fbd2bee"
+        },
+        {
+          "epoch": 3,
+          "mean_loss": 0.8568944156169891,
+          "validation": {
+            "mrr": 0.0625061662660721,
+            "hits10": 0.08403535709839399,
+            "hits20": 0.10627878989085779,
+            "hits50": 0.15304809727351953,
+            "hits100": 0.23231107606756027,
+            "mean_positive_rank": 126.88886583392123
+          },
+          "negative_hash": "4abbee96206e840e21074122f9a8f4c37651b15070c45088b57db7fd7f442265",
+          "order_hash": "ead6f2c2739b0a8e234cee436eba5e6084c5e1ed16271ad65efd17bc48535817"
+        }
+      ],
+      "training_budget": {
+        "epochs": 4,
+        "batch_size": 262144,
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      }
+    },
+    "ParamMatchedFusion": {
+      "validation": {
+        "mrr": 0.7888784123937878,
+        "hits10": 0.964725899489563,
+        "hits20": 0.989210275137984,
+        "hits50": 0.9986305349213596,
+        "hits100": 1.0,
+        "mean_positive_rank": 2.360252313566004
+      },
+      "test": {
+        "mrr": 0.3775435317252033,
+        "hits10": 0.7793264652411047,
+        "hits20": 0.9310882174703489,
+        "hits50": 0.9963639511730586,
+        "hits100": 0.9999134274088823,
+        "mean_positive_rank": 7.256947450437192
+      },
+      "best_epoch": 3,
+      "runtime_seconds": 5.341098253149539,
+      "peak_gpu_memory_mb": 931.5927734375,
+      "parameter_count": 29029,
+      "prediction_file": "/home/ubuntu/AFDR_V7/raw/v9_controls_2_4_seed3_ParamMatchedFusion.pred.npz",
+      "trace": [
+        {
+          "epoch": 0,
+          "mean_loss": 0.4778822660446167,
+          "validation": {
+            "mrr": 0.6517623607796711,
+            "hits10": 0.9148441714736274,
+            "hits20": 0.9788355396937378,
+            "hits50": 0.9982985433871436,
+            "hits100": 0.999958501058223,
+            "mean_positive_rank": 3.699132672116861
+          },
+          "negative_hash": "5daf2f31f0c808c1c4fe9eee6d335edc04e1fd40cab75ee35391041eb2d865c0",
+          "order_hash": "5eda7678fe70d619745725776ae640aaa314243436d64664f966880369504d46"
+        },
+        {
+          "epoch": 1,
+          "mean_loss": 0.16079401224851608,
+          "validation": {
+            "mrr": 0.7032925071976481,
+            "hits10": 0.9388305598207246,
+            "hits20": 0.983732414823422,
+            "hits50": 0.9983815412706976,
+            "hits100": 1.0,
+            "mean_positive_rank": 3.119226459725277
+          },
+          "negative_hash": "5f53a34999022371e9b61d5b948f0a33d59346069d17d7b3ccbc72005b7430c4",
+          "order_hash": "ebc99d9fd4c7fce6a43a3f3f00cdc1c927d9137562471faae7db4c02a98c69fa"
+        },
+        {
+          "epoch": 2,
+          "mean_loss": 0.04586722068488598,
+          "validation": {
+            "mrr": 0.748489913472492,
+            "hits10": 0.9545586587542018,
+            "hits20": 0.9868033365149189,
+            "hits50": 0.9984645391542516,
+            "hits100": 1.0,
+            "mean_positive_rank": 2.688010955720629
+          },
+          "negative_hash": "8b1205154b4128182d15a567fdb79ca1b20cdda9cef4cce11ba0057a42adc066",
+          "order_hash": "82c83db8a8dac0ff4efb2af3b3ac6f69ebabc0d18fda209676af88c44fbd2bee"
+        },
+        {
+          "epoch": 3,
+          "mean_loss": 0.01899914536625147,
+          "validation": {
+            "mrr": 0.7888784123937878,
+            "hits10": 0.964725899489563,
+            "hits20": 0.989210275137984,
+            "hits50": 0.9986305349213596,
+            "hits100": 1.0,
+            "mean_positive_rank": 2.360252313566004
+          },
+          "negative_hash": "4abbee96206e840e21074122f9a8f4c37651b15070c45088b57db7fd7f442265",
+          "order_hash": "ead6f2c2739b0a8e234cee436eba5e6084c5e1ed16271ad65efd17bc48535817"
+        }
+      ],
+      "training_budget": {
+        "epochs": 4,
+        "batch_size": 262144,
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      }
+    }
+  },
+  "control_parameter_target": {
+    "DCDLP": 28966,
+    "ParamMatchedFusion": 29029
+  }
+}
+	Command being timed: "timeout 1800 python /home/ubuntu/AFDR_V9_scripts/run_feature_topology_controls.py --repo /home/ubuntu/AFDR_V7/repo/LPShift-main --dataset ogbl-collab_CN_4_2_0_seed1 --seed 3 --output /home/ubuntu/AFDR_V7/raw/v9_controls_2_4_seed3.json --cache-dir /home/ubuntu/AFDR_V7/raw/v9_control_cache --epochs 4 --batch-size 262144 --feature-batch-size 100000"
+	User time (seconds): 213.67
+	System time (seconds): 18.65
+	Percent of CPU this job got: 104%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:42.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2647548
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2409176
+	Voluntary context switches: 785
+	Involuntary context switches: 1190
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1166248
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,21 @@
+# V17.3 frozen benchmark protocol
+
+R-HSPE is frozen; no model, sampler, optimizer, epochs, splits, candidate set, or evaluator changes. Frozen reports and exact checkpoints are reused without checkpoint selection or test rescoring. Source/config/data/candidate SHA256 hashes are asserted by FROZEN_AUDIT.json before jobs run and again during aggregation.
+
+Datasets: exact V17.2 Cora, PubMed, Citeseer. Fixed train/valid/test split (not each baseline's original randomly re-split dataset). Train edges alone form all message graphs, NSLR incidence and negative exclusions. NCN/NCNC use the original undirected train relation, identical to B0 graph side, without clique expansion. Raw-HG in this project is raw-star construction from that same train relation; NSLR retains its own official NSLR hypergraph construction from the train relation rather than substituting R-HSPE incidence.
+
+Test: existing V17.2 positive and grouped negative NPZ files, exactly 20 negatives per query, original frozen ranking_metrics. Historical evaluation candidate generation excluded all known positives, including heldout, strictly as evaluation construction. These labels are never used by baseline training filters. Frozen validation candidates are reused and their hashes checked.
+
+Primary MRR, secondary Hits@10, Hits@20, mean positive rank. Scores are unrounded decoder logits. Official downstream scorer retained. Mean and sample standard deviation (ddof=1), individual seeds, ranks within tested methods. Official baseline training negatives may differ from QTHS25, but use train-visible information only and are disclosed.
+
+5 seeds (0..4) for NCN, NCNC, NSLR-HMANN on each dataset. Frozen R-HSPE and B0 Cora/PubMed have 5 seeds; Citeseer has only 3, explicitly marked. No R-HSPE rerun to fill this seed-count difference. Validation-only smoke uses seed99 and never tests; smoke checkpoints are excluded from main results.
+
+NCN/NCNC: author's dataset-specific README configs, 100 epochs, validation MRR selects first maximum, test scores only after selection. NSLR-HMANN: official dimensions/loss/Adam(.01)/5000 epochs/final checkpoint; validation logged every25 epochs diagnostically, never test selection. No hyperparameter search. Configs fixed before third-party test access. Official source hashes and compatibility changes in implementation audit. Training budgets differ because each official recommended config is retained; this is accuracy comparison under common information/evaluation, not equal-compute training comparison.
+
+Resources: two GPU processes for smaller jobs; PubMed dense NSLR alone on GPU; one CPU dense-preparation process at a time with16 BLAS threads, GPU workers4 CPU threads each. PubMed NCN/NCNC completion scoring batch512 is a memory-only evaluation adapter; full neighborhoods, same model computation. NSLR matrices/cache are prepared once per dataset and reused across seeds. No automatic architecture changes following OOM or poor metrics. Failures remain recorded, benchmark marked PARTIAL.
+
+Before baseline tests, fix descriptive competitiveness criterion: STRONG iff R-HSPE best/second in >=2 datasets and <=.02 absolute MRR below strongest on remaining dataset. ACCEPTABLE iff within.02 of strongest in >=2 datasets and total parameters below both NCN and NCNC wherever measured. Otherwise WEAK after all planned jobs terminate. .02 is a transparent operational interpretation of 'material lag/strong baseline range', not a significance threshold or universal publication rule. PENDING until jobs terminate. Failed jobs make coverage PARTIAL and paper readiness NO. Labels can be reconsidered by researcher using full evidence, without changing frozen method. No automatic SOTA claim.
+
+Effect sizes vs highest comparable mean MRR: shared seed-label differences, mean/median/wins. Same seed numbers do not create matched RNG semantics between architectures; no strict paired significance tests or significance fishing. Optional query bootstrap omitted.
+
+Server operates offline: sources/wheel fetched locally, pinned/uploaded, pip --no-index --no-deps --target local isolated .deps. Existing server environment is unchanged. User explicitly authorized authentication-only reading of configuration, with credentials never displayed; this overrides document prohibition solely for SSH login.

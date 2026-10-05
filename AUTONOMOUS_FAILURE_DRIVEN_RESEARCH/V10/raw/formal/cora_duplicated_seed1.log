@@ -1,0 +1,168 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/ubuntu/AFDR_V10/NodeDup/results_analysis.py:219: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print_out_str += f', hits@{this_K}: ' + f'{this_res_hits.mean():.2f} ± {this_res_hits.std():.2f}'
+/home/ubuntu/AFDR_V10/NodeDup/results_analysis.py:221: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print_out_str += ", mrr: " + f'{this_res_mrr.mean():.2f} ± {this_res_mrr.std():.2f}'
+/home/ubuntu/AFDR_V10/NodeDup/results_analysis.py:223: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print_out_str += ", auc: " + f'{this_res_auc.mean():.2f} ± {this_res_auc.std():.2f}'
+/home/ubuntu/AFDR_V10/NodeDup/results_analysis.py:230: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print_out_str += f', hits@{this_K}: ' + f'{this_res_hits.mean():.2f} ± {this_res_hits.std():.2f}'
+/home/ubuntu/AFDR_V10/NodeDup/results_analysis.py:232: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print_out_str += ", mrr: " + f'{this_res_mrr.mean():.2f} ± {this_res_mrr.std():.2f}'
+/home/ubuntu/AFDR_V10/NodeDup/results_analysis.py:234: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print_out_str += ", auc: " + f'{this_res_auc.mean():.2f} ± {this_res_auc.std():.2f}'
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Namespace(device=0, log_steps=1, encoder='sage', num_layers=2, hidden_channels=256, dropout=0.5, batch_size=65536, lr=0.0005, epochs=100, eval_steps=5, runs=1, dataset_dir='./data', datasets='cora', predictor='sum', patience=20, metric='hits@20', use_valedges_as_input=False, negative_samples=500, ratio=10, coldupline=2, val_rate=5, test_rate=10, log_dir='results_v10/formal', augment='duplicated', augment_times=1, augment_nodes='cold', transductive='induc', test_ratio=0.1, val_node_ratio=0.1, val_ratio=0.1, old_old_extra_ratio=0.1)
+0.27433628369133733
+0.30825958761405803
+0.2713864312718752
+0.23008849621258654
+0.19174041357276012
+0.21091445495860767
+0.26253687388161995
+0.33185840787085813
+0.3805309743524301
+0.41002949938222016
+0.43215339318752993
+0.43067846688988637
+0.433628319397261
+0.44247787683147244
+0.4528023606072837
+0.4764011809300181
+0.4926253697205785
+0.49115044346689124
+0.48672566466187306
+0.4911504435548037
+0.49410029593030963
+0.491150443422935
+0.4823008859008111
+0.48082595964712377
+0.4911504435548037
+0.49557522231586565
+0.5044247798379895
+0.5117994111064261
+0.5191740424188189
+0.5191740425067314
+0.5265486738191242
+0.544247788863372
+0.5560471988928705
+0.5634218300733946
+0.5737463138492058
+0.5766961663565805
+0.5855457237907918
+0.5884955762981665
+0.5914454285418038
+0.5899705023760289
+0.5988200599421091
+0.595870207346822
+0.6017699123615712
+0.6047197648689459
+0.6061946911226331
+0.606194691078677
+0.6047197648689459
+0.6076696173763205
+0.6091445436300078
+0.6091445436300078
+0.6135693223910698
+0.6165191748984443
+0.6194690273618628
+0.6283185849279429
+0.6327433636010924
+0.6297935110937177
+0.6342182899426921
+0.6401179950453538
+0.6430678474867941
+0.6460176999062563
+0.6533923312626054
+0.6578171100236673
+0.6578171100236673
+0.6592920362773547
+0.6637168149505042
+0.6592920361894422
+0.6578171100236673
+0.6622418886968168
+0.6607669624431295
+0.6578171099357548
+0.6563421835501989
+0.6563421835501989
+0.6563421835941551
+0.6578171098478424
+0.6578171098478424
+0.6563421835282207
+0.6533923310208462
+0.6504424785134715
+0.6489675522597842
+0.660766962333239
+0.6637168148406135
+0.6637168148406135
+0.668141593513763
+0.6696165197674504
+0.668141593513763
+0.6681415934698068
+0.6725663722308688
+0.6755162247821996
+0.6784660772895743
+0.6814159297969489
+0.6799410035432616
+0.6784660772895743
+0.6784660772895743
+0.6769911510358869
+0.6784660772895743
+0.6828908560506363
+0.6814159297969489
+0.6784660772895743
+0.6799410035432616
+0.6814159297969489
+0, hits@10: 44.90740754538112, hits@20: 52.31481495278853, hits@30: 58.79629637908052, hits@50: 68.51851867028961, mrr: 24.277641307196095, auc: 90.17677344877337
+1, hits@10: 57.59312320916906, hits@20: 66.7621776504298, hits@30: 72.20630372492836, hits@50: 79.08309455587393, mrr: 35.548374118059236, auc: 92.63922829581988
+2, hits@10: 64.24242433273432, hits@20: 73.63636369958068, hits@30: 78.48484854806553, hits@50: 84.24242426048626, mrr: 35.98052312683483, auc: 94.13182367149751
+3, hits@10: 57.14285732532034, hits@20: 75.51020432491691, hits@30: 77.55102065144753, hits@50: 82.653061406953, mrr: 40.78064698973024, auc: 95.53135416666669
+4, hits@10: 40.00000059604645, hits@20: 43.33333392937978, hits@30: 56.66666706403097, hits@50: 63.33333373069763, mrr: 21.54506198130548, auc: 89.38422222222222
+5, hits@10: 21.428571960755757, hits@20: 50.000001383679255, hits@30: 64.28571481789861, hits@50: 71.42857206719262, mrr: 14.99397565743753, auc: 90.0911111111111
+6, hits@10: 23.52941185235977, hits@20: 52.941179275512695, hits@30: 70.58823704719543, hits@50: 82.35294222831726, mrr: 8.429649472236633, auc: 92.23529411764706
+overall, hits@10: 55.50284639877432, hits@20: 65.65464910763039, hits@30: 71.34724868288302, hits@50: 78.36812153260666, mrr: 32.75142380083245, auc: 92.79955638303225
+0, 165, 216, hits@10: 44.91 ± nan, hits@20: 52.31 ± nan, hits@30: 58.80 ± nan, hits@50: 68.52 ± nan, mrr: 24.28 ± nan, auc: 90.18 ± nan
+
+1-2, 311, 349, hits@10: 57.59 ± nan, hits@20: 66.76 ± nan, hits@30: 72.21 ± nan, hits@50: 79.08 ± nan, mrr: 35.55 ± nan, auc: 92.64 ± nan
+
+>2, 359, 489, hits@10: 58.69 ± nan, hits@20: 70.76 ± nan, hits@30: 76.28 ± nan, hits@50: 82.21 ± nan, mrr: 34.50 ± nan, auc: 94.14 ± nan
+
+Overall, 835, 1054, hits@10: 55.50 ± nan, hits@20: 65.65 ± nan, hits@30: 71.35 ± nan, hits@50: 78.37 ± nan, mrr: 32.75 ± nan, auc: 92.80 ± nan
+
+0, 165, 216, hits@10: 44.91 ± nan, hits@20: 52.31 ± nan, hits@30: 58.80 ± nan, hits@50: 68.52 ± nan, mrr: 24.28 ± nan, auc: 90.18 ± nan
+
+1, 311, 349, hits@10: 57.59 ± nan, hits@20: 66.76 ± nan, hits@30: 72.21 ± nan, hits@50: 79.08 ± nan, mrr: 35.55 ± nan, auc: 92.64 ± nan
+
+2, 276, 330, hits@10: 64.24 ± nan, hits@20: 73.64 ± nan, hits@30: 78.48 ± nan, hits@50: 84.24 ± nan, mrr: 35.98 ± nan, auc: 94.13 ± nan
+
+3, 64, 98, hits@10: 57.14 ± nan, hits@20: 75.51 ± nan, hits@30: 77.55 ± nan, hits@50: 82.65 ± nan, mrr: 40.78 ± nan, auc: 95.53 ± nan
+
+4, 15, 30, hits@10: 40.00 ± nan, hits@20: 43.33 ± nan, hits@30: 56.67 ± nan, hits@50: 63.33 ± nan, mrr: 21.55 ± nan, auc: 89.38 ± nan
+
+5, 3, 14, hits@10: 21.43 ± nan, hits@20: 50.00 ± nan, hits@30: 64.29 ± nan, hits@50: 71.43 ± nan, mrr: 14.99 ± nan, auc: 90.09 ± nan
+
+6, 1, 17, hits@10: 23.53 ± nan, hits@20: 52.94 ± nan, hits@30: 70.59 ± nan, hits@50: 82.35 ± nan, mrr: 8.43 ± nan, auc: 92.24 ± nan
+
+Overall, 835, 1054, hits@10: 55.50 ± nan, hits@20: 65.65 ± nan, hits@30: 71.35 ± nan, hits@50: 78.37 ± nan, mrr: 32.75 ± nan, auc: 92.80 ± nan
+

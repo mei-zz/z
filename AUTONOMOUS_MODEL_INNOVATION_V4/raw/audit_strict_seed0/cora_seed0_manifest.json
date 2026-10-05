@@ -1,0 +1,11 @@
+{
+  "dataset": "cora",
+  "seed": 0,
+  "epochs": 4,
+  "models": [
+    "C_CDPT"
+  ],
+  "test_used_for_selection": false,
+  "data_hash": "98e4aaaf07d4",
+  "deterministic_algorithms": true
+}

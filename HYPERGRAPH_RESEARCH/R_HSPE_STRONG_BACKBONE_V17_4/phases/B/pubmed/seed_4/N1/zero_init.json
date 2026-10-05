@@ -1,0 +1,6 @@
+{
+  "base_initial_state_sha256": "34291789a1a93917c842e5dd1529dab06b85469b3c73a3c368a06590d4cf52db",
+  "added_parameters": 75,
+  "initial_logit_max_abs_error": 0.0,
+  "zero_head": true
+}

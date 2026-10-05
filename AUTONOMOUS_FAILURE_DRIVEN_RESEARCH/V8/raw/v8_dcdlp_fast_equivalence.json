@@ -1,0 +1,31 @@
+{
+  "dataset": "ogbl-collab_CN_2_1_0_seed1",
+  "pairs": 512,
+  "passed": true,
+  "errors": {
+    "logit": {
+      "max_abs": 5.960464477539062e-07,
+      "mean_abs": 1.15192960947752e-07
+    },
+    "score_degree": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "score_cn": {
+      "max_abs": 4.3213367462158203e-07,
+      "mean_abs": 8.20509740151465e-08
+    },
+    "score_residual": {
+      "max_abs": 3.5762786865234375e-07,
+      "mean_abs": 6.434856913983822e-08
+    },
+    "score_interaction": {
+      "max_abs": 4.470348358154297e-08,
+      "mean_abs": 8.607457857578993e-09
+    },
+    "cn_raw": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    }
+  }
+}

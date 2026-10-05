@@ -1,0 +1,24 @@
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "state": "INFRASTRUCTURE_FAILURE",
+  "go": false,
+  "missing": [
+    "QTHS25_BASELINE",
+    "L1_EXPECTED_MRR",
+    "L1_INDEP_BCE",
+    "L1_LISTWISE_RANDOM",
+    "L1_REPEAT_BCE"
+  ],
+  "test_evaluated": false
+}

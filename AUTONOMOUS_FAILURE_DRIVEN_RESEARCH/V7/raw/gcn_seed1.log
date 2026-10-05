@@ -1,0 +1,192 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Namespace(data_name='ogbl-collab_CN_2_1_0', neg_mode='equal', gnn_model='GCN', score_model='mlp_score', num_layers=3, num_layers_predictor=3, hidden_channels=128, dropout=0.1, edge_drop=0.0, lr=0.01, epochs=100, eval_steps=20, runs=1, kill_cnt=100, output_dir='/home/ubuntu/AFDR_V7/raw/gcn_seed1', input_dir='/home/ubuntu/AFDR_V7/repo/LPShift-main/../dataset', l2=0.0, seed=1, save=False, save_test=False, use_saved_model=False, log_steps=1, batch_size=65536, val_batch_size=65536, test_batch_size=65536, device=0)
+#################################           0           #################################
+seed:  1
+################################
+Loading Dataset: ogbl-collab_CN_2_1_0_seed1
+################################
+train train_neg val val_neg test test_neg:  torch.Size([1697336, 2]) torch.Size([1697336, 2]) torch.Size([23669, 2]) torch.Size([23669, 250, 2]) torch.Size([9048, 2]) torch.Size([9048, 250, 2])
+layers in gcn:  3
+neg_train_pred size before predictions:  torch.Size([1697336, 1])
+train_pos train_neg valid_pos valid_neg test_pos test_neg torch.Size([1697336]) torch.Size([1697336, 1]) torch.Size([23669]) torch.Size([23669, 250]) torch.Size([9048]) torch.Size([9048, 250])
+2026-09-17 14:07:31,204 - [INFO] - Run: 01, Epoch: 20, Loss: 0.0440, Train: 99.98%, Valid: 7.12%, Test: 5.78%
+2026-09-17 14:07:31,204 - [INFO] - Run: 01, Epoch: 20, Loss: 0.0440, Train: 99.96%, Valid: 1.99%, Test: 1.34%
+2026-09-17 14:07:31,204 - [INFO] - Run: 01, Epoch: 20, Loss: 0.0440, Train: 100.00%, Valid: 5.51%, Test: 4.02%
+2026-09-17 14:07:31,204 - [INFO] - Run: 01, Epoch: 20, Loss: 0.0440, Train: 100.00%, Valid: 15.53%, Test: 12.43%
+2026-09-17 14:07:31,204 - [INFO] - Run: 01, Epoch: 20, Loss: 0.0440, Train: 100.00%, Valid: 26.12%, Test: 22.21%
+2026-09-17 14:07:31,204 - [INFO] - Run: 01, Epoch: 20, Loss: 0.0440, Train: 100.00%, Valid: 49.60%, Test: 45.23%
+2026-09-17 14:07:31,204 - [INFO] - Run: 01, Epoch: 20, Loss: 0.0440, Train: 100.00%, Valid: 77.61%, Test: 72.52%
+MRR
+2026-09-17 14:07:31,204 - [INFO] - best valid: 7.12%, best test: 5.78%
+---
+neg_train_pred size before predictions:  torch.Size([1697336, 1])
+train_pos train_neg valid_pos valid_neg test_pos test_neg torch.Size([1697336]) torch.Size([1697336, 1]) torch.Size([23669]) torch.Size([23669, 250]) torch.Size([9048]) torch.Size([9048, 250])
+2026-09-17 14:08:16,521 - [INFO] - Run: 01, Epoch: 40, Loss: 0.1116, Train: 99.93%, Valid: 6.73%, Test: 6.10%
+2026-09-17 14:08:16,521 - [INFO] - Run: 01, Epoch: 40, Loss: 0.1116, Train: 99.86%, Valid: 1.58%, Test: 1.34%
+2026-09-17 14:08:16,521 - [INFO] - Run: 01, Epoch: 40, Loss: 0.1116, Train: 100.00%, Valid: 4.90%, Test: 4.54%
+2026-09-17 14:08:16,521 - [INFO] - Run: 01, Epoch: 40, Loss: 0.1116, Train: 100.00%, Valid: 15.20%, Test: 13.72%
+2026-09-17 14:08:16,521 - [INFO] - Run: 01, Epoch: 40, Loss: 0.1116, Train: 100.00%, Valid: 26.28%, Test: 24.23%
+2026-09-17 14:08:16,521 - [INFO] - Run: 01, Epoch: 40, Loss: 0.1116, Train: 100.00%, Valid: 50.38%, Test: 46.46%
+2026-09-17 14:08:16,521 - [INFO] - Run: 01, Epoch: 40, Loss: 0.1116, Train: 100.00%, Valid: 78.02%, Test: 74.49%
+MRR
+2026-09-17 14:08:16,522 - [INFO] - best valid: 7.12%, best test: 5.78%
+---
+neg_train_pred size before predictions:  torch.Size([1697336, 1])
+train_pos train_neg valid_pos valid_neg test_pos test_neg torch.Size([1697336]) torch.Size([1697336, 1]) torch.Size([23669]) torch.Size([23669, 250]) torch.Size([9048]) torch.Size([9048, 250])
+2026-09-17 14:09:01,884 - [INFO] - Run: 01, Epoch: 60, Loss: 0.0285, Train: 99.99%, Valid: 6.97%, Test: 5.33%
+2026-09-17 14:09:01,884 - [INFO] - Run: 01, Epoch: 60, Loss: 0.0285, Train: 99.98%, Valid: 2.08%, Test: 1.20%
+2026-09-17 14:09:01,884 - [INFO] - Run: 01, Epoch: 60, Loss: 0.0285, Train: 100.00%, Valid: 5.36%, Test: 3.79%
+2026-09-17 14:09:01,884 - [INFO] - Run: 01, Epoch: 60, Loss: 0.0285, Train: 100.00%, Valid: 14.53%, Test: 10.95%
+2026-09-17 14:09:01,884 - [INFO] - Run: 01, Epoch: 60, Loss: 0.0285, Train: 100.00%, Valid: 25.07%, Test: 20.13%
+2026-09-17 14:09:01,884 - [INFO] - Run: 01, Epoch: 60, Loss: 0.0285, Train: 100.00%, Valid: 48.21%, Test: 42.15%
+2026-09-17 14:09:01,884 - [INFO] - Run: 01, Epoch: 60, Loss: 0.0285, Train: 100.00%, Valid: 76.07%, Test: 70.76%
+MRR
+2026-09-17 14:09:01,885 - [INFO] - best valid: 7.12%, best test: 5.78%
+---
+neg_train_pred size before predictions:  torch.Size([1697336, 1])
+train_pos train_neg valid_pos valid_neg test_pos test_neg torch.Size([1697336]) torch.Size([1697336, 1]) torch.Size([23669]) torch.Size([23669, 250]) torch.Size([9048]) torch.Size([9048, 250])
+2026-09-17 14:09:47,280 - [INFO] - Run: 01, Epoch: 80, Loss: 0.0217, Train: 99.99%, Valid: 6.78%, Test: 5.03%
+2026-09-17 14:09:47,280 - [INFO] - Run: 01, Epoch: 80, Loss: 0.0217, Train: 99.99%, Valid: 1.96%, Test: 1.08%
+2026-09-17 14:09:47,280 - [INFO] - Run: 01, Epoch: 80, Loss: 0.0217, Train: 100.00%, Valid: 5.18%, Test: 3.27%
+2026-09-17 14:09:47,280 - [INFO] - Run: 01, Epoch: 80, Loss: 0.0217, Train: 100.00%, Valid: 14.33%, Test: 10.58%
+2026-09-17 14:09:47,280 - [INFO] - Run: 01, Epoch: 80, Loss: 0.0217, Train: 100.00%, Valid: 24.52%, Test: 19.25%
+2026-09-17 14:09:47,280 - [INFO] - Run: 01, Epoch: 80, Loss: 0.0217, Train: 100.00%, Valid: 46.85%, Test: 41.31%
+2026-09-17 14:09:47,280 - [INFO] - Run: 01, Epoch: 80, Loss: 0.0217, Train: 100.00%, Valid: 75.00%, Test: 69.33%
+MRR
+2026-09-17 14:09:47,281 - [INFO] - best valid: 7.12%, best test: 5.78%
+---
+neg_train_pred size before predictions:  torch.Size([1697336, 1])
+train_pos train_neg valid_pos valid_neg test_pos test_neg torch.Size([1697336]) torch.Size([1697336, 1]) torch.Size([23669]) torch.Size([23669, 250]) torch.Size([9048]) torch.Size([9048, 250])
+2026-09-17 14:10:32,352 - [INFO] - Run: 01, Epoch: 100, Loss: 0.0173, Train: 100.00%, Valid: 6.78%, Test: 4.77%
+2026-09-17 14:10:32,352 - [INFO] - Run: 01, Epoch: 100, Loss: 0.0173, Train: 99.99%, Valid: 2.07%, Test: 1.01%
+2026-09-17 14:10:32,352 - [INFO] - Run: 01, Epoch: 100, Loss: 0.0173, Train: 100.00%, Valid: 5.17%, Test: 3.01%
+2026-09-17 14:10:32,352 - [INFO] - Run: 01, Epoch: 100, Loss: 0.0173, Train: 100.00%, Valid: 14.15%, Test: 9.66%
+2026-09-17 14:10:32,352 - [INFO] - Run: 01, Epoch: 100, Loss: 0.0173, Train: 100.00%, Valid: 23.83%, Test: 18.10%
+2026-09-17 14:10:32,352 - [INFO] - Run: 01, Epoch: 100, Loss: 0.0173, Train: 100.00%, Valid: 46.33%, Test: 40.26%
+2026-09-17 14:10:32,352 - [INFO] - Run: 01, Epoch: 100, Loss: 0.0173, Train: 100.00%, Valid: 74.15%, Test: 68.60%
+MRR
+2026-09-17 14:10:32,353 - [INFO] - best valid: 7.12%, best test: 5.78%
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:178: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print(f'Highest Train: {r.mean():.2f} ± {r.std():.2f}')
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:182: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  best_valid_var = round(r.std().item(), 2)
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:185: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print(f'Highest Valid: {r.mean():.2f} ± {r.std():.2f}')
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:190: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  best_train_var = round(r.std().item(), 2)
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:191: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print(f'  Final Train: {r.mean():.2f} ± {r.std():.2f}')
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:196: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  best_test_var = round(r.std().item(), 2)
+/home/ubuntu/AFDR_V7/repo/LPShift-main/utils.py:197: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  print(f'   Final Test: {r.mean():.2f} ± {r.std():.2f}')
+---
+Hits@1
+Run 01:
+Highest Train: 99.99
+Highest Valid: 2.08
+  Final Train: 99.98
+   Final Test: 1.20
+Hits@3
+Run 01:
+Highest Train: 100.00
+Highest Valid: 5.51
+  Final Train: 100.00
+   Final Test: 4.02
+Hits@10
+Run 01:
+Highest Train: 100.00
+Highest Valid: 15.53
+  Final Train: 100.00
+   Final Test: 12.43
+Hits@20
+Run 01:
+Highest Train: 100.00
+Highest Valid: 26.28
+  Final Train: 100.00
+   Final Test: 24.23
+Hits@50
+Run 01:
+Highest Train: 100.00
+Highest Valid: 50.38
+  Final Train: 100.00
+   Final Test: 46.46
+Hits@100
+Run 01:
+Highest Train: 100.00
+Highest Valid: 78.02
+  Final Train: 100.00
+   Final Test: 74.49
+MRR
+Run 01:
+Highest Train: 100.00
+Highest Valid: 7.12
+  Final Train: 99.98
+   Final Test: 5.78
+Hits@1
+All runs:
+Highest Train: 99.99 ± nan
+Highest Valid: 2.08 ± nan
+  Final Train: 99.98 ± nan
+   Final Test: 1.20 ± nan
+Hits@3
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 5.51 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 4.02 ± nan
+Hits@10
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 15.53 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 12.43 ± nan
+Hits@20
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 26.28 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 24.23 ± nan
+Hits@50
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 50.38 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 46.46 ± nan
+Hits@100
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 78.02 ± nan
+  Final Train: 100.00 ± nan
+   Final Test: 74.49 ± nan
+MRR
+All runs:
+Highest Train: 100.00 ± nan
+Highest Valid: 7.12 ± nan
+  Final Train: 99.98 ± nan
+   Final Test: 5.78 ± nan
+RESULTS FINISHED FOR GCN on ogbl-collab_CN_2_1_0
+	Command being timed: "timeout 2400 python /home/ubuntu/AFDR_V7/lpcompat_run.py main_gnn.py --data_name ogbl-collab_CN_2_1_0 --lr 1e-2 --dropout 0.1 --device 0 --epochs 100 --eval_steps 20 --log_steps 1 --runs 1 --seed 1 --batch_size 65536 --val_batch_size 65536 --test_batch_size 65536 --output_dir /home/ubuntu/AFDR_V7/raw/gcn_seed1"
+	User time (seconds): 785.19
+	System time (seconds): 13.09
+	Percent of CPU this job got: 339%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:54.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2543920
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 98
+	Minor (reclaiming a frame) page faults: 4750361
+	Voluntary context switches: 210123
+	Involuntary context switches: 114788
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 136
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

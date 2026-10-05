@@ -1,0 +1,42 @@
+{
+  "state": "complete",
+  "candidate": "C_ARPM",
+  "decision": "REJECT",
+  "winner": null,
+  "matched_control": "C1",
+  "validation_mrr": {
+    "F0": {
+      "C0": 0.16279348007164107,
+      "C1": 0.16456001512211704,
+      "C2": 0.16263586746655997,
+      "C3": 0.16454566180254532
+    },
+    "F1": {
+      "C0": 0.4876775417205556,
+      "C1": 0.4877045023413727,
+      "C2": 0.48765479969261055,
+      "C3": 0.4876291831428148
+    }
+  },
+  "absolute_gain": -4.835857774082575E-05,
+  "relative_gain": -9.916096929584616E-05,
+  "c4_validation_mrr": 0.487465378680696,
+  "anchor_shuffle_pass": true,
+  "base_go": false,
+  "structural_branch_parameter_count": 1073,
+  "raw_trainable_parameter_count": 24735,
+  "test_results": null,
+  "completed": [
+    "C0",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "updated": 1790863859.4462595,
+  "supplemental_c4": {
+    "stage": "F1",
+    "epochs": 5,
+    "validation_mrr": 0.487465378680696,
+    "test_evaluated": false
+  }
+}

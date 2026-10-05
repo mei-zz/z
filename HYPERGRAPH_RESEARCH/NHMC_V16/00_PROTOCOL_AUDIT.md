@@ -1,0 +1,11 @@
+# V16 Protocol Audit
+
+Workspace: `DCDLP-main` at `E:/我的资料库/Documents/Downloads/DCDLP-main`. The directory is not a Git worktree (`git status` reports that no repository is present), so source provenance will use SHA-256 hashes. V15 is complete with `SCALAR_SUFFICIENT`; its outputs remain untouched. No V14/V15/NHMC process was active at audit time.
+
+Frozen model baseline from the preceding V13/V15 audit: Raw-HG DCDLP A5 with additive pair decoder; GCN, hidden dimension 16, two layers, dropout 0, branch dimension 8; `hypergraph_mode=raw`, `hypergraph_construction=raw_star`; QTHS25 training-negative selection; BCE; learning rate 0.001, weight decay 0.0001, batch size 4096. The V13 Cora seed-0 five-epoch baseline had 24,735 parameters and validation MRR 0.5256204672. Per the later `NHMC_STAGE0_GATE_OVERRIDE`, fixed-summary Stage 0 is diagnostic only and cannot block the neural Stage 1 encoder. Stage 1 still uses the frozen baseline configuration and unchanged H1 gate.
+
+Dataset split implementation: the existing V7.1 `init_dataset(name)` and `TrainOnlyView` load the standard seed-0 Planetoid split. The view exposes only train positives/features/node count; validation/test identity properties are guarded placeholders. V7.1 `training_pool(view)` creates the same 20-negative-per-positive pool using its frozen seeds and train-only forbidden edges. V16 must not read `all_positive`, validation positives, or test positives while preparing Stage-0 features, matching, shuffle strata, or caches.
+
+Server at audit time: `ubuntu-ProLiant-DL380-Gen9`, 40 CPU threads, 125 GiB RAM (122 GiB available), Tesla V100-PCIE-16GB at 0% utilization / 14 MiB. Python environment: `/home/ubuntu/anaconda3/envs/mei_env/bin/python`, PyTorch 2.8.0+cu128, PyG 2.5.3, CUDA available. Cora processed split and PubMed/CiteSeer Planetoid raw/processed data are present on the server. Git branch is unavailable because the workspace has no `.git` metadata.
+
+Execution follows both overrides in `RUNTIME_OVERRIDE.md`: independent Stage-0 datasets run asynchronously, and Cora neural Stage 1 is launched irrespective of its fixed-summary Stage-0 decision. The Stage 1 promotion thresholds, controls, and sealed-test policy remain unchanged.

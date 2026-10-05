@@ -1,0 +1,17 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/DCDLP-main/AUTONOMOUS_MODEL_INNOVATION_V4/scripts/v4_runner.py", line 277, in <module>
+    main()
+  File "/home/ubuntu/DCDLP-main/AUTONOMOUS_MODEL_INNOVATION_V4/scripts/v4_runner.py", line 256, in main
+    model, result = run_model(model_id, dataset, config, edge_index, x, regressor, parent_state, device, hashes)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/DCDLP-main/AUTONOMOUS_MODEL_INNOVATION_V4/scripts/v4_runner.py", line 205, in run_model
+    "score_path": summarize_score_path(model, dataset, edge_index, x),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/DCDLP-main/AUTONOMOUS_MODEL_INNOVATION_V4/scripts/v4_runner.py", line 179, in summarize_score_path
+    "operator_norm": float(model.depth_operator.detach().norm().cpu()),
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1962, in __getattr__
+    raise AttributeError(
+AttributeError: 'ConcatMLP' object has no attribute 'depth_operator'

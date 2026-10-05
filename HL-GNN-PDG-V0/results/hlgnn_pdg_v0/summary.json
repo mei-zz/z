@@ -1,0 +1,25 @@
+{
+  "verdict": "STOP",
+  "dataset_mean_delta": {
+    "cora": 0.18975332068310516,
+    "citeseer": 0.219780219780219
+  },
+  "pdg_vs_shuffled_mean": {
+    "cora": -0.12650221378874468,
+    "citeseer": 0.146520146520146
+  },
+  "pdg_vs_profile_mean": {
+    "cora": 1.6445287792536287,
+    "citeseer": 0.146520146520146
+  },
+  "pdg_parent_improvement_count": 5,
+  "runtime_overhead_mean": 0.04208284392243703,
+  "memory_overhead_mean": 0.3756056140446782,
+  "diagnostics": {
+    "depth_mean": 4.351963996887207,
+    "depth_std": 1.5894571940104166e-07,
+    "gate_delta_mean": 1.161141490535274e-09,
+    "gate_pairwise_std_mean": 3.4173231711065455e-07,
+    "subgroup_depth_range_mean": 7.947285970052084e-07
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "state": "COMPLETE",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 5,
+  "sampler_source_sha256": "5d78bef583ab5d4f93b8e2f24bdefb6055dd2b2bcb88e0be3913897c02bee91a",
+  "negative_schedules": {
+    "0": {
+      "epoch_negative_hashes": [
+        "aabb35a3f6758294fcaccc3147fda963506e74cb97f6f6383a37b7ecc60011f7",
+        "a1e9d5868d40a49dcbfd257c70053b4038de15de331b59be9fbdc82dfd19c82b",
+        "a1d6089c2fe685e8553ea6842bbb3af009f79e52d67bea4a2682b1a143dc0af2",
+        "762c219598dc3633130fa80cf7cb7ab463b5d0c5bc63072523cd4518a9bb3ec1",
+        "a25b9276e69a33cf73cb493114e667cfdc948731f33653691df798e1bc64e340"
+      ]
+    },
+    "1": {
+      "epoch_negative_hashes": [
+        "9dc10aa2c88712594d42f2faa888f83cc2f23d7c8851339cfaa33aa064bedef5",
+        "92998d2293102adea812df78ad14b464a7ac01d81cbf3de8ef0bcb709b83c334",
+        "f1df5a78f8f2e9d8281484097a64f1feba4c8e720f31e70c780819961ea6a914",
+        "15f65cf8ba674aefef05c89eb266c6960167217146aa3e2e5d784bd3862d6a80",
+        "b31c095d5f2d89b6e84b7b3feb4de6e60c27499d5f55a58c355994ebe054a144"
+      ]
+    },
+    "2": {
+      "epoch_negative_hashes": [
+        "9812244acdffca05497b96852cc0eba5ee3474f9b26b9c6621a49e8ec7afcb43",
+        "94971b8bf734bc8faa98212a6b20e7964b4765395d96620d78d946b666761f9e",
+        "b4e43b86e53893c49a276e752d547985f07ef64fbf373b73c201692adfb1b0ca",
+        "7c3a243c18279a73f1bc729d22ec757492823b3860bfcc33ed388ba9a2b4f4bb",
+        "6551188660758d3ab31cd5c994c603576bcab126f00f1218e11b6b0a8c72c01a"
+      ]
+    }
+  },
+  "semantics": "precomputed same official calls; runtime resampling must equal schedule exactly; no sampler changes",
+  "heldout_label_filter": false
+}

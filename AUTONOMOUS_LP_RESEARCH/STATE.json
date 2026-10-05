@@ -1,0 +1,13 @@
+{
+  "status": "BLOCKED",
+  "current_round": 1,
+  "current_candidate": null,
+  "current_stage": "NO_EXECUTABLE_IDEA_AFTER_EXHAUSTIVE_SEARCH",
+  "datasets_available": ["cora_heart_seed0-4"],
+  "server_audit": "ENVIRONMENT_AUDIT.md",
+  "stop_conditions": ["GO", "STRONG GO", "SERVER_AUTH_BLOCKED", "ENVIRONMENT_BROKEN", "HARD_RESOURCE_BLOCKER", "NO_EXECUTABLE_IDEA_AFTER_EXHAUSTIVE_SEARCH"],
+  "test_labels_used_for_idea_selection": false,
+  "last_update": "2026-09-16",
+  "hard_blocker": "NO_EXECUTABLE_IDEA_AFTER_EXHAUSTIVE_SEARCH",
+  "stopped_candidates": ["R1-07 Neighbor-Role Transition Matrix", "R2-01 Block-Cut Route Profile", "R3-01 Non-Backtracking Continuation Profile", "R4-01 Boundary Matching/Cover Profile", "R4-03 Boundary Expansion Deficit", "R4-07 Neighbor Signature Alignment Profile", "R4-08 Fixed Laplacian Spectral Band Profile", "R1-03 Internally Vertex-Disjoint Path Profile", "R4-12 Exclusive-Neighborhood Cohesion Profile", "R4-13 Multi-Scale Community Boundary Profile"]
+}

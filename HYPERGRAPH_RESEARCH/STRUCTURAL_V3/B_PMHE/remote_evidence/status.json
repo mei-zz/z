@@ -1,0 +1,33 @@
+{
+  "state": "complete",
+  "candidate": "B_PMHE",
+  "decision": "REJECT",
+  "winner": null,
+  "matched_control": "B2",
+  "validation_mrr": {
+    "F0": {
+      "B0": 0.16279348007164107,
+      "B1": 0.16264219649103517,
+      "B2": 0.16449664376597004,
+      "B3": 0.16456001512211704
+    },
+    "F1": {
+      "B0": 0.4876775417205556,
+      "B1": 0.4878929704005632,
+      "B2": 0.4879706757539339,
+      "B3": 0.4877045023413727
+    }
+  },
+  "absolute_gain": 2.6960620817084724e-05,
+  "relative_gain": 5.5283703903948576e-05,
+  "structural_branch_parameter_count": 257,
+  "raw_trainable_parameter_count": 24735,
+  "test_results": null,
+  "completed": [
+    "B0",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "updated": 1790863160.6972525
+}

@@ -1,0 +1,60 @@
+{
+  "definition": "Each concurrency tier trained n independent, one-epoch Cora seed0 QTHS25 baseline replicas; tiers were run sequentially and only within-tier jobs overlapped. These are throughput diagnostics, not Stage1 experiments.",
+  "tiers": [
+    {
+      "concurrency": 1,
+      "jobs": 1,
+      "completed": 1,
+      "wall_seconds": 12.546349910087883,
+      "jobs_per_minute": 4.782267386927973,
+      "samples": 17,
+      "gpu_util_mean_percent": 7.294117647058823,
+      "gpu_util_peak_percent": 23.0,
+      "gpu_memory_peak_mb": 445.0,
+      "cpu_load_average_mean": 0.2435294117647058,
+      "failures": {}
+    },
+    {
+      "concurrency": 2,
+      "jobs": 2,
+      "completed": 2,
+      "wall_seconds": 16.374983630608767,
+      "jobs_per_minute": 7.328251600550686,
+      "samples": 21,
+      "gpu_util_mean_percent": 59.523809523809526,
+      "gpu_util_peak_percent": 99.0,
+      "gpu_memory_peak_mb": 877.0,
+      "cpu_load_average_mean": 0.5490476190476191,
+      "failures": {}
+    },
+    {
+      "concurrency": 4,
+      "jobs": 4,
+      "completed": 4,
+      "wall_seconds": 26.31403788132593,
+      "jobs_per_minute": 9.120607072254725,
+      "samples": 34,
+      "gpu_util_mean_percent": 73.67647058823529,
+      "gpu_util_peak_percent": 100.0,
+      "gpu_memory_peak_mb": 1741.0,
+      "cpu_load_average_mean": 1.2849999999999997,
+      "failures": {}
+    },
+    {
+      "concurrency": 8,
+      "jobs": 8,
+      "completed": 8,
+      "wall_seconds": 43.80346011603251,
+      "jobs_per_minute": 10.958038445559126,
+      "samples": 55,
+      "gpu_util_mean_percent": 85.63636363636364,
+      "gpu_util_peak_percent": 100.0,
+      "gpu_memory_peak_mb": 3471.0,
+      "cpu_load_average_mean": 3.7659999999999987,
+      "failures": {}
+    }
+  ],
+  "selected_workers": 8,
+  "selection_rule": "highest concurrency within 10% of best jobs/minute, all jobs complete, no OOM, and sampled peak memory under 80% of V100 16GB",
+  "completed_at_utc": "2026-10-03T05:13:08.440857+00:00"
+}

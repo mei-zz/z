@@ -1,0 +1,8 @@
+{
+  "state": "COMPLETE",
+  "phase": "stage0_complete",
+  "decision": "SCALAR_SUFFICIENT",
+  "gpu_training_started": false,
+  "test_evaluated": false,
+  "runtime_seconds": 27.071834292728454
+}

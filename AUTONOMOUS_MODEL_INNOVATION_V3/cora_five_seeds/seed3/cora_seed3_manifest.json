@@ -1,0 +1,14 @@
+{
+  "dataset": "cora",
+  "seed": 3,
+  "epochs": 4,
+  "models": [
+    "B0_Parent",
+    "B1_CDPT",
+    "B2_LateOnly",
+    "B3_ConcatMLP",
+    "B4_FixedRandom"
+  ],
+  "test_used_for_selection": false,
+  "data_hash": "98e4aaaf07d4"
+}

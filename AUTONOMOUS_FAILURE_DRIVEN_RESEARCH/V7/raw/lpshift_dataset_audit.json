@@ -1,0 +1,76 @@
+{
+  "dataset_name": "ogbl-collab_CN_2_1_0_seed1",
+  "node_count": 235868,
+  "feature_shape": [
+    235868,
+    128
+  ],
+  "training_graph_edge_index_shape": [
+    2,
+    1733096
+  ],
+  "positive_shapes": {
+    "train": [
+      1697336,
+      2
+    ],
+    "valid": [
+      23669,
+      2
+    ],
+    "test": [
+      9048,
+      2
+    ]
+  },
+  "positive_hashes": {
+    "train": "5db0173da159b5e79b4a641786b127644d64bb2593b273e11e76b29521e49a4a",
+    "valid": "6c16deb8c6b39dd25f93b76798bcebd62704015c1e5729cd4102fc7371ca35c3",
+    "test": "8f8c0805601d73ee91da361d1c6e695d4a3bc74602c46ffa2886f6004d98bf3a"
+  },
+  "negative": {
+    "valid": {
+      "shape": [
+        23669,
+        250,
+        2
+      ],
+      "sha256": "24ee3173d984974fd9c9fef4cb133a0e04722b6f8f28415b4fd7c2dafbf0f51d",
+      "self_loops": 0,
+      "duplicate_rows": 5605,
+      "in_training_graph": 0,
+      "in_original_ogb_positive_graph": 112,
+      "in_target_split_positive": 43
+    },
+    "test": {
+      "shape": [
+        9048,
+        250,
+        2
+      ],
+      "sha256": "10bd6bd21860ffd4a9b3c525205bfc6919be607e7b3534e1b8d135f575d313d4",
+      "self_loops": 0,
+      "duplicate_rows": 1858,
+      "in_training_graph": 0,
+      "in_original_ogb_positive_graph": 36,
+      "in_target_split_positive": 3
+    }
+  },
+  "positive_overlap": {
+    "train_valid": 0,
+    "train_test": 0,
+    "valid_test": 0,
+    "train_in_graph": 848668,
+    "valid_in_graph": 0,
+    "test_in_graph": 0
+  },
+  "original_ogb": {
+    "node_count": 235868,
+    "edge_index_shape": [
+      2,
+      2358104
+    ],
+    "positive_edge_count": 967632,
+    "edge_index_sha256": "c82d0deeabb84338b49ab2d0159a6043de9b9e4d17edaadf380bf61ce4d2dc9b"
+  }
+}

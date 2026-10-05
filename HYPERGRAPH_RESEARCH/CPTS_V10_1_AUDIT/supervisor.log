@@ -1,0 +1,20 @@
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+TRAIN_START {"dataset": "cora", "backbone": "gcn", "method": "TS_SHUFFLE", "seed": 2} pid 352433
+TRAIN_START {"dataset": "cora", "backbone": "gcn", "method": "TS_SHUFFLE", "seed": 1} pid 352432
+TRAIN_START {"dataset": "cora", "backbone": "gcn", "method": "TS_SHUFFLE", "seed": 0} pid 352430
+TRAIN_START {"dataset": "pubmed", "backbone": "gcn", "method": "MATCHED_Q", "seed": 1} pid 352427
+TRAIN_START {"dataset": "pubmed", "backbone": "gcn", "method": "MATCHED_Q", "seed": 2} pid 352431
+TRAIN_START {"dataset": "pubmed", "backbone": "gcn", "method": "MATCHED_Q", "seed": 0} pid 352434

@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "method": "NHMC_H1_NHMC_REAL",
+  "seed": 0,
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/H1_NHMC_REAL/checkpoints/pubmed_uniform_seed0_8698a253be0b.pt",
+  "result_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/H1_NHMC_REAL/raw/pubmed_uniform_seed0_8698a253be0b.json",
+  "diagnostics_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/stage1_pubmed/arms/H1_NHMC_REAL/epoch_diagnostics.json",
+  "train_seconds": 789.1100303162821,
+  "wall_seconds": 791.5056614107452,
+  "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+  "dynamic_sampler": null,
+  "model_state_hash": "70a381fbb16048ecd476a4ead2e5a9c6a3ca319baa0b569fbbec0de00acdd3b4",
+  "epoch10_validation_mrr": 0.8339445603908565,
+  "epoch_count": 5,
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "test_evaluated": false
+}

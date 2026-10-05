@@ -1,0 +1,15 @@
+{
+  "state": "COMPLETE",
+  "stage": "ALL_GATED_STAGES",
+  "decision": "GO",
+  "completed_jobs": 30,
+  "test_enabled": true,
+  "no_active_training_jobs": true,
+  "final_report_ready": true,
+  "final_decision": "GO",
+  "paper_story_supported": "PARTIAL",
+  "cora_test_supported": true,
+  "validation_training_jobs": 12,
+  "downstream_jobs": 30,
+  "total_v10_stage_jobs": 42
+}

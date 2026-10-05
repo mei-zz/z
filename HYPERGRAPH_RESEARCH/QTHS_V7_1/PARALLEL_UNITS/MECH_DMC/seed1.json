@@ -1,0 +1,114 @@
+{
+  "state": "COMPLETE",
+  "method": "MECH_DMC",
+  "seed": 1,
+  "record": {
+    "status": "COMPLETE",
+    "method": "cora_MECH_DMC",
+    "seed": 1,
+    "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_DMC/seed1/checkpoints/cora_uniform_seed1_8d4de57518b7.pt",
+    "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_DMC/seed1/raw/cora_uniform_seed1_8d4de57518b7.json",
+    "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CORA/MECH_DMC/seed1/epoch_diagnostics.json",
+    "train_seconds": 62.14616446336731,
+    "wall_seconds": 62.49918795423582,
+    "selected_negative_hash": "dc626fabe9fe4c5e84fac9bbc852c3ebf1b9a8d101ba56c9db66940a823f6438",
+    "dynamic_sampler": null,
+    "model_state_hash": "43cbb3618122f0f7643dd244f141095c0dfe7522e14dd074a1a3090054873bfa",
+    "epoch10_validation_mrr": 0.3768381033941841,
+    "epoch_count": 10,
+    "checkpoint_rule": "FIXED_EPOCH_10",
+    "test_evaluated": false,
+    "checkpoint_file_sha256": "de49d8fa3a269dd9bc7518d98a25ed67e336db9fa39fc77f03fc821a793b2dbf",
+    "validation_metrics": {
+      "mrr": 0.3768381033941841,
+      "hits10": 0.7946768060836502,
+      "hits20": 0.9885931558935361,
+      "hits50": 1.0,
+      "hits100": 1.0,
+      "mean_positive_rank": 6.136882129277566
+    },
+    "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+    "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+    "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a"
+  },
+  "selection_diagnostics": {
+    "method": "constrained random coordinate resampling over the frozen 20-candidate train pool",
+    "seed": 1,
+    "target_QTHS_diversity": {
+      "unique_endpoint_ratio": 0.18727718360071302,
+      "endpoint_gini": 0.6185124882503021,
+      "hub_endpoint_ratio": 0.21479500891265596
+    },
+    "matched_diversity_and_hardness": {
+      "unique_endpoint_ratio": 0.18727718360071302,
+      "endpoint_gini": 0.6185101021071782,
+      "hub_endpoint_ratio": 0.21479500891265596,
+      "mean_Rg": 0.9704006004315424
+    },
+    "absolute_target_error": {
+      "unique_endpoint_ratio": 0.0,
+      "endpoint_gini": -2.3861431239780018e-06,
+      "hub_endpoint_ratio": 0.0
+    },
+    "sweeps": [
+      {
+        "sweep": 1,
+        "changed_rows": 703,
+        "objective": 0.002093426615103885,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.618508950176015,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9581339712918545
+        }
+      },
+      {
+        "sweep": 2,
+        "changed_rows": 180,
+        "objective": 0.001688128487293254,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.6185121591271125,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9662374519185497
+        }
+      },
+      {
+        "sweep": 3,
+        "changed_rows": 93,
+        "objective": 0.0015468447544805882,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.6185142161470469,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9690637020358204
+        }
+      },
+      {
+        "sweep": 4,
+        "changed_rows": 36,
+        "objective": 0.0015158630537944948,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.618516026324589,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.969685242518042
+        }
+      },
+      {
+        "sweep": 5,
+        "changed_rows": 35,
+        "objective": 0.0014800269152129605,
+        "metrics": {
+          "unique_endpoint_ratio": 0.18727718360071302,
+          "endpoint_gini": 0.6185101021071782,
+          "hub_endpoint_ratio": 0.21479500891265596,
+          "mean_Rg": 0.9704006004315424
+        }
+      }
+    ],
+    "selected_negative_hash": "dc626fabe9fe4c5e84fac9bbc852c3ebf1b9a8d101ba56c9db66940a823f6438"
+  },
+  "updated_at": "2026-10-02T13:07:47+0800",
+  "test_evaluated": false
+}

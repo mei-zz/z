@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "method": "QTHS25",
+  "seed": 4,
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/PUBMED/GCN/QTHS25/seed4/checkpoints/pubmed_uniform_seed4_985f7390eb6c.pt",
+  "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/PUBMED/GCN/QTHS25/seed4/raw/pubmed_uniform_seed4_985f7390eb6c.json",
+  "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/RUNS/PUBMED/GCN/QTHS25/seed4/epoch_diagnostics.json",
+  "train_seconds": 3849.591798674781,
+  "wall_seconds": 3853.3072679182515,
+  "selected_negative_hash": "218bc89544a6309c19367b7aa0e846748b7b28cadd17a1dca17bd9fe9764b5e3",
+  "dynamic_sampler": null,
+  "model_state_hash": "6fc553b8ae01b75b0500d7f25656972c4ca195326cf8941f2a5cf4b1c484df44",
+  "epoch10_validation_mrr": 0.8504629053151759,
+  "epoch_count": 10,
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "test_evaluated": false
+}

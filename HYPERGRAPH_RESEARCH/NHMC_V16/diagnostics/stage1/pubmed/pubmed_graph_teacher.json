@@ -1,0 +1,14 @@
+{
+  "state": "COMPLETE",
+  "dataset": "pubmed",
+  "seed": 0,
+  "epochs": 10,
+  "hypergraph_mode": "disabled",
+  "training_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+  "graph_teacher_score_hash": "4bb225e71468288d819708447794d82d285b1d1949289b8786923466fefe5b06",
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/pubmed/graph_teacher/checkpoints/pubmed_uniform_seed0_0e1391bc1fca.pt",
+  "train_seconds": 223.67736776173115,
+  "wall_seconds": 335.50470106489956,
+  "valid_or_test_labels_used_for_training_or_selection": false,
+  "test_evaluated": false
+}

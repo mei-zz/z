@@ -1,0 +1,294 @@
+{
+  "candidate": "R4-13 Multi-Scale Community Boundary Profile",
+  "support": [
+    {
+      "seed": 0,
+      "label": 1,
+      "total": 527,
+      "same_community": 117,
+      "nonzero": 519,
+      "extract_seconds": 0.009999997913837433
+    },
+    {
+      "seed": 0,
+      "label": 0,
+      "total": 263500,
+      "same_community": 11592,
+      "nonzero": 263355,
+      "extract_seconds": 4.589999999850988
+    },
+    {
+      "seed": 1,
+      "label": 1,
+      "total": 527,
+      "same_community": 117,
+      "nonzero": 519,
+      "extract_seconds": 0.020000003278255463
+    },
+    {
+      "seed": 1,
+      "label": 0,
+      "total": 263500,
+      "same_community": 11592,
+      "nonzero": 263355,
+      "extract_seconds": 4.389999996870756
+    },
+    {
+      "seed": 2,
+      "label": 1,
+      "total": 527,
+      "same_community": 117,
+      "nonzero": 519,
+      "extract_seconds": 0.010000001639127731
+    },
+    {
+      "seed": 2,
+      "label": 0,
+      "total": 263500,
+      "same_community": 11592,
+      "nonzero": 263355,
+      "extract_seconds": 4.179999999701977
+    },
+    {
+      "seed": 3,
+      "label": 1,
+      "total": 527,
+      "same_community": 117,
+      "nonzero": 519,
+      "extract_seconds": 0.010000001639127731
+    },
+    {
+      "seed": 3,
+      "label": 0,
+      "total": 263500,
+      "same_community": 11592,
+      "nonzero": 263355,
+      "extract_seconds": 4.410000000149012
+    },
+    {
+      "seed": 4,
+      "label": 1,
+      "total": 527,
+      "same_community": 117,
+      "nonzero": 519,
+      "extract_seconds": 0.009999997913837433
+    },
+    {
+      "seed": 4,
+      "label": 0,
+      "total": 263500,
+      "same_community": 11592,
+      "nonzero": 263355,
+      "extract_seconds": 4.160000000149012
+    }
+  ],
+  "probes": [
+    {
+      "seed": 0,
+      "metrics": {
+        "Base": {
+          "auc": 0.4163859532449508,
+          "ap": 0.4675658302253338
+        },
+        "DangerousControls": {
+          "auc": 0.45153898422703814,
+          "ap": 0.4973030142693049
+        },
+        "TrueCommunity": {
+          "auc": 0.48934493776113575,
+          "ap": 0.497607556824595
+        },
+        "ShuffledCommunity": {
+          "auc": 0.44853908542844334,
+          "ap": 0.4926277922447392
+        },
+        "Proxy": {
+          "auc": 0.45943269383683444,
+          "ap": 0.49236044396795337
+        }
+      },
+      "candidate_minus_controls_auc": 0.0378059535340976,
+      "candidate_minus_shuffled_auc": 0.040805852332692405,
+      "candidate_minus_proxy_auc": 0.029912243924301307,
+      "candidate_minus_controls_ap": 0.00030454255529011043,
+      "candidate_minus_shuffled_ap": 0.004979764579855828,
+      "candidate_minus_proxy_ap": 0.005247112856641645
+    },
+    {
+      "seed": 1,
+      "metrics": {
+        "Base": {
+          "auc": 0.41885815900186507,
+          "ap": 0.4685401740123373
+        },
+        "DangerousControls": {
+          "auc": 0.45456056904104436,
+          "ap": 0.4986259499570449
+        },
+        "TrueCommunity": {
+          "auc": 0.49906027266550046,
+          "ap": 0.5027235065410467
+        },
+        "ShuffledCommunity": {
+          "auc": 0.4574954097934046,
+          "ap": 0.49741226795993193
+        },
+        "Proxy": {
+          "auc": 0.46254102271248687,
+          "ap": 0.49443042701927864
+        }
+      },
+      "candidate_minus_controls_auc": 0.0444997036244561,
+      "candidate_minus_shuffled_auc": 0.041564862872095876,
+      "candidate_minus_proxy_auc": 0.03651924995301359,
+      "candidate_minus_controls_ap": 0.004097556584001794,
+      "candidate_minus_shuffled_ap": 0.005311238581114763,
+      "candidate_minus_proxy_ap": 0.008293079521768054
+    },
+    {
+      "seed": 2,
+      "metrics": {
+        "Base": {
+          "auc": 0.41910393384319566,
+          "ap": 0.46890385131691403
+        },
+        "DangerousControls": {
+          "auc": 0.4555292110627594,
+          "ap": 0.4987262666007868
+        },
+        "TrueCommunity": {
+          "auc": 0.492409894605965,
+          "ap": 0.49875386818867806
+        },
+        "ShuffledCommunity": {
+          "auc": 0.45610027613526294,
+          "ap": 0.49704115978674834
+        },
+        "Proxy": {
+          "auc": 0.46238199193280227,
+          "ap": 0.4921499890053328
+        }
+      },
+      "candidate_minus_controls_auc": 0.03688068354320562,
+      "candidate_minus_shuffled_auc": 0.036309618470702076,
+      "candidate_minus_proxy_auc": 0.030027902673162743,
+      "candidate_minus_controls_ap": 2.7601587891279422e-05,
+      "candidate_minus_shuffled_ap": 0.001712708401929719,
+      "candidate_minus_proxy_ap": 0.006603879183345263
+    },
+    {
+      "seed": 3,
+      "metrics": {
+        "Base": {
+          "auc": 0.413711344677529,
+          "ap": 0.46364846484982103
+        },
+        "DangerousControls": {
+          "auc": 0.45298471858780665,
+          "ap": 0.4958368334685247
+        },
+        "TrueCommunity": {
+          "auc": 0.4867426159117524,
+          "ap": 0.495856226467253
+        },
+        "ShuffledCommunity": {
+          "auc": 0.45101851985716146,
+          "ap": 0.49145091977366284
+        },
+        "Proxy": {
+          "auc": 0.45923751969813065,
+          "ap": 0.48990159011538287
+        }
+      },
+      "candidate_minus_controls_auc": 0.03375789732394574,
+      "candidate_minus_shuffled_auc": 0.035724096054590926,
+      "candidate_minus_proxy_auc": 0.027505096213621738,
+      "candidate_minus_controls_ap": 1.9392998728329225e-05,
+      "candidate_minus_shuffled_ap": 0.004405306693590183,
+      "candidate_minus_proxy_ap": 0.005954636351870157
+    },
+    {
+      "seed": 4,
+      "metrics": {
+        "Base": {
+          "auc": 0.4107909612687765,
+          "ap": 0.4605603099397125
+        },
+        "DangerousControls": {
+          "auc": 0.449659529558039,
+          "ap": 0.49062266421485207
+        },
+        "TrueCommunity": {
+          "auc": 0.48120545331000886,
+          "ap": 0.4900208676517221
+        },
+        "ShuffledCommunity": {
+          "auc": 0.4478595902788822,
+          "ap": 0.48738442657795644
+        },
+        "Proxy": {
+          "auc": 0.4555581257499747,
+          "ap": 0.48552815572447444
+        }
+      },
+      "candidate_minus_controls_auc": 0.03154592375196985,
+      "candidate_minus_shuffled_auc": 0.03334586303112663,
+      "candidate_minus_proxy_auc": 0.025647327560034183,
+      "candidate_minus_controls_ap": -0.0006017965631299749,
+      "candidate_minus_shuffled_ap": 0.0026364410737656496,
+      "candidate_minus_proxy_ap": 0.00449271192724765
+    }
+  ],
+  "support_aggregate": {
+    "1": {
+      "total": 2635,
+      "same_community": 585,
+      "nonzero": 2595
+    },
+    "0": {
+      "total": 1317500,
+      "same_community": 57960,
+      "nonzero": 1316775
+    }
+  },
+  "probe_aggregate": {
+    "Base": {
+      "auc_mean": 0.41577007040726344,
+      "auc_std": 0.00353765910209516,
+      "ap_mean": 0.46584372606882374,
+      "ap_std": 0.0036171293377814705
+    },
+    "DangerousControls": {
+      "auc_mean": 0.4528546024953375,
+      "auc_std": 0.002346280329801688,
+      "ap_mean": 0.4962229457021027,
+      "ap_std": 0.0033436442870869868
+    },
+    "TrueCommunity": {
+      "auc_mean": 0.4897526348508725,
+      "auc_std": 0.0066327576150053994,
+      "ap_mean": 0.496992405134659,
+      "ap_std": 0.004642734212262936
+    },
+    "ShuffledCommunity": {
+      "auc_mean": 0.4522025762986309,
+      "auc_std": 0.004384370906987254,
+      "ap_mean": 0.49318331326860776,
+      "ap_std": 0.004174443532349629
+    },
+    "Proxy": {
+      "auc_mean": 0.45983027078604577,
+      "auc_std": 0.0028557004967916418,
+      "ap_mean": 0.4908741211664845,
+      "ap_std": 0.0033915139939087006
+    }
+  },
+  "delta_aggregate": {
+    "candidate_minus_controls_auc": 0.03689803235553498,
+    "candidate_minus_shuffled_auc": 0.03755005855224158,
+    "candidate_minus_proxy_auc": 0.029922364064826713,
+    "candidate_minus_controls_ap": 0.0007694594325563075,
+    "candidate_minus_shuffled_ap": 0.0038090918660512287,
+    "candidate_minus_proxy_ap": 0.006118283968174554
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "method": "V13_V13_PHASEB_L1_STAGE1_s0_L1_LISTWISE_RANDOM",
+  "seed": 0,
+  "checkpoint": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V13/experiments/V13_PHASEB_L1_STAGE1_s0/L1_LISTWISE_RANDOM/checkpoints/cora_uniform_seed0_801821e8bf33.pt",
+  "result_file": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V13/experiments/V13_PHASEB_L1_STAGE1_s0/L1_LISTWISE_RANDOM/raw/cora_uniform_seed0_801821e8bf33.json",
+  "diagnostics_file": "/home/zhoulihui/lchr_v2/AUTONOMOUS_LP_RESEARCH_V13/experiments/V13_PHASEB_L1_STAGE1_s0/L1_LISTWISE_RANDOM/epoch_diagnostics.json",
+  "train_seconds": 277.194934471976,
+  "wall_seconds": 277.60234195785597,
+  "selected_negative_hash": "1ada7e01d1b3fa788db9d8312167290d4191344ace2db40bb787ab78e027c758",
+  "dynamic_sampler": null,
+  "model_state_hash": "2227b832f5ceeb86d929bf89889d5773e92f0ba407aff6a9a66e600ddcc26d57",
+  "epoch10_validation_mrr": 0.5032648386214938,
+  "epoch_count": 5,
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "test_evaluated": false
+}

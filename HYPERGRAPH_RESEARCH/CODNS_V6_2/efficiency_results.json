@@ -1,0 +1,26 @@
+{
+  "candidate_pool_generation_seconds_V6_1": 1.2152371830306947,
+  "cold_teacher_training_seconds_V6_1": {
+    "Graph": 25.96615514298901,
+    "Raw-HG": 51.92147393338382
+  },
+  "cold_teacher_scoring_seconds_V6_1": {
+    "Graph": 16.33192501217127,
+    "Raw-HG": 21.112340376712382
+  },
+  "V6_2_teacher_forward_repeats": 0,
+  "teacher_cache_key_fields": [
+    "train_only_split_hash",
+    "seed",
+    "teacher_checkpoint_hash",
+    "candidate_pool_hash"
+  ],
+  "cache_verified": true,
+  "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "selection_cache_hit": true,
+  "selection_time_seconds_V6_2": 15.085630544926971,
+  "training_wall_seconds": {
+    "mechanism_training_state.json": 1047.1725763920695
+  },
+  "amortized_selection_seconds_per_epoch": 1.5085630544926971
+}

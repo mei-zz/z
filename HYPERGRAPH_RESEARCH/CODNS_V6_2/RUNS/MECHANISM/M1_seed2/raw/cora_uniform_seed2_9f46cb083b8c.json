@@ -1,0 +1,134 @@
+{
+  "dataset": "cora",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 2,
+  "cn_feature_mode": "raw",
+  "interaction_mode": "unrestricted",
+  "hypergraph_mode": "raw",
+  "hypergraph_construction": "raw_star",
+  "ghhr_training_mode": "none",
+  "lambda_h": 1.0,
+  "ghhr_tau": 1.0,
+  "complementarity_fusion_mode": "none",
+  "fusion_gate_hidden_dim": 8,
+  "fusion_margin_graph_threshold": 0.0,
+  "fusion_margin_hypergraph_threshold": 0.0,
+  "ghhr_beta": null,
+  "fusion_global_alpha_h": null,
+  "ghhr_epoch_diagnostics": [],
+  "construction_stats": {
+    "construction": "raw_star",
+    "raw_hyperedge_count": 2620,
+    "raw_incidence_count": 11596,
+    "requested_component_hyperedge_count": 0,
+    "added_hyperedge_count": 0,
+    "added_incidence_count": 0,
+    "total_hyperedge_count": 2620,
+    "total_incidence_count": 11596,
+    "average_component_count_per_node": 0.49556868537666177,
+    "average_component_count_per_nonisolated_center": 0.5122137404580153,
+    "component_size": {
+      "count": 0,
+      "mean": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0
+    },
+    "refined_center_count": 0,
+    "refined_center_ratio_all_nodes": 0.0,
+    "refined_center_ratio_nonisolated": 0.0,
+    "component_node_coverage_ratio": 0.0,
+    "mean_internal_density_in_group_members": 0.0,
+    "group_internal_density_count": 0
+  },
+  "construction_audit_seconds": 0.04456446599215269,
+  "lambda_aux": 0.05,
+  "score_routing_enabled": false,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "9f46cb083b8c",
+  "git_commit": "untracked",
+  "best_epoch": 9,
+  "validation": {
+    "checkpoint_rule": "fixed_final_epoch_10",
+    "epoch10_mrr": 0.5101472947195085,
+    "validation_best_diagnostic_mrr": 0.5101472947195085,
+    "validation_best_diagnostic_epoch": 10,
+    "validation_metrics_used_for_selection": false,
+    "test_evaluated": false,
+    "candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455"
+  },
+  "validation_curve": [],
+  "metrics": {},
+  "anchor_role_gamma": null,
+  "pair_moment_gamma": null,
+  "trainable_parameter_count": 24735,
+  "structural_branch_parameter_count": 0,
+  "anchor_pair_moment_gamma": null,
+  "runtime": {
+    "train_seconds": 69.1608271212317,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 43.4296875
+  },
+  "support_auxiliary": {
+    "lambda": 0.05,
+    "batches": 0,
+    "sampled_pairs_total": 0,
+    "mean_sampled_pairs_per_batch": 0.0,
+    "mean_unweighted_loss": 0.0
+  },
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M1_seed2/checkpoints/cora_uniform_seed2_9f46cb083b8c.pt",
+  "predictions": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M1_seed2/raw/cora_uniform_seed2_9f46cb083b8c_predictions.csv",
+  "intervention_failures": {},
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "fit_split": "train_only",
+    "uses_valid_or_test": false,
+    "used_as_model_input": false
+  },
+  "evaluation_candidates": {
+    "protocol": "standard",
+    "test_evaluated": false,
+    "negatives_per_positive": null
+  },
+  "data_integrity": {
+    "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+    "candidate_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+    "valid_identity_in_training_pool": false,
+    "test_identity_in_training_pool": false,
+    "all_positive_access_attempts": 0
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "e25ba3cdb8f9"
+  },
+  "parameter_count": {
+    "total": 24735,
+    "trainable": 24735,
+    "cn_branch": 481
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.0,
+    "lambda_target_response": 0.0,
+    "lambda_interaction_share": 0.0,
+    "lambda_interaction_delta": 0.0,
+    "lambda_orthogonal_legacy": 0.001,
+    "lambda_adversarial_legacy": 0.01
+  },
+  "device": "cuda",
+  "result_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M1_seed2/raw/cora_uniform_seed2_9f46cb083b8c.json",
+  "checkpoint_selection_audit": {
+    "rule": "FIXED_EPOCH_10",
+    "validation_best_is_diagnostic_only": true,
+    "heldout_metrics_used_for_checkpoint_selection": false,
+    "legacy_train_api_placeholder_reads": {
+      "valid_pos": 78,
+      "test_pos": 24
+    },
+    "heldout_identity_values_exposed_to_sampler": 0,
+    "test_identity_values_loaded": false
+  }
+}

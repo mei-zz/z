@@ -1,0 +1,15 @@
+{
+  "state": "complete",
+  "candidate": "C_HSA",
+  "decision": "REJECT",
+  "best_true_arm": "C3_lambda005",
+  "validation_mrr": {
+    "C0": 0.16279348007164107,
+    "C1": 0.16279348007164107,
+    "C2_lambda005": 0.16289076677088896,
+    "C2_lambda01": 0.16345266751113197,
+    "C3_lambda005": 0.16447455337318667,
+    "C3_lambda01": 0.16237711770663893
+  },
+  "updated": 1790860329.635439
+}

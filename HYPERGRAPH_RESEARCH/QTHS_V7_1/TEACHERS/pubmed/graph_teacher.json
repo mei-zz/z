@@ -1,0 +1,11 @@
+{
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/PUBMED/GRAPH_TEACHER/seed0/checkpoints/pubmed_uniform_seed0_388292949e1c.pt",
+  "checkpoint_file_sha256": "d77f6de92de98125e79e9cdefabf32f59676051fa7b630bb46527d013fa7275e",
+  "model_state_hash": "df5ab248480a16f6eda38e39c71d5101e4b764a6578063ebdac78896ff7390a8",
+  "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+  "scores_hash": "122eeede96f3ed654318d8de9406869887d68fb2272c7d561d794ec76a973595",
+  "validation_candidate_hash": "849850f5345b08bdaf7bfafdd8712504dd6f3a98e05de0d1c2642d552793908e",
+  "split_hash": "8043ef390ebc4d26eb5ce03307e19778f8d78f8d0dac19c0ff724a76b5e2bb3c",
+  "trained_with_uniform_train_pool": true,
+  "heldout_positive_identities_passed_to_teacher_or_sampler": false
+}

@@ -1,0 +1,7 @@
+{
+  "state": "COMPLETE",
+  "stage": "ALL_AUDITS",
+  "completed_utc": "2026-10-02T17:13:45.411010+00:00",
+  "final_decision": "CHANGE_POINT_DETECTOR_NOT_VALIDATED",
+  "no_active_training_jobs": true
+}

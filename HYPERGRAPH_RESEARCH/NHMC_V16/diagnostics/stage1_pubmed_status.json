@@ -1,0 +1,101 @@
+{
+  "state": "COMPLETE",
+  "phase": "stage1_complete",
+  "dataset": "pubmed",
+  "test_evaluated": false,
+  "gpu": "Tesla V100-PCIE-16GB",
+  "train_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+  "selected_negative_hash": "28f8b8720989c1a445a46480d7ce60ac9e07fa0de24103541b2dec566d97da7d",
+  "validation_candidate_hash": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+  "qths25": {
+    "alpha_candidate_occurrence_fraction": 0.25,
+    "prepool_size": 2,
+    "trimmed_occurrence_count": 18838,
+    "trimmed_row_count": 18838,
+    "selected_runner_up_count": 18838,
+    "hash_rule": "QTHS25"
+  },
+  "graph_teacher": {
+    "state": "COMPLETE",
+    "dataset": "pubmed",
+    "seed": 0,
+    "epochs": 10,
+    "hypergraph_mode": "disabled",
+    "training_pool_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+    "graph_teacher_score_hash": "4bb225e71468288d819708447794d82d285b1d1949289b8786923466fefe5b06",
+    "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/experiments/pubmed/graph_teacher/checkpoints/pubmed_uniform_seed0_0e1391bc1fca.pt",
+    "train_seconds": 223.67736776173115,
+    "wall_seconds": 335.50470106489956,
+    "valid_or_test_labels_used_for_training_or_selection": false,
+    "test_evaluated": false,
+    "cache_reused": true
+  },
+  "validation_candidate_sampling": {
+    "source": "uniform candidates filtered only by train/message edges",
+    "seed": 72200,
+    "grouping_seed": 72201,
+    "negative_count_per_positive": 20,
+    "shape": [
+      2216,
+      20,
+      2
+    ],
+    "self_positive_collisions_replaced": 0,
+    "train_forbidden_count": 37676,
+    "heldout_test_identities_used": false
+  },
+  "train_cache": {
+    "pair_count_unique": 75352,
+    "token_count": 4957442,
+    "stage0_raw_pair_cache_reused": 50778,
+    "fresh_pairs_computed": 24574,
+    "raw_tokens_sha256": "7de1f0a29c176ec046c4c1d5a75211ef4889f363568329ab55edbb3481bae633",
+    "shuffle_overlap_sha256": "b6ed11301a35dd0bce23239d6932ed17ee84c75a4a2de7fd7dd538e2aefa93b2",
+    "shuffle": {
+      "seed": 20261019,
+      "stratum_count": 592,
+      "singleton_token_fraction": 4.034338677083867e-07,
+      "informative_pair_count": 33125,
+      "candidate_pair_count": 75352,
+      "informative_shuffle_fraction": 0.4396034610892876,
+      "shuffle_power": "ADEQUATE"
+    },
+    "shuffle_seed": 20261019,
+    "pair_feature_archive_sha256": "c57a912acd3356cd2d5610a9f66c2d55d764a25cb39947bb81cd62d01ed83d91"
+  },
+  "validation_cache": {
+    "pair_count_unique": 46534,
+    "token_count": 323939,
+    "stage0_raw_pair_cache_reused": 0,
+    "fresh_pairs_computed": 46534,
+    "raw_tokens_sha256": "bc7965e59fe625dcdb2ff2e3ebcac2b2550d84cc59190f2f534c58bc6b99d1ee",
+    "shuffle_overlap_sha256": "a1909217eea169e77f380ac2f7150b5441771977457efa4684954c4ced9e64e4",
+    "shuffle": {
+      "seed": 20361019,
+      "stratum_count": 500,
+      "singleton_token_fraction": 2.1609006633965037e-05,
+      "informative_pair_count": 4129,
+      "candidate_pair_count": 46534,
+      "informative_shuffle_fraction": 0.08873082047535136,
+      "shuffle_power": "LOW_NATIVE_SHUFFLE_POWER"
+    },
+    "shuffle_seed": 20361019,
+    "pair_feature_archive_sha256": "49b42f0f9a41e46d1981dd2e74fd98f0b83761e3d8cbc0de707cc68437b3a35e"
+  },
+  "zero_init_audit": {
+    "base_initialization_identical": true,
+    "initial_logit_max_abs_difference": 1.1920928955078125e-07,
+    "zero_initialized_residual": true,
+    "initial_residual_output_max_abs": 0.0,
+    "max_abs_tolerance": 2e-07
+  },
+  "decision": "NHMC_STAGE1_REJECT",
+  "completed_arms": [
+    "B0_BASELINE",
+    "B1_HRA",
+    "B2_NATIVE_SCALAR",
+    "C1_NHMC_SIZE",
+    "C2_NHMC_SHUFFLE",
+    "H1_NHMC_REAL"
+  ]
+}

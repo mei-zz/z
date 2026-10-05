@@ -1,0 +1,27 @@
+{
+  "kind": "line",
+  "input": "../figures/source_data/trim_sensitivity_input.csv",
+  "x": "trim_ratio_percent",
+  "figsize": [
+    3.5,
+    2.6
+  ],
+  "font_size": 8,
+  "label_size": 8,
+  "tick_size": 7,
+  "legend_size": 7,
+  "xlim": [
+    0,
+    60
+  ],
+  "grid": true,
+  "figure_id": "trim_vs_hardness",
+  "y": "mean_selected_Rg",
+  "xlabel": "Nominal QTHS trim ratio (%)",
+  "ylabel": "Mean selected graph-teacher hardness Rg",
+  "ylim": [
+    0,
+    1
+  ],
+  "caption": "Mean selected negative hardness Rg on Cora for seed 0 across the registered trim ratios. Rg is the within-positive percentile of the frozen graph-teacher score among 20 training candidates, with 1 denoting the hardest candidate. This is a descriptive selection statistic, not a causal measure. No error bars are shown because only one seed is plotted; QTHS25 remains the frozen main rule."
+}

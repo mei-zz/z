@@ -1,0 +1,480 @@
+from __future__ import annotations
+
+import argparse
+import concurrent.futures as cf
+import hashlib
+import json
+import math
+import multiprocessing as mp
+import os
+import sys
+import time
+import traceback
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "AUTONOMOUS_LP_RESEARCH_V12"
+V71 = ROOT / "HYPERGRAPH_RESEARCH" / "QTHS_V7_1"
+V61 = ROOT / "HYPERGRAPH_RESEARCH" / "NEGATIVE_V6_1"
+V7 = ROOT / "HYPERGRAPH_RESEARCH" / "HARDNESS_V7"
+V62 = ROOT / "HYPERGRAPH_RESEARCH" / "CODNS_V6_2"
+sys.path[:0] = [str(ROOT / "src"), str(V71), str(V61), str(V62), str(V7),
+                str(ROOT / "HYPERGRAPH_RESEARCH" / "QTHS_V8_PAPER")]
+
+import numpy as np
+
+ACTIVE_ARM = "BASELINE"
+LAST_PAIRS = None
+POSITIVE_WEIGHTS = {}
+SHUFFLED_POSITIVE_WEIGHTS = {}
+NODE_PERMUTATION = None
+PATCHED = False
+
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def atomic_json(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(value, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp.replace(path)
+
+
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def canonical(pair):
+    a, b = int(pair[0]), int(pair[1])
+    return (a, b) if a <= b else (b, a)
+
+
+def worker_init():
+    os.environ.setdefault("OMP_NUM_THREADS", "2")
+    os.environ.setdefault("MKL_NUM_THREADS", "2")
+    import torch
+    torch.set_num_threads(2)
+    try:
+        torch.set_num_interop_threads(1)
+    except RuntimeError:
+        pass
+
+
+def install_hooks():
+    global PATCHED
+    if PATCHED:
+        return
+    import torch
+    from torch import nn
+    from dcdlp.models.dcdlp import DCDLP
+    init0, forward0, score0 = DCDLP.__init__, DCDLP.forward, DCDLP._score_state
+
+    def init1(self, *args, **kwargs):
+        init0(self, *args, **kwargs)
+        hidden = int(args[1]) if len(args) >= 2 else int(kwargs.get("hidden_dim", 128))
+        if ACTIVE_ARM.startswith("C1_"):
+            self.v12_residual = nn.Sequential(nn.Linear(3 * hidden, 8), nn.Tanh(), nn.Linear(8, 1))
+        elif ACTIVE_ARM.startswith("D1_"):
+            self.v12_residual = nn.Sequential(nn.Linear(2 * hidden, 8), nn.Tanh(), nn.Linear(8, 1))
+
+    def score1(self, h, pairs, neighbors, degrees, edge_index, apply_router):
+        out = score0(self, h, pairs, neighbors, degrees, edge_index, apply_router)
+        if ACTIVE_ARM.startswith("C1_"):
+            out["_v12_hu"] = h[pairs[:, 0]]
+            out["_v12_hv"] = h[pairs[:, 1]]
+        elif ACTIVE_ARM.startswith("D1_"):
+            n = h.shape[0]
+            srcs, dsts = [], []
+            for u, ns in enumerate(neighbors):
+                for v in ns:
+                    srcs.append(u)
+                    dsts.append(int(v))
+            sums = torch.zeros_like(h)
+            counts = torch.zeros((n, 1), dtype=h.dtype, device=h.device)
+            if srcs:
+                src = torch.as_tensor(srcs, dtype=torch.long, device=h.device)
+                dst = torch.as_tensor(dsts, dtype=torch.long, device=h.device)
+                sums.index_add_(0, src, h[dst])
+                counts.index_add_(0, src, torch.ones((len(src), 1), dtype=h.dtype, device=h.device))
+            context = sums / counts.clamp_min(1.0)
+            out["_v12_ctx_u"] = context[pairs[:, 0]]
+            out["_v12_ctx_v"] = context[pairs[:, 1]]
+            out["_v12_ctx_all"] = context
+        return out
+
+    def forward1(self, x, edge_index, pairs, remove_target_edges=True, support_edge_index=None):
+        global LAST_PAIRS
+        out = forward0(self, x, edge_index, pairs,
+                       remove_target_edges=remove_target_edges,
+                       support_edge_index=support_edge_index)
+        if ACTIVE_ARM.startswith("C1_"):
+            hu, hv = out["_v12_hu"], out["_v12_hv"]
+            cross = hu * hv if ACTIVE_ARM == "C1_PAIR" else 0.5 * (hu.square() + hv.square())
+            feature = torch.cat([hu + hv, (hu - hv).abs(), cross], dim=-1)
+            out["logit"] = out["logit"] + self.v12_residual(feature).squeeze(-1)
+        elif ACTIVE_ARM.startswith("D1_"):
+            cu, cv = out["_v12_ctx_u"], out["_v12_ctx_v"]
+            if ACTIVE_ARM == "D1_EGO_PERM":
+                perm = torch.as_tensor(NODE_PERMUTATION, dtype=torch.long, device=cu.device)
+                context = out["_v12_ctx_all"]
+                cu, cv = context[perm[pairs[:, 0]]], context[perm[pairs[:, 1]]]
+            feature = torch.cat([cu + cv, (cu - cv).abs()], dim=-1)
+            out["logit"] = out["logit"] + self.v12_residual(feature).squeeze(-1)
+        LAST_PAIRS = pairs.detach().cpu().numpy().copy()
+        return out
+
+    DCDLP.__init__ = init1
+    DCDLP._score_state = score1
+    DCDLP.forward = forward1
+    PATCHED = True
+
+
+def positive_weights(view):
+    adj = [set() for _ in range(view.num_nodes)]
+    for u, v in view.train_graph().edges():
+        adj[int(u)].add(int(v))
+        adj[int(v)].add(int(u))
+    cn = np.asarray([len(adj[int(u)] & adj[int(v)]) for u, v in view.train_pos], dtype=np.int64)
+    order = np.argsort(cn, kind="stable")
+    ranks = np.empty(len(order), dtype=np.float64)
+    ranks[order] = np.arange(len(order), dtype=np.float64) / max(1, len(order) - 1)
+    weights = (2.0 - ranks)
+    weights /= weights.mean()
+    shuffled = weights[np.random.default_rng(731001).permutation(len(weights))]
+    real = {canonical(edge): float(w) for edge, w in zip(view.train_pos, weights)}
+    perm = {canonical(edge): float(w) for edge, w in zip(view.train_pos, shuffled)}
+    return real, perm
+
+
+def loss_hook(arm):
+    import torch
+    from torch.nn import functional as F
+    calls = {"n": 0}
+
+    def loss(logits, labels, *args, **kwargs):
+        pos, neg = logits[labels > 0.5], logits[labels <= 0.5]
+        if arm.startswith("F1_") and len(pos) and len(neg):
+            k = min(10, len(neg))
+            if arm == "F1_TOP10":
+                selected = torch.topk(neg, k=k, largest=True, sorted=False).values
+            else:
+                calls["n"] += 1
+                gen = torch.Generator(device=neg.device)
+                gen.manual_seed(91000 + calls["n"])
+                idx = torch.randperm(len(neg), generator=gen, device=neg.device)[:k]
+                selected = neg[idx]
+            return F.softplus(selected.unsqueeze(0) - pos.unsqueeze(1)).mean()
+        if arm.startswith("G1_"):
+            if LAST_PAIRS is None or len(LAST_PAIRS) != len(labels):
+                raise RuntimeError("positive-weight hook could not align the train pair batch")
+            mapping = POSITIVE_WEIGHTS if arm == "G1_CLOSURE" else SHUFFLED_POSITIVE_WEIGHTS
+            weights = torch.ones_like(labels)
+            for i, (edge, label) in enumerate(zip(LAST_PAIRS, labels.detach().cpu().tolist())):
+                if label > 0.5:
+                    key = canonical(edge)
+                    if key not in mapping:
+                        raise RuntimeError("weight lookup received a non-training positive")
+                    weights[i] = mapping[key]
+            per_sample = F.binary_cross_entropy_with_logits(logits, labels, reduction="none")
+            return (per_sample * weights).mean()
+        return F.binary_cross_entropy_with_logits(logits, labels)
+    return loss
+
+
+def source_hashes():
+    paths = [
+        ROOT / "src/dcdlp/train.py",
+        ROOT / "src/dcdlp/models/dcdlp.py",
+        ROOT / "src/dcdlp/evaluate.py",
+        ROOT / "src/dcdlp/evaluation/ranking.py",
+        ROOT / "HYPERGRAPH_RESEARCH/QTHS_V8_PAPER/experiment_v8.py",
+        ROOT / "HYPERGRAPH_RESEARCH/QTHS_V7_1/experiment_v71.py",
+        ROOT / "HYPERGRAPH_RESEARCH/CODNS_V6_2/run_codns_v6_2.py",
+        ROOT / "HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/run_negative_v6_1.py",
+        Path(__file__).resolve(),
+    ]
+    return {str(p.relative_to(ROOT)): sha256_file(p) for p in paths}
+
+
+def run_one(task):
+    global ACTIVE_ARM, LAST_PAIRS, POSITIVE_WEIGHTS, SHUFFLED_POSITIVE_WEIGHTS, NODE_PERMUTATION
+    worker_init()
+    import torch
+    import experiment_v8 as v8
+    from dcdlp import train as train_module
+    ACTIVE_ARM = task["arm"]
+    LAST_PAIRS = None
+    install_hooks()
+    full, view, pool, scores, pool_hash, vp, vn, valid_hash = v8.dataset_context("cora")
+    if v8.v61.array_hash(pool) != pool_hash:
+        raise RuntimeError("strict training candidate-pool hash mismatch")
+    POSITIVE_WEIGHTS, SHUFFLED_POSITIVE_WEIGHTS = positive_weights(view)
+    NODE_PERMUTATION = np.random.default_rng(810331).permutation(view.num_nodes)
+    selected = v8.selected_edges({"method": "SH75", "seed": 0, "alpha": None}, pool, scores, view.train_pos)
+    if selected.shape != (len(view.train_pos), 2):
+        raise RuntimeError("SH75 sample shape mismatch")
+    train_edges = {canonical(edge) for edge in view.train_graph().edges()}
+    if any(canonical(edge) in train_edges for edge in selected):
+        raise RuntimeError("SH75 sample contains a training/message edge")
+    v8.engine.EPOCHS = int(task["epochs"])
+    v8.engine.candidate_pool, v8.engine.candidate_pool_hash = pool, pool_hash
+    v8.engine.validation_candidate_hash = valid_hash
+    old_loss = train_module.link_prediction_loss
+    train_module.link_prediction_loss = loss_hook(ACTIVE_ARM)
+    folder = OUT / "experiments" / task["candidate_id"] / task["arm"]
+    rel = folder.relative_to(ROOT).as_posix()
+    started = time.perf_counter()
+    torch.cuda.synchronize()
+    torch.cuda.reset_peak_memory_stats()
+    try:
+        rec = v8.engine.train_one(
+            view, f"V12_{task['candidate_id']}_{task['arm']}", 0, selected, rel,
+            vp, vn, initialize_from_v6=False, dataset_name="cora", hypergraph_mode="raw",
+        )
+        metrics, params = v8.metric_for_checkpoint(rec["checkpoint"], view, vp, vn)
+        if not math.isclose(float(metrics["mrr"]), float(rec["epoch10_validation_mrr"]), rel_tol=0, abs_tol=1e-8):
+            raise RuntimeError("fixed-final-epoch validation recheck mismatch")
+        torch.cuda.synchronize()
+        result = {
+            **task,
+            "state": "COMPLETE",
+            "validation_metrics": metrics,
+            "trainable_parameters": int(params),
+            "train_seconds": float(rec.get("runtime", {}).get("train_seconds", 0.0)),
+            "total_wall_seconds": float(time.perf_counter() - started),
+            "peak_gpu_memory_mb": float(torch.cuda.max_memory_allocated() / (1024 * 1024)),
+            "checkpoint": str(rec["checkpoint"]),
+            "checkpoint_sha256": sha256_file(Path(rec["checkpoint"])),
+            "train_pool_hash": pool_hash,
+            "validation_candidate_hash": valid_hash,
+            "selected_negative_hash": v8.v61.array_hash(selected),
+            "test_evaluated": False,
+            "source_hashes": source_hashes(),
+            "candidate_patch_id": hashlib.sha256(
+                (sha256_file(Path(__file__)) + task["candidate_id"] + task["arm"] + task["definition"]).encode()
+            ).hexdigest(),
+            "train_record": rec,
+            "completed_at_utc": utc_now(),
+        }
+        atomic_json(folder / "result.json", result)
+        return result
+    except Exception as exc:
+        result = {**task, "state": "FAILED", "error": repr(exc),
+                  "traceback": traceback.format_exc(), "test_evaluated": False,
+                  "completed_at_utc": utc_now()}
+        atomic_json(folder / "result.json", result)
+        return result
+    finally:
+        train_module.link_prediction_loss = old_loss
+        torch.cuda.empty_cache()
+
+
+def tasks():
+    rows = [
+        ("B0", "BASELINE", "SH75 plus BCE matched reference", "BCE baseline for the candidates"),
+        ("F1", "F1_TOP10", "Softplus ranking of positives against batch-top ten SH75 negatives", "V12-F1"),
+        ("F1", "F1_RANDOM10", "Softplus ranking of positives against random ten SH75 negatives", "V12-F1 matched control"),
+        ("G1", "G1_CLOSURE", "Train-only positive closure-rank weights", "V12-G1"),
+        ("G1", "G1_SHUFFLED", "Same positive weights under a fixed train-positive permutation", "V12-G1 matched control"),
+        ("C1", "C1_PAIR", "Symmetric endpoint product MLP residual", "V12-C1"),
+        ("C1", "C1_SELF", "Same-size MLP using endpoint self-moments", "V12-C1 parameter control"),
+        ("D1", "D1_EGO", "One-hop target-masked pair-context residual", "V12-D1"),
+        ("D1", "D1_EGO_PERM", "Same residual using fixed node-permuted context", "V12-D1 mechanism control"),
+    ]
+    output = []
+    for i, (cid, arm, definition, purpose) in enumerate(rows, 1):
+        output.append({
+            "job_id": f"V12-S1-{i:02d}", "candidate_id": cid, "arm": arm,
+            "family": {"F1":"F", "G1":"G", "C1":"B/C", "D1":"D"}.get(cid, "baseline"),
+            "definition": definition, "purpose": purpose, "stage": "stage1",
+            "dataset": "cora", "seed": 0, "epochs": 5, "priority": "P2",
+            "estimated_cost": "1 Stage-1-equivalent", "status": "QUEUED",
+            "gpu_mem_estimate": "under 1 GiB per process; verify pilot",
+        })
+    return output
+
+
+def preflight():
+    worker_init()
+    import torch
+    import experiment_v8 as v8
+    info = v8.base.ensure_expected_runtime()
+    full, view, pool, scores, pool_hash, vp, vn, valid_hash = v8.dataset_context("cora")
+    if pool.shape != (len(view.train_pos), 20, 2) or scores.shape != pool.shape[:2]:
+        raise RuntimeError("unexpected fixed train-pool dimensions")
+    selected = v8.selected_edges({"method":"SH75","seed":0,"alpha":None}, pool, scores, view.train_pos)
+    if not torch.cuda.is_available() or "V100" not in torch.cuda.get_device_name(0):
+        raise RuntimeError("expected the audited Tesla V100 server")
+    record = {
+        "state":"PREFLIGHT_PASS", "workspace":"DCDLP-main", "dataset":"cora",
+        "split_hash":v8.base.split_hash(view), "train_pool_hash":pool_hash,
+        "validation_candidate_hash":valid_hash, "train_positive_count":int(len(view.train_pos)),
+        "validation_positive_count":int(len(vp)), "pool_shape":list(pool.shape),
+        "selected_negative_hash":v8.v61.array_hash(selected),
+        "test_loaded":False, "test_enabled":False, "source_hashes":source_hashes(),
+        "runtime":info, "gpu":torch.cuda.get_device_name(0),
+        "gpu_total_bytes":int(torch.cuda.get_device_properties(0).total_memory),
+        "cpu_count":os.cpu_count(), "worker_count":6, "completed_at_utc":utc_now(),
+    }
+    atomic_json(OUT / "preflight.json", record)
+    return record
+
+
+def decide(results):
+    by = {r["arm"]:r for r in results if r.get("state") == "COMPLETE"}
+    if "BASELINE" not in by:
+        return {"state":"INFRASTRUCTURE_FAILURE","reason":"matched SH75+BCE baseline did not complete"}
+    baseline = float(by["BASELINE"]["validation_metrics"]["mrr"])
+    decisions = {}
+    for cid, treatment, control in [
+        ("V12-F1","F1_TOP10","F1_RANDOM10"),
+        ("V12-G1","G1_CLOSURE","G1_SHUFFLED"),
+        ("V12-C1","C1_PAIR","C1_SELF"),
+        ("V12-D1","D1_EGO","D1_EGO_PERM"),
+    ]:
+        if treatment not in by or control not in by:
+            decisions[cid] = {"decision":"INFRASTRUCTURE_FAILURE"}
+            continue
+        candidate = float(by[treatment]["validation_metrics"]["mrr"])
+        matched = float(by[control]["validation_metrics"]["mrr"])
+        delta = candidate - baseline
+        effect = delta >= 0.003 or (baseline > 0 and delta / baseline >= 0.01)
+        passed = effect and candidate > matched
+        decisions[cid] = {
+            "decision":"STAGE1_GO" if passed else "REJECT",
+            "baseline_mrr":baseline,"candidate_mrr":candidate,
+            "matched_control_mrr":matched,"delta":delta,
+            "relative_delta":delta / baseline if baseline else None,
+            "beats_control":candidate > matched,"effect_gate":bool(effect),
+        }
+    return {"state":"STAGE1_BATCH_COMPLETE","baseline_mrr":baseline,"candidates":decisions}
+
+
+def write_queue(task_list, complete, failed, running):
+    fields=["job_id","candidate","stage","dataset","seed","priority","estimated_cost","status",
+            "gpu_mem_estimate","start_time","end_time","result"]
+    lines=["\t".join(fields)]
+    for task in task_list:
+        job=task["job_id"]
+        status="COMPLETE" if job in complete else ("FAILED" if job in failed else ("RUNNING" if job in running else "QUEUED"))
+        result=failed.get(job,"experiments/"+task["candidate_id"]+"/"+task["arm"]+"/result.json" if status=="COMPLETE" else "")
+        values=[job,task["candidate_id"]+":"+task["arm"],task["stage"],task["dataset"],str(task["seed"]),
+                task["priority"],task["estimated_cost"],status,task["gpu_mem_estimate"],"","",result]
+        lines.append("\t".join(values))
+    (OUT/"EXPERIMENT_QUEUE.tsv").write_text("\n".join(lines)+"\n",encoding="utf-8")
+
+
+def run_batch(workers):
+    OUT.mkdir(parents=True, exist_ok=True)
+    pf=preflight()
+    task_list=tasks()
+    cache={}
+    pending=[]
+    complete=set()
+    for task in task_list:
+        result_file=OUT/"experiments"/task["candidate_id"]/task["arm"]/"result.json"
+        if result_file.exists():
+            try:
+                prior=json.loads(result_file.read_text(encoding="utf-8"))
+                if prior.get("state")=="COMPLETE":
+                    cache[task["arm"]]=prior
+                    complete.add(task["job_id"])
+                    continue
+            except Exception:
+                pass
+        pending.append(task)
+    failed={}
+    running={t["job_id"] for t in pending}
+    write_queue(task_list,complete,failed,running)
+    atomic_json(OUT/"status.json",{
+        "state":"RUNNING","phase":"STAGE1_FIRST_BATCH","workspace":"DCDLP-main",
+        "gpu":pf["gpu"],"cpu_count":pf["cpu_count"],"worker_count":workers,
+        "completed":len(complete),"total":len(task_list),"test_evaluated":False,
+        "started_at_utc":utc_now(),
+    })
+    results=list(cache.values())
+    if pending:
+        with cf.ProcessPoolExecutor(max_workers=min(workers,len(pending)),
+                                    mp_context=mp.get_context("spawn"),
+                                    initializer=worker_init) as pool:
+            futures={pool.submit(run_one,t):t for t in pending}
+            for future in cf.as_completed(futures):
+                task=futures[future]
+                running.discard(task["job_id"])
+                try:
+                    result=future.result()
+                except Exception as exc:
+                    result={**task,"state":"FAILED","error":repr(exc),"traceback":traceback.format_exc()}
+                results.append(result)
+                if result.get("state")=="COMPLETE":
+                    complete.add(task["job_id"])
+                else:
+                    failed[task["job_id"]]=result.get("error","unknown failure")
+                write_queue(task_list,complete,failed,running)
+                atomic_json(OUT/"status.json",{
+                    "state":"RUNNING","phase":"STAGE1_FIRST_BATCH","completed":len(complete),
+                    "total":len(task_list),"completed_jobs":sorted(complete),"failed_jobs":failed,
+                    "gpu":pf["gpu"],"worker_count":workers,"test_evaluated":False,"updated_at_utc":utc_now(),
+                })
+    decision=decide(results)
+    atomic_json(OUT/"results.json",{
+        "status":decision["state"],"phase1_stage1":decision,"experiments":results,
+        "test_evaluated":False,"source_hashes":pf["source_hashes"],"preflight":pf,
+        "generated_at_utc":utc_now(),
+    })
+    atomic_json(OUT/"status.json",{
+        "state":decision["state"],"phase":"stage1_first_batch_complete",
+        "test_evaluated":False,"decisions":decision,"completed":len(complete),
+        "total":len(task_list),"updated_at_utc":utc_now(),
+    })
+    report=[
+        "# V12 First Batch Report","","State: "+decision["state"],"",
+        "Cora standard, seed 0, five fixed epochs, SH75-matched training negatives, fixed-final-epoch validation MRR. Test was not loaded or evaluated.","",
+        "Matched SH75+BCE baseline MRR: "+str(decision.get("baseline_mrr","NA")),"",
+        "| Candidate | Decision | Candidate MRR | Delta vs baseline | Matched control MRR |",
+        "|---|---|---:|---:|---:|",
+    ]
+    for cid,value in decision.get("candidates",{}).items():
+        report.append("| "+cid+" | "+str(value.get("decision"))+" | "+str(value.get("candidate_mrr","NA"))+" | "+str(value.get("delta","NA"))+" | "+str(value.get("matched_control_mrr","NA"))+" |")
+    report += ["","Stage1_GO is not a PAPER_CANDIDATE. Novelty review and Stage 2/3 are still required.",
+               "This report is only the first falsification batch. If all ideas fail, derive another batch from the observed failure modes under the registered budget.",""]
+    (OUT/"experiments"/"FIRST_BATCH_REPORT.md").write_text("\n".join(report),encoding="utf-8")
+
+
+def pilot():
+    pf=preflight()
+    task=tasks()[0]
+    result=run_one(task)
+    atomic_json(OUT/"pilot_status.json",{"preflight":pf,"result":result,"test_evaluated":False})
+    return result
+
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--preflight",action="store_true")
+    parser.add_argument("--pilot",action="store_true")
+    parser.add_argument("--run-stage1",action="store_true")
+    parser.add_argument("--workers",type=int,default=6)
+    args=parser.parse_args()
+    if not 1<=args.workers<=8:
+        raise SystemExit("workers must be between 1 and 8")
+    if args.preflight:
+        print(json.dumps(preflight(),indent=2,ensure_ascii=False))
+    elif args.pilot:
+        print(json.dumps(pilot(),indent=2,ensure_ascii=False))
+    elif args.run_stage1:
+        run_batch(args.workers)
+    else:
+        parser.error("choose --preflight, --pilot or --run-stage1")
+
+
+if __name__=="__main__":
+    main()
+

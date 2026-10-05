@@ -1,0 +1,9 @@
+{
+  "dataset": "cora",
+  "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+  "positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+  "positive_count": 527,
+  "negative_count_per_positive": 20,
+  "created_after_validation_freeze": true,
+  "reused_frozen_V7_1_test_candidates": true
+}

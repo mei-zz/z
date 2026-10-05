@@ -1,0 +1,15 @@
+{
+  "dataset": "cora",
+  "seed": 1,
+  "epochs": 4,
+  "models": [
+    "A_EarlyEarly",
+    "B_LateLate",
+    "C_CDPT",
+    "D_ConcatMLP",
+    "E_FixedRandom"
+  ],
+  "test_used_for_selection": false,
+  "data_hash": "98e4aaaf07d4",
+  "deterministic_algorithms": false
+}

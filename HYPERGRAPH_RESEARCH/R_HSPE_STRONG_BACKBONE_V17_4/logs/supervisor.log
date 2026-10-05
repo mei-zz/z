@@ -1,0 +1,13 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/scripts/strong174.py", line 344, in <module>
+    elif command=='supervise':supervise()
+                              ^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/scripts/strong174.py", line 306, in supervise
+    assert_frozen();reports('RUNNING','PHASE_A_RUNNING');phase_execute('A',('cora','pubmed'),[0,1,2],5,ARMS)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/scripts/strong174.py", line 295, in phase_execute
+    if x['proc'].returncode:raise RuntimeError('STOP_TRAIN_FAILED '+str(x['args'])+' '+x['log'])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: STOP_TRAIN_FAILED ('run', 'A', 'pubmed', 0, 'N1', 5) /home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/logs/run_A_pubmed_0_N1_5.log

@@ -1,0 +1,14 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py", line 745, in <module>
+    main()
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py", line 732, in main
+    result = run_stage1(dataset)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py", line 633, in run_stage1
+    zero_init = _check_zero_initialization(view, valid_pos, config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py", line 489, in _check_zero_initialization
+    raise RuntimeError(
+RuntimeError: NHMC zero-init equivalence failed: base_equal=True, residual_is_zero=False, residual_output=0.0, error=0.0, tolerance=2e-07
