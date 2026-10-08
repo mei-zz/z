@@ -1,0 +1,19 @@
+/home/zhoulihui/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "dataset": "citeseer",
+  "status": "SUPPORTED",
+  "seed0_screen": {
+    "seed0_mrr": {
+      "Graph-hard": 0.3576036800926328,
+      "Random-veto": 0.35521023310282185,
+      "Winner": 0.37587450402554534
+    },
+    "proceed_to_three_seeds": true
+  },
+  "mean_mrr": {
+    "Graph-hard": 0.41736740809721257,
+    "Random-veto": 0.41183917794148833,
+    "Winner": 0.4270301373473715
+  }
+}

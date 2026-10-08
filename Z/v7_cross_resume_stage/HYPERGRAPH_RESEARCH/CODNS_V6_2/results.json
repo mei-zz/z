@@ -1,0 +1,479 @@
+{
+  "status": "EXECUTED",
+  "protocol": "STRICT_TRAIN_ONLY",
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "preflight": {
+    "status": "PASS",
+    "gpu": "Tesla V100-PCIE-16GB",
+    "protocol": "STRICT_TRAIN_ONLY",
+    "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+    "train_positive_count": 4488,
+    "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+    "candidate_count": 89760,
+    "forbidden_edge_count": 4488,
+    "all_positive_access_attempts": 0,
+    "validation_identities_in_training_pool": false,
+    "test_identities_loaded": false,
+    "teacher_cache_keys_verified": true,
+    "teacher_checkpoint_hashes_verified": {
+      "Graph": "30343bdf61b8fa38a7d9eecbd280a836ee81ef4dfeb63efeb1c74445337ad28b",
+      "Raw-HG": "1fa029f5a0a3a6e32516907e28bd6179493eeb5429f69c97e4444acdaa9fe91e"
+    },
+    "V6_1_A1_selection_reused_as_M0_source": true,
+    "selection_match": {
+      "strata": 20,
+      "strata_definition": "equal-frequency quantile bins over the 2K Graph-hard prepool's global-pool rank percentile Rg",
+      "quota_reference": "M0 Graph-hard top-1 histogram; exact same per-stratum counts assigned to M1/M2/M3",
+      "target_counts": [
+        72,
+        85,
+        113,
+        119,
+        124,
+        144,
+        178,
+        169,
+        184,
+        201,
+        204,
+        239,
+        260,
+        279,
+        301,
+        311,
+        324,
+        360,
+        394,
+        427
+      ],
+      "mean_Rg": {
+        "M1": 0.9521024227502127,
+        "M2": 0.9522780018444718,
+        "M3": 0.9523123903245051
+      },
+      "median_Rg": {
+        "M1": 0.9662819327309796,
+        "M2": 0.9662596508428125,
+        "M3": 0.9662596508428125
+      },
+      "max_abs_mean_Rg_difference": 0.000209967574292369,
+      "KS_M1_M2": 0.002896613190730838,
+      "KS_M1_M3": 0.004010695187165776,
+      "KS_M2_M3": 0.0017825311942959
+    },
+    "strict_eligibility_unit_test": {
+      "status": "PASS",
+      "future_edge_and_ordinary_unknown_use_same_train_only_predicate": true,
+      "future_edge_identity_is_not_an_input_to_filter": true,
+      "train_positive_and_self_loop_rejected": true
+    }
+  },
+  "mechanism": {
+    "state": "VALIDATION_COMPLETE",
+    "protocol": "STRICT_TRAIN_ONLY",
+    "checkpoint_rule": "FIXED_EPOCH_10",
+    "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+    "metrics": {
+      "M0": {
+        "0": {
+          "mrr": 0.5327593804296001,
+          "hits10": 0.6730038022813688,
+          "mean_positive_rank": 7.2889733840304185,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M0_seed0/checkpoints/cora_uniform_seed0_2838317671e9.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5412303013268003,
+          "validation_best_diagnostic_epoch": 7
+        },
+        "1": {
+          "mrr": 0.32858258481823804,
+          "hits10": 0.7490494296577946,
+          "mean_positive_rank": 6.623574144486692,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M0_seed1/checkpoints/cora_uniform_seed1_d9233bafcc1b.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.32858258481823804,
+          "validation_best_diagnostic_epoch": 10
+        },
+        "2": {
+          "mrr": 0.5010194084528392,
+          "hits10": 0.9049429657794676,
+          "mean_positive_rank": 4.285171102661597,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M0_seed2/checkpoints/cora_uniform_seed2_907cada5ed8b.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5010194084528392,
+          "validation_best_diagnostic_epoch": 10
+        }
+      },
+      "M1": {
+        "0": {
+          "mrr": 0.5332606885404739,
+          "hits10": 0.6806083650190115,
+          "mean_positive_rank": 7.277566539923955,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M1_seed0/checkpoints/cora_uniform_seed0_97330586690e.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5388025425749531,
+          "validation_best_diagnostic_epoch": 7
+        },
+        "1": {
+          "mrr": 0.3215549604912635,
+          "hits10": 0.7566539923954373,
+          "mean_positive_rank": 6.733840304182509,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M1_seed1/checkpoints/cora_uniform_seed1_069abddf18e3.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.3215549604912635,
+          "validation_best_diagnostic_epoch": 10
+        },
+        "2": {
+          "mrr": 0.5101472947195085,
+          "hits10": 0.9125475285171103,
+          "mean_positive_rank": 4.262357414448669,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M1_seed2/checkpoints/cora_uniform_seed2_9f46cb083b8c.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5101472947195085,
+          "validation_best_diagnostic_epoch": 10
+        }
+      },
+      "M2": {
+        "0": {
+          "mrr": 0.5363929032528721,
+          "hits10": 0.6692015209125475,
+          "mean_positive_rank": 7.319391634980988,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M2_seed0/checkpoints/cora_uniform_seed0_e8927e68e6e6.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.542413964911434,
+          "validation_best_diagnostic_epoch": 7
+        },
+        "1": {
+          "mrr": 0.3305105114709995,
+          "hits10": 0.7566539923954373,
+          "mean_positive_rank": 6.581749049429658,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M2_seed1/checkpoints/cora_uniform_seed1_14f15f3d623e.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.3305105114709995,
+          "validation_best_diagnostic_epoch": 10
+        },
+        "2": {
+          "mrr": 0.5107749117780136,
+          "hits10": 0.8859315589353612,
+          "mean_positive_rank": 4.266159695817491,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M2_seed2/checkpoints/cora_uniform_seed2_e61e45dbe6d8.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5107749117780136,
+          "validation_best_diagnostic_epoch": 10
+        }
+      },
+      "M3": {
+        "0": {
+          "mrr": 0.5324402455718009,
+          "hits10": 0.6692015209125475,
+          "mean_positive_rank": 7.315589353612167,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M3_seed0/checkpoints/cora_uniform_seed0_0f323d213f78.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5435842176105452,
+          "validation_best_diagnostic_epoch": 7
+        },
+        "1": {
+          "mrr": 0.33609042450406096,
+          "hits10": 0.7680608365019012,
+          "mean_positive_rank": 6.562737642585551,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M3_seed1/checkpoints/cora_uniform_seed1_b8c4140b8604.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.33609042450406096,
+          "validation_best_diagnostic_epoch": 10
+        },
+        "2": {
+          "mrr": 0.5006697723785329,
+          "hits10": 0.9049429657794676,
+          "mean_positive_rank": 4.311787072243346,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M3_seed2/checkpoints/cora_uniform_seed2_843df1e70afb.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5006697723785329,
+          "validation_best_diagnostic_epoch": 10
+        }
+      },
+      "M4": {
+        "0": {
+          "mrr": 0.5370363979077737,
+          "hits10": 0.6730038022813688,
+          "mean_positive_rank": 7.277566539923955,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M4_seed0/checkpoints/cora_uniform_seed0_34f6b029bedf.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5428356300441316,
+          "validation_best_diagnostic_epoch": 7
+        },
+        "1": {
+          "mrr": 0.330783209107851,
+          "hits10": 0.7452471482889734,
+          "mean_positive_rank": 6.64638783269962,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M4_seed1/checkpoints/cora_uniform_seed1_449f566686ef.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.330783209107851,
+          "validation_best_diagnostic_epoch": 10
+        },
+        "2": {
+          "mrr": 0.5054220136634291,
+          "hits10": 0.908745247148289,
+          "mean_positive_rank": 4.277566539923955,
+          "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M4_seed2/checkpoints/cora_uniform_seed2_f81caea6b338.pt",
+          "checkpoint_rule": "FIXED_EPOCH_10",
+          "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+          "validation_best_diagnostic_mrr": 0.5054220136634291,
+          "validation_best_diagnostic_epoch": 10
+        }
+      }
+    },
+    "summary": {
+      "M0": {
+        "by_seed": [
+          0.5327593804296001,
+          0.32858258481823804,
+          0.5010194084528392
+        ],
+        "mean": 0.4541204579002258,
+        "sample_std": 0.10987117291962138
+      },
+      "M1": {
+        "by_seed": [
+          0.5332606885404739,
+          0.3215549604912635,
+          0.5101472947195085
+        ],
+        "mean": 0.45498764791708196,
+        "sample_std": 0.11613254840370073
+      },
+      "M2": {
+        "by_seed": [
+          0.5363929032528721,
+          0.3305105114709995,
+          0.5107749117780136
+        ],
+        "mean": 0.45922610883396175,
+        "sample_std": 0.11220449690266267
+      },
+      "M3": {
+        "by_seed": [
+          0.5324402455718009,
+          0.33609042450406096,
+          0.5006697723785329
+        ],
+        "mean": 0.4564001474847983,
+        "sample_std": 0.10539526945981662
+      },
+      "M4": {
+        "by_seed": [
+          0.5370363979077737,
+          0.330783209107851,
+          0.5054220136634291
+        ],
+        "mean": 0.4577472068930179,
+        "sample_std": 0.11108447179053053
+      }
+    },
+    "Graph_hardness_match": {
+      "strata": 20,
+      "strata_definition": "equal-frequency quantile bins over the 2K Graph-hard prepool's global-pool rank percentile Rg",
+      "quota_reference": "M0 Graph-hard top-1 histogram; exact same per-stratum counts assigned to M1/M2/M3",
+      "target_counts": [
+        72,
+        85,
+        113,
+        119,
+        124,
+        144,
+        178,
+        169,
+        184,
+        201,
+        204,
+        239,
+        260,
+        279,
+        301,
+        311,
+        324,
+        360,
+        394,
+        427
+      ],
+      "mean_Rg": {
+        "M1": 0.9521024227502127,
+        "M2": 0.9522780018444718,
+        "M3": 0.9523123903245051
+      },
+      "median_Rg": {
+        "M1": 0.9662819327309796,
+        "M2": 0.9662596508428125,
+        "M3": 0.9662596508428125
+      },
+      "max_abs_mean_Rg_difference": 0.000209967574292369,
+      "KS_M1_M2": 0.002896613190730838,
+      "KS_M1_M3": 0.004010695187165776,
+      "KS_M2_M3": 0.0017825311942959
+    },
+    "Graph_hardness_match_pass": true,
+    "M1_minus_M3_by_seed": [
+      0.0008204429686730075,
+      -0.014535464012797483,
+      0.009477522340975542
+    ],
+    "M1_minus_M3_mean": -0.0014124995677163115,
+    "M1_minus_M3_wins": 2,
+    "M1_minus_M4_by_seed": [
+      -0.003775709367299762,
+      -0.009228248616587498,
+      0.004725281056079389
+    ],
+    "M1_minus_M4_mean": -0.002759558975935957,
+    "M1_minus_M4_wins": 1,
+    "MECHANISM_SUPPORTED": false,
+    "next": "DISAGREEMENT_MECHANISM_NOT_SUPPORTED"
+  },
+  "codns": null,
+  "lambda_sensitivity": null,
+  "test": null,
+  "second_dataset": null,
+  "structural_characterization": {
+    "M1_HG_low": {
+      "common_neighbors": {
+        "mean": 0.18114973262032086,
+        "median": 0.0
+      },
+      "adamic_adar": {
+        "mean": 0.0670808294694322,
+        "median": 0.0
+      },
+      "resource_allocation": {
+        "mean": 0.013951307019304918,
+        "median": 0.0
+      },
+      "jaccard": {
+        "mean": 0.029829675695060766,
+        "median": 0.0
+      },
+      "degree_u": {
+        "mean": 5.561497326203209,
+        "median": 5.0
+      },
+      "degree_v": {
+        "mean": 5.557486631016043,
+        "median": 5.0
+      },
+      "degree_product": {
+        "mean": 35.40151515151515,
+        "median": 24.0
+      },
+      "raw_star_shared_hyperedge_count": {
+        "mean": 0.18114973262032086,
+        "median": 0.0
+      },
+      "raw_star_overlap_strength": {
+        "mean": 0.021049517460733566,
+        "median": 0.0
+      },
+      "shortest_path_counts": {
+        "1-hop": 0,
+        "2-hop": 756,
+        "3-hop": 231,
+        ">3": 3349,
+        "disconnected": 152
+      },
+      "unique_pair_ratio": 1.0,
+      "unique_endpoint_ratio": 0.18081550802139038,
+      "mean_Rg": 0.9521024227502127,
+      "median_Rg": 0.9662819327309796,
+      "mean_Rh": 0.9376677831640238
+    },
+    "M3_HG_high": {
+      "common_neighbors": {
+        "mean": 0.18315508021390375,
+        "median": 0.0
+      },
+      "adamic_adar": {
+        "mean": 0.067628203318364,
+        "median": 0.0
+      },
+      "resource_allocation": {
+        "mean": 0.014011588473675016,
+        "median": 0.0
+      },
+      "jaccard": {
+        "mean": 0.030270810727738157,
+        "median": 0.0
+      },
+      "degree_u": {
+        "mean": 5.579099821746881,
+        "median": 5.0
+      },
+      "degree_v": {
+        "mean": 5.571301247771836,
+        "median": 5.0
+      },
+      "degree_product": {
+        "mean": 35.6695632798574,
+        "median": 24.0
+      },
+      "raw_star_shared_hyperedge_count": {
+        "mean": 0.18315508021390375,
+        "median": 0.0
+      },
+      "raw_star_overlap_strength": {
+        "mean": 0.021347711954560863,
+        "median": 0.0
+      },
+      "shortest_path_counts": {
+        "1-hop": 0,
+        "2-hop": 764,
+        "3-hop": 237,
+        ">3": 3340,
+        "disconnected": 147
+      },
+      "unique_pair_ratio": 1.0,
+      "unique_endpoint_ratio": 0.17736185383244207,
+      "mean_Rg": 0.9523123903245051,
+      "median_Rg": 0.9662596508428125,
+      "mean_Rh": 0.9429329441867099
+    },
+    "interpretation_limit": "Descriptive train-graph structure only; no future-positive or false-negative enrichment analysis was run."
+  },
+  "efficiency": {
+    "candidate_pool_generation_seconds_V6_1": 1.2152371830306947,
+    "cold_teacher_training_seconds_V6_1": {
+      "Graph": 25.96615514298901,
+      "Raw-HG": 51.92147393338382
+    },
+    "cold_teacher_scoring_seconds_V6_1": {
+      "Graph": 16.33192501217127,
+      "Raw-HG": 21.112340376712382
+    },
+    "V6_2_teacher_forward_repeats": 0,
+    "teacher_cache_key_fields": [
+      "train_only_split_hash",
+      "seed",
+      "teacher_checkpoint_hash",
+      "candidate_pool_hash"
+    ],
+    "cache_verified": true,
+    "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+    "selection_cache_hit": true,
+    "selection_time_seconds_V6_2": 15.085630544926971,
+    "training_wall_seconds": {
+      "mechanism_training_state.json": 1047.1725763920695
+    },
+    "amortized_selection_seconds_per_epoch": 1.5085630544926971
+  },
+  "novelty_status": "EXACT_RULE_UNVERIFIED",
+  "final_decision": "DISAGREEMENT_MECHANISM_NOT_SUPPORTED"
+}

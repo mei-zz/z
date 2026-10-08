@@ -1,0 +1,179 @@
+{
+  "state": "COMPLETE",
+  "phase": "A",
+  "dataset": "cora",
+  "seed": 0,
+  "arm": "A1",
+  "epochs": 5,
+  "validation": {
+    "ce": 0.3997591951791965,
+    "balanced_ce": 0.3815137434590622,
+    "auc": 0.9089368069510908,
+    "mrr": 0.7053188745304014,
+    "hits10": 0.9315589353612167,
+    "hits20": 1.0,
+    "mean_positive_rank": 2.893536121673004,
+    "queries": 263,
+    "negatives_per_query": 20
+  },
+  "A0_frozen_NCNC": {
+    "ce": 0.6035337893912974,
+    "balanced_ce": 0.4679154753180369,
+    "auc": 0.8602271248680767,
+    "mrr": 0.6598461161213518,
+    "hits10": 0.8897338403041825,
+    "hits20": 0.9809885931558935,
+    "mean_positive_rank": 3.802281368821293,
+    "queries": 263,
+    "negatives_per_query": 20
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.9707279161170677,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.5877781357062519,
+        "balanced_ce": 0.46278025940624984,
+        "auc": 0.8615926209718227,
+        "mrr": 0.660530747516174,
+        "hits10": 0.8897338403041825,
+        "hits20": 0.9809885931558935,
+        "mean_positive_rank": 3.7566539923954374,
+        "queries": 263,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 0.9403302691600941,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.523610196115755,
+        "balanced_ce": 0.4424950900020743,
+        "auc": 0.8680528849629169,
+        "mrr": 0.665063713928474,
+        "hits10": 0.9011406844106464,
+        "hits20": 0.9885931558935361,
+        "mean_positive_rank": 3.623574144486692,
+        "queries": 263,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.9018381613272206,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.39587490481364185,
+        "balanced_ce": 0.41398166889980137,
+        "auc": 0.8821567465193945,
+        "mrr": 0.6735669615712347,
+        "hits10": 0.908745247148289,
+        "hits20": 0.9961977186311787,
+        "mean_positive_rank": 3.3536121673003803,
+        "queries": 263,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 0.8806068786868342,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.35414805868882365,
+        "balanced_ce": 0.3973295039815149,
+        "auc": 0.8973738235336639,
+        "mrr": 0.6893071221733124,
+        "hits10": 0.9163498098859315,
+        "hits20": 1.0,
+        "mean_positive_rank": 3.0836501901140685,
+        "queries": 263,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 0.8265693563002126,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.3997591951791965,
+        "balanced_ce": 0.3815137434590622,
+        "auc": 0.9089368069510908,
+        "mrr": 0.7053188745304014,
+        "hits10": 0.9315589353612167,
+        "hits20": 1.0,
+        "mean_positive_rank": 2.893536121673004,
+        "queries": 263,
+        "negatives_per_query": 20
+      }
+    }
+  ],
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1R/runB/runs/A/cora/seed_0/A1/final.pt",
+  "checkpoint_sha256": "13c244f85515a2a26b906d654c3a31722008c1908fe1345fe95702f70e02b9df",
+  "initialization": {
+    "encoder": "69b78da7311ed91143bd3b122a65cfe9ac4205fc275f2f8d23769068b670633f",
+    "relation": "777e7b597d629f49bb159da219f048f5817f3770574598df1382ff1d3d1d9953",
+    "decoder": "f87476b4059a3fc6b8b706e14dd3bf798e26918914634459f385b7a3595783cf"
+  },
+  "training_trace": [
+    {
+      "epoch": 1,
+      "official_negative_hash": "b27896fb8c66733466c537ae43adbf7f89da6a9177389016cf1abe09485e3462",
+      "permutation_hash": "828f04b0ba685be77747949928ff1b29b183e0059164ad2c945252417f5d3191",
+      "retained_train_pairs": 3456,
+      "official_floor_batch_tail": 1032,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 2,
+      "official_negative_hash": "84a78b1f91cb72cdf0bf22ef047802ec4d51f64a92e460c86332e163f844db77",
+      "permutation_hash": "9c46dcd3db8c6b84c73bd11c5b7d2aa73f8b9763aa0f2cf909404684be7ea1e4",
+      "retained_train_pairs": 3456,
+      "official_floor_batch_tail": 1032,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 3,
+      "official_negative_hash": "3a8b0c2ac502a38cbf2f5b20595003813fc731829fc2bd7380e611a62c1a772d",
+      "permutation_hash": "34c06aff8b1facf0388214ca9af773d0a7ba1e405e993cdadd421e7b5464357b",
+      "retained_train_pairs": 3456,
+      "official_floor_batch_tail": 1032,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 4,
+      "official_negative_hash": "78cd11bb3c17be96f5074e7251ea93fa6b9077c7589b402b4c1e648ae82618e1",
+      "permutation_hash": "f3dcffe20fce74b1f0f2f0134005a802c6f8c06aec7d1d58506732b5e225f301",
+      "retained_train_pairs": 3456,
+      "official_floor_batch_tail": 1032,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 5,
+      "official_negative_hash": "02d52b5371477ad7a69df5bdc2c9a1477168062e0a029de9128b1787808a4390",
+      "permutation_hash": "6e842295a5c05c2dbce5e33c6dfe7085904e76d50ec552a8018bd85a103b4b49",
+      "retained_train_pairs": 3456,
+      "official_floor_batch_tail": 1032,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    }
+  ],
+  "trainable_parameters": 26385,
+  "encoder_trainable": true,
+  "relation_parameters": 2096,
+  "downstream_decoder_capacity_matched": true,
+  "frozen_NCNC_parameters": 830212,
+  "frozen_I1_parameters": 0,
+  "peak_gpu_mb": 73.12548828125,
+  "wall_seconds": 3.1187789663672447,
+  "checkpoint_selection": "fixed final epoch; no best-validation selection",
+  "test_accessed": false,
+  "corrected_aggregation": "V18_1R deterministic contiguous-segment sum/mean/max",
+  "strict_deterministic_algorithms": true,
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+}

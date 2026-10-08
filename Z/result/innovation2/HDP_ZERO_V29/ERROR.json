@@ -1,0 +1,11 @@
+{
+  "state": "EXECUTION_FAILED",
+  "error": "AssertionError(\"JOB_FAILED ('data', 'inner', 'pubmed', 14); /home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/logs/data_inner_pubmed_14.log\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/scripts/zero29.py\", line 583, in supervise\n    create_inner();batch([('data','inner',ds,s) for ds in ('cora','pubmed') for s in INNER_SEEDS],'INNER_BACKBONE_CACHE',workers=2)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/scripts/zero29.py\", line 381, in batch\n    active.remove((proc,args,log));assert proc.returncode==0,f'JOB_FAILED {args}; {log}';done+=1\n                                          ^^^^^^^^^^^^^^^^^^\nAssertionError: JOB_FAILED ('data', 'inner', 'pubmed', 14); /home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/logs/data_inner_pubmed_14.log\n",
+  "test_opened": false,
+  "storage": {
+    "available_bytes": 7231959040,
+    "available_inodes": 13343954,
+    "margin_bytes": 3221225472
+  }
+}

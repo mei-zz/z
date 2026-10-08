@@ -1,0 +1,9 @@
+{
+  "split": "epoch_2",
+  "nearest_projected_distance_mean": 1.1794811298276917,
+  "top32_distance_mean": 1.7219485811070232,
+  "top32_distance_q95": 2.7267296313465157,
+  "nearest_full_Z_rms_distance": 0.5420600771903992,
+  "self_candidate_keys_excluded": true,
+  "queries": 73728
+}

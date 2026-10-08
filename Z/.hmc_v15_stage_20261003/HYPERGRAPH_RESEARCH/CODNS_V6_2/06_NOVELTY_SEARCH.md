@@ -1,0 +1,12 @@
+# Novelty Search
+
+Searches covered cross-view disagreement negative sampling, graph–hypergraph link prediction, hard negatives for pairwise link prediction, DMNS, MeBNS, HNS, and dual-anchor negative sampling. This is a targeted web search, not an exhaustive systematic review. Exact-rule status remains **EXACT_RULE_UNVERIFIED**; do not claim priority.
+
+- DMNS generates graph-link-prediction negatives at controllable latent hardness levels with a conditional diffusion process; it is a graph-only generation approach, unlike a pairwise Graph-hard / higher-order HG-rank disagreement selector. [arXiv:2403.17259](https://arxiv.org/abs/2403.17259).
+- MeBNS is a teacher–student/meta-learning framework for handling migration and weighting of hard negatives in link prediction; it is relevant to dynamic hard-negative selection but does not match the frozen two-teacher rank-difference rule searched here. [arXiv:2312.04815](https://arxiv.org/abs/2312.04815).
+- HNS synthesizes hard negatives in hyperedge embedding space for hyperedge prediction, a different prediction unit from ordinary pairwise graph link prediction. [arXiv:2503.08743](https://arxiv.org/abs/2503.08743).
+- Patil et al. study uniform, sized, motif, and clique negative sampling for hyperlink prediction in networks; this concerns higher-order hyperlink negatives rather than cross-order disagreement on pairwise candidates. [DOI:10.1007/978-3-030-47436-2_46](https://doi.org/10.1007/978-3-030-47436-2_46).
+- Differentiable Dual Anchor Negative Sampling (DDANS) is a nearby dual-anchor naming match in graph-based recommendation; its task and sampler differ from ordinary graph link prediction, so it should be discussed if the method survives, but it is not evidence that this exact rule is already present. [SIGIR 2026 paper](https://doi.org/10.1145/3805712.3809853).
+- Cross-view graph consistency learning studies paired graph views for link prediction, but the inspected source describes view consistency learning rather than negative selection by cross-order score disagreement. [arXiv:2311.11821](https://arxiv.org/abs/2311.11821).
+
+No inspected primary source explicitly stated the exact combination: (1) Graph teacher supplies pairwise hardness, (2) Raw-HG teacher supplies higher-order plausibility, and (3) their global rank-percentile disagreement selects ordinary pairwise link-prediction training negatives under this fixed prepool. This search is insufficient for a first/novel claim; the exact rule remains unverified.

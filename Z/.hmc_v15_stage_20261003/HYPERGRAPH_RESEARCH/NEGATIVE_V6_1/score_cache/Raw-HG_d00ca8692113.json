@@ -1,0 +1,12 @@
+{
+  "cache_key": "d00ca8692113",
+  "train_split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "seed": 0,
+  "checkpoint_hash": "1fa029f5a0a3a6e32516907e28bd6179493eeb5429f69c97e4444acdaa9fe91e",
+  "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "teacher": "Raw-HG",
+  "detached": true,
+  "score_hash": "c4e229f5eb7ba2aec31e5345b4683bcbf2d2e98f57c89357228ecb9e85f42b6f",
+  "forward_seconds": 21.112340376712382,
+  "cache_hit": false
+}

@@ -1,0 +1,110 @@
+{
+  "dataset": "citeseer",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 0,
+  "cn_feature_mode": "raw",
+  "interaction_mode": "unrestricted",
+  "hypergraph_mode": "disabled",
+  "hypergraph_construction": "raw_star",
+  "ghhr_training_mode": "none",
+  "lambda_h": 1.0,
+  "ghhr_tau": 1.0,
+  "complementarity_fusion_mode": "none",
+  "fusion_gate_hidden_dim": 8,
+  "fusion_margin_graph_threshold": 0.0,
+  "fusion_margin_hypergraph_threshold": 0.0,
+  "ghhr_beta": null,
+  "fusion_global_alpha_h": null,
+  "ghhr_epoch_diagnostics": [],
+  "construction_stats": null,
+  "construction_audit_seconds": 0.0,
+  "lambda_aux": 0.05,
+  "score_routing_enabled": false,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "f52715f0dda5",
+  "git_commit": "untracked",
+  "best_epoch": 9,
+  "validation": {
+    "checkpoint_rule": "fixed_final_epoch_10",
+    "epoch10_mrr": 0.5196112228076126,
+    "validation_best_diagnostic_mrr": 0.5196112228076126,
+    "validation_best_diagnostic_epoch": 10,
+    "validation_metrics_used_for_selection": false,
+    "test_evaluated": false,
+    "candidate_hash": "419f7e31c9320e435b210d3b05614f7d202d95ea9968765df8ceb9f9bdd875c5"
+  },
+  "validation_curve": [],
+  "metrics": {},
+  "anchor_role_gamma": null,
+  "pair_moment_gamma": null,
+  "trainable_parameter_count": 60798,
+  "structural_branch_parameter_count": 0,
+  "anchor_pair_moment_gamma": null,
+  "runtime": {
+    "train_seconds": 24.890437866095454,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 73.39404296875
+  },
+  "support_auxiliary": {
+    "lambda": 0.05,
+    "batches": 0,
+    "sampled_pairs_total": 0,
+    "mean_sampled_pairs_per_batch": 0.0,
+    "mean_unweighted_loss": 0.0
+  },
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CITESEER/GRAPH_TEACHER/seed0/checkpoints/citeseer_uniform_seed0_f52715f0dda5.pt",
+  "predictions": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CITESEER/GRAPH_TEACHER/seed0/raw/citeseer_uniform_seed0_f52715f0dda5_predictions.csv",
+  "intervention_failures": {},
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "fit_split": "train_only",
+    "uses_valid_or_test": false,
+    "used_as_model_input": false
+  },
+  "evaluation_candidates": {
+    "protocol": "standard",
+    "test_evaluated": false,
+    "negatives_per_positive": null
+  },
+  "data_integrity": {
+    "train_positive_hash": "a3a8ecda0bb59b7d6b51efb8bd0087f9f19a710bda2b9ebedec5a2c20aa32ec2",
+    "candidate_hash": "e2b8d6babecc441e57b34fe2397238c9143e5a92786cf59affd0338c4015054f",
+    "valid_identity_in_training_pool": false,
+    "test_identity_in_training_pool": false,
+    "all_positive_access_attempts": 0
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "37d8ddbe8171"
+  },
+  "parameter_count": {
+    "total": 60798,
+    "trainable": 60798,
+    "cn_branch": 481
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.0,
+    "lambda_target_response": 0.0,
+    "lambda_interaction_share": 0.0,
+    "lambda_interaction_delta": 0.0,
+    "lambda_orthogonal_legacy": 0.001,
+    "lambda_adversarial_legacy": 0.01
+  },
+  "device": "cuda",
+  "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/CITESEER/GRAPH_TEACHER/seed0/raw/citeseer_uniform_seed0_f52715f0dda5.json",
+  "checkpoint_selection_audit": {
+    "rule": "FIXED_EPOCH_10",
+    "validation_best_is_diagnostic_only": true,
+    "heldout_metrics_used_for_checkpoint_selection": false,
+    "legacy_train_api_placeholder_reads": {
+      "valid_pos": 13,
+      "test_pos": 4
+    },
+    "heldout_identity_values_exposed_to_sampler": 0,
+    "test_identity_values_loaded": false
+  }
+}

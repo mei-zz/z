@@ -1,0 +1,8 @@
+{
+  "state": "PASS",
+  "dataset": "cora",
+  "node_hash": "f0ca86946ac7219ca8d7c6ccca8d60a423e7d9f569dc35f0ba26512ee2590f0a",
+  "context_file_sha256": "dd1f47ebbf445db48ac6da7256174cccdb9d81a8de1f4b3d4b057945068bf5b8",
+  "full_descriptor_reconstruction": "BITWISE_EXACT",
+  "test_opened": false
+}

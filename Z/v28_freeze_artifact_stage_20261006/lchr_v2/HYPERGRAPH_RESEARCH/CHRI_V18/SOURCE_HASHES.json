@@ -1,0 +1,139 @@
+{
+  "state": "FROZEN_BEFORE_RUN",
+  "workspace": "DCDLP-main",
+  "server_checkout": "/home/ubuntu/lchr_v2",
+  "innovation1_files": {
+    "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/FINAL_RESULTS.json": "46dd95da603784d8f090345510a8de536b9b76bcd084d64b1e05589c11b5c79f",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/CANONICAL_PROTOCOL.json": "624c61f2e500052c11739a31c8cf90975079c0c647924c21d47db84ac0f7b939",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/PAPER_TABLE_B.md": "aeca956b2b9b39b947acc25e79844de10508f5f690d2a37253a799591ddf3b5c",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/PAPER_TABLE_A.md": "1e9023ab041ff08e7f027815e084d61dbbc9b2f0862da87b2467c4682730cf5b",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/NOVELTY_BOUNDARY.md": "f1dd8744a1efd2b4090034b35ebe58edbea60ec553ccc3c268ff31a41b0a4c34",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/LIMITATIONS.md": "87a68d3cd5cadb9535a5960b9ab1011e09b04923a5f03a68ddebd117da2ba71f",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/SOURCE_HASHES.json": "bd0bebed0b3f033c574f0df4f9f22bbf516bf1f1a73533f1810649c70de46f76",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/INNOVATION_1_FINAL.md": "b43165a306376ad25185c2264e67a9f86e18deaaa29817a4d19228fa84b1c67b",
+    "HYPERGRAPH_RESEARCH/PAPER_PREP/INNOVATION_1_R_HSPE/METRIC_TABLES.md": "c432089d8ab007b5506f6d0181eace87f86b398e750e9291cd1882a3814e366a",
+    "HYPERGRAPH_RESEARCH/PAPER_PREP/INNOVATION_1_R_HSPE/CLAIM_BOUNDARY.md": "008bcc2274b33effd77f06fe8396c417cb12ffecf5d3e614ec9c0722251c933b",
+    "HYPERGRAPH_RESEARCH/PAPER_PREP/INNOVATION_1_R_HSPE/EXPERIMENT_TIMELINE.md": "13569371296b0ecab038b3ee0fbe86ab534aca9621a9c3b9673a561c0b29f468",
+    "HYPERGRAPH_RESEARCH/PAPER_PREP/INNOVATION_1_R_HSPE/PAPER_WRITING_NOTES.md": "9ba8a516f1b84efe6ee0d4e113464e8130a8d472ff4beed434d900a9f052cdad",
+    "HYPERGRAPH_RESEARCH/PAPER_PREP/INNOVATION_1_R_HSPE/INNOVATION_1_MANUAL.md": "c195fe64bc4fe3b9845a434daab858887156282cbfc0d65c9deaa5cd60c44193",
+    "HYPERGRAPH_RESEARCH/PAPER_PREP/INNOVATION_1_R_HSPE/innovation1_summary.json": "6aa5299d137909d5bc8bad522f2e40cb6b0c27f6c6ba6130622690326589bdba",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/TEST_RESULTS.json": "af4c22f788771fed38d5fa60a75a8d477534227b85d73f3444c5127de5f514e8",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/FINAL_CONFIG.json": "02e349f7e1fd8342dce10793962b13113be4a77e9fd5c746ff9c65f575728db6",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/NOVELTY_MATRIX.md": "dfd09077dc10d668a230fd3c6487c743fb180b1cd5643257d1a65778c90ccc54",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/METHOD_DEFINITION.md": "44da4f7306fa587e88cb406bab2571490b49b79614bac193e47d8aac5802c316",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/R_HSPE_FROZEN.md": "26bf3e042b21f2dedeecaf6c6c62cdc2a30b86045f0bf85b4c1fdb38f2699987",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/checkpoint_references.json": "15c540b91eed1215b130f988a7df52deccf1de138a8d49ece74ac1daa6843b06",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/SOURCE_HASHES.json": "8ddef3169103bd6e10b9a46d89f053aca775ae072f5cbf378bd19ea08530d449",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/qths_v71.py": "d8b1533b6398be98fe5741e5c485008c160434712c8d478268ae817b84b19f67",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/stage0.py": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/v16_stage1.py": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/baseline_config.json": "9a5f4c2fb7cc8fab5179dca99e13b45445e1e17a2d23bae8ad3a924d1c47a76a",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/codns_engine.py": "990c447435a0c1583c7df1bdb69d0a2493607eaf682afb9faf81738f4f9d0d67",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/v171.py": "b4b477d86ceb55f62cefb02ea1a652085b725ca92793707a29586976016970fc",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/negative_v61.py": "70b36c2d3b4f56a0b271b30e2bc60b360f99eb264368f22c4d095d1e421a7129",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/dcdlp_train.py": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+    "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/source_snapshot/v17.py": "da20e41442f8e7b0b12d29515ba2a3df71a2a0a7327a51ea2b1170901e2e28bf"
+  },
+  "v18_source_files": {
+    "scripts/chri_features.py": "10ffec88cf9835f8c247bf69c2779d005f2843408adb210f856b6a9adab715e0",
+    "scripts/validate_v18.py": "45624135eae89d117f9436e529b6f94759b1db0a243d79024ce60dcb2923b32d",
+    "scripts/chri_v18.py": "31ef3c7c2f1e0b56a056faca020f68848e36c1cf112409247dab121fc991a0e0"
+  },
+  "protocol_sha256": "8d6299229133680597d6808ffb33bd2a546bf102ff6b405629a3c8a7d150f683",
+  "backbone_adapter_sha256": "b0c47242f77ba3156d6267a1503d6adc0ec323000b4c7f69f8e46fcfc9f901f2",
+  "official_model_sha256": "5b6cfe26074c83d57900f589b37a4ef57fc7b8eb6dff3179fc52e3f6943aa5e3",
+  "datasets": {
+    "cora": {
+      "n": 2708,
+      "train_pairs": 4488,
+      "valid_queries": 263,
+      "negatives_per_query": 20,
+      "input_hashes": {
+        "x": "3ff7ab10e5552738aee793ced0ceb40e85a8ec61cb9e04d28e508e07faa12c21",
+        "train": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+        "valid_pos": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+        "valid_neg": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902"
+      },
+      "base_checkpoints": {
+        "0": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/cora/seed_0/C0/final.pt",
+          "sha256": "846612c9424e2a29c89ae7b8f9ec206fcf2e06f511b293e465df1a3f98823903",
+          "epochs": 10,
+          "parameters": 830212
+        },
+        "1": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/cora/seed_1/C0/final.pt",
+          "sha256": "25003e892cb3890afaa7bb2f915237e5891b16da41aafbb597e0b9ce259c0d18",
+          "epochs": 10,
+          "parameters": 830212
+        },
+        "2": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/cora/seed_2/C0/final.pt",
+          "sha256": "f8c85f111dc2cab4fa23a279c409c1ef13817a77c84a9eaf9f840c65b8459c49",
+          "epochs": 10,
+          "parameters": 830212
+        },
+        "3": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/cora/seed_3/C0/final.pt",
+          "sha256": "dc53fd5d2ad5c9a5c98a5d1b0600a42f7c526469eeb9986388e95920e9e87e2c",
+          "epochs": 10,
+          "parameters": 830212
+        },
+        "4": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/cora/seed_4/C0/final.pt",
+          "sha256": "2c5ac54c3f545ad2ae0cb3dca4edc76f1abf2e74a452191a5924f9017cc6a8b5",
+          "epochs": 10,
+          "parameters": 830212
+        }
+      },
+      "validation_edges_absent_from_train": true,
+      "test_arrays_loaded": false
+    },
+    "pubmed": {
+      "n": 19717,
+      "train_pairs": 37676,
+      "valid_queries": 2216,
+      "negatives_per_query": 20,
+      "input_hashes": {
+        "x": "64eff13b69e22c774854406d5e8ebbef5ace8a6e88a1c94700407d15dbe392ec",
+        "train": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+        "valid_pos": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+        "valid_neg": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683"
+      },
+      "base_checkpoints": {
+        "0": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/final.pt",
+          "sha256": "80de9b501a7678c090a9991cd2052ac2b09385cdcab9415ff984304a894eeadb",
+          "epochs": 10,
+          "parameters": 591364
+        },
+        "1": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_1/C0/final.pt",
+          "sha256": "3d54460f96977822c1c8182ec16319bc52d79a620f56b3c2e51e1e0cf05910de",
+          "epochs": 10,
+          "parameters": 591364
+        },
+        "2": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_2/C0/final.pt",
+          "sha256": "1bb8fee702d3f46723e946b4654eeb8f3050286b2c9ba0868420a62cde6c07b7",
+          "epochs": 10,
+          "parameters": 591364
+        },
+        "3": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_3/C0/final.pt",
+          "sha256": "0f26f5b08b1fd5bbac268c3de51fdbe8f3fb33b64f472717adf736450036904a",
+          "epochs": 10,
+          "parameters": 591364
+        },
+        "4": {
+          "path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_4/C0/final.pt",
+          "sha256": "81181b1c1dc07cf2cd5a0747e44ffeb897d6c3077f5d54cc86e20b7e1382b89e",
+          "epochs": 10,
+          "parameters": 591364
+        }
+      },
+      "validation_edges_absent_from_train": true,
+      "test_arrays_loaded": false
+    }
+  }
+}

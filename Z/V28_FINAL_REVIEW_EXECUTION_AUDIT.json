@@ -1,0 +1,93 @@
+{
+  "state": "COMPLETE",
+  "datasets": {
+    "cora": {
+      "5": {
+        "arms": [
+          "GRAPH6",
+          "SHARED",
+          "ZERO6",
+          "MULT6"
+        ],
+        "seeds": [
+          3,
+          4,
+          5
+        ],
+        "count": 12,
+        "test_opened": false
+      },
+      "10": {
+        "arms": [
+          "GRAPH6",
+          "SHARED",
+          "ZERO6",
+          "MULT6"
+        ],
+        "seeds": [
+          3,
+          4,
+          5
+        ],
+        "count": 12,
+        "test_opened": false
+      }
+    },
+    "pubmed": {
+      "5": {
+        "arms": [
+          "GRAPH6",
+          "SHARED",
+          "ZERO6",
+          "MULT6"
+        ],
+        "seeds": [
+          3,
+          4,
+          5
+        ],
+        "count": 12,
+        "test_opened": false
+      },
+      "10": {
+        "arms": [
+          "GRAPH6",
+          "SHARED",
+          "ZERO6",
+          "MULT6"
+        ],
+        "seeds": [
+          3,
+          4,
+          5
+        ],
+        "count": 12,
+        "test_opened": false
+      }
+    }
+  },
+  "result_file_count": 48,
+  "test_accessed_true": [],
+  "bad_states": [],
+  "bad_epoch_counts": [],
+  "missing_checkpoints": [],
+  "checkpoint_hash_errors": [],
+  "summary_effect_errors": [],
+  "train_log_completion_markers": 48,
+  "train_log_count": 48,
+  "traceback_lines": 0,
+  "run_status": {
+    "state": "COMPLETE",
+    "ended_at": 1791278981.0579994,
+    "research_decisions": {
+      "GRAPH": "MECHANISM_SUPPORTED",
+      "MULT": "MECHANISM_SUPPORTED",
+      "COMPLEMENTARITY": "REPLICATION_CANDIDATE",
+      "HDP_CONDITIONAL": "REPLICATION_CANDIDATE"
+    },
+    "novelty_status": "NOT_AUDITED",
+    "test_opened": false
+  },
+  "source_freeze_check": "PASS",
+  "test_opened": false
+}

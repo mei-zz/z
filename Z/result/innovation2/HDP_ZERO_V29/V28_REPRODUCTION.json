@@ -1,0 +1,342 @@
+{
+  "state": "PASS",
+  "records": [
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "SHARED",
+      "checkpoint_sha256": "c687a1a5876d7b032d7da5605859d6491a5055554b8438fd89a9c6836316e6d5",
+      "score_vector_sha256": "eeedd0b68f8b7688062ce1b1740955895192798e73047de80b015292b8439744",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "GM",
+      "checkpoint_sha256": "e7392120acb749165cedb82d2cd2ad2a839c01a9625a6cb651c6f1eb8ab3938a",
+      "score_vector_sha256": "2eda7b13133b8c1f47fdb948f7ee4e585a0647f99117c6c8c4a9a01bc2f30e07",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "GMH",
+      "checkpoint_sha256": "fcf60e0019abf4fdb0285ec35c283d7261d222c62fd33d6a67384a8fa0c4a76f",
+      "score_vector_sha256": "fe5ddffbdc0a5d49a5ae6609a6bc1e2d52e208a7e53a77d2d4ef8423f529415a",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "GMS",
+      "checkpoint_sha256": "5695ded8a2ba5b979e0923e5327c6d4fa030eee5a30ef3212125390512f41ac1",
+      "score_vector_sha256": "3eb1525dfd72ffd7dc9e936cfdf9efb70b28bd28135eb25a75da5b685abb4c23",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "GMP",
+      "checkpoint_sha256": "c911d91c06b39b1b6cbbd5262770863c9b0ea0a441d63d8de8689f78e9ac04b0",
+      "score_vector_sha256": "0840bcae5c18dfdf404af0dd22d523ce28239beed97e8408af839ebc5d1e065e",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "GMG",
+      "checkpoint_sha256": "57e23832519e469396dad1c3705f4fd7699e5beae5ab31995fbf6b7e05635d47",
+      "score_vector_sha256": "e3bf49a051326fd6de3f1e16c6fc5f47bf9a2fdd0eed0b2a3d6e5b8377e59637",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "GDUP",
+      "checkpoint_sha256": "f4c86ae2ee819b2cfffd2338eb333109f13aa69f24dbd9ff4a12c0743f99c9c1",
+      "score_vector_sha256": "449f52d138b08ade4d03cd3c16d3748731cf71557c599cb833a0cba27ef485b4",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "arm": "SHARED",
+      "checkpoint_sha256": "c115ce7ba9a58549e1fd0316e44e755e84adfdcc5f86f3745578ab7f97d8e7e6",
+      "score_vector_sha256": "e112fc3dbdc5bcbf49e5bedda75817c2dcf42112f803d8b386ff867149d0176e",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "arm": "GM",
+      "checkpoint_sha256": "5c16f720b29b9b6909578240f35b7d5772d73919a4de2168d9a33777b89cff13",
+      "score_vector_sha256": "0fc85b11610cbd7de89124f2fbf79fa70cc4d14eaed15d68f3ca7869804b3631",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "arm": "GMH",
+      "checkpoint_sha256": "e15c7d506da1395cde26d737e877a4ba57ed92e51f013689bd79c25b1afb9247",
+      "score_vector_sha256": "8181a4929495499e05e9b60a5cdcb5a9f6381e269b2e6204e749e5feb0966b43",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "arm": "GMS",
+      "checkpoint_sha256": "1c53d399b49ef5656a46066c8f0261892682bad137c08a87e998ce671a2f5c95",
+      "score_vector_sha256": "6c019ad171ae24c0bf94935d3dbd1d66ad7cd5c56c72e985dbca045a5b744279",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "arm": "GMP",
+      "checkpoint_sha256": "ae4fe12f97e4f1a0445ac23298dad6460e8941849a2b0be870bb6d171faf0226",
+      "score_vector_sha256": "3483c4f00813c07e7836a6cb30615d2baccc1d9b34395ce804cee5daf14ee073",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "arm": "GMG",
+      "checkpoint_sha256": "237861608d1dd0a5fd0f31d1471ac6e7abfaffa91c7b13a4614c0a7ef52f8744",
+      "score_vector_sha256": "cf047ba6a8da043ce52e9f2e4ef1960e0e69cae45575b8d24edaebae2c1823c0",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "arm": "GDUP",
+      "checkpoint_sha256": "8862848287243b05f2f1890d8eaf4ef13c405d7962bde7935446669b513e7c6c",
+      "score_vector_sha256": "ed99f5614fa6b35ab23a69db1057f4d3e2781c1101b64272c4d565d37618ab32",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "arm": "SHARED",
+      "checkpoint_sha256": "2e35a7f5c0097f0dc74509c53bec0be75aea37079deae27f6ebb5a8ddb8b79d3",
+      "score_vector_sha256": "21987f71761dd58b930d77c4124675d302bdc77e849fa439033b6e9582ae6a25",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "arm": "GM",
+      "checkpoint_sha256": "bfab40894567882762d6f5324e2234d3d8491f69df40a4b8a00112174735de4f",
+      "score_vector_sha256": "7c56138122908e05a5548a6dfea8e4f214c6322e4080b0d0600e12155eb8289e",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "arm": "GMH",
+      "checkpoint_sha256": "cdb040a40308287b198965819bb5bea79cb637735e51135feaf44617147a5c10",
+      "score_vector_sha256": "cb134f81c85dd79cadaa5173506191931ad12aabf1ddd4064bb35acb5a4ae18b",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "arm": "GMS",
+      "checkpoint_sha256": "3c89c526d13fc01ab10f9deaab2bc1415dad3bb290bcdfd40036c12693ead32e",
+      "score_vector_sha256": "48957286d78d4c0714a1d362795c6b8e9210aa8f52ab6c64746b7d78be9fe9b8",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "arm": "GMP",
+      "checkpoint_sha256": "8dafc7a39479e7f30788cba0593115ff1fa6f41fdd099b1ed3bc097fca7e4b3f",
+      "score_vector_sha256": "ac01751c716399eb9e3ebfeebc7018c840668e6e2546e9f8e3b8014cf40141e9",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "arm": "GMG",
+      "checkpoint_sha256": "0c8f5cacd858a3cd1034adc60cbc9d9a8ffb55727f9524e9ba5d6b1cd4b39f96",
+      "score_vector_sha256": "27df88c66211606c8523d8b04ff8871cf85bd7c47db707ade15c52dd02901e6f",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "arm": "GDUP",
+      "checkpoint_sha256": "1ae61bbd2fc5ba16325c1d61d85fac0164387f664c0d46e1646f4783dc22d89c",
+      "score_vector_sha256": "f222b30af1ed33d962551084bd7678d2b9c42594aaa23aa78cde26a30daa7188",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "SHARED",
+      "checkpoint_sha256": "e16d0f0f274a666fa0a170608ebfbe8088335b4fb91bba7301e6a1ffb2c14a5e",
+      "score_vector_sha256": "72e808cf44a325f5635eb7e22fc08cad0093cab8301ffca0766fadd412eba8a4",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "GM",
+      "checkpoint_sha256": "35babcffd568ceed906531e7192442ece82ea5d805caddc1be229965226f0d0c",
+      "score_vector_sha256": "f2dad9b2c223ba5d8132e1c1966f7ef984dbe382adbaf5f82d42f0baaf34484b",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "GMH",
+      "checkpoint_sha256": "750d04818284678c6366bacb19311af95d887b4387b25065bd240d0be8070a1d",
+      "score_vector_sha256": "34a27dcccff6e7b7f0fb235798f6b4a68c8bafe4584f2fc9b26a97b2218320a3",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "GMS",
+      "checkpoint_sha256": "b83e26e1687a6f839822e82b3e4c45d78ebc81730bd462cf0b84efcb9c14b8da",
+      "score_vector_sha256": "a03b4ee699e999ba10478cba742d0ede5b3a410665ba028c02a3e177b3c1baea",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "GMP",
+      "checkpoint_sha256": "8d941980879a49ed6aa292565b2f82096497c16bf705a53704a349411665d169",
+      "score_vector_sha256": "f51b3c8c2c9e16c02bc40626e0b98427fe6e22ab3b93d1d000b3dfb2abb7e08b",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "GMG",
+      "checkpoint_sha256": "0d09581b4618444da5fce12749e026afa23fa51183f5c3aa1e0b94c368f19faa",
+      "score_vector_sha256": "1cdf144c2f000b7977ba56586485eee9cf349ddc18487263526e7f6c8a71308f",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "GDUP",
+      "checkpoint_sha256": "399229341e3b1bad5326c7fbeadc92394da90a81444d0deb9b2a76f5e2c65603",
+      "score_vector_sha256": "300c4e7dcf348113f518ee2957e71fc520e24e189c0917ff74b00f94b27d2670",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "SHARED",
+      "checkpoint_sha256": "760ba5b2618f826daa08ef63b04caf73800955b91dd013294d3a14f7769a97c6",
+      "score_vector_sha256": "f81c71613f4f3aca1b7c39d8a21ac70ce89b45f7e553be8d6b365ce9636bae70",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "GM",
+      "checkpoint_sha256": "d4f4f4435fae1afa304b2d7b914a28da3c2b4cca2417dcada00bd5008a046cd8",
+      "score_vector_sha256": "dcb54f7b0437749d1551bce7dfc19dd16186eb4cee8b2c6b074643cffbf4ee2d",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "GMH",
+      "checkpoint_sha256": "a3addf320fd5798ad15898e57ffcb212b39948cfe52309edab9f2b1128fc7988",
+      "score_vector_sha256": "8b75971d89bc4201c25a8d03843adff0d96e25eac6b18bbbd98ceb769e18233f",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "GMS",
+      "checkpoint_sha256": "db58bfd04eb36dac268278033cb06343a68e87b91672c12a46ab301a127828a2",
+      "score_vector_sha256": "f881ca70f09f03a210baa0886a947125ae30de151b9052f747ff14fce684d15c",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "GMP",
+      "checkpoint_sha256": "15b420a45b5fad1948ae62bf2fbbf5de5729c53c90019d94a278e3d690d44cc6",
+      "score_vector_sha256": "4577f1fcd06fe32e3270cce1fc8403750319ffce76425ab4ed6df8e005e529d1",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "GMG",
+      "checkpoint_sha256": "b82e58c1f8ab3fd6bb06e16bc8f2e0aca9fb79b6c5b1b86fcdea6a913e7f7d4d",
+      "score_vector_sha256": "f11d0fdf9744909198bd9e7ed67bf05945944f94f7f137d4f29e82f7dc49afb6",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "GDUP",
+      "checkpoint_sha256": "c4bb281b8d295411cf066dc429030fd8a61fbc7d93fc6aa12d8308c878c7f04e",
+      "score_vector_sha256": "157225ca58e68dbcdce783a6fe4058aed760d9cb32983751bbfb228634af115f",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "SHARED",
+      "checkpoint_sha256": "5bb3f06a5098cce30d43c7c813c8e4cb330e7d5a4d4a5fc0242379802428f8fd",
+      "score_vector_sha256": "79c08e1d149f59bcf9ae70e37d547847030f9145012a9ae8c916d205ae726bc8",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "GM",
+      "checkpoint_sha256": "5054c94d6dda4ce1cc85eb7884f2be1e39e0e37ce12b30e86109e9b409bd4cca",
+      "score_vector_sha256": "f3da06b9c141684f0767d2fed587e566836bc7ae12160908166c88ec83edee1e",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "GMH",
+      "checkpoint_sha256": "ee6fadbdd8aef5aa836b7ea629ab9710598ee765f1ff07c3481a9fdf1220b818",
+      "score_vector_sha256": "df41ee35dab03c89a666fca3ce7ece907c6ebbd1229f6dc26a621015c0210f0c",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "GMS",
+      "checkpoint_sha256": "53a33ef9e3e7b8b8c0ba862216c3766e444b4f22ab042bc98f4a76ee494ce9c0",
+      "score_vector_sha256": "5bea843085e2484cf939f00e9a8def9accab633044b2c01df55b365351c994f2",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "GMP",
+      "checkpoint_sha256": "1558631fc75736a328a73c5cd53466061dff17c2fd52287f6decf18624ae273f",
+      "score_vector_sha256": "b72a7cb452138d4fef97a49e795c51e4204e7890a09d34c56b910b0bfde106e0",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "GMG",
+      "checkpoint_sha256": "4e68dac4ad3cdd4abad16803b7d07e6ab9161ca1d208e7361b378e52d5dcc06d",
+      "score_vector_sha256": "6a997c4c83fb5d15bd06298e17599bf0b77a345b95dfdc4a8834c2bbe6db15fe",
+      "checks": "PASS"
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "GDUP",
+      "checkpoint_sha256": "e0de7df2ad9440c1b1ee8fe2b28ffa1a3a26ec5eeac9d2413c0dcc1271378cfc",
+      "score_vector_sha256": "b503493b45a1912b72533fed1a12ccca0dd3c5b7fd2dc112acab0b42c5a6c841",
+      "checks": "PASS"
+    }
+  ],
+  "reuse": "hash verified immutable historical artifacts; no retrospective retraining"
+}

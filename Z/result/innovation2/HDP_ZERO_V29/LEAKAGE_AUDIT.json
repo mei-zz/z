@@ -1,0 +1,27 @@
+{
+  "state": "PASS",
+  "datasets": {
+    "cora": {
+      "array_hashes": {
+        "x": "f0faab5177bcc12f5688f042c8e0ed24ffb9baa8efc3ae7cde440d42524c9075",
+        "train": "c1eb024bb65b4ca8aaafc9bba8cb0cdef541f001e98e97cb8c0a461eb7fe4da8",
+        "valid_pos": "a5e15513a852300d0d7306e6c380600bcba5df74ed2189d8fc69eb666662e3ea",
+        "valid_neg": "fdccfdf180daeee9a985a4423c501dc327a1e4e58b079b8d529baf4c01b92c2c"
+      },
+      "validation_positives_absent_from_training": true,
+      "test_arrays_loaded": false
+    },
+    "pubmed": {
+      "array_hashes": {
+        "x": "4f1804517a3fab22c6ae1df7674c6a194acefcd242dc843930da79ce9ea6f681",
+        "train": "ddc4018b501bdbadb891d8759d854e45b91926570bc7c95ebd4d42406191f1c8",
+        "valid_pos": "749f12b35b6512237bd319685040f98df63fcba9c67d447bb520e184d6540098",
+        "valid_neg": "2f75dfa7ecec8a8994c772f8e4df4f372f94e62b27e224b24c23fba362f1dacd"
+      },
+      "validation_positives_absent_from_training": true,
+      "test_arrays_loaded": false
+    }
+  },
+  "train_target_masking": "literal V27 kernel, sampled removal oracle in 02_FEATURE_SANITY.json",
+  "test_opened": false
+}

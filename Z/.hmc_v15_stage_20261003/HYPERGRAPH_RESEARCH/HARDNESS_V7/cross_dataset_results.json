@@ -1,0 +1,267 @@
+{
+  "status": "SUPPORTED",
+  "dataset": "citeseer",
+  "winner": "A4_QTHS25",
+  "candidate_pool_hash": "e2b8d6babecc441e57b34fe2397238c9143e5a92786cf59affd0338c4015054f",
+  "split_hash": "5a1a177685a1c3a4852f7e3034ea05ffd35b59aaf05fa58578cd40b0f1c46d36",
+  "validation_candidate_hash": "419f7e31c9320e435b210d3b05614f7d202d95ea9968765df8ceb9f9bdd875c5",
+  "teacher_checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/TEACHER_GRAPH/checkpoints/citeseer_uniform_seed0_47c4c49a13f5.pt",
+  "teacher_state_hash": "68cbb04738e2628afbb4df42722412b5a7159e9535b43e1ebe548cfc8d884af4",
+  "teacher_scores_hash": "051b2cc7cf126acc885f4fe10a11f2c0749c117a21b65acb1ea148cda2fb5334",
+  "qths_rule": {
+    "alpha_candidate_occurrence_fraction": 0.25,
+    "prepool_size": 2,
+    "trimmed_occurrence_count": 1935,
+    "trimmed_row_count": 1935,
+    "selected_runner_up_count": 1935,
+    "hash_rule": "QTHS25"
+  },
+  "seed0_screen": {
+    "seed0_mrr": {
+      "Graph-hard": 0.3576036800926328,
+      "Random-veto": 0.35521023310282185,
+      "Winner": 0.37587450402554534
+    },
+    "proceed_to_three_seeds": true
+  },
+  "metrics": {
+    "Graph-hard": {
+      "0": {
+        "mrr": 0.3576036800926328,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed0/checkpoints/citeseer_uniform_seed0_1ad7b6b3d44e.pt",
+        "selected_negative_hash": "debc1d5651c60ce7855fe8249764a7ede035aedc350c1ed2e8d580c371afd3e6",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      },
+      "1": {
+        "mrr": 0.5401636135179388,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed1/checkpoints/citeseer_uniform_seed1_18aacf9ad58a.pt",
+        "selected_negative_hash": "debc1d5651c60ce7855fe8249764a7ede035aedc350c1ed2e8d580c371afd3e6",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      },
+      "2": {
+        "mrr": 0.3543349306810662,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed2/checkpoints/citeseer_uniform_seed2_6f6e4190519e.pt",
+        "selected_negative_hash": "debc1d5651c60ce7855fe8249764a7ede035aedc350c1ed2e8d580c371afd3e6",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      }
+    },
+    "Random-veto": {
+      "0": {
+        "mrr": 0.35521023310282185,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed0/checkpoints/citeseer_uniform_seed0_94ed2ef84be0.pt",
+        "selected_negative_hash": "192d31bd531962ca311db301b73bf70d2a029690ffabcfc48efddea9ba40e342",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      },
+      "1": {
+        "mrr": 0.5305660357601479,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed1/checkpoints/citeseer_uniform_seed1_66958ad6a903.pt",
+        "selected_negative_hash": "6453e459af4acac7ce8187c7027fc7c60c6c08b74288c051753f1be2efee9364",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      },
+      "2": {
+        "mrr": 0.3497412649614952,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed2/checkpoints/citeseer_uniform_seed2_77f8dae8aa88.pt",
+        "selected_negative_hash": "e886791a88f1ef49086fc81ac476e816d72752e336a1a52793606abe69c5be22",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      }
+    },
+    "Winner": {
+      "0": {
+        "mrr": 0.37587450402554534,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed0/checkpoints/citeseer_uniform_seed0_5667705ec23e.pt",
+        "selected_negative_hash": "46f0edc0c1b63e02e347bb389b37881c51408cd3ba8079c4da8c4c73c759e1cc",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      },
+      "1": {
+        "mrr": 0.5338895251324841,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed1/checkpoints/citeseer_uniform_seed1_83cdd61c8c4c.pt",
+        "selected_negative_hash": "46f0edc0c1b63e02e347bb389b37881c51408cd3ba8079c4da8c4c73c759e1cc",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      },
+      "2": {
+        "mrr": 0.3713263828840851,
+        "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed2/checkpoints/citeseer_uniform_seed2_8d0c3a4f85c9.pt",
+        "selected_negative_hash": "46f0edc0c1b63e02e347bb389b37881c51408cd3ba8079c4da8c4c73c759e1cc",
+        "checkpoint_rule": "FIXED_EPOCH_10"
+      }
+    }
+  },
+  "run_records": {
+    "Graph-hard_seed0": {
+      "status": "COMPLETE",
+      "method": "citeseer_Graph-hard",
+      "seed": 0,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed0/checkpoints/citeseer_uniform_seed0_1ad7b6b3d44e.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed0/raw/citeseer_uniform_seed0_1ad7b6b3d44e.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed0/epoch_diagnostics.json",
+      "train_seconds": 47.34063769178465,
+      "wall_seconds": 47.79345132922754,
+      "selected_negative_hash": "debc1d5651c60ce7855fe8249764a7ede035aedc350c1ed2e8d580c371afd3e6",
+      "dynamic_sampler": null,
+      "model_state_hash": "d8349ad8a7a822a3fd842c3c68e74cd3f2e0f6bc81b6c5b1bc94f957536f6a61",
+      "epoch10_validation_mrr": 0.3576036800926328,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    },
+    "Random-veto_seed0": {
+      "status": "COMPLETE",
+      "method": "citeseer_Random-veto",
+      "seed": 0,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed0/checkpoints/citeseer_uniform_seed0_94ed2ef84be0.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed0/raw/citeseer_uniform_seed0_94ed2ef84be0.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed0/epoch_diagnostics.json",
+      "train_seconds": 47.35530141508207,
+      "wall_seconds": 47.693742671981454,
+      "selected_negative_hash": "192d31bd531962ca311db301b73bf70d2a029690ffabcfc48efddea9ba40e342",
+      "dynamic_sampler": null,
+      "model_state_hash": "683801d2c359c062a5b81d1cfad83ac482a09035b1b55585e2c0d28d4915602e",
+      "epoch10_validation_mrr": 0.35521023310282185,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    },
+    "Winner_seed0": {
+      "status": "COMPLETE",
+      "method": "citeseer_Winner",
+      "seed": 0,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed0/checkpoints/citeseer_uniform_seed0_5667705ec23e.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed0/raw/citeseer_uniform_seed0_5667705ec23e.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed0/epoch_diagnostics.json",
+      "train_seconds": 47.141394587699324,
+      "wall_seconds": 47.48129365220666,
+      "selected_negative_hash": "46f0edc0c1b63e02e347bb389b37881c51408cd3ba8079c4da8c4c73c759e1cc",
+      "dynamic_sampler": null,
+      "model_state_hash": "c53d1f040512cad3a04426745880e6fe4951ec01cbb0eab7549542463c7e4afa",
+      "epoch10_validation_mrr": 0.37587450402554534,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    },
+    "Graph-hard_seed1": {
+      "status": "COMPLETE",
+      "method": "citeseer_Graph-hard",
+      "seed": 1,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed1/checkpoints/citeseer_uniform_seed1_18aacf9ad58a.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed1/raw/citeseer_uniform_seed1_18aacf9ad58a.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed1/epoch_diagnostics.json",
+      "train_seconds": 47.170147138647735,
+      "wall_seconds": 47.62926459638402,
+      "selected_negative_hash": "debc1d5651c60ce7855fe8249764a7ede035aedc350c1ed2e8d580c371afd3e6",
+      "dynamic_sampler": null,
+      "model_state_hash": "4e8ac680625b02284ea9568dfa5be4d73f85fb21cabebf03195e73e6c3418e46",
+      "epoch10_validation_mrr": 0.5401636135179388,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    },
+    "Random-veto_seed1": {
+      "status": "COMPLETE",
+      "method": "citeseer_Random-veto",
+      "seed": 1,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed1/checkpoints/citeseer_uniform_seed1_66958ad6a903.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed1/raw/citeseer_uniform_seed1_66958ad6a903.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed1/epoch_diagnostics.json",
+      "train_seconds": 47.23797024320811,
+      "wall_seconds": 47.717471219133586,
+      "selected_negative_hash": "6453e459af4acac7ce8187c7027fc7c60c6c08b74288c051753f1be2efee9364",
+      "dynamic_sampler": null,
+      "model_state_hash": "d730267c9a66ec4697afd90282c37486306562c0e6062459274142fd5d57f3b3",
+      "epoch10_validation_mrr": 0.5305660357601479,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    },
+    "Winner_seed1": {
+      "status": "COMPLETE",
+      "method": "citeseer_Winner",
+      "seed": 1,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed1/checkpoints/citeseer_uniform_seed1_83cdd61c8c4c.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed1/raw/citeseer_uniform_seed1_83cdd61c8c4c.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed1/epoch_diagnostics.json",
+      "train_seconds": 47.132451484911144,
+      "wall_seconds": 47.47273228876293,
+      "selected_negative_hash": "46f0edc0c1b63e02e347bb389b37881c51408cd3ba8079c4da8c4c73c759e1cc",
+      "dynamic_sampler": null,
+      "model_state_hash": "81ac934c38ff47265ce1197c8c808ce8b57bac3bbe1d400637249ae7a5666efe",
+      "epoch10_validation_mrr": 0.5338895251324841,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    },
+    "Graph-hard_seed2": {
+      "status": "COMPLETE",
+      "method": "citeseer_Graph-hard",
+      "seed": 2,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed2/checkpoints/citeseer_uniform_seed2_6f6e4190519e.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed2/raw/citeseer_uniform_seed2_6f6e4190519e.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Graph_hard/seed2/epoch_diagnostics.json",
+      "train_seconds": 47.21387871494517,
+      "wall_seconds": 47.67548282677308,
+      "selected_negative_hash": "debc1d5651c60ce7855fe8249764a7ede035aedc350c1ed2e8d580c371afd3e6",
+      "dynamic_sampler": null,
+      "model_state_hash": "d45d0d4fa16c59625a70b33c1e31947d3653635100e4231cf6f77a557de917be",
+      "epoch10_validation_mrr": 0.3543349306810662,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    },
+    "Random-veto_seed2": {
+      "status": "COMPLETE",
+      "method": "citeseer_Random-veto",
+      "seed": 2,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed2/checkpoints/citeseer_uniform_seed2_77f8dae8aa88.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed2/raw/citeseer_uniform_seed2_77f8dae8aa88.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Random_veto/seed2/epoch_diagnostics.json",
+      "train_seconds": 47.150412222370505,
+      "wall_seconds": 47.490891695953906,
+      "selected_negative_hash": "e886791a88f1ef49086fc81ac476e816d72752e336a1a52793606abe69c5be22",
+      "dynamic_sampler": null,
+      "model_state_hash": "c90bc9307a5c1c99484dfe7379fef6a7c77f48e41c71094dd04072dfee17be02",
+      "epoch10_validation_mrr": 0.3497412649614952,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    },
+    "Winner_seed2": {
+      "status": "COMPLETE",
+      "method": "citeseer_Winner",
+      "seed": 2,
+      "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed2/checkpoints/citeseer_uniform_seed2_8d0c3a4f85c9.pt",
+      "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed2/raw/citeseer_uniform_seed2_8d0c3a4f85c9.json",
+      "diagnostics_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/CROSS_DATASET/citeseer/Winner/seed2/epoch_diagnostics.json",
+      "train_seconds": 47.146048267837614,
+      "wall_seconds": 47.48508208245039,
+      "selected_negative_hash": "46f0edc0c1b63e02e347bb389b37881c51408cd3ba8079c4da8c4c73c759e1cc",
+      "dynamic_sampler": null,
+      "model_state_hash": "abce07b4ab8960de0484fe608273d1890c565c521712f5d4aaa9c6acbabeecd1",
+      "epoch10_validation_mrr": 0.3713263828840851,
+      "epoch_count": 10,
+      "checkpoint_rule": "FIXED_EPOCH_10",
+      "test_evaluated": false
+    }
+  },
+  "heldout_identity_used_in_training_pool": false,
+  "test_split_metrics_evaluated": false,
+  "mean_mrr": {
+    "Graph-hard": 0.41736740809721257,
+    "Random-veto": 0.41183917794148833,
+    "Winner": 0.4270301373473715
+  },
+  "sample_sd_mrr": {
+    "Graph-hard": 0.10635719171723085,
+    "Random-veto": 0.10285683000536168,
+    "Winner": 0.09257088051777489
+  },
+  "winner_wins_vs_graph_hard": 2,
+  "supported": true,
+  "runtime": {
+    "python": "3.11",
+    "pytorch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "torch_geometric": "2.5.3",
+    "gpu": "Tesla V100-PCIE-16GB",
+    "project_environment_declares": "pytorch=2.3.1; pytorch-cuda=12.1; pyg=2.5.3",
+    "note": "All Citeseer comparison arms used this same runtime; exact environment parity with the project lock is not established."
+  }
+}

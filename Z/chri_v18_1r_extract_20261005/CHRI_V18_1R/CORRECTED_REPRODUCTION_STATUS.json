@@ -1,0 +1,134 @@
+{
+  "state": "COMPLETE",
+  "jobs": [
+    [
+      "pubmed",
+      0,
+      "A1"
+    ],
+    [
+      "pubmed",
+      0,
+      "A2"
+    ],
+    [
+      "pubmed",
+      0,
+      "A3"
+    ],
+    [
+      "pubmed",
+      1,
+      "A1"
+    ],
+    [
+      "pubmed",
+      1,
+      "A2"
+    ],
+    [
+      "pubmed",
+      1,
+      "A3"
+    ],
+    [
+      "pubmed",
+      2,
+      "A1"
+    ],
+    [
+      "pubmed",
+      2,
+      "A2"
+    ],
+    [
+      "pubmed",
+      2,
+      "A3"
+    ],
+    [
+      "cora",
+      0,
+      "A1"
+    ],
+    [
+      "cora",
+      0,
+      "A2"
+    ],
+    [
+      "cora",
+      0,
+      "A3"
+    ]
+  ],
+  "parallel": 3,
+  "test_accessed": false,
+  "started_at": 1791189420.66426,
+  "active": [],
+  "queued": 0,
+  "updated_at": 1791189604.786591,
+  "completed": [
+    [
+      "pubmed",
+      0,
+      "A2"
+    ],
+    [
+      "pubmed",
+      0,
+      "A1"
+    ],
+    [
+      "pubmed",
+      1,
+      "A1"
+    ],
+    [
+      "pubmed",
+      0,
+      "A3"
+    ],
+    [
+      "pubmed",
+      1,
+      "A2"
+    ],
+    [
+      "pubmed",
+      2,
+      "A1"
+    ],
+    [
+      "pubmed",
+      1,
+      "A3"
+    ],
+    [
+      "pubmed",
+      2,
+      "A2"
+    ],
+    [
+      "cora",
+      0,
+      "A1"
+    ],
+    [
+      "cora",
+      0,
+      "A2"
+    ],
+    [
+      "cora",
+      0,
+      "A3"
+    ],
+    [
+      "pubmed",
+      2,
+      "A3"
+    ]
+  ],
+  "ended_at": 1791189605.7870953
+}

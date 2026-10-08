@@ -1,0 +1,189 @@
+{
+  "state": "COMPLETE",
+  "historical_V18_epoch_model_hashes": "NOT_RECORDED; historical comparisons are not fabricated",
+  "V18_1R_two_fresh_executions": {
+    "dataset": "PubMed",
+    "seed": 0,
+    "arm": "RAW/A2",
+    "epochs": 5,
+    "optimizer_steps_each": 90,
+    "initial_model_equal": true,
+    "initial_optimizer_equal": true,
+    "every_step_hash_checks": {
+      "inputs_sha256": true,
+      "logits_sha256": true,
+      "loss_sha256": true,
+      "model_after_sha256": true,
+      "optimizer_after_sha256": true,
+      "gradient_sha256": true
+    },
+    "all_step_checks_pass": true,
+    "epoch_hashes": [
+      {
+        "epoch": 1,
+        "model_state_A": "232c4dd83698ca726652bcd70bda4977a0d999ad50e9af9af07144ed3b14a61a",
+        "model_state_B": "232c4dd83698ca726652bcd70bda4977a0d999ad50e9af9af07144ed3b14a61a",
+        "model_equal": true,
+        "optimizer_state_A": "7e604b32ee2f7acb661019a75d3ac3d5c91438f8dc488e179415ac188f206262",
+        "optimizer_state_B": "7e604b32ee2f7acb661019a75d3ac3d5c91438f8dc488e179415ac188f206262",
+        "optimizer_equal": true,
+        "validation_A": {
+          "ce": 0.13504580433258417,
+          "balanced_ce": 0.13516666031437385,
+          "auc": 0.9877416886868068,
+          "mrr": 0.9103774497163486,
+          "hits10": 0.9990974729241877,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2504512635379061,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_B": {
+          "ce": 0.13504580433258417,
+          "balanced_ce": 0.13516666031437385,
+          "auc": 0.9877416886868068,
+          "mrr": 0.9103774497163486,
+          "hits10": 0.9990974729241877,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2504512635379061,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_equal": true
+      },
+      {
+        "epoch": 2,
+        "model_state_A": "06f0da9291690802abe9d141bb643b9075d3eef3d9b84edc9badff1e1e578601",
+        "model_state_B": "06f0da9291690802abe9d141bb643b9075d3eef3d9b84edc9badff1e1e578601",
+        "model_equal": true,
+        "optimizer_state_A": "86c1bf63efa852f7f37cc4951ea6fc3e525a4ad0c3b63fd4719329db1203e9dd",
+        "optimizer_state_B": "86c1bf63efa852f7f37cc4951ea6fc3e525a4ad0c3b63fd4719329db1203e9dd",
+        "optimizer_equal": true,
+        "validation_A": {
+          "ce": 0.13558918955374052,
+          "balanced_ce": 0.13187437819885334,
+          "auc": 0.9883695630481956,
+          "mrr": 0.9186640450403989,
+          "hits10": 0.9990974729241877,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2278880866425992,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_B": {
+          "ce": 0.13558918955374052,
+          "balanced_ce": 0.13187437819885334,
+          "auc": 0.9883695630481956,
+          "mrr": 0.9186640450403989,
+          "hits10": 0.9990974729241877,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2278880866425992,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_equal": true
+      },
+      {
+        "epoch": 3,
+        "model_state_A": "14c413cd6bf8753755683c1b9acce11f380d2dc79c1781a010fda89d6be2c826",
+        "model_state_B": "14c413cd6bf8753755683c1b9acce11f380d2dc79c1781a010fda89d6be2c826",
+        "model_equal": true,
+        "optimizer_state_A": "dffe6ab50c5cb91e590b812ec730c14794200d37ae7fa955283c502b0a22bced",
+        "optimizer_state_B": "dffe6ab50c5cb91e590b812ec730c14794200d37ae7fa955283c502b0a22bced",
+        "optimizer_equal": true,
+        "validation_A": {
+          "ce": 0.13459646644753048,
+          "balanced_ce": 0.13011362700370696,
+          "auc": 0.9887504744783587,
+          "mrr": 0.9183128832158615,
+          "hits10": 0.9990974729241877,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2283393501805053,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_B": {
+          "ce": 0.13459646644753048,
+          "balanced_ce": 0.13011362700370696,
+          "auc": 0.9887504744783587,
+          "mrr": 0.9183128832158615,
+          "hits10": 0.9990974729241877,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2283393501805053,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_equal": true
+      },
+      {
+        "epoch": 4,
+        "model_state_A": "69f0e5ad2076046c3ba2a26e734cd5d7b988151236ca19aa79b8e4675791c983",
+        "model_state_B": "69f0e5ad2076046c3ba2a26e734cd5d7b988151236ca19aa79b8e4675791c983",
+        "model_equal": true,
+        "optimizer_state_A": "d752a119dcabb339a12735506a480e68d6d23586ae01736f861d747e785d3b55",
+        "optimizer_state_B": "d752a119dcabb339a12735506a480e68d6d23586ae01736f861d747e785d3b55",
+        "optimizer_equal": true,
+        "validation_A": {
+          "ce": 0.1423291801156404,
+          "balanced_ce": 0.12957359127845974,
+          "auc": 0.9888864593651032,
+          "mrr": 0.9226605925161883,
+          "hits10": 0.9990974729241877,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2197653429602888,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_B": {
+          "ce": 0.1423291801156404,
+          "balanced_ce": 0.12957359127845974,
+          "auc": 0.9888864593651032,
+          "mrr": 0.9226605925161883,
+          "hits10": 0.9990974729241877,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2197653429602888,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_equal": true
+      },
+      {
+        "epoch": 5,
+        "model_state_A": "4282aded290f54b81731a7d18101716814548250ded7196df38a253a51ee34b8",
+        "model_state_B": "4282aded290f54b81731a7d18101716814548250ded7196df38a253a51ee34b8",
+        "model_equal": true,
+        "optimizer_state_A": "45d2b2be6ba90ab4c3f47e30e0afa0a8288ac111cb60112fdcdad6929e15d534",
+        "optimizer_state_B": "45d2b2be6ba90ab4c3f47e30e0afa0a8288ac111cb60112fdcdad6929e15d534",
+        "optimizer_equal": true,
+        "validation_A": {
+          "ce": 0.12355135887695168,
+          "balanced_ce": 0.1286815971088768,
+          "auc": 0.9890612323485904,
+          "mrr": 0.9238045260495623,
+          "hits10": 0.9986462093862816,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2188628158844765,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_B": {
+          "ce": 0.12355135887695168,
+          "balanced_ce": 0.1286815971088768,
+          "auc": 0.9890612323485904,
+          "mrr": 0.9238045260495623,
+          "hits10": 0.9986462093862816,
+          "hits20": 1.0,
+          "mean_positive_rank": 1.2188628158844765,
+          "queries": 2216,
+          "negatives_per_query": 20
+        },
+        "validation_equal": true
+      }
+    ],
+    "all_epochs_identical": true,
+    "runA_wall_seconds": 36.464768171310425,
+    "runB_wall_seconds": 34.898497581481934,
+    "test_accessed": false
+  },
+  "full_optimizer_state_and_parameter_hashes": "Retained per step in runA/state_trace.json and runB/state_trace.json."
+}

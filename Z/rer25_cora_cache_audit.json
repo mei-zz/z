@@ -1,0 +1,36 @@
+{
+  "state": "PASS",
+  "dataset": "cora",
+  "seed": 0,
+  "splits": {
+    "train": {
+      "unique_candidates": 21730,
+      "scheduled_candidates": 34560,
+      "scheduled_hyperedges": 471084,
+      "hyperedge_collision_rate": 0.04980003566242963,
+      "candidate_collision_rate": 0.2282986111111111,
+      "unique_hyperedge_collision_rate": 0.02724619992866137,
+      "cardinality_change": "-1 iff counterpart already belongs to context, otherwise0",
+      "matching_degree_and_incidence_bucket_agreement": 1.0,
+      "changed_counterparts": 43460,
+      "donors_same_split": true,
+      "label_matching": false,
+      "self_descriptor_bit_identity": true
+    },
+    "validation": {
+      "unique_candidates": 5523,
+      "scheduled_candidates": 5523,
+      "scheduled_hyperedges": 50104,
+      "hyperedge_collision_rate": 0.008582149129809995,
+      "candidate_collision_rate": 0.028969762810066992,
+      "unique_hyperedge_collision_rate": 0.008582149129809995,
+      "cardinality_change": "-1 iff counterpart already belongs to context, otherwise0",
+      "matching_degree_and_incidence_bucket_agreement": 1.0,
+      "changed_counterparts": 11046,
+      "donors_same_split": true,
+      "label_matching": false,
+      "self_descriptor_bit_identity": true
+    }
+  },
+  "projection_and_full_descriptor_bit_identity": true
+}

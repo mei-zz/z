@@ -1,0 +1,39 @@
+{
+  "state": "COMPLETE",
+  "phase": "complete",
+  "current": null,
+  "updated_at": "2026-10-02T13:22:21+0800",
+  "preflight": "PASS",
+  "test_evaluated": true,
+  "runtime": {
+    "python": "3.11.11",
+    "torch": "2.3.1+cu121",
+    "torch_cuda_build": "12.1",
+    "cuda_available": true,
+    "gpu": "Tesla V100-PCIE-16GB",
+    "pyg": "2.5.3",
+    "numpy": "1.26.4",
+    "protocol": "STRICT_TRAIN_ONLY",
+    "checkpoint_rule": "FIXED_EPOCH_10",
+    "environment_route": "LOCKED_TORCH_2_3_1_CUDA_12_1",
+    "environment_repro_blocked": false
+  },
+  "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+  "decision": "PASS",
+  "test_candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+  "transfer": {
+    "positive_mean_on_validation": true,
+    "positive_mean_on_test": false,
+    "validation_wins_vs_graph_hard": 2,
+    "test_wins_vs_graph_hard": 2,
+    "supported": true,
+    "fully_reverse": false,
+    "rule": "positive if validation OR test mean beats Graph-hard; report both without tuning"
+  },
+  "screen": "THIRD_DATASET_POSITIVE_SIGNAL",
+  "mechanism_class": "INCONCLUSIVE",
+  "final_decision": "QTHS_ONLY_PAPER_READY",
+  "QTHS_LOCKED_REPRODUCTION": "PASS",
+  "INNOVATION_2_CONFIRMED": false
+}

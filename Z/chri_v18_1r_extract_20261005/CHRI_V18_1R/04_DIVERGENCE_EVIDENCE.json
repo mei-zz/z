@@ -1,0 +1,26 @@
+{
+  "state": "COMPLETE",
+  "experiment": "two independent unpatched V18 PubMed seed0 RAW/A2 executions from identical initialization and cached input",
+  "input_hash_equal": true,
+  "forward_logits_hash_equal": true,
+  "loss_hash_equal": true,
+  "first_different_forward_activation": {
+    "index": 0,
+    "operation_A": {
+      "op": "scatter_mean",
+      "output": "a5f9cac82045043bd58d22bffcec5e5ab80363d3eb1318c771c0eff33ef4cb45"
+    },
+    "operation_B": {
+      "op": "scatter_mean",
+      "output": "d5821248aa165f55d3009fe7d8501c2bdbd4cc4adacea124315c68028392ca80"
+    }
+  },
+  "first_different_gradient_tensors": [
+    "decoder.4.weight"
+  ],
+  "first_different_updated_parameter_tensors": [
+    "decoder.4.weight"
+  ],
+  "first_divergence": "Epoch 1, optimizer batch 1, in endpoint scatter_mean pooled output. Logits/loss remain equal because final decoder layer is zero-initialized; the gradient of decoder.4.weight differs and the updated weight then differs.",
+  "historical_V18_exact_first_step": "NOT_AVAILABLE: historical epoch/step states were not stored."
+}

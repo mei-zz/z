@@ -1,0 +1,12 @@
+{
+  "state": "COMPLETE",
+  "ended_at": 1791278981.0579994,
+  "research_decisions": {
+    "GRAPH": "MECHANISM_SUPPORTED",
+    "MULT": "MECHANISM_SUPPORTED",
+    "COMPLEMENTARITY": "REPLICATION_CANDIDATE",
+    "HDP_CONDITIONAL": "REPLICATION_CANDIDATE"
+  },
+  "novelty_status": "NOT_AUDITED",
+  "test_opened": false
+}

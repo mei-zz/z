@@ -1,0 +1,28 @@
+# V12 Blacklist
+
+| Method / family | Disposition | Failure evidence / reason |
+|---|---|---|
+| PCHR | BLACKLISTED | Prior V3/V4 task history says REJECT; no separate metric file found. Candidate-conditioned hyperedge/routing family has direct LCHR failure; no PCHR metrics are invented. |
+| LCHR | BLACKLISTED | Validation 0.131696 < parameter-matched global router 0.131830, random Top-K 0.132367, and global hypergraph 0.162793. |
+| SSHC | BLACKLISTED | Corrected true-cohesion arm lost to shuffled-cohesion control and missed effect-size gate. |
+| RAHC | BLACKLISTED | True redundancy lost to size and shuffled controls. |
+| HSA | BLACKLISTED | Best true arm did not reach minimum effect-size gate. |
+| ARHC | BLACKLISTED | Role-aware propagation did not beat Raw-HG in 5-epoch screen. |
+| PMHE | BLACKLISTED | Pair-moment arm lost to simpler mean / second-moment controls; subthreshold gain. |
+| ARPM | BLACKLISTED | Anchor-conditioned pair moment lost to Raw, PMHE and anchor-mean controls. |
+| ECPH | BLACKLISTED | +0.000497 MRR / +0.102%, below gate; increased runtime. |
+| ECNH | BLACKLISTED | −0.000115 MRR against Raw-HG. |
+| OWH | BLACKLISTED | −0.002255 MRR and 5.2x hyperedges / +139% runtime. |
+| GHHR | BLACKLISTED | Below Raw-HG and the uniform / shuffled controls. |
+| CVHNM | BLACKLISTED | Lost to Graph-hard-only control. |
+| DAF | BLACKLISTED | −0.006109 MRR against Raw-HG. |
+| False-negative HG veto mechanism | BLACKLISTED | Validation performance did not establish mechanism; on test true veto lost to shuffled veto by 0.012178 MRR. |
+| CODNS | BLACKLISTED | Graph-hardness-matched disagreement controls were negative or subthreshold. |
+| AQTHS | BLACKLISTED | Validation gate failed; test was not run. |
+| RTHNL under K=1 | BLACKLISTED | Mathematically degenerates to Graph-hard because one negative per positive leaves no within-row reordering. |
+| CPTS true-tail / change-point detector | BLACKLISTED | Detected tails in all real and null rows; local adaptivity mechanism not supported. |
+| Per-positive CPTS adaptivity claim | BLACKLISTED | CPTS did not beat shuffled / Matched-Q controls consistently; retain only empirical performance as historical. |
+| Fixed percentile trimming | BLACKLISTED | QTHS25 remains a strong baseline, but ordinary threshold changes are hyperparameter search without an independent mechanism claim. |
+| SH75 window tweaks | BLACKLISTED | SH75 is a strong empirical control; moving fixed window boundaries is parameter tuning, not a mechanism. |
+| Hyperparameter-only changes | BLACKLISTED | Learning rate, dropout, dimension, weight decay, batch size, epochs, seed, negative count, activation, generic normalization or residual changes are not innovations. |
+| PCHR exact numeric diagnosis | NOT RECOVERED | Explicitly blacklisted by prior task; no separate PCHR result artifact found. Do not infer or recreate its metric. |

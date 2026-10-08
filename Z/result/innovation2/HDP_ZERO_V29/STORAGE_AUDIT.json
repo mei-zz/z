@@ -1,0 +1,12 @@
+{
+  "state": "PASS",
+  "current": {
+    "available_bytes": 6690095104,
+    "available_inodes": 13343867,
+    "margin_bytes": 3221225472
+  },
+  "estimated_remaining_growth_bytes": 3221225472,
+  "basis": "Phase A and canonical V29 feature caches are complete; only fresh inner-train backbones/features/model outputs/reports remain. V28 measured inner PubMed 10-epoch cache 833MiB; V29 inner uses final5 only and three seeds/dataset. Dynamic 3GiB stop enforced before each stage/job. No deletion.",
+  "completed_phaseA_data_caches": 10,
+  "completed_phaseA_feature_caches": 10
+}

@@ -1,0 +1,9 @@
+{
+  "state": "PREPARING_B",
+  "dataset": "pubmed",
+  "seed": 0,
+  "epoch": 5,
+  "epochs": 5,
+  "seconds": 14.867071862332523,
+  "test_accessed": false
+}

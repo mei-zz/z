@@ -1,0 +1,69 @@
+{
+  "state": "COMPLETE",
+  "seconds": 18.128866829909384,
+  "matching_encoder": "seed-shared initial DeepSets encoder frozen for matching; predictor encoders subsequently trained",
+  "rule": "train-only StandardScaler; PCA8 on NCNC structural representation + PCA4 on P_u/P_v; standardized logit; kNN32 of 40; exclude identical candidate keys",
+  "donor_pool_candidates": 73728,
+  "donor_pairs_hash": "466e6230679a7bd95bf235b1f5e930772627c52caa7a571c20785cc882f3f048",
+  "labels_used": false,
+  "heldout_donors": false,
+  "test_accessed": false,
+  "diagnostics": [
+    {
+      "split": "epoch_1",
+      "nearest_projected_distance_mean": 1.1767179474622815,
+      "top32_distance_mean": 1.7188040671751375,
+      "top32_distance_q95": 2.7202797971183323,
+      "nearest_full_Z_rms_distance": 0.5411330461502075,
+      "self_candidate_keys_excluded": true,
+      "queries": 73728
+    },
+    {
+      "split": "epoch_2",
+      "nearest_projected_distance_mean": 1.1794811298276917,
+      "top32_distance_mean": 1.7219485811070232,
+      "top32_distance_q95": 2.7267296313465157,
+      "nearest_full_Z_rms_distance": 0.5420600771903992,
+      "self_candidate_keys_excluded": true,
+      "queries": 73728
+    },
+    {
+      "split": "epoch_3",
+      "nearest_projected_distance_mean": 1.1774408963080973,
+      "top32_distance_mean": 1.7185828569664037,
+      "top32_distance_q95": 2.716609664382632,
+      "nearest_full_Z_rms_distance": 0.5418536067008972,
+      "self_candidate_keys_excluded": true,
+      "queries": 73728
+    },
+    {
+      "split": "epoch_4",
+      "nearest_projected_distance_mean": 1.1794533180137743,
+      "top32_distance_mean": 1.722048633645009,
+      "top32_distance_q95": 2.727278856169411,
+      "nearest_full_Z_rms_distance": 0.5415932536125183,
+      "self_candidate_keys_excluded": true,
+      "queries": 73728
+    },
+    {
+      "split": "epoch_5",
+      "nearest_projected_distance_mean": 1.1794668844458207,
+      "top32_distance_mean": 1.7213322356455794,
+      "top32_distance_q95": 2.7241503953133757,
+      "nearest_full_Z_rms_distance": 0.541857898235321,
+      "self_candidate_keys_excluded": true,
+      "queries": 73728
+    },
+    {
+      "split": "valid",
+      "nearest_projected_distance_mean": 1.388575709178973,
+      "top32_distance_mean": 1.9475312653973522,
+      "top32_distance_q95": 2.895177067312225,
+      "nearest_full_Z_rms_distance": 0.6481027007102966,
+      "self_candidate_keys_excluded": true,
+      "queries": 46536
+    }
+  ],
+  "conditioning_limit": "finite-dimensional PCA/kNN approximation; not exact conditional independence sampling",
+  "marginal_preservation": "local donors preserve support approximately; empirical learned-R diagnostics written per arm after training"
+}

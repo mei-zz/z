@@ -1,0 +1,37 @@
+{
+  "state": "STAGE1D_COMPLETE",
+  "phase": "stage1d",
+  "completed": 4,
+  "total": 4,
+  "failed_jobs": {},
+  "decisions": {
+    "state": "STAGE1D_COMPLETE",
+    "stage": "stage1d",
+    "decisions": {
+      "G2": {
+        "decision": "REJECT",
+        "paired": [
+          {
+            "seed": 0,
+            "baseline_mrr": 0.5256204671690727,
+            "candidate_mrr": 0.5250493439358228,
+            "matched_control_mrr": 0.5251348535577897,
+            "control_metrics": {
+              "G2_INSTANT": 0.5250493439358228,
+              "G2_SHUFFLED": 0.5251348535577897
+            },
+            "delta": -0.0005711232332499261,
+            "control_delta": -8.550962196685052e-05
+          }
+        ],
+        "effect_gate": false,
+        "strong_baseline": "QTHS25"
+      }
+    },
+    "completed_pairs": 1,
+    "test_evaluated": false,
+    "updated_at_utc": "2026-10-03T01:14:37.630799+00:00"
+  },
+  "test_evaluated": false,
+  "updated_at_utc": "2026-10-03T01:14:37.636161+00:00"
+}

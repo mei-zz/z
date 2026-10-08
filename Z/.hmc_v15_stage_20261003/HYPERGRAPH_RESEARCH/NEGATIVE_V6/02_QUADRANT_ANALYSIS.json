@@ -1,0 +1,351 @@
+{
+  "candidate_metadata": {
+    "protocol": "standard uniform validation negatives",
+    "positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+    "negative_candidates_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+    "positive_plus_negative_candidate_tensor_hash": "197912d7397d8d8e118e2c985ff2a7948810c8b96ab5bed91e49c598aa481d48",
+    "positive_count": 263,
+    "negatives_per_positive": 20,
+    "negative_pool_seed": 777,
+    "grouping_seed": 778,
+    "test_evaluated": false
+  },
+  "teacher_views": [
+    "frozen V5 Graph-only",
+    "frozen V5 Raw-HG"
+  ],
+  "quadrant_split": "within each query, the top 10 of 20 negatives by each teacher score are high; ranks are row-local.",
+  "models": {
+    "A0": {
+      "mrr_recomputed_on_fixed_candidates": 0.5030120048647342,
+      "validation_positive_negative_margin_mean": 0.3237228989601135,
+      "validation_positive_negative_margin_median": 0.08487226068973541,
+      "hardest_graph_tertile_count": 88,
+      "hardest_graph_tertile_mrr": 0.10795761251406127,
+      "hardest_graph_tertile_graph_margin_mean": -0.1971682459115982,
+      "quadrants": {
+        "Q1_Graph_high_HG_high": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.10567627847194672,
+          "mean_hypergraph_teacher_score": -0.0016570031875744462,
+          "mean_final_model_score": -0.0016570060979574919,
+          "negative_beats_positive_fraction": 0.4701789264413519,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.5779467680608364,
+          "mean_outranking_negatives_per_query": 3.596958174904943,
+          "mean_positive_minus_negative_margin": 0.2562454044818878
+        },
+        "Q2_Graph_high_HG_low": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.13155220448970795,
+          "mean_hypergraph_teacher_score": -0.09868355095386505,
+          "mean_final_model_score": -0.09868355095386505,
+          "negative_beats_positive_fraction": 0.20388349514563106,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.2737642585551331,
+          "mean_outranking_negatives_per_query": 0.4790874524714829,
+          "mean_positive_minus_negative_margin": 0.37755605578422546
+        },
+        "Q3_Graph_low_HG_high": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.16719713807106018,
+          "mean_hypergraph_teacher_score": -0.0524386428296566,
+          "mean_final_model_score": -0.0524386428296566,
+          "negative_beats_positive_fraction": 0.3673139158576052,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.42585551330798477,
+          "mean_outranking_negatives_per_query": 0.8631178707224335,
+          "mean_positive_minus_negative_margin": 0.3313111364841461
+        },
+        "Q4_Graph_low_HG_low": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.18848969042301178,
+          "mean_hypergraph_teacher_score": -0.1177460253238678,
+          "mean_final_model_score": -0.1177460253238678,
+          "negative_beats_positive_fraction": 0.1754473161033797,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.311787072243346,
+          "mean_outranking_negatives_per_query": 1.3422053231939164,
+          "mean_positive_minus_negative_margin": 0.37233439087867737
+        }
+      },
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+      "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+      "matched_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "test_evaluated": false,
+      "selected_training_positive_negative_margin_mean": -0.029278699308633804
+    },
+    "A1": {
+      "mrr_recomputed_on_fixed_candidates": 0.5334445819888557,
+      "validation_positive_negative_margin_mean": 0.11978565901517868,
+      "validation_positive_negative_margin_median": 0.07295109331607819,
+      "hardest_graph_tertile_count": 88,
+      "hardest_graph_tertile_mrr": 0.15726424140132628,
+      "hardest_graph_tertile_graph_margin_mean": -0.1971682459115982,
+      "quadrants": {
+        "Q1_Graph_high_HG_high": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.10567627847194672,
+          "mean_hypergraph_teacher_score": -0.0016570031875744462,
+          "mean_final_model_score": -0.1279629021883011,
+          "negative_beats_positive_fraction": 0.3866799204771372,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.49429657794676807,
+          "mean_outranking_negatives_per_query": 2.958174904942966,
+          "mean_positive_minus_negative_margin": 0.09684619307518005
+        },
+        "Q2_Graph_high_HG_low": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.13155220448970795,
+          "mean_hypergraph_teacher_score": -0.09868355095386505,
+          "mean_final_model_score": -0.12918494641780853,
+          "negative_beats_positive_fraction": 0.3737864077669903,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.43346007604562736,
+          "mean_outranking_negatives_per_query": 0.8783269961977186,
+          "mean_positive_minus_negative_margin": 0.10592030733823776
+        },
+        "Q3_Graph_low_HG_high": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.16719713807106018,
+          "mean_hypergraph_teacher_score": -0.0524386428296566,
+          "mean_final_model_score": -0.1681792438030243,
+          "negative_beats_positive_fraction": 0.2524271844660194,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.29277566539923955,
+          "mean_outranking_negatives_per_query": 0.5931558935361216,
+          "mean_positive_minus_negative_margin": 0.14491459727287292
+        },
+        "Q4_Graph_low_HG_low": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.18848969042301178,
+          "mean_hypergraph_teacher_score": -0.1177460253238678,
+          "mean_final_model_score": -0.17038215696811676,
+          "negative_beats_positive_fraction": 0.24403578528827038,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.4600760456273764,
+          "mean_outranking_negatives_per_query": 1.8669201520912548,
+          "mean_positive_minus_negative_margin": 0.13926543295383453
+        }
+      },
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+      "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+      "matched_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "test_evaluated": false,
+      "selected_training_positive_negative_margin_mean": 0.061339572072029114
+    },
+    "A2": {
+      "mrr_recomputed_on_fixed_candidates": 0.5355843158758731,
+      "validation_positive_negative_margin_mean": 0.12370248883962631,
+      "validation_positive_negative_margin_median": 0.07107765972614288,
+      "hardest_graph_tertile_count": 88,
+      "hardest_graph_tertile_mrr": 0.15822417923767135,
+      "hardest_graph_tertile_graph_margin_mean": -0.1971682459115982,
+      "quadrants": {
+        "Q1_Graph_high_HG_high": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.10567627847194672,
+          "mean_hypergraph_teacher_score": -0.0016570031875744462,
+          "mean_final_model_score": -0.1322789043188095,
+          "negative_beats_positive_fraction": 0.38817097415506957,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.49809885931558934,
+          "mean_outranking_negatives_per_query": 2.96958174904943,
+          "mean_positive_minus_negative_margin": 0.0994231328368187
+        },
+        "Q2_Graph_high_HG_low": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.13155220448970795,
+          "mean_hypergraph_teacher_score": -0.09868355095386505,
+          "mean_final_model_score": -0.13625237345695496,
+          "negative_beats_positive_fraction": 0.37216828478964403,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.42585551330798477,
+          "mean_outranking_negatives_per_query": 0.8745247148288974,
+          "mean_positive_minus_negative_margin": 0.11192453652620316
+        },
+        "Q3_Graph_low_HG_high": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.16719713807106018,
+          "mean_hypergraph_teacher_score": -0.0524386428296566,
+          "mean_final_model_score": -0.17256887257099152,
+          "negative_beats_positive_fraction": 0.24433656957928804,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.29277566539923955,
+          "mean_outranking_negatives_per_query": 0.5741444866920152,
+          "mean_positive_minus_negative_margin": 0.1482410579919815
+        },
+        "Q4_Graph_low_HG_low": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.18848969042301178,
+          "mean_hypergraph_teacher_score": -0.1177460253238678,
+          "mean_final_model_score": -0.17691810429096222,
+          "negative_beats_positive_fraction": 0.24254473161033796,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.45627376425855515,
+          "mean_outranking_negatives_per_query": 1.855513307984791,
+          "mean_positive_minus_negative_margin": 0.144062340259552
+        }
+      },
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+      "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+      "matched_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "test_evaluated": false,
+      "selected_training_positive_negative_margin_mean": 0.07583823800086975
+    },
+    "A3": {
+      "mrr_recomputed_on_fixed_candidates": 0.5364482303219076,
+      "validation_positive_negative_margin_mean": 0.21555621922016144,
+      "validation_positive_negative_margin_median": 0.07458570599555969,
+      "hardest_graph_tertile_count": 88,
+      "hardest_graph_tertile_mrr": 0.1819079798203954,
+      "hardest_graph_tertile_graph_margin_mean": -0.1971682459115982,
+      "quadrants": {
+        "Q1_Graph_high_HG_high": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.10567627847194672,
+          "mean_hypergraph_teacher_score": -0.0016570031875744462,
+          "mean_final_model_score": -0.10440089553594589,
+          "negative_beats_positive_fraction": 0.3697813121272366,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.49049429657794674,
+          "mean_outranking_negatives_per_query": 2.828897338403042,
+          "mean_positive_minus_negative_margin": 0.19328656792640686
+        },
+        "Q2_Graph_high_HG_low": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.13155220448970795,
+          "mean_hypergraph_teacher_score": -0.09868355095386505,
+          "mean_final_model_score": -0.1085512712597847,
+          "negative_beats_positive_fraction": 0.36084142394822005,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.4068441064638783,
+          "mean_outranking_negatives_per_query": 0.8479087452471483,
+          "mean_positive_minus_negative_margin": 0.21132884919643402
+        },
+        "Q3_Graph_low_HG_high": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.16719713807106018,
+          "mean_hypergraph_teacher_score": -0.0524386428296566,
+          "mean_final_model_score": -0.14080455899238586,
+          "negative_beats_positive_fraction": 0.24110032362459546,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.2965779467680608,
+          "mean_outranking_negatives_per_query": 0.5665399239543726,
+          "mean_positive_minus_negative_margin": 0.24358214437961578
+        },
+        "Q4_Graph_low_HG_low": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.18848969042301178,
+          "mean_hypergraph_teacher_score": -0.1177460253238678,
+          "mean_final_model_score": -0.14163024723529816,
+          "negative_beats_positive_fraction": 0.2415506958250497,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.45627376425855515,
+          "mean_outranking_negatives_per_query": 1.8479087452471483,
+          "mean_positive_minus_negative_margin": 0.23051592707633972
+        }
+      },
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+      "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+      "matched_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "test_evaluated": false,
+      "selected_training_positive_negative_margin_mean": 0.06906715780496597
+    },
+    "A4": {
+      "mrr_recomputed_on_fixed_candidates": 0.5404283040301416,
+      "validation_positive_negative_margin_mean": 0.3069598078727722,
+      "validation_positive_negative_margin_median": 0.09237520396709442,
+      "hardest_graph_tertile_count": 88,
+      "hardest_graph_tertile_mrr": 0.2003256154906169,
+      "hardest_graph_tertile_graph_margin_mean": -0.1971682459115982,
+      "quadrants": {
+        "Q1_Graph_high_HG_high": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.10567627847194672,
+          "mean_hypergraph_teacher_score": -0.0016570031875744462,
+          "mean_final_model_score": -0.030695181339979172,
+          "negative_beats_positive_fraction": 0.32803180914512925,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.532319391634981,
+          "mean_outranking_negatives_per_query": 2.5095057034220534,
+          "mean_positive_minus_negative_margin": 0.27680808305740356
+        },
+        "Q2_Graph_high_HG_low": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.13155220448970795,
+          "mean_hypergraph_teacher_score": -0.09868355095386505,
+          "mean_final_model_score": -0.07107153534889221,
+          "negative_beats_positive_fraction": 0.19093851132686085,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.2623574144486692,
+          "mean_outranking_negatives_per_query": 0.44866920152091255,
+          "mean_positive_minus_negative_margin": 0.3390386402606964
+        },
+        "Q3_Graph_low_HG_high": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.16719713807106018,
+          "mean_hypergraph_teacher_score": -0.0524386428296566,
+          "mean_final_model_score": -0.04826221615076065,
+          "negative_beats_positive_fraction": 0.2686084142394822,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.3726235741444867,
+          "mean_outranking_negatives_per_query": 0.6311787072243346,
+          "mean_positive_minus_negative_margin": 0.31622928380966187
+        },
+        "Q4_Graph_low_HG_low": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.18848969042301178,
+          "mean_hypergraph_teacher_score": -0.1177460253238678,
+          "mean_final_model_score": -0.07829813659191132,
+          "negative_beats_positive_fraction": 0.2047713717693837,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.39923954372623577,
+          "mean_outranking_negatives_per_query": 1.5665399239543727,
+          "mean_positive_minus_negative_margin": 0.3244110345840454
+        }
+      },
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+      "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+      "matched_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "test_evaluated": false,
+      "selected_training_positive_negative_margin_mean": 0.05969790369272232
+    },
+    "A5": {
+      "mrr_recomputed_on_fixed_candidates": 0.536054529510456,
+      "validation_positive_negative_margin_mean": 0.15914884209632874,
+      "validation_positive_negative_margin_median": 0.12677925825119019,
+      "hardest_graph_tertile_count": 88,
+      "hardest_graph_tertile_mrr": 0.19893536463028794,
+      "hardest_graph_tertile_graph_margin_mean": -0.1971682459115982,
+      "quadrants": {
+        "Q1_Graph_high_HG_high": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.10567627847194672,
+          "mean_hypergraph_teacher_score": -0.0016570031875744462,
+          "mean_final_model_score": -0.14569677412509918,
+          "negative_beats_positive_fraction": 0.35934393638170975,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.4752851711026616,
+          "mean_outranking_negatives_per_query": 2.7490494296577945,
+          "mean_positive_minus_negative_margin": 0.14486199617385864
+        },
+        "Q2_Graph_high_HG_low": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.13155220448970795,
+          "mean_hypergraph_teacher_score": -0.09868355095386505,
+          "mean_final_model_score": -0.12326951324939728,
+          "negative_beats_positive_fraction": 0.3818770226537217,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.4220532319391635,
+          "mean_outranking_negatives_per_query": 0.8973384030418251,
+          "mean_positive_minus_negative_margin": 0.13082239031791687
+        },
+        "Q3_Graph_low_HG_high": {
+          "count": 618,
+          "mean_graph_teacher_score": -0.16719713807106018,
+          "mean_hypergraph_teacher_score": -0.0524386428296566,
+          "mean_final_model_score": -0.18681475520133972,
+          "negative_beats_positive_fraction": 0.23300970873786409,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.2813688212927757,
+          "mean_outranking_negatives_per_query": 0.5475285171102662,
+          "mean_positive_minus_negative_margin": 0.1943676471710205
+        },
+        "Q4_Graph_low_HG_low": {
+          "count": 2012,
+          "mean_graph_teacher_score": -0.18848969042301178,
+          "mean_hypergraph_teacher_score": -0.1177460253238678,
+          "mean_final_model_score": -0.17215345799922943,
+          "negative_beats_positive_fraction": 0.2624254473161034,
+          "queries_with_at_least_one_outranking_negative_fraction": 0.467680608365019,
+          "mean_outranking_negatives_per_query": 2.0076045627376424,
+          "mean_positive_minus_negative_margin": 0.17131869494915009
+        }
+      },
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+      "validation_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+      "matched_initial_state_hash": "966ac47231c28a65b16a18ae1638e4db4fefd8d7861f7ec105c6b0f942351c69",
+      "test_evaluated": false,
+      "selected_training_positive_negative_margin_mean": 0.15623211860656738
+    }
+  },
+  "limitations": "The four regions describe relative score ranks over the sampled validation candidates, not verified false negatives."
+}

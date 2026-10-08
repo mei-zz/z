@@ -1,0 +1,59 @@
+{
+  "validation_entropy_bins": {
+    "B1": [
+      {
+        "n": 88,
+        "mrr": 0.2627247482792093
+      },
+      {
+        "n": 88,
+        "mrr": 0.1192831631263942
+      },
+      {
+        "n": 87,
+        "mrr": 0.10572401212814367
+      }
+    ],
+    "B3": [
+      {
+        "n": 88,
+        "mrr": 0.22801571566743603
+      },
+      {
+        "n": 88,
+        "mrr": 0.10184778237172341
+      },
+      {
+        "n": 87,
+        "mrr": 0.06486483329923064
+      }
+    ],
+    "B4": [
+      {
+        "n": 88,
+        "mrr": 0.22778375993748565
+      },
+      {
+        "n": 88,
+        "mrr": 0.10188100937863463
+      },
+      {
+        "n": 87,
+        "mrr": 0.06466228930198184
+      }
+    ]
+  },
+  "candidate_count_including_negatives": 5523,
+  "average_pool_size": 9.068078942603657,
+  "empty_pool_fraction": 0.0007242440702516748,
+  "average_entropy": 1.8778072526742857,
+  "average_top1_weight": 0.16342155992574672,
+  "positive_entropy_cut_points": [
+    1.9458051125208538,
+    2.0794073740641275
+  ],
+  "mean_pairwise_router_cosine_similarity_positive_candidates": 0.006447098565580935,
+  "router_similarity_pair_count": 34453,
+  "seed": 0,
+  "validation_negative_seed": 777
+}

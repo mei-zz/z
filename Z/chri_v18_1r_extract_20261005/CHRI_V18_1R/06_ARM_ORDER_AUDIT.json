@@ -1,0 +1,14 @@
+{
+  "state": "COMPLETE_WITH_ISOLATION_EVIDENCE",
+  "V18_batch_launcher": "Each arm is launched in its own child process (subprocess.Popen), with a fresh model and Adam optimizer; no in-process shared sampler/model state.",
+  "cache_objects": "Read-only NumPy mappings and independent cache copies; byte hashes unchanged.",
+  "R1_alone_repeat": "Two standalone unpatched PubMed seed0 A2 runs diverge at first scatter_mean before any other arm runs.",
+  "sequence_replays": {
+    "R0_R1_R2": "NOT_RUN",
+    "R2_R1_R0": "NOT_RUN",
+    "R1_alone": "COMPLETE; two fresh isolated runs"
+  },
+  "reason_sequence_replays_not_run": "The divergence is reproduced in an isolated R1-only first batch and traced to an atomic CUDA reduction; historical supervisor processes each arm separately. The corrected strict-deterministic runs are independent workers. There is no shared process state for execution order to mutate.",
+  "classification": "ORDER_DEPENDENT_SHARED_STATE not supported",
+  "test_accessed": false
+}

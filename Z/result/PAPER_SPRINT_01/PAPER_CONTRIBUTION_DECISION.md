@@ -1,0 +1,25 @@
+# Paper contribution decision
+
+{
+  "state": "EXECUTED",
+  "decision": "MECHANISM_UNRESOLVED",
+  "performance_result": {
+    "cora": false,
+    "pubmed": true
+  },
+  "independent_replication_run": false,
+  "inner_validation_run": false,
+  "mechanism_result": "MECHANISM_UNRESOLVED",
+  "THEORETICAL_DISTINCTION_PROVED": "YES",
+  "theory_scope": "exact unweighted raw-star projection only; not weighted projection and no extra information beyond original train graph",
+  "citeseer_transfer": "NOT_SUPPORTED_BY_FIXED_SCREEN",
+  "paper_readiness": "COMBINED_CONTRIBUTION_NOT_CONFIRMED",
+  "workspace_verification": "PASS",
+  "protocol_reconciliation": "PASS",
+  "test_opened": false,
+  "innovation1_modified": false,
+  "historical_results_modified": false,
+  "next_expected_step": "PAPER_DECISION"
+}
+
+The decision uses preregistered MRR screening and independent/inner controlled confirmation. CE, Hits and AUC are reported without post-hoc gate replacement. Any single-dataset or secondary-metric positive lead remains preserved in the JSON evidence, even if the joint mechanism is not confirmed. No subsequent candidate or parameter tuning is authorized by this outcome. Innovation1 historical claims remain protocol-specific.

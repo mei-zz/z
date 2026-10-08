@@ -1,0 +1,179 @@
+{
+  "state": "COMPLETE",
+  "protocol_sequences": {
+    "R0_R1_R2": {
+      "state": "COMPLETE",
+      "arms": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "completed_arms": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    "R2_R1_R0": {
+      "state": "COMPLETE",
+      "arms": [
+        "A3",
+        "A2",
+        "A1"
+      ],
+      "completed_arms": [
+        "A3",
+        "A2",
+        "A1"
+      ]
+    },
+    "R1_alone": {
+      "state": "COMPLETE",
+      "arms": [
+        "A2"
+      ],
+      "completed_arms": [
+        "A2"
+      ]
+    }
+  },
+  "runs_use": "V18.1R deterministic aggregation + strict deterministic algorithms; each arm is trained in a fresh process, with unchanged data, seed 0 and five epochs.",
+  "V18_batch_launcher": "Historical launcher also starts each arm in its own child process; there is no in-process shared sampler/model state.",
+  "cache_objects": "Read-only NumPy mappings and independent cache copies; byte hashes unchanged.",
+  "unpatched_R1_alone_first_step": "Two fresh unpatched PubMed seed0 A2 first batches diverge at scatter_mean before any other arm runs.",
+  "same_arm_order_comparisons": [
+    {
+      "arm": "A1",
+      "observations": {
+        "R0_R1_R2": {
+          "checkpoint_sha256": "ab96042750a8a9cee2a726ed839358d266a432c02fd23b508de794f46102d0d5",
+          "validation_score_vector_sha256": "49d9c3cfe9e4df0fa478ce47319cf3749401f9d0f6c06176c56608f89a460042",
+          "validation": {
+            "ce": 0.1241429703969635,
+            "balanced_ce": 0.13110014264839592,
+            "auc": 0.988830850705079,
+            "mrr": 0.9205738292493707,
+            "hits10": 0.9990974729241877,
+            "hits20": 1.0,
+            "mean_positive_rank": 1.2251805054151625,
+            "queries": 2216,
+            "negatives_per_query": 20
+          }
+        },
+        "R2_R1_R0": {
+          "checkpoint_sha256": "ab96042750a8a9cee2a726ed839358d266a432c02fd23b508de794f46102d0d5",
+          "validation_score_vector_sha256": "49d9c3cfe9e4df0fa478ce47319cf3749401f9d0f6c06176c56608f89a460042",
+          "validation": {
+            "ce": 0.1241429703969635,
+            "balanced_ce": 0.13110014264839592,
+            "auc": 0.988830850705079,
+            "mrr": 0.9205738292493707,
+            "hits10": 0.9990974729241877,
+            "hits20": 1.0,
+            "mean_positive_rank": 1.2251805054151625,
+            "queries": 2216,
+            "negatives_per_query": 20
+          }
+        }
+      },
+      "all_checkpoint_hashes_equal": true,
+      "all_validation_score_hashes_equal": true,
+      "all_validation_metrics_equal": true
+    },
+    {
+      "arm": "A2",
+      "observations": {
+        "R0_R1_R2": {
+          "checkpoint_sha256": "da9c6c61783667bedf283ab2cb2aad82b4ed8b1de96f28b1533cc59fa34996fa",
+          "validation_score_vector_sha256": "d54106a59879aa3ad2e658de5f71dccb24730ff3791babfbd116cdb31c55961b",
+          "validation": {
+            "ce": 0.12355135887695168,
+            "balanced_ce": 0.1286815971088768,
+            "auc": 0.9890612323485904,
+            "mrr": 0.9238045260495623,
+            "hits10": 0.9986462093862816,
+            "hits20": 1.0,
+            "mean_positive_rank": 1.2188628158844765,
+            "queries": 2216,
+            "negatives_per_query": 20
+          }
+        },
+        "R2_R1_R0": {
+          "checkpoint_sha256": "da9c6c61783667bedf283ab2cb2aad82b4ed8b1de96f28b1533cc59fa34996fa",
+          "validation_score_vector_sha256": "d54106a59879aa3ad2e658de5f71dccb24730ff3791babfbd116cdb31c55961b",
+          "validation": {
+            "ce": 0.12355135887695168,
+            "balanced_ce": 0.1286815971088768,
+            "auc": 0.9890612323485904,
+            "mrr": 0.9238045260495623,
+            "hits10": 0.9986462093862816,
+            "hits20": 1.0,
+            "mean_positive_rank": 1.2188628158844765,
+            "queries": 2216,
+            "negatives_per_query": 20
+          }
+        },
+        "R1_alone": {
+          "checkpoint_sha256": "da9c6c61783667bedf283ab2cb2aad82b4ed8b1de96f28b1533cc59fa34996fa",
+          "validation_score_vector_sha256": "d54106a59879aa3ad2e658de5f71dccb24730ff3791babfbd116cdb31c55961b",
+          "validation": {
+            "ce": 0.12355135887695168,
+            "balanced_ce": 0.1286815971088768,
+            "auc": 0.9890612323485904,
+            "mrr": 0.9238045260495623,
+            "hits10": 0.9986462093862816,
+            "hits20": 1.0,
+            "mean_positive_rank": 1.2188628158844765,
+            "queries": 2216,
+            "negatives_per_query": 20
+          }
+        }
+      },
+      "all_checkpoint_hashes_equal": true,
+      "all_validation_score_hashes_equal": true,
+      "all_validation_metrics_equal": true
+    },
+    {
+      "arm": "A3",
+      "observations": {
+        "R0_R1_R2": {
+          "checkpoint_sha256": "e74fc0bc4c2a6495873c4f045d8a8695b73470a0f121334f537f00355bbfd9f8",
+          "validation_score_vector_sha256": "b7b35c9b8b9b7547a05313b783535562574fee649dff7f71ddf5ce0c88ff656f",
+          "validation": {
+            "ce": 0.1285081662144563,
+            "balanced_ce": 0.12942329651168943,
+            "auc": 0.9888606176038394,
+            "mrr": 0.9207801211524135,
+            "hits10": 0.9990974729241877,
+            "hits20": 1.0,
+            "mean_positive_rank": 1.2256317689530687,
+            "queries": 2216,
+            "negatives_per_query": 20
+          }
+        },
+        "R2_R1_R0": {
+          "checkpoint_sha256": "e74fc0bc4c2a6495873c4f045d8a8695b73470a0f121334f537f00355bbfd9f8",
+          "validation_score_vector_sha256": "b7b35c9b8b9b7547a05313b783535562574fee649dff7f71ddf5ce0c88ff656f",
+          "validation": {
+            "ce": 0.1285081662144563,
+            "balanced_ce": 0.12942329651168943,
+            "auc": 0.9888606176038394,
+            "mrr": 0.9207801211524135,
+            "hits10": 0.9990974729241877,
+            "hits20": 1.0,
+            "mean_positive_rank": 1.2256317689530687,
+            "queries": 2216,
+            "negatives_per_query": 20
+          }
+        }
+      },
+      "all_checkpoint_hashes_equal": true,
+      "all_validation_score_hashes_equal": true,
+      "all_validation_metrics_equal": true
+    }
+  ],
+  "all_same_arm_checkpoints_equal_across_orders": true,
+  "all_same_arm_validation_scores_equal_across_orders": true,
+  "classification": "ORDER_DEPENDENT_SHARED_STATE not supported; all deterministic corrected sequence runs are exact per arm.",
+  "test_accessed": false
+}

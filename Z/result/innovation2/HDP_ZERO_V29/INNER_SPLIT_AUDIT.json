@@ -1,0 +1,39 @@
+{
+  "state": "PASS",
+  "datasets": {
+    "cora": {
+      "split_seed": 290016,
+      "train_pairs": 4039,
+      "valid_queries": 449,
+      "new_split_not_V28": true,
+      "hashes": {
+        "train": "1a0b5a67ba73a341f8ff68a3f097c58cb4eb471067edd35b0b99fafd20e6723e",
+        "valid_pos": "b433ee27b160f62edb955123f268a652fcee38225bfcfec44b2fbad2e689d142",
+        "valid_neg": "ca77b3587dee48e60b239f7bdf314ba05f02e9d2d121b8fef653049fbdfacabf"
+      },
+      "negative_filter": "original train pool only,20 unique per query; no canonical validation/test filtering",
+      "disjoint_train_valid": true,
+      "test_opened": false
+    },
+    "pubmed": {
+      "split_seed": 290016,
+      "train_pairs": 33908,
+      "valid_queries": 3768,
+      "new_split_not_V28": true,
+      "hashes": {
+        "train": "22d87f488ed41322f5a0e2e7f3765faff3174fa1f0dc5906dc2d2e54c24b8e70",
+        "valid_pos": "91407025f933e2b5fbf10467fecedf902774b60f313ec71c417a54c5ca969ac8",
+        "valid_neg": "6d82a5b6d6583d6db41db6453c6a2a0d314db2ae7b4dc349002427fb01dfc417"
+      },
+      "negative_filter": "original train pool only,20 unique per query; no canonical validation/test filtering",
+      "disjoint_train_valid": true,
+      "test_opened": false
+    }
+  },
+  "training_seeds": [
+    13,
+    14,
+    15
+  ],
+  "epochs": 5
+}

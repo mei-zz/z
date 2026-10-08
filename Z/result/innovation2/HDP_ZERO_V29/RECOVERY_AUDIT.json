@@ -1,0 +1,33 @@
+{
+  "state": "RESUMED",
+  "cause": "review found that the first inner-context draft reused full training-pool node normalization constants",
+  "fix": "recompute projected-node mean/std and every raw/masked star context using inner-train active nodes and inner-train incidences only; primary Phase A and frozen canonical artifacts are reused unchanged",
+  "phaseA_records_verified": 110,
+  "phaseA_retrained": false,
+  "determinism_precheck_reused": true,
+  "superseded_inner_context_audit": {
+    "state": "PASS",
+    "datasets": {
+      "cora": {
+        "structure_sha256": "7b2dbf3c1438acdba2d6c69d7224d0ec61079c1e687ef5a6e133b8d99fcab546",
+        "context_sha256": "2408fee2ab5f784d65b9df076701326e978063dcc663c194a209f85e4008a586",
+        "target_mask_oracle": "PASS",
+        "context_normalization": "recomputed from inner-train active nodes only",
+        "inner_train_only_adjacency": true,
+        "single_writer": true
+      },
+      "pubmed": {
+        "structure_sha256": "409fad95d1820dd55c5ef6ce02d8de0e340d7f06adce72d300a30c907b27ffff",
+        "context_sha256": "08e974ac48774cd75ef8b4c30472315bd7445cb98916c591e4efaa1db409ba82",
+        "target_mask_oracle": "PASS",
+        "context_normalization": "recomputed from inner-train active nodes only",
+        "inner_train_only_adjacency": true,
+        "single_writer": true
+      }
+    }
+  },
+  "inner_training_started_before_fix": false,
+  "test_opened": false,
+  "source_before_sha256": "ee5bc40ac00e6c34cccea132a04648d341c09feda4233b1a2815b740990cbaea",
+  "source_after_sha256": "85a671904484a902bab65dc361443852d6c40ae6fd1b2e66873934ca7a8af7db"
+}

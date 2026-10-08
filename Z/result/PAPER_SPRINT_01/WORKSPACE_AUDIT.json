@@ -1,0 +1,162 @@
+{
+  "state": "PASS",
+  "workspace": "DCDLP-main",
+  "verification_method": "LOCAL_GIT_AND_REMOTE_PATH",
+  "local_git_commit": "5da7af3d282f4378b128a0ef8fb7f2e3503a9c74",
+  "local_git_root": "E:/\u6211\u7684\u8d44\u6599\u5e93/Documents/Downloads/DCDLP-main",
+  "local_remote": "https://github.com/mei-zz/z.git",
+  "remote_path": "/home/ubuntu/lchr_v2",
+  "remote_git_commit": null,
+  "difference": "Server is a runtime deployment without .git or pyproject.toml metadata; a remote commit cannot be asserted. Local Python project identity, server src/dcdlp and all scoped executable/protocol hashes establish identity. Metadata omissions are recorded, not filled or overwritten.",
+  "sources": [
+    {
+      "path": "HYPERGRAPH_RESEARCH/HDP2_V27/scripts/hdp27.py",
+      "local_sha256": "41f449f349454204934853f3ea69cd4a250d32312a0c8dcf71dc6e1584874546",
+      "remote_sha256": "41f449f349454204934853f3ea69cd4a250d32312a0c8dcf71dc6e1584874546",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/HSPE_V17_2/scripts/hspe_v17_2.py",
+      "local_sha256": "0a8546e097947caabf1f9e8d5e9b10fbd4ce72b15bbe39f0012a1439cea6326d",
+      "remote_sha256": "0a8546e097947caabf1f9e8d5e9b10fbd4ce72b15bbe39f0012a1439cea6326d",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/vendor/NeuralCommonNeighbor-11d597013750da17ce7468e344bec756a7af39a4/NeighborOverlap.py",
+      "local_sha256": "a86dd0e702574ae778c142321c9e1b483e3b53fd07e7be32ea7cad552119afaf",
+      "remote_sha256": "a86dd0e702574ae778c142321c9e1b483e3b53fd07e7be32ea7cad552119afaf",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/scripts/benchmark173.py",
+      "local_sha256": "0a89c2028b6f374936c014cd681be58af5ba82af97db461fd360edf1dad5c770",
+      "remote_sha256": "0a89c2028b6f374936c014cd681be58af5ba82af97db461fd360edf1dad5c770",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/HDP_ZERO_V29/scripts/zero29.py",
+      "local_sha256": "85a671904484a902bab65dc361443852d6c40ae6fd1b2e66873934ca7a8af7db",
+      "remote_sha256": "85a671904484a902bab65dc361443852d6c40ae6fd1b2e66873934ca7a8af7db",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage0.py",
+      "local_sha256": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+      "remote_sha256": "6d1f93ba8ab5ce0c99f584d1c38f1f44701c6c58ab19fbcc436b382eab0f1081",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/scripts/strong174.py",
+      "local_sha256": "b0c47242f77ba3156d6267a1503d6adc0ec323000b4c7f69f8e46fcfc9f901f2",
+      "remote_sha256": "b0c47242f77ba3156d6267a1503d6adc0ec323000b4c7f69f8e46fcfc9f901f2",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/vendor/NeuralCommonNeighbor-11d597013750da17ce7468e344bec756a7af39a4/NeighborOverlapCitation2.py",
+      "local_sha256": "9e7da7c291c51fe59075c2b08d5a459b004e2fa8aac0d31645db4dd223aaa484",
+      "remote_sha256": "9e7da7c291c51fe59075c2b08d5a459b004e2fa8aac0d31645db4dd223aaa484",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/CANONICAL_PROTOCOL.json",
+      "local_sha256": "624c61f2e500052c11739a31c8cf90975079c0c647924c21d47db84ac0f7b939",
+      "remote_sha256": "624c61f2e500052c11739a31c8cf90975079c0c647924c21d47db84ac0f7b939",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/vendor/NeuralCommonNeighbor-11d597013750da17ce7468e344bec756a7af39a4/utils.py",
+      "local_sha256": "29df3b9cf82ae5885ece0fac010b81383f1fb5391068649c88b7d2bc98ad86be",
+      "remote_sha256": "29df3b9cf82ae5885ece0fac010b81383f1fb5391068649c88b7d2bc98ad86be",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/vendor/NeuralCommonNeighbor-11d597013750da17ce7468e344bec756a7af39a4/ogbdataset.py",
+      "local_sha256": "107717867ef4a27401853b3c00a58afd1abd852f04f44131aac955456a77834b",
+      "remote_sha256": "107717867ef4a27401853b3c00a58afd1abd852f04f44131aac955456a77834b",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/HSPE_V17_1/scripts/hspe_v17_1.py",
+      "local_sha256": "b4b477d86ceb55f62cefb02ea1a652085b725ca92793707a29586976016970fc",
+      "remote_sha256": "b4b477d86ceb55f62cefb02ea1a652085b725ca92793707a29586976016970fc",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/TOPOLOGY_V28/scripts/topology28.py",
+      "local_sha256": "a60f83b9f19b6831769ebfd78b1bb2bcd04163e8cf18f796eed396fef5ad39e1",
+      "remote_sha256": "a60f83b9f19b6831769ebfd78b1bb2bcd04163e8cf18f796eed396fef5ad39e1",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_FROZEN/SOURCE_HASHES.json",
+      "local_sha256": "8ddef3169103bd6e10b9a46d89f053aca775ae072f5cbf378bd19ea08530d449",
+      "remote_sha256": "8ddef3169103bd6e10b9a46d89f053aca775ae072f5cbf378bd19ea08530d449",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/NHMC_V16/scripts/nhmc_stage1.py",
+      "local_sha256": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+      "remote_sha256": "f3b19889afa236fd71eeaa6681efc31c845eb32c4a90df87ab8d40092c196982",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/HSPE_V17/scripts/hspe_v17.py",
+      "local_sha256": "da20e41442f8e7b0b12d29515ba2a3df71a2a0a7327a51ea2b1170901e2e28bf",
+      "remote_sha256": "da20e41442f8e7b0b12d29515ba2a3df71a2a0a7327a51ea2b1170901e2e28bf",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "pyproject.toml",
+      "local_sha256": "d350a7222e6a33c37b6f936de0d16d9f628583a4c4fc088e9f85036b1bd6e934",
+      "remote_sha256": null,
+      "match": false,
+      "difference_class": "DEPLOYMENT_METADATA_OMITTED"
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/HDP2_V27/scripts/hdp_kernel.py",
+      "local_sha256": "d6e730ba6e22993b6fa003f5ca315bf9743ac15b720755216bf5b63da18228ec",
+      "remote_sha256": "d6e730ba6e22993b6fa003f5ca315bf9743ac15b720755216bf5b63da18228ec",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/vendor/NeuralCommonNeighbor-11d597013750da17ce7468e344bec756a7af39a4/model.py",
+      "local_sha256": "5b6cfe26074c83d57900f589b37a4ef57fc7b8eb6dff3179fc52e3f6943aa5e3",
+      "remote_sha256": "5b6cfe26074c83d57900f589b37a4ef57fc7b8eb6dff3179fc52e3f6943aa5e3",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "src/dcdlp/__init__.py",
+      "local_sha256": "0f6900482ddd7d3c0c8877ae4e2f36b3a985e82987a2938c7e08fae821955ea3",
+      "remote_sha256": "0f6900482ddd7d3c0c8877ae4e2f36b3a985e82987a2938c7e08fae821955ea3",
+      "match": true,
+      "difference_class": null
+    },
+    {
+      "path": "src/dcdlp/train.py",
+      "local_sha256": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+      "remote_sha256": "1a51d4fecab93b75010def119946a91d4ed8ce44d3df852f167ca5400ac95f7d",
+      "match": true,
+      "difference_class": null
+    }
+  ],
+  "frozen_runtime_check": "PASS",
+  "test_opened": false
+}

@@ -1,0 +1,4 @@
+job_id	candidate	stage	dataset	seed	priority	estimated_cost	status	gpu_mem_estimate	start_time	end_time	result
+V12-S1G-01	S1G_B0:BASELINE	stage1g	cora	0	P1	1 Stage-1-equivalent	COMPLETE	under 1 GiB per process			experiments/S1G_B0/BASELINE/result.json
+V12-S1G-02	S1G_F3:F3_PAIRED	stage1g	cora	0	P1	1 Stage-1-equivalent	COMPLETE	under 1 GiB per process			experiments/S1G_F3/F3_PAIRED/result.json
+V12-S1G-03	S1G_F3_SHUFFLE:F3_SHUFFLED	stage1g	cora	0	P1	1 Stage-1-equivalent	COMPLETE	under 1 GiB per process			experiments/S1G_F3_SHUFFLE/F3_SHUFFLED/result.json

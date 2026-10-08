@@ -1,0 +1,6 @@
+{
+  "state": "EXECUTION_FAILED",
+  "error": "AssertionError('NUMERICAL_REPRODUCTION_FAILURE 0.9077556133270264')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/PAPER_SPRINT_01/scripts/sprint01.py\", line 521, in supervise\n    numerical_precheck()\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/PAPER_SPRINT_01/scripts/sprint01.py\", line 426, in numerical_precheck\n    assert error<=5e-6,'NUMERICAL_REPRODUCTION_FAILURE '+str(error)\n           ^^^^^^^^^^^\nAssertionError: NUMERICAL_REPRODUCTION_FAILURE 0.9077556133270264\n",
+  "test_opened": false
+}

@@ -1,0 +1,102 @@
+{
+  "state": "COMPLETE",
+  "phase": "cora_validation_parallel",
+  "workers": 6,
+  "complete_count": 13,
+  "complete": [
+    {
+      "method": "MECH_HMC",
+      "seed": 1,
+      "mrr": 0.3509069338653854,
+      "train_seconds": 61.84388733282685,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "MECH_DMC",
+      "seed": 1,
+      "mrr": 0.3768381033941841,
+      "train_seconds": 62.14616446336731,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "MECH_HMC",
+      "seed": 2,
+      "mrr": 0.5172318594254108,
+      "train_seconds": 205.2876645908691,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A2_RANDOM_ADAPTIVE",
+      "seed": 0,
+      "mrr": 0.5304020023095586,
+      "train_seconds": 205.46396924974397,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A2_RANDOM_ADAPTIVE",
+      "seed": 2,
+      "mrr": 0.5141321232933553,
+      "train_seconds": 207.96234938781708,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A2_RANDOM_ADAPTIVE",
+      "seed": 1,
+      "mrr": 0.3713857616803797,
+      "train_seconds": 214.63348706206307,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "MECH_DMC",
+      "seed": 2,
+      "mrr": 0.5316178765423312,
+      "train_seconds": 208.21424039406702,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A3_DEGREE_ADAPTIVE",
+      "seed": 0,
+      "mrr": 0.5340378052352295,
+      "train_seconds": 212.36952242115512,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A3_DEGREE_ADAPTIVE",
+      "seed": 1,
+      "mrr": 0.3639573586335761,
+      "train_seconds": 181.41154995607212,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A3_DEGREE_ADAPTIVE",
+      "seed": 2,
+      "mrr": 0.4988473429202573,
+      "train_seconds": 181.410945026204,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A4_AQTHS",
+      "seed": 0,
+      "mrr": 0.528261888084252,
+      "train_seconds": 180.76838886970654,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A4_AQTHS",
+      "seed": 2,
+      "mrr": 0.5092760108802087,
+      "train_seconds": 176.7022550678812,
+      "state": "COMPLETE"
+    },
+    {
+      "method": "A4_AQTHS",
+      "seed": 1,
+      "mrr": 0.36186991609995406,
+      "train_seconds": 185.24360324488953,
+      "state": "COMPLETE"
+    }
+  ],
+  "current": null,
+  "updated_at": "2026-10-02T13:14:18+0800",
+  "test_evaluated": false
+}

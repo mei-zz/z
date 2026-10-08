@@ -1,0 +1,41 @@
+{
+  "state": "PASS",
+  "checks": [
+    {
+      "file": "HYPERGRAPH_RESEARCH/CHRI_V18/scripts/chri_v18.py",
+      "mmap_read_only_count": 13,
+      "torch_tensor_copies_features": true,
+      "scatter_mean_present": false,
+      "index_add_present": false,
+      "in_place_cache_write_findings": "No writes target loaded .npy/.npz arrays in run/evaluate. The `maximum[counts == 0] = 0` assignment is to a freshly returned temporary reduction tensor; feature arrays use mmap_mode=r then torch.tensor copies."
+    },
+    {
+      "file": "HYPERGRAPH_RESEARCH/CHRI_V18/scripts/chri_features.py",
+      "mmap_read_only_count": 0,
+      "torch_tensor_copies_features": false,
+      "scatter_mean_present": true,
+      "index_add_present": true,
+      "in_place_cache_write_findings": "No writes target loaded .npy/.npz arrays in run/evaluate. The `maximum[counts == 0] = 0` assignment is to a freshly returned temporary reduction tensor; feature arrays use mmap_mode=r then torch.tensor copies."
+    }
+  ],
+  "key_cache_hashes_unchanged_after_runs": {
+    "epoch_1.npy": true,
+    "epoch_1_pairs.npy": true,
+    "epoch_1_knn.npy": true,
+    "epoch_5.npy": true,
+    "epoch_5_pairs.npy": true,
+    "epoch_5_knn.npy": true,
+    "valid_b.npy": true,
+    "valid_pairs.npy": true,
+    "valid_knn.npy": true,
+    "donor_pairs.npy": true,
+    "normalization.json": true,
+    "B_READY_5.json": true,
+    "MATCH_READY_5.json": true
+  },
+  "validation_candidate_arrays_unchanged": "PASS; valid_pairs.npy/valid_b.npy/valid_knn.npy/donor_pairs.npy hashes and mtimes match independent pre-run clone and old cache",
+  "normalization": "b_mean/b_std are registered immutable inference buffers; no running normalizer update in evaluate",
+  "candidate_order": "loaded directly from cached valid_pairs.npy; not sorted or permuted by evaluator",
+  "test_accessed": false,
+  "summary": "No observed cache mutation or shared writable mmap. The nondeterminism comes from CUDA grouped floating-point reductions."
+}

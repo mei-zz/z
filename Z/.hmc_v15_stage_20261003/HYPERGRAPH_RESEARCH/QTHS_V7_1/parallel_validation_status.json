@@ -1,0 +1,8 @@
+{
+  "state": "RUNNING",
+  "phase": "cora_training",
+  "current": "MECH_DMC_seed1",
+  "updated_at": "2026-10-02T13:05:47+0800",
+  "train_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455"
+}

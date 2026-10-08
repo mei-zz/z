@@ -1,0 +1,177 @@
+{
+  "state": "PASS",
+  "datasets": {
+    "cora": {
+      "members_decompressed": [
+        "x",
+        "train",
+        "valid_pos",
+        "valid_neg"
+      ],
+      "arrays": {
+        "x": {
+          "actual_sha256": "f0faab5177bcc12f5688f042c8e0ed24ffb9baa8efc3ae7cde440d42524c9075",
+          "expected_sha256": "f0faab5177bcc12f5688f042c8e0ed24ffb9baa8efc3ae7cde440d42524c9075",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            2708,
+            1433
+          ],
+          "dtype": "float32"
+        },
+        "train": {
+          "actual_sha256": "c1eb024bb65b4ca8aaafc9bba8cb0cdef541f001e98e97cb8c0a461eb7fe4da8",
+          "expected_sha256": "c1eb024bb65b4ca8aaafc9bba8cb0cdef541f001e98e97cb8c0a461eb7fe4da8",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            4488,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "valid_pos": {
+          "actual_sha256": "a5e15513a852300d0d7306e6c380600bcba5df74ed2189d8fc69eb666662e3ea",
+          "expected_sha256": "a5e15513a852300d0d7306e6c380600bcba5df74ed2189d8fc69eb666662e3ea",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            263,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "valid_neg": {
+          "actual_sha256": "fdccfdf180daeee9a985a4423c501dc327a1e4e58b079b8d529baf4c01b92c2c",
+          "expected_sha256": "fdccfdf180daeee9a985a4423c501dc327a1e4e58b079b8d529baf4c01b92c2c",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            263,
+            20,
+            2
+          ],
+          "dtype": "int64"
+        }
+      },
+      "valid_positive_not_in_train": true,
+      "test_opened": false
+    },
+    "pubmed": {
+      "members_decompressed": [
+        "x",
+        "train",
+        "valid_pos",
+        "valid_neg"
+      ],
+      "arrays": {
+        "x": {
+          "actual_sha256": "4f1804517a3fab22c6ae1df7674c6a194acefcd242dc843930da79ce9ea6f681",
+          "expected_sha256": "4f1804517a3fab22c6ae1df7674c6a194acefcd242dc843930da79ce9ea6f681",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            19717,
+            500
+          ],
+          "dtype": "float32"
+        },
+        "train": {
+          "actual_sha256": "ddc4018b501bdbadb891d8759d854e45b91926570bc7c95ebd4d42406191f1c8",
+          "expected_sha256": "ddc4018b501bdbadb891d8759d854e45b91926570bc7c95ebd4d42406191f1c8",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            37676,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "valid_pos": {
+          "actual_sha256": "749f12b35b6512237bd319685040f98df63fcba9c67d447bb520e184d6540098",
+          "expected_sha256": "749f12b35b6512237bd319685040f98df63fcba9c67d447bb520e184d6540098",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            2216,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "valid_neg": {
+          "actual_sha256": "2f75dfa7ecec8a8994c772f8e4df4f372f94e62b27e224b24c23fba362f1dacd",
+          "expected_sha256": "2f75dfa7ecec8a8994c772f8e4df4f372f94e62b27e224b24c23fba362f1dacd",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            2216,
+            20,
+            2
+          ],
+          "dtype": "int64"
+        }
+      },
+      "valid_positive_not_in_train": true,
+      "test_opened": false
+    },
+    "citeseer": {
+      "members_decompressed": [
+        "x",
+        "train",
+        "valid_pos",
+        "valid_neg"
+      ],
+      "arrays": {
+        "x": {
+          "actual_sha256": "cb9a425333dd8d1ae650e0eb4f3d65b14920aa6d5f0d4efa56d60f18f8d8c600",
+          "expected_sha256": "cb9a425333dd8d1ae650e0eb4f3d65b14920aa6d5f0d4efa56d60f18f8d8c600",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            3327,
+            3703
+          ],
+          "dtype": "float32"
+        },
+        "train": {
+          "actual_sha256": "fca0b81f4e5b52bbf3cbe062957d1cf243a0a96b829aea1a1daba6b2023499f7",
+          "expected_sha256": "fca0b81f4e5b52bbf3cbe062957d1cf243a0a96b829aea1a1daba6b2023499f7",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            3870,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "valid_pos": {
+          "actual_sha256": "72c00d0ee63b50af5e477ca279775285d64883bab7ff586b73b179bad6bdbe2e",
+          "expected_sha256": "72c00d0ee63b50af5e477ca279775285d64883bab7ff586b73b179bad6bdbe2e",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            227,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "valid_neg": {
+          "actual_sha256": "0df45e399b75bb979369578ff7508fd6cfb5281b5f5cb7203c5ee54085da57e1",
+          "expected_sha256": "0df45e399b75bb979369578ff7508fd6cfb5281b5f5cb7203c5ee54085da57e1",
+          "match": true,
+          "hash_method": "sha256(contiguous array bytes), canonical V17.5 convention",
+          "shape": [
+            227,
+            20,
+            2
+          ],
+          "dtype": "int64"
+        }
+      },
+      "valid_positive_not_in_train": true,
+      "test_opened": false
+    }
+  },
+  "test_opened": false
+}

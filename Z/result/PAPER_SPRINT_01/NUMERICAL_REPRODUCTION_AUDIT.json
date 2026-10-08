@@ -1,0 +1,36 @@
+{
+  "state": "PASS",
+  "records": [
+    {
+      "dataset": "cora",
+      "independent_process_repeats": 2,
+      "paired_rng_and_sampler_exact": true,
+      "score_vector_bitwise_equal": true,
+      "score_max_abs_drift": 0.0,
+      "predeclared_tolerance": 5e-06,
+      "metric_drift": {
+        "ce": 0.0,
+        "mrr": 0.0,
+        "hits10": 0.0,
+        "hits20": 0.0,
+        "auc": 0.0
+      }
+    },
+    {
+      "dataset": "pubmed",
+      "independent_process_repeats": 2,
+      "paired_rng_and_sampler_exact": true,
+      "score_vector_bitwise_equal": true,
+      "score_max_abs_drift": 0.0,
+      "predeclared_tolerance": 5e-06,
+      "metric_drift": {
+        "ce": 0.0,
+        "mrr": 0.0,
+        "hits10": 0.0,
+        "hits20": 0.0,
+        "auc": 0.0
+      }
+    }
+  ],
+  "test_opened": false
+}

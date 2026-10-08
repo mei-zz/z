@@ -1,0 +1,62 @@
+{
+  "state": "COMPLETE",
+  "records": [
+    {
+      "arm": "GM_BINARY",
+      "positive_dataset_count": 1,
+      "mean_DeltaCE": -0.0009244660621357066,
+      "wins": 5,
+      "alive": true,
+      "ranking_positive_datasets": 1,
+      "small_positive_seed_observation": true
+    },
+    {
+      "arm": "GM_COUNT",
+      "positive_dataset_count": 1,
+      "mean_DeltaCE": -0.0016465064333125155,
+      "wins": 5,
+      "alive": true,
+      "ranking_positive_datasets": 1,
+      "small_positive_seed_observation": true
+    },
+    {
+      "arm": "GM_SAT",
+      "positive_dataset_count": 1,
+      "mean_DeltaCE": 0.0004877226310488606,
+      "wins": 5,
+      "alive": true,
+      "ranking_positive_datasets": 2,
+      "small_positive_seed_observation": true
+    },
+    {
+      "arm": "GM_FULL",
+      "positive_dataset_count": 1,
+      "mean_DeltaCE": 0.0006045408870350029,
+      "wins": 5,
+      "alive": true,
+      "ranking_positive_datasets": 2,
+      "small_positive_seed_observation": true
+    }
+  ],
+  "selected": [
+    {
+      "arm": "GM_FULL",
+      "positive_dataset_count": 1,
+      "mean_DeltaCE": 0.0006045408870350029,
+      "wins": 5,
+      "alive": true,
+      "ranking_positive_datasets": 2,
+      "small_positive_seed_observation": true
+    },
+    {
+      "arm": "GM_SAT",
+      "positive_dataset_count": 1,
+      "mean_DeltaCE": 0.0004877226310488606,
+      "wins": 5,
+      "alive": true,
+      "ranking_positive_datasets": 2,
+      "small_positive_seed_observation": true
+    }
+  ],
+  "rule": "positive dataset mean CE vs GM; sort positive datasets, mean CE, preregistered simplicity order; max2. Individual positive seeds retained even if not selected. Strongest control is fixed per dataset from GDUP,GMG,GMP by PhaseA mean CE; no LR/epoch tuning."
+}

@@ -1,0 +1,115 @@
+{
+  "state": "PASS",
+  "candidate_masking": "PASS",
+  "endpoint_symmetry": "PASS",
+  "validation_feature_labels_used": false,
+  "test_graph_or_labels_loaded": false,
+  "only_explicit_inputs_loaded": [
+    "x",
+    "train",
+    "valid_pos",
+    "valid_neg"
+  ],
+  "router_architecture_parameters": 83,
+  "initial_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "datasets": {
+    "cora": {
+      "splits": {
+        "train": {
+          "candidate_count": 136749,
+          "target_edge_present_before_mask_count": 4488,
+          "target_edge_removed_from_endpoint_degrees": true,
+          "symmetric_degree_coordinates_exact": true,
+          "cache_keys_equal": true,
+          "raw_context_sha256": "babbfed4cc5311f52a67e3531e8195b6f68d5bbf4e9febb4bc7cebd9ad05418f"
+        },
+        "valid": {
+          "candidate_count": 5523,
+          "target_edge_present_before_mask_count": 0,
+          "target_edge_removed_from_endpoint_degrees": true,
+          "symmetric_degree_coordinates_exact": true,
+          "cache_keys_equal": true,
+          "raw_context_sha256": "035cebbfa91bb9211238b5a8d880dd029205d16dba1a0468aa7844e2a61d58fc"
+        }
+      },
+      "train_only_scaling": {
+        "0": {
+          "fit_occurrences": 44880.0,
+          "mean_matches_recomputed": true,
+          "std_matches_recomputed": true
+        },
+        "1": {
+          "fit_occurrences": 44880.0,
+          "mean_matches_recomputed": true,
+          "std_matches_recomputed": true
+        },
+        "2": {
+          "fit_occurrences": 44880.0,
+          "mean_matches_recomputed": true,
+          "std_matches_recomputed": true
+        }
+      },
+      "allowed_input_keys": [
+        "x",
+        "train",
+        "valid_pos",
+        "valid_neg"
+      ],
+      "test_input_requested": false
+    },
+    "pubmed": {
+      "splits": {
+        "train": {
+          "candidate_count": 1164748,
+          "target_edge_present_before_mask_count": 37676,
+          "target_edge_removed_from_endpoint_degrees": true,
+          "symmetric_degree_coordinates_exact": true,
+          "cache_keys_equal": true,
+          "raw_context_sha256": "54eee2e122d175b76be0dc3d5ddf97482744f3a5544cecb8001075fe77b0be8d"
+        },
+        "valid": {
+          "candidate_count": 46534,
+          "target_edge_present_before_mask_count": 0,
+          "target_edge_removed_from_endpoint_degrees": true,
+          "symmetric_degree_coordinates_exact": true,
+          "cache_keys_equal": true,
+          "raw_context_sha256": "ce4cb101f0a55f996cec13c74f4391a0846081dcedc47eec361b4e4420858639"
+        }
+      },
+      "train_only_scaling": {
+        "0": {
+          "fit_occurrences": 376760.0,
+          "mean_matches_recomputed": true,
+          "std_matches_recomputed": true
+        },
+        "1": {
+          "fit_occurrences": 376760.0,
+          "mean_matches_recomputed": true,
+          "std_matches_recomputed": true
+        },
+        "2": {
+          "fit_occurrences": 376760.0,
+          "mean_matches_recomputed": true,
+          "std_matches_recomputed": true
+        }
+      },
+      "allowed_input_keys": [
+        "x",
+        "train",
+        "valid_pos",
+        "valid_neg"
+      ],
+      "test_input_requested": false
+    }
+  },
+  "initial_model": {
+    "alpha_uniform_max_error": 0.0,
+    "alpha_sum_max_error": 0.0,
+    "endpoint_swap_router_max_error": 0.0,
+    "zero_initialized_full_score_max_error": 0.0
+  }
+}

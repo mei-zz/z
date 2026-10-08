@@ -1,0 +1,179 @@
+{
+  "state": "COMPLETE",
+  "phase": "A",
+  "dataset": "pubmed",
+  "seed": 0,
+  "arm": "A1",
+  "epochs": 5,
+  "validation": {
+    "ce": 0.1241429703969635,
+    "balanced_ce": 0.13110014264839592,
+    "auc": 0.988830850705079,
+    "mrr": 0.9205738292493707,
+    "hits10": 0.9990974729241877,
+    "hits20": 1.0,
+    "mean_positive_rank": 1.2251805054151625,
+    "queries": 2216,
+    "negatives_per_query": 20
+  },
+  "A0_frozen_NCNC": {
+    "ce": 0.164412654923898,
+    "balanced_ce": 0.1357904147260649,
+    "auc": 0.9875675266196613,
+    "mrr": 0.9064724572960131,
+    "hits10": 0.9986462093862816,
+    "hits20": 1.0,
+    "mean_positive_rank": 1.2585740072202165,
+    "queries": 2216,
+    "negatives_per_query": 20
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.2413448102823976,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.13596338549919484,
+        "balanced_ce": 0.13524647930860395,
+        "auc": 0.9877037202361557,
+        "mrr": 0.9097005544094894,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.253158844765343,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 0.2437423192895949,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.13563047146247784,
+        "balanced_ce": 0.1333617653264315,
+        "auc": 0.9880984740124334,
+        "mrr": 0.9158513643396314,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2355595667870036,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.2340129765474962,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.140770735515739,
+        "balanced_ce": 0.13233431810067872,
+        "auc": 0.988411955551356,
+        "mrr": 0.9176490765051233,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.230595667870036,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 0.2305800215755072,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.14338889207357675,
+        "balanced_ce": 0.13261204899645887,
+        "auc": 0.9885273474664077,
+        "mrr": 0.9199116617437917,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.226534296028881,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 0.22842698805551562,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.1241429703969635,
+        "balanced_ce": 0.13110014264839592,
+        "auc": 0.988830850705079,
+        "mrr": 0.9205738292493707,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2251805054151625,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    }
+  ],
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1R/arm_order_runs/R0_R1_R2/runs/A/pubmed/seed_0/A1/final.pt",
+  "checkpoint_sha256": "ab96042750a8a9cee2a726ed839358d266a432c02fd23b508de794f46102d0d5",
+  "initialization": {
+    "encoder": "69b78da7311ed91143bd3b122a65cfe9ac4205fc275f2f8d23769068b670633f",
+    "relation": "777e7b597d629f49bb159da219f048f5817f3770574598df1382ff1d3d1d9953",
+    "decoder": "f87476b4059a3fc6b8b706e14dd3bf798e26918914634459f385b7a3595783cf"
+  },
+  "training_trace": [
+    {
+      "epoch": 1,
+      "official_negative_hash": "aabb35a3f6758294fcaccc3147fda963506e74cb97f6f6383a37b7ecc60011f7",
+      "permutation_hash": "88f43d37ebdffd25be5047cb7ce7b8d594341c4d9c253cd263851b410546b867",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 2,
+      "official_negative_hash": "a1e9d5868d40a49dcbfd257c70053b4038de15de331b59be9fbdc82dfd19c82b",
+      "permutation_hash": "6491a7371eb8edca572424e106638875b35094860c77852dd3a177df8c306c12",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 3,
+      "official_negative_hash": "a1d6089c2fe685e8553ea6842bbb3af009f79e52d67bea4a2682b1a143dc0af2",
+      "permutation_hash": "071fbb65ce470ad0bbd88cb9e175ef49cfaae1cd4e6060afbdfbed187d38bbf0",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 4,
+      "official_negative_hash": "762c219598dc3633130fa80cf7cb7ab463b5d0c5bc63072523cd4518a9bb3ec1",
+      "permutation_hash": "b8289b73bb54857584921d8fad2f10cb76d42de14e2efb529d59edab5d8dfcbe",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 5,
+      "official_negative_hash": "a25b9276e69a33cf73cb493114e667cfdc948731f33653691df798e1bc64e340",
+      "permutation_hash": "3a23017ef36dab8e8ca0e992955778ec8355b5dd16437d1c9c15ea3bb6b77c7d",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    }
+  ],
+  "trainable_parameters": 26385,
+  "encoder_trainable": true,
+  "relation_parameters": 2096,
+  "downstream_decoder_capacity_matched": true,
+  "frozen_NCNC_parameters": 591364,
+  "frozen_I1_parameters": 0,
+  "peak_gpu_mb": 105.771484375,
+  "wall_seconds": 15.305321262218058,
+  "checkpoint_selection": "fixed final epoch; no best-validation selection",
+  "test_accessed": false,
+  "corrected_aggregation": "V18_1R deterministic contiguous-segment sum/mean/max",
+  "strict_deterministic_algorithms": true,
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+}

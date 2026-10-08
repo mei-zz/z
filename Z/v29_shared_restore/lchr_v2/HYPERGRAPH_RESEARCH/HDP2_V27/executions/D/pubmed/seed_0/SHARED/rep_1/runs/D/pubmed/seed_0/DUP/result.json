@@ -1,0 +1,254 @@
+{
+  "state": "COMPLETE",
+  "phase": "D",
+  "dataset": "pubmed",
+  "seed": 0,
+  "arm": "DUP",
+  "epochs": 5,
+  "validation": {
+    "ce": 0.11988947085984637,
+    "balanced_ce": 0.12950396195030123,
+    "auc": 0.98898086121284,
+    "mrr": 0.9251679865962356,
+    "hits10": 0.9986462093862816,
+    "hits20": 1.0,
+    "mean_positive_rank": 1.2161552346570397,
+    "queries": 2216,
+    "negatives_per_query": 20
+  },
+  "A0_frozen_NCNC": {
+    "ce": 0.164412654923898,
+    "balanced_ce": 0.1357904147260649,
+    "auc": 0.9875675266196613,
+    "mrr": 0.9064724572960131,
+    "hits10": 0.9986462093862816,
+    "hits20": 1.0,
+    "mean_positive_rank": 1.2585740072202165,
+    "queries": 2216,
+    "negatives_per_query": 20
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.24108522020590803,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.13308950005248796,
+        "balanced_ce": 0.1349646472422012,
+        "auc": 0.9878101418629202,
+        "mrr": 0.9107506099496171,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2490974729241877,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 0.24145494181559318,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.1343075186671417,
+        "balanced_ce": 0.13150939036647122,
+        "auc": 0.988436280203704,
+        "mrr": 0.9185347544553321,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2287906137184115,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.22922639041725132,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.1322124609358957,
+        "balanced_ce": 0.12977202961979084,
+        "auc": 0.9887822523100783,
+        "mrr": 0.9187215274196321,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2278880866425992,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 0.22495704462441304,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.1356961390729306,
+        "balanced_ce": 0.12952850908570443,
+        "auc": 0.98885966559254,
+        "mrr": 0.922769441248683,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2197653429602888,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 0.22404765301487511,
+      "nuisance_loss": 0.0,
+      "null_loss": 0.0,
+      "validation": {
+        "ce": 0.11988947085984637,
+        "balanced_ce": 0.12950396195030123,
+        "auc": 0.98898086121284,
+        "mrr": 0.9251679865962356,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2161552346570397,
+        "queries": 2216,
+        "negatives_per_query": 20
+      }
+    }
+  ],
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP2_V27/executions/D/pubmed/seed_0/SHARED/rep_1/runs/D/pubmed/seed_0/DUP/final.pt",
+  "checkpoint_sha256": "e16d0f0f274a666fa0a170608ebfbe8088335b4fb91bba7301e6a1ffb2c14a5e",
+  "initialization": {
+    "encoder": "69b78da7311ed91143bd3b122a65cfe9ac4205fc275f2f8d23769068b670633f",
+    "relation": "777e7b597d629f49bb159da219f048f5817f3770574598df1382ff1d3d1d9953",
+    "decoder": "14f58705c620bdb1ab50c8b3da9569cea60a3590686ddeed019558b3cf8442ef"
+  },
+  "training_trace": [
+    {
+      "epoch": 1,
+      "official_negative_hash": "aabb35a3f6758294fcaccc3147fda963506e74cb97f6f6383a37b7ecc60011f7",
+      "permutation_hash": "88f43d37ebdffd25be5047cb7ce7b8d594341c4d9c253cd263851b410546b867",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 2,
+      "official_negative_hash": "a1e9d5868d40a49dcbfd257c70053b4038de15de331b59be9fbdc82dfd19c82b",
+      "permutation_hash": "6491a7371eb8edca572424e106638875b35094860c77852dd3a177df8c306c12",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 3,
+      "official_negative_hash": "a1d6089c2fe685e8553ea6842bbb3af009f79e52d67bea4a2682b1a143dc0af2",
+      "permutation_hash": "071fbb65ce470ad0bbd88cb9e175ef49cfaae1cd4e6060afbdfbed187d38bbf0",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 4,
+      "official_negative_hash": "762c219598dc3633130fa80cf7cb7ab463b5d0c5bc63072523cd4518a9bb3ec1",
+      "permutation_hash": "b8289b73bb54857584921d8fad2f10cb76d42de14e2efb529d59edab5d8dfcbe",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 5,
+      "official_negative_hash": "a25b9276e69a33cf73cb493114e667cfdc948731f33653691df798e1bc64e340",
+      "permutation_hash": "3a23017ef36dab8e8ca0e992955778ec8355b5dd16437d1c9c15ea3bb6b77c7d",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    }
+  ],
+  "trainable_parameters": 30529,
+  "encoder_trainable": true,
+  "relation_parameters": 2096,
+  "downstream_decoder_capacity_matched": true,
+  "frozen_NCNC_parameters": 591364,
+  "frozen_I1_parameters": 0,
+  "peak_gpu_mb": 586.90478515625,
+  "wall_seconds": 148.58930025994778,
+  "checkpoint_selection": "fixed final epoch; no best-validation selection",
+  "test_accessed": false,
+  "variant": "SHARED",
+  "replicate": 1,
+  "canonical_protocol": "CHRI_DETERMINISTIC_CANONICAL_PROTOCOL_V1",
+  "score_vector_sha256": "72e808cf44a325f5635eb7e22fc08cad0093cab8301ffca0766fadd412eba8a4",
+  "optimizer_steps": 90,
+  "training_trajectory_sha256": "7efd94d300efdce321ef41f48b5144c551dec25823137ce286d808da843e2d02",
+  "state_tensor_sha256": "656fcdf986162817d6ff82058a0754d531cb51277b00a465df796d1569a81c66",
+  "mapped_training_trajectory_sha256": "022d356b8d906de8719c4c436ff9708a056767948c5e7ac9a5c800d291bd1218",
+  "feature_cache_hashes": {
+    "validation_SHUFFLE.npy": "5934ca9442f47764750218d1a7e727e6ac6bfdefd616b000d69b9b9ee0ed4615",
+    "train_ZERO.npy": "3c0b8886779a30c21c794234b696745490afb46b7fd402fcb9dfeac6dcc166d4",
+    "train_GRAPH.npy": "27c592b1207e8e5fafb6b2851bd57bdfef759cfb5c53d442897dba1d88264038",
+    "train_SHUFFLE.npy": "cf24a677a36ed6c4cdb9753a5ebe12ea47857a0b0e7313fe463e21d8313403c0",
+    "validation_keys.npy": "af243b8bac654ab5b989f848a31ddb80212948147b46a4182eb2675778fabdac",
+    "train_HDP.npy": "63cbe0705abdffe23ee7418df08679ede75f197423133a21f4f83fb88295900b",
+    "validation_ZERO.npy": "abb498b1784171a71c04b8a9d69cf7193faa359f7c76fec519a1b00991e805d3",
+    "train_keys.npy": "77b859dbcaf6b91813302cd33ff6b8bb4b2f4f6c37d389e43a273e249154cdef",
+    "train_PAIR.npy": "749579c99f82fd0149c17f688435d37f53786eed489d152d257cf1603869a01f",
+    "train_MULT.npy": "1fff5000e9761d908d628ccbb38379bb5fce7ef1187f5f4fe76a74f1c01ea4b3",
+    "train_stats.npy": "84bd68a6b24c661346f2309836eaf41f9dfcbcea86a7a2567b1283edc586e02d",
+    "validation_PAIR.npy": "37c7a56ef400727eb77cb4d23f9530ae65941d718bac6e99328b0e3f8667727d",
+    "validation_stats.npy": "bce4e9fa26336817cb23273d233290f4cc637e6e7c73ca2da6dfe4998ae6c298",
+    "validation_HDP.npy": "a59c7e4c996ce63c6f48b3a63dcb98f4eb7701d4525a8ce1106af4f1a8c0c035",
+    "validation_MULT.npy": "6194d7f875229525b20a7c2c1306a18fcb128552fc0bbb036c688f13c8dc0ad4",
+    "validation_GRAPH.npy": "5816b74dd73c6ebcf162e50a7cfd3348eb285a85b96dd5aad1f41a73cdf909e0"
+  },
+  "compute": {
+    "training_wall_seconds": 153.32047272706404,
+    "peak_GPU_allocated_bytes": 615414272,
+    "peak_RAM_bytes": 2107011072,
+    "feature_preprocessing": {
+      "state": "PASS",
+      "dataset": "pubmed",
+      "seed": 0,
+      "replicate": 1,
+      "wall_seconds": 15.795205255970359,
+      "peak_RAM_bytes": 902889472,
+      "cache_bytes": 64427648,
+      "splits": {
+        "train": {
+          "unique_candidates": 221906,
+          "scheduled_candidates": 368640,
+          "seconds": 14.183778360951692,
+          "matching_calls": 443812,
+          "maximum_compatibility_vertices": 259,
+          "maximum_compatibility_edges": 889,
+          "row_column_S_M_preserved_for_every_candidate": true
+        },
+        "validation": {
+          "unique_candidates": 46534,
+          "scheduled_candidates": 46536,
+          "seconds": 0.841769642662257,
+          "matching_calls": 93068,
+          "maximum_compatibility_vertices": 176,
+          "maximum_compatibility_edges": 759,
+          "row_column_S_M_preserved_for_every_candidate": true
+        }
+      },
+      "hashes": {
+        "validation_SHUFFLE.npy": "5934ca9442f47764750218d1a7e727e6ac6bfdefd616b000d69b9b9ee0ed4615",
+        "train_ZERO.npy": "3c0b8886779a30c21c794234b696745490afb46b7fd402fcb9dfeac6dcc166d4",
+        "train_GRAPH.npy": "27c592b1207e8e5fafb6b2851bd57bdfef759cfb5c53d442897dba1d88264038",
+        "train_SHUFFLE.npy": "cf24a677a36ed6c4cdb9753a5ebe12ea47857a0b0e7313fe463e21d8313403c0",
+        "validation_keys.npy": "af243b8bac654ab5b989f848a31ddb80212948147b46a4182eb2675778fabdac",
+        "train_HDP.npy": "63cbe0705abdffe23ee7418df08679ede75f197423133a21f4f83fb88295900b",
+        "validation_ZERO.npy": "abb498b1784171a71c04b8a9d69cf7193faa359f7c76fec519a1b00991e805d3",
+        "train_keys.npy": "77b859dbcaf6b91813302cd33ff6b8bb4b2f4f6c37d389e43a273e249154cdef",
+        "train_PAIR.npy": "749579c99f82fd0149c17f688435d37f53786eed489d152d257cf1603869a01f",
+        "train_MULT.npy": "1fff5000e9761d908d628ccbb38379bb5fce7ef1187f5f4fe76a74f1c01ea4b3",
+        "train_stats.npy": "84bd68a6b24c661346f2309836eaf41f9dfcbcea86a7a2567b1283edc586e02d",
+        "validation_PAIR.npy": "37c7a56ef400727eb77cb4d23f9530ae65941d718bac6e99328b0e3f8667727d",
+        "validation_stats.npy": "bce4e9fa26336817cb23273d233290f4cc637e6e7c73ca2da6dfe4998ae6c298",
+        "validation_HDP.npy": "a59c7e4c996ce63c6f48b3a63dcb98f4eb7701d4525a8ce1106af4f1a8c0c035",
+        "validation_MULT.npy": "6194d7f875229525b20a7c2c1306a18fcb128552fc0bbb036c688f13c8dc0ad4",
+        "validation_GRAPH.npy": "5816b74dd73c6ebcf162e50a7cfd3348eb285a85b96dd5aad1f41a73cdf909e0"
+      }
+    }
+  }
+}

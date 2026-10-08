@@ -1,0 +1,12 @@
+{
+  "state": "COMPLETE",
+  "stage": "STRONG_SIGNAL",
+  "current": null,
+  "completed": [
+    "B1_reproduction",
+    "candidate_A",
+    "A_seed_confirmation"
+  ],
+  "test_evaluated": true,
+  "updated_unix": 1790890357.2003446
+}

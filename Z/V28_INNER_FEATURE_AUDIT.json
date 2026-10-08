@@ -1,0 +1,16 @@
+{
+  "ready_count": 6,
+  "missing": [],
+  "hash_errors": [],
+  "load_errors": [],
+  "structures": {
+    "cora": {
+      "state": "PASS",
+      "target_mask_oracle": "PASS"
+    },
+    "pubmed": {
+      "state": "PASS",
+      "target_mask_oracle": "PASS"
+    }
+  }
+}

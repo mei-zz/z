@@ -1,0 +1,18 @@
+{
+  "state": "complete",
+  "stage": "complementarity_analysis",
+  "current": null,
+  "completed": [
+    "G",
+    "H",
+    "candidate_score_export"
+  ],
+  "graph_only_mrr": 0.49605565734757956,
+  "raw_hypergraph_mrr": 0.5030120048647342,
+  "oracle_mrr": 0.5316997510475362,
+  "oracle_gain": 0.02868774618280201,
+  "gate_decision": "AUDIT_PASS",
+  "strong_complementarity": true,
+  "test_evaluated": false,
+  "updated_unix": 1790870907.2544603
+}

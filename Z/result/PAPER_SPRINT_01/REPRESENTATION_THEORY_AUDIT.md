@@ -1,0 +1,7 @@
+# Representation theory audit
+
+THEORETICAL_DISTINCTION_PROVED: YES, limited to the exact unweighted two-section.
+
+For V={u,v,a,b}, G1 has edges ua,av,vb,bu (C4); G2 adds ab (K4 minus uv). The candidate uv is absent in BOTH training graphs, so no target-status confound occurs. Their raw-star hypergraphs have exactly the same complete unweighted two-section K4, hence the same entire projected adjacency and the same GRAPH vector [log(3),2/3]. The frozen constructor gives T=8 versus T=18 and S=2 in each. G1 size ranks are all1; G2 has size3 ranks1/2 and size4 ranks1. Therefore no function of that unweighted projected adjacency alone recovers the frozen R representation. A head selecting log1p(T) separates them. The executable construction uses the unmodified frozen token routine; matrices and all tokens are in THEORY_COUNTEREXAMPLE.json.
+
+The weighted Gram matrices differ, so this is NOT a proof against a weighted projection. Furthermore H_raw(G)={closed train neighborhoods} is deterministic in the ORIGINAL train adjacency. R is thus exactly recoverable from that original graph, candidate and the training ECDF recipe. NCNC already receives the original graph. A performance gain would establish a useful representation or inductive bias relative to tested models, not new external/native hypergraph information. This distinction is mathematical, independent of observed scores, and proves neither priority nor scientific novelty.

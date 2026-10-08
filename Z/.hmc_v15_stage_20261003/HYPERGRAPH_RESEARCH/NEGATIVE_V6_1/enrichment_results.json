@@ -1,0 +1,539 @@
+{
+  "future_positive_definition": "undirected pair occurs in valid_pos OR test_pos; labels accessed only after all training and validation decisions were frozen",
+  "strict_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "future_positive_unique_identity_count": 790,
+  "per_seed": {
+    "0": {
+      "true_veto_occurrence_rate": {
+        "count": 7,
+        "denominator": 4488,
+        "rate": 0.0015597147950089127,
+        "rate_95pct_bootstrap_ci": [
+          0.000445632798573975,
+          0.002896613190730838
+        ]
+      },
+      "shuffled_veto_occurrence_rate": {
+        "count": 5,
+        "denominator": 4488,
+        "rate": 0.0011140819964349377,
+        "rate_95pct_bootstrap_ci": [
+          0.0002228163992869875,
+          0.0022281639928698753
+        ]
+      },
+      "random_veto_occurrence_rate": {
+        "count": 3,
+        "denominator": 4488,
+        "rate": 0.0006684491978609625,
+        "rate_95pct_bootstrap_ci": [
+          0.0,
+          0.0015597147950089127
+        ]
+      },
+      "graph_hard_prepool_occurrence_rate": {
+        "count": 8,
+        "denominator": 8976,
+        "rate": 0.00089126559714795,
+        "rate_95pct_bootstrap_ci": [
+          0.00033422459893048126,
+          0.0015597147950089127
+        ]
+      },
+      "true_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 7,
+        "unique_pairs": 4488,
+        "rate": 0.0015597147950089127
+      },
+      "shuffled_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 5,
+        "unique_pairs": 4488,
+        "rate": 0.0011140819964349377
+      },
+      "random_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 3,
+        "unique_pairs": 4488,
+        "rate": 0.0006684491978609625
+      },
+      "graph_hard_prepool_unique_pair_rate": {
+        "future_positive_unique_pairs": 8,
+        "unique_pairs": 8976,
+        "rate": 0.00089126559714795
+      },
+      "true_vs_shuffled": {
+        "true_rate": 0.0015597147950089127,
+        "control_rate": 0.0011140819964349377,
+        "rate_difference": 0.000445632798573975,
+        "rate_difference_95pct_bootstrap_ci": [
+          -0.000445632798573975,
+          0.0013368983957219253
+        ],
+        "rate_ratio": 1.4,
+        "rate_ratio_95pct_bootstrap_ci": [
+          0.7142857142857143,
+          4.0
+        ],
+        "odds_ratio_haldane_corrected": 1.3642449261103728,
+        "odds_ratio_95pct_bootstrap_ci": [
+          0.73300620794766,
+          3.0033470936070517
+        ],
+        "bootstrap_unit": "training-positive query row",
+        "bootstrap_iterations": 5000
+      },
+      "true_vs_random": {
+        "true_rate": 0.0015597147950089127,
+        "control_rate": 0.0006684491978609625,
+        "rate_difference": 0.0008912655971479501,
+        "rate_difference_95pct_bootstrap_ci": [
+          0.0002228163992869875,
+          0.0017825311942959003
+        ],
+        "rate_ratio": 2.3333333333333335,
+        "rate_ratio_95pct_bootstrap_ci": [
+          1.2,
+          "undefined"
+        ],
+        "odds_ratio_haldane_corrected": 2.144769767775458,
+        "odds_ratio_95pct_bootstrap_ci": [
+          1.1820818333924858,
+          7.700539850049863
+        ],
+        "bootstrap_unit": "training-positive query row",
+        "bootstrap_iterations": 5000
+      },
+      "true_vs_shuffled_fisher": {
+        "odds_ratio": 1.400624860522205,
+        "p_value": 0.7742631268131057,
+        "method": "scipy.stats.fisher_exact"
+      },
+      "true_vs_random_fisher": {
+        "odds_ratio": 2.3354162017406828,
+        "p_value": 0.3434756785685971,
+        "method": "scipy.stats.fisher_exact"
+      },
+      "prepool_future_positive_occurrences": 8
+    },
+    "1": {
+      "true_veto_occurrence_rate": {
+        "count": 7,
+        "denominator": 4488,
+        "rate": 0.0015597147950089127,
+        "rate_95pct_bootstrap_ci": [
+          0.000445632798573975,
+          0.002896613190730838
+        ]
+      },
+      "shuffled_veto_occurrence_rate": {
+        "count": 2,
+        "denominator": 4488,
+        "rate": 0.000445632798573975,
+        "rate_95pct_bootstrap_ci": [
+          0.0,
+          0.0011140819964349377
+        ]
+      },
+      "random_veto_occurrence_rate": {
+        "count": 6,
+        "denominator": 4488,
+        "rate": 0.001336898395721925,
+        "rate_95pct_bootstrap_ci": [
+          0.000445632798573975,
+          0.0024509803921568627
+        ]
+      },
+      "graph_hard_prepool_occurrence_rate": {
+        "count": 8,
+        "denominator": 8976,
+        "rate": 0.00089126559714795,
+        "rate_95pct_bootstrap_ci": [
+          0.00033422459893048126,
+          0.0015597147950089127
+        ]
+      },
+      "true_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 7,
+        "unique_pairs": 4488,
+        "rate": 0.0015597147950089127
+      },
+      "shuffled_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 2,
+        "unique_pairs": 4488,
+        "rate": 0.000445632798573975
+      },
+      "random_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 6,
+        "unique_pairs": 4488,
+        "rate": 0.001336898395721925
+      },
+      "graph_hard_prepool_unique_pair_rate": {
+        "future_positive_unique_pairs": 8,
+        "unique_pairs": 8976,
+        "rate": 0.00089126559714795
+      },
+      "true_vs_shuffled": {
+        "true_rate": 0.0015597147950089127,
+        "control_rate": 0.000445632798573975,
+        "rate_difference": 0.0011140819964349377,
+        "rate_difference_95pct_bootstrap_ci": [
+          0.0002228163992869875,
+          0.002228163992869875
+        ],
+        "rate_ratio": 3.5000000000000004,
+        "rate_ratio_95pct_bootstrap_ci": [
+          1.4,
+          "undefined"
+        ],
+        "odds_ratio_haldane_corrected": 3.0033470936070517,
+        "odds_ratio_95pct_bootstrap_ci": [
+          1.3642449261103728,
+          15.023429655249357
+        ],
+        "bootstrap_unit": "training-positive query row",
+        "bootstrap_iterations": 5000
+      },
+      "true_vs_random": {
+        "true_rate": 0.0015597147950089127,
+        "control_rate": 0.001336898395721925,
+        "rate_difference": 0.00022281639928698762,
+        "rate_difference_95pct_bootstrap_ci": [
+          -0.00044563279857397524,
+          0.0008912655971479503
+        ],
+        "rate_ratio": 1.1666666666666667,
+        "rate_ratio_95pct_bootstrap_ci": [
+          0.6666666666666666,
+          2.5000000000000004
+        ],
+        "odds_ratio_haldane_corrected": 1.1541036225851578,
+        "odds_ratio_95pct_bootstrap_ci": [
+          0.683752605160419,
+          2.2014720642355305
+        ],
+        "bootstrap_unit": "training-positive query row",
+        "bootstrap_iterations": 5000
+      },
+      "true_vs_shuffled_fisher": {
+        "odds_ratio": 3.5039053782637803,
+        "p_value": 0.1794681040122587,
+        "method": "scipy.stats.fisher_exact"
+      },
+      "true_vs_random_fisher": {
+        "odds_ratio": 1.1669270252175854,
+        "p_value": 1.0,
+        "method": "scipy.stats.fisher_exact"
+      },
+      "prepool_future_positive_occurrences": 8
+    },
+    "2": {
+      "true_veto_occurrence_rate": {
+        "count": 7,
+        "denominator": 4488,
+        "rate": 0.0015597147950089127,
+        "rate_95pct_bootstrap_ci": [
+          0.000445632798573975,
+          0.002896613190730838
+        ]
+      },
+      "shuffled_veto_occurrence_rate": {
+        "count": 3,
+        "denominator": 4488,
+        "rate": 0.0006684491978609625,
+        "rate_95pct_bootstrap_ci": [
+          0.0,
+          0.0015597147950089127
+        ]
+      },
+      "random_veto_occurrence_rate": {
+        "count": 5,
+        "denominator": 4488,
+        "rate": 0.0011140819964349377,
+        "rate_95pct_bootstrap_ci": [
+          0.0002228163992869875,
+          0.0022281639928698753
+        ]
+      },
+      "graph_hard_prepool_occurrence_rate": {
+        "count": 8,
+        "denominator": 8976,
+        "rate": 0.00089126559714795,
+        "rate_95pct_bootstrap_ci": [
+          0.00033422459893048126,
+          0.0015597147950089127
+        ]
+      },
+      "true_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 7,
+        "unique_pairs": 4488,
+        "rate": 0.0015597147950089127
+      },
+      "shuffled_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 3,
+        "unique_pairs": 4488,
+        "rate": 0.0006684491978609625
+      },
+      "random_veto_unique_pair_rate": {
+        "future_positive_unique_pairs": 5,
+        "unique_pairs": 4488,
+        "rate": 0.0011140819964349377
+      },
+      "graph_hard_prepool_unique_pair_rate": {
+        "future_positive_unique_pairs": 8,
+        "unique_pairs": 8976,
+        "rate": 0.00089126559714795
+      },
+      "true_vs_shuffled": {
+        "true_rate": 0.0015597147950089127,
+        "control_rate": 0.0006684491978609625,
+        "rate_difference": 0.0008912655971479501,
+        "rate_difference_95pct_bootstrap_ci": [
+          0.0002228163992869875,
+          0.0017825311942959003
+        ],
+        "rate_ratio": 2.3333333333333335,
+        "rate_ratio_95pct_bootstrap_ci": [
+          1.2,
+          "undefined"
+        ],
+        "odds_ratio_haldane_corrected": 2.144769767775458,
+        "odds_ratio_95pct_bootstrap_ci": [
+          1.1820818333924858,
+          9.008027650797189
+        ],
+        "bootstrap_unit": "training-positive query row",
+        "bootstrap_iterations": 5000
+      },
+      "true_vs_random": {
+        "true_rate": 0.0015597147950089127,
+        "control_rate": 0.0011140819964349377,
+        "rate_difference": 0.000445632798573975,
+        "rate_difference_95pct_bootstrap_ci": [
+          -0.000445632798573975,
+          0.0013368983957219253
+        ],
+        "rate_ratio": 1.4,
+        "rate_ratio_95pct_bootstrap_ci": [
+          0.7142857142857143,
+          4.0
+        ],
+        "odds_ratio_haldane_corrected": 1.3642449261103728,
+        "odds_ratio_95pct_bootstrap_ci": [
+          0.73300620794766,
+          3.004689070001117
+        ],
+        "bootstrap_unit": "training-positive query row",
+        "bootstrap_iterations": 5000
+      },
+      "true_vs_shuffled_fisher": {
+        "odds_ratio": 2.3354162017406828,
+        "p_value": 0.3434756785685971,
+        "method": "scipy.stats.fisher_exact"
+      },
+      "true_vs_random_fisher": {
+        "odds_ratio": 1.400624860522205,
+        "p_value": 0.7742631268131057,
+        "method": "scipy.stats.fisher_exact"
+      },
+      "prepool_future_positive_occurrences": 8
+    }
+  },
+  "aggregate_control_rates_are_query_row_averages_across_three_control_seeds": true,
+  "true_veto_rate": {
+    "count": 7,
+    "denominator": 4488,
+    "rate": 0.0015597147950089127,
+    "rate_95pct_bootstrap_ci": [
+      0.000445632798573975,
+      0.002896613190730838
+    ]
+  },
+  "shuffled_veto_rate_mean_across_seeds": {
+    "count": 3,
+    "denominator": 4488,
+    "rate": 0.000742721330956625,
+    "rate_95pct_bootstrap_ci": [
+      0.0002228163992869875,
+      0.0013387551990492895
+    ]
+  },
+  "random_veto_rate_mean_across_seeds": {
+    "count": 4,
+    "denominator": 4488,
+    "rate": 0.001039809863339275,
+    "rate_95pct_bootstrap_ci": [
+      0.0003713606654783125,
+      0.0019310754604872252
+    ]
+  },
+  "graph_hard_prepool_rate": {
+    "count": 8,
+    "denominator": 8976,
+    "rate": 0.00089126559714795,
+    "rate_95pct_bootstrap_ci": [
+      0.00033422459893048126,
+      0.0015597147950089127
+    ]
+  },
+  "true_veto_enrichment_vs_prepool": {
+    "ratio": 1.7500000000000002,
+    "bootstrap_ci_95": [
+      1.2,
+      2.0
+    ],
+    "prepool_rate": 0.00089126559714795,
+    "true_veto_rate": 0.0015597147950089127
+  },
+  "true_vs_shuffled_aggregate": {
+    "true_rate": 0.0015597147950089127,
+    "control_rate": 0.000742721330956625,
+    "rate_difference": 0.0008169934640522877,
+    "rate_difference_95pct_bootstrap_ci": [
+      0.00014854426619132508,
+      0.0016339869281045752
+    ],
+    "rate_ratio": 2.1000000000000005,
+    "rate_ratio_95pct_bootstrap_ci": [
+      1.3333333333333333,
+      3.7500000000000004
+    ],
+    "odds_ratio_haldane_corrected": 1.9581225230294597,
+    "odds_ratio_95pct_bootstrap_ci": [
+      1.286000987528471,
+      3.0033470936070517
+    ],
+    "bootstrap_unit": "training-positive query row",
+    "bootstrap_iterations": 5000
+  },
+  "true_vs_random_aggregate": {
+    "true_rate": 0.0015597147950089127,
+    "control_rate": 0.001039809863339275,
+    "rate_difference": 0.0005199049316696378,
+    "rate_difference_95pct_bootstrap_ci": [
+      -7.427213309566254e-05,
+      0.0012626262626262625
+    ],
+    "rate_ratio": 1.5000000000000002,
+    "rate_ratio_95pct_bootstrap_ci": [
+      0.912717391304348,
+      2.5000000000000004
+    ],
+    "odds_ratio_haldane_corrected": 1.452368698556431,
+    "odds_ratio_95pct_bootstrap_ci": [
+      0.918099353270804,
+      2.2197008291970524
+    ],
+    "bootstrap_unit": "training-positive query row",
+    "bootstrap_iterations": 5000
+  },
+  "true_vs_shuffled_fisher_seed0": {
+    "odds_ratio": 1.400624860522205,
+    "p_value": 0.7742631268131057,
+    "method": "scipy.stats.fisher_exact"
+  },
+  "true_vs_random_fisher_seed0": {
+    "odds_ratio": 2.3354162017406828,
+    "p_value": 0.3434756785685971,
+    "method": "scipy.stats.fisher_exact"
+  },
+  "Q1_graph_hard_HG_high_vs_Q2_graph_hard_HG_low": {
+    "Q1_rate": 0.0015597147950089127,
+    "Q2_rate": 0.0002228163992869875,
+    "risk_ratio": 7.000000000000001,
+    "odds_ratio_and_paired_bootstrap": {
+      "true_rate": 0.0015597147950089127,
+      "control_rate": 0.0002228163992869875,
+      "rate_difference": 0.0013368983957219253,
+      "rate_difference_95pct_bootstrap_ci": [
+        0.0002228163992869875,
+        0.00267379679144385
+      ],
+      "rate_ratio": 7.000000000000001,
+      "rate_ratio_95pct_bootstrap_ci": [
+        1.5,
+        "infinity"
+      ],
+      "odds_ratio_haldane_corrected": 5.006694187214102,
+      "odds_ratio_95pct_bootstrap_ci": [
+        1.4003121168208674,
+        23.056504745951983
+      ],
+      "bootstrap_unit": "training-positive query row",
+      "bootstrap_iterations": 5000,
+      "ci_note": "upper endpoint is unbounded because bootstrap samples include zero Q2 future positives"
+    },
+    "absolute_rate_difference": 0.0013368983957219253,
+    "Q1_future_positive_count": 7,
+    "Q2_future_positive_count": 1
+  },
+  "hg_percentile_buckets": [
+    {
+      "count": 0,
+      "denominator": 1795,
+      "rate": 0.0,
+      "rate_95pct_bootstrap_ci": [
+        0.0,
+        0.0
+      ],
+      "hg_percentile_bucket": "0-20%"
+    },
+    {
+      "count": 0,
+      "denominator": 1795,
+      "rate": 0.0,
+      "rate_95pct_bootstrap_ci": [
+        0.0,
+        0.0
+      ],
+      "hg_percentile_bucket": "20-40%"
+    },
+    {
+      "count": 0,
+      "denominator": 1795,
+      "rate": 0.0,
+      "rate_95pct_bootstrap_ci": [
+        0.0,
+        0.0
+      ],
+      "hg_percentile_bucket": "40-60%"
+    },
+    {
+      "count": 0,
+      "denominator": 1795,
+      "rate": 0.0,
+      "rate_95pct_bootstrap_ci": [
+        0.0,
+        0.0
+      ],
+      "hg_percentile_bucket": "60-80%"
+    },
+    {
+      "count": 8,
+      "denominator": 1796,
+      "rate": 0.004454342984409799,
+      "rate_95pct_bootstrap_ci": [
+        0.0016703786191536749,
+        0.0077951002227171495
+      ],
+      "hg_percentile_bucket": "80-100%"
+    }
+  ],
+  "hg_percentile_monotonicity": {
+    "rates": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.004454342984409799
+    ],
+    "nondecreasing": true,
+    "spearman_rho": null
+  },
+  "filtered_all_positive_control": {
+    "candidate_occurrences": 89760,
+    "future_positive_occurrences": 0,
+    "future_positive_rate": 0.0,
+    "interpretation": "structurally forced to zero by the all_positive rejection filter; not evidence against or for the verifier"
+  },
+  "diversity_diagnostic_if_A3_test_best": null,
+  "a3_test_best": false
+}

@@ -1,0 +1,55 @@
+{
+  "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "train_only_split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "Graph_teacher_hash": "30343bdf61b8fa38a7d9eecbd280a836ee81ef4dfeb63efeb1c74445337ad28b",
+  "Raw_HG_teacher_hash": "1fa029f5a0a3a6e32516907e28bd6179493eeb5429f69c97e4444acdaa9fe91e",
+  "Graph_score_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c",
+  "Raw_HG_score_hash": "c4e229f5eb7ba2aec31e5345b4683bcbf2d2e98f57c89357228ecb9e85f42b6f",
+  "R_g_definition": "global candidate-pool ordinal rank percentile over all 89,760 candidate pairs",
+  "R_h_definition": "global candidate-pool ordinal rank percentile over all 89,760 candidate pairs",
+  "graph_prepool_per_positive": 2,
+  "K": 1,
+  "matching": {
+    "strata": 20,
+    "strata_definition": "equal-frequency quantile bins over the 2K Graph-hard prepool's global-pool rank percentile Rg",
+    "quota_reference": "M0 Graph-hard top-1 histogram; exact same per-stratum counts assigned to M1/M2/M3",
+    "target_counts": [
+      72,
+      85,
+      113,
+      119,
+      124,
+      144,
+      178,
+      169,
+      184,
+      201,
+      204,
+      239,
+      260,
+      279,
+      301,
+      311,
+      324,
+      360,
+      394,
+      427
+    ],
+    "mean_Rg": {
+      "M1": 0.9521024227502127,
+      "M2": 0.9522780018444718,
+      "M3": 0.9523123903245051
+    },
+    "median_Rg": {
+      "M1": 0.9662819327309796,
+      "M2": 0.9662596508428125,
+      "M3": 0.9662596508428125
+    },
+    "max_abs_mean_Rg_difference": 0.000209967574292369,
+    "KS_M1_M2": 0.002896613190730838,
+    "KS_M1_M3": 0.004010695187165776,
+    "KS_M2_M3": 0.0017825311942959
+  },
+  "all_selected_indices_are_in_train_only_pool": true,
+  "selection_seconds": 15.085630544926971
+}

@@ -1,0 +1,107 @@
+{
+  "state": "COMPLETE",
+  "current_cuda_mode": "PyTorch 2.8.0+cu128, Tesla V100, deterministic_algorithms=False in original V18/V18.1 run setting",
+  "strict_flag_without_patch": "REPEATED_FIRST_STEP_STILL_DIVERGED_AT_scatter_mean; third-party torch_scatter CUDA extension was not controlled by torch.use_deterministic_algorithms(True)",
+  "same_checkpoint_eval": {
+    "old_A1": {
+      "same_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 7.542105828761692e-11,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      },
+      "fresh_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 5.445312256657786e-11,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      }
+    },
+    "old_A2": {
+      "same_process": {
+        "max_abs_score_difference_any_pair": 1.1920928955078125e-06,
+        "max_CE_range": 1.4445442064747738e-10,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      },
+      "fresh_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 2.3529284076673207e-10,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      }
+    },
+    "old_A3": {
+      "same_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 1.0041958931061856e-10,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      },
+      "fresh_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 1.3867701431635737e-10,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      }
+    },
+    "new_A1": {
+      "same_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 5.433541117039198e-11,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      },
+      "fresh_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 4.5249679003767085e-11,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      }
+    },
+    "new_A2": {
+      "same_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 1.231705293314178e-10,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      },
+      "fresh_process": {
+        "max_abs_score_difference_any_pair": 1.0728836059570312e-06,
+        "max_CE_range": 1.7003212726685035e-10,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      }
+    },
+    "new_A3": {
+      "same_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 1.7128179430336843e-10,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      },
+      "fresh_process": {
+        "max_abs_score_difference_any_pair": 9.5367431640625e-07,
+        "max_CE_range": 2.1389870430432723e-10,
+        "max_MRR_range": 0.0,
+        "unique_score_hashes": 10
+      }
+    }
+  },
+  "unpatched_training_first_step": {
+    "PubMed": {
+      "same_inputs_logits_loss": true,
+      "first_different_activation": "torch_scatter.scatter_mean",
+      "first_different_gradient": "decoder.4.weight"
+    },
+    "Cora": {
+      "same_inputs_logits_loss": true,
+      "first_different_activation": "torch_scatter.scatter_mean",
+      "first_different_gradient": "decoder.4.weight"
+    }
+  },
+  "patched_segment_reduce_first_step": "Two strict-deterministic PubMed runs had identical activations, logits, loss, gradient tensors and updated parameters.",
+  "patched_full_run": "Two independent PubMed seed0 A2 five-epoch runs had exact hashes for all 90 steps and all five epoch model/optimizer states.",
+  "cpu_evaluation": "NOT_RUN; CUDA operator root cause was directly isolated and fixed on GPU.",
+  "test_accessed": false
+}

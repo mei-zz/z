@@ -1,0 +1,134 @@
+{
+  "id": "PAPER_SPRINT_01_NCNC_FINAL5_V1",
+  "backbone": "official NCNC jointly trained from scratch",
+  "configs": {
+    "cora": {
+      "xdp": 0.7,
+      "tdp": 0.3,
+      "pt": 0.75,
+      "preedp": 0.4,
+      "predp": 0.05,
+      "gnndp": 0.05,
+      "scale": 4.3,
+      "offset": 2.8,
+      "alpha": 1.0,
+      "gnnlr": 0.0043,
+      "prelr": 0.0024,
+      "batch": 1152,
+      "twolayerlin": false
+    },
+    "citeseer": {
+      "xdp": 0.4,
+      "tdp": 0.0,
+      "pt": 0.75,
+      "preedp": 0.0,
+      "predp": 0.55,
+      "gnndp": 0.75,
+      "scale": 6.5,
+      "offset": 4.4,
+      "alpha": 0.4,
+      "gnnlr": 0.0085,
+      "prelr": 0.0078,
+      "batch": 384,
+      "twolayerlin": true
+    },
+    "pubmed": {
+      "xdp": 0.3,
+      "tdp": 0.0,
+      "pt": 0.5,
+      "preedp": 0.0,
+      "predp": 0.05,
+      "gnndp": 0.1,
+      "scale": 5.3,
+      "offset": 0.5,
+      "alpha": 0.3,
+      "gnnlr": 0.0097,
+      "prelr": 0.002,
+      "batch": 2048,
+      "twolayerlin": false
+    }
+  },
+  "epochs": 5,
+  "checkpoint": "fixed final5, evaluate validation once after final5",
+  "screen_seeds": [
+    0,
+    1,
+    2
+  ],
+  "replication_seeds": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "inner_seeds": [
+    8,
+    9,
+    10
+  ],
+  "inner_split_seed": 310016,
+  "inner_fraction": 0.1,
+  "citeseer_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_metric": "MRR",
+  "promotion": "B3 mean paired MRR strictly above BOTH B1 and B2 on each of Cora and PubMed; no added wins/CE threshold",
+  "preserve_lead": "positive mean paired MRR over both single branches on either dataset; preserve secondary CE signals separately",
+  "test": "sealed; only x/train/valid_pos/valid_neg decompressed from canonical archive",
+  "negative_sampler": "unchanged official PyG negative_sampling; no validation or test label filter; identical per-seed schedules",
+  "backbone_mask": "unchanged official maskinput=True batch-positive removal",
+  "auxiliary_mask": "frozen single-target removal for training positives; training-only raw stars for validation",
+  "R": "frozen constructor, right-continuous train-active ECDF, Linear6-8 ReLU mean/max log1p(T/S) zero Linear18-1;75 parameters",
+  "G": "exact V28 log1p(lambda_G),lambda_G/max(min(projected_degree_u,projected_degree_v),1); train-occurrence standardization",
+  "G_adapter": "one zero-padded six-dimensional token; same75param encoder/head; repeated mean=max, zero count slots",
+  "layout": {
+    "B0": null,
+    "B0_CAP": [
+      "Z",
+      "Z"
+    ],
+    "B1": [
+      "R",
+      "Z"
+    ],
+    "B2": [
+      "Z",
+      "G"
+    ],
+    "B3": [
+      "R",
+      "G"
+    ],
+    "D_RR": [
+      "R",
+      "R"
+    ],
+    "D_GG": [
+      "G",
+      "G"
+    ],
+    "S_R": [
+      "RS",
+      "G"
+    ],
+    "S_G": [
+      "R",
+      "GS"
+    ],
+    "S_RG": [
+      "RS",
+      "GS"
+    ]
+  },
+  "matched_capacity": "all arms except pure B0 have two identical75param branch templates;150 added params",
+  "duplicate_controls": "D_RR two frozen R branches; D_GG two GRAPH branches; independent paired slot initializations",
+  "shuffle": "fixed candidate derangements within exact per-seed scheduled occurrence-multiplicity strata; R whole multiset+T+S moves together; G whole vector moves together; no labels",
+  "decision": "SUPPORTED needs screening lead on both datasets, independent+inner positive mean and strict-majority paired MRR gains over both singles, both duplicates and each effective R/G shuffle; NO_SIGNAL screen => UNSUPPORTED; otherwise UNRESOLVED",
+  "no_sweeps": true,
+  "no_rescue_tuning": true,
+  "test_opened": false,
+  "numeric_backend": "deterministic algorithms=True, fixed CUBLAS workspace, TF32 off; validated before screening; architecture/optimizer unchanged"
+}

@@ -1,0 +1,12 @@
+{
+  "state": "IDENTIFIED",
+  "primary_class": "NUMERICAL_KERNEL_NONDETERMINISM",
+  "secondary_contributors": [
+    "HISTORICAL_ARTIFACT_MISMATCH: V18 did not store full epoch/optimizer/RNG state hashes or runtime environment"
+  ],
+  "mechanism": "torch_scatter.scatter_mean uses CUDA floating-point atomic accumulation for groups with repeated indices. Atomic accumulation order is not bitwise deterministic. Tiny endpoint-pooled feature drift changes the zero-initialized final decoder weight gradient; Adam produces different parameter updates, which amplify over epochs. The relation-summary index_add/scatter_max path uses the same grouped-atomic family and is also replaced by the fix.",
+  "first_divergence": "PubMed seed0 RAW/A2, epoch1 optimizer batch1, endpoint scatter_mean output; then gradient and updated decoder.4.weight.",
+  "evaluation_repeatability": "Same fixed checkpoint evaluation differs by at most the score drift recorded in 02_CHECKPOINT_EVAL_REPEATABILITY.json; CE drift is many orders smaller than training-run divergence, so evaluation alone cannot account for the observed mismatch.",
+  "why_pubmed": "PubMed has 37,676 training pairs vs Cora 4,488. On the audited 256-candidate sample, mean endpoint group-count products were 96.6 vs 37.6 and total pair interactions 49,472 vs 19,270. More repeated group updates increase atomic-reduction exposure. Cora also shows first-step scatter_mean hash divergence; its one V18/V18.1 reproduction happened not to trip the prior gate.",
+  "test_accessed": false
+}

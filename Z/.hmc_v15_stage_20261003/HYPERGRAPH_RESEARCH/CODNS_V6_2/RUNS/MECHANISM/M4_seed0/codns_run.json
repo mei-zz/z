@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "method": "M4",
+  "seed": 0,
+  "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M4_seed0/checkpoints/cora_uniform_seed0_34f6b029bedf.pt",
+  "result_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M4_seed0/raw/cora_uniform_seed0_34f6b029bedf.json",
+  "diagnostics_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/CODNS_V6_2/RUNS/MECHANISM/M4_seed0/epoch_diagnostics.json",
+  "train_seconds": 69.33212450193241,
+  "wall_seconds": 69.80621566995978,
+  "selected_negative_hash": "90d7c11b2e21f6de9fdd2a6328537d46781d169935154d19a1a739bcb5e75b5c",
+  "dynamic_sampler": null,
+  "model_state_hash": "be7f69a8a4df1434b10cc653b4c239c5c0aaeffb41b673b50b586551171f0378",
+  "epoch10_validation_mrr": 0.5370363979077737,
+  "epoch_count": 10,
+  "checkpoint_rule": "FIXED_EPOCH_10",
+  "test_evaluated": false
+}

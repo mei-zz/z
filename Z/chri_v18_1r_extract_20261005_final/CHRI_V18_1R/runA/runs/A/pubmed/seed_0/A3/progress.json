@@ -1,0 +1,17 @@
+{
+  "state": "COMPLETE",
+  "epoch": 5,
+  "epochs": 5,
+  "validation": {
+    "ce": 0.1285081662144563,
+    "balanced_ce": 0.12942329651168943,
+    "auc": 0.9888606176038394,
+    "mrr": 0.9207801211524135,
+    "hits10": 0.9990974729241877,
+    "hits20": 1.0,
+    "mean_positive_rank": 1.2256317689530687,
+    "queries": 2216,
+    "negatives_per_query": 20
+  },
+  "test_accessed": false
+}

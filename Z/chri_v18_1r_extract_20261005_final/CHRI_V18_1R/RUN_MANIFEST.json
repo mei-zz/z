@@ -1,0 +1,30 @@
+{
+  "task": "CHRI_V18_1R_REPRODUCTION_FORENSICS",
+  "state": "COMPLETE",
+  "historical_V18_status": "CHRI_KILL / CHRI_TRANSFER_WEAK",
+  "historical_V18_1_status": "V18_1_REPRODUCTION_MISMATCH",
+  "root_cause_class": "NUMERICAL_KERNEL_NONDETERMINISM",
+  "fix": "V18_1R/scripts/deterministic_aggregation.py; segment reductions replace atomic grouped reductions",
+  "corrected_runs": {
+    "PubMed_seeds": [
+      0,
+      1,
+      2
+    ],
+    "Cora_spotcheck_seeds": [
+      0
+    ],
+    "arms": {
+      "A1": "Z",
+      "A2": "RAW",
+      "A3": "SHUFFLE"
+    },
+    "epochs": 5,
+    "strict_deterministic_algorithms": true,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "parallel_workers": 3
+  },
+  "new_method_variants_run": false,
+  "test_accessed": false,
+  "innovation1_modified": false
+}

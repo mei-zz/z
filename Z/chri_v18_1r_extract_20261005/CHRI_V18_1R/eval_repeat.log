@@ -1,0 +1,88 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "old_A1": {
+    "same_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 7.542105828761692e-11,
+      "mrr_range": 0.0
+    },
+    "fresh_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 5.445312256657786e-11,
+      "mrr_range": 0.0
+    }
+  },
+  "old_A2": {
+    "same_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 1.1920928955078125e-06,
+      "ce_range": 1.4445442064747738e-10,
+      "mrr_range": 0.0
+    },
+    "fresh_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 2.3529284076673207e-10,
+      "mrr_range": 0.0
+    }
+  },
+  "old_A3": {
+    "same_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 1.0041958931061856e-10,
+      "mrr_range": 0.0
+    },
+    "fresh_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 1.3867701431635737e-10,
+      "mrr_range": 0.0
+    }
+  },
+  "new_A1": {
+    "same_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 5.433541117039198e-11,
+      "mrr_range": 0.0
+    },
+    "fresh_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 4.5249679003767085e-11,
+      "mrr_range": 0.0
+    }
+  },
+  "new_A2": {
+    "same_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 1.231705293314178e-10,
+      "mrr_range": 0.0
+    },
+    "fresh_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 1.0728836059570312e-06,
+      "ce_range": 1.7003212726685035e-10,
+      "mrr_range": 0.0
+    }
+  },
+  "new_A3": {
+    "same_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 1.7128179430336843e-10,
+      "mrr_range": 0.0
+    },
+    "fresh_process": {
+      "unique_hashes": 10,
+      "max_score_abs": 9.5367431640625e-07,
+      "ce_range": 2.1389870430432723e-10,
+      "mrr_range": 0.0
+    }
+  }
+}

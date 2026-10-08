@@ -1,0 +1,18 @@
+{
+  "state": "COMPLETE",
+  "phase": "complete",
+  "completed": [
+    "S_A1_seed0",
+    "S_A3_seed0",
+    "S_A4_seed0",
+    "S_A1_seed1",
+    "S_A3_seed1",
+    "S_A4_seed1",
+    "S_A1_seed2",
+    "S_A3_seed2",
+    "S_A4_seed2"
+  ],
+  "test_evaluated": true,
+  "current": null,
+  "final_decision": "NO_MECHANISM"
+}

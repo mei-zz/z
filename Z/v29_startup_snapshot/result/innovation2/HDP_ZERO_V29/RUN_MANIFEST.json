@@ -1,0 +1,72 @@
+{
+  "state": "REGISTERED",
+  "created_at": 1791282629.06996,
+  "workspace": "DCDLP-main",
+  "datasets": [
+    "cora",
+    "pubmed"
+  ],
+  "phase_A": {
+    "seeds": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "arms": [
+      "SHARED",
+      "GDUP",
+      "GM",
+      "GMG",
+      "GMP",
+      "GM_BINARY",
+      "GM_COUNT",
+      "GM_SAT",
+      "GM_FULL",
+      "GM_SHUFFLE",
+      "GM_CONDPERM"
+    ],
+    "epochs": 5,
+    "validation": "original canonical",
+    "checkpoint": "final epoch"
+  },
+  "precheck": {
+    "dataset": "pubmed",
+    "seed": 0,
+    "arms": [
+      "GM_BINARY",
+      "GM_FULL",
+      "GM_CONDPERM",
+      "GMG"
+    ],
+    "independent_replicates": [
+      1,
+      2
+    ]
+  },
+  "inner": {
+    "split_seed": 290016,
+    "seeds": [
+      13,
+      14,
+      15
+    ],
+    "epochs": 5,
+    "holdout": 0.1,
+    "negatives": 20,
+    "selection": "max2 by preregistered positive mean CE rule; strongest matched control, GM,GDUP, plus binary and conditional permutation for surviving full hypothesis"
+  },
+  "architecture": "literal V28 SHARED +6->8->1 ReLU zero final structural head, trainable30594, SHARED30529",
+  "optimizer": "literal V28 Adam dataset prelr, weight_decay0",
+  "normalization": "literal V28 train5 population float64 moments per semantic block; same H scaler for shuffle/permutation",
+  "GPU_workers": 6,
+  "backbone_workers": 2,
+  "feature_workers": 3,
+  "numba_threads_per_worker": 6,
+  "torch_threads": 2,
+  "test_opened": false,
+  "innovation1_frozen": true,
+  "permutation_matching": "fixed bucketed G,M,projected degree + equal frequency; no label or performance use",
+  "small_signal_policy": "retain any positive paired seed; replication claims require independent support"
+}

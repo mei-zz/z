@@ -1,0 +1,552 @@
+{
+  "state": "PASS",
+  "records": [
+    {
+      "state": "PASS",
+      "dataset": "pubmed",
+      "seed": 0,
+      "checks": {
+        "train": {
+          "binary_equals_matching_positive": true,
+          "count_equals_log1p_matching": true,
+          "binary_exactly_recoverable_from_MULT": true
+        },
+        "validation": {
+          "binary_equals_matching_positive": true,
+          "count_equals_log1p_matching": true,
+          "binary_exactly_recoverable_from_MULT": true
+        }
+      },
+      "sampled_exact_crosschecks": [
+        {
+          "split": "train",
+          "key": 321071332,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 37382956,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 342365732,
+          "exact_matching": 1,
+          "scipy_oracle": 1,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 208033605,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 358967671,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 157357088,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 312885597,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 83765027,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 44874909,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 133852321,
+          "exact_matching": 2,
+          "scipy_oracle": 2,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 152347627,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 31241739,
+          "exact_matching": 3,
+          "scipy_oracle": 3,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 114956829,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 7130357,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 9650791,
+          "exact_matching": 1,
+          "scipy_oracle": 1,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 151643020,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 77639292,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 323672556,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 39190269,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 273805087,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 85105085,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 111214744,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 297624220,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 83480077,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 188902578,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 88258274,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 207277282,
+          "exact_matching": 8,
+          "scipy_oracle": 8,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 36355618,
+          "exact_matching": 9,
+          "scipy_oracle": 9,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 21206922,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 212284886,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 183581580,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "train",
+          "key": 75963609,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 198328726,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 29152571,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 79197751,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 37588955,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 103206472,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 141187987,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 294173027,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 148881676,
+          "exact_matching": 1,
+          "scipy_oracle": 1,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 90675162,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 181178740,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 6126916,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 325567035,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 139723957,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 155499334,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 272818623,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 160524764,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 40625022,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 80232726,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 75917764,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 36786825,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 70960390,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 143450053,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 35008715,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 17932046,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 152223066,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 215070794,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 235537325,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 328265776,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 18542951,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 145447465,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 293053574,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        },
+        {
+          "split": "validation",
+          "key": 213059665,
+          "exact_matching": 0,
+          "scipy_oracle": 0,
+          "swap": true,
+          "target_mask": true
+        }
+      ],
+      "test_opened": false,
+      "historical_V28_features_bit_identical": {
+        "train/GDUP": true,
+        "train/GM": true,
+        "train/GMG": true,
+        "train/GMP": true,
+        "train/GM_FULL": true,
+        "train/GM_SHUFFLE": true,
+        "validation/GDUP": true,
+        "validation/GM": true,
+        "validation/GMG": true,
+        "validation/GMP": true,
+        "validation/GM_FULL": true,
+        "validation/GM_SHUFFLE": true
+      }
+    }
+  ],
+  "additional_new_seed_checks": "pending"
+}

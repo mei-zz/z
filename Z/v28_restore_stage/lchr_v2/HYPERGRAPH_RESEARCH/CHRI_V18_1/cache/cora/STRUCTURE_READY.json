@@ -1,0 +1,19 @@
+{
+  "nodes": 2708,
+  "active_hyperedges": 2620,
+  "max_incident": 151,
+  "train_pairs": 4488,
+  "target_mask_oracle_samples": 256,
+  "target_mask_oracle": "PASS",
+  "descriptor": "mean/max of fixed 16d projected node attributes + log1p(size)",
+  "descriptor_normalization": "training-incident nodes only; no labels",
+  "train_pair_hash": "822e6bf35cbdca0d791cdcd7333e25e6fdd2e8b3c97207afbe96e7f632159fef",
+  "projected_node_hash": "f0ca86946ac7219ca8d7c6ccca8d60a423e7d9f569dc35f0ba26512ee2590f0a",
+  "state": "PASS",
+  "dataset": "cora",
+  "seconds": 0.6111018802039325,
+  "train_only": true,
+  "training_targets_removed_before_encoder": true,
+  "descriptor_file_sha256": "08bc6c9a11b91cd795e62a9e3657e1c4a763d154b584acfa16191381651221a3",
+  "test_accessed": false
+}

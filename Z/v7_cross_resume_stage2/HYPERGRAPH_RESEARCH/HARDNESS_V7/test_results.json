@@ -1,0 +1,31 @@
+{
+  "test_status": "COMPLETE",
+  "test_evaluated_once": true,
+  "test_candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+  "matches_v6_1_shared_candidates": true,
+  "test_positive_count": 527,
+  "negatives_per_positive": 20,
+  "winner": "A4_QTHS25",
+  "best_mechanism_control": "A4_QTHS25",
+  "mean_mrr": {
+    "A1": 0.4728099414,
+    "A3": 0.4900635447,
+    "A4_QTHS25": 0.4933770849
+  },
+  "winner_minus_A1_by_seed": [
+    -0.00159614,
+    0.01377608,
+    0.04952149
+  ],
+  "winner_minus_A3_by_seed": [
+    0.00404786,
+    0.00219894,
+    0.00369382
+  ],
+  "winner_wins_vs_A1": 2,
+  "winner_wins_vs_A3": 3,
+  "supported_vs_graph_hard": true,
+  "supported_vs_random_veto": true,
+  "cross_dataset_gate": "OPEN",
+  "result_source": "frozen V7 Cora test execution summary from completed session"
+}

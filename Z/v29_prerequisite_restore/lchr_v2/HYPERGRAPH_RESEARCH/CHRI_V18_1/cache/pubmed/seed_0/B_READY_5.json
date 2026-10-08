@@ -1,0 +1,54 @@
+{
+  "state": "COMPLETE",
+  "dataset": "pubmed",
+  "seed": 0,
+  "epochs": 5,
+  "frozen_checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/final.pt",
+  "checkpoint_sha256": "80de9b501a7678c090a9991cd2052ac2b09385cdcab9415ff984304a894eeadb",
+  "B_definition": "[frozen NCNC logit, 256-dimensional root lin input]; C absorbed by B_NCNC",
+  "NCNC_parameters_frozen": true,
+  "trace": [
+    {
+      "epoch": 1,
+      "official_negative_hash": "aabb35a3f6758294fcaccc3147fda963506e74cb97f6f6383a37b7ecc60011f7",
+      "permutation_hash": "88f43d37ebdffd25be5047cb7ce7b8d594341c4d9c253cd263851b410546b867",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 2,
+      "official_negative_hash": "a1e9d5868d40a49dcbfd257c70053b4038de15de331b59be9fbdc82dfd19c82b",
+      "permutation_hash": "6491a7371eb8edca572424e106638875b35094860c77852dd3a177df8c306c12",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 3,
+      "official_negative_hash": "a1d6089c2fe685e8553ea6842bbb3af009f79e52d67bea4a2682b1a143dc0af2",
+      "permutation_hash": "071fbb65ce470ad0bbd88cb9e175ef49cfaae1cd4e6060afbdfbed187d38bbf0",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 4,
+      "official_negative_hash": "762c219598dc3633130fa80cf7cb7ab463b5d0c5bc63072523cd4518a9bb3ec1",
+      "permutation_hash": "b8289b73bb54857584921d8fad2f10cb76d42de14e2efb529d59edab5d8dfcbe",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    },
+    {
+      "epoch": 5,
+      "official_negative_hash": "a25b9276e69a33cf73cb493114e667cfdc948731f33653691df798e1bc64e340",
+      "permutation_hash": "3a23017ef36dab8e8ca0e992955778ec8355b5dd16437d1c9c15ea3bb6b77c7d",
+      "retained_train_pairs": 36864,
+      "official_floor_batch_tail": 812,
+      "mask": "all positives in this minibatch removed from NCNC message graph; own target removed from raw-star views"
+    }
+  ],
+  "seconds": 15.031150090973824,
+  "test_accessed": false
+}

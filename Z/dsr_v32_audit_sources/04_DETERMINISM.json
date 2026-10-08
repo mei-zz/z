@@ -1,0 +1,24 @@
+{
+  "state": "PASS",
+  "runs": [
+    {
+      "arm": "A6",
+      "checkpoint_hash_equal": true,
+      "validation_score_hash_equal": true,
+      "trace_equal": true
+    },
+    {
+      "arm": "A7",
+      "checkpoint_hash_equal": true,
+      "validation_score_hash_equal": true,
+      "trace_equal": true
+    },
+    {
+      "arm": "A9",
+      "checkpoint_hash_equal": true,
+      "validation_score_hash_equal": true,
+      "trace_equal": true
+    }
+  ],
+  "hash_rule": "exact checkpoint, validation-score vector, training trace hashes"
+}

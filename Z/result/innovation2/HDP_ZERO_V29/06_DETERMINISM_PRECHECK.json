@@ -1,0 +1,54 @@
+{
+  "state": "PASS",
+  "pairs": [
+    {
+      "arm": "GM_BINARY",
+      "checks": {
+        "feature_hashes": true,
+        "checkpoint_sha256": true,
+        "score_vector_sha256": true,
+        "training_trajectory_sha256": true,
+        "history": true,
+        "training_trace": true,
+        "initialization": true
+      }
+    },
+    {
+      "arm": "GM_FULL",
+      "checks": {
+        "feature_hashes": true,
+        "checkpoint_sha256": true,
+        "score_vector_sha256": true,
+        "training_trajectory_sha256": true,
+        "history": true,
+        "training_trace": true,
+        "initialization": true
+      }
+    },
+    {
+      "arm": "GM_CONDPERM",
+      "checks": {
+        "feature_hashes": true,
+        "checkpoint_sha256": true,
+        "score_vector_sha256": true,
+        "training_trajectory_sha256": true,
+        "history": true,
+        "training_trace": true,
+        "initialization": true
+      }
+    },
+    {
+      "arm": "GMG",
+      "checks": {
+        "feature_hashes": true,
+        "checkpoint_sha256": true,
+        "score_vector_sha256": true,
+        "training_trajectory_sha256": true,
+        "history": true,
+        "training_trace": true,
+        "initialization": true
+      }
+    }
+  ],
+  "independent_feature_normalization_builds": true
+}

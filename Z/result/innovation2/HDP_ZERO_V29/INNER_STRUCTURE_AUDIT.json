@@ -1,0 +1,21 @@
+{
+  "state": "PASS",
+  "datasets": {
+    "cora": {
+      "structure_sha256": "7b2dbf3c1438acdba2d6c69d7224d0ec61079c1e687ef5a6e133b8d99fcab546",
+      "context_sha256": "2408fee2ab5f784d65b9df076701326e978063dcc663c194a209f85e4008a586",
+      "target_mask_oracle": "PASS",
+      "context_normalization": "recomputed from inner-train active nodes only",
+      "inner_train_only_adjacency": true,
+      "single_writer": true
+    },
+    "pubmed": {
+      "structure_sha256": "409fad95d1820dd55c5ef6ce02d8de0e340d7f06adce72d300a30c907b27ffff",
+      "context_sha256": "08e974ac48774cd75ef8b4c30472315bd7445cb98916c591e4efaa1db409ba82",
+      "target_mask_oracle": "PASS",
+      "context_normalization": "recomputed from inner-train active nodes only",
+      "inner_train_only_adjacency": true,
+      "single_writer": true
+    }
+  }
+}

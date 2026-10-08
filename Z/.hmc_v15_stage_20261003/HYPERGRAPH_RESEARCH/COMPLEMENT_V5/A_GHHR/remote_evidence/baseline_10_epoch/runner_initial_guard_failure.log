@@ -1,0 +1,11 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/run_complementarity_audit.py", line 399, in <module>
+    main()
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/run_complementarity_audit.py", line 183, in main
+    baseline[label], captured, neg_hashes = run_arm(label, mode, dataset, raw_initial_state)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/COMPLEMENT_V5/run_complementarity_audit.py", line 147, in run_arm
+    raise RuntimeError(f"arm {label} unexpectedly evaluated test candidates")
+RuntimeError: arm H unexpectedly evaluated test candidates

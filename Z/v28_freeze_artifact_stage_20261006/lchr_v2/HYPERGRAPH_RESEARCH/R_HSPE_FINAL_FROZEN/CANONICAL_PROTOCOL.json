@@ -1,0 +1,266 @@
+{
+  "canonical_protocol_id": "R-HSPE-PAPER-V17.5",
+  "primary_claim_protocol": "V17.4_PHASE_B_FIXED_FINAL_EPOCH10",
+  "table_protocols": {
+    "A": "V17.3; 100e NCN/NCNC; best validation checkpoint",
+    "B": "V17.4; matched 10e; fixed final checkpoint"
+  },
+  "difference_class": "INTENTIONAL_PROTOCOL_DIFFERENCE",
+  "rerun_required": false,
+  "datasets": {
+    "cora": {
+      "nodes": 2708,
+      "dim": 1433,
+      "train": 4488,
+      "valid": 263,
+      "test": 527,
+      "total": 5278,
+      "hyp": 2620,
+      "train_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+      "vpos": "ce0c7a24f7e22eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+      "vp": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+      "vn": "7a99176386556eddb0c3f7d7b08b52a8da83504b9c980b84f6b99e16bfe9a902",
+      "tp": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+      "tn": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+      "cand": "c2a60aee273964509ace1615c01e2fdf0857fedeca76ad749da3eaf019bbc4e1",
+      "input_archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/input_cache/cora.npz",
+      "input_archive_sha256": "51eb7c621a1db083fcef492018bb03a70381ee5e185561bb44c29315fe886be4",
+      "arrays": {
+        "x": "f0faab5177bcc12f5688f042c8e0ed24ffb9baa8efc3ae7cde440d42524c9075",
+        "train": "c1eb024bb65b4ca8aaafc9bba8cb0cdef541f001e98e97cb8c0a461eb7fe4da8",
+        "valid_pos": "a5e15513a852300d0d7306e6c380600bcba5df74ed2189d8fc69eb666662e3ea",
+        "valid_neg": "fdccfdf180daeee9a985a4423c501dc327a1e4e58b079b8d529baf4c01b92c2c",
+        "test_pos": "626ba2d15c5372a24b577161f568e68473f32ed9b28da594eddd47e06b2f621c",
+        "test_neg": "77d5967e949ef879912f41c311720cbff20dd15f096a167dd1fe6d6102d2188e"
+      },
+      "shapes": {
+        "x": [
+          2708,
+          1433
+        ],
+        "train": [
+          4488,
+          2
+        ],
+        "valid_pos": [
+          263,
+          2
+        ],
+        "valid_neg": [
+          263,
+          20,
+          2
+        ],
+        "test_pos": [
+          527,
+          2
+        ],
+        "test_neg": [
+          527,
+          20,
+          2
+        ]
+      },
+      "test_candidate_path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17_2/candidates/cora_test.npz",
+      "feature_sha256": "f0faab5177bcc12f5688f042c8e0ed24ffb9baa8efc3ae7cde440d42524c9075"
+    },
+    "pubmed": {
+      "nodes": 19717,
+      "dim": 500,
+      "train": 37676,
+      "valid": 2216,
+      "test": 4432,
+      "total": 44324,
+      "hyp": 18291,
+      "vp": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+      "vn": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683",
+      "tp": "d5cb8058bb34feb90727a399dc8c19cccb2dbf85b032e08ca3e0292c905dd1e0",
+      "tn": "1e6a1d3fd4031479dbe0c4d1a5999b22812401cde214048645ab875c1428bf4b",
+      "cand": "b35e52370d34c048253eaed0ae511561c889ef02e5ad7a2cee1bf448d9a3c1d2",
+      "input_archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/input_cache/pubmed.npz",
+      "input_archive_sha256": "1f14420934cfa1790b7ce735cedf3d9c5512419e4753cdda17cc68f29400b560",
+      "arrays": {
+        "x": "4f1804517a3fab22c6ae1df7674c6a194acefcd242dc843930da79ce9ea6f681",
+        "train": "ddc4018b501bdbadb891d8759d854e45b91926570bc7c95ebd4d42406191f1c8",
+        "valid_pos": "749f12b35b6512237bd319685040f98df63fcba9c67d447bb520e184d6540098",
+        "valid_neg": "2f75dfa7ecec8a8994c772f8e4df4f372f94e62b27e224b24c23fba362f1dacd",
+        "test_pos": "cee80071d53640a87a3e5636654eea4727360b3cda1950312739f29ef64b3b3a",
+        "test_neg": "fef0bf9773d58f3700378f96dd4cd2241f259486dc10885b8eb90ad905b0b7f4"
+      },
+      "shapes": {
+        "x": [
+          19717,
+          500
+        ],
+        "train": [
+          37676,
+          2
+        ],
+        "valid_pos": [
+          2216,
+          2
+        ],
+        "valid_neg": [
+          2216,
+          20,
+          2
+        ],
+        "test_pos": [
+          4432,
+          2
+        ],
+        "test_neg": [
+          4432,
+          20,
+          2
+        ]
+      },
+      "test_candidate_path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17_2/candidates/pubmed_test.npz",
+      "train_hash": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+      "feature_sha256": "4f1804517a3fab22c6ae1df7674c6a194acefcd242dc843930da79ce9ea6f681"
+    },
+    "citeseer": {
+      "nodes": 3327,
+      "dim": 3703,
+      "train": 3870,
+      "valid": 227,
+      "test": 455,
+      "total": 4552,
+      "hyp": 3047,
+      "vp": "6ed4ff5091457dbcba884aae1f25f3257ae3c0e236e394e4de60ae1525c3a21f",
+      "vn": "d0d7a739d66ba5e5dc922dad3182959cc1a900484ca972984444d607e7cf2b82",
+      "tp": "b96d8f9cd2f76b1bd74a459f301cce8a86b3365995ce357403054b4f838bd5b6",
+      "tn": "48b69dc30431358d9c47d9792d1e1604a327a1d40c9fa440b53ed3c688470a26",
+      "cand": "efe1753a1b17cbfd1139a2a5311d736c1aa1932f86ba1ae08cbc651a9f9b4b6a",
+      "input_archive": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/input_cache/citeseer.npz",
+      "input_archive_sha256": "c23e76f70bd189bb445802bd42622fbef7dc46e2ff0b140d30129cae4295075e",
+      "arrays": {
+        "x": "cb9a425333dd8d1ae650e0eb4f3d65b14920aa6d5f0d4efa56d60f18f8d8c600",
+        "train": "fca0b81f4e5b52bbf3cbe062957d1cf243a0a96b829aea1a1daba6b2023499f7",
+        "valid_pos": "72c00d0ee63b50af5e477ca279775285d64883bab7ff586b73b179bad6bdbe2e",
+        "valid_neg": "0df45e399b75bb979369578ff7508fd6cfb5281b5f5cb7203c5ee54085da57e1",
+        "test_pos": "9a42ecdcdac2816e0d7fe7774b1933d78991674a12743943706934d383305be6",
+        "test_neg": "78d77e462d82987043adb01736d425562b9623f33975823f04a9ffd4f6aeddb3"
+      },
+      "shapes": {
+        "x": [
+          3327,
+          3703
+        ],
+        "train": [
+          3870,
+          2
+        ],
+        "valid_pos": [
+          227,
+          2
+        ],
+        "valid_neg": [
+          227,
+          20,
+          2
+        ],
+        "test_pos": [
+          455,
+          2
+        ],
+        "test_neg": [
+          455,
+          20,
+          2
+        ]
+      },
+      "test_candidate_path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HSPE_V17_2/candidates/citeseer_test.npz",
+      "train_hash": "a3a8ecda0bb59b7d6b51efb8bd0087f9f19a710bda2b9ebedec5a2c20aa32ec2",
+      "feature_sha256": "cb9a425333dd8d1ae650e0eb4f3d65b14920aa6d5f0d4efa56d60f18f8d8c600",
+      "v174_test_accessed": false
+    }
+  },
+  "graph": "undirected train positives only; no held-out edges; no clique expansion",
+  "candidate_policy": "20 grouped negatives/query; frozen candidate files; seed999/group seed1000",
+  "training_policy": "train-only negatives; targets masked; no test-driven selection",
+  "rng": "strict paired within V17.4 only; not asserted across versions",
+  "citeseer_test": "NOT_RUN_BY_VALIDATION_GATE",
+  "training": {
+    "optimizer": "Adam with separate GNN and predictor parameter groups; weight_decay=0 (PyTorch default)",
+    "hidden_dim": 256,
+    "message_passing_layers": 1,
+    "predictor_layers": 3,
+    "model": "official puregcn; NCN cn1 / NCNC incn1cn1; input masking on",
+    "negative_sampler": "official PyG negative_sampling; train graph only",
+    "loss": "official sum of positive and negative log-sigmoid losses",
+    "per_dataset": {
+      "cora": {
+        "xdp": 0.7,
+        "taildrop": 0.3,
+        "pt": 0.75,
+        "pre_edp": 0.4,
+        "predictor_dropout": 0.05,
+        "gnn_dropout": 0.05,
+        "probscale": 4.3,
+        "proboffset": 2.8,
+        "alpha": 1.0,
+        "gnn_lr": 0.0043,
+        "predictor_lr": 0.0024,
+        "batch": 1152,
+        "twolayerlin": false
+      },
+      "citeseer": {
+        "xdp": 0.4,
+        "taildrop": 0.0,
+        "pt": 0.75,
+        "pre_edp": 0.0,
+        "predictor_dropout": 0.55,
+        "gnn_dropout": 0.75,
+        "probscale": 6.5,
+        "proboffset": 4.4,
+        "alpha": 0.4,
+        "gnn_lr": 0.0085,
+        "predictor_lr": 0.0078,
+        "batch": 384,
+        "twolayerlin": true
+      },
+      "pubmed": {
+        "xdp": 0.3,
+        "taildrop": 0.0,
+        "pt": 0.5,
+        "pre_edp": 0.0,
+        "predictor_dropout": 0.05,
+        "gnn_dropout": 0.1,
+        "probscale": 5.3,
+        "proboffset": 0.5,
+        "alpha": 0.3,
+        "gnn_lr": 0.0097,
+        "predictor_lr": 0.002,
+        "batch": 2048,
+        "twolayerlin": false
+      }
+    },
+    "v173_epochs": 100,
+    "v173_checkpoint": "first validation MRR maximum",
+    "v174_phase_a_epochs": 5,
+    "v174_phase_b_epochs": 10,
+    "v174_checkpoint": "fixed final epoch 10",
+    "other_training_settings": "unchanged across V17.3 and V17.4"
+  },
+  "candidates": {
+    "negative_count_per_positive": 20,
+    "test_pool_seed": 999,
+    "test_group_seed": 1000,
+    "validation_candidates": "frozen V17.2; PubMed/Citeseer pool seed72200 and group seed72201; Cora locked validation candidate file"
+  },
+  "projection": {
+    "graph": "undirected train-positive edges only; no validation/test edges; no clique expansion",
+    "projection_edge_list_sha256_by_dataset": {
+      "cora": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+      "pubmed": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+      "citeseer": "a3a8ecda0bb59b7d6b51efb8bd0087f9f19a710bda2b9ebedec5a2c20aa32ec2"
+    },
+    "R_HSPE_construction": "frozen raw-star construction from train relation"
+  },
+  "rng_initialization": {
+    "v173": "seed Torch CPU/CUDA, NumPy; wrapper also seeds Python random; frozen inputs loaded from cache",
+    "v174": "load auxiliary frozen view before reseeding Python/NumPy/Torch CPU/CUDA; valid 54-pair traces match initialization, train negatives, permutations and CUDA RNG",
+    "cross_version": "seed labels alone do not prove pairing; V17.3 traces incomplete"
+  }
+}

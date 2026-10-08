@@ -1,0 +1,1287 @@
+{
+  "status": "VALIDATION_COMPLETE",
+  "control_reproduced": true,
+  "A1_mean_validation": 0.4541538265172445,
+  "A3_mean_validation": 0.47065613209770296,
+  "winning_control_delta": 0.016502305580458454,
+  "primary_diagnostic": "BOTH",
+  "H1_RAW_EXTREME_HARDNESS_SIGNAL": true,
+  "H1_ISOLATED_HARDNESS_SHIFT": false,
+  "H2_DIVERSITY_SHIFT": true,
+  "diagnostic_components": {
+    "extreme_hard_absolute_drop": 0.49650920974450374,
+    "unique_endpoint_relative_difference": 0.0613266583229035,
+    "endpoint_gini_absolute_drop": 0.040122941773280685,
+    "unique_endpoint_relative_gain": 0.0613266583229035,
+    "hub_endpoint_ratio_absolute_drop": 0.052324717765894285
+  },
+  "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+  "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "train_only_split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "teacher_hashes": {
+    "Graph": "30343bdf61b8fa38a7d9eecbd280a836ee81ef4dfeb63efeb1c74445337ad28b",
+    "Raw-HG": "1fa029f5a0a3a6e32516907e28bd6179493eeb5429f69c97e4444acdaa9fe91e"
+  },
+  "A1_A3_run_audit": {
+    "S_A1_seed0": {
+      "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183",
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A1_seed0/checkpoints/cora_uniform_seed0_09f0833328a0.pt",
+      "checkpoint_file_sha256": "7a4fc4fe671587f34f170075d4940d36608e3def7fd4a5d7a78e9e050cba6bb1",
+      "validation_mrr": 0.5327593804296001,
+      "checkpoint_rule": "fixed_final_epoch_10",
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455"
+    },
+    "S_A1_seed1": {
+      "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183",
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A1_seed1/checkpoints/cora_uniform_seed1_a88683bae016.pt",
+      "checkpoint_file_sha256": "5696ebb3d9e88c74b0d31648d4a723121fc6109f38e0b50cda5f53653c688e93",
+      "validation_mrr": 0.32858258481823804,
+      "checkpoint_rule": "fixed_final_epoch_10",
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455"
+    },
+    "S_A1_seed2": {
+      "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183",
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A1_seed2/checkpoints/cora_uniform_seed2_d8f168a99900.pt",
+      "checkpoint_file_sha256": "e8462e8ed6cf9785d5c05a1427f56aedc25f3096044857fcc72213d3675db797",
+      "validation_mrr": 0.5011195143038955,
+      "checkpoint_rule": "fixed_final_epoch_10",
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455"
+    },
+    "S_A3_seed0": {
+      "selected_negative_hash": "5719cd79d847c87e019a2ba3ec1d005784d6abceb0c1616cde96f8a4991bdfd9",
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A3_seed0/checkpoints/cora_uniform_seed0_6cc969e287f6.pt",
+      "checkpoint_file_sha256": "16429e5d6696f3cb2f266ef14a73966a3eea4676e5a018b287717a3bd4a4e216",
+      "validation_mrr": 0.5310526197405384,
+      "checkpoint_rule": "fixed_final_epoch_10",
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455"
+    },
+    "S_A3_seed1": {
+      "selected_negative_hash": "0c27b1fa0addfe4d603e899d80b2a4b23cfb4559bbc20c5de54e233c766ed070",
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A3_seed1/checkpoints/cora_uniform_seed1_2ecdf29f781c.pt",
+      "checkpoint_file_sha256": "098b35a3945523472462dd9aa668abf120535655f5db0e54dc3ac918860738d3",
+      "validation_mrr": 0.36111009522600596,
+      "checkpoint_rule": "fixed_final_epoch_10",
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455"
+    },
+    "S_A3_seed2": {
+      "selected_negative_hash": "bf5d89a199be5b2f4128c69187aacd113b14952f7258dd52f3bb8c6488f6616e",
+      "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A3_seed2/checkpoints/cora_uniform_seed2_43b4a52ee928.pt",
+      "checkpoint_file_sha256": "58ef46a829d5c1bc0d1fb200b31dfd61612a1c28f376b1940802c4b5c9001a15",
+      "validation_mrr": 0.5198056813265645,
+      "checkpoint_rule": "fixed_final_epoch_10",
+      "validation_candidate_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455"
+    }
+  },
+  "per_run_statistics": {
+    "A1_seed0": {
+      "n_selected": 4488,
+      "Rg_per_positive": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "Rg_global_pool": {
+        "mean": 0.9526836409375798,
+        "median": 0.9663042146191467,
+        "p90": 0.9947336757316815,
+        "p95": 0.9974448244744261,
+        "p99": 0.9995001058389688,
+        "max": 1.0
+      },
+      "Graph_raw_score": {
+        "mean": 0.15860655319705977,
+        "median": 0.04350779950618744,
+        "p90": 0.7299538195133211,
+        "p95": 0.7736235588788986,
+        "p99": 0.8440894323587418,
+        "max": 0.9789339303970337
+      },
+      "extreme_hard_Rg_ge_0.95": 1.0,
+      "ultra_hard_Rg_ge_0.99": 1.0,
+      "local_top1pct": 1.0,
+      "local_top5pct": 1.0,
+      "local_top10pct": 1.0,
+      "global_top1pct": 0.1824866310160428,
+      "global_top5pct": 0.6504010695187166,
+      "global_top10pct": 0.8827985739750446,
+      "unique_pair_count": 4488,
+      "unique_pair_ratio": 1.0,
+      "unique_endpoint_count": 1598,
+      "unique_endpoint_ratio": 0.17803030303030304,
+      "endpoint_gini_all_nodes": 0.656294760753771,
+      "endpoint_gini_used_nodes_only": 0.41755082110213526,
+      "max_endpoint_frequency": 26,
+      "top1pct_endpoint_coverage": 0.05626114081996435,
+      "top10pct_endpoint_contribution": 0.3868092691622103,
+      "hub_endpoint_ratio": 0.2719474153297683,
+      "pair_reuse_count_max": 1,
+      "pair_reused_occurrences": 0,
+      "per_positive_unique_across_10_epochs_mean": 1.0,
+      "adjacent_epoch_pair_overlap_jaccard": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "selection_is_static_across_epochs": true,
+      "degree_u": {
+        "mean": 5.5773172905525845,
+        "median": 5.0,
+        "p90": 8.0,
+        "p95": 11.0,
+        "p99": 18.26000000000022,
+        "max": 150.0
+      },
+      "degree_v": {
+        "mean": 5.54879679144385,
+        "median": 5.0,
+        "p90": 8.0,
+        "p95": 12.0,
+        "p99": 20.13000000000011,
+        "max": 150.0
+      },
+      "degree_product": {
+        "mean": 35.46568627450981,
+        "median": 24.0,
+        "p90": 63.0,
+        "p95": 99.0,
+        "p99": 231.0,
+        "max": 2250.0
+      },
+      "common_neighbors": {
+        "mean": 0.18315508021390375,
+        "median": 0.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 2.0,
+        "max": 4.0
+      },
+      "jaccard": {
+        "mean": 0.030242605001003023,
+        "median": 0.0,
+        "p90": 0.14285714285714285,
+        "p95": 0.2,
+        "p99": 0.3333333333333333,
+        "max": 1.0
+      },
+      "adamic_adar": {
+        "mean": 0.06744583955857952,
+        "median": 0.0,
+        "p90": 0.2422988705246811,
+        "p95": 0.4119214159594004,
+        "p99": 0.9102392266268373,
+        "max": 3.6409569065073493
+      },
+      "resource_allocation": {
+        "mean": 0.013916546854569225,
+        "median": 0.0,
+        "p90": 0.016129032258064516,
+        "p95": 0.08333333333333333,
+        "p99": 0.3333333333333333,
+        "max": 1.3333333333333333
+      },
+      "shortest_path_bucket_counts": {
+        "1": 0,
+        "2": 764,
+        "3": 232,
+        "4": 492,
+        ">=5": 2854,
+        "disconnected": 146
+      }
+    },
+    "A1_seed1": {
+      "n_selected": 4488,
+      "Rg_per_positive": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "Rg_global_pool": {
+        "mean": 0.9526836409375798,
+        "median": 0.9663042146191467,
+        "p90": 0.9947336757316815,
+        "p95": 0.9974448244744261,
+        "p99": 0.9995001058389688,
+        "max": 1.0
+      },
+      "Graph_raw_score": {
+        "mean": 0.15860655319705977,
+        "median": 0.04350779950618744,
+        "p90": 0.7299538195133211,
+        "p95": 0.7736235588788986,
+        "p99": 0.8440894323587418,
+        "max": 0.9789339303970337
+      },
+      "extreme_hard_Rg_ge_0.95": 1.0,
+      "ultra_hard_Rg_ge_0.99": 1.0,
+      "local_top1pct": 1.0,
+      "local_top5pct": 1.0,
+      "local_top10pct": 1.0,
+      "global_top1pct": 0.1824866310160428,
+      "global_top5pct": 0.6504010695187166,
+      "global_top10pct": 0.8827985739750446,
+      "unique_pair_count": 4488,
+      "unique_pair_ratio": 1.0,
+      "unique_endpoint_count": 1598,
+      "unique_endpoint_ratio": 0.17803030303030304,
+      "endpoint_gini_all_nodes": 0.656294760753771,
+      "endpoint_gini_used_nodes_only": 0.41755082110213526,
+      "max_endpoint_frequency": 26,
+      "top1pct_endpoint_coverage": 0.05626114081996435,
+      "top10pct_endpoint_contribution": 0.3868092691622103,
+      "hub_endpoint_ratio": 0.2719474153297683,
+      "pair_reuse_count_max": 1,
+      "pair_reused_occurrences": 0,
+      "per_positive_unique_across_10_epochs_mean": 1.0,
+      "adjacent_epoch_pair_overlap_jaccard": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "selection_is_static_across_epochs": true,
+      "degree_u": {
+        "mean": 5.5773172905525845,
+        "median": 5.0,
+        "p90": 8.0,
+        "p95": 11.0,
+        "p99": 18.26000000000022,
+        "max": 150.0
+      },
+      "degree_v": {
+        "mean": 5.54879679144385,
+        "median": 5.0,
+        "p90": 8.0,
+        "p95": 12.0,
+        "p99": 20.13000000000011,
+        "max": 150.0
+      },
+      "degree_product": {
+        "mean": 35.46568627450981,
+        "median": 24.0,
+        "p90": 63.0,
+        "p95": 99.0,
+        "p99": 231.0,
+        "max": 2250.0
+      },
+      "common_neighbors": {
+        "mean": 0.18315508021390375,
+        "median": 0.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 2.0,
+        "max": 4.0
+      },
+      "jaccard": {
+        "mean": 0.030242605001003023,
+        "median": 0.0,
+        "p90": 0.14285714285714285,
+        "p95": 0.2,
+        "p99": 0.3333333333333333,
+        "max": 1.0
+      },
+      "adamic_adar": {
+        "mean": 0.06744583955857952,
+        "median": 0.0,
+        "p90": 0.2422988705246811,
+        "p95": 0.4119214159594004,
+        "p99": 0.9102392266268373,
+        "max": 3.6409569065073493
+      },
+      "resource_allocation": {
+        "mean": 0.013916546854569225,
+        "median": 0.0,
+        "p90": 0.016129032258064516,
+        "p95": 0.08333333333333333,
+        "p99": 0.3333333333333333,
+        "max": 1.3333333333333333
+      },
+      "shortest_path_bucket_counts": {
+        "1": 0,
+        "2": 764,
+        "3": 232,
+        "4": 492,
+        ">=5": 2854,
+        "disconnected": 146
+      }
+    },
+    "A1_seed2": {
+      "n_selected": 4488,
+      "Rg_per_positive": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "Rg_global_pool": {
+        "mean": 0.9526836409375798,
+        "median": 0.9663042146191467,
+        "p90": 0.9947336757316815,
+        "p95": 0.9974448244744261,
+        "p99": 0.9995001058389688,
+        "max": 1.0
+      },
+      "Graph_raw_score": {
+        "mean": 0.15860655319705977,
+        "median": 0.04350779950618744,
+        "p90": 0.7299538195133211,
+        "p95": 0.7736235588788986,
+        "p99": 0.8440894323587418,
+        "max": 0.9789339303970337
+      },
+      "extreme_hard_Rg_ge_0.95": 1.0,
+      "ultra_hard_Rg_ge_0.99": 1.0,
+      "local_top1pct": 1.0,
+      "local_top5pct": 1.0,
+      "local_top10pct": 1.0,
+      "global_top1pct": 0.1824866310160428,
+      "global_top5pct": 0.6504010695187166,
+      "global_top10pct": 0.8827985739750446,
+      "unique_pair_count": 4488,
+      "unique_pair_ratio": 1.0,
+      "unique_endpoint_count": 1598,
+      "unique_endpoint_ratio": 0.17803030303030304,
+      "endpoint_gini_all_nodes": 0.656294760753771,
+      "endpoint_gini_used_nodes_only": 0.41755082110213526,
+      "max_endpoint_frequency": 26,
+      "top1pct_endpoint_coverage": 0.05626114081996435,
+      "top10pct_endpoint_contribution": 0.3868092691622103,
+      "hub_endpoint_ratio": 0.2719474153297683,
+      "pair_reuse_count_max": 1,
+      "pair_reused_occurrences": 0,
+      "per_positive_unique_across_10_epochs_mean": 1.0,
+      "adjacent_epoch_pair_overlap_jaccard": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "selection_is_static_across_epochs": true,
+      "degree_u": {
+        "mean": 5.5773172905525845,
+        "median": 5.0,
+        "p90": 8.0,
+        "p95": 11.0,
+        "p99": 18.26000000000022,
+        "max": 150.0
+      },
+      "degree_v": {
+        "mean": 5.54879679144385,
+        "median": 5.0,
+        "p90": 8.0,
+        "p95": 12.0,
+        "p99": 20.13000000000011,
+        "max": 150.0
+      },
+      "degree_product": {
+        "mean": 35.46568627450981,
+        "median": 24.0,
+        "p90": 63.0,
+        "p95": 99.0,
+        "p99": 231.0,
+        "max": 2250.0
+      },
+      "common_neighbors": {
+        "mean": 0.18315508021390375,
+        "median": 0.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 2.0,
+        "max": 4.0
+      },
+      "jaccard": {
+        "mean": 0.030242605001003023,
+        "median": 0.0,
+        "p90": 0.14285714285714285,
+        "p95": 0.2,
+        "p99": 0.3333333333333333,
+        "max": 1.0
+      },
+      "adamic_adar": {
+        "mean": 0.06744583955857952,
+        "median": 0.0,
+        "p90": 0.2422988705246811,
+        "p95": 0.4119214159594004,
+        "p99": 0.9102392266268373,
+        "max": 3.6409569065073493
+      },
+      "resource_allocation": {
+        "mean": 0.013916546854569225,
+        "median": 0.0,
+        "p90": 0.016129032258064516,
+        "p95": 0.08333333333333333,
+        "p99": 0.3333333333333333,
+        "max": 1.3333333333333333
+      },
+      "shortest_path_bucket_counts": {
+        "1": 0,
+        "2": 764,
+        "3": 232,
+        "4": 492,
+        ">=5": 2854,
+        "disconnected": 146
+      }
+    },
+    "A3_seed0": {
+      "n_selected": 4488,
+      "Rg_per_positive": {
+        "mean": 0.9738014823154143,
+        "median": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "Rg_global_pool": {
+        "mean": 0.9292380131434941,
+        "median": 0.9443008500540335,
+        "p90": 0.9901803718847135,
+        "p95": 0.9953837498189597,
+        "p99": 0.9988762129702871,
+        "max": 0.9999665771677492
+      },
+      "Graph_raw_score": {
+        "mean": 0.09350715927097368,
+        "median": 0.02633850835263729,
+        "p90": 0.1229825645685197,
+        "p95": 0.7390304714441299,
+        "p99": 0.8084844237565995,
+        "max": 0.9378033876419067
+      },
+      "extreme_hard_Rg_ge_0.95": 0.5022281639928698,
+      "ultra_hard_Rg_ge_0.99": 0.5022281639928698,
+      "local_top1pct": 0.5022281639928698,
+      "local_top5pct": 0.5022281639928698,
+      "local_top10pct": 1.0,
+      "global_top1pct": 0.10182709447415329,
+      "global_top5pct": 0.4603386809269162,
+      "global_top10pct": 0.7466577540106952,
+      "unique_pair_count": 4488,
+      "unique_pair_ratio": 1.0,
+      "unique_endpoint_count": 1702,
+      "unique_endpoint_ratio": 0.18961675579322637,
+      "endpoint_gini_all_nodes": 0.613803064531842,
+      "endpoint_gini_used_nodes_only": 0.385533900559476,
+      "max_endpoint_frequency": 23,
+      "top1pct_endpoint_coverage": 0.04913101604278075,
+      "top10pct_endpoint_contribution": 0.3441399286987522,
+      "hub_endpoint_ratio": 0.21256684491978609,
+      "pair_reuse_count_max": 1,
+      "pair_reused_occurrences": 0,
+      "per_positive_unique_across_10_epochs_mean": 1.0,
+      "adjacent_epoch_pair_overlap_jaccard": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "selection_is_static_across_epochs": true,
+      "degree_u": {
+        "mean": 5.006461675579323,
+        "median": 4.0,
+        "p90": 8.0,
+        "p95": 10.0,
+        "p99": 17.0,
+        "max": 63.0
+      },
+      "degree_v": {
+        "mean": 5.075089126559715,
+        "median": 4.0,
+        "p90": 8.0,
+        "p95": 10.0,
+        "p99": 18.0,
+        "max": 150.0
+      },
+      "degree_product": {
+        "mean": 29.151515151515152,
+        "median": 20.0,
+        "p90": 52.0,
+        "p95": 77.0,
+        "p99": 168.0,
+        "max": 2250.0
+      },
+      "common_neighbors": {
+        "mean": 0.10071301247771836,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 2.0
+      },
+      "jaccard": {
+        "mean": 0.017327570107229098,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.15384615384615385,
+        "p99": 0.3333333333333333,
+        "max": 1.0
+      },
+      "adamic_adar": {
+        "mean": 0.036443404171931836,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.2530848692773169,
+        "p99": 0.7213475204444817,
+        "max": 2.0640299754485754
+      },
+      "resource_allocation": {
+        "mean": 0.007368353049611018,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.019230769230769232,
+        "p99": 0.23964285714285843,
+        "max": 0.7
+      },
+      "shortest_path_bucket_counts": {
+        "1": 0,
+        "2": 428,
+        "3": 213,
+        "4": 507,
+        ">=5": 3142,
+        "disconnected": 198
+      }
+    },
+    "A3_seed1": {
+      "n_selected": 4488,
+      "Rg_per_positive": {
+        "mean": 0.974047753072521,
+        "median": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "Rg_global_pool": {
+        "mean": 0.9302761813228566,
+        "median": 0.9449303133947571,
+        "p90": 0.9902884390423244,
+        "p95": 0.9950049577201172,
+        "p99": 0.9989096358025379,
+        "max": 0.9999777181118328
+      },
+      "Graph_raw_score": {
+        "mean": 0.09337082489289064,
+        "median": 0.026713913306593895,
+        "p90": 0.12575056403875354,
+        "p95": 0.734608894586563,
+        "p99": 0.8105166566371919,
+        "max": 0.9473545551300049
+      },
+      "extreme_hard_Rg_ge_0.95": 0.5069073083778967,
+      "ultra_hard_Rg_ge_0.99": 0.5069073083778967,
+      "local_top1pct": 0.5069073083778967,
+      "local_top5pct": 0.5069073083778967,
+      "local_top10pct": 1.0,
+      "global_top1pct": 0.1036096256684492,
+      "global_top5pct": 0.4632352941176471,
+      "global_top10pct": 0.7542335115864528,
+      "unique_pair_count": 4488,
+      "unique_pair_ratio": 1.0,
+      "unique_endpoint_count": 1687,
+      "unique_endpoint_ratio": 0.18794563279857399,
+      "endpoint_gini_all_nodes": 0.6168640747557246,
+      "endpoint_gini_used_nodes_only": 0.38498394453971696,
+      "max_endpoint_frequency": 22,
+      "top1pct_endpoint_coverage": 0.05113636363636364,
+      "top10pct_endpoint_contribution": 0.3461452762923351,
+      "hub_endpoint_ratio": 0.22036541889483066,
+      "pair_reuse_count_max": 1,
+      "pair_reused_occurrences": 0,
+      "per_positive_unique_across_10_epochs_mean": 1.0,
+      "adjacent_epoch_pair_overlap_jaccard": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "selection_is_static_across_epochs": true,
+      "degree_u": {
+        "mean": 5.116532976827094,
+        "median": 4.0,
+        "p90": 8.0,
+        "p95": 10.0,
+        "p99": 18.0,
+        "max": 150.0
+      },
+      "degree_v": {
+        "mean": 5.07620320855615,
+        "median": 4.0,
+        "p90": 8.0,
+        "p95": 10.0,
+        "p99": 18.0,
+        "max": 150.0
+      },
+      "degree_product": {
+        "mean": 29.379901960784313,
+        "median": 20.0,
+        "p90": 54.0,
+        "p95": 80.0,
+        "p99": 189.39000000000033,
+        "max": 2250.0
+      },
+      "common_neighbors": {
+        "mean": 0.10093582887700535,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 3.0
+      },
+      "jaccard": {
+        "mean": 0.01700183342877841,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.14285714285714285,
+        "p99": 0.3333333333333333,
+        "max": 1.0
+      },
+      "adamic_adar": {
+        "mean": 0.03644364670948487,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.2530848692773169,
+        "p99": 0.7213475204444817,
+        "max": 1.6933439034806097
+      },
+      "resource_allocation": {
+        "mean": 0.007388688656585845,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.019230769230769232,
+        "p99": 0.24378571428571505,
+        "max": 0.5833333333333333
+      },
+      "shortest_path_bucket_counts": {
+        "1": 0,
+        "2": 423,
+        "3": 240,
+        "4": 533,
+        ">=5": 3073,
+        "disconnected": 219
+      }
+    },
+    "A3_seed2": {
+      "n_selected": 4488,
+      "Rg_per_positive": {
+        "mean": 0.9737545735997748,
+        "median": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "Rg_global_pool": {
+        "mean": 0.9292217435919067,
+        "median": 0.9446350783765416,
+        "p90": 0.9898985059993983,
+        "p95": 0.9946334072349291,
+        "p99": 0.9989682371684176,
+        "max": 1.0
+      },
+      "Graph_raw_score": {
+        "mean": 0.0897737953470731,
+        "median": 0.026498952880501747,
+        "p90": 0.11657926291227345,
+        "p95": 0.7281758934259414,
+        "p99": 0.8140205401182177,
+        "max": 0.9789339303970337
+      },
+      "extreme_hard_Rg_ge_0.95": 0.5013368983957219,
+      "ultra_hard_Rg_ge_0.99": 0.5013368983957219,
+      "local_top1pct": 0.5013368983957219,
+      "local_top5pct": 0.5013368983957219,
+      "local_top10pct": 1.0,
+      "global_top1pct": 0.09870766488413547,
+      "global_top5pct": 0.45967023172905525,
+      "global_top10pct": 0.7522281639928698,
+      "unique_pair_count": 4488,
+      "unique_pair_ratio": 1.0,
+      "unique_endpoint_count": 1699,
+      "unique_endpoint_ratio": 0.1892825311942959,
+      "endpoint_gini_all_nodes": 0.6178483176539045,
+      "endpoint_gini_used_nodes_only": 0.3908965533883306,
+      "max_endpoint_frequency": 20,
+      "top1pct_endpoint_coverage": 0.05057932263814617,
+      "top10pct_endpoint_contribution": 0.34893048128342247,
+      "hub_endpoint_ratio": 0.22593582887700533,
+      "pair_reuse_count_max": 1,
+      "pair_reused_occurrences": 0,
+      "per_positive_unique_across_10_epochs_mean": 1.0,
+      "adjacent_epoch_pair_overlap_jaccard": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "selection_is_static_across_epochs": true,
+      "degree_u": {
+        "mean": 5.176916221033868,
+        "median": 4.0,
+        "p90": 8.0,
+        "p95": 10.0,
+        "p99": 18.0,
+        "max": 150.0
+      },
+      "degree_v": {
+        "mean": 5.107397504456328,
+        "median": 4.0,
+        "p90": 8.0,
+        "p95": 10.0,
+        "p99": 18.0,
+        "max": 150.0
+      },
+      "degree_product": {
+        "mean": 30.31350267379679,
+        "median": 20.0,
+        "p90": 54.0,
+        "p95": 79.29999999999927,
+        "p99": 196.26000000000022,
+        "max": 1800.0
+      },
+      "common_neighbors": {
+        "mean": 0.09425133689839572,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 4.0
+      },
+      "jaccard": {
+        "mean": 0.015862216979945876,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.14285714285714285,
+        "p99": 0.3333333333333333,
+        "max": 1.0
+      },
+      "adamic_adar": {
+        "mean": 0.03476139312639895,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.2530848692773169,
+        "p99": 0.7213475204444817,
+        "max": 3.6409569065073493
+      },
+      "resource_allocation": {
+        "mean": 0.007229582875658474,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.019230769230769232,
+        "p99": 0.2,
+        "max": 1.3333333333333333
+      },
+      "shortest_path_bucket_counts": {
+        "1": 0,
+        "2": 400,
+        "3": 222,
+        "4": 518,
+        ">=5": 3146,
+        "disconnected": 202
+      }
+    }
+  },
+  "aggregated": {
+    "A1": {
+      "hardness": {
+        "Rg_per_positive": {
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "p95": 1.0,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "Rg_global_pool": {
+          "mean": 0.9526836409375798,
+          "median": 0.9663042146191468,
+          "p90": 0.9947336757316815,
+          "p95": 0.997444824474426,
+          "p99": 0.9995001058389686,
+          "max": 1.0
+        },
+        "Graph_raw_score": {
+          "mean": 0.15860655319705977,
+          "median": 0.04350779950618744,
+          "p90": 0.729953819513321,
+          "p95": 0.7736235588788986,
+          "p99": 0.8440894323587417,
+          "max": 0.9789339303970337
+        },
+        "extreme_hard_Rg_ge_0.95": 1.0,
+        "ultra_hard_Rg_ge_0.99": 1.0,
+        "local_top1pct": 1.0,
+        "local_top5pct": 1.0,
+        "local_top10pct": 1.0,
+        "global_top1pct": 0.1824866310160428,
+        "global_top5pct": 0.6504010695187166,
+        "global_top10pct": 0.8827985739750446
+      },
+      "diversity": {
+        "unique_pair_ratio": 1.0,
+        "unique_endpoint_ratio": 0.17803030303030307,
+        "endpoint_gini_all_nodes": 0.656294760753771,
+        "endpoint_gini_used_nodes_only": 0.41755082110213526,
+        "max_endpoint_frequency": 26.0,
+        "top1pct_endpoint_coverage": 0.05626114081996434,
+        "top10pct_endpoint_contribution": 0.3868092691622103,
+        "hub_endpoint_ratio": 0.2719474153297683,
+        "pair_reuse_count_max": 1.0,
+        "pair_reused_occurrences": 0.0
+      },
+      "degree_u": {
+        "mean": 5.5773172905525845,
+        "median": 5.0,
+        "p90": 8.0,
+        "p95": 11.0,
+        "p99": 18.26000000000022,
+        "max": 150.0
+      },
+      "degree_v": {
+        "mean": 5.548796791443851,
+        "median": 5.0,
+        "p90": 8.0,
+        "p95": 12.0,
+        "p99": 20.13000000000011,
+        "max": 150.0
+      },
+      "degree_product": {
+        "mean": 35.46568627450981,
+        "median": 24.0,
+        "p90": 63.0,
+        "p95": 99.0,
+        "p99": 231.0,
+        "max": 2250.0
+      },
+      "common_neighbors": {
+        "mean": 0.18315508021390378,
+        "median": 0.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 2.0,
+        "max": 4.0
+      },
+      "jaccard": {
+        "mean": 0.030242605001003023,
+        "median": 0.0,
+        "p90": 0.14285714285714285,
+        "p95": 0.20000000000000004,
+        "p99": 0.3333333333333333,
+        "max": 1.0
+      },
+      "adamic_adar": {
+        "mean": 0.06744583955857952,
+        "median": 0.0,
+        "p90": 0.2422988705246811,
+        "p95": 0.4119214159594004,
+        "p99": 0.9102392266268374,
+        "max": 3.6409569065073497
+      },
+      "resource_allocation": {
+        "mean": 0.013916546854569225,
+        "median": 0.0,
+        "p90": 0.016129032258064516,
+        "p95": 0.08333333333333333,
+        "p99": 0.3333333333333333,
+        "max": 1.3333333333333333
+      }
+    },
+    "A3": {
+      "hardness": {
+        "Rg_per_positive": {
+          "mean": 0.9738679363292366,
+          "median": 1.0,
+          "p90": 1.0,
+          "p95": 1.0,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "Rg_global_pool": {
+          "mean": 0.9295786460194191,
+          "median": 0.9446220806084441,
+          "p90": 0.9901224389754789,
+          "p95": 0.9950073715913353,
+          "p99": 0.9989180286470809,
+          "max": 0.9999814317598607
+        },
+        "Graph_raw_score": {
+          "mean": 0.09221725983697913,
+          "median": 0.026517124846577644,
+          "p90": 0.12177079717318223,
+          "p95": 0.7339384198188781,
+          "p99": 0.8110072068373363,
+          "max": 0.9546972910563151
+        },
+        "extreme_hard_Rg_ge_0.95": 0.5034907902554963,
+        "ultra_hard_Rg_ge_0.99": 0.5034907902554963,
+        "local_top1pct": 0.5034907902554963,
+        "local_top5pct": 0.5034907902554963,
+        "local_top10pct": 1.0,
+        "global_top1pct": 0.10138146167557932,
+        "global_top5pct": 0.46108140225787286,
+        "global_top10pct": 0.7510398098633392
+      },
+      "diversity": {
+        "unique_pair_ratio": 1.0,
+        "unique_endpoint_ratio": 0.18894830659536543,
+        "endpoint_gini_all_nodes": 0.6161718189804903,
+        "endpoint_gini_used_nodes_only": 0.38713813282917453,
+        "max_endpoint_frequency": 21.666666666666668,
+        "top1pct_endpoint_coverage": 0.050282234105763525,
+        "top10pct_endpoint_contribution": 0.34640522875816987,
+        "hub_endpoint_ratio": 0.219622697563874,
+        "pair_reuse_count_max": 1.0,
+        "pair_reused_occurrences": 0.0
+      },
+      "degree_u": {
+        "mean": 5.099970291146762,
+        "median": 4.0,
+        "p90": 8.0,
+        "p95": 10.0,
+        "p99": 17.666666666666668,
+        "max": 121.0
+      },
+      "degree_v": {
+        "mean": 5.086229946524065,
+        "median": 4.0,
+        "p90": 8.0,
+        "p95": 10.0,
+        "p99": 18.0,
+        "max": 150.0
+      },
+      "degree_product": {
+        "mean": 29.614973262032084,
+        "median": 20.0,
+        "p90": 53.333333333333336,
+        "p95": 78.76666666666642,
+        "p99": 184.55000000000018,
+        "max": 2100.0
+      },
+      "common_neighbors": {
+        "mean": 0.09863339275103981,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 3.0
+      },
+      "jaccard": {
+        "mean": 0.01673054017198446,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.14652014652014653,
+        "p99": 0.3333333333333333,
+        "max": 1.0
+      },
+      "adamic_adar": {
+        "mean": 0.03588281466927188,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.2530848692773169,
+        "p99": 0.7213475204444816,
+        "max": 2.466110261812178
+      },
+      "resource_allocation": {
+        "mean": 0.007328874860618446,
+        "median": 0.0,
+        "p90": 0.0,
+        "p95": 0.019230769230769232,
+        "p99": 0.2278095238095245,
+        "max": 0.8722222222222221
+      }
+    }
+  },
+  "selected_stats_file": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HARDNESS_V7/A_QTHS/A1_A3_selected_negative_statistics.csv.gz",
+  "veto_ratio_audit": {
+    "nominal": 0.25,
+    "prepool_size": 2,
+    "veto_count_per_positive": 1,
+    "realized_fraction_of_prepool": 0.5,
+    "QTHS_quantile_rounding_note": "With K=1 and a top-2 prepool, alpha=.25 is non-integral per positive. QTHS applies alpha over candidate occurrences by deterministic rounding across rows: trim the top candidate in half of rows, keep both in the rest, then select the hardest survivor. This matches the shuffled control's effective selected-rank mixture while using train-only identities."
+  },
+  "candidate_A": {
+    "status": "RUN",
+    "selection": {
+      "alpha_candidate_occurrence_fraction": 0.25,
+      "prepool_size": 2,
+      "trimmed_occurrence_count": 2244,
+      "trimmed_row_count": 2244,
+      "selected_runner_up_count": 2244,
+      "hash_rule": "QTHS25"
+    },
+    "controls": {
+      "A3_BOTTOM25": "exactly A1 Graph-hard after deleting easiest quarter of full row pool",
+      "A5_MIDDLE25": "exactly A1 Graph-hard after deleting middle quarter of full row pool"
+    },
+    "validation": {
+      "A4_by_seed": {
+        "0": 0.5302629049728781,
+        "1": 0.38361199130204654,
+        "2": 0.5101123558962969
+      },
+      "A0_by_seed": {
+        "0": 0.4859725211534826,
+        "1": 0.5914763303993901,
+        "2": 0.569344598652919
+      },
+      "A1_by_seed": {
+        "0": 0.5327593804296001,
+        "1": 0.32858258481823804,
+        "2": 0.5011195143038955
+      },
+      "A2_by_seed": {
+        "0": 0.5310526197405384,
+        "1": 0.36111009522600596,
+        "2": 0.5198056813265645
+      },
+      "A5_by_seed": {
+        "0": 0.5327593804296001,
+        "1": 0.32858258481823804,
+        "2": 0.5011195143038955
+      },
+      "A4_mean": 0.4746624173904072,
+      "A2_mean": 0.47065613209770296,
+      "A4_minus_A2_mean": 0.004006285292704248,
+      "A4_wins_vs_A1": 2,
+      "A4_wins_vs_A5": 2,
+      "A4_minus_A1_mean": 0.020508590873162702,
+      "GO": true,
+      "A4_vs_A2_control_status": "MATCH_OR_BETTER"
+    }
+  },
+  "candidate_B": {
+    "status": "RUN",
+    "selection": {
+      "lambda": 0.1,
+      "concentration_normalization": "(count(u)+count(v))/(2*processed_positive_rows), clipped implicitly to [0,1]",
+      "degree_normalization": "(degree(u)+degree(v))/(2*max_train_degree)"
+    },
+    "validation": {
+      "B0_GRAPH_HARD_by_seed": {
+        "0": 0.5327593804296001,
+        "1": 0.32858258481823804,
+        "2": 0.5011195143038955
+      },
+      "B1_RANDOM_VETO_by_seed": {
+        "0": 0.5310526197405384,
+        "1": 0.36111009522600596,
+        "2": 0.5198056813265645
+      },
+      "B2_DEGREE_PENALTY_by_seed": {
+        "0": 0.5325702693592546,
+        "1": 0.3299334761545912,
+        "2": 0.5048686960473738
+      },
+      "B3_SHUFFLED_CONCENTRATION_by_seed": {
+        "0": 0.5327593804296001,
+        "1": 0.32858258481823804,
+        "2": 0.5007025516721039
+      },
+      "B4_CBHS_by_seed": {
+        "0": 0.5327593804296001,
+        "1": 0.32858258481823804,
+        "2": 0.5010194084528392
+      },
+      "B4_wins_vs_B0": 0,
+      "B4_wins_vs_B3": 1,
+      "B0_mean_Rg": 1.0,
+      "B4_mean_Rg": 1.0,
+      "B4_Rg_drop": 0.0,
+      "B0_endpoint_gini": 0.656294760753771,
+      "B4_endpoint_gini": 0.656294760753771,
+      "GO": false
+    },
+    "per_seed_selection_statistics": {
+      "B2_DEGREE_PENALTY": {
+        "0": {
+          "mean_Rg": 0.9999882728210902,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 0.999777183600713,
+          "ultra_hard_fraction": 0.999777183600713,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17814171122994651,
+          "endpoint_gini": 0.6561391677659381,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2717245989304813,
+          "selected_negative_hash": "60ccc1d1cbdb0b640c401d6183355b1ec04b9d19f57aa8f0fbde6dbcf6b92c8a"
+        },
+        "1": {
+          "mean_Rg": 0.9999882728210902,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 0.999777183600713,
+          "ultra_hard_fraction": 0.999777183600713,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17814171122994651,
+          "endpoint_gini": 0.6561391677659381,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2717245989304813,
+          "selected_negative_hash": "60ccc1d1cbdb0b640c401d6183355b1ec04b9d19f57aa8f0fbde6dbcf6b92c8a"
+        },
+        "2": {
+          "mean_Rg": 0.9999882728210902,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 0.999777183600713,
+          "ultra_hard_fraction": 0.999777183600713,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17814171122994651,
+          "endpoint_gini": 0.6561391677659381,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2717245989304813,
+          "selected_negative_hash": "60ccc1d1cbdb0b640c401d6183355b1ec04b9d19f57aa8f0fbde6dbcf6b92c8a"
+        }
+      },
+      "B3_SHUFFLED_CONCENTRATION": {
+        "0": {
+          "mean_Rg": 1.0,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 1.0,
+          "ultra_hard_fraction": 1.0,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17803030303030304,
+          "endpoint_gini": 0.656294760753771,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2719474153297683,
+          "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183"
+        },
+        "1": {
+          "mean_Rg": 1.0,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 1.0,
+          "ultra_hard_fraction": 1.0,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17803030303030304,
+          "endpoint_gini": 0.656294760753771,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2719474153297683,
+          "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183"
+        },
+        "2": {
+          "mean_Rg": 1.0,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 1.0,
+          "ultra_hard_fraction": 1.0,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17803030303030304,
+          "endpoint_gini": 0.656294760753771,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2719474153297683,
+          "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183"
+        }
+      },
+      "B4_CBHS": {
+        "0": {
+          "mean_Rg": 1.0,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 1.0,
+          "ultra_hard_fraction": 1.0,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17803030303030304,
+          "endpoint_gini": 0.656294760753771,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2719474153297683,
+          "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183"
+        },
+        "1": {
+          "mean_Rg": 1.0,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 1.0,
+          "ultra_hard_fraction": 1.0,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17803030303030304,
+          "endpoint_gini": 0.656294760753771,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2719474153297683,
+          "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183"
+        },
+        "2": {
+          "mean_Rg": 1.0,
+          "median_Rg": 1.0,
+          "extreme_hard_fraction": 1.0,
+          "ultra_hard_fraction": 1.0,
+          "unique_pair_ratio": 1.0,
+          "unique_endpoint_ratio": 0.17803030303030304,
+          "endpoint_gini": 0.656294760753771,
+          "max_endpoint_frequency": 26,
+          "hub_endpoint_ratio": 0.2719474153297683,
+          "selected_negative_hash": "a46cf60db56a92bce0aad1f6f1f8338c6f5e7f61d67cd3eae2040da797281183"
+        }
+      }
+    }
+  },
+  "candidate_C": {
+    "status": "NOT_RUN_A_AND_B_NOT_BOTH_GO",
+    "validation": null
+  },
+  "winning_candidate": "A4_QTHS25",
+  "validation_frozen_before_test": true,
+  "final_decision": "GO_PENDING_SECOND_DATASET",
+  "TEST": {
+    "test_status": "COMPLETE",
+    "test_evaluated_once": true,
+    "test_candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+    "matches_v6_1_shared_candidates": true,
+    "test_positive_count": 527,
+    "negatives_per_positive": 20,
+    "winner": "A4_QTHS25",
+    "best_mechanism_control": "A4_QTHS25",
+    "mean_mrr": {
+      "A1": 0.4728099414,
+      "A3": 0.4900635447,
+      "A4_QTHS25": 0.4933770849
+    },
+    "winner_minus_A1_by_seed": [
+      -0.00159614,
+      0.01377608,
+      0.04952149
+    ],
+    "winner_minus_A3_by_seed": [
+      0.00404786,
+      0.00219894,
+      0.00369382
+    ],
+    "winner_wins_vs_A1": 2,
+    "winner_wins_vs_A3": 3,
+    "supported_vs_graph_hard": true,
+    "supported_vs_random_veto": true,
+    "cross_dataset_gate": "OPEN",
+    "result_source": "frozen V7 Cora test execution summary from completed session"
+  },
+  "test_evaluated_once": true
+}

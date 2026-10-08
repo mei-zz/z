@@ -1,0 +1,467 @@
+{
+  "state": "COMPLETE",
+  "runs": [
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "A1",
+      "historical_metrics": {
+        "ce": 0.12441114266408748,
+        "balanced_ce": 0.13107022415984415,
+        "auc": 0.9888114948389787,
+        "mrr": 0.9201535453114875,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2247292418772564,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.1241429703969635,
+        "balanced_ce": 0.13110014264839592,
+        "auc": 0.988830850705079,
+        "mrr": 0.9205738292493707,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2251805054151625,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": -0.0002681722671239867,
+      "delta_MRR_corrected_minus_historical": 0.0004202839378831813,
+      "max_abs_validation_score_difference": 0.30537891387939453,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "5a5ea887911a9abfcca0fe2e59678ec448f9d392b38c47569c33ca88c1969c7c",
+      "checkpoint_sha256_corrected": "ab96042750a8a9cee2a726ed839358d266a432c02fd23b508de794f46102d0d5",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "A2",
+      "historical_metrics": {
+        "ce": 0.1267298642022628,
+        "balanced_ce": 0.12835809115946062,
+        "auc": 0.9890816420453805,
+        "mrr": 0.9247098744616797,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2148014440433212,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.12355135887695168,
+        "balanced_ce": 0.1286815971088768,
+        "auc": 0.9890612323485904,
+        "mrr": 0.9238045260495623,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2188628158844765,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": -0.0031785053253111095,
+      "delta_MRR_corrected_minus_historical": -0.0009053484121174238,
+      "max_abs_validation_score_difference": 0.4051995277404785,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "7febffdd88041bc8ea390ff4f0bfca4c805864b23505c89d9d9f7a2b73262ead",
+      "checkpoint_sha256_corrected": "da9c6c61783667bedf283ab2cb2aad82b4ed8b1de96f28b1533cc59fa34996fa",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "A3",
+      "historical_metrics": {
+        "ce": 0.12842758590651895,
+        "balanced_ce": 0.12931327585529317,
+        "auc": 0.988883537148601,
+        "mrr": 0.9212451732984225,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.223375451263538,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.1285081662144563,
+        "balanced_ce": 0.12942329651168943,
+        "auc": 0.9888606176038394,
+        "mrr": 0.9207801211524135,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2256317689530687,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": 8.058030793733906e-05,
+      "delta_MRR_corrected_minus_historical": -0.000465052146009004,
+      "max_abs_validation_score_difference": 0.37350940704345703,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "a4b0309cd9f135e8d51bc11230c52cd12c555c1d9c0b227c074fd71835cb8a0c",
+      "checkpoint_sha256_corrected": "e74fc0bc4c2a6495873c4f045d8a8695b73470a0f121334f537f00355bbfd9f8",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "A1",
+      "historical_metrics": {
+        "ce": 0.1339529783869887,
+        "balanced_ce": 0.1294533624438233,
+        "auc": 0.9889501321208409,
+        "mrr": 0.9216429541677736,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.226534296028881,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.1354396383464225,
+        "balanced_ce": 0.12983901067775366,
+        "auc": 0.9888901706818803,
+        "mrr": 0.9212443380426233,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2278880866425992,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": 0.0014866599594338115,
+      "delta_MRR_corrected_minus_historical": -0.00039861612515035283,
+      "max_abs_validation_score_difference": 0.2485198974609375,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "a17fa1d5bb817baea1293e311577a4e84c6167e98b72351c27db5c662eaeccbc",
+      "checkpoint_sha256_corrected": "b1700ec4783aa7c9252495d49374029fb7a56e26311bc4b968b4bd1be978655b",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "A2",
+      "historical_metrics": {
+        "ce": 0.12213124958542688,
+        "balanced_ce": 0.12837657830757715,
+        "auc": 0.9891427693163601,
+        "mrr": 0.9243865127551952,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.220216606498195,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.12271420704316653,
+        "balanced_ce": 0.1280162526689193,
+        "auc": 0.9891798468473458,
+        "mrr": 0.9237472227431615,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2211191335740073,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": 0.0005829574577396468,
+      "delta_MRR_corrected_minus_historical": -0.0006392900120337774,
+      "max_abs_validation_score_difference": 0.25417041778564453,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "9d00e1361d65b301ada17470b4471a684068c8cb022b8151cee17744be38ae19",
+      "checkpoint_sha256_corrected": "404be48dcc941afd16c4ea9d3a46b1312f7759d70308a1287e42f65df87dd795",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "A3",
+      "historical_metrics": {
+        "ce": 0.12410703195823426,
+        "balanced_ce": 0.12892779448963615,
+        "auc": 0.9889543627165087,
+        "mrr": 0.9230902208000584,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.223375451263538,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.12377214780781264,
+        "balanced_ce": 0.12892068201585843,
+        "auc": 0.9889584762198779,
+        "mrr": 0.9221058411604441,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2256317689530687,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": -0.0003348841504216271,
+      "delta_MRR_corrected_minus_historical": -0.0009843796396142857,
+      "max_abs_validation_score_difference": 0.20442819595336914,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "05b4654518fdc6d437403c90414a05d743f08d0e3c3cdafed21d692dc361e87d",
+      "checkpoint_sha256_corrected": "8b941320d9e3ca82f8109d17fe7ce9f46928b1c1da849b8a09230d6a65c2875e",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "A1",
+      "historical_metrics": {
+        "ce": 0.13993758319803448,
+        "balanced_ce": 0.1349454038081488,
+        "auc": 0.987617229755047,
+        "mrr": 0.9111974404957257,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2576714801444044,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.14247393424598032,
+        "balanced_ce": 0.1346545622063422,
+        "auc": 0.9876651255962544,
+        "mrr": 0.91078127523299,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2581227436823104,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": 0.002536351047945834,
+      "delta_MRR_corrected_minus_historical": -0.00041616526273569043,
+      "max_abs_validation_score_difference": 0.4695854187011719,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "ff94e769a8f718eddbf4b6394f786aa1ccbe72ec2aef410dcc3fbeffe17d090b",
+      "checkpoint_sha256_corrected": "d220208ecc9f53c60b5d4efaae0b5dcc573f69789ad42678da5c50db569448de",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "A2",
+      "historical_metrics": {
+        "ce": 0.1414230015432832,
+        "balanced_ce": 0.13349665453284676,
+        "auc": 0.9878466848421068,
+        "mrr": 0.9136593062473026,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.246841155234657,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.14056596210012182,
+        "balanced_ce": 0.13357249522412235,
+        "auc": 0.9878340286918895,
+        "mrr": 0.9139929302045728,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2463898916967509,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": -0.0008570394431613726,
+      "delta_MRR_corrected_minus_historical": 0.00033362395727021266,
+      "max_abs_validation_score_difference": 0.34922361373901367,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "2713c042e6e4203fb4cc7c8ecde5214009481b664d20fa33c332fffb2c43224b",
+      "checkpoint_sha256_corrected": "5e4fe22f569ac6390b33a84dd9a49845adfef2be15050b52785cfc51befa3d6c",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "A3",
+      "historical_metrics": {
+        "ce": 0.14798862986849196,
+        "balanced_ce": 0.13449603111269237,
+        "auc": 0.9875787318435663,
+        "mrr": 0.9105791752621626,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2545126353790614,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.14643020082632163,
+        "balanced_ce": 0.13453242610013638,
+        "auc": 0.9875821835208982,
+        "mrr": 0.9115813563692625,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2522563176895307,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": -0.0015584290421703229,
+      "delta_MRR_corrected_minus_historical": 0.001002181107099931,
+      "max_abs_validation_score_difference": 0.5012121200561523,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "9c6b12a8bf0448edeb9598f7751b3a68bfaf321b2accb7d9e3b2b32689c6f844",
+      "checkpoint_sha256_corrected": "2bdb5d6376142809767fc37faf6206e64fd4a44e351cbde1924b1d04cec0186c",
+      "test_accessed": false
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "A1",
+      "historical_metrics": {
+        "ce": 0.4002826089296961,
+        "balanced_ce": 0.38182184474127623,
+        "auc": 0.908751030085732,
+        "mrr": 0.7046505947746693,
+        "hits10": 0.9277566539923955,
+        "hits20": 1.0,
+        "mean_positive_rank": 2.901140684410646,
+        "queries": 263,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.3997591951791965,
+        "balanced_ce": 0.3815137434590622,
+        "auc": 0.9089368069510908,
+        "mrr": 0.7053188745304014,
+        "hits10": 0.9315589353612167,
+        "hits20": 1.0,
+        "mean_positive_rank": 2.893536121673004,
+        "queries": 263,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": -0.0005234137504995795,
+      "delta_MRR_corrected_minus_historical": 0.0006682797557321374,
+      "max_abs_validation_score_difference": 0.019099414348602295,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "5e0072d0f0b631eb39b3ccddeae6a41cfbbbc7f7fddc6d07b7564e4b2cb22e55",
+      "checkpoint_sha256_corrected": "13c244f85515a2a26b906d654c3a31722008c1908fe1345fe95702f70e02b9df",
+      "test_accessed": false
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "A2",
+      "historical_metrics": {
+        "ce": 0.3991194227948482,
+        "balanced_ce": 0.37965998929344075,
+        "auc": 0.9102141132588297,
+        "mrr": 0.7123284893346931,
+        "hits10": 0.9315589353612167,
+        "hits20": 1.0,
+        "mean_positive_rank": 2.8517110266159698,
+        "queries": 263,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.3981588928973903,
+        "balanced_ce": 0.37919069845541215,
+        "auc": 0.9105690410443984,
+        "mrr": 0.7126662377713009,
+        "hits10": 0.9315589353612167,
+        "hits20": 1.0,
+        "mean_positive_rank": 2.844106463878327,
+        "queries": 263,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": -0.0009605298974578735,
+      "delta_MRR_corrected_minus_historical": 0.00033774843660783205,
+      "max_abs_validation_score_difference": 0.10512113571166992,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "08e4dddb7ead01e2ed3c8a0144d6f6d9a89544f9af7b075d58f9862af5724a84",
+      "checkpoint_sha256_corrected": "c92c595e3af0d1f16a04094faa05357947447c3aefe55d8c620948e985e676b7",
+      "test_accessed": false
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "A3",
+      "historical_metrics": {
+        "ce": 0.3998891324245276,
+        "balanced_ce": 0.3801244520697008,
+        "auc": 0.9099141233789703,
+        "mrr": 0.7117153629918642,
+        "hits10": 0.935361216730038,
+        "hits20": 1.0,
+        "mean_positive_rank": 2.8555133079847907,
+        "queries": 263,
+        "negatives_per_query": 20
+      },
+      "corrected_metrics": {
+        "ce": 0.39947271444220145,
+        "balanced_ce": 0.37982167730378275,
+        "auc": 0.9101331521346268,
+        "mrr": 0.7124156977226173,
+        "hits10": 0.935361216730038,
+        "hits20": 1.0,
+        "mean_positive_rank": 2.844106463878327,
+        "queries": 263,
+        "negatives_per_query": 20
+      },
+      "delta_CE_corrected_minus_historical": -0.0004164179823261671,
+      "delta_MRR_corrected_minus_historical": 0.0007003347307530383,
+      "max_abs_validation_score_difference": 0.0449061393737793,
+      "within_V18_tolerance": false,
+      "checkpoint_sha256_historical": "d4709b1c788fe4941951b6a1e14e5e9afeb4cb393709b0e0d8929130dd5dcb0f",
+      "checkpoint_sha256_corrected": "c61e9809cf8c136f69968841590d9cbd8a1c708138631a42a7894ec3fdb7dec2",
+      "test_accessed": false
+    }
+  ],
+  "PubMed_historical_tolerance_pass": false,
+  "Cora_seed0_historical_tolerance_pass": false,
+  "new_two_execution_canonical_replay": {
+    "dataset": "pubmed",
+    "seed": 0,
+    "arm": "A2",
+    "all_90_optimizer_step_hashes_equal": true,
+    "all_5_epoch_model_optimizer_and_metrics_equal": true
+  },
+  "fixed_first_step_repeatability": {
+    "dataset": "pubmed",
+    "seed": 0,
+    "arm": "A2",
+    "patched_segment_reduce_and_strict_deterministic": {
+      "inputs": true,
+      "logits": true,
+      "loss": true,
+      "all_activation_events": true,
+      "all_gradient_tensors": true,
+      "all_updated_parameter_tensors": true
+    },
+    "all_checks_pass": true
+  },
+  "Cora_corrected_two_execution_spotcheck": {
+    "dataset": "cora",
+    "seed": 0,
+    "arms": [
+      {
+        "arm": "A1",
+        "metrics_exact": true,
+        "checkpoint_sha256_exact": true,
+        "score_vectors_exact": true,
+        "max_abs_score_difference": 0.0
+      },
+      {
+        "arm": "A2",
+        "metrics_exact": true,
+        "checkpoint_sha256_exact": true,
+        "score_vectors_exact": true,
+        "max_abs_score_difference": 0.0
+      },
+      {
+        "arm": "A3",
+        "metrics_exact": true,
+        "checkpoint_sha256_exact": true,
+        "score_vectors_exact": true,
+        "max_abs_score_difference": 0.0
+      }
+    ],
+    "all_arms_exact": true
+  },
+  "test_accessed": false,
+  "innovation_variants_run": false,
+  "note": "Metric deltas are numerical reproduction comparisons only; no CHRI performance or efficacy verdict is made."
+}

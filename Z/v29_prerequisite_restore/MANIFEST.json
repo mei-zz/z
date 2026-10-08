@@ -1,0 +1,257 @@
+[
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/progress.json",
+    "bytes": 66,
+    "sha256": "4925ea27387e257e745627b86974aef0454bdb3bb6dcb3f8018585d2c0110498"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/test_result.json",
+    "bytes": 1337,
+    "sha256": "3f27f25442d34811e96f464f23c07d3b4f29ef05f54250af65d004b718daeba4"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/final.pt",
+    "bytes": 2376611,
+    "sha256": "80de9b501a7678c090a9991cd2052ac2b09385cdcab9415ff984304a894eeadb"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch4_scores.npz",
+    "bytes": 163436,
+    "sha256": "52aecc33661db05aa365f0ed9b4d08b76bf994776bd3613f23a7db4db3d2c89b"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/test_scores.npz",
+    "bytes": 325760,
+    "sha256": "d751132af8759891954495e285072634ce954d5ee9f03f67be64797af8469c95"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch9_scores.npz",
+    "bytes": 163468,
+    "sha256": "42958df92ece65a34b973b2c3379fd6574f5fc63c67150afca5ed40492358af9"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch8_scores.npz",
+    "bytes": 163269,
+    "sha256": "cfe3c3f5ffcb669c063ddba3eb22a7e6040ddbe9997fc8bcda3397bc837a12a2"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch7_scores.npz",
+    "bytes": 162659,
+    "sha256": "80793513eebd0e3140d6bbb73cbd86536145cdb7646c437d9bae66e73169df57"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch6_scores.npz",
+    "bytes": 162728,
+    "sha256": "01fb4b246f06cf4fedf32dc7a694f9bf72df0edcb2ec2e08137a2e3b20041bd7"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/zero_init.json",
+    "bytes": 126,
+    "sha256": "800eba76026f9d06c8afa890ee3b2493f7715a37c4908e785e0d109cd1b4b834"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch5_scores.npz",
+    "bytes": 162621,
+    "sha256": "db32190ffb11eb25ab37cb2ca0a3742dd05fdc1b8b107b8c98efb9cb3d713188"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch1_scores.npz",
+    "bytes": 169234,
+    "sha256": "ccca59a650bc3ca4b00a709d4a34fcbd14195bda5ac671c3837a8bcd06d07381"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/result.json",
+    "bytes": 8624,
+    "sha256": "0c48ce7897be803ef3cb273ae23c3ee404d401b288c9130252f94258955a3b5d"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch2_scores.npz",
+    "bytes": 168143,
+    "sha256": "f197a5ed6bc78577b8f40b3de9211b0e1211ff08f45475eb07b7386378588a30"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch10_scores.npz",
+    "bytes": 163031,
+    "sha256": "413383e2bd24615ed6979d375e78ebcd6fdba0202ce8ba05b68142352ebcc5a9"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/valid_epoch3_scores.npz",
+    "bytes": 164463,
+    "sha256": "bacf5a449cb50900d785f1d1d11e07b74c179f5f03f58e30b23ccd93e07a7c03"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/ERDR_V21/context_cache/cora.json",
+    "bytes": 296,
+    "sha256": "b2990e0ae4311a49a3ec7e46bc15a316cfda3ec680ac74637a46befc9044aef4"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/ERDR_V21/context_cache/pubmed.json",
+    "bytes": 298,
+    "sha256": "424cba5642c08f5e1076d6c2500c3f0d9d41ac86a944210d475f29bb4933ed82"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/ERDR_V21/context_cache/cora.npz",
+    "bytes": 58923144,
+    "sha256": "dd1f47ebbf445db48ac6da7256174cccdb9d81a8de1f4b3d4b057945068bf5b8"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/ERDR_V21/context_cache/pubmed.npz",
+    "bytes": 435980973,
+    "sha256": "4bff7de49dd5b642a453e330722d63554bbf08e1b41205dda9498c18c1f6d40d"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/progress.json",
+    "bytes": 152,
+    "sha256": "207b5ce46f5f20236f9c1b8387cd9fd22226206c871d47f917183ef0b49c235a"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_3.npy",
+    "bytes": 75792512,
+    "sha256": "e6ce87da1dd7a49c6c368f731a6482627fdae085cdf96625cb1b660fbdfd1bd3"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/valid_b.npy",
+    "bytes": 47839136,
+    "sha256": "ebc94fcccdd066c82403e4523b5a8a30523d5c210d683e65b82a643e05d14fb9"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_2.npy",
+    "bytes": 75792512,
+    "sha256": "68023072bed6ee1019c94baab85e6ab2de494c2d1d64ad84933957c7ab1cfdc1"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_4_matching_diagnostics.json",
+    "bytes": 281,
+    "sha256": "e105d9a3264a3bba6644227d0cfbbb893547d4c5a459401478a7345716aff670"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/valid_matching_diagnostics.json",
+    "bytes": 279,
+    "sha256": "d82d3a996e3da7566fae95740bcc390092bf10168d59de4dbab4574f8389d295"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/valid_pairs.npy",
+    "bytes": 744704,
+    "sha256": "336bb52d8d0fea160a01f7fc3bd685e6fad5a114ded242ca1cdd33dde9ac6828"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_1_pairs.npy",
+    "bytes": 1179776,
+    "sha256": "8dcd3761c04aab17a6ca3ec0a4178c230ffee7bb583d1bf3f69cc31a25f7fca6"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_3_matching_diagnostics.json",
+    "bytes": 282,
+    "sha256": "a3fdc9f7828f3c3114831d6151fd28dff3a51113272054ad3f30f6728ba4f65f"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_5_matching_diagnostics.json",
+    "bytes": 282,
+    "sha256": "5dbd91e84a609808da10cacb20828a262063c8927d16accb223c22cd57463709"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_1_matching_diagnostics.json",
+    "bytes": 283,
+    "sha256": "3aa4b03ac94a15d3fc31c8f8d7d8b74a845dc214e5eb187afc55bd2941521a01"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_1.npy",
+    "bytes": 75792512,
+    "sha256": "b93c74be59af898135a271f1e79d03d28058c57de7c239d7ff8919426195f762"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/B_READY_5.json",
+    "bytes": 2613,
+    "sha256": "964fd83cff249900dd329d9eb27c62fb6b916307f53b4bd34e7407d98ff0d744"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/MATCH_READY_5.json",
+    "bytes": 2738,
+    "sha256": "0c07b80062631fa94adb250426885eea8f3b5fa4de0d8f0c9197033ae3310f26"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_4_knn.npy",
+    "bytes": 9437312,
+    "sha256": "288da3ffa0571578a5d6091676461f3efdac62bf4c81a6e3efde99e4f2448139"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_3_pairs.npy",
+    "bytes": 1179776,
+    "sha256": "2c383910d355e27dd8ba129f5f8a564e837f49ef641d3e5043ec14f483d9039f"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_1_knn.npy",
+    "bytes": 9437312,
+    "sha256": "08e62d411cd6cb1e308446ee34822bf7ac74b0fc015adc627603c3ded75ccc07"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_3_knn.npy",
+    "bytes": 9437312,
+    "sha256": "26e26abe281694d0dafca05c2b1b45788fcdeadb6e98ef8e942ad39d8e0e5866"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/valid_knn.npy",
+    "bytes": 5956736,
+    "sha256": "a9144175bf0db9cc7c8e8cd5846a6b5f9dd8d879f0de57d243286ece23cade74"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/BASE_VALID_PARITY.json",
+    "bytes": 87,
+    "sha256": "de8e084ad1752cdc7e6487df39614022d1ff5fa89d95dc1baa30a42bb88cc75a"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/negative_schedule.npy",
+    "bytes": 6028288,
+    "sha256": "a81604817f58063a50bacd31a6df3b8e275a4cc0a224fb57fd856724a2e8e423"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_4_pairs.npy",
+    "bytes": 1179776,
+    "sha256": "f1f3244f42f2a2d3dbf57c0d31db030451ced92251008531c3afe3267b3fa664"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_2_matching_diagnostics.json",
+    "bytes": 283,
+    "sha256": "3b0ae355a42511b022d013c6404ca575203f3e8e7212a9faa0cabc215a82347a"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/normalization.json",
+    "bytes": 12483,
+    "sha256": "abd2e697f865474d4c5c5b40abea1ec9d94370393210b208f148937e323de937"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_5_pairs.npy",
+    "bytes": 1179776,
+    "sha256": "aa2fde5b29a06c76006869ed2cc1fda94de09a21de08fa20cbe73694ca66bbb6"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/donor_pairs.npy",
+    "bytes": 1179776,
+    "sha256": "34350d0bba43c3bce565f4f0fc309f58793905037aa5ef04809e4b6ad8fb7d8f"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_2_knn.npy",
+    "bytes": 9437312,
+    "sha256": "9cbcf598744702fd48cdd3da2d6ba697dcdb6784fb48477994e34cd1eef5bed9"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_2_pairs.npy",
+    "bytes": 1179776,
+    "sha256": "b358179d3c5acefe0a5ef7e60c35d9a49b9765c12d32963db5ad98046d436be8"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_5.npy",
+    "bytes": 75792512,
+    "sha256": "c5cd7cfb4cf0e6a020ea5c6aecddf432ebf5c27cdfc9f81e67b878a4e6181d80"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_5_knn.npy",
+    "bytes": 9437312,
+    "sha256": "c7ea16e70ae76a03bf493228e8482c934156293c1da09de0b9b71e3043691181"
+  },
+  {
+    "path": "lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/seed_0/epoch_4.npy",
+    "bytes": 75792512,
+    "sha256": "c71864d30085d0b3fadf8d61fbdae3e5315750ad12f9d246c68c47f4cdf40895"
+  }
+]

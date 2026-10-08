@@ -1,0 +1,19 @@
+{
+  "nodes": 19717,
+  "active_hyperedges": 18291,
+  "max_incident": 153,
+  "train_pairs": 37676,
+  "target_mask_oracle_samples": 256,
+  "target_mask_oracle": "PASS",
+  "descriptor": "mean/max of fixed 16d projected node attributes + log1p(size)",
+  "descriptor_normalization": "training-incident nodes only; no labels",
+  "train_pair_hash": "f6f1b4f41196acbaaeefe7963fbef6773ea0ea3da2842f600dfc65e346702979",
+  "projected_node_hash": "4ca710a146b9c548661933cca75036845b6a713f23b62087a65f367b7b98a51c",
+  "state": "PASS",
+  "dataset": "pubmed",
+  "seconds": 4.030929385218769,
+  "train_only": true,
+  "training_targets_removed_before_encoder": true,
+  "descriptor_file_sha256": "8a1ad6faaaf124421e884af73975a5958d344f9127cecd17327a20d1bdac1974",
+  "test_accessed": false
+}

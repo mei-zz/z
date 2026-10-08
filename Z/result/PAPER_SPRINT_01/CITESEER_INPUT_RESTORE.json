@@ -1,0 +1,15 @@
+{
+  "state": "PASS",
+  "local_verified_backup": "E:\\Z\\DCDLP_Server_Backup_20261005\\lchr_v2_full_server_backup.tar.gz",
+  "backup_member": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/input_cache/citeseer.npz",
+  "original_input_archive_sha256": "c23e76f70bd189bb445802bd42622fbef7dc46e2ff0b140d30129cae4295075e",
+  "sealed_archive_sha256": "5eecb52939e67d9117a817a81ff68dc9dbfc855dccceb71d43e808d544aec4ba",
+  "members_decompressed": [
+    "x",
+    "train",
+    "valid_pos",
+    "valid_neg"
+  ],
+  "test_opened": false,
+  "elapsed_seconds": 56.094255447387695
+}

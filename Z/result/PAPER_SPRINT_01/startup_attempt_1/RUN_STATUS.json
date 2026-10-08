@@ -1,0 +1,6 @@
+{
+  "state": "EXECUTION_FAILED",
+  "error": "AssertionError(\"JOB_FAILED ('prepare', 'SCREEN', 'citeseer', '0,1,2'): /home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/PAPER_SPRINT_01/logs/prepare_SCREEN_citeseer_0,1,2.log\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/PAPER_SPRINT_01/scripts/sprint01.py\", line 514, in supervise\n    batch([('prepare','SCREEN',ds,'0,1,2') for ds in ('cora','pubmed','citeseer')],'FEATURE_PREPARATION',workers=1)\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/PAPER_SPRINT_01/scripts/sprint01.py\", line 399, in batch\n    active.remove((proc,args,log));assert proc.returncode==0,f'JOB_FAILED {args}: {log}';done+=1\n                                          ^^^^^^^^^^^^^^^^^^\nAssertionError: JOB_FAILED ('prepare', 'SCREEN', 'citeseer', '0,1,2'): /home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/PAPER_SPRINT_01/logs/prepare_SCREEN_citeseer_0,1,2.log\n",
+  "test_opened": false
+}

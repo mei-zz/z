@@ -1,0 +1,7 @@
+lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/cora/structure.npz
+lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/cora/STRUCTURE_READY.json
+lchr_v2/HYPERGRAPH_RESEARCH/ERDR_V21/context_cache/cora.npz
+lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/structure.npz
+lchr_v2/HYPERGRAPH_RESEARCH/CHRI_V18_1/cache/pubmed/STRUCTURE_READY.json
+lchr_v2/HYPERGRAPH_RESEARCH/ERDR_V21/context_cache/pubmed.npz
+lchr_v2/result/innovation2/HDP2_V27/15_RANKING_ANALYSIS.md

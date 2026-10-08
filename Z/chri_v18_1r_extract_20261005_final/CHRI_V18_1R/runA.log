@@ -1,0 +1,110 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+TRAIN A pubmed 0 A2 1 0.24124775312116575 0.13533959981239257 0.9100013967680936
+TRAIN A pubmed 0 A2 2 0.24246172379288408 0.13571919301895938 0.918104263365996
+TRAIN A pubmed 0 A2 3 0.22982191260800594 0.1345773024516687 0.9178089722651996
+TRAIN A pubmed 0 A2 4 0.22525451321982676 0.14258457231164545 0.922280241819953
+TRAIN A pubmed 0 A2 5 0.22431599654050338 0.12495421149967084 0.9235625711031848
+{
+  "state": "COMPLETE",
+  "run_label": "runA",
+  "init": {
+    "model_sha256": "444505d855455c3f9fa5785ccfb6b29904380d89f1082b356c26f5ce7ec440ec",
+    "optimizer_empty_state_sha256": "8fb7c26915046ee12504e30a936e71ab3b38c55da06c84ef4a2d7aaf49de7187"
+  },
+  "epoch_end": [
+    {
+      "epoch": 1,
+      "model_state_sha256": "837653525b9f001e071d5afe08de2fa84a1ea0b6e7882215e9a0e4c7b0c4cf96",
+      "optimizer_state_sha256": "c33d22f528b34706c2aaa92aea9b262d2371fcd6a7396116463a2e952dc17a8e",
+      "validation": {
+        "ce": 0.13533959981239257,
+        "balanced_ce": 0.13516713084977305,
+        "auc": 0.9877380231887551,
+        "mrr": 0.9100013967680936,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2518050541516246,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 18,
+      "test_accessed": false
+    },
+    {
+      "epoch": 2,
+      "model_state_sha256": "8be7a5312bd0f5b2192f976b5b83c87e20445633ecd1f4c061da4ecc25abf1d3",
+      "optimizer_state_sha256": "d684217f9c47037b268244215304eb0aaa3210628f544a44ad73781259d6cd74",
+      "validation": {
+        "ce": 0.13571919301895938,
+        "balanced_ce": 0.13195065047128463,
+        "auc": 0.9883548654192027,
+        "mrr": 0.918104263365996,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2296931407942238,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 36,
+      "test_accessed": false
+    },
+    {
+      "epoch": 3,
+      "model_state_sha256": "a4e1e224a3d7e83f8d5541b665c0f8b038dec1c493eed66aded2c69b55170802",
+      "optimizer_state_sha256": "557d66e25cb0c8093b07717c901eebc7070178157fcbb0b0704046c6f023a4a6",
+      "validation": {
+        "ce": 0.1345773024516687,
+        "balanced_ce": 0.13024182186825403,
+        "auc": 0.988725034903687,
+        "mrr": 0.9178089722651996,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2292418772563176,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 54,
+      "test_accessed": false
+    },
+    {
+      "epoch": 4,
+      "model_state_sha256": "b3f60effda6e326260046a18401a1eef6a2f6610f2bf30abf3d8c18b7ea14c4f",
+      "optimizer_state_sha256": "3bce5fa442509bc70a990fd19b434d1b0da8c996b7420528ff0d85466fef595f",
+      "validation": {
+        "ce": 0.14258457231164545,
+        "balanced_ce": 0.12954602882806912,
+        "auc": 0.9888645529232755,
+        "mrr": 0.922280241819953,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.220667870036101,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 72,
+      "test_accessed": false
+    },
+    {
+      "epoch": 5,
+      "model_state_sha256": "0dfe228430f4992d91697ced6ae484c60ef7bc90db74f48f0f126dd2ec5e7501",
+      "optimizer_state_sha256": "32d73c63442cb95d0bd5d5beeb465256481ee89ee7f38e732a33202910e191c9",
+      "validation": {
+        "ce": 0.12495421149967084,
+        "balanced_ce": 0.1285426020388839,
+        "auc": 0.9890688637118952,
+        "mrr": 0.9235625711031848,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2179602888086642,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 90,
+      "test_accessed": false
+    }
+  ],
+  "optimizer_steps": 90,
+  "wall_seconds": 20.22094225883484,
+  "test_accessed": false
+}

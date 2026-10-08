@@ -1,0 +1,1208 @@
+{
+  "state": "COMPLETE",
+  "records": [
+    {
+      "mode": "canonical",
+      "dataset": "cora",
+      "seed": 8,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9727963176064441,
+          "exact_match_fraction": 0.04286931011640011,
+          "changed_H_fraction": 0.146283084004603,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.024604622274637222,
+            "MULT": 0.030980413779616356
+          },
+          "H_original": [
+            0.21911655366420746,
+            0.1451011747121811
+          ],
+          "H_permuted": [
+            0.21911658346652985,
+            0.1451009213924408
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.038342922899884925,
+          "scheduled_changed_H_fraction": 0.26027199074074076
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9815317762085823,
+          "exact_match_fraction": 0.0346799483490131,
+          "changed_H_fraction": 0.07676987144667753,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.010375211015343666,
+            "MULT": 0.015280988067388535
+          },
+          "H_original": [
+            0.10866963118314743,
+            0.0637086033821106
+          ],
+          "H_permuted": [
+            0.10866962373256683,
+            0.06370861083269119
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.015752308527973928,
+          "scheduled_changed_H_fraction": 0.07676987144667753
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "cora",
+      "seed": 9,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9727963176064441,
+          "exact_match_fraction": 0.039746380240370964,
+          "changed_H_fraction": 0.14591484464902185,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.0245200227946043,
+            "MULT": 0.03104601800441742
+          },
+          "H_original": [
+            0.221747025847435,
+            0.14655399322509766
+          ],
+          "H_permuted": [
+            0.22174715995788574,
+            0.14655379951000214
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.04004602991944764,
+          "scheduled_changed_H_fraction": 0.2611689814814815
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9815317762085823,
+          "exact_match_fraction": 0.03597122302158273,
+          "changed_H_fraction": 0.07658881042911461,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.010090284049510956,
+            "MULT": 0.014979902654886246
+          },
+          "H_original": [
+            0.10866963118314743,
+            0.0637086033821106
+          ],
+          "H_permuted": [
+            0.10866960883140564,
+            0.06370861083269119
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.016114430563099764,
+          "scheduled_changed_H_fraction": 0.07658881042911461
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "cora",
+      "seed": 10,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9736309249884951,
+          "exact_match_fraction": 0.040034031289880416,
+          "changed_H_fraction": 0.14666359871145881,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.024742618203163147,
+            "MULT": 0.03170235827565193
+          },
+          "H_original": [
+            0.22141432762145996,
+            0.146396666765213
+          ],
+          "H_permuted": [
+            0.22141428291797638,
+            0.14639662206172943
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.03879429360331339,
+          "scheduled_changed_H_fraction": 0.2604166666666667
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9815317762085823,
+          "exact_match_fraction": 0.03172846338313964,
+          "changed_H_fraction": 0.07731305449936629,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.010327472351491451,
+            "MULT": 0.015588665381073952
+          },
+          "H_original": [
+            0.10866963118314743,
+            0.0637086033821106
+          ],
+          "H_permuted": [
+            0.10866963863372803,
+            0.06370861828327179
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.017381857686040194,
+          "scheduled_changed_H_fraction": 0.07731305449936629
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "cora",
+      "seed": 11,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9716929025131179,
+          "exact_match_fraction": 0.037279143574439864,
+          "changed_H_fraction": 0.14834760195157876,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.024356823414564133,
+            "MULT": 0.030921906232833862
+          },
+          "H_original": [
+            0.221648171544075,
+            0.14650683104991913
+          ],
+          "H_permuted": [
+            0.22164808213710785,
+            0.146506667137146
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.03962993648163491,
+          "scheduled_changed_H_fraction": 0.2632233796296296
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9815317762085823,
+          "exact_match_fraction": 0.03947611141855746,
+          "changed_H_fraction": 0.07532138330617417,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.009588121436536312,
+            "MULT": 0.015170902945101261
+          },
+          "H_original": [
+            0.10866963118314743,
+            0.0637086033821106
+          ],
+          "H_permuted": [
+            0.10866960883140564,
+            0.06370861083269119
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.017562918703603114,
+          "scheduled_changed_H_fraction": 0.07532138330617417
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "cora",
+      "seed": 12,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9727540500736377,
+          "exact_match_fraction": 0.04021574564723694,
+          "changed_H_fraction": 0.14483615611192932,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.02435866743326187,
+            "MULT": 0.031132899224758148
+          },
+          "H_original": [
+            0.22080771625041962,
+            0.1455330103635788
+          ],
+          "H_permuted": [
+            0.22080771625041962,
+            0.14553287625312805
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.03856774668630339,
+          "scheduled_changed_H_fraction": 0.2598668981481482
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9815317762085823,
+          "exact_match_fraction": 0.03560228740084855,
+          "changed_H_fraction": 0.07894260365743255,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.009867457672953606,
+            "MULT": 0.015284646302461624
+          },
+          "H_original": [
+            0.10866963118314743,
+            0.0637086033821106
+          ],
+          "H_permuted": [
+            0.10866960883140564,
+            0.06370862573385239
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.016295491580662683,
+          "scheduled_changed_H_fraction": 0.07894260365743255
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "pubmed",
+      "seed": 8,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9962375015207704,
+          "exact_match_fraction": 0.023008521339532864,
+          "changed_H_fraction": 0.13608528930684413,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.019228877499699593,
+            "MULT": 0.028403332456946373
+          },
+          "H_original": [
+            0.23959150910377502,
+            0.11250022053718567
+          ],
+          "H_permuted": [
+            0.23959185183048248,
+            0.1124996617436409
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.0610786429771952,
+          "scheduled_changed_H_fraction": 0.30860460069444445
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9947780117763356,
+          "exact_match_fraction": 0.023028234430018793,
+          "changed_H_fraction": 0.07001332359135255,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.00933432299643755,
+            "MULT": 0.015432516112923622
+          },
+          "H_original": [
+            0.11298293620347977,
+            0.05643260478973389
+          ],
+          "H_permuted": [
+            0.11298301070928574,
+            0.05643259733915329
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.025895044483603386,
+          "scheduled_changed_H_fraction": 0.07001031459515214
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "pubmed",
+      "seed": 9,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.99635460788378,
+          "exact_match_fraction": 0.022829749225516133,
+          "changed_H_fraction": 0.13719111047025107,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.019247330725193024,
+            "MULT": 0.028652777895331383
+          },
+          "H_original": [
+            0.2401256263256073,
+            0.11268344521522522
+          ],
+          "H_permuted": [
+            0.2401258498430252,
+            0.11268282681703568
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.061165083542113516,
+          "scheduled_changed_H_fraction": 0.3093532986111111
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9947780117763356,
+          "exact_match_fraction": 0.023719513512345813,
+          "changed_H_fraction": 0.070271199553015,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.009426197037100792,
+            "MULT": 0.01557771023362875
+          },
+          "H_original": [
+            0.11298293620347977,
+            0.05643260478973389
+          ],
+          "H_permuted": [
+            0.11298307031393051,
+            0.05643262341618538
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.025809085829715906,
+          "scheduled_changed_H_fraction": 0.07026817947395565
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "pubmed",
+      "seed": 10,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9962239835621624,
+          "exact_match_fraction": 0.0228279109317967,
+          "changed_H_fraction": 0.13552654701771302,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.019434278830885887,
+            "MULT": 0.028379378840327263
+          },
+          "H_original": [
+            0.23945647478103638,
+            0.1125364750623703
+          ],
+          "H_permuted": [
+            0.2394566684961319,
+            0.11253592371940613
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.060911921487696405,
+          "scheduled_changed_H_fraction": 0.3082221137152778
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9947780117763356,
+          "exact_match_fraction": 0.022380160290337216,
+          "changed_H_fraction": 0.06936863368719647,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.00934269092977047,
+            "MULT": 0.015444140881299973
+          },
+          "H_original": [
+            0.11298293620347977,
+            0.05643260478973389
+          ],
+          "H_permuted": [
+            0.11298304051160812,
+            0.05643262341618538
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.025873554820131518,
+          "scheduled_changed_H_fraction": 0.06936565239814338
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "pubmed",
+      "seed": 11,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.996250799859405,
+          "exact_match_fraction": 0.022634135750536,
+          "changed_H_fraction": 0.13605721135214544,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.019354742020368576,
+            "MULT": 0.028547363355755806
+          },
+          "H_original": [
+            0.23964102566242218,
+            0.11251100152730942
+          ],
+          "H_permuted": [
+            0.23964136838912964,
+            0.11251071840524673
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.06152383355714376,
+          "scheduled_changed_H_fraction": 0.30893012152777777
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9947780117763356,
+          "exact_match_fraction": 0.02406515305350932,
+          "changed_H_fraction": 0.07001332359135255,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.009344653226435184,
+            "MULT": 0.015663079917430878
+          },
+          "H_original": [
+            0.11298293620347977,
+            0.05643260478973389
+          ],
+          "H_permuted": [
+            0.11298299580812454,
+            0.05643258988857269
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.025572699531525335,
+          "scheduled_changed_H_fraction": 0.07001031459515214
+        }
+      }
+    },
+    {
+      "mode": "canonical",
+      "dataset": "pubmed",
+      "seed": 12,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9963816767751412,
+          "exact_match_fraction": 0.022797266679630793,
+          "changed_H_fraction": 0.13672575543199084,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.01946396939456463,
+            "MULT": 0.02860020473599434
+          },
+          "H_original": [
+            0.239540234208107,
+            0.11229187995195389
+          ],
+          "H_permuted": [
+            0.23954066634178162,
+            0.11229152977466583
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.06110595423699792,
+          "scheduled_changed_H_fraction": 0.3097330729166667
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9947780117763356,
+          "exact_match_fraction": 0.023049836901341512,
+          "changed_H_fraction": 0.06947608200455581,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.009373936802148819,
+            "MULT": 0.015502933412790298
+          },
+          "H_original": [
+            0.11298293620347977,
+            0.05643260478973389
+          ],
+          "H_permuted": [
+            0.11298291385173798,
+            0.05643262714147568
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.025658658185412818,
+          "scheduled_changed_H_fraction": 0.06947309609764483
+        }
+      }
+    }
+  ],
+  "binary_information_limit": "B exactly determined by M>0; no binary transitions under exact MULT conditioning",
+  "inner_records": [
+    {
+      "mode": "inner",
+      "dataset": "cora",
+      "seed": 13,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9788123649346988,
+          "exact_match_fraction": 0.05149988000959923,
+          "changed_H_fraction": 0.11782392182655266,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.0201785359531641,
+            "MULT": 0.0235031358897686
+          },
+          "H_original": [
+            0.17711684107780457,
+            0.11872117221355438
+          ],
+          "H_permuted": [
+            0.17711679637432098,
+            0.11872120946645737
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.02917410504556986,
+          "scheduled_changed_H_fraction": 0.2310185185185185
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9853066439522998,
+          "exact_match_fraction": 0.04646639291117355,
+          "changed_H_fraction": 0.08656303236797275,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.010694027878344059,
+            "MULT": 0.01569255068898201
+          },
+          "H_original": [
+            0.11996376514434814,
+            0.06834656000137329
+          ],
+          "H_permuted": [
+            0.11996374279260635,
+            0.06834658235311508
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.0190587734241908,
+          "scheduled_changed_H_fraction": 0.08643546505461873
+        }
+      }
+    },
+    {
+      "mode": "inner",
+      "dataset": "cora",
+      "seed": 14,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9785855170470555,
+          "exact_match_fraction": 0.052596218447067855,
+          "changed_H_fraction": 0.12233493002723772,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.020607739686965942,
+            "MULT": 0.024310659617185593
+          },
+          "H_original": [
+            0.18049268424510956,
+            0.1205332949757576
+          ],
+          "H_permuted": [
+            0.18049266934394836,
+            0.12053345888853073
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.028928336620644313,
+          "scheduled_changed_H_fraction": 0.23787615740740742
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9853066439522998,
+          "exact_match_fraction": 0.04506159498595202,
+          "changed_H_fraction": 0.08784071550255537,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.010360011830925941,
+            "MULT": 0.015402213670313358
+          },
+          "H_original": [
+            0.11996376514434814,
+            0.06834656000137329
+          ],
+          "H_permuted": [
+            0.11996376514434814,
+            0.06834658235311508
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.01895229982964225,
+          "scheduled_changed_H_fraction": 0.08770813447873582
+        }
+      }
+    },
+    {
+      "mode": "inner",
+      "dataset": "cora",
+      "seed": 15,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9788444360866908,
+          "exact_match_fraction": 0.05206282119014457,
+          "changed_H_fraction": 0.12237318414743077,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.020623765885829926,
+            "MULT": 0.024386214092373848
+          },
+          "H_original": [
+            0.18008647859096527,
+            0.1203860491514206
+          ],
+          "H_permuted": [
+            0.18008644878864288,
+            0.12038619071245193
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.02848949273658972,
+          "scheduled_changed_H_fraction": 0.23645833333333333
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9853066439522998,
+          "exact_match_fraction": 0.0454938405014048,
+          "changed_H_fraction": 0.08805366269165248,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.01050063781440258,
+            "MULT": 0.01572301611304283
+          },
+          "H_original": [
+            0.11996376514434814,
+            0.06834656000137329
+          ],
+          "H_permuted": [
+            0.11996375769376755,
+            0.06834656745195389
+          ],
+          "status": "WEAK",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.0190587734241908,
+          "scheduled_changed_H_fraction": 0.087920246049422
+        }
+      }
+    },
+    {
+      "mode": "inner",
+      "dataset": "pubmed",
+      "seed": 13,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9960186370281933,
+          "exact_match_fraction": 0.03728591454866825,
+          "changed_H_fraction": 0.12403943927030267,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.01760953851044178,
+            "MULT": 0.02547747828066349
+          },
+          "H_original": [
+            0.2170598953962326,
+            0.1020892783999443
+          ],
+          "H_permuted": [
+            0.21706032752990723,
+            0.10208893567323685
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.056988632626940726,
+          "scheduled_changed_H_fraction": 0.2897857666015625
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9961304518266544,
+          "exact_match_fraction": 0.032600002538941006,
+          "changed_H_fraction": 0.10785417114531039,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.012870979495346546,
+            "MULT": 0.021768800914287567
+          },
+          "H_original": [
+            0.1524747610092163,
+            0.06803174316883087
+          ],
+          "H_permuted": [
+            0.15247461199760437,
+            0.06803169846534729
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.04133840842701602,
+          "scheduled_changed_H_fraction": 0.10778738246891113
+        }
+      }
+    },
+    {
+      "mode": "inner",
+      "dataset": "pubmed",
+      "seed": 14,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9960697232113953,
+          "exact_match_fraction": 0.037512886008968155,
+          "changed_H_fraction": 0.12395799611524766,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.017459778115153313,
+            "MULT": 0.025109130889177322
+          },
+          "H_original": [
+            0.21593473851680756,
+            0.10123486816883087
+          ],
+          "H_permuted": [
+            0.21593476831912994,
+            0.1012348160147667
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.05666781320815798,
+          "scheduled_changed_H_fraction": 0.28887939453125
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9961304518266544,
+          "exact_match_fraction": 0.0333997689563683,
+          "changed_H_fraction": 0.10833470327141213,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.012700030580163002,
+            "MULT": 0.021551525220274925
+          },
+          "H_original": [
+            0.1524747610092163,
+            0.06803174316883087
+          ],
+          "H_permuted": [
+            0.15247474610805511,
+            0.06803180277347565
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.04205920661616864,
+          "scheduled_changed_H_fraction": 0.10826761702557881
+        }
+      }
+    },
+    {
+      "mode": "inner",
+      "dataset": "pubmed",
+      "seed": 15,
+      "splits": {
+        "train": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.996195872116552,
+          "exact_match_fraction": 0.03771936951576211,
+          "changed_H_fraction": 0.1233963982193444,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.01752360910177231,
+            "MULT": 0.025323830544948578
+          },
+          "H_original": [
+            0.21600180864334106,
+            0.10151012241840363
+          ],
+          "H_permuted": [
+            0.21600230038166046,
+            0.10150974243879318
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.05679380817482801,
+          "scheduled_changed_H_fraction": 0.2887725830078125
+        },
+        "validation": {
+          "matching_rule": "fixed floorlog2(1+lambda_G), floorlog2(1+M_uv), floorlog2(1+S_uv), sorted floorlog2(1+projected endpoint degrees), equal scheduled occurrence multiplicity; deterministic cyclic donor; no fallback",
+          "matching_relaxation": false,
+          "labels_used": false,
+          "performance_used": false,
+          "eligible_fraction": 0.9961304518266544,
+          "exact_match_fraction": 0.033310906021098596,
+          "changed_H_fraction": 0.10824618419555128,
+          "zero_nonzero_transition_fraction": 0.0,
+          "unique_and_scheduled_H_marginal_exact": true,
+          "stratum_conditional_joint_H_distribution_drift": 0.0,
+          "continuous_conditioning_drift": {
+            "GRAPH": 0.012724491767585278,
+            "MULT": 0.021695539355278015
+          },
+          "H_original": [
+            0.1524747610092163,
+            0.06803174316883087
+          ],
+          "H_permuted": [
+            0.15247483551502228,
+            0.06803197413682938
+          ],
+          "status": "VALID",
+          "zero_existence_control_status": "CONTROL_NOT_IDENTIFIABLE",
+          "thresholds_predeclared": {
+            "eligible": 0.8,
+            "changed": 0.1,
+            "not_identifiable_below": 0.01
+          },
+          "binary_structural_limit": "B == (M_uv>0) == (S_uv>0), so exact MULT conditioning fixes B",
+          "historical_incidence_shuffle_changed_fraction": 0.04130047168021852,
+          "scheduled_changed_H_fraction": 0.10817915276514002
+        }
+      }
+    }
+  ]
+}

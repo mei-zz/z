@@ -1,0 +1,94 @@
+{
+  "state": "RUNNING",
+  "stage": "DETERMINISM_PRECHECK",
+  "supervisor_pid": 2753361,
+  "completed_stage_jobs": 0,
+  "queued": 2,
+  "active": [
+    {
+      "pid": 2753702,
+      "arguments": [
+        "train",
+        "canonical",
+        "D",
+        "pubmed",
+        0,
+        "GM_BINARY",
+        1
+      ],
+      "log": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/logs/train_canonical_D_pubmed_0_GM_BINARY_1.log"
+    },
+    {
+      "pid": 2753703,
+      "arguments": [
+        "train",
+        "canonical",
+        "D",
+        "pubmed",
+        0,
+        "GM_BINARY",
+        2
+      ],
+      "log": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/logs/train_canonical_D_pubmed_0_GM_BINARY_2.log"
+    },
+    {
+      "pid": 2753704,
+      "arguments": [
+        "train",
+        "canonical",
+        "D",
+        "pubmed",
+        0,
+        "GM_FULL",
+        1
+      ],
+      "log": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/logs/train_canonical_D_pubmed_0_GM_FULL_1.log"
+    },
+    {
+      "pid": 2753705,
+      "arguments": [
+        "train",
+        "canonical",
+        "D",
+        "pubmed",
+        0,
+        "GM_FULL",
+        2
+      ],
+      "log": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/logs/train_canonical_D_pubmed_0_GM_FULL_2.log"
+    },
+    {
+      "pid": 2753706,
+      "arguments": [
+        "train",
+        "canonical",
+        "D",
+        "pubmed",
+        0,
+        "GM_CONDPERM",
+        1
+      ],
+      "log": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/logs/train_canonical_D_pubmed_0_GM_CONDPERM_1.log"
+    },
+    {
+      "pid": 2753707,
+      "arguments": [
+        "train",
+        "canonical",
+        "D",
+        "pubmed",
+        0,
+        "GM_CONDPERM",
+        2
+      ],
+      "log": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/logs/train_canonical_D_pubmed_0_GM_CONDPERM_2.log"
+    }
+  ],
+  "updated_at": 1791282773.4068923,
+  "test_opened": false,
+  "storage": {
+    "available_bytes": 12278943744,
+    "available_inodes": 13346044,
+    "margin_bytes": 3221225472
+  }
+}

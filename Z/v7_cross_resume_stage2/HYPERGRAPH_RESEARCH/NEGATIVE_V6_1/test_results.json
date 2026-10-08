@@ -1,0 +1,216 @@
+{
+  "test_status": "COMPLETE",
+  "test_evaluated_once": true,
+  "test_positive_count": 527,
+  "negatives_per_positive": 20,
+  "test_negative_pool_seed": 999,
+  "grouping_seed": 1000,
+  "test_candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+  "candidate_hash_matches_v6_seed0": true,
+  "by_method_seed": {
+    "A1": {
+      "0": {
+        "mrr": 0.5556290016239874,
+        "hits10": 0.6679316888045541,
+        "mean_positive_rank": 7.23719165085389,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A1_seed0/checkpoints/cora_uniform_seed0_09f0833328a0.pt"
+      },
+      "1": {
+        "mrr": 0.3708957604378117,
+        "hits10": 0.7722960151802657,
+        "mean_positive_rank": 6.239089184060721,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A1_seed1/checkpoints/cora_uniform_seed1_a88683bae016.pt"
+      },
+      "2": {
+        "mrr": 0.49190506209954454,
+        "hits10": 0.920303605313093,
+        "mean_positive_rank": 4.163187855787476,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A1_seed2/checkpoints/cora_uniform_seed2_d8f168a99900.pt"
+      }
+    },
+    "A3": {
+      "0": {
+        "mrr": 0.5499849975561698,
+        "hits10": 0.6698292220113852,
+        "mean_positive_rank": 7.332068311195446,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A3_seed0/checkpoints/cora_uniform_seed0_6cc969e287f6.pt"
+      },
+      "1": {
+        "mrr": 0.3824729022342713,
+        "hits10": 0.793168880455408,
+        "mean_positive_rank": 6.01707779886148,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A3_seed1/checkpoints/cora_uniform_seed1_2ecdf29f781c.pt"
+      },
+      "2": {
+        "mrr": 0.5377327342615851,
+        "hits10": 0.9184060721062619,
+        "mean_positive_rank": 3.908918406072106,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A3_seed2/checkpoints/cora_uniform_seed2_43b4a52ee928.pt"
+      }
+    },
+    "A4": {
+      "0": {
+        "mrr": 0.549093092458482,
+        "hits10": 0.681214421252372,
+        "mean_positive_rank": 7.138519924098672,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A4_seed0/checkpoints/cora_uniform_seed0_875c70f656ac.pt"
+      },
+      "1": {
+        "mrr": 0.4487525918776323,
+        "hits10": 0.8671726755218216,
+        "mean_positive_rank": 5.009487666034156,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A4_seed1/checkpoints/cora_uniform_seed1_d717c449b6c6.pt"
+      },
+      "2": {
+        "mrr": 0.5844539812979371,
+        "hits10": 0.9278937381404174,
+        "mean_positive_rank": 3.537001897533207,
+        "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6_1/STRICT/S_A4_seed2/checkpoints/cora_uniform_seed2_9633542cbe7e.pt"
+      }
+    }
+  },
+  "mean_mrr": {
+    "A1": 0.4728099413871146,
+    "A3": 0.4900635446840087,
+    "A4": 0.5274332218780171
+  },
+  "sample_sd_mrr": {
+    "A1": 0.09383528294865502,
+    "A3": 0.09337740222355938,
+    "A4": 0.0703958753608631
+  },
+  "deltas": {
+    "A4_minus_A1_by_seed": [
+      -0.006535909165505394,
+      0.07785683143982058,
+      0.09254891919839259
+    ],
+    "A4_minus_A3_by_seed": [
+      -0.0008919050976877729,
+      0.066279689643361,
+      0.046721247036352054
+    ]
+  },
+  "performance_supported": true,
+  "A4_wins_vs_A1": 2,
+  "A4_wins_vs_A3": 2,
+  "filtered_v6_test_reuse": {
+    "arms": {
+      "A1": {
+        "metrics": {
+          "mrr": 0.550403658210054,
+          "hits10": 0.6850094876660342,
+          "hits20": 0.889943074003795,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 7.1878557874762805,
+          "auc": 0.6912247190606671,
+          "ap": 0.42547507417736713,
+          "groups": {
+            "HH": {
+              "mrr": 0.8623582766439909,
+              "count": 175
+            },
+            "HL": {
+              "mrr": 0.11865629019911784,
+              "count": 117
+            },
+            "LH": {
+              "mrr": 0.9078342245989304,
+              "count": 85
+            },
+            "LL": {
+              "mrr": 0.3206755627986278,
+              "count": 150
+            }
+          },
+          "macro_mrr": 0.5523810885601668,
+          "worst_group_mrr": 0.11865629019911784,
+          "group_gap": 0.7891779343998125
+        },
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6/A_HG_VETO/A1_seed0/checkpoints/cora_uniform_seed0_eea678e9f600.pt"
+      },
+      "A3": {
+        "metrics": {
+          "mrr": 0.5628300501858994,
+          "hits10": 0.6925996204933587,
+          "hits20": 0.8956356736242884,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 6.969639468690702,
+          "auc": 0.7000129622761757,
+          "ap": 0.42040587491303916,
+          "groups": {
+            "HH": {
+              "mrr": 0.8614384445963393,
+              "count": 175
+            },
+            "HL": {
+              "mrr": 0.11814150596301108,
+              "count": 117
+            },
+            "LH": {
+              "mrr": 0.9415686274509804,
+              "count": 85
+            },
+            "LL": {
+              "mrr": 0.34669212741735966,
+              "count": 150
+            }
+          },
+          "macro_mrr": 0.5669601763569226,
+          "worst_group_mrr": 0.11814150596301108,
+          "group_gap": 0.8234271214879693
+        },
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6/A_HG_VETO/A3_seed0/checkpoints/cora_uniform_seed0_da04382e8bb9.pt"
+      },
+      "A4": {
+        "metrics": {
+          "mrr": 0.5506518434828545,
+          "hits10": 0.7571157495256167,
+          "hits20": 0.9544592030360531,
+          "hits50": 1.0,
+          "hits100": 1.0,
+          "mean_positive_rank": 6.127134724857685,
+          "auc": 0.7402422865455174,
+          "ap": 0.4131581270610797,
+          "groups": {
+            "HH": {
+              "mrr": 0.8630943104514534,
+              "count": 175
+            },
+            "HL": {
+              "mrr": 0.21164905418497548,
+              "count": 117
+            },
+            "LH": {
+              "mrr": 0.9001759678230266,
+              "count": 85
+            },
+            "LL": {
+              "mrr": 0.25249413721240344,
+              "count": 150
+            }
+          },
+          "macro_mrr": 0.5568533674179648,
+          "worst_group_mrr": 0.21164905418497548,
+          "group_gap": 0.6885269136380511
+        },
+        "checkpoint": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/NEGATIVE_V6/A_HG_VETO/A4_seed0/checkpoints/cora_uniform_seed0_f313f3caf064.pt"
+      }
+    },
+    "shared_candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+    "negative_count_per_positive": 20,
+    "test_evaluated": true
+  },
+  "diversity_analysis_if_a3_test_best": null
+}

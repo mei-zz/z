@@ -1,0 +1,110 @@
+/home/ubuntu/anaconda3/envs/mei_env/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+TRAIN A pubmed 0 A2 1 0.24124775319877598 0.1353395987962891 0.9100013967680936
+TRAIN A pubmed 0 A2 2 0.24246190208941698 0.1357062526723888 0.918104263365996
+TRAIN A pubmed 0 A2 3 0.22982048080302775 0.13490838778794154 0.9177864090883043
+TRAIN A pubmed 0 A2 4 0.22525772995625934 0.1426263829924632 0.922054610051
+TRAIN A pubmed 0 A2 5 0.22435262879460222 0.12642460188312427 0.9248787564220776
+{
+  "state": "COMPLETE",
+  "run_label": "runB",
+  "init": {
+    "model_sha256": "444505d855455c3f9fa5785ccfb6b29904380d89f1082b356c26f5ce7ec440ec",
+    "optimizer_empty_state_sha256": "8fb7c26915046ee12504e30a936e71ab3b38c55da06c84ef4a2d7aaf49de7187"
+  },
+  "epoch_end": [
+    {
+      "epoch": 1,
+      "model_state_sha256": "e5da31666354cd38d4df893f53875fa83179c7d85ce570ea1672ef92c97ea110",
+      "optimizer_state_sha256": "bbe152e7884b4abaa6869c07693332f7bedfddef41f62e9f5e0cd77069bfb26b",
+      "validation": {
+        "ce": 0.1353395987962891,
+        "balanced_ce": 0.1351671317272261,
+        "auc": 0.9877380180977857,
+        "mrr": 0.9100013967680936,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2518050541516246,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 18,
+      "test_accessed": false
+    },
+    {
+      "epoch": 2,
+      "model_state_sha256": "e375e29c44aad048c999b4d64b9e2ca20b75a1b9ec257342580eba38b29ee7f3",
+      "optimizer_state_sha256": "1caf45c2f66faafbece0c60697d8ec09c10ebd8ea66820eab7f68476a42ac8e3",
+      "validation": {
+        "ce": 0.1357062526723888,
+        "balanced_ce": 0.131950525690952,
+        "auc": 0.9883549468747148,
+        "mrr": 0.918104263365996,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2296931407942238,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 36,
+      "test_accessed": false
+    },
+    {
+      "epoch": 3,
+      "model_state_sha256": "76e6431cbbfaf7580c88d7f2a9d31b55f509a9bdb64f31e17b56c508081bbc5d",
+      "optimizer_state_sha256": "ffcf1db6cb109ae5de493d5edb849ed6c26f82821b976eb10b42fdca25ff79ce",
+      "validation": {
+        "ce": 0.13490838778794154,
+        "balanced_ce": 0.13023243848564675,
+        "auc": 0.9887300698725383,
+        "mrr": 0.9177864090883043,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2296931407942238,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 54,
+      "test_accessed": false
+    },
+    {
+      "epoch": 4,
+      "model_state_sha256": "7961aee95e0361f55faa5948f4abd00d4cd1958fb69d290c20fdbc3a63c65981",
+      "optimizer_state_sha256": "aa886d2dde004d558b0fb1343aef2d2db9ed1af02e1a4b4a5c0b169a866b94ba",
+      "validation": {
+        "ce": 0.1426263829924632,
+        "balanced_ce": 0.1295871019234515,
+        "auc": 0.9888608059697116,
+        "mrr": 0.922054610051,
+        "hits10": 0.9990974729241877,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.2211191335740073,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 72,
+      "test_accessed": false
+    },
+    {
+      "epoch": 5,
+      "model_state_sha256": "719d287dfd565a73b1bf31c02b9ff2995d24b82b10fec4dd6738c6785ffbc16b",
+      "optimizer_state_sha256": "cb916747c9ff71a2171794d43c83961973cf8f07c5d9b12f4a9280e5c569560d",
+      "validation": {
+        "ce": 0.12642460188312427,
+        "balanced_ce": 0.12835569726206658,
+        "auc": 0.9890797634776292,
+        "mrr": 0.9248787564220776,
+        "hits10": 0.9986462093862816,
+        "hits20": 1.0,
+        "mean_positive_rank": 1.214350180505415,
+        "queries": 2216,
+        "negatives_per_query": 20
+      },
+      "optimizer_steps": 90,
+      "test_accessed": false
+    }
+  ],
+  "optimizer_steps": 90,
+  "wall_seconds": 21.179564952850342,
+  "test_accessed": false
+}

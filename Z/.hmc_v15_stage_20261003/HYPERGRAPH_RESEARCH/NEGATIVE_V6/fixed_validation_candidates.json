@@ -1,0 +1,11 @@
+{
+  "protocol": "standard uniform validation negatives",
+  "positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+  "negative_candidates_hash": "aca455fc094f2b037a812d62a4fcb79fd8d48102d021d72418aea1ab0b65b455",
+  "positive_plus_negative_candidate_tensor_hash": "197912d7397d8d8e118e2c985ff2a7948810c8b96ab5bed91e49c598aa481d48",
+  "positive_count": 263,
+  "negatives_per_positive": 20,
+  "negative_pool_seed": 777,
+  "grouping_seed": 778,
+  "test_evaluated": false
+}

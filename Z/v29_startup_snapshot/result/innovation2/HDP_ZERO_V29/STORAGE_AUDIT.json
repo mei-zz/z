@@ -1,0 +1,11 @@
+{
+  "state": "PASS",
+  "current": {
+    "available_bytes": 12440027136,
+    "available_inodes": 13346326,
+    "margin_bytes": 3221225472
+  },
+  "estimated_total_growth_bytes": 8589934592,
+  "basis": "V28 measured PubMed canonical seed472MiB, Cora46MiB; 10 canonical seed caches; V29 final unique feature caches; 6 inner5 caches and structures/context; all checkpoints and raw candidate diagnostics. Conservative8GiB. No history/dataset deletion. Stop if available falls below3GiB.",
+  "writes": "single writer per unique seed temp directory; atomic rename, hashes, READY publication; shared inner structures sequential"
+}

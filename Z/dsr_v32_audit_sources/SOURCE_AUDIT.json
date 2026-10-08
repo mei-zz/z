@@ -1,0 +1,86 @@
+{
+  "state": "PASS",
+  "method": "LOCAL_GIT_AND_REMOTE_PATH",
+  "remote_path": "/home/zhoulihui/DCDLP-main",
+  "local_git_commit": "5da7af3d282f4378b128a0ef8fb7f2e3503a9c74",
+  "remote_git": "Runtime deployment has no .git; source SHA256 exact-match used",
+  "source_hashes": [
+    {
+      "path": "HYPERGRAPH_RESEARCH/HSPE_V17_1/scripts/hspe_v17_1.py",
+      "historical_sha256": "b4b477d86ceb55f62cefb02ea1a652085b725ca92793707a29586976016970fc",
+      "actual_sha256": "b4b477d86ceb55f62cefb02ea1a652085b725ca92793707a29586976016970fc",
+      "match": true
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_FINAL_FROZEN/CANONICAL_PROTOCOL.json",
+      "historical_sha256": "624c61f2e500052c11739a31c8cf90975079c0c647924c21d47db84ac0f7b939",
+      "actual_sha256": "624c61f2e500052c11739a31c8cf90975079c0c647924c21d47db84ac0f7b939",
+      "match": true
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/scripts/strong174.py",
+      "historical_sha256": "b0c47242f77ba3156d6267a1503d6adc0ec323000b4c7f69f8e46fcfc9f901f2",
+      "actual_sha256": "b0c47242f77ba3156d6267a1503d6adc0ec323000b4c7f69f8e46fcfc9f901f2",
+      "match": true
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/PAPER_SPRINT_01/scripts/sprint01.py",
+      "historical_sha256": "8a8e002c51891679b8cad2fc6f55de3342e93af39b0221ffa50d5ecc4072534d",
+      "actual_sha256": "8a8e002c51891679b8cad2fc6f55de3342e93af39b0221ffa50d5ecc4072534d",
+      "match": true
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/DA_NBR_V30A/scripts/run30.py",
+      "historical_sha256": "5cc6401f402a97b4c836a3370333cfcff62bcaa97cd752cac4699bb99405e170",
+      "actual_sha256": "5cc6401f402a97b4c836a3370333cfcff62bcaa97cd752cac4699bb99405e170",
+      "match": true
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/DA_NBR_V30A/scripts/paths.py",
+      "historical_sha256": "e19c3981a923296355286fb70ce5d5263b4773f11af8471437b7db1eca5065e5",
+      "actual_sha256": "e19c3981a923296355286fb70ce5d5263b4773f11af8471437b7db1eca5065e5",
+      "match": true
+    },
+    {
+      "path": "HYPERGRAPH_RESEARCH/DA_NBR_V30A/scripts/precheck.py",
+      "historical_sha256": "b6bfb6e41a55906fb97d0767a95697867bdfd1497fbb5efafd99e520edc42c8d",
+      "actual_sha256": "b6bfb6e41a55906fb97d0767a95697867bdfd1497fbb5efafd99e520edc42c8d",
+      "match": true
+    }
+  ],
+  "frozen_R_HSPE": "PASS",
+  "citeseer_filtered_input": {
+    "state": "PASS",
+    "archive_member": "lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_BENCHMARK_V17_3/input_cache/citeseer.npz",
+    "source_sha256": "c23e76f70bd189bb445802bd42622fbef7dc46e2ff0b140d30129cae4295075e",
+    "filtered_file_sha256": "5eecb52939e67d9117a817a81ff68dc9dbfc855dccceb71d43e808d544aec4ba",
+    "fields_restored": [
+      "x",
+      "train",
+      "valid_pos",
+      "valid_neg"
+    ],
+    "test_opened": false,
+    "elapsed_seconds": 132.9700689315796,
+    "shapes": {
+      "x": [
+        3327,
+        3703
+      ],
+      "train": [
+        3870,
+        2
+      ],
+      "valid_pos": [
+        227,
+        2
+      ],
+      "valid_neg": [
+        227,
+        20,
+        2
+      ]
+    }
+  },
+  "test_opened": false
+}

@@ -1,0 +1,20 @@
+{
+  "state": "RESUMED",
+  "reason": "Concurrent writers to per-dataset inner structure.npz caused EOFError before inner model training.",
+  "fix": "Single supervisor builds and audits each shared structure/context before launching seed workers.",
+  "structures": {
+    "cora": {
+      "structure_sha256": "802b845ad4eade25dd13c375698f5b2265cfc9c8363a798a46d079335310140b",
+      "context_sha256": "8297363c6bd844d7b2a3536c1dcb67e9ce4962fb87f56a1e5c2505d954af9253",
+      "target_mask_oracle": "PASS"
+    },
+    "pubmed": {
+      "structure_sha256": "8a297dc39b9650bd17030e98f0f9e331372fbcac4f169e9d8261972e82b157c7",
+      "context_sha256": "be8c21a3ab2605ca5cac296f8efd7d2807014c4d55e36c5d18614bbc2cd1a477",
+      "target_mask_oracle": "PASS"
+    }
+  },
+  "Phase_A_and_B_reused_unchanged": true,
+  "model_optimizer_split_feature_definitions_changed": false,
+  "test_opened": false
+}

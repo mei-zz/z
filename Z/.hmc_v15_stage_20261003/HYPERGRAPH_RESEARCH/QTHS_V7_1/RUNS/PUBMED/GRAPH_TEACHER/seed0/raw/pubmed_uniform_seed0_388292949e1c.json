@@ -1,0 +1,110 @@
+{
+  "dataset": "pubmed",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 0,
+  "cn_feature_mode": "raw",
+  "interaction_mode": "unrestricted",
+  "hypergraph_mode": "disabled",
+  "hypergraph_construction": "raw_star",
+  "ghhr_training_mode": "none",
+  "lambda_h": 1.0,
+  "ghhr_tau": 1.0,
+  "complementarity_fusion_mode": "none",
+  "fusion_gate_hidden_dim": 8,
+  "fusion_margin_graph_threshold": 0.0,
+  "fusion_margin_hypergraph_threshold": 0.0,
+  "ghhr_beta": null,
+  "fusion_global_alpha_h": null,
+  "ghhr_epoch_diagnostics": [],
+  "construction_stats": null,
+  "construction_audit_seconds": 0.0,
+  "lambda_aux": 0.05,
+  "score_routing_enabled": false,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "388292949e1c",
+  "git_commit": "untracked",
+  "best_epoch": 9,
+  "validation": {
+    "checkpoint_rule": "fixed_final_epoch_10",
+    "epoch10_mrr": 0.8736803897566533,
+    "validation_best_diagnostic_mrr": 0.8736803897566533,
+    "validation_best_diagnostic_epoch": 10,
+    "validation_metrics_used_for_selection": false,
+    "test_evaluated": false,
+    "candidate_hash": "849850f5345b08bdaf7bfafdd8712504dd6f3a98e05de0d1c2642d552793908e"
+  },
+  "validation_curve": [],
+  "metrics": {},
+  "anchor_role_gamma": null,
+  "pair_moment_gamma": null,
+  "trainable_parameter_count": 9550,
+  "structural_branch_parameter_count": 0,
+  "anchor_pair_moment_gamma": null,
+  "runtime": {
+    "train_seconds": 287.03144786925986,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 85.24951171875
+  },
+  "support_auxiliary": {
+    "lambda": 0.05,
+    "batches": 0,
+    "sampled_pairs_total": 0,
+    "mean_sampled_pairs_per_batch": 0.0,
+    "mean_unweighted_loss": 0.0
+  },
+  "checkpoint": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/PUBMED/GRAPH_TEACHER/seed0/checkpoints/pubmed_uniform_seed0_388292949e1c.pt",
+  "predictions": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/PUBMED/GRAPH_TEACHER/seed0/raw/pubmed_uniform_seed0_388292949e1c_predictions.csv",
+  "intervention_failures": {},
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "fit_split": "train_only",
+    "uses_valid_or_test": false,
+    "used_as_model_input": false
+  },
+  "evaluation_candidates": {
+    "protocol": "standard",
+    "test_evaluated": false,
+    "negatives_per_positive": null
+  },
+  "data_integrity": {
+    "train_positive_hash": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+    "candidate_hash": "d2434f4508c3fa493a400ddfa2abc71b3eb59999b977a557bc4dcfd4845849db",
+    "valid_identity_in_training_pool": false,
+    "test_identity_in_training_pool": false,
+    "all_positive_access_attempts": 0
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "37d8ddbe8171"
+  },
+  "parameter_count": {
+    "total": 9550,
+    "trainable": 9550,
+    "cn_branch": 481
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.0,
+    "lambda_target_response": 0.0,
+    "lambda_interaction_share": 0.0,
+    "lambda_interaction_delta": 0.0,
+    "lambda_orthogonal_legacy": 0.001,
+    "lambda_adversarial_legacy": 0.01
+  },
+  "device": "cuda",
+  "result_file": "/home/zhoulihui/lchr_v2/HYPERGRAPH_RESEARCH/QTHS_V7_1/RUNS/PUBMED/GRAPH_TEACHER/seed0/raw/pubmed_uniform_seed0_388292949e1c.json",
+  "checkpoint_selection_audit": {
+    "rule": "FIXED_EPOCH_10",
+    "validation_best_is_diagnostic_only": true,
+    "heldout_metrics_used_for_checkpoint_selection": false,
+    "legacy_train_api_placeholder_reads": {
+      "valid_pos": 13,
+      "test_pos": 4
+    },
+    "heldout_identity_values_exposed_to_sampler": 0,
+    "test_identity_values_loaded": false
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "state": "COMPLETE",
+  "workspace": "/home/ubuntu/lchr_v2 (directory is not a Git working tree)",
+  "git": {
+    "server_commit": "NOT_AVAILABLE: git rev-parse reports no .git repository",
+    "desktop_commit": "5da7af3d282f4378b128a0ef8fb7f2e3503a9c74",
+    "server_diff": "NOT_AVAILABLE"
+  },
+  "source": {
+    "V18_python_source_hashes": {
+      "scripts/chri_features.py": "10ffec88cf9835f8c247bf69c2779d005f2843408adb210f856b6a9adab715e0",
+      "scripts/validate_v18.py": "45624135eae89d117f9436e529b6f94759b1db0a243d79024ce60dcb2923b32d",
+      "scripts/chri_v18.py": "31ef3c7c2f1e0b56a056faca020f68848e36c1cf112409247dab121fc991a0e0"
+    },
+    "V18_1_python_source_hashes": {
+      "scripts/stability181.py": "0bc43cfea296b09117d635ad39eadb6aaca8a7f52cd731f00e5c2e8a179addd4",
+      "scripts/validate181.py": "0e0ab6cbd862c6f222423fcff208c84e0eaac5309ac3e090e136953186c42ae4"
+    },
+    "historical_imported_V18_hashes_match": true,
+    "V18_evaluate_function_sha256": "2a51025f0e8894eea5edb7e071f61ffba9e1c90138b39d8427a30245a3e89d87",
+    "V18_run_function_sha256": "e752cc7ff9cd874949bc9e14b5cfe8cd59a461776fdfd842cbae54b4028d867e",
+    "relation_predictor_file_sha256": "10ffec88cf9835f8c247bf69c2779d005f2843408adb210f856b6a9adab715e0"
+  },
+  "environment": {
+    "V18_historical": "Python, PyTorch, CUDA, cuDNN, determinism flags, TF32, AMP and thread environment were not recorded in its run manifest or logs; exact historical values unavailable",
+    "V18_1_observed": {
+      "python": "3.11.11 (main, Dec 11 2024, 16:28:39) [GCC 11.2.0]",
+      "pytorch": "2.8.0+cu128",
+      "cuda": "12.8",
+      "cudnn": 91002,
+      "gpu": "Tesla V100-PCIE-16GB",
+      "deterministic_algorithms": false,
+      "cudnn_deterministic": false,
+      "cudnn_benchmark": false,
+      "matmul_tf32": false,
+      "cudnn_tf32": true,
+      "matmul_precision": "highest",
+      "env": {
+        "OMP_NUM_THREADS": null,
+        "MKL_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "CUBLAS_WORKSPACE_CONFIG": null,
+        "CUDA_VISIBLE_DEVICES": null,
+        "PYTORCH_CUDA_ALLOC_CONF": null
+      },
+      "V18_1_launcher_threads": {
+        "OMP_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4"
+      }
+    }
+  },
+  "data": {
+    "V18_dataset_input_hashes": {
+      "x": "64eff13b69e22c774854406d5e8ebbef5ace8a6e88a1c94700407d15dbe392ec",
+      "train": "2e13bb54e6cd8682ea519ce1f4dc859e5b122af51ff549469434bcdad8325ee1",
+      "valid_pos": "eb16f89cdf1fd225e09a8f08d45139dce12ac919d94946bdb7af76e7672f60d8",
+      "valid_neg": "c630042ee5a0d407773d238b4b313d076e64f43736dd30a4337e9395edc74683"
+    },
+    "V18_1_preflight": "PASS; V18.1 preflight validated Cora/PubMed raw input hashes against V18",
+    "candidate_order_and_split": "validated by V18 input hashes and byte-identical cloned candidate caches below",
+    "test_input": "never loaded"
+  },
+  "backbone": {
+    "checkpoint_path": "/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/R_HSPE_STRONG_BACKBONE_V17_4/phases/B/pubmed/seed_0/C0/final.pt",
+    "exists": true,
+    "sha256": "80de9b501a7678c090a9991cd2052ac2b09385cdcab9415ff984304a894eeadb",
+    "expected_V18_manifest_sha256": "80de9b501a7678c090a9991cd2052ac2b09385cdcab9415ff984304a894eeadb",
+    "match": true
+  },
+  "cache_files_pubmed_seed0": {
+    "epoch_1.npy": {
+      "old_sha256": "b93c74be59af898135a271f1e79d03d28058c57de7c239d7ff8919426195f762",
+      "new_sha256": "b93c74be59af898135a271f1e79d03d28058c57de7c239d7ff8919426195f762",
+      "same": true,
+      "old_mtime_ns": 1791183977517633006,
+      "new_mtime_ns": 1791183977517633006,
+      "same_mtime": true,
+      "old_size": 75792512,
+      "new_size": 75792512,
+      "post_run_old_sha256": "b93c74be59af898135a271f1e79d03d28058c57de7c239d7ff8919426195f762",
+      "post_run_new_sha256": "b93c74be59af898135a271f1e79d03d28058c57de7c239d7ff8919426195f762",
+      "unchanged_and_identical_after_training": true
+    },
+    "epoch_1_pairs.npy": {
+      "old_sha256": "8dcd3761c04aab17a6ca3ec0a4178c230ffee7bb583d1bf3f69cc31a25f7fca6",
+      "new_sha256": "8dcd3761c04aab17a6ca3ec0a4178c230ffee7bb583d1bf3f69cc31a25f7fca6",
+      "same": true,
+      "old_mtime_ns": 1791183977577632147,
+      "new_mtime_ns": 1791183977577632147,
+      "same_mtime": true,
+      "old_size": 1179776,
+      "new_size": 1179776,
+      "post_run_old_sha256": "8dcd3761c04aab17a6ca3ec0a4178c230ffee7bb583d1bf3f69cc31a25f7fca6",
+      "post_run_new_sha256": "8dcd3761c04aab17a6ca3ec0a4178c230ffee7bb583d1bf3f69cc31a25f7fca6",
+      "unchanged_and_identical_after_training": true
+    },
+    "epoch_1_knn.npy": {
+      "old_sha256": "08e62d411cd6cb1e308446ee34822bf7ac74b0fc015adc627603c3ded75ccc07",
+      "new_sha256": "08e62d411cd6cb1e308446ee34822bf7ac74b0fc015adc627603c3ded75ccc07",
+      "same": true,
+      "old_mtime_ns": 1791183991429433805,
+      "new_mtime_ns": 1791183991429433805,
+      "same_mtime": true,
+      "old_size": 9437312,
+      "new_size": 9437312,
+      "post_run_old_sha256": "08e62d411cd6cb1e308446ee34822bf7ac74b0fc015adc627603c3ded75ccc07",
+      "post_run_new_sha256": "08e62d411cd6cb1e308446ee34822bf7ac74b0fc015adc627603c3ded75ccc07",
+      "unchanged_and_identical_after_training": true
+    },
+    "epoch_5.npy": {
+      "old_sha256": "c5cd7cfb4cf0e6a020ea5c6aecddf432ebf5c27cdfc9f81e67b878a4e6181d80",
+      "new_sha256": "c5cd7cfb4cf0e6a020ea5c6aecddf432ebf5c27cdfc9f81e67b878a4e6181d80",
+      "same": true,
+      "old_mtime_ns": 1791183986497504425,
+      "new_mtime_ns": 1791183986497504425,
+      "same_mtime": true,
+      "old_size": 75792512,
+      "new_size": 75792512,
+      "post_run_old_sha256": "c5cd7cfb4cf0e6a020ea5c6aecddf432ebf5c27cdfc9f81e67b878a4e6181d80",
+      "post_run_new_sha256": "c5cd7cfb4cf0e6a020ea5c6aecddf432ebf5c27cdfc9f81e67b878a4e6181d80",
+      "unchanged_and_identical_after_training": true
+    },
+    "epoch_5_pairs.npy": {
+      "old_sha256": "aa2fde5b29a06c76006869ed2cc1fda94de09a21de08fa20cbe73694ca66bbb6",
+      "new_sha256": "aa2fde5b29a06c76006869ed2cc1fda94de09a21de08fa20cbe73694ca66bbb6",
+      "same": true,
+      "old_mtime_ns": 1791183986553503623,
+      "new_mtime_ns": 1791183986553503623,
+      "same_mtime": true,
+      "old_size": 1179776,
+      "new_size": 1179776,
+      "post_run_old_sha256": "aa2fde5b29a06c76006869ed2cc1fda94de09a21de08fa20cbe73694ca66bbb6",
+      "post_run_new_sha256": "aa2fde5b29a06c76006869ed2cc1fda94de09a21de08fa20cbe73694ca66bbb6",
+      "unchanged_and_identical_after_training": true
+    },
+    "epoch_5_knn.npy": {
+      "old_sha256": "c7ea16e70ae76a03bf493228e8482c934156293c1da09de0b9b71e3043691181",
+      "new_sha256": "c7ea16e70ae76a03bf493228e8482c934156293c1da09de0b9b71e3043691181",
+      "same": true,
+      "old_mtime_ns": 1791184002613273666,
+      "new_mtime_ns": 1791184002613273666,
+      "same_mtime": true,
+      "old_size": 9437312,
+      "new_size": 9437312,
+      "post_run_old_sha256": "c7ea16e70ae76a03bf493228e8482c934156293c1da09de0b9b71e3043691181",
+      "post_run_new_sha256": "c7ea16e70ae76a03bf493228e8482c934156293c1da09de0b9b71e3043691181",
+      "unchanged_and_identical_after_training": true
+    },
+    "valid_b.npy": {
+      "old_sha256": "ebc94fcccdd066c82403e4523b5a8a30523d5c210d683e65b82a643e05d14fb9",
+      "new_sha256": "ebc94fcccdd066c82403e4523b5a8a30523d5c210d683e65b82a643e05d14fb9",
+      "same": true,
+      "old_mtime_ns": 1791183975717658778,
+      "new_mtime_ns": 1791183975717658778,
+      "same_mtime": true,
+      "old_size": 47839136,
+      "new_size": 47839136,
+      "post_run_old_sha256": "ebc94fcccdd066c82403e4523b5a8a30523d5c210d683e65b82a643e05d14fb9",
+      "post_run_new_sha256": "ebc94fcccdd066c82403e4523b5a8a30523d5c210d683e65b82a643e05d14fb9",
+      "unchanged_and_identical_after_training": true
+    },
+    "valid_pairs.npy": {
+      "old_sha256": "336bb52d8d0fea160a01f7fc3bd685e6fad5a114ded242ca1cdd33dde9ac6828",
+      "new_sha256": "336bb52d8d0fea160a01f7fc3bd685e6fad5a114ded242ca1cdd33dde9ac6828",
+      "same": true,
+      "old_mtime_ns": 1791183975717658778,
+      "new_mtime_ns": 1791183975717658778,
+      "same_mtime": true,
+      "old_size": 744704,
+      "new_size": 744704,
+      "post_run_old_sha256": "336bb52d8d0fea160a01f7fc3bd685e6fad5a114ded242ca1cdd33dde9ac6828",
+      "post_run_new_sha256": "336bb52d8d0fea160a01f7fc3bd685e6fad5a114ded242ca1cdd33dde9ac6828",
+      "unchanged_and_identical_after_training": true
+    },
+    "valid_knn.npy": {
+      "old_sha256": "a9144175bf0db9cc7c8e8cd5846a6b5f9dd8d879f0de57d243286ece23cade74",
+      "new_sha256": "a9144175bf0db9cc7c8e8cd5846a6b5f9dd8d879f0de57d243286ece23cade74",
+      "same": true,
+      "old_mtime_ns": 1791184004653244456,
+      "new_mtime_ns": 1791184004653244456,
+      "same_mtime": true,
+      "old_size": 5956736,
+      "new_size": 5956736,
+      "post_run_old_sha256": "a9144175bf0db9cc7c8e8cd5846a6b5f9dd8d879f0de57d243286ece23cade74",
+      "post_run_new_sha256": "a9144175bf0db9cc7c8e8cd5846a6b5f9dd8d879f0de57d243286ece23cade74",
+      "unchanged_and_identical_after_training": true
+    },
+    "donor_pairs.npy": {
+      "old_sha256": "34350d0bba43c3bce565f4f0fc309f58793905037aa5ef04809e4b6ad8fb7d8f",
+      "new_sha256": "34350d0bba43c3bce565f4f0fc309f58793905037aa5ef04809e4b6ad8fb7d8f",
+      "same": true,
+      "old_mtime_ns": 1791183988517475501,
+      "new_mtime_ns": 1791183988517475501,
+      "same_mtime": true,
+      "old_size": 1179776,
+      "new_size": 1179776,
+      "post_run_old_sha256": "34350d0bba43c3bce565f4f0fc309f58793905037aa5ef04809e4b6ad8fb7d8f",
+      "post_run_new_sha256": "34350d0bba43c3bce565f4f0fc309f58793905037aa5ef04809e4b6ad8fb7d8f",
+      "unchanged_and_identical_after_training": true
+    },
+    "normalization.json": {
+      "old_sha256": "abd2e697f865474d4c5c5b40abea1ec9d94370393210b208f148937e323de937",
+      "new_sha256": "abd2e697f865474d4c5c5b40abea1ec9d94370393210b208f148937e323de937",
+      "same": true,
+      "old_mtime_ns": 1791183986829499671,
+      "new_mtime_ns": 1791183986829499671,
+      "same_mtime": true,
+      "old_size": 12483,
+      "new_size": 12483,
+      "post_run_old_sha256": "abd2e697f865474d4c5c5b40abea1ec9d94370393210b208f148937e323de937",
+      "post_run_new_sha256": "abd2e697f865474d4c5c5b40abea1ec9d94370393210b208f148937e323de937",
+      "unchanged_and_identical_after_training": true
+    },
+    "B_READY_5.json": {
+      "old_sha256": "964fd83cff249900dd329d9eb27c62fb6b916307f53b4bd34e7407d98ff0d744",
+      "new_sha256": "964fd83cff249900dd329d9eb27c62fb6b916307f53b4bd34e7407d98ff0d744",
+      "same": true,
+      "old_mtime_ns": 1791183986721501217,
+      "new_mtime_ns": 1791183986721501217,
+      "same_mtime": true,
+      "old_size": 2613,
+      "new_size": 2613,
+      "post_run_old_sha256": "964fd83cff249900dd329d9eb27c62fb6b916307f53b4bd34e7407d98ff0d744",
+      "post_run_new_sha256": "964fd83cff249900dd329d9eb27c62fb6b916307f53b4bd34e7407d98ff0d744",
+      "unchanged_and_identical_after_training": true
+    },
+    "MATCH_READY_5.json": {
+      "old_sha256": "0c07b80062631fa94adb250426885eea8f3b5fa4de0d8f0c9197033ae3310f26",
+      "new_sha256": "0c07b80062631fa94adb250426885eea8f3b5fa4de0d8f0c9197033ae3310f26",
+      "same": true,
+      "old_mtime_ns": 1791184004853241592,
+      "new_mtime_ns": 1791184004853241592,
+      "same_mtime": true,
+      "old_size": 2738,
+      "new_size": 2738,
+      "post_run_old_sha256": "0c07b80062631fa94adb250426885eea8f3b5fa4de0d8f0c9197033ae3310f26",
+      "post_run_new_sha256": "0c07b80062631fa94adb250426885eea8f3b5fa4de0d8f0c9197033ae3310f26",
+      "unchanged_and_identical_after_training": true
+    }
+  },
+  "training": {
+    "V18_optimizer": "Adam, canonical predictor learning rate per dataset, weight_decay=0",
+    "V18_1_optimizer": "same V18 Adam, dataset predictor LR, weight_decay=0",
+    "official_negative_and_permutation_traces_match": true,
+    "initialization_hashes_match": true,
+    "full_historical_epoch_parameter_and_optimizer_hashes": "NOT_RECORDED",
+    "full_rng_states": "NOT_RECORDED"
+  },
+  "evaluation": {
+    "same_V18_function_source_for_both": true,
+    "evaluate_function_sha256": "2a51025f0e8894eea5edb7e071f61ffba9e1c90138b39d8427a30245a3e89d87",
+    "torch_no_grad": true,
+    "calls_net_eval": true,
+    "batch_size": 512,
+    "validation_candidates_from_cached_arrays": true,
+    "test_accessed": false
+  },
+  "known_gap": "V18 did not record environment, full RNG states, per-epoch model/optimizer state hashes, or validation input snapshots; these identities cannot be inferred from sampling traces.",
+  "cache_file_mutability_after_run": "PASS: every hashed old/new cache file remained byte-identical, size-identical, and mtime-identical after corrected training.",
+  "test_accessed": false
+}

@@ -1,0 +1,132 @@
+{
+  "state": "PASS",
+  "frozen_backbone_checkpoint_sha256": "80de9b501a7678c090a9991cd2052ac2b09385cdcab9415ff984304a894eeadb",
+  "frozen_backbone_matches_V18_manifest": true,
+  "historical_and_V18_1_predictor_checkpoints_differ": "Expected: separately trained runs; V18 did not retain epoch states. The frozen NCNC backbone checkpoint is identical.",
+  "corrected_checkpoints": [
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "A1",
+      "checkpoint_sha256": "ab96042750a8a9cee2a726ed839358d266a432c02fd23b508de794f46102d0d5",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "b7a17ceca3a4e2732d87239b08d765566f308ae1a94f6b2fb5c4752954c39fee",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "A2",
+      "checkpoint_sha256": "da9c6c61783667bedf283ab2cb2aad82b4ed8b1de96f28b1533cc59fa34996fa",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "246e7bd66ab6a78668647f7e01aed33196522a5d6e5d1467635d49830032e49b",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "arm": "A3",
+      "checkpoint_sha256": "e74fc0bc4c2a6495873c4f045d8a8695b73470a0f121334f537f00355bbfd9f8",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "f820a45c6221113f7307740148def5982807901fda2bd4f6daa53053000fc888",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "A1",
+      "checkpoint_sha256": "b1700ec4783aa7c9252495d49374029fb7a56e26311bc4b968b4bd1be978655b",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "eb4c409cfd4b1087aa739986ba9ced71f2b09715d80860e8c051a3a77449db57",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "A2",
+      "checkpoint_sha256": "404be48dcc941afd16c4ea9d3a46b1312f7759d70308a1287e42f65df87dd795",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "b1341b525b5d1038a5195b6b3b8be8970b39ad7d016b0ad83713611c94153270",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "arm": "A3",
+      "checkpoint_sha256": "8b941320d9e3ca82f8109d17fe7ce9f46928b1c1da849b8a09230d6a65c2875e",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "95e0fb8c0c09afd61c8eab082681a2c8d41f864f1946228ae0a97e6db91d3dab",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "A1",
+      "checkpoint_sha256": "d220208ecc9f53c60b5d4efaae0b5dcc573f69789ad42678da5c50db569448de",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "e80bb17f3c1d88867561ff146f4683e0316a8f6e117c34f89f0f5db272817261",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "A2",
+      "checkpoint_sha256": "5e4fe22f569ac6390b33a84dd9a49845adfef2be15050b52785cfc51befa3d6c",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "2b802e5dace32064cbe2751f2bc39ddfc7a957d1b66541c125589d4099e6d2ba",
+      "test_accessed": false
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "arm": "A3",
+      "checkpoint_sha256": "2bdb5d6376142809767fc37faf6206e64fd4a44e351cbde1924b1d04cec0186c",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "08ea5d14f2840728c95b90d2bd20eb20f6393eb4f82ae7b286b925ac00025107",
+      "test_accessed": false
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "A1",
+      "checkpoint_sha256": "13c244f85515a2a26b906d654c3a31722008c1908fe1345fe95702f70e02b9df",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "ed926c60c709963a3e7ea551e77b9aacce3639dd57b5d78c9047a707082a8820",
+      "test_accessed": false
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "A2",
+      "checkpoint_sha256": "c92c595e3af0d1f16a04094faa05357947447c3aefe55d8c620948e985e676b7",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "ade813ac9a9c57764afa9d7dc5157386c303827ed980f99a76b3bb1989bb6396",
+      "test_accessed": false
+    },
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "arm": "A3",
+      "checkpoint_sha256": "c61e9809cf8c136f69968841590d9cbd8a1c708138631a42a7894ec3fdb7dec2",
+      "checkpoint_file_hash_matches_result": true,
+      "strict_load": "PASS (load_state_dict default strict=True; no exception)",
+      "loaded_model_state_sha256": "105f1ae3a4b2f7bbec242f2b4d82e5f8362c1afb7c0b598d29e44b2a790eccde",
+      "test_accessed": false
+    }
+  ],
+  "checkpoint_selection": "fixed final epoch 5; no best-validation selection",
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "test_accessed": false
+}

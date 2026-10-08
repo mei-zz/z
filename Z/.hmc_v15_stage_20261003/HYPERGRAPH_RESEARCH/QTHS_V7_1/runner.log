@@ -1,0 +1,122 @@
+/home/zhoulihui/anaconda3/envs/mei_qths_repro/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "state": "COMPLETE",
+  "QTHS_LOCKED_REPRODUCTION": "PASS",
+  "CORA_TEST": {
+    "C0_UNIFORM": {
+      "by_seed": {
+        "0": {
+          "mrr": 0.4961632274649616,
+          "hits10": 0.6261859582542695,
+          "mean_positive_rank": 8.13472485768501
+        },
+        "1": {
+          "mrr": 0.5816664809763488,
+          "hits10": 0.889943074003795,
+          "mean_positive_rank": 4.239089184060721
+        },
+        "2": {
+          "mrr": 0.566901980832621,
+          "hits10": 0.9222011385199241,
+          "mean_positive_rank": 3.9108159392789372
+        }
+      },
+      "mean_mrr": 0.5482438964246438,
+      "sample_std_mrr": 0.04570333330939371,
+      "mean_hits10": 0.812776723592663,
+      "sample_std_hits10": 0.16239529230786595,
+      "mean_mean_positive_rank": 5.42820999367489,
+      "sample_std_mean_positive_rank": 2.3496505830954266
+    },
+    "C1_GRAPH_HARD": {
+      "by_seed": {
+        "0": {
+          "mrr": 0.5556290016239874,
+          "hits10": 0.6679316888045541,
+          "mean_positive_rank": 7.23719165085389
+        },
+        "1": {
+          "mrr": 0.3708957604378117,
+          "hits10": 0.7722960151802657,
+          "mean_positive_rank": 6.239089184060721
+        },
+        "2": {
+          "mrr": 0.49112992370331354,
+          "hits10": 0.9222011385199241,
+          "mean_positive_rank": 4.176470588235294
+        }
+      },
+      "mean_mrr": 0.4725515619217042,
+      "sample_std_mrr": 0.09375744900888525,
+      "mean_hits10": 0.7874762808349147,
+      "sample_std_hits10": 0.12781263088462172,
+      "mean_mean_positive_rank": 5.884250474383301,
+      "sample_std_mean_positive_rank": 1.5609087859972561
+    },
+    "C2_RANDOM_VETO": {
+      "by_seed": {
+        "0": {
+          "mrr": 0.5499849975561698,
+          "hits10": 0.6698292220113852,
+          "mean_positive_rank": 7.332068311195446
+        },
+        "1": {
+          "mrr": 0.3824729022342713,
+          "hits10": 0.793168880455408,
+          "mean_positive_rank": 6.01707779886148
+        },
+        "2": {
+          "mrr": 0.5377327342615851,
+          "hits10": 0.9184060721062619,
+          "mean_positive_rank": 3.908918406072106
+        }
+      },
+      "mean_mrr": 0.4900635446840087,
+      "sample_std_mrr": 0.09337740222355938,
+      "mean_hits10": 0.7938013915243517,
+      "sample_std_hits10": 0.1242896321237695,
+      "mean_mean_positive_rank": 5.752688172043011,
+      "sample_std_mean_positive_rank": 1.726822290889653
+    },
+    "C3_QTHS25": {
+      "by_seed": {
+        "0": {
+          "mrr": 0.5540328597191441,
+          "hits10": 0.6698292220113852,
+          "mean_positive_rank": 7.223908918406072
+        },
+        "1": {
+          "mrr": 0.38467184532777204,
+          "hits10": 0.793168880455408,
+          "mean_positive_rank": 6.047438330170778
+        },
+        "2": {
+          "mrr": 0.541426549746102,
+          "hits10": 0.9430740037950665,
+          "mean_positive_rank": 3.6641366223908918
+        }
+      },
+      "mean_mrr": 0.4933770849310061,
+      "sample_std_mrr": 0.0943522739560711,
+      "mean_hits10": 0.80202403542062,
+      "sample_std_hits10": 0.1368374510873991,
+      "mean_mean_positive_rank": 5.645161290322581,
+      "sample_std_mean_positive_rank": 1.8136606111566376
+    }
+  },
+  "CITESEER": {
+    "positive_mean_on_validation": true,
+    "positive_mean_on_test": false,
+    "validation_wins_vs_graph_hard": 2,
+    "test_wins_vs_graph_hard": 2,
+    "supported": true,
+    "fully_reverse": false,
+    "rule": "positive if validation OR test mean beats Graph-hard; report both without tuning"
+  },
+  "PUBMED": "THIRD_DATASET_POSITIVE_SIGNAL",
+  "MECHANISM_CLASS": "INCONCLUSIVE",
+  "AQTHS": "AQTHS_REJECT",
+  "INNOVATION_2_CONFIRMED": false,
+  "FINAL_DECISION": "QTHS_ONLY_PAPER_READY"
+}

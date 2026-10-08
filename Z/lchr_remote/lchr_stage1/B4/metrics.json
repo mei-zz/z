@@ -1,0 +1,141 @@
+{
+  "dataset": "cora",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 0,
+  "cn_feature_mode": "raw",
+  "interaction_mode": "unrestricted",
+  "hypergraph_mode": "lchr",
+  "score_routing_enabled": false,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "467c866b38f7",
+  "git_commit": "untracked",
+  "best_epoch": 0,
+  "validation": {
+    "mrr": 0.13169626946422436,
+    "hits10": 0.22433460076045628,
+    "hits20": 0.6615969581749049,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 15.532319391634982,
+    "auc": 0.2758472003354103,
+    "ap": 0.03548831694581807,
+    "groups": {
+      "HH": {
+        "mrr": 0.05951780233624549,
+        "count": 77
+      },
+      "HL": {
+        "mrr": 0.09355434474666376,
+        "count": 63
+      },
+      "LH": {
+        "mrr": 0.07477235547226702,
+        "count": 42
+      },
+      "LL": {
+        "mrr": 0.25949241284351937,
+        "count": 81
+      }
+    },
+    "macro_mrr": 0.1218342288496739,
+    "worst_group_mrr": 0.05951780233624549,
+    "group_gap": 0.1999746105072739
+  },
+  "metrics": {
+    "mrr": 0.1268423200971917,
+    "hits10": 0.2637571157495256,
+    "hits20": 0.6584440227703985,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 15.223908918406073,
+    "auc": 0.28900249883879614,
+    "ap": 0.03431138258357911,
+    "groups": {
+      "HH": {
+        "mrr": 0.05828124646987982,
+        "count": 175
+      },
+      "HL": {
+        "mrr": 0.08629515031436125,
+        "count": 117
+      },
+      "LH": {
+        "mrr": 0.0913976021752383,
+        "count": 85
+      },
+      "LL": {
+        "mrr": 0.2585423719154369,
+        "count": 150
+      }
+    },
+    "macro_mrr": 0.12362909271872906,
+    "worst_group_mrr": 0.05828124646987982,
+    "group_gap": 0.20026112544555708
+  },
+  "runtime": {
+    "train_seconds": 31.68717150297016,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 67.0849609375
+  },
+  "checkpoint": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B4/checkpoints/cora_uniform_seed0_467c866b38f7.pt",
+  "predictions": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B4/raw/cora_uniform_seed0_467c866b38f7_predictions.csv",
+  "intervention_failures": {},
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 8976,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "raw",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "338b9348eed3c796e6b8717f4da0735e69d600738bfd0bc36225b64856be5c6f",
+    "config_hash": "43716054e679",
+    "used_as_model_input": false
+  },
+  "evaluation_candidates": {
+    "source": "generated_uniform",
+    "hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92",
+    "shape": [
+      527,
+      20,
+      2
+    ],
+    "seed": 999,
+    "protocol": "standard",
+    "negatives_per_positive": 20
+  },
+  "data_integrity": {
+    "split_hash": "4ad9a114f501",
+    "train_positive_hash": "fd806089f2ddf34eed08e4ad63f611a0516977500964035338fb026eb0453cf8",
+    "valid_positive_hash": "ce0c7a24f7e22fe0ec1c6e22bc185f5f29eb8b1ef2eb2e25da7666a2aabe5482",
+    "test_positive_hash": "9360956ed1e7613ec25bfc677b25dfe9e5cd465b60f6eb7af30d3dc08ad6f4c8",
+    "candidate_hash": "ddbb4e92f8bedb8eafa0b9f04a6b75b5a121d8bc0af3a30a4f24588638fe7f92"
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "1f01c0aa36f4"
+  },
+  "parameter_count": {
+    "total": 26000,
+    "trainable": 26000,
+    "cn_branch": 481
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.0,
+    "lambda_target_response": 0.0,
+    "lambda_interaction_share": 0.0,
+    "lambda_interaction_delta": 0.0,
+    "lambda_orthogonal_legacy": 0.001,
+    "lambda_adversarial_legacy": 0.01
+  },
+  "device": "cuda",
+  "result_file": "/home/ubuntu/lchr_stage1/runs/lchr_stage1/B4/raw/cora_uniform_seed0_467c866b38f7.json",
+  "wall_seconds": 49.3963725566864
+}

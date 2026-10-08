@@ -1,0 +1,102 @@
+{
+  "inner_training": {
+    "result_count": 48,
+    "expected_count": 48,
+    "all_complete": true,
+    "all_test_accessed_false": true,
+    "paired_5_10_initialization_and_first5_trace_match": true,
+    "epochs": [
+      5,
+      10
+    ],
+    "seeds": [
+      3,
+      4,
+      5
+    ],
+    "arms": [
+      "GRAPH6",
+      "SHARED",
+      "ZERO6",
+      "MULT6"
+    ]
+  },
+  "result_integrity": {
+    "inner_training": {
+      "result_count": 48,
+      "expected_count": 48,
+      "all_complete": true,
+      "all_test_accessed_false": true,
+      "paired_5_10_initialization_and_first5_trace_match": true,
+      "epochs": [
+        5,
+        10
+      ],
+      "seeds": [
+        3,
+        4,
+        5
+      ],
+      "arms": [
+        "GRAPH6",
+        "SHARED",
+        "ZERO6",
+        "MULT6"
+      ]
+    },
+    "result_integrity": {
+      "files": 48,
+      "score_file_missing": [],
+      "score_hash_errors": [],
+      "raw_json_mismatch": [],
+      "checkpoint_hash_errors": [],
+      "logs": 48,
+      "completion_markers": 48,
+      "traceback_lines": 0
+    },
+    "inner_feature_audit": {
+      "ready_count": 6,
+      "missing": [],
+      "hash_errors": [],
+      "load_errors": [],
+      "structures": {
+        "cora": {
+          "state": "PASS",
+          "target_mask_oracle": "PASS"
+        },
+        "pubmed": {
+          "state": "PASS",
+          "target_mask_oracle": "PASS"
+        }
+      }
+    },
+    "freeze_integrity": {
+      "check_frozen_all": "PASS",
+      "source_file_count": 238,
+      "historical_cache_count": 112
+    },
+    "test_opened": true
+  },
+  "inner_feature_audit": {
+    "ready_count": 6,
+    "missing": [],
+    "hash_errors": [],
+    "load_errors": [],
+    "structures": {
+      "cora": {
+        "state": "PASS",
+        "target_mask_oracle": "PASS"
+      },
+      "pubmed": {
+        "state": "PASS",
+        "target_mask_oracle": "PASS"
+      }
+    }
+  },
+  "freeze_integrity": {
+    "check_frozen_all": "PASS",
+    "source_file_count": 238,
+    "historical_cache_count": 112
+  },
+  "test_opened": false
+}

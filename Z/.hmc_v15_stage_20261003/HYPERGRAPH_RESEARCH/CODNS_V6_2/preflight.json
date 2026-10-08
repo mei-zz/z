@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "gpu": "Tesla V100-PCIE-16GB",
+  "protocol": "STRICT_TRAIN_ONLY",
+  "split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "train_positive_count": 4488,
+  "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "candidate_count": 89760,
+  "forbidden_edge_count": 4488,
+  "all_positive_access_attempts": 0,
+  "validation_identities_in_training_pool": false,
+  "test_identities_loaded": false,
+  "teacher_cache_keys_verified": true,
+  "teacher_checkpoint_hashes_verified": {
+    "Graph": "30343bdf61b8fa38a7d9eecbd280a836ee81ef4dfeb63efeb1c74445337ad28b",
+    "Raw-HG": "1fa029f5a0a3a6e32516907e28bd6179493eeb5429f69c97e4444acdaa9fe91e"
+  },
+  "V6_1_A1_selection_reused_as_M0_source": true,
+  "selection_match": {
+    "strata": 20,
+    "strata_definition": "equal-frequency quantile bins over the 2K Graph-hard prepool's global-pool rank percentile Rg",
+    "quota_reference": "M0 Graph-hard top-1 histogram; exact same per-stratum counts assigned to M1/M2/M3",
+    "target_counts": [
+      72,
+      85,
+      113,
+      119,
+      124,
+      144,
+      178,
+      169,
+      184,
+      201,
+      204,
+      239,
+      260,
+      279,
+      301,
+      311,
+      324,
+      360,
+      394,
+      427
+    ],
+    "mean_Rg": {
+      "M1": 0.9521024227502127,
+      "M2": 0.9522780018444718,
+      "M3": 0.9523123903245051
+    },
+    "median_Rg": {
+      "M1": 0.9662819327309796,
+      "M2": 0.9662596508428125,
+      "M3": 0.9662596508428125
+    },
+    "max_abs_mean_Rg_difference": 0.000209967574292369,
+    "KS_M1_M2": 0.002896613190730838,
+    "KS_M1_M3": 0.004010695187165776,
+    "KS_M2_M3": 0.0017825311942959
+  },
+  "strict_eligibility_unit_test": {
+    "status": "PASS",
+    "future_edge_and_ordinary_unknown_use_same_train_only_predicate": true,
+    "future_edge_identity_is_not_an_input_to_filter": true,
+    "train_positive_and_self_loop_rejected": true
+  }
+}

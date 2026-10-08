@@ -1,0 +1,91 @@
+{
+  "state": "INITIALIZATION_PASS",
+  "initial": {
+    "dataset": "pubmed",
+    "seed": 0,
+    "arms": {
+      "GDUP": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GM": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GMG": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GMP": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GM_BINARY": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GM_COUNT": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GM_SAT": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GM_FULL": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GM_SHUFFLE": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      },
+      "GM_CONDPERM": {
+        "trainable_parameters": 30594,
+        "initial_state_sha256": "3edc8272ea8f69efb28635b223b77d39c8169017d596a8d3c9b64be4f144db9f",
+        "head_initialization": "4eb08f62e42cae41a58d25e23459cdff1b3e6d25331ac44c6e5359109670c74c",
+        "base_initialization": "b53d7cbdd1fe5f99295301f343126a94cdf05f5cbac82c1307a6786614c75bec",
+        "zero_initial_score_exact": true,
+        "candidate_swap_exact": true
+      }
+    },
+    "shared_parameters": 30529
+  },
+  "training_rng": "pending"
+}

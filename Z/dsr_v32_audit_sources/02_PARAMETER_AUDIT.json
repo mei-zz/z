@@ -1,0 +1,254 @@
+{
+  "state": "PASS",
+  "added_parameters": {
+    "A0": 0,
+    "A1": 75,
+    "A2": 75,
+    "A3": 75,
+    "A4": 308,
+    "A5": 308,
+    "A6": 308,
+    "A7": 308,
+    "A8": 308,
+    "A9": 308,
+    "A10": 308
+  },
+  "verified_jobs": 156,
+  "observed_added_parameter_values": [
+    0,
+    75,
+    308
+  ],
+  "capacity_pad_gradients": {
+    "SCREEN/cora/0/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/cora/0/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/cora/1/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/cora/1/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/cora/2/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/cora/2/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/pubmed/0/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/pubmed/0/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/pubmed/1/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/pubmed/1/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/pubmed/2/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "SCREEN/pubmed/2/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/3/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/3/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/4/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/4/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/5/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/5/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/6/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/6/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/7/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/cora/7/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/3/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/3/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/4/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/4/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/5/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/5/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/6/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/6/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/7/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "REPLICATION/pubmed/7/A5": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "TRANSFER/citeseer/0/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "TRANSFER/citeseer/1/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "TRANSFER/citeseer/2/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "INNER/pubmed/0/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "INNER/pubmed/1/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    },
+    "INNER/pubmed/2/A4": {
+      "capacity_pad.value": {
+        "grad_is_none": true,
+        "nonzero_elements": null
+      }
+    }
+  },
+  "pads_are_unreadable": true,
+  "limitation": "Nominal counts matched; global mixture uses3 candidate-independent logits. Pad parameters are trainable but disconnected and remain gradient-free as explicitly authorized; dynamic router and expert input rank differ functionally."
+}

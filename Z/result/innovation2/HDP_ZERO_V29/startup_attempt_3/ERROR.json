@@ -1,0 +1,11 @@
+{
+  "state": "STOPPED_STORAGE",
+  "error": "AssertionError('STORAGE_INSUFFICIENT_ESTIMATE')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/scripts/zero29.py\", line 551, in supervise\n    preflight()\n  File \"/home/ubuntu/lchr_v2/HYPERGRAPH_RESEARCH/HDP_ZERO_V29/scripts/zero29.py\", line 530, in preflight\n    assert storage['available_bytes']>estimate+SPACE_MARGIN,'STORAGE_INSUFFICIENT_ESTIMATE'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: STORAGE_INSUFFICIENT_ESTIMATE\n",
+  "test_opened": false,
+  "storage": {
+    "available_bytes": 8882003968,
+    "available_inodes": 13345354,
+    "margin_bytes": 3221225472
+  }
+}

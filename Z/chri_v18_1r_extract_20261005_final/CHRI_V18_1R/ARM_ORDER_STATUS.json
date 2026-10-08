@@ -1,0 +1,43 @@
+{
+  "state": "COMPLETE",
+  "sequences": {
+    "R0_R1_R2": {
+      "state": "COMPLETE",
+      "arms": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "completed_arms": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    "R2_R1_R0": {
+      "state": "COMPLETE",
+      "arms": [
+        "A3",
+        "A2",
+        "A1"
+      ],
+      "completed_arms": [
+        "A3",
+        "A2",
+        "A1"
+      ]
+    },
+    "R1_alone": {
+      "state": "COMPLETE",
+      "arms": [
+        "A2"
+      ],
+      "completed_arms": [
+        "A2"
+      ]
+    }
+  },
+  "test_accessed": false,
+  "started_at": 1791190714.5581214,
+  "ended_at": 1791190983.0563877
+}

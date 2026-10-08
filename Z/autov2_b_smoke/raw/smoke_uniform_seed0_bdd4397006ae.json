@@ -1,0 +1,102 @@
+{
+  "dataset": "smoke",
+  "protocol_train": "uniform",
+  "protocol_eval": "standard",
+  "model": "dcdlp",
+  "ablation": "A5",
+  "seed": 0,
+  "cn_feature_mode": "raw",
+  "interaction_mode": "unrestricted",
+  "hypergraph_mode": "redundancy_calibration",
+  "score_routing_enabled": false,
+  "routing_finetune_encoder": "frozen",
+  "config_hash": "bdd4397006ae",
+  "git_commit": "untracked",
+  "best_epoch": 0,
+  "validation": {
+    "mrr": 0.26904761904761904,
+    "hits10": 1.0,
+    "hits20": 1.0,
+    "hits50": 1.0,
+    "hits100": 1.0,
+    "mean_positive_rank": 5.5,
+    "auc": 0.525,
+    "ap": 0.1717948717948718,
+    "groups": {
+      "HH": {
+        "mrr": 0.5,
+        "count": 1
+      },
+      "HL": {
+        "mrr": 0.12142857142857143,
+        "count": 2
+      },
+      "LH": {
+        "mrr": null,
+        "count": 0
+      },
+      "LL": {
+        "mrr": 0.3333333333333333,
+        "count": 1
+      }
+    },
+    "macro_mrr": 0.31825396825396823,
+    "worst_group_mrr": 0.12142857142857143,
+    "group_gap": 0.37857142857142856
+  },
+  "metrics": {},
+  "runtime": {
+    "train_seconds": 0.19614780000119936,
+    "inference_seconds": 0.0,
+    "peak_gpu_mb": 0.0
+  },
+  "checkpoint": "E:\\Z\\autov2_b_smoke\\checkpoints\\smoke_uniform_seed0_bdd4397006ae.pt",
+  "predictions": "E:\\Z\\autov2_b_smoke\\raw\\smoke_uniform_seed0_bdd4397006ae_predictions.csv",
+  "intervention_failures": {},
+  "cn_feature_metadata": {
+    "residualizer_type": "NOT_USED",
+    "residualizer_parameters": {},
+    "fit_seed": 0,
+    "fit_sample_count": 158,
+    "symmetric_endpoint_degrees": true,
+    "cn_feature_mode": "raw",
+    "cn_input_schema": "selective_v1",
+    "fit_split": "train",
+    "uses_valid_or_test": false,
+    "data_source": "train_positive+fixed_train_negative_epoch0",
+    "data_hash": "01ee7f36a35c829d1329cfc53417f61a7483ca6ceec02553913b67a426271f4c",
+    "config_hash": "0320f0c15090",
+    "used_as_model_input": false
+  },
+  "evaluation_candidates": {
+    "protocol": "standard",
+    "test_evaluated": false,
+    "negatives_per_positive": null
+  },
+  "data_integrity": {
+    "split_hash": "69a867e5c9bf",
+    "train_positive_hash": "fa15b82ac407a0d0975bc8067db706622e9b5adb39fac4f81ce9a590fc28cf81",
+    "valid_positive_hash": "3c07e5ba219ffe7e09077cdf5c6cc8b98805cbaf75fbaa6a1e291083d23abb92",
+    "test_positive_hash": "7ed2b54cbce3038edbd1b833de9d5d3dea43dd3214314896865e28fabe1d1209",
+    "candidate_hash": null
+  },
+  "intervention_cache": {
+    "source": "deterministic_online_generation",
+    "id": "72d577443642"
+  },
+  "parameter_count": {
+    "total": 2063,
+    "trainable": 2063,
+    "cn_branch": 481
+  },
+  "loss_weights": {
+    "lambda_link": 1.0,
+    "lambda_score_route": 0.0,
+    "lambda_target_response": 0.0,
+    "lambda_interaction_share": 0.0,
+    "lambda_interaction_delta": 0.0,
+    "lambda_orthogonal_legacy": 0.001,
+    "lambda_adversarial_legacy": 0.01
+  },
+  "device": "cpu"
+}

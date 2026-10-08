@@ -1,0 +1,12 @@
+{
+  "cache_key": "84ba068975f4",
+  "train_split_hash": "c5cec7e3bf6eaad41e12ae786246bf454a1bbcd4476286c71eb7e75b0eeba71a",
+  "seed": 0,
+  "checkpoint_hash": "30343bdf61b8fa38a7d9eecbd280a836ee81ef4dfeb63efeb1c74445337ad28b",
+  "candidate_pool_hash": "3d1e3ea691fc19fab65d66ad278d169cf099eb831ad0e46a439510ff5d07a7ba",
+  "teacher": "Graph",
+  "detached": true,
+  "score_hash": "a1b01e0e2ad5cd287011862d65ade0681205d11ca99dc50cf1b763faf8a82d5c",
+  "forward_seconds": 16.33192501217127,
+  "cache_hit": false
+}

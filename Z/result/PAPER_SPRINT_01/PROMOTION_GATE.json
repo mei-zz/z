@@ -1,0 +1,9 @@
+{
+  "state": "NO_PROMOTION",
+  "rule": "B3 mean paired MRR strictly above BOTH B1 and B2 on each of Cora and PubMed; no added wins/CE threshold",
+  "per_dataset": {
+    "cora": false,
+    "pubmed": true
+  },
+  "secondary_metrics_do_not_change_gate": true
+}

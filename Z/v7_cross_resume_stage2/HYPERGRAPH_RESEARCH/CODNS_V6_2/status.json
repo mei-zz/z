@@ -1,0 +1,29 @@
+{
+  "state": "COMPLETE",
+  "completed": [
+    "M0_seed0",
+    "M0_seed1",
+    "M0_seed2",
+    "M1_seed0",
+    "M1_seed1",
+    "M1_seed2",
+    "M2_seed0",
+    "M2_seed1",
+    "M2_seed2",
+    "M3_seed0",
+    "M3_seed1",
+    "M3_seed2",
+    "M4_seed0",
+    "M4_seed1",
+    "M4_seed2"
+  ],
+  "phase": "complete",
+  "current": null,
+  "updated_at": "2026-10-02T07:47:06+0800",
+  "preflight": "PASS",
+  "test_evaluated": false,
+  "current_finished": "M4_seed2",
+  "decision": "DISAGREEMENT_MECHANISM_NOT_SUPPORTED",
+  "final_decision": "DISAGREEMENT_MECHANISM_NOT_SUPPORTED",
+  "all_reports_written": true
+}
